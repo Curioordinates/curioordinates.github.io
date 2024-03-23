@@ -17,8 +17,39 @@
       }
     </style>
     <script>
+      const qs = {};
+      const parseLocation = () => {
+        const url = window.location.href;
+        console.log(url);
+        const i = url.indexOf("?");
+
+        if (i !== -1) {
+          url
+            .substring(i + 1)
+            .split("&")
+            .forEach((pair) => {
+              const [k, v] = pair.split("=");
+              qs[k] = v;
+              if (k === "l" || k === "p") {
+                const ll = v.split(",");
+                qs.latitude = Number(ll[0]) || 0;
+                qs.longitude = Number(ll[1]) || 0;
+              }
+            });
+        }
+        console.log(qs);
+      };
+
       const setup = () => {
-        var map = L.map("map").setView([52.643, 1.336], 14);
+        parseLocation();
+        const maxMapZoom = 19;
+
+        var map = L.map("map");
+        if (!qs.latitude && !qs.longitude) {
+          map.locate({ setView: true, maxZoom: maxMapZoom, watch: true }); //watch=live
+        } else {
+          map.setView([qs.latitude, qs.longitude], qs.z ?? 14);
+        }
 
         // providers demo: https://leaflet-extras.github.io/leaflet-providers/preview/
         L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
