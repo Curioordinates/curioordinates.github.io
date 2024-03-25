@@ -24,7 +24,9 @@
         const i = url.indexOf("?");
 
         if (i !== -1) {
+          qs.follow = url.toLowerCase().indexOf("follow") != -1; // Map point updates.
           url
+
             .substring(i + 1)
             .split("&")
             .forEach((pair) => {
@@ -44,25 +46,37 @@
         parseLocation();
         const maxMapZoom = 19;
 
+        var Gr = L.icon({
+          iconUrl: "./markers/Gr.png",
+
+          iconSize: [39, 41], // size of the icon
+          iconAnchor: [20, 40], // point of the icon which will correspond to marker's location
+          popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
+        });
+
         var map = L.map("map");
         if (!qs.latitude && !qs.longitude) {
-          map.locate({ setView: true, maxZoom: maxMapZoom, watch: true }); //watch=live
+          map.locate({ setView: true, maxZoom: maxMapZoom, watch: qs.follow }); //watch=live
         } else {
           map.setView([qs.latitude, qs.longitude], qs.z ?? 14);
         }
 
         // providers demo: https://leaflet-extras.github.io/leaflet-providers/preview/
-        L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
-          maxZoom: 19,
-          attribution:
-            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>',
-        }).addTo(map);
+        L.tileLayer(
+          "https://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey={apikey}",
+          {
+            attribution:
+              '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            apikey: "0197383662634b97a16e61e0915ab4be", // Yes, you can grab this key but I'm on the free account!
+            maxZoom: 22,
+          }
+        ).addTo(map);
 
-        L.marker([51.26828, 1.17133]).addTo(map); // southend https://www.monumentaltrees.com/en/gbr/england/kent/24257_leepriory/
-        L.marker([-35.61027, 148.09193]).addTo(map); // AUS https://www.monumentaltrees.com/en/aus/mainland/newsouthwales/13767_lochinvarpark/
-        L.marker([41.68813, 22.81003]).addTo(map); //   MKD Gr https://www.monumentaltrees.com/en/mkd/eastern/berovo/23204_school/
-        L.marker([52.6416, 1.31319]).addTo(map); // mousehold Gr
-        L.marker([52.64313, 1.35729]).addTo(map); // poundlane Gr
+        L.marker([51.26828, 1.17133], { icon: Gr }).addTo(map); // southend https://www.monumentaltrees.com/en/gbr/england/kent/24257_leepriory/
+        L.marker([-35.61027, 148.09193], { icon: Gr }).addTo(map); // AUS https://www.monumentaltrees.com/en/aus/mainland/newsouthwales/13767_lochinvarpark/
+        L.marker([41.68813, 22.81003], { icon: Gr }).addTo(map); //   MKD Gr https://www.monumentaltrees.com/en/mkd/eastern/berovo/23204_school/
+        L.marker([52.6416, 1.31319], { icon: Gr }).addTo(map); // mousehold Gr
+        L.marker([52.64313, 1.35729], { icon: Gr }).addTo(map); // poundlane Gr
       };
     </script>
   </head>
