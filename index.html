@@ -26,7 +26,6 @@
         if (i !== -1) {
           qs.follow = url.toLowerCase().indexOf("follow") != -1; // Map point updates.
           url
-
             .substring(i + 1)
             .split("&")
             .forEach((pair) => {
@@ -34,43 +33,37 @@
               qs[k] = v;
               if (k === "l" || k === "p") {
                 const ll = v.split(",");
-                qs.latitude = Number(ll[0]) || 0;
-                qs.longitude = Number(ll[1]) || 0;
+                qs.latitude = Number(`${ll[0]}`.trim()) || 0;
+                qs.longitude = Number(`${ll[1]}`.trim()) || 0;
               }
             });
         }
         console.log(qs);
       };
 
+      const anchor = { iconAnchor: [28, 44] };
+      const createMarker = (iconUrl) => {
+        return L.icon({
+          iconUrl,
+          iconSize: [57, 57], // size of the icon
+          ...anchor,
+          popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
+        });
+      };
+
       const setup = () => {
         parseLocation();
         const maxMapZoom = 19;
 
-        const anchor = { iconAnchor: [28, 44] };
-
-        var Gr = L.icon({
-          iconUrl: "./markers/Gr.png",
-
-          iconSize: [57, 57], // size of the icon
-          ...anchor,
-          popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
-        });
-
-        var Site = L.icon({
-          iconUrl: "./markers/Site.png",
-
-          iconSize: [57, 57], // size of the icon
-          ...anchor,
-          popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
-        });
-
-        var Uf = L.icon({
-          iconUrl: "./markers/Uf.png",
-
-          iconSize: [57, 57], // size of the icon
-          ...anchor,
-          popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
-        });
+        var Gr = createMarker("./markers/Gr.png");
+        var Site = createMarker("./markers/Site.png");
+        var Uf = createMarker("./markers/Uf.png");
+        var Hf = createMarker("./markers/Hf.png");
+        var Cm = createMarker("./markers/Cm.png");
+        var Mc = createMarker("./markers/Mc.png");
+        var Ss = createMarker("./markers/Ss.png");
+        var Sm = createMarker("./markers/Sm.png");
+        var Mx = createMarker("./markers/Mx.png");
 
         var map = L.map("map");
         if (!qs.latitude && !qs.longitude) {
@@ -98,7 +91,19 @@
 
         L.marker([52.9769, 0.5419], { icon: Site }).addTo(map); // fake seahenge
 
+        L.marker([51.5346703, -0.0575498], { icon: Mx }).addTo(map); //The Viktor Wynd Museum of Curiosities, Fine Art & UnNatural History
+
         L.marker([52.09001, 1.44888], { icon: Uf }).addTo(map); //ufp
+
+        L.marker([52.93028, 0.87937], { icon: Hf }).addTo(map); // Warham Hillfort
+
+        L.marker([52.04828, -0.0236], { icon: Mc }).addTo(map); // Royston cave
+
+        L.marker([51.1784886, -1.8261453], { icon: Cm }).addTo(map); // Stone Henge
+
+        L.marker([51.4403444, -1.7958463], { icon: Ss }).addTo(map); // Long Tom - standiong stone
+
+        L.marker([57.3097388, -4.4389133], { icon: Sm }).addTo(map); // Loch Ness 'sea monster'
       };
     </script>
   </head>
