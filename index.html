@@ -72,16 +72,40 @@
           map.setView([qs.latitude, qs.longitude], qs.z ?? 14);
         }
 
-        // providers demo: https://leaflet-extras.github.io/leaflet-providers/preview/
-        L.tileLayer(
+        const thunderForest = [
           "https://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey={apikey}",
           {
             attribution:
               '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             apikey: "0197383662634b97a16e61e0915ab4be", // Yes, you can grab this key but I'm on the free account!
             maxZoom: 22,
-          }
-        ).addTo(map);
+          },
+        ];
+
+        const thunderForestTransport = [
+          "https://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey={apikey}",
+          {
+            attribution:
+              '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            apikey: "0197383662634b97a16e61e0915ab4be", // Yes, you can grab this key but I'm on the free account!
+            maxZoom: 22,
+          },
+        ];
+
+        const stadiaSmooth = [
+          "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png?api_key={api_key}",
+          {
+            maxZoom: 20,
+            api_key: "7f608bb5-d5f7-43c2-a9e4-8b919e3531db",
+            attribution:
+              '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
+          },
+        ];
+
+        const tileLayer = stadiaSmooth;
+
+        // providers demo: https://leaflet-extras.github.io/leaflet-providers/preview/
+        L.tileLayer(...tileLayer).addTo(map);
 
         L.marker([51.26828, 1.17133], { icon: Gr }).addTo(map); // southend https://www.monumentaltrees.com/en/gbr/england/kent/24257_leepriory/
         L.marker([-35.61027, 148.09193], { icon: Gr }).addTo(map); // AUS https://www.monumentaltrees.com/en/aus/mainland/newsouthwales/13767_lochinvarpark/
