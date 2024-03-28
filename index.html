@@ -24,13 +24,12 @@
         const i = url.indexOf("?");
 
         if (i !== -1) {
-          qs.follow = url.toLowerCase().indexOf("follow") != -1; // Map point updates.
           url
             .substring(i + 1)
             .split("&")
             .forEach((pair) => {
               const [k, v] = pair.split("=");
-              qs[k] = v;
+              qs[k] = v || true;
               if (k === "l" || k === "p") {
                 const ll = v.split(",");
                 qs.latitude = Number(`${ll[0]}`.trim()) || 0;
@@ -38,6 +37,7 @@
               }
             });
         }
+        qs.z = qs.z ?? 14;
         console.log(qs);
       };
 
@@ -64,12 +64,27 @@
         var Ss = createMarker("./markers/Ss.png");
         var Sm = createMarker("./markers/Sm.png");
         var Mx = createMarker("./markers/Mx.png");
+        var fort = createMarker("./markers/fort.png");
 
         var map = L.map("map");
+
+        const rewriteUrl = () => {
+          const { lat, lng } = map.getCenter();
+          qs.latitude = Number(Number(lat).toFixed(5));
+          qs.longitude = Number(Number(lng).toFixed(5));
+          qs.z = map.getZoom();
+          const parts = [`l=${qs.latitude},${qs.longitude}`, `z=${qs.z}`];
+          if (qs.satellite) parts.push("satellite");
+          window.history.pushState({}, "", `?${parts.join("&")}`);
+        };
+
+        map.on("moveend", rewriteUrl);
+        map.on("zoomend", rewriteUrl);
+
         if (!qs.latitude && !qs.longitude) {
           map.locate({ setView: true, maxZoom: maxMapZoom, watch: qs.follow }); //watch=live
         } else {
-          map.setView([qs.latitude, qs.longitude], qs.z ?? 14);
+          map.setView([qs.latitude, qs.longitude], qs.z);
         }
 
         const thunderForest = [
@@ -79,6 +94,14 @@
               '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             apikey: "0197383662634b97a16e61e0915ab4be", // Yes, you can grab this key but I'm on the free account!
             maxZoom: 22,
+          },
+        ];
+
+        const satellite = [
+          "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+          {
+            attribution:
+              "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
           },
         ];
 
@@ -102,7 +125,7 @@
           },
         ];
 
-        const tileLayer = stadiaSmooth;
+        const tileLayer = qs.satellite ? satellite : stadiaSmooth;
 
         // providers demo: https://leaflet-extras.github.io/leaflet-providers/preview/
         L.tileLayer(...tileLayer).addTo(map);
@@ -115,11 +138,13 @@
 
         L.marker([52.9769, 0.5419], { icon: Site }).addTo(map); // fake seahenge
 
+        L.marker([52.5825511, 1.6508043], { icon: fort }).addTo(map); // Burgh roman fort
+
         L.marker([51.5346703, -0.0575498], { icon: Mx }).addTo(map); //The Viktor Wynd Museum of Curiosities, Fine Art & UnNatural History
 
         L.marker([52.09001, 1.44888], { icon: Uf }).addTo(map); //ufp
 
-        L.marker([52.93028, 0.87937], { icon: Hf }).addTo(map); // Warham Hillfort
+        L.marker([52.93022, 0.8905], { icon: Hf }).addTo(map); // Warham Hillfort
 
         L.marker([52.04828, -0.0236], { icon: Mc }).addTo(map); // Royston cave
 
