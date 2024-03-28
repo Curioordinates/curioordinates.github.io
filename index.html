@@ -64,6 +64,8 @@
         var Ss = createMarker("./markers/Ss.png");
         var Sm = createMarker("./markers/Sm.png");
         var Mx = createMarker("./markers/Mx.png");
+        var erratic = createMarker("./markers/erratic.png");
+        var neoearthworks = createMarker("./markers/neoearthworks.png");
         var fort = createMarker("./markers/fort.png");
 
         var map = L.map("map");
@@ -153,6 +155,10 @@
         L.marker([51.4403444, -1.7958463], { icon: Ss }).addTo(map); // Long Tom - standiong stone
 
         L.marker([57.3097388, -4.4389133], { icon: Sm }).addTo(map); // Loch Ness 'sea monster'
+
+        L.marker([50.70803, -2.44022], { icon: neoearthworks }).addTo(map); // Maumnbury rings
+
+        L.marker([52.55733, 0.79602], { icon: erratic }).addTo(map); // merton stone
       };
     </script>
   </head>
