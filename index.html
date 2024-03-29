@@ -104,6 +104,9 @@
             watch: !!qs.follow,
           }); //watch=live
         } else {
+          if (!qs.latitude && !qs.longitude) {
+            qs.z = 2;
+          }
           map.setView([qs.latitude || 0, qs.longitude || 0], qs.z);
         }
 
@@ -164,11 +167,7 @@
 
         L.marker([52.55733, 0.79602], { icon: erratic }).addTo(map); // merton stone
 
-        add(
-          [50.04091527955714, -5.651007378754446],
-          "amphitheatre",
-          "The Minac Theatre"
-        );
+        add([50.04091, -5.651], "amphitheatre", "The Minac Theatre");
       }; // minac
     </script>
   </head>
