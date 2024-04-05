@@ -97,6 +97,7 @@ export const go = async () => {
     "./data/source/redwoods/redwoods.manual.csv",
     "./data/source/redwoods/redwoods.wikidata.csv",
   ]);
+  processFileSet(["./data/source/sea-monsters/sea-monsters.manual.csv"]);
 };
 
 go();

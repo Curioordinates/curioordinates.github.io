@@ -80,7 +80,10 @@ const setup = () => {
 
   //#region Metadata
 
-  const datasets = [["redwoods", "redwood"]];
+  const datasets = [
+    ["redwoods", "redwood"],
+    ["sea-monsters", "sea-monster", "lake-monster"],
+  ];
 
   // parse present items
   const lowercaseUrl = window.location.href.toLowerCase();
