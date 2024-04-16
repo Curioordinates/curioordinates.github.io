@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import * as path from "path";
 import { PlottableItem, PlottableItemCallback } from "./types";
 import { parseLocation } from "./util";
 
@@ -51,8 +52,10 @@ const processFile = async (
           location = parseLocation(fields[locationIndex]);
         }
 
-        const latitudeIndex = columnNameMap["latitude"];
-        const longitudeIndex = columnNameMap["longitude"];
+        const latitudeIndex =
+          columnNameMap["latitude"] ?? columnNameMap["@lat"];
+        const longitudeIndex =
+          columnNameMap["longitude"] ?? columnNameMap["@lon"];
         if (latitudeIndex > -1 && longitudeIndex > -1) {
           location = {
             latitude: Number.parseFloat(fields[latitudeIndex]),
@@ -60,7 +63,7 @@ const processFile = async (
           };
         }
 
-        const nameIndex = columnNameMap["label"];
+        const nameIndex = columnNameMap["label"] ?? columnNameMap["name"];
         let title = fields[nameIndex];
 
         if (location && title) {
@@ -77,13 +80,24 @@ const processFile = async (
   console.log(`Finished processing file of [${featureType}] - ${fileName}`);
 };
 
-const processFileSet = (fileNames: string[]) => {
+const processFileSet = (
+  fileNames: string[],
+  params: Record<string, string>
+) => {
+  const verifiedFile = fileNames.find((name) => name.includes("verified"));
   if (fileNames.length) {
     const featureType = getLeafDirName(fileNames[0]);
     const fileLines: string[] = [];
 
     for (const fileName of fileNames) {
       processFile(fileName, (item: PlottableItem) => {
+        if (params.nameAll) {
+          item.title = params.nameAll;
+        }
+        if (verifiedFile && fileName != verifiedFile) {
+          // anything not in the verified file is unverified.
+          item.title += " (unverified)";
+        }
         fileLines.push(`${item.latitude}\t${item.longitude}\t${item.title}`);
       });
     }
@@ -92,12 +106,23 @@ const processFileSet = (fileNames: string[]) => {
   }
 };
 
+const processDirectory = (
+  directoryName: string,
+  params: Record<string, string>
+) => {
+  const items = fs.readdirSync(directoryName);
+
+  const targetItems = items
+    .filter((item) => item.endsWith(".csv"))
+    .map((item) => path.join(directoryName, item));
+  console.log(targetItems);
+  processFileSet(targetItems, params);
+};
+
 export const go = async () => {
-  processFileSet([
-    "./data/source/redwoods/redwoods.manual.csv",
-    "./data/source/redwoods/redwoods.wikidata.csv",
-  ]);
-  processFileSet(["./data/source/sea-monsters/sea-monsters.manual.csv"]);
+  processDirectory("./data/source/redwoods/", { nameAll: "Giant Redwood" });
+  processDirectory("./data/source/sea-monsters/", {});
+  processDirectory("./data/source/standing-stones/", {});
 };
 
 go();

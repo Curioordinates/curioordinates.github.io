@@ -1,0 +1,7 @@
+[out:csv(::id, ::lat, ::lon, name)][timeout:250];
+
+(
+  node[~"species"~"gig",i][~"species"~"seq",i];
+);
+
+out center;

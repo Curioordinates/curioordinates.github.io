@@ -83,6 +83,7 @@ const setup = () => {
   const datasets = [
     ["redwoods", "redwood"],
     ["sea-monsters", "sea-monster", "lake-monster"],
+    ["standing-stones"],
   ];
 
   // parse present items

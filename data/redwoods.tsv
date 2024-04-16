@@ -1,62 +1,197 @@
-51.26828	1.17133	Lee Priory
--35.61027	148.09193	Redwood
-41.68813	22.81003	Rusinovo
-52.6416	1.31319	Mousehold Heath
-52.64313	1.35729	Pound Lane
-52.466879649401	-1.9306262574826	Birmingham Botanical Gardens
-52.99185625435	-2.2688604474551	2 of 4 on Keele Campus
-52.99245	-2.26495	1 of 4 on Keele Campus
-53.230493550201	-3.8021724511399	botanical gardens
-50.418635827876	-4.5294865442493	trenchway wood
-53.11838838444	-1.0208436062484	hexgreave park
-50.71149	16.85957	Mamutowiec Olbrzym
-51.215826	1.230225	Fredville Park, Nonnington
-54.2208502	-7.0009346	Rossmore Forest Park
-51.184646	-2.234212	Longleat Centerparcs
-36.580833333	-118.750833333	General Sherman
-38.2673	-120.2849	Mother of the Forest
-50.4724	9.10992	Riesenmammutbaum bei Schotten
-53.6351	11.6545	Giant sequoias near Kölpin
-36.5642	-118.763	Washington
-37.5148	-119.595	Wawona Tree
-36.5625	-118.751389	President
-36.748	-118.9711	General Grant
-42.420411	1.891368	Sequoies de la Torre del Remei
-54.40017	13.61424	ND 2 Mammutbäume in Binz
-38.280167	-120.303139	Pioneer Cabin Tree
-40.680142325	-4.898575859	giant sequoia, Dehesa del Cid
-36.57187	-118.75604	Lincoln
-36.32838	-118.71703	King Arthur
-42.704573	23.151761	Sequoiadendron giganteum in Bankya
-49.6442	14.7594	Sekvojovce v Ratměřicích
-36.748	-118.971	Robert E. Lee
-42.638215	24.807881	Sequoiadendron giganteum in Karlovo
-36.8239	-118.949	Boole
-36.6939	-118.919	Roosevelt
-42.713945	24.544147	Sequoiadendron giganteum in Rozino
-42.713945	24.544147	Sequoiadendron giganteum in Rozino
-36.2281	-118.6711	Summit Road Tree
-41.513266	26.094138	Sequoiadendron giganteum in Ivaylovgrad
-49.1111	17.3478	Sekvojovec v Chabaních
-36.215119	-118.669395	Genesis
-36.2403	-118.68	Methuselah
-42.203333	24.309444	Sequoiadendron giganteum in Pazardzhik
-36.5571	-118.76939	Monroe
-37.5035	-119.601	Grizzly Giant
-49.699006	8.632918	Mammutbaum in Bensheim
-36.22342	-118.67643	Allen Russell
-43.192896	23.285284	Sequoiadendron giganteum in Varshets
-49.685872	8.641969	Mammutbaum am Schloss Falkenberg
-36.19131	-118.61878	Stagg
-36.6952	-118.891	Hart
-41.87053	2.41214	Sequoia de Masjoan
-36.56771	-118.75864	Franklin
-36.717	-118.965	Mark Twain Tree
-42.880876	23.808498	Sequoiadendron giganteum in Botevgrad
-36.5699	-118.75404	John Adams
-36.2434	-118.673	Adam
-37.76143	-118.81062	Ishi Giant
-50.782526184	6.096561277	Mammutbaum im Aachener Stadtgarten
-50.805238888	4.390744444	Giant sequoia
-36.2294	-118.6777	Euclid Tree
-42.213916	24.021983	Sequoiadendron giganteum in Belovo
+48.8662836	9.0368916	Giant Redwood (unverified)
+51.6816838	8.29726	Giant Redwood (unverified)
+50.4723023	9.1099913	Giant Redwood (unverified)
+51.6797178	10.9341003	Giant Redwood (unverified)
+48.2419565	16.3064168	Giant Redwood (unverified)
+49.4850449	8.6700265	Giant Redwood (unverified)
+36.5816453	-118.751443	Giant Redwood (unverified)
+49.4839397	6.084158	Giant Redwood (unverified)
+51.8271648	10.8126086	Giant Redwood (unverified)
+51.8269806	10.8122689	Giant Redwood (unverified)
+52.3201021	8.0313632	Giant Redwood (unverified)
+50.7138707	6.927223	Giant Redwood (unverified)
+48.5207452	18.2532984	Giant Redwood (unverified)
+48.4808915	17.540824	Giant Redwood (unverified)
+48.6225384	9.1645703	Giant Redwood (unverified)
+53.2948481	-6.2094161	Giant Redwood (unverified)
+47.9701778	8.8675096	Giant Redwood (unverified)
+46.1184469	3.4266165	Giant Redwood (unverified)
+46.1227892	3.4164277	Giant Redwood (unverified)
+46.1209156	3.4181793	Giant Redwood (unverified)
+47.5460067	9.6863184	Giant Redwood (unverified)
+47.9033451	2.3333073	Giant Redwood (unverified)
+38.2479946	-120.242846	Giant Redwood (unverified)
+38.2423971	-120.2534577	Giant Redwood (unverified)
+38.2482744	-120.2417036	Giant Redwood (unverified)
+50.556059	6.7628564	Giant Redwood (unverified)
+50.7373821	6.089755	Giant Redwood (unverified)
+51.3855221	7.7572222	Giant Redwood (unverified)
+51.3855898	7.7573197	Giant Redwood (unverified)
+44.9376894	-123.031239	Giant Redwood (unverified)
+49.6139041	6.1243936	Giant Redwood (unverified)
+49.6140547	6.1246069	Giant Redwood (unverified)
+49.0084608	9.1193684	Giant Redwood (unverified)
+49.0100893	9.1195612	Giant Redwood (unverified)
+45.42007	-122.6690013	Giant Redwood (unverified)
+36.5648692	-118.7730503	Giant Redwood (unverified)
+47.6132835	15.9938389	Giant Redwood (unverified)
+53.6353589	11.6539387	Giant Redwood (unverified)
+48.7235981	4.5892202	Giant Redwood (unverified)
+52.399262	9.1933684	Giant Redwood (unverified)
+36.7480556	-118.9711111	Giant Redwood (unverified)
+38.9076146	-76.9700633	Giant Redwood (unverified)
+41.962046	-3.4200643	Giant Redwood (unverified)
+44.8880193	22.4243023	Giant Redwood (unverified)
+36.5809087	-118.7507585	Giant Redwood (unverified)
+47.4097161	9.4659681	Giant Redwood (unverified)
+47.4097673	9.4661386	Giant Redwood (unverified)
+47.4098607	9.4658481	Giant Redwood (unverified)
+46.5193587	6.642926	Giant Redwood (unverified)
+51.6184382	5.4516082	Giant Redwood (unverified)
+52.3033508	6.9906651	Giant Redwood (unverified)
+42.8154936	-1.6429714	Giant Redwood (unverified)
+52.2345771	6.8690821	Giant Redwood (unverified)
+51.0129003	-1.4619252	Giant Redwood (unverified)
+51.0129016	-1.4625318	Giant Redwood (unverified)
+40.6743971	-4.0910113	Giant Redwood (unverified)
+40.6745404	-4.0910797	Giant Redwood (unverified)
+48.2034399	7.2746924	Giant Redwood (unverified)
+49.6337596	9.3861615	Giant Redwood (unverified)
+46.1943742	5.9505287	Giant Redwood (unverified)
+48.8135736	2.3770486	Giant Redwood (unverified)
+44.9375974	-123.0311808	Giant Redwood (unverified)
+44.9375217	-123.0312793	Giant Redwood (unverified)
+44.9376684	-123.0313837	Giant Redwood (unverified)
+44.9375759	-123.0314029	Giant Redwood (unverified)
+37.5041486	-119.6046515	Giant Redwood (unverified)
+37.5035464	-119.600724	Giant Redwood (unverified)
+37.5042738	-119.6003055	Giant Redwood (unverified)
+50.8605888	5.3898092	Giant Redwood (unverified)
+43.7828077	4.1227073	Giant Redwood (unverified)
+52.0144104	8.5102119	Giant Redwood (unverified)
+48.5102182	0.0344803	Giant Redwood (unverified)
+41.8993358	2.4382713	Giant Redwood (unverified)
+51.4737981	-0.3009678	Giant Redwood (unverified)
+45.8985502	6.1291746	Giant Redwood (unverified)
+48.8925574	8.9401344	Giant Redwood (unverified)
+48.892613	8.9405999	Giant Redwood (unverified)
+36.5559369	-118.7688412	Giant Redwood (unverified)
+48.4439328	8.9575459	Giant Redwood (unverified)
+36.5738216	-118.7499336	Giant Redwood (unverified)
+36.5741615	-118.7534756	Giant Redwood (unverified)
+36.5734287	-118.7500095	Giant Redwood (unverified)
+48.0771084	7.3514912	Giant Redwood (unverified)
+54.944087	9.8666458	Giant Redwood (unverified)
+49.4597388	7.9333712	Giant Redwood (unverified)
+45.692027	7.6629915	Giant Redwood (unverified)
+46.4382435	15.8383852	Giant Redwood (unverified)
+36.5557571	-118.7704657	Giant Redwood (unverified)
+36.5507489	-118.7638814	Giant Redwood (unverified)
+42.8466044	-2.6782034	Giant Redwood (unverified)
+52.9198426	14.5338507	Giant Redwood (unverified)
+48.6941066	1.8529719	Giant Redwood (unverified)
+52.1735503	5.941127	Giant Redwood (unverified)
+45.7449057	7.6117671	Giant Redwood (unverified)
+49.7014204	6.2218463	Giant Redwood (unverified)
+49.7017188	6.2225337	Giant Redwood (unverified)
+48.2340938	0.2017276	Giant Redwood (unverified)
+47.4231188	-0.4938966	Giant Redwood (unverified)
+51.2108898	6.2717933	Giant Redwood (unverified)
+51.3101908	6.2365852	Giant Redwood (unverified)
+51.1964692	6.2196962	Giant Redwood (unverified)
+51.3192494	6.1971131	Giant Redwood (unverified)
+51.2923716	6.3550962	Giant Redwood (unverified)
+51.2969928	6.2495337	Giant Redwood (unverified)
+49.2222942	7.0364214	Giant Redwood (unverified)
+49.740129	6.8945029	Giant Redwood (unverified)
+41.8704836	2.4123342	Giant Redwood (unverified)
+41.8392001	2.3897	Giant Redwood (unverified)
+49.7168624	6.9027503	Giant Redwood (unverified)
+48.501884	9.9679068	Giant Redwood (unverified)
+43.704715	11.4690697	Giant Redwood (unverified)
+50.278714	10.9203676	Giant Redwood (unverified)
+50.9839992	-1.5133751	Giant Redwood (unverified)
+51.7618623	-1.2589319	Giant Redwood (unverified)
+48.676054	9.1002642	Giant Redwood (unverified)
+37.0102293	-118.988682	Giant Redwood (unverified)
+50.8436518	-1.6224912	Giant Redwood (unverified)
+50.8438745	-1.6224361	Giant Redwood (unverified)
+53.3783363	10.9356785	Giant Redwood (unverified)
+49.9561409	6.8654853	Giant Redwood (unverified)
+49.6435033	6.952169	Giant Redwood (unverified)
+49.6442953	14.7598507	Giant Redwood (unverified)
+48.1313425	11.1541839	Giant Redwood (unverified)
+59.2741298	17.8782695	Giant Redwood (unverified)
+50.2630523	10.9817945	Giant Redwood (unverified)
+50.7114834	16.8595179	Giant Redwood (unverified)
+56.3449658	-3.7765524	Giant Redwood (unverified)
+42.5830045	-2.8517136	Giant Redwood (unverified)
+37.5025444	-119.6089778	Giant Redwood (unverified)
+51.8272227	10.8120841	Giant Redwood (unverified)
+51.8271003	10.8118799	Giant Redwood (unverified)
+51.8270478	10.8118823	Giant Redwood (unverified)
+50.5462016	7.1030723	Giant Redwood (unverified)
+50.544238	7.0988165	Giant Redwood (unverified)
+50.541963	7.1348423	Giant Redwood (unverified)
+48.7580858	19.1700686	Giant Redwood (unverified)
+51.26828	1.17133	Giant Redwood
+-35.61027	148.09193	Giant Redwood
+41.68813	22.81003	Giant Redwood
+52.6416	1.31319	Giant Redwood
+52.64313	1.35729	Giant Redwood
+52.466879649401	-1.9306262574826	Giant Redwood
+52.99245	-2.26495	Giant Redwood
+53.230493550201	-3.8021724511399	Giant Redwood
+50.418635827876	-4.5294865442493	Giant Redwood
+53.11838838444	-1.0208436062484	Giant Redwood
+50.71149	16.85957	Giant Redwood
+51.215826	1.230225	Giant Redwood
+54.2208502	-7.0009346	Giant Redwood
+51.184646	-2.234212	Giant Redwood
+36.580833333	-118.750833333	Giant Redwood (unverified)
+38.2673	-120.2849	Giant Redwood (unverified)
+50.4724	9.10992	Giant Redwood (unverified)
+53.6351	11.6545	Giant Redwood (unverified)
+36.5642	-118.763	Giant Redwood (unverified)
+37.5148	-119.595	Giant Redwood (unverified)
+36.5625	-118.751389	Giant Redwood (unverified)
+36.748	-118.9711	Giant Redwood (unverified)
+42.420411	1.891368	Giant Redwood (unverified)
+54.40017	13.61424	Giant Redwood (unverified)
+38.280167	-120.303139	Giant Redwood (unverified)
+40.680142325	-4.898575859	Giant Redwood (unverified)
+36.57187	-118.75604	Giant Redwood (unverified)
+36.32838	-118.71703	Giant Redwood (unverified)
+42.704573	23.151761	Giant Redwood (unverified)
+49.6442	14.7594	Giant Redwood (unverified)
+36.748	-118.971	Giant Redwood (unverified)
+42.638215	24.807881	Giant Redwood (unverified)
+36.8239	-118.949	Giant Redwood (unverified)
+36.6939	-118.919	Giant Redwood (unverified)
+42.713945	24.544147	Giant Redwood (unverified)
+42.713945	24.544147	Giant Redwood (unverified)
+36.2281	-118.6711	Giant Redwood (unverified)
+41.513266	26.094138	Giant Redwood (unverified)
+49.1111	17.3478	Giant Redwood (unverified)
+36.215119	-118.669395	Giant Redwood (unverified)
+36.2403	-118.68	Giant Redwood (unverified)
+42.203333	24.309444	Giant Redwood (unverified)
+36.5571	-118.76939	Giant Redwood (unverified)
+37.5035	-119.601	Giant Redwood (unverified)
+49.699006	8.632918	Giant Redwood (unverified)
+36.22342	-118.67643	Giant Redwood (unverified)
+43.192896	23.285284	Giant Redwood (unverified)
+49.685872	8.641969	Giant Redwood (unverified)
+36.19131	-118.61878	Giant Redwood (unverified)
+36.6952	-118.891	Giant Redwood (unverified)
+41.87053	2.41214	Giant Redwood (unverified)
+36.56771	-118.75864	Giant Redwood (unverified)
+36.717	-118.965	Giant Redwood (unverified)
+42.880876	23.808498	Giant Redwood (unverified)
+36.5699	-118.75404	Giant Redwood (unverified)
+36.2434	-118.673	Giant Redwood (unverified)
+37.76143	-118.81062	Giant Redwood (unverified)
+50.782526184	6.096561277	Giant Redwood (unverified)
+50.805238888	4.390744444	Giant Redwood (unverified)
+36.2294	-118.6777	Giant Redwood (unverified)
+42.213916	24.021983	Giant Redwood (unverified)
