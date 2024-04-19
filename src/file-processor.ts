@@ -122,7 +122,9 @@ const processDirectory = (
 export const go = async () => {
   processDirectory("./data/source/redwoods/", { nameAll: "Giant Redwood" });
   processDirectory("./data/source/sea-monsters/", {});
+  processDirectory("./data/source/erratic/", {});
   processDirectory("./data/source/standing-stones/", {});
+  processDirectory("./data/source/manmade-cave/", {});
 };
 
 go();

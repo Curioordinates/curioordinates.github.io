@@ -84,6 +84,8 @@ const setup = () => {
     ["redwoods", "redwood"],
     ["sea-monsters", "sea-monster", "lake-monster"],
     ["standing-stones"],
+    ["erratic"],
+    ["manmade-cave"],
   ];
 
   // parse present items
@@ -184,7 +186,6 @@ const setup = () => {
   L.marker([51.4403444, -1.7958463], { icon: Ss }).addTo(map); // Long Tom - standiong stone
   L.marker([57.3097388, -4.4389133], { icon: Sm }).addTo(map); // Loch Ness 'sea monster'
   L.marker([50.70803, -2.44022], { icon: neoearthworks }).addTo(map); // Maumnbury rings
-  L.marker([52.55733, 0.79602], { icon: erratic }).addTo(map); // merton stone
     add([50.04091, -5.651], "amphitheatre", "The Minac Theatre");
     */
 };
