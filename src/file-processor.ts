@@ -90,8 +90,9 @@ const processFileSet = (
     const fileLines: string[] = [];
 
     for (const fileName of fileNames) {
+      const isVerifiedFile = fileName.includes("verified");
       processFile(fileName, (item: PlottableItem) => {
-        if (params.nameAll) {
+        if (params.nameAll && !isVerifiedFile) {
           item.title = params.nameAll;
         }
         if (verifiedFile && fileName != verifiedFile) {
@@ -125,6 +126,8 @@ export const go = async () => {
   processDirectory("./data/source/erratic/", {});
   processDirectory("./data/source/standing-stones/", {});
   processDirectory("./data/source/manmade-cave/", {});
+  processDirectory("./data/source/geofolds/", {});
+  processDirectory("./data/source/hauntings/", {});
 };
 
 go();

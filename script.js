@@ -86,6 +86,8 @@ const setup = () => {
     ["standing-stones"],
     ["erratic"],
     ["manmade-cave"],
+    ["geofolds"],
+    ["hauntings"],
   ];
 
   // parse present items
@@ -181,7 +183,7 @@ const setup = () => {
   L.marker([51.5346703, -0.0575498], { icon: Mx }).addTo(map); //The Viktor Wynd Museum of Curiosities, Fine Art & UnNatural History
   L.marker([52.09001, 1.44888], { icon: Uf }).addTo(map); //ufo
   L.marker([52.93022, 0.8905], { icon: Hf }).addTo(map); // Warham Hillfort
-  L.marker([52.04828, -0.0236], { icon: Mc }).addTo(map); // Royston cave
+
   L.marker([51.1784886, -1.8261453], { icon: Cm }).addTo(map); // Stone Henge
   L.marker([51.4403444, -1.7958463], { icon: Ss }).addTo(map); // Long Tom - standiong stone
   L.marker([57.3097388, -4.4389133], { icon: Sm }).addTo(map); // Loch Ness 'sea monster'
