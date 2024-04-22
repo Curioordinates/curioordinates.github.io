@@ -128,6 +128,10 @@ export const go = async () => {
   processDirectory("./data/source/manmade-cave/", {});
   processDirectory("./data/source/geofolds/", {});
   processDirectory("./data/source/hauntings/", {});
+  processDirectory("./data/source/exhibits/", {});
+  processDirectory("./data/source/mysteries/", {});
+  processDirectory("./data/source/big-cats/", {});
+  processDirectory("./data/source/weird/", {});
 };
 
 go();

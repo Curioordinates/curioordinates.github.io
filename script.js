@@ -88,6 +88,10 @@ const setup = () => {
     ["manmade-cave"],
     ["geofolds"],
     ["hauntings"],
+    ["exhibits"],
+    ["mysteries"],
+    ["big-cats"],
+    ["weird"],
   ];
 
   // parse present items
