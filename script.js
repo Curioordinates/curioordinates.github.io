@@ -166,12 +166,19 @@ const setup = () => {
 
   const tileLayer = qs.satellite || qs.sat ? satellite : stadiaSmooth;
 
+  const groupedMarkerLayer = L.markerClusterGroup({
+    disableClusteringAtZoom: 11,
+  });
+
   const add = (latlng, typeName, name, info, moreLink) => {
-    const m = L.marker(latlng, { icon: getMarker(typeName) }).addTo(map);
+    const m = L.marker(latlng, { icon: getMarker(typeName) });
     const googleLink = `https://www.google.com/maps?ll=${latlng[0]},${latlng[1]}&q=${latlng[0]},${latlng[1]}&hl=en&t=m&z=15`;
 
     const pop = `${name}<br/><a href="${googleLink}" target="google_tab">google</a>`;
     m.bindPopup(pop);
+
+    // m.addTo(map);
+    groupedMarkerLayer.addLayer(m);
   };
 
   L.tileLayer(...tileLayer).addTo(map);
@@ -180,6 +187,8 @@ const setup = () => {
   for (const tagToLoad of tagsToLoad) {
     loadTsv(tagToLoad, add);
   }
+
+  map.addLayer(groupedMarkerLayer);
 
   /*
   L.marker([52.9769, 0.5419], { icon: Site }).addTo(map); // fake seahenge
