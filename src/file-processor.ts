@@ -132,6 +132,7 @@ export const go = async () => {
   processDirectory("./data/source/mysteries/", {});
   processDirectory("./data/source/big-cats/", {});
   processDirectory("./data/source/weird/", {});
+  processDirectory("./data/source/fossils/", {});
   processDirectory("./data/source/sub-street/", {});
   processDirectory("./data/source/tunnels/", {});
   processDirectory("./data/source/caves/", {});

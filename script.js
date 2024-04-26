@@ -93,6 +93,7 @@ const setup = () => {
     ["big-cats"],
     ["weird"],
     ["caves"],
+    ["fossils"],
     ["sub-street"],
     ["tunnels"],
   ];
