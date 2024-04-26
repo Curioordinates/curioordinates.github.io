@@ -92,6 +92,9 @@ const setup = () => {
     ["mysteries"],
     ["big-cats"],
     ["weird"],
+    ["caves"],
+    ["sub-street"],
+    ["tunnels"],
   ];
 
   // parse present items
@@ -168,6 +171,7 @@ const setup = () => {
 
   const groupedMarkerLayer = L.markerClusterGroup({
     disableClusteringAtZoom: 11,
+    maxClusterRadius: 40, // default 80
   });
 
   const add = (latlng, typeName, name, info, moreLink) => {

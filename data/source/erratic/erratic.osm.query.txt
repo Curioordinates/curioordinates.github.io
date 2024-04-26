@@ -1,0 +1,7 @@
+[out:csv(::id, ::lat, ::lon, name)][timeout:250];
+
+(
+  node["natural"~"stone",i]["name"~"erratic",i];
+);
+
+out center;
