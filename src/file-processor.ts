@@ -131,8 +131,11 @@ export const go = async () => {
   processDirectory("./data/source/exhibits/", {});
   processDirectory("./data/source/mysteries/", {});
   processDirectory("./data/source/big-cats/", {});
+  processDirectory("./data/source/strongholds/", {});
   processDirectory("./data/source/weird/", {});
   processDirectory("./data/source/fossils/", {});
+  processDirectory("./data/source/dogs/", {});
+  processDirectory("./data/source/sites/", {});
   processDirectory("./data/source/sub-street/", {});
   processDirectory("./data/source/tunnels/", {});
   processDirectory("./data/source/caves/", {});

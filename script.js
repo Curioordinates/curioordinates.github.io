@@ -92,8 +92,11 @@ const setup = () => {
     ["mysteries"],
     ["big-cats"],
     ["weird"],
+    ["sites"],
     ["caves"],
     ["fossils"],
+    ["strongholds"],
+    ["dogs"],
     ["sub-street"],
     ["tunnels"],
   ];
@@ -158,12 +161,12 @@ const setup = () => {
   ];
 
   const stadiaSmooth = [
-    "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png?api_key={api_key}",
+    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
     {
       maxZoom: 20,
-      api_key: "7f608bb5-d5f7-43c2-a9e4-8b919e3531db",
+      subdomains: "abcd",
       attribution:
-        '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     },
   ];
   //#endregion
@@ -172,7 +175,7 @@ const setup = () => {
 
   const groupedMarkerLayer = L.markerClusterGroup({
     disableClusteringAtZoom: 11,
-    maxClusterRadius: 40, // default 80
+    maxClusterRadius: 50, // default 80
   });
 
   const add = (latlng, typeName, name, info, moreLink) => {
@@ -196,7 +199,6 @@ const setup = () => {
   map.addLayer(groupedMarkerLayer);
 
   /*
-  L.marker([52.9769, 0.5419], { icon: Site }).addTo(map); // fake seahenge
   L.marker([52.5825511, 1.6508043], { icon: fort }).addTo(map); // Burgh roman fort
   L.marker([51.5346703, -0.0575498], { icon: Mx }).addTo(map); //The Viktor Wynd Museum of Curiosities, Fine Art & UnNatural History
   L.marker([52.09001, 1.44888], { icon: Uf }).addTo(map); //ufo
@@ -204,7 +206,6 @@ const setup = () => {
 
   L.marker([51.1784886, -1.8261453], { icon: Cm }).addTo(map); // Stone Henge
   L.marker([51.4403444, -1.7958463], { icon: Ss }).addTo(map); // Long Tom - standiong stone
-  L.marker([57.3097388, -4.4389133], { icon: Sm }).addTo(map); // Loch Ness 'sea monster'
   L.marker([50.70803, -2.44022], { icon: neoearthworks }).addTo(map); // Maumnbury rings
     add([50.04091, -5.651], "amphitheatre", "The Minac Theatre");
     */
