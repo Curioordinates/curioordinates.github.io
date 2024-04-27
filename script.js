@@ -58,7 +58,18 @@ const getMarker = (name) => {
   return result;
 };
 
-const setup = () => {
+let metadata;
+const setup = async () => {
+  const response = await fetch("./src/metadata.json");
+  if (response.status === 200) {
+    metadata = await response.json();
+  }
+  console.log(response.status);
+
+  mapSetup();
+};
+
+const mapSetup = () => {
   parseLocation();
   const maxMapZoom = 19;
 
@@ -79,8 +90,10 @@ const setup = () => {
   //#endregion Marker setup
 
   //#region Metadata
+  console.log(JSON.stringify(metadata, null, 3));
 
-  const datasets = [
+  const datasets = Object.keys(metadata).map((key) => [key]);
+  /*  const datasets = [
     ["redwoods", "redwood"],
     ["sea-monsters", "sea-monster", "lake-monster"],
     ["standing-stones"],
@@ -100,6 +113,7 @@ const setup = () => {
     ["sub-street"],
     ["tunnels"],
   ];
+*/
 
   // parse present items
   const lowercaseUrl = window.location.href.toLowerCase();

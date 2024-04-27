@@ -121,6 +121,17 @@ const processDirectory = (
 };
 
 export const go = async () => {
+  const metadata = JSON.parse(
+    fs.readFileSync(path.join(__dirname, "./metadata.json")).toString()
+  );
+
+  for (const [key, untypedData] of Object.entries(metadata)) {
+    const data = untypedData as Record<string, string>;
+    console.log(key);
+    console.log(JSON.stringify(data, null, 3));
+    processDirectory(`./data/source/${key}/`, data);
+  }
+  /*
   processDirectory("./data/source/redwoods/", { nameAll: "Giant Redwood" });
   processDirectory("./data/source/sea-monsters/", {});
   processDirectory("./data/source/erratic/", {});
@@ -139,6 +150,7 @@ export const go = async () => {
   processDirectory("./data/source/sub-street/", {});
   processDirectory("./data/source/tunnels/", {});
   processDirectory("./data/source/caves/", {});
+  */
 };
 
 go();
