@@ -155,7 +155,7 @@ const mapSetup = () => {
   if (qs.follow || qs.l === "me") {
     map.locate({
       setView: true,
-      maxZoom: maxMapZoom,
+      maxZoom: 12,
       watch: !!qs.follow,
     }); //watch=live
   } else {
