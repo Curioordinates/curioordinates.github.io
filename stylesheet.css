@@ -5,3 +5,11 @@
 .leaflet-popup-content {
   font-size: 0.8cm;
 }
+
+#kofibutton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0px;
+  z-index: 400;
+}
