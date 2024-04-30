@@ -193,10 +193,13 @@ const mapSetup = () => {
   });
 
   const add = (latlng, typeName, name, info, moreLink) => {
+    const itemMetadata = metadata[typeName];
+    const typeLabel = itemMetadata.typeLabel || typeName;
     const m = L.marker(latlng, { icon: getMarker(typeName) });
-    const googleLink = `https://www.google.com/maps?ll=${latlng[0]},${latlng[1]}&q=${latlng[0]},${latlng[1]}&hl=en&t=m&z=15`;
+    const googleUrl = `https://www.google.com/maps?ll=${latlng[0]},${latlng[1]}&q=${latlng[0]},${latlng[1]}&hl=en&t=m&z=15`;
+    const googleLink = `<a href="${googleUrl}" target="google_tab"><img title="on google maps" src="images/google-maps.svg" width=32 height=32 /></a>`;
 
-    const pop = `${name}<br/><a href="${googleLink}" target="google_tab">google</a>`;
+    const pop = `${name}<br/>type: ${typeLabel}<br/><br/>${googleLink}`;
     m.bindPopup(pop);
 
     // m.addTo(map);

@@ -3,7 +3,7 @@
     "nameAll": "Giant Redwood"
   },
   "sea-monsters": {},
-  "erratic": {},
+  "erratic": { "typeLabel": "Glacial Erratic" },
   "standing-stones": {},
   "manmade-cave": {},
   "geofolds": {},
@@ -19,5 +19,6 @@
   "sub-street": {},
   "tunnels": {},
   "caves": {},
+  "geo-glyphs": {},
   "settlements": {}
 }
