@@ -194,12 +194,21 @@ const mapSetup = () => {
 
   const add = (latlng, typeName, name, info, moreLink) => {
     const itemMetadata = metadata[typeName];
+    const [latitude, longitude] = latlng;
     const typeLabel = itemMetadata.typeLabel || typeName;
     const m = L.marker(latlng, { icon: getMarker(typeName) });
     const googleUrl = `https://www.google.com/maps?ll=${latlng[0]},${latlng[1]}&q=${latlng[0]},${latlng[1]}&hl=en&t=m&z=15`;
     const googleLink = `<a href="${googleUrl}" target="google_tab"><img title="on google maps" src="images/google-maps.svg" width=32 height=32 /></a>`;
 
-    const pop = `${name}<br/>type: ${typeLabel}<br/><br/>${googleLink}`;
+    const komootUrl = `https://www.komoot.com/plan/@${latitude},${longitude},13.524z?p[0]&p[1][loc]=${latitude},${longitude}`;
+    const komootLink = `<a href="${komootUrl}" target="google_tab"><img title="on komoot" src="images/komoot.svg" width=32 height=32 /></a>`;
+
+    const osmUrl = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+    const osmLink = `<a href="${osmUrl}" target="google_tab"><img title="on open street map" src="images/osm.svg" width=32 height=32 /></a>`;
+
+    const folderImage = `<img src="./images/folder.svg" />`;
+
+    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}</div><div>${name}</div><br/><br/>${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}`;
     m.bindPopup(pop);
 
     // m.addTo(map);

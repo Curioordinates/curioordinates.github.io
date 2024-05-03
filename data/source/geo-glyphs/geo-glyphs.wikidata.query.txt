@@ -1,0 +1,6 @@
+SELECT ?item ?location?itemLabel WHERE {
+  ?item wdt:P31/wdt:P279* wd:Q45791;
+        wdt:P625 ?location .
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } # Helps get the label in your language, if not, then en language
+
+}
