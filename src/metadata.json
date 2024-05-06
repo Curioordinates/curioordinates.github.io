@@ -1,4 +1,5 @@
 {
+  "burials": {},
   "redwoods": {
     "nameAll": "Giant Redwood"
   },
@@ -17,9 +18,15 @@
   "dogs": {},
   "sites": {},
   "sub-street": {},
+  "temples": {},
   "tunnels": {},
   "caves": {},
   "geo-glyphs": {},
   "settlements": {},
+  "towers": {},
+  "amphitheatres": {},
+  "hill-forts": {},
+  "i-spy": {},
+  "gravity-hills": {},
   "stone-circles": {}
 }

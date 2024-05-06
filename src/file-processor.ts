@@ -103,7 +103,7 @@ const processFileSet = (
       });
     }
 
-    fs.writeFileSync(`./data/${featureType}.tsv`, fileLines.join("\n"));
+    fs.writeFileSync(`./data/cells/${featureType}.tsv`, fileLines.join("\n"));
   }
 };
 
