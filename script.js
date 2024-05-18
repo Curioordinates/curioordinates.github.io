@@ -189,7 +189,7 @@ const mapSetup = () => {
 
   const groupedMarkerLayer = L.markerClusterGroup({
     disableClusteringAtZoom: 11,
-    maxClusterRadius: 50, // default 80
+    maxClusterRadius: 60, // default 80
   });
 
   const add = (latlng, typeName, name, info, moreLink) => {

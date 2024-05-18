@@ -1,19 +1,15 @@
 51.75407	-0.35827	Verulamium - Roman Amphitheatre (unverified)
 31.6082	34.8939	Eleutheropolis
 32.498508	35.501446	Scythopolis (Bet She'an)
-32.506568	34.897378	Caesarea Maritima
 32.517922	36.479872	Bosra
 32.632251	14.309281	Leptis Magna
 32.707946	20.945587	Ptolemais
 32.803934	12.494008	Sabratha
 32.824585	21.850739	Cyrene
 33.685822	10.913907	Djerba (Djerba)
-34.253315	35.660419	Botrus (Batroun)
-34.635409	5.522764	Gemellae (M'lili)
 34.655531	10.67308	Thaenae
 34.749855	40.728926	Dura Europos
 34.754942	32.405344	Augusta Paphus (Paphos)
-35.058004	24.958405	Gortyn (Gortyn)
 35.0762	11.0188	Acholla
 35.185522	33.90238	(Salamis)
 35.199735	-6.108586	Lixus
@@ -24,21 +20,16 @@
 35.489247	6.259935	Lambaesis (Lambèse)
 35.619145	11.042257	Thapsus
 35.678313	10.866518	Leptis Minor
-35.826	10.64	Hadrumentum (Sousse)
 35.855562	9.206366	Mactaris
 35.958633	10.441163	Ulissipira
 36.034857	9.69344	(Ksar Lemsa)
-36.133958	10.377445	Upenna (Enfida)
 36.163516	9.775575	Seressi
-36.186	8.7	Sicca Veneria (El Kef)
 36.250003	10.397047	Pheradi Maius (Sidi Khalifa)
 36.31072	9.319186	Thimisua (Gaafour)
 36.398212	9.90575	Colonia Julia Aurelia Commoda (Thuburbo Majus)
-36.4	10.616667	Pupput (Hammamet)
 36.4123	9.08526	Uchi Maius
 36.4242	9.21733	(Thugga)
 36.490397	8.580217	Simitthus (Chemtou)
-36.50468	9.081555	Thignica (Ain Tounga)
 36.5277	9.88918	Municipium Aurelium Commodum (Henchir Bou Cha)
 36.527815	9.361791	Thignica (Ain Tounga)
 36.560414	8.757769	Bulla Regia
@@ -46,14 +37,12 @@
 36.597628	9.860814	(Jebel Moraba)
 36.608681	10.169365	Uthina (Oudna)
 36.60874	2.198826	Colonia Claudia Caesarea (Cherchell)
-36.829485	9.841089	Thurburbo Minus (Thebourba)
 36.856336	10.314921	Carthago (Carthage)
 37.052482	10.05735	Utica
 37.074178	15.278904	Syracusae (Syracuse)
 37.244079	35.894983	Anazarbus
 37.443816	-6.04667	Italica
 37.4696	-5.650728	(Carmona)
-37.507335	15.085354	Catăna (Catania)
 37.600771	-0.980048	Carthago Nova (Cartagena)
 37.88414	-4.788804	Corduba (Córdoba)
 37.909824	22.892078	Corinth (Corinth)
@@ -65,7 +54,6 @@
 39.073911	8.451355	Sulci (Sant'Antioco)
 39.125747	27.174432	Pergamon (Bergama)
 39.223914	9.113216	Caralis (Cagliari)
-39.593526	8.481682	Frusinum (Frosinone)
 39.876583	8.440699	Tharros (Cabras)
 39.886	-2.814	Segobriga (Saelices)
 39.993215	8.80467	Forum Traiani (Fordongianus)
@@ -79,10 +67,7 @@
 40.751264	14.49497	Pompeii
 40.825919	14.125313	Puteoli (Pozzuoli)
 40.841929	14.055903	Cumae
-40.851843	14.255639	Neapolis (Naples)
 40.887799	17.391103	Egnatia (Anazzo)
-40.91667	14.78333	Abellinum (Avellino)
-40.9170733	14.02956627	Liternum
 40.927722	14.520287	Nuvlana (Nola)
 40.961454	14.608316	Avella
 40.969681	15.82638	Venusia (Venosa)
@@ -90,32 +75,25 @@
 41.114547	1.258817	Tarraco (Tarragona)
 41.132266	14.76764	Beneventum (Benevento)
 41.201408	14.137759	Cales (Calvi)
-41.222051	16.055983	Canusium (Canosa di Puglia)
 41.223857	14.501014	Telesia (Telese Terme)
 41.24163	13.763832	Minturnae (Minturno)
-41.26667	13.61667	Formiae (Formia)
 41.3105	15.6231	Herdoniae (Ordona)
 41.312186	19.445323	Dyrrhachium (Durres)
 41.325586	14.334989	Allifae (Alife)
-41.45	12.61667	Antium (Anzio)
 41.48271	14.046255	Venafrum (Venafro)
 41.482732	13.823544	Casinum (Cassino)
-41.5	13.7	Aquinum (Aquino)
 41.5083	15.3449	(Lucera)
 41.518807	13.552995	Fabrateria Nova (San Giovanni Incarico)
-41.68333	12.7	Lanuvium (Lanuvio)
 41.692832	12.696152	Villa of the Antonines
 41.73272	12.664948	Alba Longa (Albano Laziale)
 41.753898	12.289925	Ostia Antica (Ostia)
 41.805529	14.916364	Larinum (Larino)
 41.858487	12.819272	Zagarolo
 41.887569	12.515047	Amphitheatrum Castrense
-41.889882	12.494881	Ludus Magnus
 41.890177	12.492395	Colosseum
 41.960705	12.798095	Tibur (Tivoli)
 42.0065	13.6276	Marruvium (San Benedetto dei Marsi)
 42.0772	13.4123	Alba Fucens (Albe)
-42.111279	14.707821	Histonium (Vasto)
 42.129874	12.594746	Lucus Feroniae
 42.1301	3.11741	Emporion (Ampurias)
 42.22848	12.867593	Trebula Mutuesca (Monteleone Sabino)
@@ -130,18 +108,13 @@
 42.6395	12.5591	Carsulae
 42.650256	11.990112	Volsinii (Bolsena)
 42.658115	13.703109	Interamna Praetutiana(Teramo)
-42.697803	23.330031	Serdica (Sofia)
 42.738489	12.739059	Spoletium (Spoleto)
-42.778637	12.413282	Tutere (Todi)
 42.828364	11.15921	Rusellae (Roselle)
-42.855678	13.570776	Asculum (Ascoli Piceno)
 42.936912	12.61535	Mevania (Bevagna)
 42.995938	12.665265	Hispellum (Spello)
 43.071079	12.62027	Assisium (Assisi)
 43.1011	13.4964	Falerio Picenus (Falerone)
-43.1836	3.0042	Narbo Martius (Narbonne)
 43.2009	13.3872	Urbs Salvia (Urbisaglia)
-43.222222	27.569444	Marcianopolis (Devnya)
 43.3396	3.2141	Julia Baeterrae Septimanorum (Béziers)
 43.43444722	6.7285	Forum Iulium (Fréjus)
 43.46057	11.880326	Arretium (Arezzo)
@@ -154,18 +127,13 @@
 43.769228	11.259521	Florentia (Florence)
 43.83491389	4.35965278	Nemausus (Nimes)
 43.84532	10.506166	Lucca
-43.876569	5.397437	Apta Julia (Apt)
 44.0192	16.0182	Burnum
 44.043859	8.211315	Albingaunum (Albenga)
 44.059939	12.574804	Ariminum (Rimini)
 44.062573	10.022085	Luna (Luni)
-44.204938	0.613258	Aginnum (Agen)
-44.3518	2.56939	Segodunum (Rodez)
-44.4455	1.4408	Cassinomagus (Chassenon)
 44.556327	7.849728	Augusta Bene Vagienna (Augusta Bagiennorum)
 44.684739	7.895866	Pollentia (Pollenzo)
 44.705942	8.867859	Libarna
-44.71666667	21.16666667	Viminacium (Stari Kostolac)
 44.785057	9.723301	Veleia
 44.847725	-0.58265833	Burdigala (Bordeaux)
 44.873176	13.850112	Pietas Iulia Pola (Pula)
@@ -176,13 +144,9 @@
 45.457026	9.178663	Mediolanum (Milan)
 45.4678	7.88769	Eporedia (Ivrea)
 45.516751	22.785838	Ulpia Traiana Sarmizegetusa
-45.5492	12.4001	Altinum (Altino)
-45.740766	7.323419	Augusta Praetoria Salassorum (Aosta)
 45.745892	-0.64406	Mediolanum Santonum (Saintes)
 45.76861111	13.36555556	Aquileia
 45.77049722	4.83059722	Lugdunum (Lyon)
-45.8	11.91667	Acelum (Asolo)
-45.830446	1.251743	Augustoritum (Limoges)
 45.850565	0.76899	Cassinomagus (Chassenon)
 45.914951	22.817234	Veţel (Micia)
 45.9435	10.281	Civitas Camunnorum (Cividate Camuno)
@@ -192,51 +156,36 @@
 46.599061	1.509718	Argentomagus (Argenton-sur-Creuse)
 46.693051	2.522388	Derventum (Drevant)
 46.697951	14.366943	Virunum (Magdalensberg)
-46.766744	15.567417	Flavia Solva (Leibnitz)
 46.881003	7.042657	Aventicum (Avenches)
 46.951667	4.299444	Augustodunum (Autun)
 46.975758	7.45113	Brenodurum (Bern)
-47.0845	2.39087	Avaricum (Bourges)
 47.177632	23.154054	Porolissum (Moigrad)
 47.239279	6.015977	Vesontio (Besançon)
 47.33520833	-0.23873333	Geinum (Gennes)
 47.3953	0.696394	Caesarodunum (Tours)
 47.476249	8.213603	Vindonissa (Windisch)
-47.500461	9.747879	Brigantium (Bregenz) - civil
 47.529313	7.720602	Augusta Raurica (Augst)
 47.532947	19.039066	Aquincum (Budapest) - military
 47.567577	19.047985	Aquincum (Budapest) - civil
 47.872894	2.819046	Montbuoy
 48.1101	16.8509	Carnuntum (Petronell) - civil
 48.1269	16.8927	Carnuntum (Petronell) - military
-48.200036	3.292997	Agedincum (Sens)
 48.385268	5.491047	(Grand)
 48.84499722	2.35290556	Lutetia (Paris)
-49.119631	6.172198	Divodurum (Metz)
 49.14621	2.296752	(Beaumont-sur-Oise)
 49.205191	2.575768	Augustomagus (Senlis)
 49.517815	0.536603	Juliobona (Lillebonne)
-49.53402	2.174333	Samarobriva (Amiens)
 49.748019	6.649105	Augusta Treverorum (Trier)
 50.7079	-2.44039	Durnovaria (Dorchester)
-50.835448	-0.772496	Noviomagus Reginorum (Chichester)
 51.290171	1.326534	Rutupiae (Richborough)
 51.3054	-2.72032	Iscalis (Charterhouse)
 51.35885	-1.07528	Calleva Atrebatum (Silchester)
 51.515546	-0.092215	Londinium (London)
 51.608056	-2.956889	Isca Augusta (Caerleon)
-51.612381	-2.766406	Venta Silurum (Caerwent)
 51.637517	6.4729	Castra Vetera
 51.6672	6.451251	Ulpia Traiana (Xanten)
-51.670833	-1.362222	Frilford
 51.7115	-1.97219	Corinium Dobunnorum (Cirencester)
 51.75404444	-0.3583	Verulamium (St Albans)
-51.861286	6.045742	Ulpia Noviomagus Batavorum (Nijmegen)
 51.862004	-4.296705	Moridunum (Carmarthen)
-51.883333	0.9	Camulodunum (Colchester)
-52.579979	1.288262	Venta Icenorum (Caistor St Edmund)
-52.666667	-2.65	Virocorium Cornoviorum (Wroxeter)
-52.931914	-3.923463	(Tomen-y-Mur)
 53.189191	-2.887027	Deva Victrix (Chester)
 54.088179	-1.381325	Isurium Brigantum (Aldborough)
-55.6026	-2.6775	Trimontium (Newstead)

@@ -1,7 +1,7 @@
 latitude,longitude,label,link
 31.6082,34.8939,Eleutheropolis
 32.498508,35.501446,Scythopolis (Bet She'an)
-32.506568,34.897378,Caesarea Maritima
+
 32.517922,36.479872,Bosra
 32.632251,14.309281,Leptis Magna
 32.707946,20.945587,Ptolemais
@@ -231,7 +231,6 @@ latitude,longitude,label,link
 51.670833,-1.362222,Frilford
 51.7115,-1.97219,Corinium Dobunnorum (Cirencester)
 51.75404444,-0.3583,Verulamium (St Albans)
-51.861286,6.045742,Ulpia Noviomagus Batavorum (Nijmegen)
 51.862004,-4.296705,Moridunum (Carmarthen)
 51.883333,0.9,Camulodunum (Colchester)
 52.579979,1.288262,Venta Icenorum (Caistor St Edmund)

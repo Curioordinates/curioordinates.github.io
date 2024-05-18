@@ -1,0 +1,16 @@
+[out:csv(::id, ::lat, ::lon, name)][timeout:250];
+
+(
+  node[~"amenity"~"public_bookcase",i];
+);
+
+out center;
+
+[out:csv(::id, ::lat, ::lon, name)][timeout:250];
+
+(
+  node["amenity"="public_bookcase"];
+  node["amenity"="community_library"];
+);
+
+out center;

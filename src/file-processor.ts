@@ -2,8 +2,17 @@ import * as fs from "fs";
 import * as path from "path";
 import { PlottableItem, PlottableItemCallback } from "./types";
 import { parseLocation } from "./util";
+import { recurseDirectories } from "./recurseDirectories";
+import { findSourceMap } from "module";
 
 export const processTsvFile = async (fileName: string): Promise<void> => {};
+
+/**
+ * key is {latitude}:{longitude}
+ */
+const hitMap: Record<string, string> = {};
+
+const addSurveyLink = false;
 
 const getLeafDirName = (path: string): string => {
   const nameParts = path.split("/");
@@ -18,7 +27,7 @@ const processFile = async (
   callback: PlottableItemCallback
 ): Promise<void> => {
   console.log("file: " + fileName);
-  const featureType = getLeafDirName(fileName);
+  //const featureType = getLeafDirName(fileName);
 
   // next part is the actual
 
@@ -26,13 +35,18 @@ const processFile = async (
   const columnNameMap = [];
   let columnNamesRead = false;
 
+  const isTsvFile = fileName.endsWith(".tsv");
+
   for (const rawLine of lines) {
     const trimmedLine = rawLine.trim();
 
     if (trimmedLine) {
       //convert 'strict' csv to tsv - any comma not followed by a space becomes tab.
       console.log(trimmedLine);
-      const line = trimmedLine.replace(/,/g, "\t").replace(/\t /g, ", ");
+      const line = isTsvFile
+        ? trimmedLine
+        : trimmedLine.replace(/,/g, "\t").replace(/\t /g, ", ");
+
       if (!columnNamesRead) {
         // header line
         columnNamesRead = true;
@@ -67,31 +81,76 @@ const processFile = async (
         let title = fields[nameIndex];
 
         if (location && title) {
+          const surveyLink = `http://localhost:8000/?l=${location.latitude},${location.longitude}&z=18&satellite`;
+
           const item: PlottableItem = {
             latitude: location.latitude,
             longitude: location.longitude,
             title: title,
+            surveyLink,
           };
           callback(item);
         }
       }
     }
   }
-  console.log(`Finished processing file of [${featureType}] - ${fileName}`);
+  console.log(`Finished processing ${fileName}`);
 };
 
+const formatTo5DP = (numberish) => {
+  return Number(numberish).toFixed(5);
+};
+
+let stopHits = 0;
+
 const processFileSet = (
+  directoryName: string,
   fileNames: string[],
+  featureType: string,
   params: Record<string, string>
 ) => {
   const verifiedFile = fileNames.find((name) => name.includes("verified"));
   if (fileNames.length) {
-    const featureType = getLeafDirName(fileNames[0]);
+    //    const featureType = getLeafDirName(fileNames[0]);
     const fileLines: string[] = [];
 
     for (const fileName of fileNames) {
       const isVerifiedFile = fileName.includes("verified");
       processFile(fileName, (item: PlottableItem) => {
+        const isListedInStops = stops.find(
+          (testStop) =>
+            testStop.latitude == item.latitude &&
+            testStop.longitude == item.longitude
+        );
+
+        if (isListedInStops) {
+          stopHits++;
+          return;
+        }
+
+        if (item.title.includes("Camul")) {
+          console.log("watcher");
+        }
+
+        // see if its defined lower
+        const hitKey = `${item.latitude.toFixed(5)}:${item.longitude.toFixed(
+          5
+        )}`;
+        console.log("made hit key :" + hitKey);
+        const hitSourceDirectory = hitMap[hitKey];
+
+        console.log(`testing: ${hitSourceDirectory} against ${directoryName}`);
+        if (
+          hitSourceDirectory &&
+          hitSourceDirectory.startsWith(directoryName)
+        ) {
+          // defined lower so ignore this item
+          console.log("ignoring item in favour of " + hitSourceDirectory);
+
+          return;
+        }
+        hitMap[hitKey] = directoryName;
+
         if (params.nameAll && !isVerifiedFile) {
           item.title = params.nameAll;
         }
@@ -99,7 +158,16 @@ const processFileSet = (
           // anything not in the verified file is unverified.
           item.title += " (unverified)";
         }
-        fileLines.push(`${item.latitude}\t${item.longitude}\t${item.title}`);
+
+        const lineParts: (string | number)[] = [
+          item.latitude,
+          item.longitude,
+          item.title,
+        ];
+        if (addSurveyLink) {
+          lineParts.push(item.surveyLink);
+        }
+        fileLines.push(lineParts.join("\t"));
       });
     }
 
@@ -109,18 +177,63 @@ const processFileSet = (
 
 const processDirectory = (
   directoryName: string,
+  featureType: string,
   params: Record<string, string>
 ) => {
   const items = fs.readdirSync(directoryName);
 
   const targetItems = items
-    .filter((item) => item.endsWith(".csv"))
+    .filter((item) => item.endsWith(".csv") || item.endsWith(".tsv"))
     .map((item) => path.join(directoryName, item));
   console.log(targetItems);
-  processFileSet(targetItems, params);
+  processFileSet(directoryName, targetItems, featureType, params);
 };
 
+const stops: { latitude: number; longitude: number }[] = [];
+
+processFile("./data/source/_stops/_stops.tsv", (item) => {
+  stops.push(item);
+  console.log(`STOP : ` + JSON.stringify(item));
+});
+
 export const go = async () => {
+  const builtMetadata = {};
+
+  recurseDirectories({
+    rootDirectory: "./data/source",
+    callback: (foundDirectory) => {
+      if (foundDirectory.directoryPath.includes("_stops")) {
+        return; // stops are handled elsewhere.
+      }
+
+      let metadata = {};
+      const keyName =
+        foundDirectory.relativeSteps[foundDirectory.relativeSteps.length - 1];
+      try {
+        const fileContent = fs
+          .readFileSync(
+            path.join(foundDirectory.directoryPath, `${keyName}.metadata.json`)
+          )
+          .toString();
+
+        metadata = JSON.parse(fileContent);
+      } catch (_) {} // No metadata file
+
+      builtMetadata[keyName] = metadata;
+
+      console.log("DIRECTORY: " + foundDirectory.directoryPath);
+      console.log("META: " + JSON.stringify(metadata));
+
+      processDirectory(foundDirectory.directoryPath, keyName, metadata);
+    },
+  });
+
+  fs.writeFileSync(
+    "./src/metadata.json",
+    JSON.stringify(builtMetadata, null, 3)
+  );
+
+  /*
   const metadata = JSON.parse(
     fs.readFileSync(path.join(__dirname, "./metadata.json")).toString()
   );
@@ -131,6 +244,8 @@ export const go = async () => {
     console.log(JSON.stringify(data, null, 3));
     processDirectory(`./data/source/${key}/`, data);
   }
+*/
+  console.log("Stop hits :" + stopHits);
   /*
   processDirectory("./data/source/redwoods/", { nameAll: "Giant Redwood" });
   processDirectory("./data/source/sea-monsters/", {});
