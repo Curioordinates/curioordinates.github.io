@@ -18,6 +18,9 @@
    "gravity-hills": {},
    "hauntings": {},
    "hill-forts": {},
+   "public-bookcases": {
+      "nameAll": "Public Bookcase"
+   },
    "i-spy": {},
    "manmade-cave": {},
    "mysteries": {},
