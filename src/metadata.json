@@ -1,6 +1,7 @@
 {
    "amphitheatre-sites": {},
    "amphitheatres": {},
+   "ancient-roads": {},
    "aquaducts": {},
    "big-cats": {},
    "burials": {},
@@ -18,9 +19,6 @@
    "gravity-hills": {},
    "hauntings": {},
    "hill-forts": {},
-   "public-bookcases": {
-      "nameAll": "Public Bookcase"
-   },
    "i-spy": {},
    "manmade-cave": {},
    "mysteries": {},
