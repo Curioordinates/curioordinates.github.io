@@ -1,0 +1,20 @@
+# Define the prefixes for the properties and items
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX p: <http://www.wikidata.org/prop/>
+
+# The SELECT statement specifies the variables to be returned in the result set
+SELECT ?hospital ?hospitalLabel ?latitude ?longitude
+WHERE {
+  # Find items that are instances of hospitals
+  ?hospital wdt:P31 wd:Q585490 ;  # P31 is the property for 'instance of', Q585490 is the item for chambered-cairn
+           wdt:P625 ?coordinate . # P625 is the property for 'coordinate location'
+
+  # Decompose the coordinate location into latitude and longitude
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  BIND(geof:latitude(?coordinate) AS ?latitude)
+  BIND(geof:longitude(?coordinate) AS ?longitude)
+}
+
+# Order the results by hospital label
+ORDER BY ?hospitalLabel

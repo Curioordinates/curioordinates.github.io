@@ -3,7 +3,9 @@ import * as path from "path";
 import { PlottableItem, PlottableItemCallback } from "./types";
 import { parseLocation } from "./util";
 import { recurseDirectories } from "./recurseDirectories";
+import { to5DP } from "./lib/number-utils";
 import { findSourceMap } from "module";
+import { parseLine } from "./lib/data-extractor";
 
 export const processTsvFile = async (fileName: string): Promise<void> => {};
 
@@ -56,6 +58,8 @@ const processFile = async (
           columnNameMap[name] = index;
         });
       } else {
+        const extractedData = parseLine({ line: rawLine });
+
         // data line
         const fields = line.split("\t");
         console.log(JSON.stringify(fields));
@@ -80,13 +84,21 @@ const processFile = async (
         const nameIndex = columnNameMap["label"] ?? columnNameMap["name"];
         let title = fields[nameIndex];
 
-        if (location && title) {
+        // if (location && title) {
+        if (
+          extractedData.latitude &&
+          extractedData.longitude &&
+          extractedData.title
+        ) {
+          title = extractedData.title;
+          const latitude = to5DP(extractedData.latitude!);
+          const longitude = to5DP(extractedData.longitude!);
           const surveyLink = `http://localhost:8000/?l=${location.latitude},${location.longitude}&z=18&satellite`;
 
           const item: PlottableItem = {
-            latitude: location.latitude,
-            longitude: location.longitude,
-            title: title,
+            latitude,
+            longitude,
+            title,
             surveyLink,
           };
           callback(item);
@@ -97,10 +109,6 @@ const processFile = async (
   console.log(`Finished processing ${fileName}`);
 };
 
-const formatTo5DP = (numberish) => {
-  return Number(numberish).toFixed(5);
-};
-
 let stopHits = 0;
 
 const processFileSet = (
@@ -109,7 +117,9 @@ const processFileSet = (
   featureType: string,
   params: Record<string, string>
 ) => {
-  const verifiedFile = fileNames.find((name) => name.includes("verified"));
+  const verifiedFileNames = fileNames.filter((name) =>
+    name.includes("verified")
+  );
   if (fileNames.length) {
     //    const featureType = getLeafDirName(fileNames[0]);
     const fileLines: string[] = [];
@@ -128,14 +138,8 @@ const processFileSet = (
           return;
         }
 
-        if (item.title.includes("Camul")) {
-          console.log("watcher");
-        }
-
         // see if its defined lower
-        const hitKey = `${item.latitude.toFixed(5)}:${item.longitude.toFixed(
-          5
-        )}`;
+        const hitKey = `${to5DP(item.latitude)}:${to5DP(item.longitude)}`;
         console.log("made hit key :" + hitKey);
         const hitSourceDirectory = hitMap[hitKey];
 
@@ -154,7 +158,10 @@ const processFileSet = (
         if (params.nameAll && !isVerifiedFile) {
           item.title = params.nameAll;
         }
-        if (verifiedFile && fileName != verifiedFile) {
+        if (
+          verifiedFileNames.length > 0 &&
+          !verifiedFileNames.includes(fileName)
+        ) {
           // anything not in the verified file is unverified.
           item.title += " (unverified)";
         }

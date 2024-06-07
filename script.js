@@ -138,8 +138,8 @@ const mapSetup = () => {
 
   const rewriteUrl = () => {
     const { lat, lng } = map.getCenter();
-    qs.latitude = Number(Number(lat).toFixed(5));
-    qs.longitude = Number(Number(lng).toFixed(5));
+    qs.latitude = Number(lat);
+    qs.longitude = Number(lng);
     qs.z = map.getZoom();
     const parts = [`l=${qs.latitude},${qs.longitude}`, `z=${qs.z}`];
     if (qs.satellite || qs.sat) parts.push("satellite");
@@ -206,9 +206,12 @@ const mapSetup = () => {
     const osmUrl = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
     const osmLink = `<a href="${osmUrl}" target="google_tab"><img title="on open street map" src="images/osm.svg" width=32 height=32 /></a>`;
 
+    const wikimapUrl = `https://wikimap.toolforge.org/?wp=false&cluster=false&zoom=16&lat=${latitude}&lon=${longitude}`;
+    const wikimapLink = `<a href="${wikimapUrl}" target="wikimap_tab"><img title="on wikimap" src="images/wikimap.svg" width=32 height=32 /></a>`;
+
     const folderImage = `<img src="./images/folder.svg" />`;
 
-    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}</div><div>${name}</div><br/><br/>${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}`;
+    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}</div><div>${name}</div><br/><br/>${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}`;
     m.bindPopup(pop);
 
     // m.addTo(map);
