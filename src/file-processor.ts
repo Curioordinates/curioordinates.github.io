@@ -59,7 +59,7 @@ const processFile = async (
         });
       } else {
         const extractedData = parseLine({ line: rawLine });
-
+        /*
         // data line
         const fields = line.split("\t");
         console.log(JSON.stringify(fields));
@@ -83,17 +83,17 @@ const processFile = async (
 
         const nameIndex = columnNameMap["label"] ?? columnNameMap["name"];
         let title = fields[nameIndex];
-
+*/
         // if (location && title) {
         if (
           extractedData.latitude &&
           extractedData.longitude &&
           extractedData.title
         ) {
-          title = decodeURIComponent(extractedData.title);
+          const title = decodeURIComponent(extractedData.title);
           const latitude = to5DP(extractedData.latitude!);
           const longitude = to5DP(extractedData.longitude!);
-          const surveyLink = `http://localhost:8000/?l=${location.latitude},${location.longitude}&z=18&satellite`;
+          const surveyLink = `http://localhost:8000/?l=${extractedData.latitude},${extractedData.longitude}&z=18&satellite`;
 
           const item: PlottableItem = {
             latitude,
