@@ -90,7 +90,7 @@ const processFile = async (
           extractedData.longitude &&
           extractedData.title
         ) {
-          title = extractedData.title;
+          title = decodeURIComponent(extractedData.title);
           const latitude = to5DP(extractedData.latitude!);
           const longitude = to5DP(extractedData.longitude!);
           const surveyLink = `http://localhost:8000/?l=${location.latitude},${location.longitude}&z=18&satellite`;
