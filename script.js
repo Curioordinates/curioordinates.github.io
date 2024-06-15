@@ -230,7 +230,6 @@ const mapSetup = () => {
   /*
   L.marker([52.5825511, 1.6508043], { icon: fort }).addTo(map); // Burgh roman fort
   L.marker([51.5346703, -0.0575498], { icon: Mx }).addTo(map); //The Viktor Wynd Museum of Curiosities, Fine Art & UnNatural History
-  L.marker([52.09001, 1.44888], { icon: Uf }).addTo(map); //ufo
 
   L.marker([51.1784886, -1.8261453], { icon: Cm }).addTo(map); // Stone Henge
   L.marker([51.4403444, -1.7958463], { icon: Ss }).addTo(map); // Long Tom - standiong stone
