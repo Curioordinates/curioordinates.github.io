@@ -28,12 +28,12 @@
      inkscape:document-units="mm"
      showguides="false"
      inkscape:zoom="8.3794527"
-     inkscape:cx="62.295238"
-     inkscape:cy="9.0698048"
+     inkscape:cx="62.414578"
+     inkscape:cy="12.411312"
      inkscape:window-width="1792"
      inkscape:window-height="993"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="25"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
@@ -42,6 +42,12 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <circle
+       style="fill:none;stroke:#020202;stroke-width:0.525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.996139"
+       id="path2"
+       cx="7.4201851"
+       cy="11.588118"
+       r="3.3154016" />
     <ellipse
        style="fill:#000000;fill-opacity:0.143426;stroke:#c00707;stroke-width:0.165;stroke-dasharray:none;stroke-opacity:0.421348"
        id="path5"
@@ -51,7 +57,7 @@
        ry="0.26408395" />
     <g
        id="g12"
-       transform="translate(-1.1682843,5.8729969)">
+       transform="translate(-1.0735585,5.7782712)">
       <g
          id="g11-7"
          transform="translate(0.21397324,0.15005114)"

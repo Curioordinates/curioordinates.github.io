@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="15mm"
+   height="15mm"
+   viewBox="0 0 15 15"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="petrosomatoglyph.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   sodipodi:docname="petrosomatoglyph.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="false"
+     inkscape:zoom="7.4804267"
+     inkscape:cx="67.375836"
+     inkscape:cy="8.8230262"
+     inkscape:window-width="1792"
+     inkscape:window-height="993"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient2"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#e31c1c;stop-opacity:1;"
+         offset="0"
+         id="stop2" />
+      <stop
+         style="stop-color:#ff0707;stop-opacity:0;"
+         offset="1"
+         id="stop3" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2"
+       id="radialGradient3"
+       cx="5.6357265"
+       cy="6.8527441"
+       fx="5.6357265"
+       fy="6.8527441"
+       r="4.3919799"
+       gradientTransform="matrix(1.2250352,-0.27051254,0.29081394,1.3169715,-2.0176702,2.5528784)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:#000000;fill-opacity:0.143426;stroke:#c00707;stroke-width:0.165;stroke-dasharray:none;stroke-opacity:0.421348"
+       id="path5"
+       cx="7.4724536"
+       cy="11.982809"
+       rx="0.24757871"
+       ry="0.26408395" />
+    <path
+       style="fill:url(#radialGradient3);stroke:none;stroke-width:0.200001;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.996139"
+       d="M 4.7915304,14.754638 6.1493426,14.686747 6.4548502,14.550966 5.7419987,12.955537 5.3346554,12.276631 3.501609,10.918819 3.3318824,10.375695 3.8750073,9.9004596 4.7915304,10.443584 5.6062176,10.850929 4.2484053,8.7463195 3.9428977,7.8297964 4.1805149,7.3885072 4.6218037,7.5242888 6.2172333,10.070186 6.2851242,9.8325687 4.7915309,6.5059294 4.893368,5.9288591 l 0.7128515,3e-7 L 7.1337573,9.4931155 7.2695384,9.1876084 6.522742,6.9132733 V 6.3022576 L 7.1337573,6.1664765 8.084226,9.0178818 8.2200071,9.3233889 8.2539519,9.0178818 7.8126629,7.5242885 8.0502801,7.2866713 l 0.339453,0.1357815 0.8825774,2.3082802 0.271563,1.15414 0.067891,1.425704 0.305507,1.595429 1.0523045,-0.373398 1.086251,-0.644962 0.10183,-1.459647 L 12.36133,9.4591707 11.784264,7.9316324 11.410865,6.4380388 10.222779,4.6389379 8.0502796,3.5187428 5.9117253,3.2132351 4.2484056,2.9077273 2.6869216,3.8581959 1.5667267,5.6233516 0.85387537,7.9316324 1.3291096,11.461944 l 1.9009369,2.81746 z"
+       id="path2"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccc" />
+  </g>
+</svg>
