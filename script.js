@@ -7,7 +7,12 @@ const loadTsv = async (markerType, addFunction) => {
   for (const line of lines) {
     const fields = line.split("\t");
     //// console.log("line - - - " + line);
-    addFunction([Number(fields[0]), Number(fields[1])], markerType, fields[2]);
+    addFunction(
+      [Number(fields[0]), Number(fields[1])],
+      markerType,
+      fields[2],
+      fields[3]
+    );
   }
 };
 
@@ -192,7 +197,7 @@ const mapSetup = () => {
     maxClusterRadius: 60, // default 80
   });
 
-  const add = (latlng, typeName, name, info, moreLink) => {
+  const add = (latlng, typeName, name, link) => {
     const itemMetadata = metadata[typeName];
     const [latitude, longitude] = latlng;
     const typeLabel = itemMetadata.typeLabel || typeName;
@@ -211,7 +216,10 @@ const mapSetup = () => {
 
     const folderImage = `<img src="./images/folder.svg" />`;
 
-    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}</div><div>${name}</div><br/><br/>${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}`;
+    const linkFragment = link
+      ? `<a style="text-decoration: none" href="${link}" target="_info" title="more info">&#x1F517;</a>`
+      : ``;
+    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}</div><div>${name}${linkFragment}</div><br/><br/>${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}`;
     m.bindPopup(pop);
 
     // m.addTo(map);

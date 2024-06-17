@@ -94,12 +94,13 @@ const processFile = async (
           const latitude = to5DP(extractedData.latitude!);
           const longitude = to5DP(extractedData.longitude!);
           const surveyLink = `http://localhost:8000/?l=${extractedData.latitude},${extractedData.longitude}&z=18&satellite`;
-
+          const link = extractedData.link ?? null;
           const item: PlottableItem = {
             latitude,
             longitude,
             title,
             surveyLink,
+            link,
           };
           callback(item);
         }
@@ -171,6 +172,9 @@ const processFileSet = (
           item.longitude,
           item.title,
         ];
+        if (item.link) {
+          lineParts.push(item.link);
+        }
         if (addSurveyLink) {
           lineParts.push(item.surveyLink);
         }
