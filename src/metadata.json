@@ -16,6 +16,7 @@
    "craters": {},
    "cup-and-ring": {},
    "curse": {},
+   "dark-sky": {},
    "dogs": {},
    "erratic": {
       "typeLabel": "Glacial Erratic"
@@ -26,13 +27,13 @@
    "general": {},
    "geo-glyphs": {},
    "geofolds": {},
-   "geoglyphs": {},
    "gravity-hills": {},
    "hauntings": {},
    "hill-forts": {},
    "hominid": {},
    "i-spy": {},
    "manmade-cave": {},
+   "mothman": {},
    "mysteries": {},
    "petrosomatoglyph": {},
    "redwoods": {
@@ -53,5 +54,6 @@
    "ufo": {},
    "vortex": {},
    "weird": {},
+   "witch-hunt-memorial-plaque": {},
    "witch-hunt-memorial": {}
 }
