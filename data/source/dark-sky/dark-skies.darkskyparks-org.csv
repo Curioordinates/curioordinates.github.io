@@ -94,7 +94,6 @@ latitude longitude
 37.30, -113.00  Zion National Park International Dark Sky Park 
 37.48, -3.04  Centro Interpretación Cielo Gorafe Stellar Park 
 37.50, -112.00  Kodachrome Basin State Park International Dark Sky Park 
-37.56, 1.87  Observatorio Cabeza de la Jara Starlight Stellar Park 
 37.60, -110.01  Natural Bridges Dark Sky Park 
 37.62, -78.81  James River State Park International Dark Sky Park 
 37.63, -112.17  Bryce Canyon National Park International Dark Sky Park 
@@ -116,14 +115,12 @@ latitude longitude
 38.42, -4.08  Los Pedroches Starlight Reserve 
 38.47, -107.17  Curecenti International Dark Sky Park 
 38.51, -109.74  Dead Horse Point State Park International Dark Sky Park 
-38.52, 4.31  Valle de Alcudia y Sierra Madrona Starlight Tourism Destination 
 38.57, -110.71  Goblin Valley State Park International Dark Sky Park 
 38.58, -107.74  Black Canyon of the Gunnison International Dark Sky Park 
 38.58, -112.33  Fremont Indian State Park International Dark Sky Park 
 38.67, -90.39  Stacy Park Urban Night Sky Place 
 38.68, -109.57  Arches National Park International Dark Sky Park 
 38.71, -78.15  Rappahannock County Park International Dark Sky Park 
-38.76, 2.38  Sierra de Alcaraz y Campo de Montiel Starlight Tourism Destination 
 38.91, -105.29  Florissant Fossil Beds International Dark Sky Park 
 38.99, -77.97  Sky Meadows State Park International Dark Sky Park 
 39.01, -114.22  Great Basin National Park International Dark Sky Park 
@@ -132,8 +129,6 @@ latitude longitude
 39.80, -1.06  Alto Turia Starlight Tourism Destination 
 39.82, -5.94  Monfragüe Starlight Tourism Destination 
 40.05, -7.95  Aldeias do Xisto Starlight Tourism Destination 
-40.08, 3.88  Menorca Starlight Reserve 
-40.12, 3.01  Senda de Los Pastores Starlight Walking Trail 
 40.13, -1.99  Serranía de Cuenca Starlight Tourism Destination 
 40.23, -0.68  Comarca de Gúdar Javalambre Starlight Reserve 
 40.23, -1.42  El Jabalón Stellar Park 
@@ -267,50 +262,4 @@ latitude longitude
 55.32, -2.34  Northumberland International Dark Sky Park 
 57.24, -3.35  Tomintoul and Glenlivet International Dark Sky Park 
 59.80, -112.00  Wood Buffalo Dark Sky Reserve 
-62.82, 20.54  Campalta Starlight Camp 
-xxx -19.06, -169.92  Niue International Dark Sky Community 
-xxx 22.48, 114.54  Xichong International Dark Sky Community 
-xxx 34.68, 133.55  Bisei Town International Dark Sky Community 
-xxx 38.00, -105.70  Crestone International Dark Sky Community 
-xxx 43.14, 16.84  Jelsa International Dark Sky Community 
-xxx 49.59, 19.30  Sopotnia Dark Sky Community 
-xxx 50.00, 18.73  Palowice Dark Sky Community 
-xxx 50.55, 9.68  Fulda International Dark Sky Community 
-xxx 52.75, 17.64  Izdebno and Chalin Dark Sky Community 
-xxx 53.77, 7.70  Spiekeroog Star Island International Dark Sky Community 
-xxx 53.84, -113.41  Bon Accord International Dark Sky Community 
-xxx 53.98, 20.40  Dobre Miasto Dark Sky Community 
-xxx 54.31, 8.38  Pellworm International Dark Sky Community 
-xxx 55.00, 12.35  Møn and Nyord International Dark Sky Community 
-xxx 56.63, -6.56  Isle of Coll International Dark Sky Community 
-xxx xxx 28.60, -81.82  Groveland International Dark Sky Community 
-xxx xxx 29.99, -98.09  Wimberley Valley International Dark Sky Community 
-xxx xxx 30.10, -98.42  Blanco International Dark Sky Community 
-xxx xxx 30.20, -98.09.43  Dripping Springs International Dark Sky Community 
-xxx xxx 30.27, -98.87  Fredericksburg International Dark Sky Community 
-xxx xxx 30.31, -97.96  Bee Cave International Dark Sky Community 
-xxx xxx 30.56,-98.36  Horseshoe Bay International Dark Sky Community 
-xxx xxx 31.18, -113.00  Springdale International Dark Sky Community 
-xxx xxx 31.20, -111.63.1  Flagstaff International Dark Sky Community 
-xxx xxx 33.08, -116.60  Julian International Dark Sky Community 
-xxx xxx 33.14, -96.97  Lakewood Village International Dark Sky Community 
-xxx xxx 33.25, -116.37  Borrego Springs International Dark Sky Community 
-xxx xxx 33.60, -111.72  Fountain Hills International Dark Sky Community 
-xxx xxx 34.56, -111.85  Camp Verde International Dark Sky Community 
-xxx xxx 34.73, -112.02  Cottonwood International Dark Sky Community 
-xxx xxx 34.80, -111.80  Big Park/Village of Oak Creek International Dark Sky Community 
-xxx xxx 34.87, -111.76  Sedona International Dark Sky Community 
-xxx xxx 36.90, -112.7  Kaibab Paiute Indian Reservation International Dark Sky Community 
-xxx xxx 38.13, -108.29  Norwood International Dark Sky Community 
-xxx xxx 38.13,-105.45  Westcliffe/Silver Cliff International Dark Sky Community 
-xxx xxx 38.15, -107.76  Ridgway International Dark Sky Community 
-xxx xxx 38.24, -108.56  Nucla-Naturita International Dark Sky Community 
-xxx xxx 38.30, -111.42  Torrey International Dark Sky Community 
-xxx xxx 39.69, -110.8  Helper International Dark Sky Community 
-xxx xxx 41.63, -87.94.14  Homer Glenn International Dark Sky Community 
-xxx xxx 41.68, -86.99  Beverley Shores International Dark Sky Community 
-xxx xxx 42.23, -88.07  Hawthorn Woods International Dark Sky Community 
-xxx xxx 43.68, -114.37  Ketchum International Dark Sky Community 
-xxx xxx 49.43,-2.37  Isle of Sark International Dark Sky Community 
-xxx xxx 55.34, -3.44  Moffat International Dark Sky Community 
-xxx xxx 59.37, -2.42  North Ronaldsay Dark Sky Island International Dark Sky Community 
+67.822629, 20.542932  Camp Alta Starlight Camp 
