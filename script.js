@@ -217,7 +217,7 @@ const mapSetup = () => {
     const folderImage = `<img src="./images/folder.svg" />`;
 
     const linkFragment = link
-      ? `<a style="text-decoration: none" href="${link}" target="_info" title="more info">&#x1F517;</a>`
+      ? `&nbsp;<a style="text-decoration: none" href="${link}" target="_info" title="more info">&#x1F517;</a>`
       : ``;
     const pop = `<div id="pop-cat">${folderImage} ${typeLabel}</div><div>${name}${linkFragment}</div><br/><br/>${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}`;
     m.bindPopup(pop);

@@ -111,7 +111,7 @@ export const parseLine = ({ line }: { line: string }): ExtractedData => {
   // Loop while there's still something left on the line
   while (workingLine) {
     const matchArray = workingLine.match(LEADING_NUMBER_REGEX);
-    if (matchArray) {
+    if (numbers.length < 2 && matchArray) {
       const theNumber = matchArray[0];
       numbers.push(Number(theNumber));
       workingLine = workingLine.substring(theNumber.length);
@@ -127,10 +127,10 @@ export const parseLine = ({ line }: { line: string }): ExtractedData => {
       const title = textFragments.shift();
       const details = textFragments.shift();
       if (title) {
-        result.title = title;
+        result.title = title.trim();
       }
       if (details) {
-        result.details = details;
+        result.details = details.trim();
       }
 
       if (numbers.length === 2) {

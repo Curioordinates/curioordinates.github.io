@@ -24,7 +24,7 @@ const getLeafDirName = (path: string): string => {
   return nameParts[0];
 };
 
-const processFile = async (
+export const processFile = async (
   fileName,
   callback: PlottableItemCallback
 ): Promise<void> => {
