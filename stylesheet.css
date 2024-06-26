@@ -3,7 +3,7 @@
 }
 
 .leaflet-popup-content {
-  font-size: 2em;
+  font-size: 0.7cm;
 }
 
 #kofibutton {
@@ -18,8 +18,12 @@
   border: 1px solid black;
   border-radius: 0.4em;
   padding: 5px;
+  white-space: nowrap;
 }
 
+#pop-title {
+  white-space: nowrap;
+}
 #pop-cat img {
   vertical-align: middle;
   height: 1em;

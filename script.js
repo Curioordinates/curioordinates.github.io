@@ -219,14 +219,11 @@ const mapSetup = () => {
     const folderImage = `<img src="./images/folder.svg" />`;
 
     const linkFragment = link
-      ? `&nbsp;<a style="text-decoration: none" href="${link}" target="_info" title="more info">&#x1F517;</a>`
+      ? ` <a style="text-decoration: none" href="${link}" target="_info" title="more info">&#x1F517;</a>`
       : ``;
 
     const secondaryTextDiv = ""; // "<div>more text here.</div";
-    const pop = `<div id="pop-cat">${folderImage}&nbsp;${typeLabel}</div><div style="display: inline-block">${name.replace(
-      / /g,
-      "&nbsp;"
-    )}${linkFragment}</div>${secondaryTextDiv}<br/><br/><br/>${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}`;
+    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}</div><div id="pop-title">${name}${linkFragment}</div>${secondaryTextDiv}<br/><br/><br/>${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}`;
 
     m.bindPopup(pop, { maxWidth: "auto" });
 
