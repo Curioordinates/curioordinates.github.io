@@ -160,7 +160,6 @@ const mapSetup = () => {
   if (qs.follow || qs.l === "me") {
     map.locate({
       setView: true,
-      maxZoom: 12,
       watch: !!qs.follow,
     }); //watch=live
   } else {
@@ -219,7 +218,10 @@ const mapSetup = () => {
     const linkFragment = link
       ? `&nbsp;<a style="text-decoration: none" href="${link}" target="_info" title="more info">&#x1F517;</a>`
       : ``;
-    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}</div><div>${name}${linkFragment}</div><br/><br/>${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}`;
+
+    const secondaryTextDiv = ""; // "<div>more text here.</div";
+    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}</div><div style="display: inline-block">${name}${linkFragment}</div>${secondaryTextDiv}<br/><br/><br/>${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}`;
+
     m.bindPopup(pop);
 
     // m.addTo(map);
@@ -236,12 +238,9 @@ const mapSetup = () => {
   map.addLayer(groupedMarkerLayer);
 
   /*
-  L.marker([52.5825511, 1.6508043], { icon: fort }).addTo(map); // Burgh roman fort
+ 
   L.marker([51.5346703, -0.0575498], { icon: Mx }).addTo(map); //The Viktor Wynd Museum of Curiosities, Fine Art & UnNatural History
 
-  L.marker([51.1784886, -1.8261453], { icon: Cm }).addTo(map); // Stone Henge
-  L.marker([51.4403444, -1.7958463], { icon: Ss }).addTo(map); // Long Tom - standiong stone
-  L.marker([50.70803, -2.44022], { icon: neoearthworks }).addTo(map); // Maumnbury rings
-    add([50.04091, -5.651], "amphitheatre", "The Minac Theatre");
+
     */
 };
