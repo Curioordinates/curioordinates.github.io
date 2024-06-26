@@ -199,7 +199,10 @@ const mapSetup = () => {
   const add = (latlng, typeName, name, link) => {
     const itemMetadata = metadata[typeName];
     const [latitude, longitude] = latlng;
-    const typeLabel = itemMetadata.typeLabel || typeName;
+    const typeLabel = (itemMetadata.typeLabel || typeName).replace(
+      / /g,
+      "&nbsp;"
+    );
     const m = L.marker(latlng, { icon: getMarker(typeName) });
     const googleUrl = `https://www.google.com/maps?ll=${latlng[0]},${latlng[1]}&q=${latlng[0]},${latlng[1]}&hl=en&t=m&z=15`;
     const googleLink = `<a href="${googleUrl}" target="google_tab"><img title="on google maps" src="images/google-maps.svg" width=32 height=32 /></a>`;
@@ -220,9 +223,12 @@ const mapSetup = () => {
       : ``;
 
     const secondaryTextDiv = ""; // "<div>more text here.</div";
-    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}</div><div style="display: inline-block">${name}${linkFragment}</div>${secondaryTextDiv}<br/><br/><br/>${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}`;
+    const pop = `<div id="pop-cat">${folderImage}&nbsp;${typeLabel}</div><div style="display: inline-block">${name.replace(
+      / /g,
+      "&nbsp;"
+    )}${linkFragment}</div>${secondaryTextDiv}<br/><br/><br/>${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}`;
 
-    m.bindPopup(pop);
+    m.bindPopup(pop, { maxWidth: "auto" });
 
     // m.addTo(map);
     groupedMarkerLayer.addLayer(m);
