@@ -223,7 +223,7 @@ const mapSetup = () => {
       : ``;
 
     const secondaryTextDiv = ""; // "<div>more text here.</div";
-    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}</div><div id="pop-title">${name}${linkFragment}</div>${secondaryTextDiv}<br/><br/><br/>${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}`;
+    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}</div><div id="pop-title">${name}${linkFragment}</div>${secondaryTextDiv}<br/><br/><br/><div id="pop-links">${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}</div>`;
 
     m.bindPopup(pop, { maxWidth: "auto" });
 

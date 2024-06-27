@@ -24,6 +24,11 @@
 #pop-title {
   white-space: nowrap;
 }
+
+#pop-links {
+  white-space: nowrap;
+}
+
 #pop-cat img {
   vertical-align: middle;
   height: 1em;
