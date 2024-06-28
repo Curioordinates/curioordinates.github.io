@@ -20,7 +20,8 @@
    "devils-bridge": {},
    "dogs": {},
    "erratic": {
-      "typeLabel": "Glacial Erratic"
+      "typeLabel": "Glacial Erratic",
+      "short_description": "Stones transported by glaciers over 25,000 years ago"
    },
    "event": {},
    "exhibits": {},
@@ -33,7 +34,9 @@
    "hill-forts": {},
    "holy-well": {},
    "hominid": {},
-   "i-spy": {},
+   "i-spy": {
+      "short_description": "Fun things to look out for."
+   },
    "lazy-code": {},
    "manmade-cave": {},
    "merfolk": {},
@@ -41,8 +44,9 @@
    "mysteries": {},
    "petrosomatoglyph": {},
    "prediction": {},
-   "redwoods": {
-      "nameAll": "Giant Redwood"
+   "redwood": {
+      "name_all": "Giant Redwood",
+      "short_description": "Native to California but making special appearances across the globe - it's the worlds largest tree!"
    },
    "sea-monsters": {},
    "settlements": {},

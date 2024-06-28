@@ -156,8 +156,8 @@ const processFileSet = (
         }
         hitMap[hitKey] = directoryName;
 
-        if (params.nameAll && !isVerifiedFile) {
-          item.title = params.nameAll;
+        if (params.name_all && !isVerifiedFile) {
+          item.title = params.name_all;
         }
         if (
           verifiedFileNames.length > 0 &&
@@ -257,26 +257,6 @@ export const go = async () => {
   }
 */
   console.log("Stop hits :" + stopHits);
-  /*
-  processDirectory("./data/source/redwoods/", { nameAll: "Giant Redwood" });
-  processDirectory("./data/source/sea-monsters/", {});
-  processDirectory("./data/source/erratic/", {});
-  processDirectory("./data/source/standing-stones/", {});
-  processDirectory("./data/source/manmade-cave/", {});
-  processDirectory("./data/source/geofolds/", {});
-  processDirectory("./data/source/hauntings/", {});
-  processDirectory("./data/source/exhibits/", {});
-  processDirectory("./data/source/mysteries/", {});
-  processDirectory("./data/source/big-cats/", {});
-  processDirectory("./data/source/strongholds/", {});
-  processDirectory("./data/source/weird/", {});
-  processDirectory("./data/source/fossils/", {});
-  processDirectory("./data/source/dogs/", {});
-  processDirectory("./data/source/sites/", {});
-  processDirectory("./data/source/sub-street/", {});
-  processDirectory("./data/source/tunnels/", {});
-  processDirectory("./data/source/caves/", {});
-  */
 };
 
 go();

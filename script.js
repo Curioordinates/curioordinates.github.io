@@ -222,8 +222,12 @@ const mapSetup = () => {
       ? ` <a style="text-decoration: none" href="${link}" target="_info" title="more info">&#x1F517;</a>`
       : ``;
 
+    const infoIcon = `&#9432;`;
     const secondaryTextDiv = ""; // "<div>more text here.</div";
-    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}</div><div id="pop-title">${name}${linkFragment}</div>${secondaryTextDiv}<br/><br/><br/><div id="pop-links">${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}</div>`;
+    const categoryTip = itemMetadata.short_description
+      ? ` <span id="info-icon" title="${itemMetadata.short_description}">${infoIcon}</span>`
+      : "";
+    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}${categoryTip}</div><div id="pop-title">${name}${linkFragment}</div>${secondaryTextDiv}<br/><br/><br/><div id="pop-links">${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}</div>`;
 
     m.bindPopup(pop, { maxWidth: "auto" });
 
