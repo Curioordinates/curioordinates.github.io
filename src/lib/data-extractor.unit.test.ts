@@ -74,8 +74,7 @@ describe("data-extractor", () => {
 
   it("should parse real wikidata line", () => {
     // given
-    const line =
-      "http://www.wikidata.org/entity/Q3104726,Point(150.863055555 -34.671805555),Kiama Blowhole";
+    const line = "Point(5.71877 50.59213)	Nail Linden of Olne";
 
     // when
     const data = parseLine({ line });

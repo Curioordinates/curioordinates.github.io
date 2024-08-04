@@ -86,8 +86,8 @@ export const parseLine = ({ line }: { line: string }): ExtractedData => {
     workingLine = removeLeadingSeparators(
       workingLine.replace(pointFragment, "\t")
     );
-    const numbers = numbersFromPointFragment(pointFragment);
-    numbers.push(numbers[1], numbers[0]);
+    const pointNumbers = numbersFromPointFragment(pointFragment);
+    numbers.push(pointNumbers[1], pointNumbers[0]);
   }
 
   while (true) {

@@ -1,0 +1,52 @@
+todo
+,label latitude longitude,
+21.1717,72.8311,Banyan Tree
+24.9818,91.3227,Bodhi Tree
+4.2065,100.6342,Tarim Wishing Tree
+17.7725,10.4494,Ténéré Tree
+
+-46.6644,169.0101,Slope Point Wishing Tree
+31.5319,35.1104,Oak of Mamre
+48.8918,2.2351,Arbre Perché
+38.2764,-120.3017,Calaveras Big Trees
+51.1486,-2.7178,Glastonbury Holy Thorn Tree
+7.7491,4.5624,Osun Sacred Grove
+51.4813,-0.1938,The Wishing Tree of Fulham
+42.9368,-122.1069,Old Man of the Lake
+13.8948,44.2853,The Lady of Mount Carmel Tree
+1.3571,103.9877,The Lady of Mount Carmel Tree
+35.6895,139.6917,Tanabata Wishing Tree
+34.8297,134.6936,The Kounotori Wishing Tree
+38.9072,-77.0369,Wish Tree for Washington DC
+40.7128,-74.0060,Wish Tree for New York
+18.9850,-99.0929,Wishing Tree of Tepoztlán
+31.5278,35.1122,Terebinth of Mamre
+27.1767,78.0081,Bhargava Peepal Tree
+22.3964,114.1095,Hong Kong Wishing Banyan
+27.8773,84.5938,Manakamana Wishing Tree
+34.6525,135.5063,Shimenawa Wishing Tree
+23.6123,102.8369,Ancient Mulberry Tree of Jianshui
+13.8133,100.5556,The Wish Tree at Chatuchak Park
+53.1737,-3.7410,Llangernyw Yew
+65.6829,-18.0901,Akureyri Wishing Tree
+54.1013,-6.2074,Kilbroney Oak
+53.5555,-6.3342,The Clonycavan Man Wishing Tree
+49.4630,-2.5522,Little Chapel Wishing Well
+36.2048,138.2529,Tanabata Bamboo Wishing Tree
+-33.8688,151.2093,Eucalyptus Wish Tree
+-37.5911,145.4322,Maroondah Reservoir Wishing Tree
+50.1163,-122.9574,The Whistler Wishing Tree
+56.5850,-4.0484,The Ancient Yew of Fortingall
+34.3939,132.4553,Mitaki-dera Temple Wishing Tree
+53.3708,-6.1829,St. Anne's Park Wishing Tree
+27.4826,83.2769,Buddha Tree in Lumbini
+23.0225,72.5714,The Hanging Tree of Ahmedabad
+35.3606,138.7274,Fuji Wishing Trees
+38.8977,-77.0365,White House Wish Tree
+-3.4653,-62.2159,Kapok Tree in the Amazon
+37.4215,-118.9458,Inyo National Forest Wishing Tree
+54.8475,-4.4943,The Silent Tree of Galloway
+49.3428,-123.1141,Wishing Tree of Capilano
+35.6894,139.692,Shinto Shrine Wishing Tree
+28.4011,-16.5537,El Arbol de la Sabina
+-38.3075,175.3742,Totara Wishing Tree

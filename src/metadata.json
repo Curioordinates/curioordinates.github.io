@@ -6,6 +6,7 @@
    "aqueducts": {},
    "balancing-rock": {},
    "big-cats": {},
+   "black-eyed": {},
    "blowhole": {},
    "bullauns": {},
    "burials": {},
@@ -31,9 +32,11 @@
    "geofolds": {},
    "gravity-hills": {},
    "hauntings": {},
+   "high-strangeness": {},
    "hill-forts": {},
    "holy-well": {},
    "hominid": {},
+   "hum": {},
    "i-spy": {
       "short_description": "Fun things to look out for."
    },
@@ -48,6 +51,7 @@
       "name_all": "Giant Redwood",
       "short_description": "Native to California but making special appearances across the globe - it's the worlds largest tree!"
    },
+   "sacred-tree": {},
    "sea-monsters": {},
    "settlements": {},
    "sites": {},
@@ -63,6 +67,10 @@
    "ufo": {},
    "vortex": {},
    "weird": {},
+   "wishing": {
+      "typeLabel": "Wishing Trees",
+      "short_description": "Trees where either coins are inserted or ribbons tied to mark wishes"
+   },
    "witch-hunt-memorial-plaque": {},
    "witch-hunt-memorial": {}
 }
