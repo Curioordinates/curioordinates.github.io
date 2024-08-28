@@ -47,7 +47,10 @@ export const processFile = async (
       console.log(trimmedLine);
       const line = isTsvFile
         ? trimmedLine
-        : trimmedLine.replace(/,/g, "\t").replace(/\t /g, ", ");
+        : trimmedLine
+            .replace(/,/g, "\t")
+            .replace(/\t /g, ", ")
+            .replace(/\t_/g, ",_"); // This specifically covers comma+underscore in wikipedia-link-slugs
 
       if (!columnNamesRead) {
         // header line
@@ -58,7 +61,7 @@ export const processFile = async (
           columnNameMap[name] = index;
         });
       } else {
-        const extractedData = parseLine({ line: rawLine });
+        const extractedData = parseLine({ line });
         /*
         // data line
         const fields = line.split("\t");

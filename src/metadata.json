@@ -34,6 +34,7 @@
    "hauntings": {},
    "high-strangeness": {},
    "hill-forts": {},
+   "hogback-grave": {},
    "holy-well": {},
    "hominid": {},
    "hum": {},
@@ -46,6 +47,7 @@
    "mothman": {},
    "mysteries": {},
    "petrosomatoglyph": {},
+   "podcast": {},
    "prediction": {},
    "redwood": {
       "name_all": "Giant Redwood",
@@ -61,6 +63,7 @@
    "strongholds": {},
    "sub-street": {},
    "temples": {},
+   "thin-place": {},
    "timeslip": {},
    "towers": {},
    "tunnels": {},
@@ -69,7 +72,7 @@
    "weird": {},
    "wishing": {
       "typeLabel": "Wishing Trees",
-      "short_description": "Trees where either coins are inserted or ribbons tied to mark wishes"
+      "short_description": "Trees where either coins are inserted (not recommended) or ribbons tied to mark wishes"
    },
    "witch-hunt-memorial-plaque": {},
    "witch-hunt-memorial": {}
