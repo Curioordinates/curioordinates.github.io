@@ -1,0 +1,6 @@
+latitude,longitude,label,link
+0.000001,0.00001,Null Island,https://en.wikipedia.org/wiki/Null_Island
+45,90,45x90 Point,https://en.wikipedia.org/wiki/45%C3%9790_points
+-45,90,45x90 Point,https://en.wikipedia.org/wiki/45%C3%9790_points
+45,-90,45x90 Point (Monument),https://en.wikipedia.org/wiki/45%C3%9790_points
+-45,-90,45x90 Point,https://en.wikipedia.org/wiki/45%C3%9790_points
