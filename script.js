@@ -226,7 +226,7 @@ const mapSetup = () => {
     const secondaryTextDiv =
       typeLabel !== "the-drop"
         ? ""
-        : `This&nbsp;'lurkers&nbsp;latrine'&nbsp;has&nbsp;become&nbsp;a notorious spot and the local authorities are determined to end such degenerate use of the public space. One offical was was prompted to comment "Stephen Sherwood we know it's you!"`; // "<div>more text here.</div";
+        : `This&nbsp;'lurkers&nbsp;latrine'&nbsp;has&nbsp;become&nbsp;a notorious spot and the local authorities are determined to end such degenerate use of the public space. One official was was prompted to comment "Stephen Sherwood we know it's you!"`; // "<div>more text here.</div";
     const categoryTip = itemMetadata.short_description
       ? ` <span id="info-icon" title="${itemMetadata.short_description}">${infoIcon}</span>`
       : "";
