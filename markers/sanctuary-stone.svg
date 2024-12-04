@@ -7,9 +7,9 @@
    viewBox="0 0 15 15"
    version="1.1"
    id="svg1"
-   inkscape:export-filename="bitmap.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
+   inkscape:export-filename="sanctuary-stone.png"
+   inkscape:export-xdpi="108.98936"
+   inkscape:export-ydpi="108.98936"
    inkscape:version="1.3.2 (091e20e, 2023-11-25)"
    sodipodi:docname="sanctuary-stone.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showguides="false"
-     inkscape:zoom="13.098835"
-     inkscape:cx="13.207281"
-     inkscape:cy="19.46738"
+     inkscape:zoom="7.0362233"
+     inkscape:cx="39.651953"
+     inkscape:cy="14.496413"
      inkscape:window-width="1792"
      inkscape:window-height="993"
      inkscape:window-x="0"
@@ -160,7 +160,7 @@
        id="path3" />
     <path
        style="fill:#67a43e;fill-opacity:1;stroke:none;stroke-width:0.299999;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.746988"
-       d="M 10.008485,10.597489 9.3388382,9.0983279 9.2731866,10.32605 9.2600559,9.5942583 9.1944043,10.848905 8.7742336,9.7783867 8.8136252,11.017961 8.1439781,10.757295 8.3540634,11.279093 7.9732837,10.990445 v 1.050029 l -0.4595615,-0.465812 0.065652,1.464658 z"
+       d="M 10.002261,10.502955 9.3342847,8.9457551 9.2687969,10.221008 9.255699,9.4608852 9.1902112,10.764105 8.7710888,9.6521419 8.8103821,10.939705 8.1424057,10.668948 8.3519669,11.210947 7.9721371,10.911125 v 1.090679 l -0.4584149,-0.483846 0.065488,1.521362 z"
        id="path3-9" />
   </g>
 </svg>
