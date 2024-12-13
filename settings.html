@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      #tags-div {
+        font-size: large;
+        border: 2px inset gray;
+        padding: 5px;
+        overflow: scroll;
+      }
+      button {
+        font-size: xx-large;
+      }
+      .controls {
+        display: flex;
+        padding: 5px;
+      }
+      .expand {
+        flex-grow: 2;
+      }
+      .default {
+        background: palegreen;
+      }
+    </style>
+    <script src="settings.js"></script>
+  </head>
+  <body onload="setup()">
+    <div id="tags-div"></div>
+    <div class="controls">
+      <button id="cancel">Cancel</button>
+      <div class="expand"></div>
+      <button id="apply" class="default">Apply</button>
+    </div>
+  </body>
+</html>

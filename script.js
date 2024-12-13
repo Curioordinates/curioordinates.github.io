@@ -16,6 +16,12 @@ const loadTsv = async (markerType, addFunction) => {
   }
 };
 
+const savedSettingsString = localStorage.getItem("settings");
+const savedSettings = savedSettingsString
+  ? JSON.parse(savedSettingsString)
+  : { enabled: [] };
+console.log("got local:" + JSON.stringify(savedSettings));
+
 const qs = {};
 const parseLocation = () => {
   const url = window.location.href;
@@ -143,8 +149,8 @@ const mapSetup = () => {
 
   const rewriteUrl = () => {
     const { lat, lng } = map.getCenter();
-    qs.latitude = Number(lat);
-    qs.longitude = Number(lng);
+    qs.latitude = Number(lat).toFixed(5);
+    qs.longitude = Number(lng).toFixed(5);
     qs.z = map.getZoom();
     const parts = [`l=${qs.latitude},${qs.longitude}`, `z=${qs.z}`];
     if (qs.satellite || qs.sat) parts.push("satellite");
@@ -240,8 +246,28 @@ const mapSetup = () => {
 
   L.tileLayer(...tileLayer).addTo(map);
 
-  const tagsToLoad = tagsPresentInUrl.length ? tagsPresentInUrl : allTags;
+  // Url tags override settings.
+  const requestedTags = tagsPresentInUrl.length
+    ? tagsPresentInUrl
+    : savedSettings.enabled;
+
+  console.log("requestedTags: " + JSON.stringify(requestedTags));
+
+  const tagsToLoad = requestedTags.length ? requestedTags : allTags;
+  console.log("tagsToLoad:" + JSON.stringify(tagsToLoad));
   for (const tagToLoad of tagsToLoad) {
+    const tagMetadata = metadata[tagToLoad];
+    if (!tagMetadata) {
+      continue;
+    }
+    const shouldLoad =
+      tagMetadata.implicit !== false ||
+      requestedTags.includes(tagToLoad) ||
+      requestedTags.includes("all");
+    if (!shouldLoad) {
+      console.log(`Skipping ${tagToLoad} as not implicit and not requested`);
+      continue;
+    }
     loadTsv(tagToLoad, add);
   }
 
