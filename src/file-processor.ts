@@ -119,15 +119,14 @@ const processFileSet = (
   directoryName: string,
   fileNames: string[],
   featureType: string,
-  params: Record<string, string>
-) => {
+  params: Record<string, string | number>
+): number => {
   const verifiedFileNames = fileNames.filter((name) =>
     name.includes("verified")
   );
+  const fileLines: string[] = [];
   if (fileNames.length) {
     //    const featureType = getLeafDirName(fileNames[0]);
-    const fileLines: string[] = [];
-
     for (const fileName of fileNames) {
       const isVerifiedFile = fileName.includes("verified");
       processFile(fileName, (item: PlottableItem) => {
@@ -160,7 +159,7 @@ const processFileSet = (
         hitMap[hitKey] = directoryName;
 
         if (params.name_all && !isVerifiedFile) {
-          item.title = params.name_all;
+          item.title = params.name_all.toString();
         }
         if (
           verifiedFileNames.length > 0 &&
@@ -187,20 +186,21 @@ const processFileSet = (
 
     fs.writeFileSync(`./data/cells/${featureType}.tsv`, fileLines.join("\n"));
   }
+  return fileLines.length;
 };
 
 const processDirectory = (
   directoryName: string,
   featureType: string,
-  params: Record<string, string>
-) => {
+  params: Record<string, string | number>
+): number => {
   const items = fs.readdirSync(directoryName);
 
   const targetItems = items
     .filter((item) => item.endsWith(".csv") || item.endsWith(".tsv"))
     .map((item) => path.join(directoryName, item));
   console.log(targetItems);
-  processFileSet(directoryName, targetItems, featureType, params);
+  return processFileSet(directoryName, targetItems, featureType, params);
 };
 
 const stops: { latitude: number; longitude: number }[] = [];
@@ -220,7 +220,9 @@ export const go = async () => {
         return; // stops are handled elsewhere.
       }
 
-      let metadata = {};
+      let metadata = {
+        count: 0,
+      };
       const keyName =
         foundDirectory.relativeSteps[foundDirectory.relativeSteps.length - 1];
       try {
@@ -238,7 +240,13 @@ export const go = async () => {
       console.log("DIRECTORY: " + foundDirectory.directoryPath);
       console.log("META: " + JSON.stringify(metadata));
 
-      processDirectory(foundDirectory.directoryPath, keyName, metadata);
+      const itemCount = processDirectory(
+        foundDirectory.directoryPath,
+        keyName,
+        metadata
+      );
+
+      metadata.count = itemCount;
     },
   });
 

@@ -1,110 +1,285 @@
 {
-   "amphitheatre-site": {},
-   "amphitheatre": {},
-   "ancient-road": {},
-   "apotropaic": {},
-   "aqueduct": {},
-   "balancing-rock": {},
-   "big-cat": {},
-   "black-eyed": {},
-   "blowhole": {},
-   "bullaun": {},
-   "burial": {},
-   "chambered-cairn": {},
-   "cairn": {},
-   "canine": {},
-   "cartoquirk": {},
-   "cave": {},
-   "celtic-cross": {},
-   "coffin-rest": {},
-   "crater": {},
-   "cup-and-ring": {},
-   "curse": {},
-   "dark-sky": {},
-   "devils-bridge": {},
+   "amphitheatre-site": {
+      "count": 49
+   },
+   "amphitheatre": {
+      "count": 191
+   },
+   "ancient-road": {
+      "count": 2
+   },
+   "apotropaic": {
+      "count": 13
+   },
+   "aqueduct": {
+      "count": 61
+   },
+   "balancing-rock": {
+      "count": 13
+   },
+   "big-cat": {
+      "count": 3
+   },
+   "black-eyed": {
+      "count": 1
+   },
+   "blowhole": {
+      "count": 17
+   },
+   "bullaun": {
+      "count": 32
+   },
+   "burial": {
+      "count": 2
+   },
+   "chambered-cairn": {
+      "count": 325
+   },
+   "cairn": {
+      "count": 6
+   },
+   "canine": {
+      "count": 6
+   },
+   "cartoquirk": {
+      "count": 5
+   },
+   "cave": {
+      "count": 14
+   },
+   "celtic-cross": {
+      "count": 1
+   },
+   "coffin-rest": {
+      "count": 2
+   },
+   "crater": {
+      "count": 24
+   },
+   "cup-and-ring": {
+      "count": 294
+   },
+   "curse": {
+      "count": 22
+   },
+   "dark-sky": {
+      "count": 261
+   },
+   "devils-bridge": {
+      "count": 1
+   },
    "erratic": {
       "typeLabel": "Glacial Erratic",
-      "short_description": "Stones transported by glaciers over 25,000 years ago"
+      "short_description": "Stones transported by glaciers over 25,000 years ago",
+      "count": 220
    },
-   "event": {},
-   "exhibit": {},
-   "fairy": {},
-   "folklore": {},
-   "fossil": {},
-   "general": {},
-   "geo-glyph": {},
-   "geofold": {},
-   "ghost-horse": {},
-   "ghost-light": {},
-   "ghost-sign": {},
-   "ghost-walk": {},
-   "gravity-hill": {},
-   "haunting": {},
-   "henge": {},
-   "high-strangeness": {},
-   "hill-fort": {},
-   "hoard": {},
-   "hogback-grave": {},
-   "holy-well": {},
-   "hominid": {},
-   "hum": {},
+   "event": {
+      "count": 2
+   },
+   "exhibit": {
+      "count": 10
+   },
+   "fairy": {
+      "count": 4
+   },
+   "folklore": {
+      "count": 1
+   },
+   "fossil": {
+      "count": 3
+   },
+   "general": {
+      "count": 1
+   },
+   "geo-glyph": {
+      "count": 91
+   },
+   "geofold": {
+      "count": 3
+   },
+   "ghost-horse": {
+      "count": 1
+   },
+   "ghost-light": {
+      "count": 3
+   },
+   "ghost-sign": {
+      "count": 1
+   },
+   "ghost-walk": {
+      "count": 30
+   },
+   "gravity-hill": {
+      "count": 6
+   },
+   "haunting": {
+      "count": 490
+   },
+   "henge": {
+      "count": 2
+   },
+   "high-strangeness": {
+      "count": 3
+   },
+   "hill-fort": {
+      "count": 7
+   },
+   "hoard": {
+      "count": 143
+   },
+   "hogback-grave": {
+      "count": 22
+   },
+   "holy-well": {
+      "count": 363
+   },
+   "hominid": {
+      "count": 3
+   },
+   "hum": {
+      "count": 3
+   },
    "i-spy": {
-      "short_description": "Fun things to look out for."
+      "short_description": "Fun things to look out for.",
+      "count": 59
    },
-   "lazy-code": {},
-   "manmade-cave": {},
-   "marian-apparition": {},
-   "merfolk": {},
-   "mothman": {},
-   "motte-and-bailey": {},
-   "mummified-person": {},
-   "mystery": {},
-   "occult-shop": {},
-   "ossuary": {},
-   "pagan": {},
-   "petrosomatoglyph": {},
+   "lazy-code": {
+      "count": 4
+   },
+   "manmade-cave": {
+      "count": 8
+   },
+   "marian-apparition": {
+      "count": 35
+   },
+   "merfolk": {
+      "count": 9
+   },
+   "mothman": {
+      "count": 2
+   },
+   "motte-and-bailey": {
+      "count": 14
+   },
+   "mummified-person": {
+      "count": 6
+   },
+   "mystery": {
+      "count": 4
+   },
+   "occult-shop": {
+      "count": 34
+   },
+   "ossuary": {
+      "count": 304
+   },
+   "pagan": {
+      "count": 1
+   },
+   "petrosomatoglyph": {
+      "count": 1
+   },
    "plague-stone": {
-      "short_description": "Holes in the stone were filled with vinegar in to 'sterilize' coins payed by plague sufferers"
+      "short_description": "Holes in the stone were filled with vinegar in to 'sterilize' coins payed by plague sufferers",
+      "count": 2
    },
-   "podcast": {},
-   "prediction": {},
+   "podcast": {
+      "count": 69
+   },
+   "prediction": {
+      "count": 1
+   },
    "public-bookcase": {
-      "implicit": false
+      "implicit": false,
+      "count": 7394
    },
    "redwood": {
       "name_all": "Giant Redwood",
-      "short_description": "Native to California but making special appearances across the globe - it's the worlds largest tree!"
+      "short_description": "Native to California but making special appearances across the globe - it's the worlds largest tree!",
+      "count": 212
    },
-   "sacred-tree": {},
-   "sanctuary-stone": {},
-   "sea-monster": {},
-   "settlement": {},
-   "sheela-na-gig": {},
-   "simulacrum": {},
-   "site": {},
-   "runestone": {},
-   "standing-stone": {},
-   "stone-circle": {},
-   "stronghold": {},
-   "sub-street": {},
-   "temple": {},
-   "the-drop": {},
-   "thin-place": {},
-   "timeslip": {},
-   "tower": {},
-   "tunnel": {},
-   "ufo": {},
-   "unique": {},
-   "vile-vortex": {},
-   "vortex": {},
-   "weird": {},
+   "sacred-tree": {
+      "count": 35
+   },
+   "sanctuary-stone": {
+      "count": 8
+   },
+   "sea-monster": {
+      "count": 15
+   },
+   "settlement": {
+      "count": 13
+   },
+   "sheela-na-gig": {
+      "count": 7
+   },
+   "simulacrum": {
+      "count": 2
+   },
+   "site": {
+      "count": 2
+   },
+   "runestone": {
+      "count": 995
+   },
+   "standing-stone": {
+      "count": 287
+   },
+   "stone-circle": {
+      "count": 584
+   },
+   "stronghold": {
+      "count": 11
+   },
+   "sub-street": {
+      "count": 7
+   },
+   "temple": {
+      "count": 2
+   },
+   "the-drop": {
+      "count": 1
+   },
+   "thin-place": {
+      "count": 10
+   },
+   "timeslip": {
+      "count": 2
+   },
+   "tower": {
+      "count": 7
+   },
+   "tunnel": {
+      "count": 3
+   },
+   "ufo": {
+      "count": 2
+   },
+   "unique": {
+      "count": 2
+   },
+   "vile-vortex": {
+      "count": 12
+   },
+   "vortex": {
+      "count": 1
+   },
+   "weird": {
+      "count": 2
+   },
    "wishing": {
       "typeLabel": "Wishing Trees",
-      "short_description": "Trees where either coins are inserted (not recommended) or ribbons tied to mark wishes"
+      "short_description": "Trees where either coins are inserted (not recommended) or ribbons tied to mark wishes",
+      "count": 23
    },
-   "witch-hunt-memorial-plaque": {},
-   "witch-hunt-memorial": {},
+   "witch-hunt-memorial-plaque": {
+      "count": 6
+   },
+   "witch-hunt-memorial": {
+      "count": 19
+   },
    "world-heritage": {
-      "implicit": false
+      "implicit": true,
+      "count": 1198
    }
 }
