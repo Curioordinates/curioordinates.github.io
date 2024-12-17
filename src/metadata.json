@@ -125,7 +125,7 @@
       "count": 7
    },
    "hoard": {
-      "count": 143
+      "count": 105
    },
    "hogback-grave": {
       "count": 22
@@ -153,7 +153,7 @@
       "count": 35
    },
    "merfolk": {
-      "count": 9
+      "count": 17
    },
    "mothman": {
       "count": 2
@@ -185,6 +185,9 @@
    },
    "podcast": {
       "count": 69
+   },
+   "practitioner": {
+      "count": 10
    },
    "prediction": {
       "count": 1
