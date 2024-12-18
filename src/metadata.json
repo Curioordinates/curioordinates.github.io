@@ -152,8 +152,11 @@
    "marian-apparition": {
       "count": 35
    },
+   "medicine-wheel": {
+      "count": 3
+   },
    "merfolk": {
-      "count": 17
+      "count": 22
    },
    "mothman": {
       "count": 2
@@ -184,10 +187,13 @@
       "count": 2
    },
    "podcast": {
-      "count": 69
+      "count": 2
+   },
+   "podcast-episode": {
+      "count": 67
    },
    "practitioner": {
-      "count": 10
+      "count": 11
    },
    "prediction": {
       "count": 1
