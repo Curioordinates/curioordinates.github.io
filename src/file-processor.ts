@@ -166,7 +166,7 @@ const processFileSet = (
           !verifiedFileNames.includes(fileName)
         ) {
           // anything not in the verified file is unverified.
-          item.title += " (unverified)";
+          // item.title += " (unverified)";
         }
 
         const lineParts: (string | number)[] = [
