@@ -19,7 +19,7 @@ const loadTsv = async (markerType, addFunction) => {
 const savedSettingsString = localStorage.getItem("settings");
 const savedSettings = savedSettingsString
   ? JSON.parse(savedSettingsString)
-  : { enabled: [] };
+  : { show: [], hide: [] };
 console.log("got local:" + JSON.stringify(savedSettings));
 
 const qs = {};
@@ -249,7 +249,7 @@ const mapSetup = () => {
   // Url tags override settings.
   const requestedTags = tagsPresentInUrl.length
     ? tagsPresentInUrl
-    : savedSettings.enabled;
+    : savedSettings.show ?? savedSettings.enabled;
 
   console.log("requestedTags: " + JSON.stringify(requestedTags));
 
