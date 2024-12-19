@@ -2,6 +2,11 @@ TODO
 
 Why are't Cairns being shown as unverified.
 
+New Categories
+Entrances to argatha
+ley lines
+"Earth Mysteries" ?
+
 Couldn't determine 'Hangmans tree" near "Kirkstone pass inn"
 (Woman hanged from it for murdering her child - womans ghots seen.)
 

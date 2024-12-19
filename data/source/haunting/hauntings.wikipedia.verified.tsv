@@ -6,7 +6,6 @@ latitude	longitude	label	link
 -34.588055555556	-58.393055555556	La Recoleta Cemetery	https://en.wikipedia.org/wiki/La_Recoleta_Cemetery
 -34.8683	147.57581	Monte Cristo Homestead	https://en.wikipedia.org/wiki/Monte_Cristo_Homestead
 -35.30222222222222	149.12972222222223	Old Parliament House - Canberra	https://en.wikipedia.org/wiki/Old_Parliament_House,_Canberra
--35.30694444	149.13388889	Hotel Kurrajong	https://en.wikipedia.org/wiki/Hotel_Kurrajong
 -36.3692	146.696	Beechworth Asylum	https://en.wikipedia.org/wiki/Beechworth_Asylum
 -37.28	142.93	Aradale Mental Hospital	https://en.wikipedia.org/wiki/Aradale_Mental_Hospital
 -37.810722222222225	144.97235	Princess Theatre - Melbourne	https://en.wikipedia.org/wiki/Princess_Theatre,_Melbourne
@@ -56,9 +55,7 @@ latitude	longitude	label	link
 14.55825	120.98579	Cultural Center of the Philippines Complex	https://en.wikipedia.org/wiki/Cultural_Center_of_the_Philippines_Complex
 14.564282	120.993789	Chapel of the Most Blessed Sacrament	https://en.wikipedia.org/wiki/Chapel_of_the_Most_Blessed_Sacrament
 14.57777778	120.98583333	Philippine General Hospital	https://en.wikipedia.org/wiki/Philippine_General_Hospital
-14.5798	120.9781	Luneta Hotel	https://en.wikipedia.org/wiki/Luneta_Hotel
 14.58132	120.9888	Paco Park	https://en.wikipedia.org/wiki/Paco_Park
-14.58319722	120.97429722	Manila Hotel	https://en.wikipedia.org/wiki/Manila_Hotel
 14.589733333333	120.97514722222	Casa Manila	https://en.wikipedia.org/wiki/Casa_Manila
 14.589793	120.981617	Manila City Hall	https://en.wikipedia.org/wiki/Manila_City_Hall
 14.590497	121.058258	Saint Pedro Poveda College	https://en.wikipedia.org/wiki/Saint_Pedro_Poveda_College
@@ -74,7 +71,6 @@ latitude	longitude	label	link
 14.633	120.989	Manila North Cemetery	https://en.wikipedia.org/wiki/Manila_North_Cemetery
 14.634305	121.02269444	Capitol Medical Center	https://en.wikipedia.org/wiki/Capitol_Medical_Center
 14.95838	120.96326	San Juan de Dios Church (San Rafael)	https://en.wikipedia.org/wiki/San_Juan_de_Dios_Church_(San_Rafael)
-15.030172222222223	73.99477222222222	Sina Hotel	https://en.wikipedia.org/wiki/Sina_Hotel
 15.0509057	73.9875984	Agonda	https://en.wikipedia.org/wiki/Agonda
 15.09641357189292	120.93958608795688	Bahay na Pula	https://en.wikipedia.org/wiki/Bahay_na_Pula
 15.13572	120.59148	Pamintuan Mansion	https://en.wikipedia.org/wiki/Pamintuan_Mansion
@@ -82,7 +78,6 @@ latitude	longitude	label	link
 15.315133333333334	73.99589722222223	D%27Mello House	https://en.wikipedia.org/wiki/D%27Mello_House
 16.3606	120.62	Philippine Military Academy	https://en.wikipedia.org/wiki/Philippine_Military_Academy
 16.375	120.61944444444	Loakan Airport	https://en.wikipedia.org/wiki/Loakan_Airport
-16.40722222	120.60805556	Hyatt Terraces Hotel	https://en.wikipedia.org/wiki/Hyatt_Terraces_Hotel
 16.40955	120.60052	Casa Vallejo	https://en.wikipedia.org/wiki/Casa_Vallejo
 16.4111	120.60472	Laperal White House	https://en.wikipedia.org/wiki/Laperal_White_House
 16.41222	120.60806	Teacher%27s Camp	https://en.wikipedia.org/wiki/Teacher%27s_Camp
@@ -91,7 +86,6 @@ latitude	longitude	label	link
 18.51226	120.5979	Cape Bojeador Lighthouse	https://en.wikipedia.org/wiki/Cape_Bojeador_Lighthouse
 18.51916667	73.85527778	Shaniwar Wada	https://en.wikipedia.org/wiki/Shaniwar_Wada
 18.839722	98.959444	700th Anniversary Stadium	https://en.wikipedia.org/wiki/700th_Anniversary_Stadium
-18.922585	72.833154	Taj Mahal Palace Hotel	https://en.wikipedia.org/wiki/Taj_Mahal_Palace_Hotel
 19.31596111	-98.47110556	Chautla Hacienda	https://en.wikipedia.org/wiki/Chautla_Hacienda
 19.413055555556	-99.197777777778	Chapultepec	https://en.wikipedia.org/wiki/Chapultepec
 19.430142	-99.133855	House of the Count De la Torre Cos%C3%ADo y la Cortina - Mexico City	https://en.wikipedia.org/wiki/House_of_the_Count_De_la_Torre_Cos%C3%ADo_y_la_Cortina,_Mexico_City
@@ -149,7 +143,6 @@ latitude	longitude	label	link
 22.557777777777776	88.33805555555556	Fort William - India	https://en.wikipedia.org/wiki/Fort_William,_India
 22.559479	88.343854	East Bengal Ground	https://en.wikipedia.org/wiki/East_Bengal_Ground
 22.560555555556	88.286944444444	Acharya Jagadish Chandra Bose Indian Botanic Garden	https://en.wikipedia.org/wiki/Acharya_Jagadish_Chandra_Bose_Indian_Botanic_Garden
-22.56159	88.35109	Grand Hotel (Kolkata)	https://en.wikipedia.org/wiki/Grand_Hotel_(Kolkata)
 22.562035	88.342223	Mohun Bagan Ground	https://en.wikipedia.org/wiki/Mohun_Bagan_Ground
 22.562342	88.345871	Mohammedan Sporting Ground	https://en.wikipedia.org/wiki/Mohammedan_Sporting_Ground
 22.562789	88.3671	Calcutta Boys%27 School	https://en.wikipedia.org/wiki/Calcutta_Boys%27_School
@@ -203,7 +196,6 @@ latitude	longitude	label	link
 26.8835669	88.2871083	Victoria Boys%27 School	https://en.wikipedia.org/wiki/Victoria_Boys%27_School
 27.04538	88.460942	Morgan House - Kalimpong	https://en.wikipedia.org/wiki/Morgan_House,_Kalimpong
 27.095833333333335	76.2875	Bhangarh Fort	https://en.wikipedia.org/wiki/Bhangarh_Fort
-27.708889	-82.7375	Don CeSar Hotel	https://en.wikipedia.org/wiki/Don_CeSar_Hotel
 27.81428417	-97.38981418	USS Lexington (CV-16)	https://en.wikipedia.org/wiki/USS_Lexington_(CV-16)
 28.489503	-16.314904	Museum of the History of Tenerife	https://en.wikipedia.org/wiki/Museum_of_the_History_of_Tenerife
 28.519577	77.187119	Jamali Kamali Mosque and Tomb	https://en.wikipedia.org/wiki/Jamali_Kamali_Mosque_and_Tomb
@@ -211,19 +203,14 @@ latitude	longitude	label	link
 28.613888888888887	77.2088888888889	New Delhi	https://en.wikipedia.org/wiki/New_Delhi
 28.66	77.23	Old Delhi	https://en.wikipedia.org/wiki/Old_Delhi
 28.6612711	77.2362243	Lothian Cemetery	https://en.wikipedia.org/wiki/Lothian_Cemetery
-29.4247	-98.4864	Menger Hotel	https://en.wikipedia.org/wiki/Menger_Hotel
 29.716131666667	-95.390569444444	Houston Zoo	https://en.wikipedia.org/wiki/Houston_Zoo
 29.976111	31.132778	Pyramids of Giza	https://en.wikipedia.org/wiki/Pyramids_of_Giza
-3.425397	101.794204	First World Hotel	https://en.wikipedia.org/wiki/First_World_Hotel
 3.430597	101.788894	Amber Court	https://en.wikipedia.org/wiki/Amber_Court
 30.086667	31.330278	Baron Empain Palace	https://en.wikipedia.org/wiki/Baron_Empain_Palace
-30.268056	-97.741667	Driskill Hotel	https://en.wikipedia.org/wiki/Driskill_Hotel
 30.328888888889	35.440277777778	Petra	https://en.wikipedia.org/wiki/Petra
-30.4601	78.0617	Savoy Hotel - Mussoorie	https://en.wikipedia.org/wiki/Savoy_Hotel,_Mussoorie
 30.589512	-84.574821	Leaf Theater	https://en.wikipedia.org/wiki/Leaf_Theater
 30.685833333333	-88.050833333333	Church Street Graveyard	https://en.wikipedia.org/wiki/Church_Street_Graveyard
 31.206272488687574	121.43362104133811	Wukang Mansion	https://en.wikipedia.org/wiki/Wukang_Mansion
-31.4424	-109.914	Copper Queen Hotel	https://en.wikipedia.org/wiki/Copper_Queen_Hotel
 31.7119	-110.065	Bird Cage Theatre	https://en.wikipedia.org/wiki/Bird_Cage_Theatre
 32.080972222222	-81.092083333333	Moon River Brewing Company	https://en.wikipedia.org/wiki/Moon_River_Brewing_Company
 32.413056	-87.028889	Sturdivant Hall	https://en.wikipedia.org/wiki/Sturdivant_Hall
@@ -233,7 +220,6 @@ latitude	longitude	label	link
 33.10222222	-86.86416667	Edmund King House	https://en.wikipedia.org/wiki/Edmund_King_House
 33.1976	-87.5619	Dr. John R. Drish House	https://en.wikipedia.org/wiki/Dr._John_R._Drish_House
 33.261769	-88.095086	Pickens County Courthouse (Alabama)	https://en.wikipedia.org/wiki/Pickens_County_Courthouse_(Alabama)
-33.450555555556	-112.07416666667	Hotel San Carlos (Phoenix)	https://en.wikipedia.org/wiki/Hotel_San_Carlos_(Phoenix)
 33.4997	-117.663	El Adobe de Capistrano	https://en.wikipedia.org/wiki/El_Adobe_de_Capistrano
 33.7542	-84.6633	Lithia Springs High School	https://en.wikipedia.org/wiki/Lithia_Springs_High_School
 34.232	132.554	Kure Naval Arsenal	https://en.wikipedia.org/wiki/Kure_Naval_Arsenal
@@ -244,7 +230,6 @@ latitude	longitude	label	link
 35.108333	-77.041944	Attmore-Oliver House	https://en.wikipedia.org/wiki/Attmore-Oliver_House
 35.14	-90.055278	Orpheum Theater (Memphis - Tennessee)	https://en.wikipedia.org/wiki/Orpheum_Theater_(Memphis,_Tennessee)
 35.1918	-114.06	Lee Williams High School	https://en.wikipedia.org/wiki/Lee_Williams_High_School
-35.1982	-111.647	Hotel Monte Vista	https://en.wikipedia.org/wiki/Hotel_Monte_Vista
 35.29	139.66	Yokosuka Naval Arsenal	https://en.wikipedia.org/wiki/Yokosuka_Naval_Arsenal
 35.65297	139.252153	Hachi%C5%8Dji Castle	https://en.wikipedia.org/wiki/Hachi%C5%8Dji_Castle
 35.676028	139.738611	Prudential Tower (Tokyo)	https://en.wikipedia.org/wiki/Prudential_Tower_(Tokyo)
@@ -253,8 +238,6 @@ latitude	longitude	label	link
 35.90309	-86.85834	Carnton	https://en.wikipedia.org/wiki/Carnton
 36.0697	-79.7918	Carolina Theatre of Greensboro	https://en.wikipedia.org/wiki/Carolina_Theatre_of_Greensboro
 36.152347222222	136.27209722222	Maruoka Castle	https://en.wikipedia.org/wiki/Maruoka_Castle
-36.4084	-93.7373	Crescent Hotel (Eureka Springs - Arkansas)	https://en.wikipedia.org/wiki/Crescent_Hotel_(Eureka_Springs,_Arkansas)
-36.505	-104.921	St. James Hotel (Cimarron - New Mexico)	https://en.wikipedia.org/wiki/St._James_Hotel_(Cimarron,_New_Mexico)
 36.591389	-87.055556	Bell Witch Cave	https://en.wikipedia.org/wiki/Bell_Witch_Cave
 37.25892	127.1181	Korean Folk Village	https://en.wikipedia.org/wiki/Korean_Folk_Village
 37.31836	-121.95076	Winchester Mystery House	https://en.wikipedia.org/wiki/Winchester_Mystery_House
@@ -268,7 +251,6 @@ latitude	longitude	label	link
 38.889802777777774	-77.00911388888889	United States Capitol	https://en.wikipedia.org/wiki/United_States_Capitol
 38.8963	-77.0415	The Octagon House	https://en.wikipedia.org/wiki/The_Octagon_House
 38.897777777777776	-77.03666666666666	White House	https://en.wikipedia.org/wiki/White_House
-38.9314	-74.9243	Congress Hall (Cape May hotel)	https://en.wikipedia.org/wiki/Congress_Hall_(Cape_May_hotel)
 38.9403	-74.9141	Emlen Physick Estate	https://en.wikipedia.org/wiki/Emlen_Physick_Estate
 39.0386	-80.4714	Trans-Allegheny Lunatic Asylum	https://en.wikipedia.org/wiki/Trans-Allegheny_Lunatic_Asylum
 39.0753	-94.5811	Union Cemetery (Kansas City - Missouri)	https://en.wikipedia.org/wiki/Union_Cemetery_(Kansas_City,_Missouri)
@@ -289,7 +271,6 @@ latitude	longitude	label	link
 4.598415	-74.076538	Palacio Li%C3%A9vano	https://en.wikipedia.org/wiki/Palacio_Li%C3%A9vano
 4.598802	-74.07074	Silva Poetry House	https://en.wikipedia.org/wiki/Silva_Poetry_House
 40.2492	-111.649	Harold B. Lee Library	https://en.wikipedia.org/wiki/Harold_B._Lee_Library
-40.383333	-105.518333	Stanley Hotel	https://en.wikipedia.org/wiki/Stanley_Hotel
 40.396667	-91.381111	E. H. Harrison House	https://en.wikipedia.org/wiki/E._H._Harrison_House
 40.416666666667	116.08333333333	Great Wall of China	https://en.wikipedia.org/wiki/Great_Wall_of_China
 40.4199	-3.6921	Palace of Linares	https://en.wikipedia.org/wiki/Palace_of_Linares
@@ -314,13 +295,11 @@ latitude	longitude	label	link
 42.391111	-71.210556	Walter E. Fernald Developmental Center	https://en.wikipedia.org/wiki/Walter_E._Fernald_Developmental_Center
 42.40555556	-71.21361111	Metropolitan State Hospital (Massachusetts)	https://en.wikipedia.org/wiki/Metropolitan_State_Hospital_(Massachusetts)
 42.521944	-70.884722	House of the Seven Gables	https://en.wikipedia.org/wiki/House_of_the_Seven_Gables
-42.5228	-70.8902	Hawthorne Hotel	https://en.wikipedia.org/wiki/Hawthorne_Hotel
 42.634722	-73.763889	Cherry Hill (Albany - New York)	https://en.wikipedia.org/wiki/Cherry_Hill_(Albany,_New_York)
 42.6526	-73.7574	New York State Capitol	https://en.wikipedia.org/wiki/New_York_State_Capitol
 42.863	-112.454	Pocatello High School	https://en.wikipedia.org/wiki/Pocatello_High_School
 42.89325	-78.923816666667	Old Fort Erie	https://en.wikipedia.org/wiki/Old_Fort_Erie
 42.9859	-81.2511	Grand Theatre (London - Ontario)	https://en.wikipedia.org/wiki/Grand_Theatre_(London,_Ontario)
-43.039136	-87.9057	The Pfister Hotel	https://en.wikipedia.org/wiki/The_Pfister_Hotel
 43.075833	-89.401111	University of Wisconsin Science Hall	https://en.wikipedia.org/wiki/University_of_Wisconsin_Science_Hall
 43.116666666667	-79.066666666667	Niagara Falls - Ontario	https://en.wikipedia.org/wiki/Niagara_Falls,_Ontario
 43.250833333333	-79.061111111111	Fort George - Ontario	https://en.wikipedia.org/wiki/Fort_George,_Ontario
@@ -346,7 +325,6 @@ latitude	longitude	label	link
 45.4247	-75.6888	Ottawa Jail Hostel	https://en.wikipedia.org/wiki/Ottawa_Jail_Hostel
 45.4258	-75.6978	Bytown Museum	https://en.wikipedia.org/wiki/Bytown_Museum
 45.493333333333	-73.576944444444	Grey Nuns Motherhouse	https://en.wikipedia.org/wiki/Grey_Nuns_Motherhouse
-45.5006	-73.5678	Queen Elizabeth Hotel	https://en.wikipedia.org/wiki/Queen_Elizabeth_Hotel
 45.51	-73.55	Auberge Le Saint-Gabriel	https://en.wikipedia.org/wiki/Auberge_Le_Saint-Gabriel
 45.511889	-122.625417	Bagdad Theater	https://en.wikipedia.org/wiki/Bagdad_Theater
 45.5233	-122.676	Roseland Theater	https://en.wikipedia.org/wiki/Roseland_Theater
@@ -356,7 +334,6 @@ latitude	longitude	label	link
 45.7904	-74.2923	St. John%27s Shrewsbury Anglican Church	https://en.wikipedia.org/wiki/St._John%27s_Shrewsbury_Anglican_Church
 45.8925	-59.985	Fortress of Louisbourg	https://en.wikipedia.org/wiki/Fortress_of_Louisbourg
 46.014444	-112.539167	Copper King Mansion	https://en.wikipedia.org/wiki/Copper_King_Mansion
-46.200556	-112.0925	Boulder Hot Springs Hotel	https://en.wikipedia.org/wiki/Boulder_Hot_Springs_Hotel
 46.54473	-87.39205	Landmark Inn	https://en.wikipedia.org/wiki/Landmark_Inn
 46.7761	-92.1246	Enger Tower	https://en.wikipedia.org/wiki/Enger_Tower
 46.812777777778	-71.206666666667	Cathedral of the Holy Trinity (Quebec)	https://en.wikipedia.org/wiki/Cathedral_of_the_Holy_Trinity_(Quebec)
@@ -370,7 +347,6 @@ latitude	longitude	label	link
 47.9249	-97.0502	Saint Anne%27s Guest Home	https://en.wikipedia.org/wiki/Saint_Anne%27s_Guest_Home
 47.975555555556	-2.2738888888889	Ch%C3%A2teau de Tr%C3%A9cesson	https://en.wikipedia.org/wiki/Ch%C3%A2teau_de_Tr%C3%A9cesson
 48.1473862383572	11.5806060998637	Codex germanicus monacensis	https://en.wikipedia.org/wiki/Codex_germanicus_monacensis
-48.4218	-123.368	The Empress (hotel)	https://en.wikipedia.org/wiki/The_Empress_(hotel)
 48.42263888888889	-123.34375	Craigdarroch Castle	https://en.wikipedia.org/wiki/Craigdarroch_Castle
 48.4343	-123.472	Hatley Park National Historic Site	https://en.wikipedia.org/wiki/Hatley_Park_National_Historic_Site
 48.804722222222225	2.120277777777778	Palace of Versailles	https://en.wikipedia.org/wiki/Palace_of_Versailles
@@ -383,14 +359,12 @@ latitude	longitude	label	link
 49.2157	-122.929	New Westminster Secondary School	https://en.wikipedia.org/wiki/New_Westminster_Secondary_School
 49.2182	-122.8946	British Columbia Penitentiary	https://en.wikipedia.org/wiki/British_Columbia_Penitentiary
 49.28	-123.12	Vogue Theatre	https://en.wikipedia.org/wiki/Vogue_Theatre
-49.283839	-123.120959	Hotel Vancouver	https://en.wikipedia.org/wiki/Hotel_Vancouver
 49.285833333333	-123.11166666667	Waterfront Station (Vancouver)	https://en.wikipedia.org/wiki/Waterfront_Station_(Vancouver)
 49.412222222222	8.71	Heidelberg	https://en.wikipedia.org/wiki/Heidelberg
 49.4388756	14.1924053	Zv%C3%ADkov Castle	https://en.wikipedia.org/wiki/Zv%C3%ADkov_Castle
 49.6739	-103.874	Souris Valley Mental Health Hospital	https://en.wikipedia.org/wiki/Souris_Valley_Mental_Health_Hospital
 49.793333	8.668333	Frankenstein Castle	https://en.wikipedia.org/wiki/Frankenstein_Castle
 49.866666666667	8.65	Darmstadt	https://en.wikipedia.org/wiki/Darmstadt
-49.88777777777778	-97.13666666666667	Fort Garry Hotel	https://en.wikipedia.org/wiki/Fort_Garry_Hotel
 49.8958	-97.1436	Burton Cummings Theatre	https://en.wikipedia.org/wiki/Burton_Cummings_Theatre
 49.898491944444444	-97.13680388888889	Royal Manitoba Theatre Centre	https://en.wikipedia.org/wiki/Royal_Manitoba_Theatre_Centre
 49.9512	-98.3276	Fort La Reine	https://en.wikipedia.org/wiki/Fort_La_Reine
@@ -409,13 +383,11 @@ latitude	longitude	label	link
 50.87202	-1.57206	Glasshayes House	https://en.wikipedia.org/wiki/Glasshayes_House
 50.9705	-1.78391	Breamore House	https://en.wikipedia.org/wiki/Breamore_House
 50.97085	-1.78419	Breamore Priory	https://en.wikipedia.org/wiki/Breamore_Priory
-51.164166666667	-115.56166666667	Banff Springs Hotel	https://en.wikipedia.org/wiki/Banff_Springs_Hotel
 51.4034	-0.337499	Hampton Court Palace	https://en.wikipedia.org/wiki/Hampton_Court_Palace
 51.4479	0.159314	Hall Place	https://en.wikipedia.org/wiki/Hall_Place
 51.5082	-0.076198055555556	Tower of London	https://en.wikipedia.org/wiki/Tower_of_London
 51.50886808	-0.145908002	50 Berkeley Square	https://en.wikipedia.org/wiki/50_Berkeley_Square
 51.51305555555555	-0.12027777777777778	Theatre Royal - Drury Lane	https://en.wikipedia.org/wiki/Theatre_Royal,_Drury_Lane
-51.51777777777778	-0.1436111111111111	Langham Hotel	https://en.wikipedia.org/wiki/Langham_Hotel
 51.519444444444446	-0.12694444444444444	British Museum	https://en.wikipedia.org/wiki/British_Museum
 51.5761	0.1853	Brookside Theatre	https://en.wikipedia.org/wiki/Brookside_Theatre
 51.59916666666667	-0.07527777777777778	Bruce Castle	https://en.wikipedia.org/wiki/Bruce_Castle
@@ -433,7 +405,6 @@ latitude	longitude	label	link
 51.9964	-0.5025	Flitwick Manor	https://en.wikipedia.org/wiki/Flitwick_Manor
 52.041	-9.531	Ross Castle	https://en.wikipedia.org/wiki/Ross_Castle
 52.0546	0.6942	Borley Rectory (demolished)	https://en.wikipedia.org/wiki/Borley_Rectory
-52.1236	-1.64003	Ettington Park Hotel	https://en.wikipedia.org/wiki/Ettington_Park_Hotel
 52.12707	-106.69612	St. Paul%27s Hospital (Saskatoon)	https://en.wikipedia.org/wiki/St._Paul%27s_Hospital_(Saskatoon)
 52.4141	-1.40819	Coombe Abbey	https://en.wikipedia.org/wiki/Coombe_Abbey
 52.51861111111111	13.376111111111111	Reichstag building	https://en.wikipedia.org/wiki/Reichstag_building
@@ -448,20 +419,17 @@ latitude	longitude	label	link
 53.1389	-0.000555556	RAF East Kirkby	https://en.wikipedia.org/wiki/RAF_East_Kirkby
 53.2604	-7.5279	Charleville Castle	https://en.wikipedia.org/wiki/Charleville_Castle
 53.3026	-1.34722	Renishaw Hall	https://en.wikipedia.org/wiki/Renishaw_Hall
-53.33893	-6.256092	Shelbourne Hotel	https://en.wikipedia.org/wiki/Shelbourne_Hotel
 53.34166666666667	-6.309444444444445	Kilmainham Gaol	https://en.wikipedia.org/wiki/Kilmainham_Gaol
 53.347564	-6.275403	St. Michan%27s Church	https://en.wikipedia.org/wiki/St._Michan%27s_Church
 53.4074	-2.9813	Royal Court Theatre - Liverpool	https://en.wikipedia.org/wiki/Royal_Court_Theatre,_Liverpool
 53.444722222222	-6.165	Malahide Castle	https://en.wikipedia.org/wiki/Malahide_Castle
 53.5014	-113.581	Fort Edmonton Park	https://en.wikipedia.org/wiki/Fort_Edmonton_Park
 53.518055555556	-113.49722222222	Old Strathcona	https://en.wikipedia.org/wiki/Old_Strathcona
-53.5403	-113.489	Hotel Macdonald	https://en.wikipedia.org/wiki/Hotel_Macdonald
 53.6064	-0.421944	RAF Elsham Wolds	https://en.wikipedia.org/wiki/RAF_Elsham_Wolds
 53.7329	-2.5735	Hoghton Tower	https://en.wikipedia.org/wiki/Hoghton_Tower
 54.6856	-6.6555	Springhill House	https://en.wikipedia.org/wiki/Springhill_House
 54.898888888889	-5.8611111111111	Ballygally Castle	https://en.wikipedia.org/wiki/Ballygally_Castle
 55.5258	-1.9041	Chillingham Castle	https://en.wikipedia.org/wiki/Chillingham_Castle
-58.300278	-134.405	Alaskan Hotel and Bar	https://en.wikipedia.org/wiki/Alaskan_Hotel_and_Bar
 6.1177777777778	-75.585	La Catedral	https://en.wikipedia.org/wiki/La_Catedral
 60.157872	24.958425	Villa Kleineh	https://en.wikipedia.org/wiki/Villa_Kleineh
 60.16333333	24.93305556	Alexander Theatre	https://en.wikipedia.org/wiki/Alexander_Theatre
