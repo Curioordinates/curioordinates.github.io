@@ -1,50 +1,50 @@
 latitude	longitude	label	link
 32.506568	34.897378	Caesarea Maritima
-34.253315	35.660419	Botrus (Batroun)	http://localhost:8000/?l=34.253315,35.660419&z=18&satellite
-34.635409	5.522764	Gemellae (M'lili)	http://localhost:8000/?l=34.635409,5.522764&z=18&satellite
-35.058004	24.958405	Gortyn (Gortyn)	http://localhost:8000/?l=35.058004,24.958405&z=18&satellite
-35.826	10.64	Hadrumentum (Sousse)	http://localhost:8000/?l=35.826,10.64&z=18&satellite
-36.133958	10.377445	Upenna (Enfida)	http://localhost:8000/?l=36.133958,10.377445&z=18&satellite
-36.186	8.7	Sicca Veneria (El Kef)	http://localhost:8000/?l=36.186,8.7&z=18&satellite
-36.4	10.616667	Pupput (Hammamet)	http://localhost:8000/?l=36.4,10.616667&z=18&satellite
-36.50468	9.081555	Thignica (Ain Tounga)	http://localhost:8000/?l=36.50468,9.081555&z=18&satellite
-36.829485	9.841089	Thurburbo Minus (Thebourba)	http://localhost:8000/?l=36.829485,9.841089&z=18&satellite
-37.507335	15.085354	Catăna (Catania)	http://localhost:8000/?l=37.507335,15.085354&z=18&satellite
-39.593526	8.481682	Frusinum (Frosinone)	http://localhost:8000/?l=39.593526,8.481682&z=18&satellite
-40.851843	14.255639	Neapolis (Naples)	http://localhost:8000/?l=40.851843,14.255639&z=18&satellite
-40.91667	14.78333	Abellinum (Avellino)	http://localhost:8000/?l=40.91667,14.78333&z=18&satellite
-40.9170733	14.02956627	Liternum	http://localhost:8000/?l=40.9170733,14.02956627&z=18&satellite
-41.222051	16.055983	Canusium (Canosa di Puglia)	http://localhost:8000/?l=41.222051,16.055983&z=18&satellite
-41.26667	13.61667	Formiae (Formia)	http://localhost:8000/?l=41.26667,13.61667&z=18&satellite
-41.45	12.61667	Antium (Anzio)	http://localhost:8000/?l=41.45,12.61667&z=18&satellite
-41.5	13.7	Aquinum (Aquino)	http://localhost:8000/?l=41.5,13.7&z=18&satellite
-41.68333	12.7	Lanuvium (Lanuvio)	http://localhost:8000/?l=41.68333,12.7&z=18&satellite
-42.111279	14.707821	Histonium (Vasto)	http://localhost:8000/?l=42.111279,14.707821&z=18&satellite
-42.697803	23.330031	Serdica (Sofia)	http://localhost:8000/?l=42.697803,23.330031&z=18&satellite
-42.778637	12.413282	Tutere (Todi)	http://localhost:8000/?l=42.778637,12.413282&z=18&satellite
-42.855678	13.570776	Asculum (Ascoli Piceno)	http://localhost:8000/?l=42.855678,13.570776&z=18&satellite
-43.1836	3.0042	Narbo Martius (Narbonne)	http://localhost:8000/?l=43.1836,3.0042&z=18&satellite
-43.222222	27.569444	Marcianopolis (Devnya)	http://localhost:8000/?l=43.222222,27.569444&z=18&satellite
-43.876569	5.397437	Apta Julia (Apt)	http://localhost:8000/?l=43.876569,5.397437&z=18&satellite
-44.204938	0.613258	Aginnum (Agen)	http://localhost:8000/?l=44.204938,0.613258&z=18&satellite
-44.4455	1.4408	Cassinomagus (Chassenon)	http://localhost:8000/?l=44.4455,1.4408&z=18&satellite
-44.71666667	21.16666667	Viminacium (Stari Kostolac)	http://localhost:8000/?l=44.71666667,21.16666667&z=18&satellite
-45.5492	12.4001	Altinum (Altino)	http://localhost:8000/?l=45.5492,12.4001&z=18&satellite
-45.740766	7.323419	Augusta Praetoria Salassorum (Aosta)	http://localhost:8000/?l=45.740766,7.323419&z=18&satellite
-45.8	11.91667	Acelum (Asolo)	http://localhost:8000/?l=45.8,11.91667&z=18&satellite
-45.830446	1.251743	Augustoritum (Limoges)	http://localhost:8000/?l=45.830446,1.251743&z=18&satellite
-46.766744	15.567417	Flavia Solva (Leibnitz)	http://localhost:8000/?l=46.766744,15.567417&z=18&satellite
-47.0845	2.39087	Avaricum (Bourges)	http://localhost:8000/?l=47.0845,2.39087&z=18&satellite
-47.500461	9.747879	Brigantium (Bregenz) - civil	http://localhost:8000/?l=47.500461,9.747879&z=18&satellite
-48.200036	3.292997	Agedincum (Sens)	http://localhost:8000/?l=48.200036,3.292997&z=18&satellite
-49.119631	6.172198	Divodurum (Metz)	http://localhost:8000/?l=49.119631,6.172198&z=18&satellite
-49.53402	2.174333	Samarobriva (Amiens)	http://localhost:8000/?l=49.53402,2.174333&z=18&satellite
-50.835448	-0.772496	Noviomagus Reginorum (Chichester)	http://localhost:8000/?l=50.835448,-0.772496&z=18&satellite
-51.612381	-2.766406	Venta Silurum (Caerwent)	http://localhost:8000/?l=51.612381,-2.766406&z=18&satellite
-51.670833	-1.362222	Frilford	http://localhost:8000/?l=51.670833,-1.362222&z=18&satellite
-51.861286	6.045742	Ulpia Noviomagus Batavorum (Nijmegen)	http://localhost:8000/?l=51.861286,6.045742&z=18&satellite
-51.883333	0.9	Camulodunum (Colchester)	http://localhost:8000/?l=51.883333,0.9&z=18&satellite
-52.579979	1.288262	Venta Icenorum (Caistor St Edmund)	http://localhost:8000/?l=52.579979,1.288262&z=18&satellite
-52.666667	-2.65	Virocorium Cornoviorum (Wroxeter)	http://localhost:8000/?l=52.666667,-2.65&z=18&satellite
-52.931914	-3.923463	(Tomen-y-Mur)	http://localhost:8000/?l=52.931914,-3.923463&z=18&satellite
-55.6026	-2.6775	Trimontium (Newstead)	http://localhost:8000/?l=55.6026,-2.6775&z=18&satellite
+34.253315	35.660419	Botrus (Batroun)	
+34.635409	5.522764	Gemellae (M'lili)	
+35.058004	24.958405	Gortyn (Gortyn)	
+35.826	10.64	Hadrumentum (Sousse)	
+36.133958	10.377445	Upenna (Enfida)	
+36.186	8.7	Sicca Veneria (El Kef)	
+36.4	10.616667	Pupput (Hammamet)	
+36.50468	9.081555	Thignica (Ain Tounga)	
+36.829485	9.841089	Thurburbo Minus (Thebourba)	
+37.507335	15.085354	Catăna (Catania)	
+39.593526	8.481682	Frusinum (Frosinone)	
+40.851843	14.255639	Neapolis (Naples)	
+40.91667	14.78333	Abellinum (Avellino)	
+40.9170733	14.02956627	Liternum	
+41.222051	16.055983	Canusium (Canosa di Puglia)	
+41.26667	13.61667	Formiae (Formia)	
+41.45	12.61667	Antium (Anzio)	
+41.5	13.7	Aquinum (Aquino)	
+41.68333	12.7	Lanuvium (Lanuvio)	
+42.111279	14.707821	Histonium (Vasto)	
+42.697803	23.330031	Serdica (Sofia)	
+42.778637	12.413282	Tutere (Todi)	
+42.855678	13.570776	Asculum (Ascoli Piceno)	
+43.1836	3.0042	Narbo Martius (Narbonne)	
+43.222222	27.569444	Marcianopolis (Devnya)	
+43.876569	5.397437	Apta Julia (Apt)	
+44.204938	0.613258	Aginnum (Agen)	
+44.4455	1.4408	Cassinomagus (Chassenon)	
+44.71666667	21.16666667	Viminacium (Stari Kostolac)	
+45.5492	12.4001	Altinum (Altino)	
+45.740766	7.323419	Augusta Praetoria Salassorum (Aosta)	
+45.8	11.91667	Acelum (Asolo)	
+45.830446	1.251743	Augustoritum (Limoges)	
+46.766744	15.567417	Flavia Solva (Leibnitz)	
+47.0845	2.39087	Avaricum (Bourges)	
+47.500461	9.747879	Brigantium (Bregenz) - civil	
+48.200036	3.292997	Agedincum (Sens)	
+49.119631	6.172198	Divodurum (Metz)	
+49.53402	2.174333	Samarobriva (Amiens)	
+50.835448	-0.772496	Noviomagus Reginorum (Chichester)	
+51.612381	-2.766406	Venta Silurum (Caerwent)	
+51.670833	-1.362222	Frilford	
+51.861286	6.045742	Ulpia Noviomagus Batavorum (Nijmegen)	
+51.883333	0.9	Camulodunum (Colchester)	
+52.579979	1.288262	Venta Icenorum (Caistor St Edmund)	
+52.666667	-2.65	Virocorium Cornoviorum (Wroxeter)	
+52.931914	-3.923463	(Tomen-y-Mur)	
+55.6026	-2.6775	Trimontium (Newstead)	
