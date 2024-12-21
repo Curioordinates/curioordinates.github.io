@@ -145,6 +145,14 @@ const mapSetup = () => {
 
   //#endregion
 
+  // Url tags override settings.
+  const requestedTags = tagsPresentInUrl.length
+    ? tagsPresentInUrl
+    : savedSettings.show ?? savedSettings.enabled;
+  console.log("requestedTags: " + JSON.stringify(requestedTags));
+  const tagsToLoad = requestedTags.length ? requestedTags : allTags;
+  console.log("tagsToLoad:" + JSON.stringify(tagsToLoad));
+
   var map = L.map("map");
 
   const rewriteUrl = () => {
@@ -193,12 +201,14 @@ const mapSetup = () => {
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     },
   ];
-  //#endregion
 
   const tileLayer = qs.satellite || qs.sat ? satellite : stadiaSmooth;
+  //#endregion
+
+  const noGrouping = lowercaseUrl.includes("ungroup");
 
   const groupedMarkerLayer = L.markerClusterGroup({
-    disableClusteringAtZoom: 11,
+    disableClusteringAtZoom: noGrouping ? 1 : 11,
     maxClusterRadius: 60, // default 80
   });
 
@@ -246,15 +256,6 @@ const mapSetup = () => {
 
   L.tileLayer(...tileLayer).addTo(map);
 
-  // Url tags override settings.
-  const requestedTags = tagsPresentInUrl.length
-    ? tagsPresentInUrl
-    : savedSettings.show ?? savedSettings.enabled;
-
-  console.log("requestedTags: " + JSON.stringify(requestedTags));
-
-  const tagsToLoad = requestedTags.length ? requestedTags : allTags;
-  console.log("tagsToLoad:" + JSON.stringify(tagsToLoad));
   for (const tagToLoad of tagsToLoad) {
     const tagMetadata = metadata[tagToLoad];
     if (!tagMetadata) {
@@ -276,7 +277,6 @@ const mapSetup = () => {
   /*
  
   L.marker([51.5346703, -0.0575498], { icon: Mx }).addTo(map); //The Viktor Wynd Museum of Curiosities, Fine Art & UnNatural History
-
 
     */
 };

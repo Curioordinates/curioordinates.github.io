@@ -1,0 +1,47 @@
+Country,Ghost Tour,Website,Latitude,Longitude
+Argentina,"Ghosts of Recoleta Cemetery (Buenos Aires)","https://www.buenostours.com",-34.588266,-58.393369
+Canada,"Ghosts of Quebec City","https://www.ghosttoursofquebec.com",46.811098,-71.206870
+Chile,"Santiago Ghost Tours","https://tours4tips.com",-33.437798,-70.650445
+China,"Beijing Ghost Tour","https://www.newmantours.com/beijing-ghost-tour",39.943192,116.396151
+Colombia,"Bogotá Ghost Tour","https://bogotapass.com",4.598136,-74.075048
+Costa Rica,"San José Ghost Tour","http://www.carpechepe.com",9.933333,-84.078898
+Croatia,"Dubrovnik Ghosts and Mysteries","https://www.viator.com/tours/Dubrovnik/Dubrovnik-Scary-Stories-and-Dark-History/d904-12956P10",42.641313,18.106604
+Czech Republic,"Prague Ghosts and Legends Tour","https://www.mcgeesghosttours.com",50.087146,14.428858
+Denmark,"Ghostwalk in Copenhagen","https://www.ghosttour.dk",55.675869,12.567380
+Estonia,"Tallinn Ghost and Legends Tour","https://www.getyourguide.com/tallinn-l394/tallinn-ghosts-and-legends-tour-t39772",59.436961,24.753575
+Finland,"Helsinki Ghost Walk","https://www.getyourguide.com/helsinki-l13/helsinki-2-hour-ghost-tour-t222751",60.169900,24.952000
+France,"Paris Ghost and Mystery Tour","https://www.viator.com/tours/Paris/Ghosts-Walk-of-Paris/d479-3671P64",48.852215,2.344186
+Germany,"Berlin Ghost Walk","https://originalberlintours.com/tours/berlin-ghost-tour/",52.522800,13.402200
+Greece,"Athens Dark Myths Tour","https://www.getyourguide.com/athens-l91/athens-2-hour-night-tour-dark-myths-and-legends-t390345",37.976141,23.725804
+Guatemala,"Antigua Guatemala Ghost Tour","https://antiguatours.net",14.557215,-90.732326
+Hungary,"Budapest Ghost Tour","https://www.viator.com/tours/Budapest/Ghosts-and-Legends-of-Buda-Castle-Tour/d499-23390P2",47.497913,19.040236
+Iceland,"Reykjavik Haunted Walk","https://reykjavikghostwalk.com",64.147194,-21.937871
+India,"Delhi Haunted Walk (Jamali Kamali)","https://www.delhiwalks.in/haunted-walk",28.520489,77.185534
+Ireland,"Dublin Gravedigger Ghost Tour","https://www.thegravediggertour.ie",53.347809,-6.259722
+Italy,"Ghosts of Venice Tour","https://veniceghostwalks.com",45.434296,12.339722
+Jamaica,"Rose Hall Great House Night Tour (Montego Bay)","https://rosehall.com",18.501169,-77.802556
+Japan,"Tokyo Ghost Tour","https://www.viator.com/tours/Tokyo/Tokyo-Ghost-Tour/d334-85886P2",35.690921,139.700258
+Lithuania,"Vilnius Ghost Tour","https://www.getyourguide.com/vilnius-l2455/vilnius-old-town-2-hour-ghost-tour-t168958",54.685151,25.286501
+Malta,"Valletta Ghost Tour","https://www.viator.com/tours/Valletta/The-Original-Valletta-Ghost-Tour/d4142-149890P1",35.897721,14.512955
+Mexico,"Mexico City Ghost Tour","https://www.getyourguide.com/mexico-city-l194/mexico-city-2-hour-historic-center-night-walking-tour-t350523",19.432607,-99.133208
+Netherlands,"Amsterdam Ghost Walk","https://www.viator.com/Amsterdam-attractions/Haunted-Amsterdam/d525-a19069",52.373108,4.893294
+New Zealand,"Spookers Haunted Attraction (Auckland)","https://spookers.co.nz",-37.171389,174.853056
+Norway,"Oslo Ghost Walk","https://www.getyourguide.com/oslo-l38/oslo-fear-and-ghost-walking-tour-t435931",59.913330,10.739111
+Peru,"Lima Haunted Tour","https://www.limabywalking.com/",-12.046374,-77.042793
+Philippines,"Intramuros Ghost Walk (Manila)","https://www.viator.com/tours/Manila/Intramuros-Ghost-Walk/d4674-12974P9",14.594175,120.971064
+Poland,"Krakow Macabre Tour","https://www.getyourguide.com/krakow-l40/krakow-2-hour-macabre-tour-of-the-old-town-t178164",50.061947,19.937522
+Portugal,"Lisbon Ghost Tour","https://www.lisbonghosttour.com",38.714356,-9.139218
+Romania,"Transylvania (Bran Castle) Dracula Tour","https://www.transylvania-tours.ro",45.515669,25.367470
+Serbia,"Belgrade Underground and Dungeons Tour","https://belgradewalkingtours.com",44.822124,20.450990
+Singapore,"Creepy Tales of Old Changi Hospital","https://supernaturalconfessions.com",1.384526,103.980502
+Slovakia,"Bratislava Ghost Tour","https://www.bratislavaforever.com",48.143889,17.108611
+Slovenia,"Ljubljana Ghost Walk","https://www.visitljubljana.com",46.052199,14.506343
+South Africa,"Cape Town Ghost Walk","https://www.goodhopeadventures.com",-33.925443,18.427239
+South Korea,"Seoul Ghost Walking Tour","https://www.viator.com/tours/Seoul/Seoul-Real-Ghost-Story-Tour-in-Korean-Modern-History/d973-7173P35",37.575928,126.977089
+Spain,"Madrid Ghost Tour","https://www.madridghosttour.com",40.416775,-3.703790
+Sweden,"Stockholm Ghost Walk","https://stockholmghostwalk.com",59.324451,18.071769
+Thailand,"Bangkok Ghost Tour","https://www.getyourguide.com/bangkok-l169/bangkok-ghost-story-walking-tour-t95182",13.756331,100.501762
+Turkey,"Istanbul Haunted Tour","https://www.viator.com/tours/Istanbul/Haunted-Constantinople/d585-159079P1",41.008583,28.980175
+United Kingdom,"Edinburgh Ghost Tour","https://www.mercattours.com/tours/ghost-tours",55.949562,-3.186990
+United States,"New Orleans Ghost Tour","https://www.hauntedhistorytours.com",29.957444,-90.062968
+Vietnam,"Hanoi Ghost Tour","https://www.viator.com/tours/Hanoi/Hanoi-Ghost-Tour/d351-206136P3",21.028511,105.848167
