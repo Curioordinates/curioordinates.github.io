@@ -4,6 +4,7 @@
 
 .leaflet-popup-content {
   font-size: 0.7cm;
+  min-width: 10cm;
 }
 
 #kofibutton {
@@ -35,6 +36,10 @@
 
 #pop-title {
   white-space: nowrap;
+}
+
+#pop-details {
+  color: gray;
 }
 
 #pop-links {

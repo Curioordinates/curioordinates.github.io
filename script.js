@@ -11,7 +11,8 @@ const loadTsv = async (markerType, addFunction) => {
       [Number(fields[0]), Number(fields[1])],
       markerType,
       fields[2],
-      fields[3]
+      fields[3],
+      fields[4]
     );
   }
 };
@@ -212,7 +213,7 @@ const mapSetup = () => {
     maxClusterRadius: 60, // default 80
   });
 
-  const add = (latlng, typeName, name, link) => {
+  const add = (latlng, typeName, name, link, details) => {
     const itemMetadata = metadata[typeName];
     const [latitude, longitude] = latlng;
     const typeLabel = (itemMetadata.typeLabel || typeName).replace(
@@ -234,19 +235,25 @@ const mapSetup = () => {
 
     const folderImage = `<img src="./images/folder.svg" />`;
 
-    const linkFragment = link
-      ? ` <a style="text-decoration: none" href="${link}" target="_info" title="more info">&#x1F517;</a>`
-      : ``;
+    const linkFragment =
+      link && link !== "-" && link !== "/"
+        ? ` <a style="text-decoration: none" href="${link}" target="_info" title="more info">&#x1F517;</a>`
+        : ``;
 
     const infoIcon = `&#9432;`;
-    const secondaryTextDiv =
+    let secondaryTextDiv =
       typeLabel !== "the-drop"
         ? ""
         : `This&nbsp;'lurkers&nbsp;latrine'&nbsp;has&nbsp;become&nbsp;a notorious spot and the local authorities are determined to end such degenerate use of the public space.`; // "<div>more text here.</div";
+
+    if (details) {
+      secondaryTextDiv = details;
+    }
+
     const categoryTip = itemMetadata.short_description
       ? ` <span id="info-icon" title="${itemMetadata.short_description}">${infoIcon}</span>`
       : "";
-    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}${categoryTip}</div><div id="pop-title">${name}${linkFragment}</div>${secondaryTextDiv}<br/><br/><br/><div id="pop-links">${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}</div>`;
+    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}${categoryTip}</div><div id="pop-title">${name}${linkFragment}</div><div id="pop-details">${secondaryTextDiv}</div><br><div id="pop-links">${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}</div>`;
 
     m.bindPopup(pop, { maxWidth: "auto" });
 

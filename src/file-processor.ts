@@ -104,6 +104,7 @@ export const processFile = async (
             title,
             surveyLink,
             link,
+            details: extractedData.details ?? null,
           };
           callback(item);
         }
@@ -176,6 +177,13 @@ const processFileSet = (
         ];
         if (item.link) {
           lineParts.push(item.link);
+        } else {
+          if (item.details) {
+            lineParts.push("-"); // Only need padding if something is coming after.
+          }
+        }
+        if (item.details) {
+          lineParts.push(item.details);
         }
         if (addSurveyLink) {
           lineParts.push(item.surveyLink);
