@@ -177,7 +177,7 @@
       "count": 20
    },
    "occult-shop": {
-      "count": 71
+      "count": 87
    },
    "ossuary": {
       "count": 304
@@ -272,6 +272,9 @@
    },
    "unique": {
       "count": 2
+   },
+   "unmarked-door": {
+      "count": 1
    },
    "vile-vortex": {
       "count": 12
