@@ -240,22 +240,46 @@ const mapSetup = () => {
         ? ` <a style="text-decoration: none" href="${link}" target="_info" title="more info">&#x1F517;</a>`
         : ``;
 
-    const infoIcon = `&#9432;`;
-    let secondaryTextDiv =
-      typeLabel !== "the-drop"
-        ? ""
-        : `This&nbsp;'lurkers&nbsp;latrine'&nbsp;has&nbsp;become&nbsp;a notorious spot and the local authorities are determined to end such degenerate use of the public space.`; // "<div>more text here.</div";
+    let secondaryTextDiv = "";
 
     if (details) {
       secondaryTextDiv = details;
     }
 
-    const categoryTip = itemMetadata.short_description
-      ? ` <span id="info-icon" title="${itemMetadata.short_description}">${infoIcon}</span>`
-      : "";
-    const pop = `<div id="pop-cat">${folderImage} ${typeLabel}${categoryTip}</div><div id="pop-title">${name}${linkFragment}</div><div id="pop-details">${secondaryTextDiv}</div><br><div id="pop-links">${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}</div>`;
+    let nameFragment = name;
+    let nameCharLength = nameFragment.length;
+    while (nameCharLength++ < 50) {
+      nameFragment += "&nbsp;";
+    }
 
-    m.bindPopup(pop, { maxWidth: "auto" });
+    if (link && link !== "-" && link !== "/") {
+      const linkFragment = `(<a href='${link}'>more info</a>)`;
+      if (secondaryTextDiv) {
+        // put the link on the title
+        secondaryTextDiv += " " + linkFragment;
+      } else {
+        nameFragment += "<br>" + linkFragment;
+        // link can be on a second line to replace the 'secondary text'
+      }
+    }
+    // if no details - link on second line
+    // if details - same line
+
+    let pop = `<div id="pop-cat">${folderImage} ${typeLabel}</div><div id="pop-title">${nameFragment}</div>`;
+
+    if (secondaryTextDiv) {
+      pop += `<div class="pop-details">${secondaryTextDiv}</div>`;
+    }
+
+    pop += "<br>";
+
+    if (itemMetadata.short_description) {
+      pop += `<hr><div class="pop-details">${itemMetadata.short_description}</div>`;
+    }
+
+    pop += `<div id="pop-links">${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}</div>`;
+
+    m.bindPopup(pop, { maxWidth: "auto", minWidth: 500 });
 
     // m.addTo(map);
     groupedMarkerLayer.addLayer(m);

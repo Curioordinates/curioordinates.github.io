@@ -37,11 +37,12 @@
   white-space: nowrap;
 }
 
-#pop-details {
+.pop-details {
   color: gray;
 }
 
 #pop-links {
+  margin-top: 1em;
   white-space: nowrap;
 }
 
