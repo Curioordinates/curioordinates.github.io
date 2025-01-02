@@ -39,7 +39,7 @@
       "count": 6
    },
    "canine": {
-      "count": 6
+      "count": 7
    },
    "cartoquirk": {
       "count": 5
@@ -82,8 +82,11 @@
    "fairy": {
       "count": 4
    },
+   "dragon": {
+      "count": 18
+   },
    "folklore": {
-      "count": 85
+      "count": 87
    },
    "fossil": {
       "count": 3
@@ -116,7 +119,7 @@
       "count": 35
    },
    "haunting": {
-      "count": 458
+      "count": 464
    },
    "henge": {
       "count": 2

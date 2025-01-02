@@ -154,6 +154,19 @@ const mapSetup = () => {
   const tagsToLoad = requestedTags.length ? requestedTags : allTags;
   console.log("tagsToLoad:" + JSON.stringify(tagsToLoad));
 
+  if (tagsPresentInUrl.length === 0) {
+    // we are using settings
+    for (const tag of Object.keys(metadata)) {
+      if (!savedSettings.hide.includes(tag) && !tagsToLoad.includes(tag)) {
+        // this is a new tag that the users settings is unaware of.
+        if (metadata[tag].implicit !== false) {
+          console.log(`Showing tag ${tag} as it is new to the users settings.`);
+          tagsToLoad.push(tag);
+        }
+      }
+    }
+  }
+
   var map = L.map("map");
 
   const rewriteUrl = () => {
@@ -235,11 +248,6 @@ const mapSetup = () => {
 
     const folderImage = `<img src="./images/folder.svg" />`;
 
-    const linkFragment =
-      link && link !== "-" && link !== "/"
-        ? ` <a style="text-decoration: none" href="${link}" target="_info" title="more info">&#x1F517;</a>`
-        : ``;
-
     let secondaryTextDiv = "";
 
     if (details) {
@@ -253,7 +261,7 @@ const mapSetup = () => {
     }
 
     if (link && link !== "-" && link !== "/") {
-      const linkFragment = `(<a href='${link}'>more info</a>)`;
+      const linkFragment = `(<a href='${link}'>more&nbsp;info</a>)`;
       if (secondaryTextDiv) {
         // put the link on the title
         secondaryTextDiv += " " + linkFragment;
