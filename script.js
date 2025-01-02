@@ -156,7 +156,6 @@ const mapSetup = () => {
 
   if (tagsPresentInUrl.length === 0) {
     // we are using settings
-    /*
     for (const tag of Object.keys(metadata)) {
       if (!savedSettings.hide.includes(tag) && !tagsToLoad.includes(tag)) {
         // this is a new tag that the users settings is unaware of.
@@ -166,7 +165,6 @@ const mapSetup = () => {
         }
       }
     }
-    */
   }
 
   var map = L.map("map");

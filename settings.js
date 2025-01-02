@@ -68,6 +68,10 @@ const uiSetup = () => {
     const tag = key.toLowerCase();
     const selected = settings.show.includes(tag);
 
+    if (!selected && !settings.hide.includes(tag)) {
+      settings.hide.push(tag);
+    }
+
     const itemHtml = `<div><input class="opt" type="checkbox" onClick="handleChecked(event)" id="${tag}" ${
       selected ? "checked" : ""
     }>${key}</div>`;
