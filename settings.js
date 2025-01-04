@@ -66,7 +66,8 @@ const uiSetup = () => {
     }
 
     const tag = key.toLowerCase();
-    const selected = settings.show.includes(tag);
+    const selected =
+      settings.show.includes(tag) || !settings.hide.includes(tag); // second clause allows new categories to be shown by default
 
     if (!selected && !settings.hide.includes(tag)) {
       settings.hide.push(tag);

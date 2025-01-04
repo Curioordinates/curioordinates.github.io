@@ -9,6 +9,7 @@ with enough instances - dragons could have their own folklore subclass
 
 Mass dials https://ruralhistoria.com/2023/03/05/mass-dials/
 sunken villages https://ruralhistoria.com/2023/09/04/ancient-villages-now-sitting-on-the-bottom-of-reservoirs/
+Staircases in forests.
 
 Why are't Cairns being shown as unverified.
 
