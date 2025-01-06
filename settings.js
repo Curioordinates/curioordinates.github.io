@@ -27,13 +27,16 @@ const handleChecked = (e) => {
   console.log(JSON.stringify(e));
   const checked = e.target.checked;
   const tag = e.target.id;
-  if (checked && !settings.show.includes(tag)) {
-    settings.show.push(tag);
-    settings.hide = settings.hide.filter((testItem) => testItem == "tag");
-  }
-
-  if (!checked && settings.show.includes(tag)) {
-    settings.hide.push(tag);
+  console.log(`${tag} ${checked}`);
+  if (checked) {
+    if (!settings.show.includes(tag)) {
+      settings.show.push(tag);
+    }
+    settings.hide = settings.hide.filter((testItem) => testItem !== tag);
+  } else {
+    if (!settings.hide.includes(tag)) {
+      settings.hide.push(tag);
+    }
     settings.show = settings.show.filter((testItem) => testItem !== tag);
   }
 

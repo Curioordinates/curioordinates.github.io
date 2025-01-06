@@ -17,6 +17,10 @@
    "balancing-rock": {
       "count": 13
    },
+   "barrow": {
+      "implicit": false,
+      "count": 53063
+   },
    "big-cat": {
       "count": 14
    },
