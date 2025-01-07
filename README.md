@@ -1,7 +1,12 @@
 TODO
 
+barrows co-incidence with runes in scandinavia
+barrows co-incidence with stone-circles spain
+
 load eng wikipeida artile as link (see ghost Joe Bush)
 show metadata-description on settings page.
+
+number of ruined churches in norfolk ...
 
 add metadata-description to all
 
@@ -14,7 +19,6 @@ Staircases in forests.
 Why are't Cairns being shown as unverified.
 
 New Categories
-Entrances to argatha
 ley lines
 "Earth Mysteries" ?
 
