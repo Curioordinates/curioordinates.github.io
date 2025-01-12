@@ -81,16 +81,28 @@
       "count": 2
    },
    "exhibit": {
-      "count": 10
+      "count": 11
    },
    "fairy": {
-      "count": 4
+      "count": 7
    },
    "dragon": {
-      "count": 18
+      "count": 20
+   },
+   "folklore-giant": {
+      "count": 11
+   },
+   "folklore-humanoid": {
+      "count": 1
+   },
+   "folklore-vampire": {
+      "count": 5
+   },
+   "troll": {
+      "count": 2
    },
    "folklore": {
-      "count": 87
+      "count": 100
    },
    "fossil": {
       "count": 3
@@ -105,10 +117,10 @@
       "count": 3
    },
    "ghost-horse": {
-      "count": 1
+      "count": 2
    },
    "ghost-light": {
-      "count": 3
+      "count": 4
    },
    "ghost-sign": {
       "count": 1
@@ -166,7 +178,7 @@
       "count": 3
    },
    "merfolk": {
-      "count": 23
+      "count": 24
    },
    "mothman": {
       "count": 2
@@ -221,7 +233,7 @@
       "count": 212
    },
    "ruined-castle": {
-      "count": 3178
+      "count": 3177
    },
    "ruined-church": {
       "count": 790
@@ -233,7 +245,7 @@
       "count": 8
    },
    "sea-monster": {
-      "count": 15
+      "count": 17
    },
    "settlement": {
       "count": 13
@@ -284,7 +296,7 @@
       "count": 3
    },
    "ufo": {
-      "count": 2
+      "count": 3
    },
    "unique": {
       "count": 2
@@ -302,7 +314,7 @@
       "short_description": "Some crosses were erected in medieval times and travellers would pray at them for a safe journey; thus making their location an indicator of ancient routes.",
       "link": "https://en.wikipedia.org/wiki/Wayside_cross",
       "implicit": false,
-      "count": 32533
+      "count": 6228
    },
    "weird": {
       "count": 2

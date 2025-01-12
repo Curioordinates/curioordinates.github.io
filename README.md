@@ -3,10 +3,18 @@ TODO
 barrows co-incidence with runes in scandinavia
 barrows co-incidence with stone-circles spain
 
+places that have conducted psychic-trials
+
 load eng wikipeida artile as link (see ghost Joe Bush)
 show metadata-description on settings page.
 
 number of ruined churches in norfolk ...
+
+temples - then filter to old.
+
+magnetic anomolys (wikidata?)
+s
+Burgstall (Q1015644) - german - 'less than a castle ruin'
 
 add metadata-description to all
 
