@@ -34,7 +34,7 @@
       "count": 32
    },
    "burial": {
-      "count": 2
+      "count": 3
    },
    "chambered-cairn": {
       "count": 325
@@ -215,7 +215,7 @@
       "count": 2
    },
    "podcast-episode": {
-      "count": 102
+      "count": 103
    },
    "practitioner": {
       "count": 11
@@ -252,6 +252,9 @@
    },
    "sheela-na-gig": {
       "count": 7
+   },
+   "ship-burial": {
+      "count": 12
    },
    "simulacrum": {
       "count": 3
