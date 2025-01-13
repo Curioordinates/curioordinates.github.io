@@ -1,9 +1,9 @@
 51.07281	1.08428	The Crypt at St. Leonards - Hythe	https://en.wikipedia.org/wiki/St_Leonard%27s_Church,_Hythe
 53.74992	-1.48117	The Crypt at Holy Trinity Church - Rothwell	https://www.rothwellholytrinity.org.uk/thebuilding.htm
-43.759	-79.235	Taber Hill	http://www.wikidata.org/entity/Q180100
-49.96195	15.28829	Sedlec Ossuary	http://www.wikidata.org/entity/Q513821
+43.759	-79.235	Taber Hill	https://en.wikipedia.org/wiki/Taber_Hill
+49.96195	15.28829	Sedlec Ossuary	https://en.wikipedia.org/wiki/Sedlec_Ossuary
 45.37895	10.79409	Ossario di Custoza	http://www.wikidata.org/entity/Q655864
-49.20826	5.42367	Douaumont ossuary	http://www.wikidata.org/entity/Q705054
+49.20826	5.42367	Douaumont ossuary	https://en.wikipedia.org/wiki/Douaumont_Ossuary
 54.108	11.9102	Beinhaus	http://www.wikidata.org/entity/Q814784
 48.6057	15.8158	Ossuary in Burgschleinitz	http://www.wikidata.org/entity/Q1277036
 45.37413	10.569	San Pietro in Vincoli (Solferino)	http://www.wikidata.org/entity/Q1289808
@@ -16,7 +16,7 @@
 46.93388	14.53294	Maria Waitschach	http://www.wikidata.org/entity/Q2540792
 49.21852	4.54202	Navarin Ossuary: Monument to the Dead of the Champagne Armies	http://www.wikidata.org/entity/Q2873119
 49.0793	7.40748	Ossuaire de Schorbach	http://www.wikidata.org/entity/Q3357363
-42.14944	21.78528	Zebrnjak	http://www.wikidata.org/entity/Q3400817
+42.14944	21.78528	Zebrnjak	https://en.wikipedia.org/wiki/Zebrnjak
 46.22507	8.74863	Saints James and Philip parish church complex with ossuary and parish house	http://www.wikidata.org/entity/Q3668183
 46.28599	8.66635	Santi Placido ed Eustachio Parish church of with ossuary and cemetery	http://www.wikidata.org/entity/Q3668390
 46.25019	9.14722	St. Clemente Catholic Church and Ossuary	http://www.wikidata.org/entity/Q3669780
@@ -28,15 +28,15 @@
 46.02549	8.85719	Santo Stefano al Colle Church and Ossary	http://www.wikidata.org/entity/Q3674331
 45.42704	10.60493	Saint Martin ossuary	http://www.wikidata.org/entity/Q3886728
 30.10172	51.45483	Nurabad Tower	http://www.wikidata.org/entity/Q5950677
-43.85055	25.96091	Pantheon of National Revival Heroes	http://www.wikidata.org/entity/Q7131762
+43.85055	25.96091	Pantheon of National Revival Heroes	https://en.wikipedia.org/wiki/Pantheon_of_National_Revival_Heroes
 41.51277	20.96638	Kičevo Memorial Ossuary	http://www.wikidata.org/entity/Q12289735
 46.06947	14.53293	The ossuary of the victims of the First world War	http://www.wikidata.org/entity/Q12794153
 45.91961	15.15211	St. Michael's Ossuary	http://www.wikidata.org/entity/Q12794154
 48.7368	7.48494	Ossuaire de Lupstein	http://www.wikidata.org/entity/Q14627934
 48.1115	16.8616	Rundkapelle Petronell	http://www.wikidata.org/entity/Q14912645
 49.5318	15.8036	Nížkov Ossuary	http://www.wikidata.org/entity/Q15076066
-43.87611	20.34064	Memorial ossuary to fallen soldiers in 1912-1918, Čačak	http://www.wikidata.org/entity/Q16085295
-44.3296	19.2925	Memorial Ossuary Mačkov kamen	http://www.wikidata.org/entity/Q16087873
+43.87611	20.34064	Memorial ossuary to fallen soldiers in 1912-1918, Čačak	https://en.wikipedia.org/wiki/Memorial_Ossuary,_%C4%8Ca%C4%8Dak
+44.3296	19.2925	Memorial Ossuary Mačkov kamen	https://en.wikipedia.org/wiki/Memorial_Ossuary,_Ma%C4%8Dkov_kamen
 45.36855	9.30083	Ossario Santa Maria della Neve	http://www.wikidata.org/entity/Q20182353
 47.85882	7.15017	Hartmannswillerkopf National Monument	http://www.wikidata.org/entity/Q20895234
 48.91708	6.47547	Fremery Franco-German ossuary	http://www.wikidata.org/entity/Q20973813
@@ -101,7 +101,7 @@
 47.99647	-4.0268	Ossuaire d'Ergué-Gabéric	http://www.wikidata.org/entity/Q66649207
 48.48836	-3.99773	Église Saint-Miliau de Guimiliau (ossuaire)	http://www.wikidata.org/entity/Q66656707
 48.45295	-4.14212	Ossuaire de Ploudiry	http://www.wikidata.org/entity/Q66685027
--36.62735	145.22352	Italian National Ossario	http://www.wikidata.org/entity/Q66763715
+-36.62735	145.22352	Italian National Ossario	https://en.wikipedia.org/wiki/Italian_National_Ossario
 29.98943	52.87209	Ossuary at Naqsh-e Rustam	http://www.wikidata.org/entity/Q71990819
 45.89686	10.72083	Saints Stephen and Lawrence on the Hill church	http://www.wikidata.org/entity/Q73881107
 49.57603	15.7381	Ossuary in Přibyslav	http://www.wikidata.org/entity/Q81160122

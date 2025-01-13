@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
 
-export const recurseDirectories = ({
+export const recurseDirectories = async ({
   rootDirectory,
   relativeSteps = [],
   callback,
@@ -12,7 +12,7 @@ export const recurseDirectories = ({
     directoryPath: string;
     relativeSteps: string[];
   }) => void;
-}): void => {
+}): Promise<void> => {
   try {
     const entries = fs.readdirSync(rootDirectory, { withFileTypes: true });
 
@@ -25,7 +25,7 @@ export const recurseDirectories = ({
           relativeSteps: newRelativeSteps,
           callback,
         });
-        callback({ directoryPath, relativeSteps: newRelativeSteps });
+        await callback({ directoryPath, relativeSteps: newRelativeSteps });
       }
     }
   } catch (_) {

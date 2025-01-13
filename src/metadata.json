@@ -89,29 +89,29 @@
    "dragon": {
       "count": 20
    },
+   "folklore": {
+      "count": 100
+   },
    "folklore-giant": {
       "count": 11
    },
+   "fossil": {
+      "count": 3
+   },
    "folklore-humanoid": {
+      "count": 1
+   },
+   "general": {
       "count": 1
    },
    "folklore-vampire": {
       "count": 5
    },
-   "troll": {
-      "count": 2
-   },
-   "folklore": {
-      "count": 100
-   },
-   "fossil": {
-      "count": 3
-   },
-   "general": {
-      "count": 1
-   },
    "geo-glyph": {
       "count": 91
+   },
+   "troll": {
+      "count": 2
    },
    "geofold": {
       "count": 3

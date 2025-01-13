@@ -1,11 +1,16 @@
 import * as fs from "fs";
 import * as path from "path";
+import { ttdExpand } from "./lib/text-to-data/api";
 import { PlottableItem, PlottableItemCallback } from "./types";
 import { parseLocation } from "./util";
 import { recurseDirectories } from "./recurseDirectories";
 import { to5DP } from "./lib/number-utils";
 import { findSourceMap } from "module";
 import { parseLine } from "./lib/data-extractor";
+import {
+  getNamedCountersAsMap,
+  incrementNamedCounter,
+} from "./lib/namedCounters";
 
 export const processTsvFile = async (fileName: string): Promise<void> => {};
 
@@ -97,7 +102,25 @@ export const processFile = async (
           const latitude = to5DP(extractedData.latitude!);
           const longitude = to5DP(extractedData.longitude!);
           const surveyLink = `http://localhost:8000/?l=${extractedData.latitude},${extractedData.longitude}&z=18&satellite`;
-          const link = extractedData.link ?? null;
+          let link = extractedData.link ?? null;
+
+          if (link && link.includes("wikidata.org/entity/")) {
+            incrementNamedCounter("wikidata-entity-links");
+
+            if (!fileName.includes("barrow")) {
+              const lastSlash = link.lastIndexOf("/");
+              if (lastSlash !== -1) {
+                const q_id = link.substring(lastSlash + 1);
+                // There might be a wikipedia article about the entity - which would be much better than a wikidata page.
+                const expand = await ttdExpand(q_id);
+                if (expand && expand.about_url_english) {
+                  incrementNamedCounter("wikidata-entity-upgrade");
+                  link = expand.about_url_english;
+                }
+              }
+            }
+          }
+
           const item: PlottableItem = {
             latitude,
             longitude,
@@ -116,12 +139,12 @@ export const processFile = async (
 
 let stopHits = 0;
 
-const processFileSet = (
+const processFileSet = async (
   directoryName: string,
   fileNames: string[],
   featureType: string,
   params: Record<string, string | number>
-): number => {
+): Promise<number> => {
   const verifiedFileNames = fileNames.filter((name) =>
     name.includes("verified")
   );
@@ -130,7 +153,7 @@ const processFileSet = (
     //    const featureType = getLeafDirName(fileNames[0]);
     for (const fileName of fileNames) {
       const isVerifiedFile = fileName.includes("verified");
-      processFile(fileName, (item: PlottableItem) => {
+      await processFile(fileName, (item: PlottableItem) => {
         const isListedInStops = stops.find(
           (testStop) =>
             testStop.latitude == item.latitude &&
@@ -197,11 +220,11 @@ const processFileSet = (
   return fileLines.length;
 };
 
-const processDirectory = (
+const processDirectory = async (
   directoryName: string,
   featureType: string,
   params: Record<string, string | number>
-): number => {
+): Promise<number> => {
   const items = fs.readdirSync(directoryName);
 
   const targetItems = items
@@ -213,17 +236,17 @@ const processDirectory = (
 
 const stops: { latitude: number; longitude: number }[] = [];
 
-processFile("./data/source/_stops/_stops.tsv", (item) => {
-  stops.push(item);
-  console.log(`STOP : ` + JSON.stringify(item));
-});
-
 export const go = async () => {
   const builtMetadata = {};
 
-  recurseDirectories({
+  await processFile("./data/source/_stops/_stops.tsv", (item) => {
+    stops.push(item);
+    console.log(`STOP : ` + JSON.stringify(item));
+  });
+
+  await recurseDirectories({
     rootDirectory: "./data/source",
-    callback: (foundDirectory) => {
+    callback: async (foundDirectory) => {
       if (foundDirectory.directoryPath.includes("_stops")) {
         return; // stops are handled elsewhere.
       }
@@ -248,7 +271,7 @@ export const go = async () => {
       console.log("DIRECTORY: " + foundDirectory.directoryPath);
       console.log("META: " + JSON.stringify(metadata));
 
-      const itemCount = processDirectory(
+      const itemCount = await processDirectory(
         foundDirectory.directoryPath,
         keyName,
         metadata
@@ -275,6 +298,10 @@ export const go = async () => {
     processDirectory(`./data/source/${key}/`, data);
   }
 */
+
+  const namedCounterMap = getNamedCountersAsMap();
+  console.log(JSON.stringify(namedCounterMap, null, 3));
+
   console.log("Stop hits :" + stopHits);
 };
 
