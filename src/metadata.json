@@ -19,7 +19,7 @@
    },
    "barrow": {
       "implicit": false,
-      "count": 53063
+      "count": 53062
    },
    "big-cat": {
       "count": 14
@@ -43,7 +43,7 @@
       "count": 6
    },
    "canine": {
-      "count": 7
+      "count": 8
    },
    "cartoquirk": {
       "count": 5
@@ -90,10 +90,10 @@
       "count": 20
    },
    "folklore": {
-      "count": 100
+      "count": 101
    },
    "folklore-giant": {
-      "count": 11
+      "count": 12
    },
    "fossil": {
       "count": 3
@@ -125,6 +125,10 @@
    "ghost-sign": {
       "count": 1
    },
+   "ghost-train": {
+      "short_description": "'All Aboard...' Or should that be 'None Aboard'? Ghost trains tend to serve as reminders of tragedies long passed.",
+      "count": 6
+   },
    "ghost-walk": {
       "count": 158
    },
@@ -135,7 +139,7 @@
       "count": 35
    },
    "haunting": {
-      "count": 465
+      "count": 467
    },
    "henge": {
       "count": 2
@@ -168,6 +172,9 @@
    "lazy-code": {
       "count": 4
    },
+   "legend": {
+      "count": 1
+   },
    "manmade-cave": {
       "count": 8
    },
@@ -193,7 +200,7 @@
       "count": 4
    },
    "name": {
-      "count": 20
+      "count": 21
    },
    "occult-shop": {
       "count": 88
@@ -236,7 +243,7 @@
       "count": 3177
    },
    "ruined-church": {
-      "count": 790
+      "count": 791
    },
    "sacred-tree": {
       "count": 35
@@ -267,6 +274,9 @@
    },
    "standing-stone": {
       "count": 287
+   },
+   "statue": {
+      "count": 1
    },
    "stone-circle": {
       "count": 584
