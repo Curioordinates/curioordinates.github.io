@@ -175,6 +175,9 @@
    "legend": {
       "count": 1
    },
+   "lost-mine": {
+      "count": 23
+   },
    "manmade-cave": {
       "count": 8
    },
@@ -197,7 +200,7 @@
       "count": 6
    },
    "mystery": {
-      "count": 4
+      "count": 5
    },
    "name": {
       "count": 21
