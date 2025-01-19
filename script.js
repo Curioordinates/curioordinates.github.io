@@ -261,7 +261,7 @@ const mapSetup = () => {
     }
 
     if (link && link !== "-" && link !== "/") {
-      const linkFragment = `(<a href='${link}'>more&nbsp;info</a>)`;
+      const linkFragment = `(<a href='${link}' target='_blank'>more&nbsp;info</a>)`;
       if (secondaryTextDiv) {
         // put the link on the title
         secondaryTextDiv += " " + linkFragment;

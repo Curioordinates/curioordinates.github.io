@@ -21,6 +21,11 @@
       "implicit": false,
       "count": 53062
    },
+   "battle": {
+      "implicit": false,
+      "short_description": "If you're looking for ghosts - battlefields is a good place to start (currently only battles before 1900 are included). Be sure to read the history and tune into what each side was fighting for!",
+      "count": 5572
+   },
    "big-cat": {
       "count": 14
    },
