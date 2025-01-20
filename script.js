@@ -17,6 +17,8 @@ const loadTsv = async (markerType, addFunction) => {
   }
 };
 
+let userMarker; // Used if following user.
+
 const savedSettingsString = localStorage.getItem("settings");
 const savedSettings = savedSettingsString
   ? JSON.parse(savedSettingsString)
@@ -169,7 +171,7 @@ const mapSetup = () => {
 
   var map = L.map("map");
 
-  const rewriteUrl = () => {
+  const rewriteUrl = (e) => {
     const { lat, lng } = map.getCenter();
     qs.latitude = Number(lat).toFixed(5);
     qs.longitude = Number(lng).toFixed(5);
@@ -184,11 +186,20 @@ const mapSetup = () => {
 
   map.on("moveend", rewriteUrl);
   map.on("zoomend", rewriteUrl);
+  if (qs.follow) {
+    userMarker = L.marker([0, 0], { icon: getMarker("you") }).addTo(map);
+    map.on("locationfound", (e) => {
+      userMarker.setLatLng([e.latitude, e.longitude]);
+    });
+  }
 
   if (qs.follow || qs.l === "me") {
+    if (!qs.z) qs.z = 11;
     map.locate({
       setView: true,
+      maxZoom: Number(qs.z),
       watch: !!qs.follow,
+      animate: true,
     }); //watch=live
   } else {
     if (!qs.latitude && !qs.longitude) {
@@ -312,10 +323,4 @@ const mapSetup = () => {
   }
 
   map.addLayer(groupedMarkerLayer);
-
-  /*
- 
-  L.marker([51.5346703, -0.0575498], { icon: Mx }).addTo(map); //The Viktor Wynd Museum of Curiosities, Fine Art & UnNatural History
-
-    */
 };
