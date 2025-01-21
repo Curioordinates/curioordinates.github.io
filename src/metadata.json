@@ -95,7 +95,7 @@
       "count": 20
    },
    "folklore": {
-      "count": 104
+      "count": 108
    },
    "folklore-giant": {
       "count": 12
@@ -109,11 +109,14 @@
    "general": {
       "count": 1
    },
-   "folklore-vampire": {
-      "count": 5
+   "folklore-serpent": {
+      "count": 1
    },
    "geo-glyph": {
       "count": 91
+   },
+   "folklore-vampire": {
+      "count": 5
    },
    "troll": {
       "count": 2

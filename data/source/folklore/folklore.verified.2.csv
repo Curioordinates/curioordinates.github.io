@@ -72,16 +72,16 @@ latitude, longitude,label,link
 47.9177,106.9162,Epic of King Geser,https://en.wikipedia.org/wiki/Epic_of_King_Gesar
 44.0000,101.0000,Almas,https://en.wikipedia.org/wiki/Almas_(cryptid)
 
-30.0500,31.2200,"Zar (Egyptian Ritual)","https://en.wikipedia.org/wiki/Zār"
+30.0500,31.2200,Zar (Egyptian Ritual),https://en.wikipedia.org/wiki/Zār
 
  
--12.3167,49.2959,"Kalanoro","https://en.wikipedia.org/wiki/Kalanoro"
+-12.3167,49.2959,Kalanoro,https://en.wikipedia.org/wiki/Kalanoro
 
  
-5.6037,-0.1870,"Anansi (Ghana)","https://en.wikipedia.org/wiki/Anansi"
--6.1754,39.1852,"Popobawa (Tanzania)","https://en.wikipedia.org/wiki/Popobawa"
+5.6037,-0.1870,Anansi (Ghana),https://en.wikipedia.org/wiki/Anansi
+-6.1754,39.1852,Popobawa (Tanzania),https://en.wikipedia.org/wiki/Popobawa
  
--26.2041,28.0473,"Tokoloshe (South Africa)","https://en.wikipedia.org/wiki/Tikoloshe"
+-26.2041,28.0473,Tokoloshe (South Africa),https://en.wikipedia.org/wiki/Tikoloshe
 33.845539, 132.765722,Inugami Gyōbu,https://en.wikipedia.org/wiki/Inugami_Gy%C5%8Dbu,A monster which lived in a cave and protected the Matsuyama Castle.
 58.189, 53.75,Vuvër,https://ru.wikipedia.org/wiki/%D0%92%D1%83%D0%B2%D0%B5%D1%80,A Witch or 'evil woman' in the folklore of the Mari people (Russia)
 33.618138351752755, -90.46606686706139,Gallinipper,https://en.wikipedia.org/wiki/Gallinipper_(mythology),A species of giant mosquitoe in the  African-American folk tradition.
@@ -96,3 +96,7 @@ The Cheval Mallet is a sinister horse from French folklore, said to lure weary t
 -29.262955, -53.461388,Negrinho do Pastoreio,https://pt.wikipedia.org/wiki/Negrinho_do_Pastoreio, A Brazilian folktale about an enslaved boy who becomes a spirit guide.
 -23.008625024710692, -58.17818451673463,Karaí Octubre,https://discoveringparaguay.com/meet-the-mitos-karai-octubre/,A mythical figure who visits homes in October to ensure families have adequately prepared for the challenging month, with the tradition of preparing jopará, a local dish, serving as a symbolic safeguard against his curse.
 6.823111, -67.649278,El Silbón (The Whistler),https://en.wikipedia.org/wiki/El_Silb%C3%B3n,A chilling legend from Colombia and Venezuela, depicting a cursed spirit doomed to wander the countryside carrying his father's bones, known for his eerie whistle that serves as a forewarning of death.
+35.970072, 120.076103,Lady Meng Jiang and the Great Wall,https://en.wikipedia.org/wiki/Lady_Meng_Jiang,Lady Meng Jiang is a Chinese folktale about a woman whose husband was forced to build the Great Wall and died there; her grief caused part of the Wall to collapse.
+30.246944, 120.144167,Legend of the White Snake,https://en.wikipedia.org/wiki/Legend_of_the_White_Snake, The story follows Xi Xuanzan, who falls for a woman revealed to be a white snake; a Daoist exorcist subdues her under three pagodas in West Lake.
+34.6197, 112.4539,Butterfly Lovers (across China),https://en.wikipedia.org/wiki/Butterfly_Lovers,The legend of Liang Shanbo and Zhu Yingtai, set in the Eastern Jin dynasty, tells of Zhu disguising herself as a man to study and befriending Liang, who remains unaware of her true identity. After their love is thwarted by an arranged marriage, Liang dies of heartbreak, and Zhu joins him in death, transforming into butterflies symbolizing eternal love.
+33.24302791003409, 102.51875569589342,The Cowherd and the Weaver Girl (across China),https://en.wikipedia.org/wiki/The_Cowherd_and_the_Weaver_Girl,Written in the stars - this Chinese folktale tells of the forbidden love between Zhinü, a weaver girl, and Niulang, a cowherd, who are separated by the Milky Way and can only reunite once a year on the seventh day of the seventh lunar month when magpies form a bridge across the sky.
