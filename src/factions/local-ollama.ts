@@ -9,61 +9,10 @@ export interface LLMResult {
   message: string;
 }
 
-export const geocodeLocation = async (
-  model: "llama3" | "phi4:14b",
-  targetProse: string
-): Promise<LLMDataResult> => {
-  const result = await callLLM(
-    model,
-    "For the following place name, give its location as accurately as possible (as a json object with decimal 'latitude' and 'longitude' fields and no preamble). If no location is known, simply answer with 'no-data-found'",
-    targetProse
-  );
-
-  if (result.message.includes("no-data-found")) {
-    // This is fine - just explicitly no data
-    return {
-      ok: true,
-      data: [],
-    };
-  } else {
-    let cleanMessage = result.message;
-    if (cleanMessage.startsWith("```json")) {
-      cleanMessage = cleanMessage.replace("```json", "");
-
-      const endIndex = cleanMessage.indexOf("```");
-      if (endIndex != -1) {
-        cleanMessage = cleanMessage.substring(0, endIndex).trim();
-      }
-    }
-
-    if (cleanMessage.startsWith("{")) {
-      try {
-        return {
-          ok: true,
-          data: [JSON.parse(cleanMessage)],
-        };
-      } catch (e) {
-        return {
-          ok: false,
-          error: `Failed to parse message`,
-          message: result.message,
-        };
-      }
-    } else {
-      return {
-        ok: false,
-        error: "Message does not look like json object",
-        message: result.message,
-      };
-    }
-  }
-};
-
 export const getMentionedLocations = async (
   targetProse: string
 ): Promise<LLMDataResult> => {
   const result = await callLLM(
-    "llama3",
     "From the following text, list all explictly mentioned geographic locations (as a json array of strings without preamble). If no locations are present, simply answer with 'no-data-found'",
     targetProse
   );
@@ -99,13 +48,12 @@ export const getMentionedLocations = async (
 };
 
 export async function callLLM(
-  model: "llama3" | "phi4:14b",
   prompt: string,
   targetProse: string
 ): Promise<LLMResult> {
   const data = {
     stream: false,
-    model: model,
+    model: "llama3.1:8b",
     options: {
       num_ctx: 4096,
     },
@@ -127,7 +75,6 @@ export async function callLLM(
 }
 
 export async function callLLMStructured<ZodSchema extends ZodType>(
-  model: "llama3.1:8b" | "llama3.2",
   prompt: string,
   targetProse: string,
   zodSchema: ZodSchema
@@ -145,7 +92,7 @@ export async function callLLMStructured<ZodSchema extends ZodType>(
     format: zodToJsonSchema(zodSchema),
   };
 
-  const fetchResult = await fetch("http://192.168.1.91:11434/api/chat", {
+  const fetchResult = await fetch("http://192.168.1.92:11434/api/chat", {
     method: "POST",
     body: JSON.stringify(data),
   });

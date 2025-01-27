@@ -10,14 +10,7 @@ const splitOnFour = (text: string): [string, string] => [
 
 const baseDataDirectory = "/Users/Shared/data/keyjson";
 
-/**
- *  store a json object against a string
- *  - if item exists - fields will overwrite
- */
-export const store = (
-  text: string,
-  object: { [key: string]: string | number | boolean }
-) => {
+const makePaths = (text: string): { dirPath: string[]; filePath: string } => {
   const cleanString = text.toLowerCase().trim();
 
   const sixtyfour = crypto
@@ -34,19 +27,50 @@ export const store = (
     encodeURIComponent(part2),
     encodeURIComponent(part3),
   ];
-
-  fs.mkdirSync(path.join(...dirPath), { recursive: true });
-
-  const fileName = path.join(
+  const filePath = path.join(
     ...dirPath,
     `${encodeURIComponent(cleanString)}.json`
   );
 
-  if (fs.existsSync(fileName)) {
-    const existingObject = JSON.parse(fs.readFileSync(fileName).toString());
+  console.log(filePath);
+  return { dirPath, filePath };
+};
+
+export const load = (
+  text: string
+):
+  | [Error, null]
+  | [null, { [key: string]: string | number | boolean } | null] => {
+  const paths = makePaths(text);
+
+  if (fs.existsSync(paths.filePath)) {
+    const data = JSON.parse(fs.readFileSync(paths.filePath).toString());
+    return [null, data];
+  } else {
+    // No error, its just not present
+    return [null, null];
+  }
+};
+
+/**
+ *  store a json object against a string
+ *  - if item exists - fields will overwrite
+ */
+export const store = (
+  text: string,
+  object: { [key: string]: string | number | boolean }
+) => {
+  const paths = makePaths(text);
+
+  fs.mkdirSync(path.join(...paths.dirPath), { recursive: true });
+
+  if (fs.existsSync(paths.filePath)) {
+    const existingObject = JSON.parse(
+      fs.readFileSync(paths.filePath).toString()
+    );
 
     fs.writeFileSync(
-      fileName,
+      paths.filePath,
       JSON.stringify({
         ...existingObject,
         ...object, // New object fields overwrite old.
@@ -54,7 +78,7 @@ export const store = (
     );
   } else {
     // write new file.
-    fs.writeFileSync(fileName, JSON.stringify(object));
+    fs.writeFileSync(paths.filePath, JSON.stringify(object));
   }
 
   //  console.log(sixtyfour);

@@ -80,13 +80,13 @@
    "erratic": {
       "typeLabel": "Glacial Erratic",
       "short_description": "Stones transported by glaciers over 25,000 years ago",
-      "count": 220
+      "count": 221
    },
    "event": {
       "count": 2
    },
    "exhibit": {
-      "count": 11
+      "count": 12
    },
    "fairy": {
       "count": 7
@@ -97,23 +97,26 @@
    "folklore": {
       "count": 108
    },
+   "folklore-fox": {
+      "count": 1
+   },
    "folklore-giant": {
       "count": 12
    },
    "fossil": {
       "count": 3
    },
-   "folklore-humanoid": {
-      "count": 1
-   },
    "general": {
       "count": 1
    },
-   "folklore-serpent": {
+   "folklore-humanoid": {
       "count": 1
    },
    "geo-glyph": {
       "count": 91
+   },
+   "folklore-serpent": {
+      "count": 1
    },
    "folklore-vampire": {
       "count": 5
@@ -159,7 +162,7 @@
       "count": 7
    },
    "hoard": {
-      "count": 105
+      "count": 106
    },
    "hogback-grave": {
       "count": 22
@@ -266,7 +269,7 @@
       "count": 17
    },
    "settlement": {
-      "count": 13
+      "count": 15
    },
    "sheela-na-gig": {
       "count": 7
