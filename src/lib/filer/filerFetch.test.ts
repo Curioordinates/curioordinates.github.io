@@ -8,6 +8,7 @@ import { filerFetchContent } from "./filerFetch";
 import * as fs from "fs";
 import * as path from "path";
 import { convert } from "html-to-text";
+import { FilerAppender } from "./filerAppender";
 
 describe("filerFetch", () => {
   jest.setTimeout(99999999);
@@ -39,7 +40,10 @@ describe("filerFetch", () => {
           const [_, existingData] = load(title);
           const data: any = { ...(existingData ?? {}) };
 
+          writeDataIfGood(data);
+
           data.aboutUrl = url;
+          data.title = title;
           store(title, data);
 
           let plaintext = convert(pageContent);
@@ -87,6 +91,7 @@ describe("filerFetch", () => {
                 summaryLines.sentence1,
                 summaryLines.sentence2,
               ];
+
               store(title, data);
             }
           }
@@ -97,3 +102,23 @@ describe("filerFetch", () => {
     }
   });
 });
+
+const appender = new FilerAppender(path.join(__dirname, "yokai.com.txt"));
+
+const writeDataIfGood = (data): void => {
+  if (data.summaryLines && data.summaryLines.length > 1) {
+    if (
+      data.title &&
+      data.aboutUrl &&
+      data.locations &&
+      data.locations.length > 0
+    ) {
+      const noCommaTitle = data.title.replace(/,/g, ";");
+      appender.appendLines(
+        "",
+        JSON.stringify(data.locations),
+        `xxxxxx,${noCommaTitle},${data.aboutUrl},${data.summaryLines.join(" ")}`
+      );
+    }
+  }
+};
