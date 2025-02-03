@@ -77,6 +77,11 @@
    "devils-bridge": {
       "count": 1
    },
+   "dolmen": {
+      "implicit": false,
+      "short_description": "Dolmen are single chambered megalithic tomb. Upright stones support a large 'table' stone.",
+      "count": 3705
+   },
    "erratic": {
       "typeLabel": "Glacial Erratic",
       "short_description": "Stones transported by glaciers over 25,000 years ago",
