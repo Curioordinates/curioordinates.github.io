@@ -3,6 +3,8 @@ TODO
 barrows co-incidence with runes in scandinavia
 barrows co-incidence with stone-circles spain
 
+https://en.wikipedia.org/wiki/List_of_places_with_columnar_jointed_volcanics#Uses
+
 places that have conducted psychic-trials
 
 load eng wikipeida artile as link (see ghost Joe Bush)

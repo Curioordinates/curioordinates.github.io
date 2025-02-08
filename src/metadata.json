@@ -80,7 +80,7 @@
    "dolmen": {
       "implicit": false,
       "short_description": "Dolmen are single chambered megalithic tomb. Upright stones support a large 'table' stone.",
-      "count": 3705
+      "count": 3706
    },
    "erratic": {
       "typeLabel": "Glacial Erratic",
@@ -91,7 +91,7 @@
       "count": 2
    },
    "exhibit": {
-      "count": 12
+      "count": 13
    },
    "fairy": {
       "count": 7
@@ -274,7 +274,7 @@
       "count": 21
    },
    "settlement": {
-      "count": 15
+      "count": 16
    },
    "sheela-na-gig": {
       "count": 7
