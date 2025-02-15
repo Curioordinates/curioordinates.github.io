@@ -15,7 +15,7 @@
       "count": 61
    },
    "balancing-rock": {
-      "count": 13
+      "count": 14
    },
    "barrow": {
       "implicit": false,
@@ -41,8 +41,8 @@
    "burial": {
       "count": 3
    },
-   "chambered-cairn": {
-      "count": 325
+   "beehive-tomb": {
+      "count": 51
    },
    "cairn": {
       "count": 6
@@ -82,6 +82,9 @@
       "short_description": "Dolmen are single chambered megalithic tomb. Upright stones support a large 'table' stone.",
       "count": 3706
    },
+   "chambered-cairn": {
+      "count": 325
+   },
    "erratic": {
       "typeLabel": "Glacial Erratic",
       "short_description": "Stones transported by glaciers over 25,000 years ago",
@@ -100,7 +103,7 @@
       "count": 21
    },
    "folklore": {
-      "count": 137
+      "count": 138
    },
    "folklore-fox": {
       "count": 5
@@ -150,6 +153,10 @@
    },
    "gravity-hill": {
       "count": 6
+   },
+   "grid": {
+      "implicit": false,
+      "count": 9
    },
    "haunted-stay": {
       "count": 35
@@ -218,11 +225,14 @@
    "mystery": {
       "count": 5
    },
+   "name-dragon": {
+      "count": 5
+   },
    "name": {
       "count": 21
    },
    "occult-shop": {
-      "count": 88
+      "count": 89
    },
    "ossuary": {
       "count": 304
@@ -268,7 +278,7 @@
       "count": 35
    },
    "sanctuary-stone": {
-      "count": 8
+      "count": 11
    },
    "sea-monster": {
       "count": 21
@@ -298,7 +308,7 @@
       "count": 1
    },
    "stone-circle": {
-      "count": 584
+      "count": 585
    },
    "stronghold": {
       "count": 11
@@ -338,6 +348,9 @@
    },
    "vile-vortex": {
       "count": 12
+   },
+   "volcanic-columns": {
+      "count": 7
    },
    "vortex": {
       "count": 1

@@ -94,8 +94,8 @@ export const processFile = async (
 */
         // if (location && title) {
         if (
-          extractedData.latitude &&
-          extractedData.longitude &&
+          (extractedData.latitude || extractedData.latitude === 0) &&
+          (extractedData.longitude || extractedData.longitude === 0) &&
           extractedData.title
         ) {
           const title = decodeURIComponent(extractedData.title);

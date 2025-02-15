@@ -38,6 +38,14 @@ Couldn't determine 'Hangmans tree" near "Kirkstone pass inn"
 TODO Sanctuary Stones ( /Refuge Stone)
 54.66911493831703, -2.866810137708994, Protected by an Iron fence in the wall of the swimming pool
 
+-- https://www.geograph.org.uk/photo/1191395
+
+55.939212 , -3.6329059,THE GORMYRE REFUGE STONE,https://www.themodernantiquarian.com/post/24270/refuge-stones-of-west-lothian,May-or-may-not be one of the refuge stones of Torphichen Preceptory.
+55.930568 , -3.6069307,THE CRAIGMAILING REFUGE STONE,https://www.themodernantiquarian.com/post/24270/refuge-stones-of-west-lothian, One of the refuge stones of Torphichen Preceptory.
+55.932061 , -3.6966365,THE WESTFIELD REFUGE STONE (approx location),https://www.themodernantiquarian.com/post/24270/refuge-stones-of-west-lothian, Last known position for one of the refuge stones of Torphichen Preceptory.
+55.917165 , -3.6687825,THE COUSTON REFUGE STONE,https://www.themodernantiquarian.com/post/24270/refuge-stones-of-west-lothian, Last known position for one of the refuge stones of Torphichen Preceptory.
+55.934443,-3.641281,The Torphichen font stone,https://www.themodernantiquarian.com/post/24270/refuge-stones-of-west-lothian, In the grounds of Torphichen Preceptory.
+
 If theres any tags on the url - we use just that - allowing posting of urls to create custom map
 if there are no tags on url - read settings (or default)
 
