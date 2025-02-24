@@ -272,7 +272,11 @@ const mapSetup = () => {
     }
 
     if (link && link !== "-" && link !== "/") {
-      const linkFragment = `(<a href='${link}' target='_blank'>more&nbsp;info</a>)`;
+      const linkPrefix = itemMetadata[".<>"] || "(";
+      const linkText = itemMetadata["<>"] || "more&nbsp;info";
+      const linkPostfix = itemMetadata["<>."] || ")";
+
+      const linkFragment = `${linkPrefix}<a href='${link}' target='_blank'>${linkText}</a>${linkPostfix}`;
       if (secondaryTextDiv) {
         // put the link on the title
         secondaryTextDiv += " " + linkFragment;

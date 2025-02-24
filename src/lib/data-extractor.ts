@@ -5,6 +5,7 @@
  */
 
 import { text } from "stream/consumers";
+import { latitudeLongitudeFromOSGrid } from "./latitudeLongitude";
 
 /**
  * Optionally signed integer or decimal number.
@@ -78,6 +79,16 @@ export const parseLine = ({ line }: { line: string }): ExtractedData => {
   const result: ExtractedData = { remainingFragments };
   const numbers: number[] = [];
   const links: string[] = [];
+
+  const nationalGridStart = workingLine.match(/[SNT][A-Z]\d{6}\t/);
+  if (nationalGridStart) {
+    const nationalGridRef = nationalGridStart[0].trim();
+    workingLine = removeLeadingSeparators(
+      workingLine.replace(nationalGridRef, "\t")
+    );
+    const nums = latitudeLongitudeFromOSGrid(nationalGridRef);
+    numbers.push(nums.latitude, nums.longitude);
+  }
 
   // try special 'point' format - should be done before basic number matching
   const pointMatch = workingLine.match(POINT_FORMAT_REGEX);

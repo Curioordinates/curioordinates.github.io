@@ -53,7 +53,7 @@ export async function callLLM(
 ): Promise<LLMResult> {
   const data = {
     stream: false,
-    model: "llama3.1:8b",
+    model: "llama3.2",
     options: {
       num_ctx: 4096,
     },
@@ -74,25 +74,33 @@ export async function callLLM(
   return { message: messageContent };
 }
 
+// OLLAMA deepseek-r1:32b
+
 export async function callLLMStructured<ZodSchema extends ZodType>(
   prompt: string,
   targetProse: string,
   zodSchema: ZodSchema
 ): Promise<[Error, null] | [null, z.infer<ZodSchema>]> {
+  const messages: { role: string; content: string }[] = [];
+  if (prompt != "") {
+    messages.push({ role: "user", content: prompt });
+  }
+  if (targetProse != "") {
+    messages.push({ role: "user", content: targetProse });
+  }
+
   const data = {
     stream: false,
-    model: "llama3.1:8b",
+    model: "phi4", // "deepseek-r1:32b", //"llama3.2",
+    temperature: 0.3,
     options: {
       num_ctx: 4096,
     },
-    messages: [
-      { role: "user", content: prompt },
-      { role: "user", content: targetProse },
-    ],
+    messages,
     format: zodToJsonSchema(zodSchema),
   };
 
-  const fetchResult = await fetch("http://192.168.1.92:11434/api/chat", {
+  const fetchResult = await fetch("http://192.168.1.124:11434/api/chat", {
     method: "POST",
     body: JSON.stringify(data),
   });

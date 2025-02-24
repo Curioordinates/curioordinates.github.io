@@ -72,6 +72,12 @@ describe("data-extractor", () => {
     });
   });
 
+  it("should parse line starting with OSgrid ref ", () => {
+    const line = "TR332460\t123";
+
+    const data = parseLine({ line });
+  });
+
   it("should parse real wikidata line", () => {
     // given
     const line = "Point(5.71877 50.59213)	Nail Linden of Olne";

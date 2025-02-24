@@ -4,7 +4,7 @@ export const parseLocation = (
   text: string
 ): { latitude: number; longitude: number } => {
   if (text.startsWith("Point(")) {
-    console.log("recognizsed poit");
+    console.log("recognizsed point");
     const components = text
       .substring(6)
       .replace(")", "")

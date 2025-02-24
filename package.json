@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@types/jest": "^29.5.12",
+    "geodesy": "^2.4.0",
     "html-to-text": "^9.0.5",
     "jest": "^29.7.0",
+    "ospoint": "^0.2.1",
+    "proj4": "^2.15.0",
     "ts-jest": "^29.2.5",
     "zod": "^3.24.1",
     "zod-to-json-schema": "^3.24.1"

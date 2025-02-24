@@ -54,7 +54,7 @@
       "count": 5
    },
    "cave": {
-      "count": 14
+      "count": 15
    },
    "celtic-cross": {
       "count": 1
@@ -103,7 +103,7 @@
       "count": 21
    },
    "folklore": {
-      "count": 138
+      "count": 154
    },
    "folklore-fox": {
       "count": 5
@@ -139,7 +139,7 @@
       "count": 2
    },
    "ghost-light": {
-      "count": 5
+      "count": 6
    },
    "ghost-sign": {
       "count": 1
@@ -150,6 +150,9 @@
    },
    "ghost-walk": {
       "count": 158
+   },
+   "grave": {
+      "count": 4
    },
    "gravity-hill": {
       "count": 6
@@ -162,7 +165,7 @@
       "count": 35
    },
    "haunting": {
-      "count": 472
+      "count": 473
    },
    "henge": {
       "count": 2
@@ -201,11 +204,25 @@
    "lost-mine": {
       "count": 23
    },
+   "sunken-treasure": {
+      "count": 3
+   },
+   "lost-treasure": {
+      "count": 9
+   },
    "manmade-cave": {
       "count": 8
    },
    "marian-apparition": {
       "count": 35
+   },
+   "mass-dial": {
+      "implicit": false,
+      "short_description": "Mass dials (or scratch dials) are a very early type of sundial. They marked the timing of specific church related activites and are usually near the South facing entrance of churches.",
+      ".<>": "(Learn more at ",
+      "<>": "sundialsoc.org.uk",
+      "<>.": ")",
+      "count": 1631
    },
    "medicine-wheel": {
       "count": 3
@@ -254,7 +271,7 @@
       "count": 103
    },
    "practitioner": {
-      "count": 11
+      "count": 16
    },
    "prediction": {
       "count": 1
