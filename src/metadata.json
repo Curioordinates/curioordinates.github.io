@@ -216,14 +216,6 @@
    "marian-apparition": {
       "count": 35
    },
-   "mass-dial": {
-      "implicit": false,
-      "short_description": "Mass dials (or scratch dials) are a very early type of sundial. They marked the timing of specific church related activites and are usually near the South facing entrance of churches.",
-      ".<>": "(Learn more at ",
-      "<>": "sundialsoc.org.uk",
-      "<>.": ")",
-      "count": 1631
-   },
    "medicine-wheel": {
       "count": 3
    },
@@ -296,6 +288,14 @@
    },
    "sanctuary-stone": {
       "count": 11
+   },
+   "scratch-dial": {
+      "implicit": false,
+      "short_description": "These medieval sundials are most often located on the South side of a church. Some dials are found on other walls too (including inside churches) probably due to rebuilding...",
+      ".<>": "(Learn more at ",
+      "<>": "sundialsoc.org.uk",
+      "<>.": ")",
+      "count": 1631
    },
    "sea-monster": {
       "count": 21
