@@ -97,14 +97,14 @@
       "count": 13
    },
    "fairy": {
-      "count": 12
+      "count": 17
    },
    "changeling": {
       "short_description": "In folklore, a changeling is a fairy child left in place of a human infant, taken out of love or belief that the human child is exceptionally beautiful or destined for a life of wonder. In reality, the changeling myth was often a tragic explanation for infants born with (at the time) unexplained illnesses, such that parents sometimes resorted to cruel superstitions in an attempt to 'drive out' the fairy imposter.",
       "count": 4
    },
    "folklore": {
-      "count": 154
+      "count": 164
    },
    "dragon": {
       "count": 21
@@ -121,11 +121,11 @@
    "general": {
       "count": 1
    },
-   "geo-glyph": {
-      "count": 91
-   },
    "folklore-humanoid": {
       "count": 1
+   },
+   "geo-glyph": {
+      "count": 91
    },
    "folklore-serpent": {
       "count": 1
@@ -134,7 +134,7 @@
       "count": 5
    },
    "troll": {
-      "count": 2
+      "count": 3
    },
    "geofold": {
       "count": 3
@@ -224,7 +224,7 @@
       "count": 3
    },
    "merfolk": {
-      "count": 27
+      "count": 28
    },
    "mothman": {
       "count": 2
