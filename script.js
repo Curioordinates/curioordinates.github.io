@@ -18,6 +18,7 @@ const loadTsv = async (markerType, addFunction) => {
 };
 
 let userMarker; // Used if following user.
+let followUser;
 
 const savedSettingsString = localStorage.getItem("settings");
 const savedSettings = savedSettingsString
@@ -48,7 +49,7 @@ const parseLocation = () => {
       });
   }
   qs.z = qs.z ?? 14;
-  console.log(qs);
+  followUser = !!qs.follow || !!qs.radar;
 };
 
 const anchor = { iconAnchor: [28, 44] };
@@ -87,47 +88,10 @@ const mapSetup = () => {
   parseLocation();
   const maxMapZoom = 19;
 
-  //#region Marker setup
-  var Gr = getMarker("Gr");
-  var Site = createMarker("./markers/Site.png");
-  var Uf = createMarker("./markers/Uf.png");
-  var Hf = createMarker("./markers/Hf.png");
-  var Cm = createMarker("./markers/Cm.png");
-  var Mc = createMarker("./markers/Mc.png");
-  var Ss = createMarker("./markers/Ss.png");
-  var Sm = createMarker("./markers/Sm.png");
-  var Mx = createMarker("./markers/Mx.png");
-  var amphitheatre = getMarker("amphitheatre");
-  var erratic = createMarker("./markers/erratic.png");
-  var neoearthworks = createMarker("./markers/neoearthworks.png");
-  var fort = createMarker("./markers/fort.png");
-  //#endregion Marker setup
-
   //#region Metadata
   console.log(JSON.stringify(metadata, null, 3));
 
   const datasets = Object.keys(metadata).map((key) => [key]);
-  /*  const datasets = [
-    ["redwoods", "redwood"],
-    ["sea-monsters", "sea-monster", "lake-monster"],
-    ["standing-stones"],
-    ["erratic"],
-    ["manmade-cave"],
-    ["geofolds"],
-    ["hauntings"],
-    ["exhibits"],
-    ["mysteries"],
-    ["big-cats"],
-    ["weird"],
-    ["sites"],
-    ["caves"],
-    ["fossils"],
-    ["strongholds"],
-    ["dogs"],
-    ["sub-street"],
-    ["tunnels"],
-  ];
-*/
 
   // parse present items
   const lowercaseUrl = window.location.href.toLowerCase();
@@ -172,10 +136,13 @@ const mapSetup = () => {
   var map = L.map("map");
 
   const rewriteUrl = (e) => {
+    console.log("rewriting url");
+    const originalZoom = qs.z || 2;
     const { lat, lng } = map.getCenter();
     qs.latitude = Number(lat).toFixed(5);
     qs.longitude = Number(lng).toFixed(5);
-    qs.z = map.getZoom();
+    qs.z = map.getZoom() || originalZoom;
+    console.log("set zoom to: " + qs.z);
     const parts = [`l=${qs.latitude},${qs.longitude}`, `z=${qs.z}`];
     if (qs.satellite || qs.sat) parts.push("satellite");
     for (const tag of tagsPresentInUrl) {
@@ -186,21 +153,24 @@ const mapSetup = () => {
 
   map.on("moveend", rewriteUrl);
   map.on("zoomend", rewriteUrl);
-  if (qs.follow) {
+  if (followUser) {
     userMarker = L.marker([0, 0], { icon: getMarker("you") }).addTo(map);
     map.on("locationfound", (e) => {
+      console.log("locationfoudn: " + e);
       userMarker.setLatLng([e.latitude, e.longitude]);
+      map.setView([e.latitude, e.longitude], qs.z);
+
+      //      userMarker.setLatLng([e.latitude, e.longitude]);
     });
   }
 
-  if (qs.follow || qs.l === "me") {
+  if (followUser || qs.l === "me") {
     if (!qs.z) qs.z = 11;
     map.locate({
-      setView: true,
-      maxZoom: Number(qs.z),
-      watch: !!qs.follow,
+      setView: false, // don't auto move/zoom map
+      watch: followUser,
       animate: true,
-    }); //watch=live
+    });
   } else {
     if (!qs.latitude && !qs.longitude) {
       qs.z = 2;

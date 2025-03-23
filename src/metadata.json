@@ -74,6 +74,9 @@
    "dark-sky": {
       "count": 261
    },
+   "devil": {
+      "count": 2
+   },
    "devils-bridge": {
       "count": 1
    },
@@ -84,6 +87,9 @@
    },
    "chambered-cairn": {
       "count": 325
+   },
+   "egyptian-sarcophagus": {
+      "count": 10
    },
    "erratic": {
       "typeLabel": "Glacial Erratic",
@@ -359,14 +365,14 @@
       "count": 3
    },
    "ufo": {
-      "count": 3
+      "count": 24
    },
    "uncontacted": {
       "short_description": "Uncontacted peoples are indigenous groups living wthout sustained contact with the world community. There are thought to be between 100 and 200 such tribes.",
       "count": 19
    },
    "unique": {
-      "count": 2
+      "count": 3
    },
    "unmarked-door": {
       "count": 1

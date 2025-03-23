@@ -1,5 +1,9 @@
 TODO
 
+Sources :
+
+Simply google "ufo sightings csv" and get hits from kaggle eg - https://corgis-edu.github.io/corgis/csv/ufo_sightings/
+
 barrows co-incidence with runes in scandinavia
 barrows co-incidence with stone-circles spain
 
