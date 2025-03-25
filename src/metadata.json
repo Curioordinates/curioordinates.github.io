@@ -103,14 +103,14 @@
       "count": 13
    },
    "fairy": {
-      "count": 17
+      "count": 32
    },
    "changeling": {
       "short_description": "In folklore, a changeling is a fairy child left in place of a human infant, taken out of love or belief that the human child is exceptionally beautiful or destined for a life of wonder. In reality, the changeling myth was often a tragic explanation for infants born with (at the time) unexplained illnesses, such that parents sometimes resorted to cruel superstitions in an attempt to 'drive out' the fairy imposter.",
       "count": 4
    },
    "folklore": {
-      "count": 164
+      "count": 167
    },
    "dragon": {
       "count": 21
@@ -140,7 +140,7 @@
       "count": 5
    },
    "troll": {
-      "count": 3
+      "count": 1
    },
    "geofold": {
       "count": 3
@@ -162,7 +162,7 @@
       "count": 158
    },
    "grave": {
-      "count": 4
+      "count": 5
    },
    "gravity-hill": {
       "count": 6
@@ -175,7 +175,7 @@
       "count": 35
    },
    "haunting": {
-      "count": 473
+      "count": 494
    },
    "henge": {
       "count": 2
@@ -230,7 +230,7 @@
       "count": 3
    },
    "merfolk": {
-      "count": 28
+      "count": 31
    },
    "mothman": {
       "count": 2
@@ -344,7 +344,7 @@
       "count": 7
    },
    "sunken-settlement": {
-      "count": 7
+      "count": 9
    },
    "temple": {
       "count": 2
@@ -399,6 +399,9 @@
       "typeLabel": "Wishing Trees",
       "short_description": "Trees where either coins are inserted (not recommended) or ribbons tied to mark wishes",
       "count": 23
+   },
+   "witch": {
+      "count": 14
    },
    "witch-hunt-memorial-plaque": {
       "count": 6
