@@ -118,17 +118,11 @@
    "folklore-fox": {
       "count": 5
    },
-   "fossil": {
-      "count": 3
+   "fortlet": {
+      "count": 115
    },
    "folklore-giant": {
       "count": 17
-   },
-   "general": {
-      "count": 1
-   },
-   "geo-glyph": {
-      "count": 91
    },
    "folklore-humanoid": {
       "count": 1
@@ -141,6 +135,15 @@
    },
    "troll": {
       "count": 1
+   },
+   "fossil": {
+      "count": 3
+   },
+   "general": {
+      "count": 1
+   },
+   "geo-glyph": {
+      "count": 91
    },
    "geofold": {
       "count": 3
