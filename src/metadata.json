@@ -48,7 +48,7 @@
       "count": 6
    },
    "canine": {
-      "count": 9
+      "count": 11
    },
    "cartoquirk": {
       "count": 5
@@ -113,7 +113,7 @@
       "count": 167
    },
    "dragon": {
-      "count": 21
+      "count": 23
    },
    "folklore-fox": {
       "count": 5
@@ -127,11 +127,11 @@
    "general": {
       "count": 1
    },
-   "folklore-humanoid": {
-      "count": 1
-   },
    "geo-glyph": {
       "count": 91
+   },
+   "folklore-humanoid": {
+      "count": 1
    },
    "folklore-serpent": {
       "count": 1
@@ -149,7 +149,7 @@
       "count": 2
    },
    "ghost-light": {
-      "count": 6
+      "count": 10
    },
    "ghost-sign": {
       "count": 1
@@ -325,6 +325,9 @@
    "site": {
       "count": 2
    },
+   "spiritborne": {
+      "count": 3
+   },
    "runestone": {
       "count": 995
    },
@@ -408,6 +411,9 @@
    },
    "witch-hunt-memorial": {
       "count": 19
+   },
+   "wizard": {
+      "count": 7
    },
    "world-heritage": {
       "implicit": true,
