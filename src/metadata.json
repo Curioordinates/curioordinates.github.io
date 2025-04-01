@@ -69,13 +69,13 @@
       "count": 294
    },
    "curse": {
-      "count": 22
+      "count": 24
    },
    "dark-sky": {
       "count": 261
    },
    "devil": {
-      "count": 2
+      "count": 4
    },
    "devils-bridge": {
       "count": 1
@@ -107,10 +107,10 @@
    },
    "changeling": {
       "short_description": "In folklore, a changeling is a fairy child left in place of a human infant, taken out of love or belief that the human child is exceptionally beautiful or destined for a life of wonder. In reality, the changeling myth was often a tragic explanation for infants born with (at the time) unexplained illnesses, such that parents sometimes resorted to cruel superstitions in an attempt to 'drive out' the fairy imposter.",
-      "count": 4
+      "count": 5
    },
    "folklore": {
-      "count": 167
+      "count": 173
    },
    "dragon": {
       "count": 23
@@ -178,7 +178,7 @@
       "count": 35
    },
    "haunting": {
-      "count": 494
+      "count": 496
    },
    "henge": {
       "count": 2
@@ -251,7 +251,10 @@
       "count": 5
    },
    "name": {
-      "count": 22
+      "count": 23
+   },
+   "named-ghost": {
+      "count": 6
    },
    "occult-shop": {
       "count": 89
@@ -407,7 +410,7 @@
       "count": 23
    },
    "witch": {
-      "count": 14
+      "count": 15
    },
    "witch-hunt-memorial-plaque": {
       "count": 6
