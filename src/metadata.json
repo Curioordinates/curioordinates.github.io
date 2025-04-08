@@ -94,7 +94,7 @@
    "erratic": {
       "typeLabel": "Glacial Erratic",
       "short_description": "Stones transported by glaciers over 25,000 years ago",
-      "count": 221
+      "count": 222
    },
    "event": {
       "count": 2
@@ -179,6 +179,9 @@
    },
    "haunting": {
       "count": 496
+   },
+   "headless-rider": {
+      "count": 1
    },
    "henge": {
       "count": 2
@@ -377,7 +380,7 @@
       "count": 24
    },
    "uncontacted": {
-      "short_description": "Uncontacted peoples are indigenous groups living wthout sustained contact with the world community. There are thought to be between 100 and 200 such tribes.",
+      "short_description": "Uncontacted peoples are indigenous groups living without sustained contact with the world community. There are thought to be between 100 and 200 such tribes.",
       "count": 19
    },
    "unique": {
