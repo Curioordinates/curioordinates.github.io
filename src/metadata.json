@@ -6,7 +6,7 @@
       "count": 49
    },
    "amphitheatre": {
-      "count": 190
+      "count": 191
    },
    "ancient-road": {
       "count": 4
@@ -103,7 +103,7 @@
       "count": 2
    },
    "exhibit": {
-      "count": 13
+      "count": 14
    },
    "fairy": {
       "count": 32
@@ -174,7 +174,7 @@
       "count": 158
    },
    "grave": {
-      "count": 5
+      "count": 7
    },
    "gravity-hill": {
       "count": 6
@@ -187,7 +187,7 @@
       "count": 35
    },
    "haunting": {
-      "count": 496
+      "count": 500
    },
    "headless-rider": {
       "count": 1
@@ -208,7 +208,7 @@
       "count": 22
    },
    "holy-well": {
-      "count": 363
+      "count": 364
    },
    "hominid": {
       "count": 6
@@ -254,7 +254,7 @@
       "count": 14
    },
    "mummified-person": {
-      "count": 6
+      "count": 7
    },
    "mystery": {
       "count": 5
@@ -266,13 +266,13 @@
       "count": 26
    },
    "named-ghost": {
-      "count": 6
+      "count": 7
    },
    "occult-shop": {
       "count": 89
    },
    "ossuary": {
-      "count": 304
+      "count": 305
    },
    "pagan": {
       "count": 1
@@ -308,6 +308,9 @@
       "short_description": "Native to California but making special appearances across the globe - it's the worlds largest tree!",
       "count": 212
    },
+   "rock-cut-tomb": {
+      "count": 1
+   },
    "ruined-castle": {
       "count": 3177
    },
@@ -316,6 +319,9 @@
    },
    "sacred-tree": {
       "count": 35
+   },
+   "sacrificial-altar": {
+      "count": 6
    },
    "sanctuary-stone": {
       "count": 11
@@ -389,7 +395,7 @@
       "count": 3
    },
    "ufo": {
-      "count": 24
+      "count": 25
    },
    "uncontacted": {
       "short_description": "Uncontacted peoples are indigenous groups living without sustained contact with the world community. There are thought to be between 100 and 200 such tribes.",
