@@ -6,7 +6,7 @@
       "count": 49
    },
    "amphitheatre": {
-      "count": 191
+      "count": 192
    },
    "ancient-road": {
       "count": 4
@@ -226,6 +226,10 @@
    "legend": {
       "count": 2
    },
+   "lithiatric-mark": {
+      "short_description": "Usually downward grooves in the stonework - these marks are currently believed to be the result of material (dust) from the building being gathered for use in folk medicine.",
+      "count": 5
+   },
    "lost-mine": {
       "count": 23
    },
@@ -309,7 +313,7 @@
       "count": 212
    },
    "rock-cut-tomb": {
-      "count": 1
+      "count": 2
    },
    "ruined-castle": {
       "count": 3177
