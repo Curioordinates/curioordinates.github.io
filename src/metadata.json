@@ -11,6 +11,11 @@
    "ancient-road": {
       "count": 4
    },
+   "ancient-tree": {
+      "implicit": false,
+      "short_description": "Data reproduced with the permission of The Woodland Trust.",
+      "count": 10987
+   },
    "apotropaic": {
       "count": 13
    },
