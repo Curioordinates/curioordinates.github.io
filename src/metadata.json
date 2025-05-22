@@ -14,7 +14,7 @@
    "ancient-tree": {
       "implicit": false,
       "short_description": "Data reproduced with the permission of The Woodland Trust.",
-      "count": 10987
+      "count": 10988
    },
    "apotropaic": {
       "count": 13
@@ -96,6 +96,9 @@
    "chambered-cairn": {
       "count": 325
    },
+   "earthworks": {
+      "count": 333
+   },
    "egyptian-sarcophagus": {
       "count": 10
    },
@@ -111,7 +114,7 @@
       "count": 14
    },
    "fairy": {
-      "count": 32
+      "count": 33
    },
    "fairy-tree": {
       "count": 3
@@ -189,7 +192,7 @@
       "count": 9
    },
    "haunted-stay": {
-      "count": 35
+      "count": 387
    },
    "haunting": {
       "count": 500
@@ -254,7 +257,7 @@
       "count": 3
    },
    "memento-mori": {
-      "count": 22
+      "count": 23
    },
    "merfolk": {
       "count": 31
@@ -327,7 +330,7 @@
       "count": 3177
    },
    "ruined-church": {
-      "count": 791
+      "count": 792
    },
    "sacred-tree": {
       "count": 35
@@ -407,7 +410,7 @@
       "count": 3
    },
    "ufo": {
-      "count": 25
+      "count": 26
    },
    "uncontacted": {
       "short_description": "Uncontacted peoples are indigenous groups living without sustained contact with the world community. There are thought to be between 100 and 200 such tribes.",

@@ -9,6 +9,7 @@
     "@types/node": "^20.12.3"
   },
   "dependencies": {
+    "@holdy/simply": "^1.0.3",
     "@types/jest": "^29.5.12",
     "geodesy": "^2.4.0",
     "html-to-text": "^9.0.5",
