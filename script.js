@@ -265,7 +265,7 @@ const mapSetup = () => {
 
     pop += `<div id="pop-links">${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}</div>`;
 
-    m.bindPopup(pop, { maxWidth: "auto", minWidth: 500 });
+    m.bindPopup(pop, {});
 
     // m.addTo(map);
     groupedMarkerLayer.addLayer(m);
