@@ -234,6 +234,9 @@ const mapSetup = () => {
         const wikimapUrl = `https://wikimap.toolforge.org/?wp=false&cluster=false&zoom=16&lat=${latitude}&lon=${longitude}`;
         const wikimapLink = `<a href="${wikimapUrl}" target="wikimap_tab"><img title="on wikimap" src="images/wikimap.svg" width=32 height=32 /></a>`;
 
+        const feedbackUrl = `mailto:weird_radar@gmail.com?subject=${typeName}-Feedback&body=Regarding%20the%20${typeName}%20at%20${latitude},${longitude},%0A`;
+        const feedbackLink = `<a href='${feedbackUrl}' title='Send feedback on this item'>[feedback]</a>`;
+
         const folderImage = `<img src="./images/folder.svg" />`;
 
         let secondaryTextDiv = "";
@@ -273,7 +276,7 @@ const mapSetup = () => {
             pop += `<hr><div class="pop-details">${itemMetadata.short_description}</div>`;
         }
 
-        pop += `<div id="pop-links">${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}</div>`;
+        pop += `<div id="pop-links">${googleLink}&nbsp;${komootLink}&nbsp;${osmLink}&nbsp;${wikimapLink}&nbsp;${feedbackLink}</div>`;
 
         m.bindPopup(pop, {});
 
