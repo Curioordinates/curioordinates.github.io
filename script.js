@@ -168,7 +168,7 @@ const mapSetup = () => {
         map.on("locationfound", (e) => {
             console.log("locationfound: " + e);
             userMarker.setLatLng([e.latitude, e.longitude]);
-            if (mapState.isPopupOpen) {
+            if (!mapState.isPopupOpen) {
                 map.setView([e.latitude, e.longitude], qs.z);
             }
         });
