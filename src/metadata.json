@@ -293,7 +293,7 @@
       "count": 1
    },
    "petroglyph": {
-      "count": 1
+      "count": 2
    },
    "petrosomatoglyph": {
       "count": 1
@@ -331,6 +331,12 @@
    },
    "ruined-church": {
       "count": 792
+   },
+   "sacrificial-stone": {
+      "count": 125
+   },
+   "sacred-stone": {
+      "count": 121
    },
    "sacred-tree": {
       "count": 35

@@ -105,20 +105,20 @@ export const processFile = async (
           let link = extractedData.link ?? null;
 
           if (link && link.includes("wikidata.org/entity/")) {
-            incrementNamedCounter("wikidata-entity-links");
+              incrementNamedCounter("wikidata-entity-links");
 
-            if (!fileName.includes("barrow")) {
-              const lastSlash = link.lastIndexOf("/");
-              if (lastSlash !== -1) {
-                const q_id = link.substring(lastSlash + 1);
-                // There might be a wikipedia article about the entity - which would be much better than a wikidata page.
-                const expand = await ttdExpand(q_id);
-                if (expand && expand.about_url_english) {
-                  incrementNamedCounter("wikidata-entity-upgrade");
-                  link = expand.about_url_english;
-                }
+              if (!fileName.includes("barrow")) {
+                  const lastSlash = link.lastIndexOf("/");
+                  if (lastSlash !== -1) {
+                      const q_id = link.substring(lastSlash + 1);
+                      // There might be a wikipedia article about the entity - which would be much better than a wikidata page.
+                      const expand = await ttdExpand(q_id);
+                      if (expand && expand.about_url_english) {
+                          incrementNamedCounter("wikidata-entity-upgrade");
+                          link = expand.about_url_english;
+                      }
+                  }
               }
-            }
           }
 
           const item: PlottableItem = {
