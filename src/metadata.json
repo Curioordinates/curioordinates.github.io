@@ -98,7 +98,7 @@
    },
    "earthworks": {
       "short_description": "Archaeological earthworks are man-made landscape features created by the deliberate movement or shaping of soil, such as ditches, mounds, or banks. Where the purpose of the structures is not known they are simply titled 'earthworks'",
-      "count": 333
+      "count": 334
    },
    "egyptian-sarcophagus": {
       "count": 10
@@ -263,6 +263,9 @@
    "merfolk": {
       "count": 31
    },
+   "milestone": {
+      "count": 1
+   },
    "mothman": {
       "count": 2
    },
@@ -396,7 +399,7 @@
       "count": 12
    },
    "sub-street": {
-      "count": 7
+      "count": 8
    },
    "sunken-settlement": {
       "count": 9
