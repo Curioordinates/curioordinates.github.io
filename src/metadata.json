@@ -79,6 +79,10 @@
    "curse": {
       "count": 24
    },
+   "cyclopean": {
+      "short_description": "Cyclopean masonry features massive, irregular stone blocks fitted so precisely that ancient Greeks believed only the mythical Cyclopes could have built them.",
+      "count": 1
+   },
    "dark-sky": {
       "count": 261
    },
@@ -264,7 +268,7 @@
       "count": 31
    },
    "milestone": {
-      "count": 1
+      "count": 65
    },
    "mothman": {
       "count": 2
@@ -291,7 +295,7 @@
       "count": 89
    },
    "ossuary": {
-      "count": 305
+      "count": 306
    },
    "pagan": {
       "count": 1
@@ -349,7 +353,7 @@
       "count": 6
    },
    "saint": {
-      "count": 1
+      "count": 2
    },
    "sanctuary-stone": {
       "count": 11
