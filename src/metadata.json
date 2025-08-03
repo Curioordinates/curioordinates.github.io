@@ -186,6 +186,9 @@
    "ghost-walk": {
       "count": 158
    },
+   "giants-grave": {
+      "count": 294
+   },
    "grave": {
       "count": 7
    },
@@ -282,6 +285,11 @@
    "mystery": {
       "count": 5
    },
+   "myth-touch": {
+      "typeLabel": "Myths that touched the Earth",
+      "short_description": "Places where myths have effected landscapes or features still visible today.",
+      "count": 4
+   },
    "name-dragon": {
       "count": 5
    },
@@ -292,7 +300,7 @@
       "count": 7
    },
    "occult-market": {
-      "count": 1
+      "count": 5
    },
    "occult-shop": {
       "count": 90
