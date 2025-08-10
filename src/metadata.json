@@ -287,7 +287,7 @@
    },
    "myth-touch": {
       "typeLabel": "Myths that touched the Earth",
-      "short_description": "Places where myths have effected landscapes or features still visible today.",
+      "short_description": "Places where myths have effected landscapes or other features still visible today.",
       "count": 4
    },
    "name-dragon": {
@@ -477,7 +477,7 @@
    "wishing": {
       "typeLabel": "Wishing Trees",
       "short_description": "Trees where either coins are inserted (not recommended) or ribbons tied to mark wishes",
-      "count": 23
+      "count": 24
    },
    "witch": {
       "count": 15
