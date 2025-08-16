@@ -82,6 +82,18 @@ export const fetchHtmlFromUrlViaCache = async ({ url, cacheFilename }: { url: st
     return { html, htmlIsFromCache: false, error: null };
 }
 
+export const parseLatitudeLongitude = (str: string): ErrorOrFields<{ latitude: number, longitude: number }> => {
+    let workingString = str;
+
+    if (workingString.startsWith('https://www.google.com/maps/dir/?api=1&destination=')) {
+        workingString = workingString.substring('https://www.google.com/maps/dir/?api=1&destination='.length).replace('%2C', ',');
+    }
+
+    const [latitude, longitude] = workingString.split(',');
+    return { latitude: parseFloat(latitude), longitude: parseFloat(longitude), error: null };
+}
+
+
 export const toTitleCase = (str: string) => {
     return str.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
 }
