@@ -497,5 +497,9 @@
    "world-heritage": {
       "implicit": true,
       "count": 1198
+   },
+   "zero-point": {
+      "short_description": "Zero point is a point in a city that distances to that place are measured from. So when a road sign says 'London 100 miles' it means its 100 miles to that spot!",
+      "count": 11
    }
 }
