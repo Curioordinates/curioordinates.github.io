@@ -256,7 +256,7 @@
       "count": 9
    },
    "manmade-cave": {
-      "count": 8
+      "count": 9
    },
    "marian-apparition": {
       "count": 35
@@ -300,7 +300,7 @@
       "count": 7
    },
    "national-trust": {
-      "count": 307
+      "count": 419
    },
    "occult-market": {
       "count": 5
@@ -335,7 +335,7 @@
    },
    "point-zero": {
       "short_description": "Mile Zero or Kilometer Zero - is a point in a city that distances to that city are measured from. So when a road sign says 'London 100 miles' it means its 100 miles to that spot!",
-      "count": 16
+      "count": 17
    },
    "practitioner": {
       "count": 16

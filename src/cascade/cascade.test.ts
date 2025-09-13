@@ -119,17 +119,12 @@ describe('cascadeFields', () => {
         const { latitude, longitude } = parseLatitudeLongitude('51.5074,0.1278');
         expect(latitude).toBe(51.5074);
         expect(longitude).toBe(0.1278);
-
-
-
     });
 
     it('should parse non-numeric latitude longitude', () => {
         const { latitude, longitude } = parseLatitudeLongitude('https://www.google.com/maps/dir/?api=1&destination=52.669399%2C-2.68733');
-        expect(latitude).toBe(51.5074);
-        expect(longitude).toBe(0.1278);
-
-
+        expect(latitude).toBe(52.669399);
+        expect(longitude).toBe(-2.68733);
     });
 
     it('should work with 2 cc', async () => {
