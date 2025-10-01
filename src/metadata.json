@@ -100,6 +100,13 @@
    "chambered-cairn": {
       "count": 325
    },
+   "e-book": {
+      "short_description": "Location specific e-books. If you buy a linked book, we may earn a commission from Bookshop.org, whose fees support independent bookshops!",
+      ".<>": "(Find it on ",
+      "<>": "uk.bookshop.org",
+      "<>.": ")",
+      "count": 1
+   },
    "earthworks": {
       "short_description": "Archaeological earthworks are man-made landscape features created by the deliberate movement or shaping of soil, such as ditches, mounds, or banks. Where the purpose of the structures is not known they are simply titled 'earthworks'",
       "count": 334
