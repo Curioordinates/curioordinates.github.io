@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="15mm"
+   height="15mm"
+   viewBox="0 0 15 15"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="gallows.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   sodipodi:docname="gallows.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="false"
+     inkscape:zoom="6.1509572"
+     inkscape:cx="5.7714594"
+     inkscape:cy="47.309709"
+     inkscape:window-width="1792"
+     inkscape:window-height="993"
+     inkscape:window-x="809"
+     inkscape:window-y="200"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter8"
+       x="-0.050216657"
+       y="-0.086264349"
+       width="1.1004333"
+       height="1.1725287">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.14839971"
+         id="feGaussianBlur8" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect8-5-5-0"
+       style="fill:#000000;fill-opacity:0.304212;stroke:none;stroke-width:0.0389118;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter8)"
+       d="m 14.123262,8.1092704 -2.692641,0.011748 c -0.02752,1.2e-4 -0.06375,0.015923 -0.08138,0.035507 l -0.373698,0.4151158 c -0.01763,0.019583 -0.0094,0.035105 0.01816,0.034984 l 0.755005,-0.0034 -1.30041,0.5493104 0.865187,-0.9592046 c 0.03662,-0.040603 0.02067,-0.073363 -0.03618,-0.073363 h -0.448892 c -0.05685,0 -0.132269,0.03276 -0.168892,0.073363 l -3.582023,3.971275 c -0.036621,0.0406 -0.020299,0.07336 0.03655,0.07336 h 0.4488958 c 0.056851,0 0.1319034,-0.03276 0.1685235,-0.07336 l 2.3235707,-2.5760683 0.0015,0.00313 c 0.0048,0.00989 0.02684,0.010136 0.04961,5.204e-4 l 2.226845,-0.940138 c 0.02276,-0.00961 0.03694,-0.025352 0.03216,-0.035246 l -0.0077,-0.016187 1.328471,-0.00574 c 0.02752,-1.2e-4 0.06375,-0.015923 0.08138,-0.035507 l 0.373719,-0.4151158 c 0.01763,-0.019583 0.0097,-0.035105 -0.01779,-0.034984 z" />
+    <ellipse
+       style="fill:#000000;fill-opacity:0.143426;stroke:#c00707;stroke-width:0.165;stroke-dasharray:none;stroke-opacity:0.421348"
+       id="path5"
+       cx="7.4724536"
+       cy="11.982809"
+       rx="0.24757871"
+       ry="0.26408395" />
+    <g
+       id="g8"
+       transform="translate(-0.08602997,0.21507492)">
+      <rect
+         style="fill:#a55c0a;fill-opacity:1;stroke:#000000;stroke-width:0.0650952;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="rect8-5-5"
+         width="0.68295467"
+         height="2.7943296"
+         x="9.8640032"
+         y="-3.7889235"
+         ry="0.049731161"
+         transform="matrix(0.70343716,0.71075745,-0.72319219,0.69064684,0,0)" />
+      <rect
+         style="fill:#a55c0a;fill-opacity:1;stroke:#000000;stroke-width:0.129361;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="rect8"
+         width="0.92461419"
+         height="8.1511316"
+         x="7.172853"
+         y="3.8606987"
+         ry="0.14506708" />
+      <rect
+         style="fill:#a55c0a;fill-opacity:1;stroke:#000000;stroke-width:0.0916124;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="rect8-5"
+         width="0.96147007"
+         height="3.9313719"
+         x="3.9126871"
+         y="-12.027087"
+         ry="0.0699673"
+         transform="matrix(0.00131778,0.99999913,-0.99998124,0.00612561,0,0)" />
+    </g>
+  </g>
+</svg>
