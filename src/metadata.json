@@ -73,6 +73,9 @@
    "crater": {
       "count": 24
    },
+   "crossroads-burial": {
+      "count": 1
+   },
    "cup-and-ring": {
       "count": 294
    },
@@ -105,7 +108,7 @@
       ".<>": "Find it on ",
       "<>": "uk.bookshop.org",
       "<>.": ".",
-      "count": 3
+      "count": 4
    },
    "earthworks": {
       "short_description": "Archaeological earthworks are man-made landscape features created by the deliberate movement or shaping of soil, such as ditches, mounds, or banks. Where the purpose of the structures is not known they are simply titled 'earthworks'",
