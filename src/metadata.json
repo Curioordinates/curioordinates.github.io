@@ -22,6 +22,9 @@
    "aqueduct": {
       "count": 61
    },
+   "arthurian": {
+      "count": 2
+   },
    "balancing-rock": {
       "count": 14
    },
@@ -56,7 +59,7 @@
       "count": 6
    },
    "canine": {
-      "count": 12
+      "count": 13
    },
    "cartoquirk": {
       "count": 5
@@ -80,7 +83,7 @@
       "count": 294
    },
    "curse": {
-      "count": 24
+      "count": 23
    },
    "cyclopean": {
       "short_description": "Cyclopean masonry features massive, irregular stone blocks fitted so precisely that ancient Greeks believed only the mythical Cyclopes could have built them.",
@@ -90,7 +93,7 @@
       "count": 261
    },
    "devil": {
-      "count": 4
+      "count": 6
    },
    "devils-bridge": {
       "count": 1
@@ -129,7 +132,7 @@
       "count": 14
    },
    "fairy": {
-      "count": 36
+      "count": 38
    },
    "fairy-tree": {
       "count": 3
@@ -139,7 +142,7 @@
       "count": 5
    },
    "folklore": {
-      "count": 176
+      "count": 183
    },
    "dragon": {
       "count": 23
@@ -310,7 +313,7 @@
       "count": 26
    },
    "named-ghost": {
-      "count": 7
+      "count": 2
    },
    "national-trust": {
       "count": 419
@@ -356,7 +359,7 @@
       "count": 17
    },
    "practitioner": {
-      "count": 17
+      "count": 18
    },
    "prediction": {
       "count": 1
@@ -377,7 +380,7 @@
       "count": 3178
    },
    "ruined-church": {
-      "count": 793
+      "count": 794
    },
    "sacrificial-stone": {
       "count": 125
@@ -511,7 +514,7 @@
       "count": 24
    },
    "witch": {
-      "count": 15
+      "count": 18
    },
    "witch-hunt-memorial-plaque": {
       "count": 6
@@ -520,7 +523,7 @@
       "count": 19
    },
    "wizard": {
-      "count": 7
+      "count": 8
    },
    "world-heritage": {
       "implicit": true,
