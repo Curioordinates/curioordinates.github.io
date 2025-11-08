@@ -1,0 +1,9 @@
+{
+  "destinationDirectory": "/Users/Shared/projects/curioordinates.github.io/data/source",
+  "sourceDirectory" : "/Users/Shared/projects/curioordinates.github.io/data/hierarchy",
+  "extension": ".hie.txt"
+}
+find directories under destination directory
+find files under source directory
+assert all files match extension
+coalese source files to destination directories

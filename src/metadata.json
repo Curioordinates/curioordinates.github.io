@@ -142,7 +142,7 @@
       "count": 5
    },
    "folklore": {
-      "count": 183
+      "count": 184
    },
    "dragon": {
       "count": 23
@@ -219,7 +219,7 @@
       "count": 387
    },
    "haunting": {
-      "count": 514
+      "count": 517
    },
    "headless-rider": {
       "count": 1
@@ -313,7 +313,7 @@
       "count": 26
    },
    "named-ghost": {
-      "count": 2
+      "count": 5
    },
    "national-trust": {
       "count": 419
@@ -410,6 +410,9 @@
    },
    "sea-monster": {
       "count": 21
+   },
+   "seance": {
+      "count": 1
    },
    "settlement": {
       "count": 16
@@ -514,7 +517,7 @@
       "count": 24
    },
    "witch": {
-      "count": 18
+      "count": 20
    },
    "witch-hunt-memorial-plaque": {
       "count": 6
