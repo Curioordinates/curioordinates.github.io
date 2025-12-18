@@ -206,7 +206,7 @@
       "count": 294
    },
    "grave": {
-      "count": 7
+      "count": 8
    },
    "gravity-hill": {
       "count": 6
@@ -266,7 +266,7 @@
       "count": 23
    },
    "sunken-treasure": {
-      "count": 3
+      "count": 4
    },
    "lost-treasure": {
       "count": 9
@@ -288,6 +288,9 @@
    },
    "milestone": {
       "count": 65
+   },
+   "mortsafe": {
+      "count": 16
    },
    "mothman": {
       "count": 2
@@ -359,7 +362,7 @@
       "count": 17
    },
    "practitioner": {
-      "count": 18
+      "count": 19
    },
    "prediction": {
       "count": 1
@@ -372,6 +375,9 @@
       "name_all": "Giant Redwood",
       "short_description": "Native to California but making special appearances across the globe - it's the worlds largest tree!",
       "count": 212
+   },
+   "research-org": {
+      "count": 3
    },
    "rock-cut-tomb": {
       "count": 30

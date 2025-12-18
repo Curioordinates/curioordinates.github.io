@@ -82,7 +82,7 @@
 63.23333	24.4	Battle of Kokonsaari (1808)	https://en.wikipedia.org/wiki/Battle_of_Kokonsaari
 52.046	1.744	Battle of Orford Ness (1704)	https://en.wikipedia.org/wiki/Battle_of_Orford_Ness_(1704)
 56.74592	17.18713	Battle of Öland (1563)	https://en.wikipedia.org/wiki/Battle_of_%C3%96land_(1563)
-62.07194	21.52527	Battle of Ömossa (1808)	http://www.wikidata.org/entity/Q10671415
+62.07194	21.52527	Battle of Ömossa (1808)	https://en.wikipedia.org/wiki/Battle_of_%C3%96mossa
 43.459	11.155	Battle of Poggio Imperiale (1479)	http://www.wikidata.org/entity/Q106767501
 36.48902	-95.12286	Second Battle of Cabin Creek (1864)	https://en.wikipedia.org/wiki/Second_Battle_of_Cabin_Creek
 42.85	13.57	Battle of Ascurum (-45)	https://en.wikipedia.org/wiki/Battle_of_Ascurum
@@ -322,10 +322,10 @@
 37.25722	-76.60944	Peninsula Campaign (1862)	https://en.wikipedia.org/wiki/Peninsula_campaign
 35.72388	139.6705	Battle of Egota-Numabukurohara (1477)	http://www.wikidata.org/entity/Q11550783
 34.71525	135.42508	Battle of Kawajiri (1185)	http://www.wikidata.org/entity/Q11553808
-36.38269	136.45111	Battle of Asainawate (1600)	http://www.wikidata.org/entity/Q11556971
+36.38269	136.45111	Battle of Asainawate (1600)	https://en.wikipedia.org/wiki/Battle_of_Asai
 36.37591	138.27908	Battle of Unnodaira (1541)	http://www.wikidata.org/entity/Q11559353
 52.1929	20.8897	Battle of Białołęka (1831)	https://en.wikipedia.org/wiki/Battle_of_Bia%C5%82o%C5%82%C4%99ka
-52.21388	21.15805	First Battle of Wawer (1831)	https://en.wikipedia.org/wiki/First_Battle_of_Wawer
+52.21388	21.15805	First Battle of Wawer (1831)	https://en.wikipedia.org/wiki/First_battle_of_Wawer
 35.14466	138.71175	Battle of Fox Bridge (1545)	http://www.wikidata.org/entity/Q11571380
 36.20011	139.16369	Battle of Namanoyama (1562)	http://www.wikidata.org/entity/Q11574872
 33.32108	130.39119	Battle of Tadenawate (1530)	http://www.wikidata.org/entity/Q11576804
@@ -418,7 +418,7 @@
 44.33979	17.26884	Battle of Jajce (1878)	https://en.wikipedia.org/wiki/Battle_of_Jajce_(1878)
 41.48333	1.93333	Battle of Ad Pontes (792)	http://www.wikidata.org/entity/Q11908699
 44.91666	8.61666	Battle of Alessandria (1391)	https://en.wikipedia.org/wiki/Battle_of_Alessandria
-37.2	-4.7	Battle of Alameda (758)	http://www.wikidata.org/entity/Q11908705
+37.2	-4.7	Battle of Alameda (758)	https://en.wikipedia.org/wiki/Battle_of_Alameda
 37.16666	-3.6	Battle of Almosala (1145)	http://www.wikidata.org/entity/Q11908706
 45.65	0.16666	Battle of Angumois (844)	http://www.wikidata.org/entity/Q11908707
 35.41833	36.39861	Battle of Apameia (-1500)	http://www.wikidata.org/entity/Q11908709
@@ -446,7 +446,7 @@
 39.96666	3.13333	Battle of Mallorca (813)	http://www.wikidata.org/entity/Q11908753
 38.21666	23.26666	Battle of Plataea (-430)	http://www.wikidata.org/entity/Q11908757
 42.18805	2.91833	Battle of Pontós (1795)	http://www.wikidata.org/entity/Q11908760
-38.01666	-3.71666	Battle of Qantish (1009)	http://www.wikidata.org/entity/Q11908761
+38.01666	-3.71666	Battle of Qantish (1009)	https://en.wikipedia.org/wiki/Battle_of_Qantish
 42.43472	1.92833	Siege of Puigcerdà (1873)	http://www.wikidata.org/entity/Q11908762
 45.56666	9.56666	Battle of Pons Aureoli (268)	http://www.wikidata.org/entity/Q11908763
 42.26388	3.17944	Battle of Rhode (-194)	http://www.wikidata.org/entity/Q11908765
@@ -505,7 +505,7 @@
 31.293	76.518	Battle of Bilaspur (1711)	https://en.wikipedia.org/wiki/Battle_of_Bilaspur_(1711)
 45.18325	19.94155	Battle of Karlóca (1848)	https://en.wikipedia.org/wiki/Battle_of_Karl%C3%B3ca
 46.64731	8.59052	Battle of Devil's Bridge (1799)	https://en.wikipedia.org/wiki/Battle_of_Devil%27s_Bridge
-45.21422	20.38061	Battle of Perlasz (1848)	https://en.wikipedia.org/wiki/Battle_of_Perlasz
+45.21422	20.38061	Battle of Perlasz (1848)	http://www.wikidata.org/entity/Q120355773
 49.74138	13.3825	Siege of Pilsen (1433)	https://en.wikipedia.org/wiki/Siege_of_Pilsen_(1433%E2%80%931434)
 32.03055	112.14027	Battle of Xiangyang (1267)	https://en.wikipedia.org/wiki/Battle_of_Xiangyang
 56.32845	44.00321	Battle for Nizhniy Novgorod (1439)	https://en.wikipedia.org/wiki/Battle_for_Nizhniy_Novgorod_(1439)
@@ -767,7 +767,7 @@
 20.937	106.629	Battle of Bạch Đằng (1288)	https://en.wikipedia.org/wiki/Battle_of_B%E1%BA%A1ch_%C4%90%E1%BA%B1ng_(1288)
 41.52067	0.35163	Battle of Fraga (1134)	https://en.wikipedia.org/wiki/Battle_of_Fraga
 40.58666	43.12111	Battle of Kars (1877)	https://en.wikipedia.org/wiki/Battle_of_Kars
-41.995	13.54722	Battle of Asculum (-88)	https://en.wikipedia.org/wiki/Battle_of_Asculum_(89_BC)
+41.995	13.54722	Battle of Asculum (-88)	https://en.wikipedia.org/wiki/Siege_of_Asculum_(90-89_BC)
 42.93722	26.93944	Battle of the Rishki Pass (759)	https://en.wikipedia.org/wiki/Battle_of_the_Rishki_Pass
 43.17722	-75.36944	Battle of Oriskany (1777)	https://en.wikipedia.org/wiki/Battle_of_Oriskany
 50.10666	29.80583	Siege of Veprik (1708)	https://en.wikipedia.org/wiki/Siege_of_Veprik
@@ -827,7 +827,7 @@
 51.91	4.34	Battle of Vlaardingen (1351)	https://en.wikipedia.org/wiki/Battle_of_Zwartewaal
 47.9852	8.8234	Battle of Tuttlingen (1643)	https://en.wikipedia.org/wiki/Battle_of_Tuttlingen
 35.86648	-76.7519	Battle of Plymouth (1864)	https://en.wikipedia.org/wiki/Battle_of_Plymouth_(1864)
-49.964	-4.21	Battle of Plymouth (1652)	https://en.wikipedia.org/wiki/Battle_of_Plymouth
+49.964	-4.21	Battle of Plymouth (1652)	https://en.wikipedia.org/wiki/Battle_of_Plymouth_(1652)
 51.71527	0.70083	Battle of Maldon (991)	https://en.wikipedia.org/wiki/Battle_of_Maldon
 41.2167	13.5667	Battle of Garigliano (1504)	https://en.wikipedia.org/wiki/Battle_of_Garigliano_(1503)
 45.9075	-59.9739	Action of 21 July 1781 (1781)	https://en.wikipedia.org/wiki/Action_of_21_July_1781
@@ -860,8 +860,8 @@
 52.52	-7.89	Battle of Knocknanuss (1647)	https://en.wikipedia.org/wiki/Battle_of_Knocknanuss
 36.8528	10.3233	Battle of Carthage (698)	https://en.wikipedia.org/wiki/Battle_of_Carthage_(698)
 38.95277	-4	Battle of Alarcos (1195)	https://en.wikipedia.org/wiki/Battle_of_Alarcos
-42.48414	12.32319	Battle of Lake Vadimo (-282)	https://en.wikipedia.org/wiki/Battle_of_Lake_Vadimo_(283_BC)
-43.46027	12.38638	Battle of Lake Vadimo (-282)	https://en.wikipedia.org/wiki/Battle_of_Lake_Vadimo_(283_BC)
+42.48414	12.32319	Battle of Lake Vadimo (-282)	https://en.wikipedia.org/wiki/Battle_of_Lake_Vadimon_(283_BC)
+43.46027	12.38638	Battle of Lake Vadimo (-282)	https://en.wikipedia.org/wiki/Battle_of_Lake_Vadimon_(283_BC)
 44.55027	19.2225	Battle of Loznica (1810)	https://en.wikipedia.org/wiki/Battle_of_Loznica
 51.21333	4.43305	Battle of Borgerhout (1579)	https://en.wikipedia.org/wiki/Battle_of_Borgerhout
 52.1519	-3.4617	Battle of Orewin Bridge (1282)	https://en.wikipedia.org/wiki/Battle_of_Orewin_Bridge
@@ -1014,7 +1014,7 @@
 41.468	1.927	Battle of Martorell (1114)	https://en.wikipedia.org/wiki/Battle_of_Martorell_(1114)
 39.46666	-0.4	Battle of Mislata (1348)	http://www.wikidata.org/entity/Q15899584
 48.38333	9.98333	Battle of Ulm (1805)	https://en.wikipedia.org/wiki/Battle_of_Ulm
-41.85416	41.97083	Battle of the Choloki (1854)	https://en.wikipedia.org/wiki/Battle_of_Choloki
+41.85416	41.97083	Battle of the Choloki (1854)	https://en.wikipedia.org/wiki/Battle_of_Choloki_(1854)
 37.6	-0.9825	Battle of New Carthage (-208)	https://en.wikipedia.org/wiki/Battle_of_New_Carthage
 50.46666	4.86666	Siege of Namur (-53)	http://www.wikidata.org/entity/Q15934409
 37.70204	27.0538	Battle of Kavofonias (1821)	http://www.wikidata.org/entity/Q15948782
@@ -1138,7 +1138,7 @@
 45.83	-0.65	Battle of Taillebourg (1242)	https://en.wikipedia.org/wiki/Battle_of_Taillebourg
 52.7475	-2.7185	Battle of Shrewsbury (1403)	https://en.wikipedia.org/wiki/Battle_of_Shrewsbury
 -27.69888	30.95	Battle of Hlobane (1879)	https://en.wikipedia.org/wiki/Battle_of_Hlobane
-52.5186	13.4081	Raid on Berlin (1760)	https://en.wikipedia.org/wiki/Raid_on_Berlin
+52.5186	13.4081	Raid on Berlin (1760)	https://en.wikipedia.org/wiki/1760_raid_on_Berlin
 37.80888	22.71027	Battle of Nemea (-393)	https://en.wikipedia.org/wiki/Battle_of_Nemea
 37.8089	22.7103	Battle of Nemea (-393)	https://en.wikipedia.org/wiki/Battle_of_Nemea
 51.26777	12.15666	Battle of Lützen (1632)	https://en.wikipedia.org/wiki/Battle_of_L%C3%BCtzen_(1632)
@@ -1153,7 +1153,7 @@
 53.23333	-1.41666	Battle of Chesterfield (1266)	https://en.wikipedia.org/wiki/Battle_of_Chesterfield
 50.3	4.11667	Battle of Erquelinnes (1794)	https://en.wikipedia.org/wiki/Battle_of_Erquelinnes
 48.9444	7.72278	Battle of Froeschwiller (1793)	https://en.wikipedia.org/wiki/Battle_of_Froeschwiller_(1793)
-11.3333	36.75	Battle of Faggeta (1769)	https://en.wikipedia.org/wiki/Battle_of_Faggeta
+11.3333	36.75	Battle of Faggeta (1769)	http://www.wikidata.org/entity/Q16839025
 50.4	4.43333	Battle of Gosselies (1794)	https://en.wikipedia.org/wiki/Battle_of_Gosselies
 50.3333	4.06667	Battle of Grandreng (1794)	https://en.wikipedia.org/wiki/Battle_of_Grand-Reng
 44.617	33.517	Battle of the Great Redan (1855)	https://en.wikipedia.org/wiki/Battle_of_the_Great_Redan
@@ -1283,7 +1283,7 @@
 50.09527	3.24027	Battle of Vicy (717)	https://en.wikipedia.org/wiki/Battle_of_Vincy
 45.94138	18.64722	Battle of Mohács (1526)	https://en.wikipedia.org/wiki/Battle_of_Moh%C3%A1cs
 47.542	-0.103	Battle of Baugé (1421)	https://en.wikipedia.org/wiki/Battle_of_Baug%C3%A9
-32.98222	-85.73527	Battle of Horseshoe Bend (1814)	https://en.wikipedia.org/wiki/Battle_of_Horseshoe_Bend_(1814)
+32.98222	-85.73527	Battle of Horseshoe Bend (1814)	https://en.wikipedia.org/wiki/Battle_of_Horseshoe_Bend
 50.38333	30.21666	Battle on the Irpin River (1320)	https://en.wikipedia.org/wiki/Battle_on_the_Irpin_River
 37.21825	-77.37768	Battle of the Crater (1864)	https://en.wikipedia.org/wiki/Battle_of_the_Crater
 50.6598	13.9648	Battle of Aussig (1426)	https://en.wikipedia.org/wiki/Battle_of_Aussig
@@ -1481,7 +1481,7 @@
 49.45277	10.96527	Battle of the Alte Veste (1632)	https://en.wikipedia.org/wiki/Battle_of_the_Alte_Veste
 35.8275	-78.82888	Battle of Morrisville (1865)	https://en.wikipedia.org/wiki/Battle_of_Morrisville
 51.16222	21.23694	Battle of Iłżą (1831)	http://www.wikidata.org/entity/Q20032282
-53.51027	22.50722	Battle of Białaszewem (1863)	http://www.wikidata.org/entity/Q20033661
+53.51027	22.50722	Battle of Białaszewem (1863)	https://en.wikipedia.org/wiki/Skirmish_at_Bia%C5%82aszewo
 53.865	23.43472	Battle of Gruszkami (1863)	http://www.wikidata.org/entity/Q20033763
 53.8	23.22916	Battle of Kozim Rynku (1863)	http://www.wikidata.org/entity/Q20033812
 53.77166	23.42138	Battle of Skieblewem (1863)	http://www.wikidata.org/entity/Q20034146
@@ -1854,7 +1854,7 @@
 40.98333	29.03333	Battle of Chalcedon (-73)	https://en.wikipedia.org/wiki/Battle_of_Chalcedon_(74_BC)
 19.35555	-99.14861	Battle of Churubusco (1847)	https://en.wikipedia.org/wiki/Battle_of_Churubusco
 38.81246	-77.52131	Second Battle of Bull Run (1862)	https://en.wikipedia.org/wiki/Second_Battle_of_Bull_Run
-50.66666	13.93333	Second Battle of Chlumec (1126)	https://en.wikipedia.org/wiki/War_of_Bohemian_Succession_(1125%E2%80%931140)
+50.66666	13.93333	Second Battle of Chlumec (1126)	https://en.wikipedia.org/wiki/War_of_Bohemian_Succession_(1125%E2%80%931126)
 38.501	22.864	Battle of Chaeronea (-85)	https://en.wikipedia.org/wiki/Battle_of_Chaeronea_(86_BC)
 45.06756	-73.3438	Battle of Lacolle Mills (1814)	https://en.wikipedia.org/wiki/Battle_of_Lacolle_Mills_(1814)
 34.97095	-88.52173	Second Battle of Corinth (1862)	https://en.wikipedia.org/wiki/Second_Battle_of_Corinth
@@ -1867,7 +1867,7 @@
 47.36666	8.55	Second Battle of Zurich (1799)	https://en.wikipedia.org/wiki/Second_Battle_of_Zurich
 42.88222	-9.40429	Second Battle of Cape Finisterre (1747)	https://en.wikipedia.org/wiki/Second_Battle_of_Cape_Finisterre
 42.15	24.75	Battle of Philippopolis (250)	https://en.wikipedia.org/wiki/Siege_of_Philippopolis_(250)
-39.36	22.83	Battle of Cynoscephalae (-363)	https://en.wikipedia.org/wiki/Battle_of_Cynoscephalae_(364_BCE)
+39.36	22.83	Battle of Cynoscephalae (-363)	https://en.wikipedia.org/wiki/Battle_of_Cynoscephalae_(364_BC)
 35.6186	-77.1431	Battle of Tranter's Creek (1862)	https://en.wikipedia.org/wiki/Battle_of_Tranter%27s_Creek
 32.7983	35.45955	Battle of Hattin (1187)	https://en.wikipedia.org/wiki/Battle_of_Hattin
 35.5937	139.5026	Battle of Ozawahara (1530)	https://en.wikipedia.org/wiki/Battle_of_Ozawahara
@@ -1978,7 +1978,7 @@
 36.3777	-86.1743	Battle of Hartsville (1862)	https://en.wikipedia.org/wiki/Battle_of_Hartsville
 46.65401	29.24577	Battle of Larga (1770)	https://en.wikipedia.org/wiki/Battle_of_Larga
 24.88666	46.45665	Battle of Yamama (632)	https://en.wikipedia.org/wiki/Battle_of_al-Yamama
-47.88458	1.87694	Battle of Orleans (463)	https://en.wikipedia.org/wiki/Battle_of_Orleans_(463)
+47.88458	1.87694	Battle of Orleans (463)	https://en.wikipedia.org/wiki/Battle_of_Orl%C3%A9ans_(463)
 51.21666	4.4	French Fury (1583)	https://en.wikipedia.org/wiki/French_Fury
 40.83333	-5.5	Battle of Alba de Tormes (1809)	https://en.wikipedia.org/wiki/Battle_of_Alba_de_Tormes
 35.1785	-94.3106	Battle of Devil's Backbone (1863)	https://en.wikipedia.org/wiki/Battle_of_Devil%27s_Backbone
@@ -2012,7 +2012,7 @@
 42.02881	12.4245	Battle of the Cremera (-476)	https://en.wikipedia.org/wiki/Battle_of_the_Cremera
 34.73494	135.3178	Battle of Uchidehama (1351)	http://www.wikidata.org/entity/Q24897898
 -29.03916	24.62638	Battle of Modder River (1899)	https://en.wikipedia.org/wiki/Battle_of_Modder_River
-21.16666	72.83333	Battle of Salher (1672)	https://en.wikipedia.org/wiki/Battle_of_Salher
+21.16666	72.83333	Battle of Salher (1672)	http://www.wikidata.org/entity/Q24925403
 45.02069	0.69558	Battle of Vergt (1562)	https://en.wikipedia.org/wiki/Battle_of_Vergt
 14.97305	75.33277	Battle of Savanur (1786)	https://en.wikipedia.org/wiki/Battle_of_Savanur
 59.5	24.75	Battle of Reval (1790)	https://en.wikipedia.org/wiki/Battle_of_Reval
@@ -2067,7 +2067,7 @@
 38.0739	46.2961	Battle of Sardrud (1408)	http://www.wikidata.org/entity/Q25476739
 -25.84027	28.74194	Action at Bronkhorstspruit (1880)	https://en.wikipedia.org/wiki/Battle_of_Bronkhorstspruit
 48.9353	2.42556	Battle of Le Bourget (1870)	https://en.wikipedia.org/wiki/Battle_of_Le_Bourget
-38.3575	31.41638	Battle of Philomelion (1116)	https://en.wikipedia.org/wiki/Battle_of_Philomelion
+38.3575	31.41638	Battle of Philomelion (1116)	https://en.wikipedia.org/wiki/Battle_of_Philomelion_(1116)
 40.19	-92.6	Battle of Kirksville (1862)	https://en.wikipedia.org/wiki/Battle_of_Kirksville
 53.74319	13.3108	Battle of the Tollense River (-1249)	https://en.wikipedia.org/wiki/Tollense_valley_battlefield
 37.22	-76.44	Siege of Yorktown (1862)	https://en.wikipedia.org/wiki/Siege_of_Yorktown_(1862)
@@ -2164,7 +2164,7 @@
 32.40555	-90.84777	Battle of Chickasaw Bayou (1862)	https://en.wikipedia.org/wiki/Battle_of_Chickasaw_Bayou
 49.27	25.14	Battle of Podhajce (1698)	https://en.wikipedia.org/wiki/Battle_of_Podhajce_(1698)
 55.01666	-2.91666	Battle of Arfderydd (573)	https://en.wikipedia.org/wiki/Battle_of_Arfderydd
-44.523	33.59861	The Thin Red Line (1854)	https://en.wikipedia.org/wiki/The_Thin_Red_Line_(Battle_of_Balaclava)
+44.523	33.59861	The Thin Red Line (1854)	https://en.wikipedia.org/wiki/Thin_Red_Line_(Battle_of_Balaclava)
 51.09944	11.5875	Battle of Auerstädt (1806)	http://www.wikidata.org/entity/Q2636580
 63.58861	27.16416	Battle of Koljonvirta (1808)	https://en.wikipedia.org/wiki/Battle_of_Koljonvirta
 54.1833	15.5833	Sieges of Kolberg (1759)	https://en.wikipedia.org/wiki/Siege_of_Kolberg_(Seven_Years%27_War)
@@ -2433,7 +2433,7 @@
 43.51329	12.84407	Battle of Canturino (1363)	https://en.wikipedia.org/wiki/Battle_of_Canturino
 43.73761	11.75261	Battle of Campaldino (1289)	https://en.wikipedia.org/wiki/Battle_of_Campaldino
 43.29833	1.21972	Battle of Carbonne (1799)	http://www.wikidata.org/entity/Q2888242
-33.88555	-78.01277	Battle of Cape Fear River (1718)	https://en.wikipedia.org/wiki/Battle_of_Cape_Fear_River_(1718)
+33.88555	-78.01277	Battle of Cape Fear River (1718)	https://en.wikipedia.org/wiki/Battle_of_Cape_Fear_River
 47.58472	-3.07944	Battle of Carnac (1795)	http://www.wikidata.org/entity/Q2888244
 19.8	-72.2	Battle of Cap-Français (1757)	https://en.wikipedia.org/wiki/Battle_of_Cap-Fran%C3%A7ais
 44.78436	10.87957	Battle of Carpi (1815)	https://en.wikipedia.org/wiki/Battle_of_Carpi_(1815)
@@ -2550,7 +2550,7 @@
 45.18494	10.80065	Battle of La Favorite (1797)	http://www.wikidata.org/entity/Q2889033
 46.89138	-1.82972	Battle of La Garnache (1793)	http://www.wikidata.org/entity/Q2889037
 46.83305	-0.85944	Battle of La Flocellière (1799)	http://www.wikidata.org/entity/Q2889042
-47.69972	-0.07611	Battle of La Fleche (1793)	http://www.wikidata.org/entity/Q2889044
+47.69972	-0.07611	Battle of La Fleche (1793)	https://en.wikipedia.org/wiki/Battle_of_La_Fl%C3%A8che
 48.07277	-1.01583	Battle of La Gravelle (1793)	http://www.wikidata.org/entity/Q2889049
 48.31555	-1.04972	Battle of La Pellerine (1796)	http://www.wikidata.org/entity/Q2889055
 46.66944	-1.41861	Battle of La Roche-sur-Yon (1793)	http://www.wikidata.org/entity/Q2889061
@@ -2574,7 +2574,7 @@
 45.4833	8.08333	Battle of Magnano (1799)	https://en.wikipedia.org/wiki/Battle_of_Magnano
 48.49333	-1.29277	Battle of New House (1796)	http://www.wikidata.org/entity/Q2889188
 37.17	22	Battle of Makryplagi (1263)	https://en.wikipedia.org/wiki/Battle_of_Makryplagi
-35.895	14.52055	Battle of Malta (1283)	https://en.wikipedia.org/wiki/Battle_of_Malta
+35.895	14.52055	Battle of Malta (1283)	https://en.wikipedia.org/wiki/Battle_of_Malta_(1283)
 37.5833	36.9333	Battle of Marash (953)	https://en.wikipedia.org/wiki/Battle_of_Marash_(953)
 41.5522	-0.99194	Battle of María (1809)	https://en.wikipedia.org/wiki/Battle_of_Mar%C3%ADa
 30.77638	-85.23805	Battle of Marianna (1864)	https://en.wikipedia.org/wiki/Battle_of_Marianna
@@ -2764,7 +2764,7 @@
 35.7028	-0.64925	Battle of l'Habrah (1835)	http://www.wikidata.org/entity/Q2890463
 -28.95055	31.54333	Battle of Inyezane (1879)	https://en.wikipedia.org/wiki/Battle_of_Inyezane
 45.85305	-84.6175	Battle of Mackinac Island (1814)	https://en.wikipedia.org/wiki/Battle_of_Mackinac_Island_(1814)
-35.1502	-75.873	Battle of Ocracoke Inlet (1718)	https://en.wikipedia.org/wiki/Battle_of_Ocracoke_(1718)
+35.1502	-75.873	Battle of Ocracoke Inlet (1718)	https://en.wikipedia.org/wiki/Battle_of_Ocracoke
 46.97444	-2.00055	Battle of Bouin (1793)	http://www.wikidata.org/entity/Q2890489
 14.7167	-89.5833	Battle of La Arada (1851)	https://en.wikipedia.org/wiki/Battle_of_La_Arada
 43.30972	-1.70333	Battle of the Bidassoa (1813)	https://en.wikipedia.org/wiki/Battle_of_the_Bidassoa
@@ -2779,7 +2779,7 @@
 19.1408	-101.2725	Battle of la Loma (1865)	https://en.wikipedia.org/wiki/Battle_of_la_Loma
 19.31666	-72.58333	Battle of Ravine-à-Couleuvres (1802)	https://en.wikipedia.org/wiki/Battle_of_Ravine-%C3%A0-Couleuvres
 47.14722	-1.52861	Battle of La Roullière (1794)	http://www.wikidata.org/entity/Q2890566
-35.08027	-1.36222	Bataille de la Sikkak (1836)	http://www.wikidata.org/entity/Q2890573
+35.08027	-1.36222	Bataille de la Sikkak (1836)	https://en.wikipedia.org/wiki/Battle_of_Sikkak
 47.72527	-2.61861	Battle of Elven Tower (1799)	http://www.wikidata.org/entity/Q2890578
 36.03333	140.01666	Battle of Tonegawa (1571)	https://en.wikipedia.org/wiki/Battle_of_Tonegawa
 48.41916	-1.23402	Battle of Vieuville (1795)	http://www.wikidata.org/entity/Q2890584
@@ -3136,8 +3136,8 @@
 43.33333	-1.46666	Battle of Bayonne (1814)	https://en.wikipedia.org/wiki/Battle_of_Bayonne
 49.19527	16.60833	Siege of Brno (1645) (1645)	https://en.wikipedia.org/wiki/Siege_of_Brno
 50.17583	3.23472	Siege of Cambrai (1339)	https://en.wikipedia.org/wiki/Siege_of_Cambrai_(1339)
-43.21583	2.35138	Siege of Carcassonne (1209)	http://www.wikidata.org/entity/Q3485852
-43.21305	2.35194	Siege of Carcassonne (1209)	http://www.wikidata.org/entity/Q3485852
+43.21583	2.35138	Siege of Carcassonne (1209)	https://en.wikipedia.org/wiki/Siege_of_Carcassonne
+43.21305	2.35194	Siege of Carcassonne (1209)	https://en.wikipedia.org/wiki/Siege_of_Carcassonne
 51.3197	9.49778	Siege of Cassel (1761)	https://en.wikipedia.org/wiki/Siege_of_Cassel_(1761)
 36.28333	6.61666	Battle of Constantine (1836)	https://en.wikipedia.org/wiki/Battle_of_Constantine
 49.92166	1.07777	Siege of Dieppe (1442)	https://en.wikipedia.org/wiki/Siege_of_Dieppe
@@ -3255,7 +3255,7 @@
 -34.65986	-58.75666	Battle of Márquez Bridge (1829)	https://en.wikipedia.org/wiki/Battle_of_M%C3%A1rquez_Bridge
 35.2667	36.56695	Battle of Shaizar (1111)	https://en.wikipedia.org/wiki/Battle_of_Shaizar
 32.00386	-6.57958	Battle of Tadla (1554)	https://en.wikipedia.org/wiki/Battle_of_Tadla
-39.885	17.27694	Battle of Thurii (-279)	https://en.wikipedia.org/wiki/Battle_of_Thurii
+39.885	17.27694	Battle of Thurii (-279)	http://www.wikidata.org/entity/Q3636635
 42.02388	12.40138	Battle of Veii (-474)	http://www.wikidata.org/entity/Q3636653
 43.08915	-79.09545	Battle of Lundy's Lane (1814)	https://en.wikipedia.org/wiki/Battle_of_Lundy%27s_Lane
 -27.1833	-57.8833	Battle of Estero Bellaco (1866)	https://en.wikipedia.org/wiki/Battle_of_Estero_Bellaco
@@ -3907,7 +3907,7 @@
 42.1401	-0.40889	Battle of Huesca (1837)	https://en.wikipedia.org/wiki/Battle_of_Huesca
 34.84361	113.20638	Battle of Hulao (621)	https://en.wikipedia.org/wiki/Battle_of_Hulao
 36.57	111.75	Battle of Huoyi (617)	https://en.wikipedia.org/wiki/Battle_of_Huoyi
-31.66162	130.34963	Battle of Ichirai (1539)	https://en.wikipedia.org/wiki/Battle_of_Ichirai
+31.66162	130.34963	Battle of Ichirai (1539)	http://www.wikidata.org/entity/Q4871264
 34.97876	137.16724	Battle of Idano (1535)	https://en.wikipedia.org/wiki/Battle_of_Idano
 40.1608	25.8444	Battle of Imbros (1717)	https://en.wikipedia.org/wiki/Battle_of_Imbros_(1717)
 37.78333	126.66666	Battle of Imjin River (1592)	https://en.wikipedia.org/wiki/Battle_of_Imjin_River_(1592)
@@ -4008,7 +4008,7 @@
 12.42397	76.69028	Battle of Mallavelly (1799)	https://en.wikipedia.org/wiki/Battle_of_Mallavelly
 57.597	-4.428	Battle of Mam Garvia (1187)	https://en.wikipedia.org/wiki/Battle_of_Mam_Garvia
 31.275	30.0125	Battle of Mandora (1801)	https://en.wikipedia.org/wiki/Battle_of_Mandora
-24.03	75.08	Battle of Mandsaur (1733)	https://en.wikipedia.org/wiki/Battle_of_Mandsaur
+24.03	75.08	Battle of Mandsaur (1733)	http://www.wikidata.org/entity/Q4871656
 56.90305	-4.83861	Battle of Maol Ruadh (1688)	https://en.wikipedia.org/wiki/Battle_of_Mulroy
 27.76666	75.8	Battle of Maonda and Mandholi (1767)	https://en.wikipedia.org/wiki/Battle_of_Maonda_and_Mandholi
 52.9762	-1.1357	Battle of Mapperley Hills (1842)	https://en.wikipedia.org/wiki/Battle_of_Mapperley_Hills
@@ -4040,7 +4040,7 @@
 53.23	-4.154	Battle of Moel-y-don (1282)	https://en.wikipedia.org/wiki/Battle_of_Moel-y-don
 53.9167	19.9333	Battle of Mohrungen (1807)	https://en.wikipedia.org/wiki/Battle_of_Mohrungen
 54.08	-6.37	Battle of Moiry Pass (1315)	https://en.wikipedia.org/wiki/Battle_of_Moiry_Pass
-19.45527	-155.92277	Battle of Mokuohai (1782)	https://en.wikipedia.org/wiki/Battle_of_Mokuohai
+19.45527	-155.92277	Battle of Mokuohai (1782)	https://en.wikipedia.org/wiki/Battle_of_Moku%CA%BB%C5%8Dhai
 45.47972	-88.98305	Battle of Mole Lake (1806)	https://en.wikipedia.org/wiki/Battle_of_Mole_Lake
 31.78333	130.32966	Battle of Momotsugi (1539)	https://en.wikipedia.org/wiki/Battle_of_Momotsugi
 33.19666	-80.00666	Battle of Monck's Corner (1780)	https://en.wikipedia.org/wiki/Battle_of_Monck%27s_Corner
@@ -4227,7 +4227,7 @@
 32.75703	-80.13393	Battle of Stono Ferry (1779)	https://en.wikipedia.org/wiki/Battle_of_Stono_Ferry
 56.741	-2.655	Battle of Stracathro (1130)	https://en.wikipedia.org/wiki/Battle_of_Stracathro
 51.94162	-1.73034	Battle of Stow-on-the-Wold (1646)	https://en.wikipedia.org/wiki/Battle_of_Stow-on-the-Wold
-38.99055	-78.35861	Battle of Strasburg (1864)	https://en.wikipedia.org/wiki/Battle_of_Strasburg
+38.99055	-78.35861	Battle of Strasburg (1864)	http://www.wikidata.org/entity/Q4872449
 34.38305	115.61888	Battle of Suiyang (757)	https://en.wikipedia.org/wiki/Siege_of_Suiyang
 39.2499	-77.9586	Battle of Summit Point (1864)	https://en.wikipedia.org/wiki/Battle_of_Summit_Point
 60.14805	24.98638	Battle of Suomenlinna (1855)	https://en.wikipedia.org/wiki/Bombardment_of_Sveaborg
@@ -4337,7 +4337,7 @@
 35.31	-79.48	Battle of the House in the Horseshoe (1781)	https://en.wikipedia.org/wiki/Battle_of_the_House_in_the_Horseshoe
 54.3222	-4.3867	Battle of the Isle of Man (1158)	https://en.wikipedia.org/wiki/Battle_of_the_Isle_of_Man
 42.68333	-2.93333	Battle of the Morcuera (865)	https://en.wikipedia.org/wiki/Battle_of_the_Morcuera
-42.60333	-5.57722	Battle of the Nervasos Mountains (419)	https://en.wikipedia.org/wiki/Battle_of_the_Nervasos_Mountains
+42.60333	-5.57722	Battle of the Nervasos Mountains (419)	https://en.wikipedia.org/wiki/Asterius_campaign_in_Gallaecia
 56.4	-3.43	Battle of the North Inch (1396)	https://en.wikipedia.org/wiki/Battle_of_the_North_Inch
 35.4116	-100.672	Battle of the North Fork of the Red River (1872)	https://en.wikipedia.org/wiki/Battle_of_the_North_Fork_of_the_Red_River
 35.25	36.58333	Battle of the Orontes (994)	https://en.wikipedia.org/wiki/Battle_of_the_Orontes
@@ -4680,7 +4680,7 @@
 39.15222	-0.4425	Battle of Lauron (-75)	https://en.wikipedia.org/wiki/Battle_of_Lauron
 39.16388	-0.25166	Battle of Sucro (-74)	https://en.wikipedia.org/wiki/Battle_of_Sucro
 39.46666	-0.375	Battle of Valentia (-74)	https://en.wikipedia.org/wiki/Battle_of_Valentia_(75_BC)
-45.00837	10.97741	Battle of Quistello (1739)	http://www.wikidata.org/entity/Q60558315
+45.00837	10.97741	Battle of Quistello (1739)	https://en.wikipedia.org/wiki/Raid_on_Quistello
 46.05083	17.79694	Siege of Szigetvár (1566)	https://en.wikipedia.org/wiki/Siege_of_Szigetv%C3%A1r
 37.50416	-76.28861	Battle of Gwynn's Island (1776)	https://en.wikipedia.org/wiki/Battle_of_Gwynn%27s_Island
 39.65416	66.95972	Siege of Samarkand (1868)	https://en.wikipedia.org/wiki/Siege_of_Samarkand_(1868)
@@ -5163,7 +5163,7 @@
 56.9514	-5.00139	Stand-off at the Fords of Arkaig (1665)	https://en.wikipedia.org/wiki/Stand-off_at_the_Fords_of_Arkaig
 41.83333	12.5	Stand of the Swiss Guard (1527)	https://en.wikipedia.org/wiki/Stand_of_the_Swiss_Guard
 43.0667	-3.53333	Battle of Espinosa (1808)	https://en.wikipedia.org/wiki/Battle_of_Espinosa_de_los_Monteros
-34.01666	-91.34527	Battle of Arkansas Post (1863)	https://en.wikipedia.org/wiki/Battle_of_Arkansas_Post_(1863)
+34.01666	-91.34527	Battle of Arkansas Post (1863)	https://en.wikipedia.org/wiki/Battle_of_Arkansas_Post
 35.76666	10.81666	Battle of Ruspina (-45)	https://en.wikipedia.org/wiki/Battle_of_Ruspina
 43.8333	13.0167	Battle of Fano (271)	https://en.wikipedia.org/wiki/Battle_of_Fano
 44.7	7.85	Battle of Pollentia (402)	https://en.wikipedia.org/wiki/Battle_of_Pollentia

@@ -138,8 +138,8 @@
 46.8845	9.52638	Burg Lichtenstein	https://en.wikipedia.org/wiki/Lichtenstein_Castle_(Graub%C3%BCnden)
 46.8845	9.52639	Burg Lichtenstein	https://en.wikipedia.org/wiki/Lichtenstein_Castle_(Graub%C3%BCnden)
 49.0239	11.366	Burg Liebeneck	http://www.wikidata.org/entity/Q1012950
-49.10527	19.31194	Likava	http://www.wikidata.org/entity/Q1012967
-49.10543	19.31224	Likava	http://www.wikidata.org/entity/Q1012967
+49.10527	19.31194	Likava	https://en.wikipedia.org/wiki/Likava_Castle
+49.10543	19.31224	Likava	https://en.wikipedia.org/wiki/Likava_Castle
 53.6461	10.4679	Burg Linau	http://www.wikidata.org/entity/Q1012972
 49.61402	15.41327	Lipnice nad Sázavou	http://www.wikidata.org/entity/Q1012998
 47.5486	10.6761	Burg Loch	http://www.wikidata.org/entity/Q1013009
@@ -280,7 +280,7 @@
 49.53055	16.32638	Zubštejn Castle Ruins	http://www.wikidata.org/entity/Q1014688
 50.46811	14.91599	Zvířetice Castle	http://www.wikidata.org/entity/Q1014692
 40.95005	29.25862	Aydos Castle	http://www.wikidata.org/entity/Q1014724
-48.91619	21.73527	Čičava Castle	http://www.wikidata.org/entity/Q1014742
+48.91619	21.73527	Čičava Castle	https://en.wikipedia.org/wiki/%C4%8Ci%C4%8Dava_Castle
 50.72444	14.32305	Ostrý Castle	http://www.wikidata.org/entity/Q1014748
 49.4125	17.79722	Šaumburk	https://en.wikipedia.org/wiki/%C5%A0aumburk
 49.2125	15.37916	Štamberk	http://www.wikidata.org/entity/Q1014754
@@ -360,7 +360,7 @@
 49.786	7.83467	Altenbaumburg	https://en.wikipedia.org/wiki/Altenbaumburg
 47.5744	9.88472	Altenburg	http://www.wikidata.org/entity/Q436908
 49.3529	6.73362	Altes Schloss	https://en.wikipedia.org/wiki/Altes_Schloss_(Dillingen)
-49.5457	6.73822	Altes Schloss (Scheiden)	http://www.wikidata.org/entity/Q439560
+49.5457	6.73822	Altes Schloss (Scheiden)	https://en.wikipedia.org/wiki/Altes_Schloss_(Scheiden)
 56.94172	14.79472	Kronoberg Castle Ruin	https://en.wikipedia.org/wiki/Kronoberg_Castle
 48.9475	9.08444	Altsachsenheim	http://www.wikidata.org/entity/Q445204
 47.2383	15.8219	Altschielleiten	http://www.wikidata.org/entity/Q445299
@@ -1058,7 +1058,7 @@
 56.51619	13.05051	Lagaholm	http://www.wikidata.org/entity/Q10553130
 56.51623	13.05051	Lagaholm	http://www.wikidata.org/entity/Q10553130
 57.7625	16.64277	Stegeholm	http://www.wikidata.org/entity/Q10678044
-57.75569	13.225	Sundholmen Castle	http://www.wikidata.org/entity/Q10683779
+57.75569	13.225	Sundholmen Castle	https://en.wikipedia.org/wiki/Sundholmen_Castle
 58.5225	15.81555	Åls stenhus	http://www.wikidata.org/entity/Q10726485
 49.7083	16.7325	Cimburk	http://www.wikidata.org/entity/Q10815830
 49.94888	13.58833	Castle Krašov	http://www.wikidata.org/entity/Q10816658
@@ -1079,7 +1079,7 @@
 50.48944	15.41388	Q11243019	http://www.wikidata.org/entity/Q11243019
 50.6286	13.3786	Hrad u Brandova	http://www.wikidata.org/entity/Q11244467
 50.0007	16.2907	Castle Ruin of Brandýs nad Orlicí	http://www.wikidata.org/entity/Q11244670
-48.73318	17.46719	Branč Castle	http://www.wikidata.org/entity/Q11246764
+48.73318	17.46719	Branč Castle	https://en.wikipedia.org/wiki/Bran%C4%8D_Castle
 48.90222	21.83222	Brekov Castle	https://en.wikipedia.org/wiki/Brekov_Castle
 49.0917	18.02	Hrad Brumov	http://www.wikidata.org/entity/Q11354311
 49.78	13.1907	Castle Buben	http://www.wikidata.org/entity/Q11357695
@@ -1105,7 +1105,7 @@
 32.63719	34.93433	Cafarlet	https://en.wikipedia.org/wiki/Cafarlet
 32.28853	34.98139	Calanson	http://www.wikidata.org/entity/Q1026257
 48.7834	9.97731	Ruine Lauterburg	http://www.wikidata.org/entity/Q1030577
-48.41166	18.22222	Gýmeš Castle	http://www.wikidata.org/entity/Q1031394
+48.41166	18.22222	Gýmeš Castle	https://en.wikipedia.org/wiki/G%C3%BDme%C5%A1_Castle
 47.92673	19.75474	Castle of Hasznos	http://www.wikidata.org/entity/Q1034304
 46.91388	17.50944	Hegesdi Castle	http://www.wikidata.org/entity/Q1034849
 47.9978	19.58182	Hollókő Castle	http://www.wikidata.org/entity/Q1037845
@@ -1449,7 +1449,7 @@
 49.5014	16.3297	Q12031245	http://www.wikidata.org/entity/Q12031245
 49.7241	14.4289	Kozí hřbet Castle	http://www.wikidata.org/entity/Q12031279
 49.3971	16.2863	Košíkov Castle	http://www.wikidata.org/entity/Q12031340
-50.4905	13.9845	Košťálov	http://www.wikidata.org/entity/Q12031348
+50.4905	13.9845	Košťálov	https://en.wikipedia.org/wiki/Ko%C5%A1%C5%A5%C3%A1lov_Castle
 49.7669	14.6228	Kožlí	http://www.wikidata.org/entity/Q12031358
 48.9211	13.7094	Kunžvart	http://www.wikidata.org/entity/Q12031943
 50.0153	12.6303	Castle ruin of Kynžvart	http://www.wikidata.org/entity/Q12032119
@@ -2044,7 +2044,7 @@
 50.2	9.19556	Imperial Palace Gelnhausen	https://en.wikipedia.org/wiki/Imperial_Palace,_Gelnhausen
 49.1455	18.45795	Považský hrad	https://en.wikipedia.org/wiki/Pova%C5%BEsk%C3%BD_hrad
 49.8685	6.44333	Prümerburg	https://en.wikipedia.org/wiki/Pr%C3%BCmerburg
-47.1378	14.3483	Ruine Puxer-Loch	https://en.wikipedia.org/wiki/Ruine_Puxer-Loch
+47.1378	14.3483	Ruine Puxer-Loch	https://en.wikipedia.org/wiki/Ruine_Puxerloch
 50.6292	13.2419	Liebenstein Castle	https://en.wikipedia.org/wiki/Liebenstein_Castle_(Saxony)
 46.98	13.62222	Burgruine Rauchenkatsch	https://en.wikipedia.org/wiki/Burgruine_Rauchenkatsch
 50.1823	7.4812	Rauschenburg	https://en.wikipedia.org/wiki/Rauschenburg
@@ -2300,7 +2300,7 @@
 44.23583	11.70123	Castello Monte Mauro	http://www.wikidata.org/entity/Q25535597
 43.93474	17.89869	Kozograd	https://en.wikipedia.org/wiki/Kozograd_castle
 44.02106	17.93148	Kaštela fortress	https://en.wikipedia.org/wiki/Ka%C5%A1tela_fortress
-44.78578	15.89501	Sokolac Fortress	https://en.wikipedia.org/wiki/Sokolac_Fortress_(Biha%C4%87)
+44.78578	15.89501	Sokolac Fortress	https://en.wikipedia.org/wiki/Sokolac_(fortress_near_Biha%C4%87)
 43.00945	17.56585	Brštanik	http://www.wikidata.org/entity/Q25556354
 50.09677	16.98084	Pleče	http://www.wikidata.org/entity/Q25603428
 58.43234	16.56988	Skällvik castle ruin	http://www.wikidata.org/entity/Q25859006
@@ -2901,7 +2901,7 @@
 57.4057	-3.7083	Lochindorb Castle	http://www.wikidata.org/entity/Q43372925
 46.13961	15.09494	Q43736354	http://www.wikidata.org/entity/Q43736354
 50.65983	5.68336	Vieux Château de Saive	http://www.wikidata.org/entity/Q47401374
-45.74882	15.70676	Okić	http://www.wikidata.org/entity/Q48106100
+45.74882	15.70676	Okić	https://en.wikipedia.org/wiki/Oki%C4%87_Castle
 45.40055	15.43972	Zvečaj Castle	https://en.wikipedia.org/wiki/Zve%C4%8Daj_Castle
 50.84397	14.74115	castle and monastery ruins Oybin	http://www.wikidata.org/entity/Q49351155
 50.83476	14.79256	castle ruin Karlsfried	http://www.wikidata.org/entity/Q49363669
