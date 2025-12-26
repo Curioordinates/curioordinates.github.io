@@ -189,6 +189,9 @@
    "ghost-light": {
       "count": 10
    },
+   "ghost-photo": {
+      "count": 1
+   },
    "ghost-ship": {
       "count": 4
    },
@@ -219,7 +222,7 @@
       "count": 387
    },
    "haunting": {
-      "count": 517
+      "count": 523
    },
    "headless-rider": {
       "count": 1
@@ -243,7 +246,7 @@
       "count": 364
    },
    "hominid": {
-      "count": 6
+      "count": 7
    },
    "hum": {
       "count": 3
@@ -290,7 +293,7 @@
       "count": 65
    },
    "mortsafe": {
-      "count": 16
+      "count": 18
    },
    "mothman": {
       "count": 2
@@ -316,7 +319,7 @@
       "count": 26
    },
    "named-ghost": {
-      "count": 5
+      "count": 6
    },
    "national-trust": {
       "count": 419
