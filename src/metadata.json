@@ -172,7 +172,7 @@
       "count": 3
    },
    "gallows": {
-      "count": 10
+      "count": 11
    },
    "general": {
       "count": 1
@@ -219,10 +219,10 @@
       "count": 9
    },
    "haunted-stay": {
-      "count": 391
+      "count": 394
    },
    "haunting": {
-      "count": 533
+      "count": 541
    },
    "headless-rider": {
       "count": 1
@@ -275,7 +275,7 @@
       "count": 9
    },
    "manmade-cave": {
-      "count": 9
+      "count": 239
    },
    "marian-apparition": {
       "count": 35
@@ -293,7 +293,7 @@
       "count": 65
    },
    "mortsafe": {
-      "count": 18
+      "count": 19
    },
    "mothman": {
       "count": 2
@@ -319,7 +319,7 @@
       "count": 26
    },
    "named-ghost": {
-      "count": 18
+      "count": 25
    },
    "national-trust": {
       "count": 419
@@ -381,6 +381,9 @@
    },
    "research-org": {
       "count": 3
+   },
+   "revenant": {
+      "count": 1
    },
    "rock-cut-tomb": {
       "count": 30
