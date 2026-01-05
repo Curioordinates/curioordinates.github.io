@@ -150,11 +150,11 @@
    "folklore-fox": {
       "count": 5
    },
-   "fortlet": {
-      "count": 115
-   },
    "folklore-giant": {
       "count": 18
+   },
+   "fortlet": {
+      "count": 115
    },
    "folklore-humanoid": {
       "count": 1
@@ -219,10 +219,10 @@
       "count": 9
    },
    "haunted-stay": {
-      "count": 394
+      "count": 396
    },
    "haunting": {
-      "count": 541
+      "count": 544
    },
    "headless-rider": {
       "count": 1
@@ -284,7 +284,7 @@
       "count": 3
    },
    "memento-mori": {
-      "count": 23
+      "count": 24
    },
    "merfolk": {
       "count": 32
@@ -319,7 +319,7 @@
       "count": 26
    },
    "named-ghost": {
-      "count": 25
+      "count": 27
    },
    "national-trust": {
       "count": 419
