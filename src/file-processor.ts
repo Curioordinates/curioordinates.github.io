@@ -116,7 +116,7 @@ export const processFile = async (
                     if (link && link.includes("wikidata.org/entity/")) {
                         incrementNamedCounter("wikidata-entity-links");
 
-                        if (!fileName.includes("barrow")) {
+                        if (fileName.includes("baggegerrow")) {
                             const lastSlash = link.lastIndexOf("/");
                             if (lastSlash !== -1) {
                                 const q_id = link.substring(lastSlash + 1);

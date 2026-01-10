@@ -58,6 +58,9 @@
    "cairn": {
       "count": 6
    },
+   "chambered-cairn": {
+      "count": 325
+   },
    "canine": {
       "count": 14
    },
@@ -103,9 +106,6 @@
       "short_description": "Dolmen are single chambered megalithic tomb. Upright stones support a large 'table' stone.",
       "count": 3706
    },
-   "chambered-cairn": {
-      "count": 325
-   },
    "e-book": {
       "short_description": "E-Books covering specific geographic areas. If you buy a linked book, we may earn a commission from Bookshop.org, whose fees support independent bookshops!",
       ".<>": "Find it on ",
@@ -129,7 +129,7 @@
       "count": 2
    },
    "exhibit": {
-      "count": 14
+      "count": 15
    },
    "fairy": {
       "count": 38
@@ -147,38 +147,41 @@
    "dragon": {
       "count": 23
    },
+   "folklore-swine": {
+      "count": 6
+   },
    "folklore-fox": {
       "count": 5
-   },
-   "folklore-giant": {
-      "count": 18
    },
    "fortlet": {
       "count": 115
    },
+   "folklore-giant": {
+      "count": 18
+   },
+   "fossil": {
+      "count": 3
+   },
    "folklore-humanoid": {
       "count": 1
    },
+   "gallows": {
+      "count": 11
+   },
    "folklore-serpent": {
+      "count": 1
+   },
+   "general": {
       "count": 1
    },
    "folklore-vampire": {
       "count": 5
    },
-   "troll": {
-      "count": 1
-   },
-   "fossil": {
-      "count": 3
-   },
-   "gallows": {
-      "count": 11
-   },
-   "general": {
-      "count": 1
-   },
    "geo-glyph": {
       "count": 97
+   },
+   "troll": {
+      "count": 1
    },
    "geofold": {
       "count": 3
@@ -398,7 +401,7 @@
       "count": 125
    },
    "sacred-stone": {
-      "count": 121
+      "count": 23
    },
    "sacred-tree": {
       "count": 35
