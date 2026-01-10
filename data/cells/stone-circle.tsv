@@ -26,6 +26,7 @@
 53.23283	-4.13113	Gorsedd Stones
 50.49286	-4.01051	Yellow Mead Stone Circle
 50.68018	-3.91293	Stone Circle
+50.5425	-3.92135	Stone Circle
 54.56589	-2.7296	stone circle
 53.37811	-1.67792	Hordron Edge Stone Circle
 54.7305	-2.65849	Little Meg
@@ -77,15 +78,24 @@
 43.07302	-1.15938	Hegi Eder Hego
 43.13121	-1.17244	Zeinhegi
 50.55353	-4.04316	Merrivale Stone Circle
+54.52652	-2.62509	Stone Circle
 47.84288	0.30836	Les Pierres tournantes
+42.97324	-0.93034	Stone Circle
 58.51349	11.3714	Vrångstads Domarringar
 57.20944	-2.23429	Tyrebagger Hill Stone Circle
+50.68987	-3.93694	Stone Circle
 54.21746	17.84019	Cmentarzysko w Węsiorach
+59.21073	11.12733	Stone Circle
+59.21129	11.12651	Stone Circle
+59.21534	11.13036	Stone Circle
 55.22108	-4.27628	Holm Of Daltallochan Stone Circle
 47.15447	9.75843	Steinkreis Raetia III
 57.58041	-2.10744	Strichen Stone Circle
 -51.80886	-58.95896	Corral
+60.29759	22.23262	Stone Circle
+53.02859	-2.19478	Stone Circle
 42.83976	-2.28665	Cromlech de Mendiluze / Mendiluze harrespila
+59.19664	15.71329	Stone Circle
 42.86823	0.47199	Cromlech du Port de Pierrefite
 54.08331	-2.07875	Druid's Altar
 55.30187	-2.35702	Three Kings Stone Circle
@@ -114,14 +124,19 @@
 53.77094	11.95626	Kleiner Boitiner Steintanz
 55.54048	-5.31087	Machrie Moor Stone Circle 1
 55.54073	-5.31064	Machrie Moor Stone Circle 11
+56.68102	-3.75597	Stone Circle
 43.22211	-1.76447	Cromlechs Pagolletako Zelaia 1-2
 53.8479	-1.80334	Soldier's Trench
+47.59123	-3.08529	Stone Circle
 57.11215	-2.24072	Binghill stone circle
 60.61025	-0.8655	Hjaltadans
 57.21088	-2.59245	Whitehills Stone Circle
 58.50757	11.40128	Stenebacka Domarringen
 60.95918	26.63863	Jatulintarha
+51.63764	-2.81335	Stone Circle
+54.53281	-2.63895	Stone Circle
 43.45835	3.71156	Cromlech du Pioch de Roumanis
+51.13678	-0.55704	Stone Circle
 47.15474	9.7578	Raetia 3a
 47.15356	9.75662	Raetia 8
 51.73586	-9.87004	Ardgroom Stone Circle
@@ -149,14 +164,21 @@
 48.24263	-2.90764	Cromlech de Lorette
 46.83139	10.9096	Widder-Menhir
 54.62392	16.99518	Groby Olbrzymów
+57.17172	13.42796	Stone Circle
+57.17188	13.4281	Stone Circle
+57.17192	13.4278	Stone Circle
+57.17204	13.42817	Stone Circle
 43.26525	-1.75925	Cromlech Agina Ipar
 43.23795	-1.77817	Cromlech Bidangoko Gaña
+41.68002	44.1898	Stone Circle
+41.66879	44.15478	Stone Circle
 41.69193	44.08865	"თეჯისის ( ყოფ.ჩოლაყის) ლიპის ციკლოპური ნაგებობა; წმ. კონსტანტინეს ეკლესია და მენჰირი"
 43.06168	-0.45805	Cromlechs des Courraüs de Houndas
 43.06735	-0.44727	Cromlechs de Lous Couraus
 42.87049	-0.43828	Cromlechs du Col Long de Magnabaigt
 42.87015	-0.414	Cromlechs de la Cabane de Chérue
 57.14861	-2.4985	Midmar Kirk Stone Circle
+52.65759	-3.14191	Stone Circle
 43.20918	-1.84186	Cromlech Gastarrozko bizkarra
 43.2783	-1.40573	Mendittipiko Bizkarra
 43.21926	-1.76094	Cromlechs tumulares Pagolletako Gaña 1-2
@@ -440,6 +462,7 @@
 56.66166	-3.67177	Tigh Na Ruaich
 57.4889	-6.31644	Sornaichean Coir' Fhinn
 44.46669	2.62069	Cromlech
+44.41209	3.39115	Stone Circle
 53.35719	-1.66919	Bamford Moor Circle
 39.05045	-8.21597	Cromeleque do Alminho
 38.6268	-8.02465	Cromeleque de Portela de Mogos
@@ -447,7 +470,19 @@
 38.90097	-7.99608	Cromeleque do Monte das Figueiras
 38.93106	-8.12107	Cromeleque do Monte das Fontaínhas Velhas
 38.52153	-8.23773	Recinto Megalítico do Tojal
+47.59191	-3.08602	Stone Circle
+47.59186	-3.08605	Stone Circle
+47.59176	-3.08619	Stone Circle
+47.59174	-3.08617	Stone Circle
 47.5917	-3.08619	Cromlech du Ménec
+47.59159	-3.08622	Stone Circle
+47.59119	-3.08565	Stone Circle
+47.59119	-3.08557	Stone Circle
+47.59118	-3.08548	Stone Circle
+47.59119	-3.08543	Stone Circle
+47.59121	-3.08532	Stone Circle
+47.59182	-3.08613	Stone Circle
+47.59166	-3.08621	Stone Circle
 53.3726	-1.59655	Stone Circle
 53.91126	-1.80963	Backstone Circle
 50.71216	-2.55263	Nine stones
@@ -463,7 +498,12 @@
 58.36655	13.63414	Amundtorp Gravfält
 56.9135	12.67338	Munkakyrkan domarring
 58.03068	11.55356	Pilane gravfält
+58.03058	11.55358	Stone Circle
+58.03061	11.55371	Stone Circle
+58.03057	11.55328	Stone Circle
+58.03045	11.55341	Stone Circle
 58.07155	11.82104	Stenungsund domarring
+58.51361	11.3715	Stone Circle
 58.63298	11.37951	Åbrott domarring
 58.92822	11.31691	"Dårskilds Högar -  stone circle #8"
 58.92787	11.31653	"Dårskilds Högar -  stone circle #10"
@@ -476,6 +516,9 @@
 58.92959	11.31695	"Dårskilds Högar -  stone circle #3"
 58.92963	11.31669	"Dårskilds Högar -  stone circle #4"
 58.92986	11.31654	"Dårskilds Högar -  stone circle #1"
+58.36672	13.63488	Stone Circle
+58.27985	13.60201	Stone Circle
+58.27993	13.60384	Stone Circle
 58.55334	11.99548	Håvesten Stone Circle
 59.32947	18.38774	Gustavsberg 16:2
 59.30166	18.41058	Ingarö 1:1
@@ -485,6 +528,7 @@
 54.24842	-8.51388	Carrowmore 20
 43.02029	40.94966	Kромлех
 43.04403	-1.16699	Errozateko harrespilak / Cromlechs d'Errozate
+57.4827	18.14079	Stone Circle
 51.74518	-9.3705	Kealkill Stone Circle
 43.21817	-1.51099	Cromlechs Alkurruntz lepoa 1-2
 47.12757	1.03348	Cromlech de la Croix Bonnin
@@ -503,21 +547,29 @@
 54.70163	-2.78315	Stone Circle Remnants
 54.58702	-3.48705	Studford Stone Circle
 54.48211	-3.47844	Stone Circle
+50.55435	-4.19912	Stone Circle
 52.92365	-3.40546	Moel Tŷ Uchaf Stone Circle
 50.67124	-3.74542	Stone Circle
+54.296	-3.02271	Stone Circle
 43.18574	-1.88424	Cromlech Lepakaestua E 1
 43.18598	-1.88346	Cromlechs Lepakaestua E 2-3
+54.95024	-7.1006	Stone Circle
 44.10513	0.14407	Las Naou Peyros
 48.05709	6.6379	Le cercle de pierres du Fossard
+58.74978	11.58103	Stone Circle
 57.08669	-2.58104	Glasshel Stone Circle
 38.44397	-7.50761	Cromeleque de Monte Ribeira do Álamo
+53.36371	12.76288	Stone Circle
 57.36022	18.73351	Ardre Domarring
 57.47243	18.49738	Sjonhem 16:1
 57.46488	18.19623	Västergarn 19:1
 57.5244	18.22174	Stenkumla 96:1
+59.58551	18.29908	Stone Circle
 47.3866	0.21369	Cromlech
+57.75033	12.02577	Stone Circle
 46.70304	-2.37094	Cromlech de Barbe
 37.97752	-7.14341	Cromlech Pasada del Abad
+57.06274	-2.18254	Stone Circle
 58.19758	-6.74515	Tursachan Chalanais
 41.62087	2.3628	Cromlec de Pins Rosers
 57.47425	-2.6503	Frendraught Stonecircle
@@ -527,6 +579,7 @@
 53.50937	16.18005	Kamienne kręgi
 54.34218	-3.13335	Bleaberry Haws Stone Circle
 57.12114	-2.65694	Balnacraig
+59.89595	10.76916	Stone Circle
 57.14132	-2.47114	Sunhoney Stone Circle
 54.14307	12.90083	Steinkreis Hohenbarnekow
 55.68677	-2.11202	Duddo Five Stones
@@ -540,16 +593,20 @@
 50.44561	-3.92751	Stalldown Cairn Circle
 52.39612	-3.84488	Dolgamfa cairn
 50.63831	-2.00897	Rempstone Stone Circle
+56.33029	-3.3143	Stone Circle
 50.4583	-4.00681	Stone Circle
+50.17469	-5.58025	Stone Circle
 52.43898	-3.83525	"Stone Circle and Round Cairns -  Hirnant"
 58.18507	13.09646	Domarringarna vid Lockebacke
 56.35641	-3.79968	Millhills Stone Circle
 49.60101	-1.79947	Cromlech de Vasteville
 42.46187	25.43631	скално светилище
 50.18345	-5.24688	Nine Maidens Stone Circle
+54.42108	-0.58272	Stone Circle
 50.68266	-2.39339	Mayne Stone Circle
 53.79107	-2.17668	Remains of stone circle
 51.47858	-1.86656	Winterbourne Bassett Stone Circle
+40.53834	-5.80295	Stone Circle
 45.50118	-122.68059	Stone Circle Climbing Monument/Statue
 57.30935	-2.10948	Hill of Fiddes stone circle
 57.63771	-2.65911	St Brandan's Stanes

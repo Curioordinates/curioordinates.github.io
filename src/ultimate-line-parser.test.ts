@@ -13,7 +13,7 @@ describe('ultimate-line-parser', () => {
 
 
     it('should handle long lines', () => {
-const line = `36.825382092581606, 28.623420283271408,Kaunos,https://en.wikipedia.org/wiki/Kaunos, The amphitheatre at Kaunos, built into the slope of the acropolis, reflects both Hellenistic and Roman architectural influences, featuring a 75-meter diameter and seating for around 5,000 spectators. It is well-preserved and still occasionally hosts performances today.`
+const line = `36.825382092581606, 28.623420283271408,Kaunos,https://en.wikipedia.org/wiki/Kaunos, The amphitheatre at Kaunos, built into the slope of the acropolis, reflects both Hellenistic and Roman architectural influences, featuring a 75-meter diameter and seating for around 5000 spectators. It is well-preserved and still occasionally hosts performances today.`
 
         const [error, data] = parseEntryFields(line);
         expect(error).toBeNull();
@@ -22,9 +22,12 @@ const line = `36.825382092581606, 28.623420283271408,Kaunos,https://en.wikipedia
             longitude: 28.623420283271408,
             title: "Kaunos",
             link: "https://en.wikipedia.org/wiki/Kaunos",
-            description: "The amphitheatre at Kaunos, built into the slope of the acropolis, reflects both Hellenistic and Roman architectural influences, featuring a 75-meter diameter and seating for around 5,000 spectators. It is well-preserved and still occasionally hosts performances today.",
+            description: "The amphitheatre at Kaunos, built into the slope of the acropolis, reflects both Hellenistic and Roman architectural influences, featuring a 75-meter diameter and seating for around 5000 spectators. It is well-preserved and still occasionally hosts performances today.",
         }));
     });
+
+
+ 
 
     it ('should handle latitude longitude columns', () => {
         // given

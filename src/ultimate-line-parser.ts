@@ -7,7 +7,7 @@ export interface EntryFields {
     longitude: number | null,
     title:string
     link:string
-    description: string | null,
+    details: string | null,
     tags: string | null,
 }   
 
@@ -24,6 +24,8 @@ export const parseEntryFields = (line: string): [Error, null] | [null, EntryFiel
   if (parts.textFragments.length == 0) {
     return [new Error("No text fragments found"), null];
   } else if (parts.textFragments.length > 2) {
+    console.log(JSON.stringify(parts.textFragments,null,3));
+
     return [new Error("Too many text fragments found"), null];
   } else {
     label = parts.textFragments[0];
@@ -42,7 +44,7 @@ export const parseEntryFields = (line: string): [Error, null] | [null, EntryFiel
     longitude: parts.longitude ?? null,
     title: label! ,
     link: link! ,
-    description: description,
+    details: description,
     tags: parts.tags ?? null,
    }
   

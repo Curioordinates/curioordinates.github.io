@@ -73,7 +73,7 @@ const findPoints = (parts: string[], result: ParsedParts): string[] => {
 const findCoords = (parts: string[], result: ParsedParts): string[] => {
     const newParts: string[] = [];
     for (const part of parts) {
-        const coordMatch = part.match(/^-?\d+(\.\d+)?, ?-?\d+(\.\d+)?/);
+        const coordMatch = part.match(/^-?\d+(\.\d+)? ?,? ?-?\d+(\.\d+)?/);
         if (coordMatch && (coordMatch.index || coordMatch.index === 0)) {
             const coordParts = coordMatch[0].split(',').map(part => part.trim());
 
@@ -139,9 +139,6 @@ export const splitLine = (line: string): [Error, null] | [null, ParsedParts] => 
 
     // explicit separators can be ` or \t or , (although , is way to ambiguous)
     let parts = workingLine.split('\t');
-    if (parts.length === 1) {
-        parts = workingLine.split('`');
-    }
 
 
     if (parts.length > 1) {

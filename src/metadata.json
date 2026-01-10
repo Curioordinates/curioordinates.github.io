@@ -122,8 +122,8 @@
    },
    "erratic": {
       "typeLabel": "Glacial Erratic",
-      "short_description": "Stones transported by glaciers over 25,000 years ago",
-      "count": 222
+      "short_description": "Stones transported by glaciers over 25000 years ago",
+      "count": 291
    },
    "event": {
       "count": 2
@@ -329,7 +329,7 @@
    },
    "nuraghe": {
       "implicit": false,
-      "short_description": "The nuraghi are massive, beehive-shaped stone towers built between 1600 and 1200 BCE, unique to Sardinia and numbering more than 7,000 across the island. Their exact purpose remains uncertain, but they likely served as fortresses, dwellings, temples, and symbols of power, forming the monumental legacy of the Nuragic civilisation.",
+      "short_description": "The nuraghi are massive, beehive-shaped stone towers built between 1600 and 1200 BCE, unique to Sardinia and numbering more than 7000 across the island. Their exact purpose remains uncertain, but they likely served as fortresses, dwellings, temples, and symbols of power, forming the monumental legacy of the Nuragic civilisation.",
       "count": 4262
    },
    "occult-market": {
@@ -375,12 +375,12 @@
    },
    "public-bookcase": {
       "implicit": false,
-      "count": 7394
+      "count": 25370
    },
    "redwood": {
       "name_all": "Giant Redwood",
       "short_description": "Native to California but making special appearances across the globe - it's the worlds largest tree!",
-      "count": 212
+      "count": 1376
    },
    "research-org": {
       "count": 3
@@ -421,7 +421,7 @@
       ".<>": "(Learn more at ",
       "<>": "sundialsoc.org.uk",
       "<>.": ")",
-      "count": 1631
+      "count": 1630
    },
    "sea-monster": {
       "count": 21
@@ -451,13 +451,13 @@
       "count": 995
    },
    "standing-stone": {
-      "count": 287
+      "count": 290
    },
    "statue": {
       "count": 1
    },
    "stone-circle": {
-      "count": 585
+      "count": 642
    },
    "stopped-clock": {
       "count": 1

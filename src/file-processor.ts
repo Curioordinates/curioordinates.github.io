@@ -6,12 +6,12 @@ import { parseLocation } from "./util";
 import { recurseDirectories } from "./recurseDirectories";
 import { to5DP } from "./lib/number-utils";
 import { findSourceMap } from "module";
-import { parseLine } from "./lib/data-extractor";
+import { ExtractedData, parseLine } from "./lib/data-extractor";
 import {
   getNamedCountersAsMap,
   incrementNamedCounter,
 } from "./lib/namedCounters";
-import { parseEntryFields } from "./ultimate-line-parser";
+import { EntryFields, parseEntryFields } from "./ultimate-line-parser";
 
 export const processTsvFile = async (fileName: string): Promise<void> => { };
 
@@ -29,6 +29,9 @@ const getLeafDirName = (path: string): string => {
   }
   return nameParts[0];
 };
+
+
+const USE_NEW_PARSER = false;
 
 export const processFile = async (
   fileName,
@@ -55,12 +58,16 @@ export const processFile = async (
     if (trimmedLine) {
       //convert 'strict' csv to tsv - any comma not followed by a space becomes tab.
       console.log(trimmedLine);
-      const line = isTsvFile
-        ? trimmedLine
-        : trimmedLine
-          .replace(/,/g, "\t")
-          .replace(/\t /g, ", ")
-          .replace(/\t_/g, ",_"); // This specifically covers comma+underscore in wikipedia-link-slugs
+
+      let line = trimmedLine.trim();
+      if (!USE_NEW_PARSER) {
+        line = isTsvFile
+          ? trimmedLine
+          : trimmedLine
+            .replace(/,/g, "\t")
+            .replace(/\t /g, ", ")
+            .replace(/\t_/g, ",_"); // This specifically covers comma+underscore in wikipedia-link-slugs
+      }
 
       if (!columnNamesRead) {
         // header line
@@ -73,19 +80,28 @@ export const processFile = async (
       } else {
         // This is a data line
 
-        const extractedData = parseLine({
-          line: fileName.endsWith(".hie.txt")
-            ? line.replace(/`/g, "\t")
-            : line,
-        });
 
-/*
-        const [error, extractedData] = parseEntryFields(line);
-        if (error) {
-          console.error(error);
+        let extractedData: EntryFields | null = null;
+        if (!USE_NEW_PARSER) {
+          const oldExtractedData = parseLine({
+            line: fileName.endsWith(".hie.txt")
+              ? line.replace(/`/g, "\t")
+              : line,
+          });
+          extractedData = {... oldExtractedData, locationAsText: null, tags: null } as EntryFields;
+        } else {
+          const [error, extractedDataResult] = parseEntryFields(line);
+          if (error) {
+            console.error(error);
+            process.exit(0);
+          }
+          extractedData = {... extractedDataResult };
+        }
+
+        if (!extractedData) {
+          console.error("No extracted data");
           process.exit(0);
         }
-*/
 
         // if (location && title) {
         if (

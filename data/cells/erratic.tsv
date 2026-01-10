@@ -1,5 +1,6 @@
 60.12963	24.68065	Hanikan Glacial Erratic Block
 51.74777	7.89893	Dicker Stein
+46.0416	9.07348	Erratic
 53.90646	-1.86139	West Buck Stones
 53.89073	-1.81768	White Stones
 45.06103	7.45857	Masso erratico Pera Grossa
@@ -7,10 +8,15 @@
 51.45098	6.96388	Findling - Naturdenkmal
 51.44353	6.9694	Findling - Naturdenkmal
 51.44978	6.98291	Naturdenkmal - Findling
+51.41924	7.03328	Erratic
 51.42142	7.05344	Naturdenkmal - Findling
 51.3612	6.93725	Naturdenkmal - Findling
 51.36447	6.94411	Naturdenkmal - Findling
 51.44942	7.00939	Findling - Naturschutz
+51.43353	7.07752	Erratic
+51.42815	7.07382	Erratic
+51.4287	7.07603	Erratic
+51.4434	7.00146	Erratic
 51.45197	7.03873	Findling - Naturdenkmal
 51.42497	7.01472	Naturdenkmal - Findling
 46.96168	7.07582	Pierre Agassiz (bloc erratique)
@@ -34,42 +40,84 @@
 47.15855	7.68283	Kleine Flueh
 43.89579	-70.36688	Porcupine Rock
 47.68074	-122.2974	Wedgwood Rock
+46.03217	9.04462	Erratic
+46.03467	9.05019	Erratic
+46.01326	9.01082	Erratic
 45.88652	8.73488	Masso Erratico Sasso Nero
+46.03281	9.07918	Erratic
 55.88636	12.37956	Lereltestenen
+46.03782	9.04176	Erratic
+46.03889	9.04098	Erratic
 64.29788	20.16283	Botsmarksblocket
 45.05801	7.4454	Masso Erratico Roca Sgaroira
 42.47732	-71.22439	erratic boulder
 42.50972	-71.26705	glacial erratic
 42.4829	-71.24136	glacial erratic
 48.41065	-123.32692	Gonzales Bay Erratic
+47.85111	12.18206	Erratic
 45.68883	7.51451	Sasso erratico chiodato (non controllato)
 45.75253	8.71597	Masso Erratico Sasso dei Carbonai
 45.92415	-68.68072	Earl's Erratic Big Rock
 56.23414	10.30077	Skæringstenen
 45.84916	9.16929	Masso erratico
+59.8122	17.59285	Erratic
 45.76217	9.47912	Masso Erratico di Chiaravalle
 55.09355	10.24332	Faaborgstenen
 45.13446	7.49515	masso erratico
 51.69956	7.2342	"Naturdenkmal ""Findlinge der Eiszeit"""
 45.37096	-75.79238	Glacial Erratic
+47.88081	12.30084	Erratic
 41.35238	-71.93215	Large Glacial Erratic
 45.52024	7.90407	masso erratico
 45.05474	7.43736	Masso erratico (pera d'la spina)
+47.87682	12.3158	Erratic
 47.40079	8.39804	erratic block
 45.69507	9.32476	Sasso Erratico
+45.81274	8.43595	Erratic
 54.88406	9.87758	Grønmarksstenen
+47.87018	12.28307	Erratic
+47.72733	12.31139	Erratic
+47.72814	12.31634	Erratic
 54.26428	-7.88441	Glacial Erratic
 45.76842	8.50848	Masso erratico
 45.7003	8.50282	Prèja Martina
+54.12686	-2.35872	Erratic
+54.12629	-2.35907	Erratic
+54.12515	-2.35864	Erratic
+54.12529	-2.35688	Erratic
+54.12516	-2.3564	Erratic
+54.12447	-2.35552	Erratic
+54.12313	-2.35735	Erratic
+54.12493	-2.3609	Erratic
+54.12565	-2.35957	Erratic
+46.95928	7.43472	Erratic
+47.8027	12.21991	Erratic
 52.42884	-8.85032	The Durra cloch
 47.18998	7.49374	Kindlistein
 47.13587	7.44641	Fuchsenstein
 47.12984	7.47482	Murlistein
+45.20094	5.73018	Erratic
+45.19847	5.73014	Erratic
+45.19693	5.72867	Erratic
+45.19978	5.72319	Erratic
 55.07008	15.05157	Troldestenen
 54.98567	9.47578	Hostrupkratstenen
 45.98116	8.46625	Masso Erratico
+47.90539	12.28092	Erratic
+47.71178	12.29306	Erratic
+47.71259	12.29558	Erratic
 64.3481	20.53106	Lappsten
+47.91903	12.34076	Erratic
+47.91906	12.34079	Erratic
 47.18273	7.38507	Schalenstein
+47.90895	12.21409	Erratic
+47.90923	12.2157	Erratic
+47.95479	12.29174	Erratic
+42.18718	-88.37449	Erratic
+42.08107	-88.30998	Erratic
+42.08279	-88.31143	Erratic
+42.19442	-88.26347	Erratic
+54.00217	14.0609	Erratic
 41.10853	-73.84268	Glacial Erratic
 45.79674	8.5863	Masso Erratico
 45.79782	8.59208	Masso Erratico
@@ -86,31 +134,46 @@
 45.79903	8.58522	Masso Erratico
 45.79986	8.59136	Masso Erratico
 47.67176	-122.30717	Ravenna Park Erratic
+47.77694	12.21228	Erratic
+47.77707	12.21202	Erratic
 45.79799	8.5965	Masso Erratico
 48.00651	11.39556	garnet amphibolite
+48.00038	11.37188	Erratic
 40.98835	-72.34746	Glacier Erratic
+43.74144	-72.14443	Erratic
+41.51243	-72.33823	Erratic
 41.23601	-74.06063	Irish Potato
 59.92873	16.53886	Flyttblock
 58.712	16.18489	Jättestenarna vid Övre Glottern
 58.71575	16.24409	Trehörningsstenen
 58.6811	16.56018	Älgstenen
 58.67058	16.57514	Forsstenen
+47.02924	7.47893	Erratic
 58.73212	16.22181	Domkyrkostenen
 45.89398	9.40057	Masso erratico
 46.77302	7.55118	Fuchsenstein
 46.76704	7.54227	Geist
 54.01732	13.24769	Opferstein bei Pustow
 58.71595	16.23722	Jättestenen vid Bomgölen
+41.9094	-73.21425	Erratic
+47.16495	7.24775	Erratic
+41.9093	-73.21432	Erratic
 45.79019	10.04426	Masso Erratico
+42.18869	-88.30699	Erratic
 46.01226	8.60712	Masso Erratico
 49.3611	-123.14172	Brothers Creek Erratic
+58.71347	16.18921	Erratic
 45.6635	11.3528	Masso erratico
 45.79929	10.03376	Masso Erratico
 45.82285	9.08158	Masso erratico
+47.00091	7.49524	Erratic
 46.65236	7.74157	Gurrenstein
 46.32483	9.41216	Masso Erratico
 46.32475	9.41224	Masso Erratico
 45.92745	9.67193	masso erratico
+46.6923	7.12336	Erratic
+46.32659	6.48308	Erratic
+47.76616	12.81561	Erratic
 51.11192	-114.09078	Glacial Erratic
 46.24553	5.96913	Erratic boulder of the Rhone glacier
 46.23948	5.96242	Erratic boulder of the Rhone glacier
@@ -118,6 +181,7 @@
 46.25724	5.97336	La Pierre de Samson
 46.25774	5.97426	Pierre à Saint-Jean
 46.23097	5.96231	Erratic boulder of the Rhone glacier
+43.82436	-70.2635	Erratic
 46.24378	5.97403	Erratic boulder of the Rhone glacier
 46.25015	5.97462	Erratic boulder of the Rhone glacier
 46.25462	5.97112	Erratic boulder of the Rhone glacier
@@ -138,6 +202,9 @@
 46.25856	5.97869	Erratic boulder of the Rhone glacier
 46.24736	5.97264	Erratic boulder of the Rhone glacier
 46.2443	5.97404	2 Erratic boulder of the Rhone glacier
+57.91508	12.56932	Erratic
+57.91471	12.56849	Erratic
+57.91466	12.56833	Erratic
 46.23114	5.94807	Pair of big Erratic boulder of the Rhone glacier
 46.2309	5.94851	Big erratic boulder of the Rhone glacier
 46.25469	5.97064	Erratic boulder of the Rhone glacier with a tree on top
@@ -147,6 +214,7 @@
 46.23007	5.94786	A pair of Small To Midsize Erratic boulder of the Rhone glacier
 46.23152	5.94878	Smaller Erratic boulder of the Rhone glacier with a tree on top
 46.23011	5.94734	A Groupe Of Erratic boulder of the Rhone glacier
+57.91724	12.56383	Erratic
 46.25626	5.97098	Midsize Erratic boulder of the Rhone glacier
 46.25601	5.97123	Smaler Erratic boulder of the Rhone glacier
 46.25666	5.97227	Group Of Erratic boulder of the Rhone glacier
@@ -209,6 +277,7 @@
 46.26135	5.97844	Group Of Erratic boulder of the Rhone glacier
 46.26147	5.97839	Erratic boulder of the Rhone glacier
 46.26062	5.97752	Erratic boulder of the Rhone glacier
+47.86416	12.19535	Erratic
 52.55733	0.79602	Merton Stone
 53.48914	-3.02911	Crosby Erratic
 51.93532	-0.71719	Soulbury Stone
