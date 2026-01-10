@@ -119,6 +119,10 @@ const findLinks = (parts: string[], result: ParsedParts): string[] => {
     return newParts;
 }
 
+const matchesNumber = (text:string): boolean => {
+    return /^-?\d+(\.\d+)?$/.test(text);
+}
+
 export const splitLine = (line: string): [Error, null] | [null, ParsedParts] => {
     let workingLine = line;
     const result: ParsedParts = {
@@ -138,6 +142,16 @@ export const splitLine = (line: string): [Error, null] | [null, ParsedParts] => 
     if (parts.length === 1) {
         parts = workingLine.split('`');
     }
+
+
+    if (parts.length > 1) {
+        if (matchesNumber(parts[0]) && matchesNumber(parts[1])) {
+            result.latitude = parseFloat(parts[0]);
+            result.longitude = parseFloat(parts[1]);
+            parts = parts.slice(2);
+        }
+    }
+
 
     // parts may still be 1 - but thats fine.
     parts = findLinks(parts, result)

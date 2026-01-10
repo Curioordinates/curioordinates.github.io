@@ -5,7 +5,7 @@ export interface EntryFields {
     locationAsText: string | null,
     latitude: number | null,
     longitude: number | null,
-    label:string
+    title:string
     link:string
     description: string | null,
     tags: string | null,
@@ -40,7 +40,7 @@ export const parseEntryFields = (line: string): [Error, null] | [null, EntryFiel
     locationAsText: parts.locationAsText ?? null,
     latitude: parts.latitude ?? null,
     longitude: parts.longitude ?? null,
-    label: label! ,
+    title: label! ,
     link: link! ,
     description: description,
     tags: parts.tags ?? null,

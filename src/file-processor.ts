@@ -11,8 +11,9 @@ import {
   getNamedCountersAsMap,
   incrementNamedCounter,
 } from "./lib/namedCounters";
+import { parseEntryFields } from "./ultimate-line-parser";
 
-export const processTsvFile = async (fileName: string): Promise<void> => {};
+export const processTsvFile = async (fileName: string): Promise<void> => { };
 
 /**
  * key is {latitude}:{longitude}
@@ -30,233 +31,219 @@ const getLeafDirName = (path: string): string => {
 };
 
 export const processFile = async (
-    fileName,
-    callback: PlottableItemCallback
+  fileName,
+  callback: PlottableItemCallback
 ): Promise<void> => {
-    console.log("file: " + fileName);
-    //const featureType = getLeafDirName(fileName);
+  console.log("file: " + fileName);
+  //const featureType = getLeafDirName(fileName);
 
-    // next part is the actual
+  // next part is the actual
 
-    const lines = fs.readFileSync(fileName).toString().split("\n");
-    const columnNameMap = [];
-    let columnNamesRead = false;
+  const lines = fs.readFileSync(fileName).toString().split("\n");
+  const columnNameMap = [];
+  let columnNamesRead = false;
 
-    const isTsvFile = fileName.endsWith(".tsv");
+  const isTsvFile = fileName.endsWith(".tsv");
 
-    if (fileName.endsWith(".hie.txt")) {
+  if (fileName.endsWith(".hie.txt")) {
+    columnNamesRead = true;
+  }
+
+  for (const rawLine of lines) {
+    const trimmedLine = rawLine.trim();
+
+    if (trimmedLine) {
+      //convert 'strict' csv to tsv - any comma not followed by a space becomes tab.
+      console.log(trimmedLine);
+      const line = isTsvFile
+        ? trimmedLine
+        : trimmedLine
+          .replace(/,/g, "\t")
+          .replace(/\t /g, ", ")
+          .replace(/\t_/g, ",_"); // This specifically covers comma+underscore in wikipedia-link-slugs
+
+      if (!columnNamesRead) {
+        // header line
         columnNamesRead = true;
-    }
 
-    for (const rawLine of lines) {
-        const trimmedLine = rawLine.trim();
+        const columnNames = line.split("\t");
+        columnNames.forEach((name, index) => {
+          columnNameMap[name] = index;
+        });
+      } else {
+        // This is a data line
 
-        if (trimmedLine) {
-            //convert 'strict' csv to tsv - any comma not followed by a space becomes tab.
-            console.log(trimmedLine);
-            const line = isTsvFile
-                ? trimmedLine
-                : trimmedLine
-                      .replace(/,/g, "\t")
-                      .replace(/\t /g, ", ")
-                      .replace(/\t_/g, ",_"); // This specifically covers comma+underscore in wikipedia-link-slugs
+        const extractedData = parseLine({
+          line: fileName.endsWith(".hie.txt")
+            ? line.replace(/`/g, "\t")
+            : line,
+        });
 
-            if (!columnNamesRead) {
-                // header line
-                columnNamesRead = true;
-
-                const columnNames = line.split("\t");
-                columnNames.forEach((name, index) => {
-                    columnNameMap[name] = index;
-                });
-            } else {
-                const extractedData = parseLine({
-                    line: fileName.endsWith(".hie.txt")
-                        ? line.replace(/`/g, "\t")
-                        : line,
-                });
-                /*
-        // data line
-        const fields = line.split("\t");
-        console.log(JSON.stringify(fields));
-
-        let location;
-        const locationIndex = columnNameMap["location"];
-        if (locationIndex > -1) {
-          location = parseLocation(fields[locationIndex]);
+/*
+        const [error, extractedData] = parseEntryFields(line);
+        if (error) {
+          console.error(error);
+          process.exit(0);
         }
-
-        const latitudeIndex =
-          columnNameMap["latitude"] ?? columnNameMap["@lat"];
-        const longitudeIndex =
-          columnNameMap["longitude"] ?? columnNameMap["@lon"];
-        if (latitudeIndex > -1 && longitudeIndex > -1) {
-          location = {
-            latitude: Number.parseFloat(fields[latitudeIndex]),
-            longitude: Number.parseFloat(fields[longitudeIndex]),
-          };
-        }
-
-        const nameIndex = columnNameMap["label"] ?? columnNameMap["name"];
-        let title = fields[nameIndex];
 */
-                // if (location && title) {
-                if (
-                    (extractedData.latitude || extractedData.latitude === 0) &&
-                    (extractedData.longitude ||
-                        extractedData.longitude === 0) &&
-                    extractedData.title
-                ) {
-                    const title = decodeURIComponent(extractedData.title);
-                    const latitude = to5DP(extractedData.latitude!);
-                    const longitude = to5DP(extractedData.longitude!);
-                    const surveyLink = `http://localhost:8000/?l=${extractedData.latitude},${extractedData.longitude}&z=18&satellite`;
-                    let link = extractedData.link ?? null;
 
-                    if (link && link.includes("wikidata.org/entity/")) {
-                        incrementNamedCounter("wikidata-entity-links");
+        // if (location && title) {
+        if (
+          (extractedData.latitude || extractedData.latitude === 0) &&
+          (extractedData.longitude ||
+            extractedData.longitude === 0) &&
+          extractedData.title
+        ) {
+          const title = decodeURIComponent(extractedData.title);
+          const latitude = to5DP(extractedData.latitude!);
+          const longitude = to5DP(extractedData.longitude!);
+          const surveyLink = `http://localhost:8000/?l=${extractedData.latitude},${extractedData.longitude}&z=18&satellite`;
+          let link = extractedData.link ?? null;
 
-                        if (fileName.includes("baggegerrow")) {
-                            const lastSlash = link.lastIndexOf("/");
-                            if (lastSlash !== -1) {
-                                const q_id = link.substring(lastSlash + 1);
-                                // There might be a wikipedia article about the entity - which would be much better than a wikidata page.
-                                const expand = await ttdExpand(q_id);
-                                if (expand && expand.about_url_english) {
-                                    incrementNamedCounter(
-                                        "wikidata-entity-upgrade"
-                                    );
-                                    link = expand.about_url_english;
-                                }
-                            }
-                        }
-                    }
+          if (link && link.includes("wikidata.org/entity/")) {
+            incrementNamedCounter("wikidata-entity-links");
 
-                    const item: PlottableItem = {
-                        latitude,
-                        longitude,
-                        title,
-                        surveyLink,
-                        link,
-                        details: extractedData.details ?? null,
-                    };
-                    callback(item);
+            if (fileName.includes("baggegerrow")) {
+              const lastSlash = link.lastIndexOf("/");
+              if (lastSlash !== -1) {
+                const q_id = link.substring(lastSlash + 1);
+                // There might be a wikipedia article about the entity - which would be much better than a wikidata page.
+                const expand = await ttdExpand(q_id);
+                if (expand && expand.about_url_english) {
+                  incrementNamedCounter(
+                    "wikidata-entity-upgrade"
+                  );
+                  link = expand.about_url_english;
                 }
+              }
             }
+          }
+
+          const item: PlottableItem = {
+            latitude,
+            longitude,
+            title,
+            surveyLink,
+            link,
+            details: extractedData.details ?? null,
+          };
+          callback(item);
         }
+      }
     }
-    console.log(`Finished processing ${fileName}`);
+  }
+  console.log(`Finished processing ${fileName}`);
 };
 
 let stopHits = 0;
 
 const processFileSet = async (
-    directoryName: string,
-    fileNames: string[],
-    featureType: string,
-    params: Record<string, string | number>
+  directoryName: string,
+  fileNames: string[],
+  featureType: string,
+  params: Record<string, string | number>
 ): Promise<number> => {
-    const verifiedFileNames = fileNames.filter((name) =>
-        name.includes("verified")
-    );
-    const fileLines: string[] = [];
-    if (fileNames.length) {
-        //    const featureType = getLeafDirName(fileNames[0]);
-        for (const fileName of fileNames) {
-            const isVerifiedFile = fileName.includes("verified");
-            await processFile(fileName, (item: PlottableItem) => {
-                const isListedInStops = stops.find(
-                    (testStop) =>
-                        testStop.latitude == item.latitude &&
-                        testStop.longitude == item.longitude
-                );
+  const verifiedFileNames = fileNames.filter((name) =>
+    name.includes("verified")
+  );
+  const fileLines: string[] = [];
+  if (fileNames.length) {
+    //    const featureType = getLeafDirName(fileNames[0]);
+    for (const fileName of fileNames) {
+      const isVerifiedFile = fileName.includes("verified");
+      await processFile(fileName, (item: PlottableItem) => {
+        const isListedInStops = stops.find(
+          (testStop) =>
+            testStop.latitude == item.latitude &&
+            testStop.longitude == item.longitude
+        );
 
-                if (isListedInStops) {
-                    stopHits++;
-                    return;
-                }
-
-                // see if its defined lower
-                const hitKey = `${to5DP(item.latitude)}:${to5DP(
-                    item.longitude
-                )}`;
-                console.log("made hit key :" + hitKey);
-                const hitSourceDirectory = hitMap[hitKey];
-
-                console.log(
-                    `testing: ${hitSourceDirectory} against ${directoryName}`
-                );
-                if (
-                    hitSourceDirectory &&
-                    hitSourceDirectory.startsWith(directoryName)
-                ) {
-                    // defined lower so ignore this item
-                    console.log(
-                        "ignoring item in favour of " + hitSourceDirectory
-                    );
-
-                    return;
-                }
-                hitMap[hitKey] = directoryName;
-
-                if (params.name_all && !isVerifiedFile) {
-                    item.title = params.name_all.toString();
-                }
-                if (
-                    verifiedFileNames.length > 0 &&
-                    !verifiedFileNames.includes(fileName)
-                ) {
-                    // anything not in the verified file is unverified.
-                    // item.title += " (unverified)";
-                }
-
-                const lineParts: (string | number)[] = [
-                    item.latitude,
-                    item.longitude,
-                    item.title,
-                ];
-                if (item.link) {
-                    lineParts.push(item.link);
-                } else {
-                    if (item.details) {
-                        lineParts.push("-"); // Only need padding if something is coming after.
-                    }
-                }
-                if (item.details) {
-                    lineParts.push(item.details);
-                }
-                if (addSurveyLink) {
-                    lineParts.push(item.surveyLink);
-                }
-                fileLines.push(lineParts.join("\t"));
-            });
+        if (isListedInStops) {
+          stopHits++;
+          return;
         }
 
-        fs.writeFileSync(
-            `./data/cells/${featureType}.tsv`,
-            fileLines.join("\n")
+        // see if its defined lower
+        const hitKey = `${to5DP(item.latitude)}:${to5DP(
+          item.longitude
+        )}`;
+        console.log("made hit key :" + hitKey);
+        const hitSourceDirectory = hitMap[hitKey];
+
+        console.log(
+          `testing: ${hitSourceDirectory} against ${directoryName}`
         );
+        if (
+          hitSourceDirectory &&
+          hitSourceDirectory.startsWith(directoryName)
+        ) {
+          // defined lower so ignore this item
+          console.log(
+            "ignoring item in favour of " + hitSourceDirectory
+          );
+
+          return;
+        }
+        hitMap[hitKey] = directoryName;
+
+        if (params.name_all && !isVerifiedFile) {
+          item.title = params.name_all.toString();
+        }
+        if (
+          verifiedFileNames.length > 0 &&
+          !verifiedFileNames.includes(fileName)
+        ) {
+          // anything not in the verified file is unverified.
+          // item.title += " (unverified)";
+        }
+
+        const lineParts: (string | number)[] = [
+          item.latitude,
+          item.longitude,
+          item.title,
+        ];
+        if (item.link) {
+          lineParts.push(item.link);
+        } else {
+          if (item.details) {
+            lineParts.push("-"); // Only need padding if something is coming after.
+          }
+        }
+        if (item.details) {
+          lineParts.push(item.details);
+        }
+        if (addSurveyLink) {
+          lineParts.push(item.surveyLink);
+        }
+        fileLines.push(lineParts.join("\t"));
+      });
     }
-    return fileLines.length;
+
+    fs.writeFileSync(
+      `./data/cells/${featureType}.tsv`,
+      fileLines.join("\n")
+    );
+  }
+  return fileLines.length;
 };
 
 const processDirectory = async (
-    directoryName: string,
-    featureType: string,
-    params: Record<string, string | number>
+  directoryName: string,
+  featureType: string,
+  params: Record<string, string | number>
 ): Promise<number> => {
-    const items = fs.readdirSync(directoryName);
+  const items = fs.readdirSync(directoryName);
 
-    const targetItems = items
-        .filter(
-            (item) =>
-                item.endsWith(".csv") ||
-                item.endsWith(".tsv") ||
-                item.endsWith(".hie.txt")
-        )
-        .map((item) => path.join(directoryName, item));
-    console.log(targetItems);
-    return processFileSet(directoryName, targetItems, featureType, params);
+  const targetItems = items
+    .filter(
+      (item) =>
+        item.endsWith(".csv") ||
+        item.endsWith(".tsv") ||
+        item.endsWith(".hie.txt")
+    )
+    .map((item) => path.join(directoryName, item));
+  console.log(targetItems);
+  return processFileSet(directoryName, targetItems, featureType, params);
 };
 
 const stops: { latitude: number; longitude: number }[] = [];
@@ -289,7 +276,7 @@ export const go = async () => {
           .toString();
 
         metadata = JSON.parse(fileContent);
-      } catch (_) {} // No metadata file
+      } catch (_) { } // No metadata file
 
       builtMetadata[keyName] = metadata;
 
