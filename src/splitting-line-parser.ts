@@ -101,7 +101,7 @@ const findCoords = (parts: string[], result: ParsedParts): string[] => {
     for (const part of parts) {
         const coordMatch = part.match(/^-?\d+(\.\d+)? ?,? ?-?\d+(\.\d+)?/);
         if (coordMatch && (coordMatch.index || coordMatch.index === 0) && matchContainsTwoNumbers(coordMatch[0])) {
-            const coordParts = coordMatch[0].split(',').map(part => part.trim());
+            const coordParts =  coordMatch[0].includes(',') ? coordMatch[0].split(',').map(part => part.trim()) : coordMatch[0].split(' ').map(part => part.trim());
 
             const left = part.substring(0, coordMatch.index).trim();
             const right = part.substring(coordMatch.index + coordMatch[0].length).trim();

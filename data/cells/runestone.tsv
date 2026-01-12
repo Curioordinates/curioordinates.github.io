@@ -90,9 +90,9 @@
 55.70462	13.19622	Skårby runestone	https://en.wikipedia.org/wiki/Sk%C3%A5rby_Runestones
 55.70465	13.19623	Dagstorp Runestone	https://en.wikipedia.org/wiki/Dagstorp_Runestone
 55.70575	13.19492	Gårdstångastenen 2 (DR 330)
-55.70577	13.19479	Vallkärrastenen  (DR 317)
+55.70577	13.19479	Vallkärrastenen (DR 317)
 55.7058	13.19495	Skivarpstenen
-55.70581	13.19485	Gårdstangasten 3  (DR 331)	https://en.wikipedia.org/wiki/Danish_Runic_Inscription_
+55.70581	13.19485	Gårdstangasten 3 (DR 331)	https://en.wikipedia.org/wiki/Danish_Runic_Inscription_
 55.70584	13.19491	Norra Nöbbelövstenen (DR 316)
 55.72398	8.53014	Horne Stone
 55.72406	8.53014	Horne Stone
@@ -278,10 +278,10 @@
 58.40071	15.09889	Östergötlands runinskrifter
 58.40388	15.75166	Östergötlands runinskrifter 11
 58.40965	15.87188	Östergötlands runinskrifter 10
-58.41138	15.62583	Östergötlands runinskrifter Fv1958
-58.41146	15.62485	Östergötlands runinskrifter Fv1958
+58.41138	15.62583	Östergötlands runinskrifter Fv1958;
+58.41146	15.62485	Östergötlands runinskrifter Fv1958;
 58.4125	14.97861	Östergötlands runinskrifter 6
-58.41361	15.61694	Östergötlands runinskrifter Fv1950
+58.41361	15.61694	Östergötlands runinskrifter Fv1950;
 58.41616	15.22819	Östergötlands runinskrifter ATA4666/43
 58.41676	15.52288	Östergötlands runinskrifter
 58.42124	15.63268	Östergötlands runinskrifter
@@ -304,11 +304,11 @@
 58.47189	15.23147	Östergötlands runinskrifter 38
 58.47553	15.41273	Östergötlands runinskrifter 61
 58.4771	16.2979	Ög KJ59
-58.48049	16.31936	Östergötland Runic Fv 1966
+58.48049	16.31936	Östergötland Runic Fv 1966;
 58.48198	15.97935	Östergötlands runinskrifter NOR1994;27
 58.4821	15.5156	Östergötlands runinskrifter N
 58.48214	15.51564	Östergötlands runinskrifter
-58.4822	15.5157	Östergötlands runinskrifter SvK43L3
+58.4822	15.5157	Östergötlands runinskrifter SvK43L3;
 58.49615	16.50251	Östergötlands runinskrifter 32
 58.4962	16.5026	Östergötlands runinskrifter 31
 58.4962	16.5028	Östergötlands runinskrifter 33
@@ -336,7 +336,7 @@
 58.56858	16.00119	Östergötlands runinskrifter
 58.57	16.39861	Östergötlands runinskrifter 13
 58.57841	16.24527	Östergötlands runinskrifter
-58.58038	15.9434	Östergötlands runinskrifter Fv1970
+58.58038	15.9434	Östergötlands runinskrifter Fv1970;
 58.58069	7.78755	Galteland stone	https://en.wikipedia.org/wiki/Galteland_Runestone
 58.58218	16.31599	Östergötlands runinskrifter
 58.58229	16.31596	Östergötlands runinskrifter
@@ -344,8 +344,8 @@
 58.58456	15.945	Gunnar's bridge runestones	https://en.wikipedia.org/wiki/Gunnar%27s_bridge_runestones
 58.586	16.3813	Östergötlands runinskrifter 18
 58.60752	14.01137	Västergötland Runic Inscription 8	https://en.wikipedia.org/wiki/V%C3%A4sterg%C3%B6tland_Runic_Inscription_8
-58.60963	16.13644	Östergötlands runinskrifter Fv1959
-58.60964	16.13643	Östergötlands runinskrifter Fv1959
+58.60963	16.13644	Östergötlands runinskrifter Fv1959;
+58.60964	16.13643	Östergötlands runinskrifter Fv1959;
 58.62377	16.15408	Östergötlands runinskrifter 46
 58.62988	13.82142	Västergötlands runinskrifter 4
 58.66694	11.24888	Rö runestone	https://en.wikipedia.org/wiki/R%C3%B6_runestone
@@ -377,7 +377,7 @@
 58.92363	17.0543	Södermanland Runic Inscription 139	https://en.wikipedia.org/wiki/S%C3%B6dermanland_runic_inscription_
 58.92416	17.45927	Södermanlands runinskrifter 41
 58.92543	17.09861	Södermanland Runic Inscription
-58.92666	17.09931	Södermanlands runinskrifter Fv1948
+58.92666	17.09931	Södermanlands runinskrifter Fv1948;
 58.92685	17.09947	Södermanland Runic Inscription
 58.92876	17.47783	Södermanlands runinskrifter 25
 58.93345	17.52445	Södermanlands runinskrifter 36
@@ -404,7 +404,7 @@
 59.01415	17.52546	Södermanlands runinskrifter 19
 59.019	16.81751	Södermanlands runinskrifter
 59.02237	16.08972	Sö 74
-59.03076	17.98836	Sö Fv1948
+59.03076	17.98836	Sö Fv1948;
 59.03639	17.80691	Södermanlands runinskrifter
 59.03963	17.55513	Södermanlands runinskrifter 20
 59.03968	18.01444	Södermanland Runic Inscription 239	https://en.wikipedia.org/wiki/S%C3%B6dermanland_Runic_Inscription_
@@ -448,7 +448,7 @@
 59.17049	15.52564	Närkes runinskrifter 11
 59.17257	14.98142	Närkes runinskrifter 8
 59.18738	18.15623	Södermanlands runinskrifter
-59.1911	17.6642	Södermanlands runinskrifter Fv1986
+59.1911	17.6642	Södermanlands runinskrifter Fv1986;
 59.19611	17.61333	Gamla Turingevägen Inscriptions	https://en.wikipedia.org/wiki/Gamla_Turingev%C3%A4gen_Inscriptions
 59.19846	15.06777	Närkes runinskrifter 19
 59.20436	15.57676	Närkes runinskrifter 15
@@ -550,7 +550,7 @@
 59.37995	16.65027	Sö
 59.38341	16.67241	Södermanlands runinskrifter
 59.38514	17.17323	Sö
-59.38596	16.70322	Södermanland runic inscriptions Fv1986
+59.38596	16.70322	Södermanland runic inscriptions Fv1986;
 59.38645	17.19425	Södermanlands runinskrifter
 59.38691	17.68502	Uppland Runic Inscription 30
 59.38703	17.99155	Uppland Runic Inscription
@@ -633,7 +633,7 @@
 59.50761	17.90373	Upplands runinskrifter
 59.50789	18.00945	Upplands runinskrifter
 59.51222	17.90681	Uppland Runic Inscription
-59.51324	17.9054	U Fv1972
+59.51324	17.9054	U Fv1972;
 59.51358	17.37551	Uppland Runic Inscription 699	https://en.wikipedia.org/wiki/Uppland_Runic_Inscription_
 59.51407	17.90516	Lilla Vilunda runestones	https://en.wikipedia.org/wiki/Lilla_Vilunda_runestones
 59.51564	17.64988	Uppland Runic Inscription
@@ -732,7 +732,7 @@
 59.62305	17.60888	Uppland Runic Inscription
 59.62469	17.75102	Uppland Runic Inscription
 59.6248	17.74776	Uppland Runic Inscription
-59.6268	17.91826	U Fv1992
+59.6268	17.91826	U Fv1992;
 59.6295	17.5005	Uppland Runic Inscription
 59.62992	16.64629	Anundstenen
 59.63058	17.48548	Uppland Runic Inscription

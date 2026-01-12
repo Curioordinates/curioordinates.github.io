@@ -31,7 +31,7 @@ const getLeafDirName = (path: string): string => {
 };
 
 
-const USE_NEW_PARSER = false;
+const USE_NEW_PARSER = true;
 
 export const processFile = async (
   fileName,

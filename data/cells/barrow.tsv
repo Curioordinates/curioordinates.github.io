@@ -1505,7 +1505,7 @@
 51.72685	-3.33457	Mynydd Cilfach-yr-Encil, Cairns	http://www.wikidata.org/entity/Q125483319
 52.14462	-3.31425	Giants' Graves, Mound I	http://www.wikidata.org/entity/Q125483320
 51.73583	-3.34027	Merthyr Common, Round Barrow	http://www.wikidata.org/entity/Q125483321
-53.25352	-3.21928	Pen-yr-Hwylfa,Mound	http://www.wikidata.org/entity/Q125483322
+53.25352	-3.21928	Pen-yr-Hwylfa, Mound	http://www.wikidata.org/entity/Q125483322
 52.2256	-3.33286	Bwlchyfedwen, Mound	http://www.wikidata.org/entity/Q125483323
 51.87591	-4.62399	Cross Hands, Southern Tumulus	http://www.wikidata.org/entity/Q125483324
 52.15576	-3.34123	Pen Waen Pool, Barrow	http://www.wikidata.org/entity/Q125483325
@@ -2915,11 +2915,11 @@
 51.98143	5.54889	Q17454342	http://www.wikidata.org/entity/Q17454342
 51.97353	5.54935	Q17454343	http://www.wikidata.org/entity/Q17454343
 51.98413	5.73617	Terrain with two tumuli	http://www.wikidata.org/entity/Q17454345
-51.98641	5.73581	Terrain with tumulus #45952	http://www.wikidata.org/entity/Q17454346
+51.98641	5.73581	Terrain with tumulus	http://www.wikidata.org/entity/Q17454346
 51.99002	5.73624	Q17454347	http://www.wikidata.org/entity/Q17454347
 51.994	5.73526	Q17454348	http://www.wikidata.org/entity/Q17454348
 51.99601	5.74069	Q17454350	http://www.wikidata.org/entity/Q17454350
-51.99839	5.7363	Terrain with tumulus #45956	http://www.wikidata.org/entity/Q17454351
+51.99839	5.7363	Terrain with tumulus	http://www.wikidata.org/entity/Q17454351
 52.00254	5.73605	Q17454353	http://www.wikidata.org/entity/Q17454353
 51.98803	5.7753	Q17454354	http://www.wikidata.org/entity/Q17454354
 52.0002	5.80551	tumuli Wolfheze near A50	http://www.wikidata.org/entity/Q17454357
@@ -2930,8 +2930,8 @@
 52.81361	6.77341	Q17454536	http://www.wikidata.org/entity/Q17454536
 51.37399	5.53298	Q17454540	http://www.wikidata.org/entity/Q17454540
 52.31486	6.88257	Q17454542	http://www.wikidata.org/entity/Q17454542
-51.22895	6.06354	tumulus #46021	http://www.wikidata.org/entity/Q17454559
-51.22931	6.06446	tumulus #46022	http://www.wikidata.org/entity/Q17454560
+51.22895	6.06354	tumulus	http://www.wikidata.org/entity/Q17454559
+51.22931	6.06446	tumulus	http://www.wikidata.org/entity/Q17454560
 52.84449	6.12905	Q17454584	http://www.wikidata.org/entity/Q17454584
 52.8363	6.12162	Q17454585	http://www.wikidata.org/entity/Q17454585
 52.8281	6.11006	Q17454586	http://www.wikidata.org/entity/Q17454586
@@ -3600,7 +3600,7 @@
 50.9383	-0.69041	Bowl barrow on Graffham Down	http://www.wikidata.org/entity/Q17645401
 50.9078	-0.59335	Two bowl barrows south of Westburton Hill	http://www.wikidata.org/entity/Q17645405
 54.0443	-0.76795	Hanging Grimston barrow group: a bowl barrow	http://www.wikidata.org/entity/Q17645408
-50.9072	-0.59311	Bowl barrow south of Westburton Hill:  part of Westburton Hill round barrow cemetery	http://www.wikidata.org/entity/Q17645410
+50.9072	-0.59311	Bowl barrow south of Westburton Hill: part of Westburton Hill round barrow cemetery	http://www.wikidata.org/entity/Q17645410
 51.1959	-0.77597	Bowl barrow	http://www.wikidata.org/entity/Q17645414
 50.9065	-0.59263	Two bowl barrows south of Westburton Hill	http://www.wikidata.org/entity/Q17645418
 50.9158	-1.99942	Barrow near Burtts Harley	http://www.wikidata.org/entity/Q17645422
@@ -3635,7 +3635,7 @@
 51.2138	-1.85586	Bowl barrow: one of three bowl barrows south-east of Warren Plantation	http://www.wikidata.org/entity/Q17645537
 50.7523	-2.43157	Barrow S of Wolfeton Clump	http://www.wikidata.org/entity/Q17645538
 51.3916	-0.77268	Bowl Barrow at Woodenhill, Bracknell	http://www.wikidata.org/entity/Q17645542
-50.9213	-0.67791	Bell barrow south-west of Heath Hanger:  part of Waltham Down round barrow cemetery	http://www.wikidata.org/entity/Q17645545
+50.9213	-0.67791	Bell barrow south-west of Heath Hanger: part of Waltham Down round barrow cemetery	http://www.wikidata.org/entity/Q17645545
 50.5555	-4.47439	Round cairn	http://www.wikidata.org/entity/Q17645548
 50.7514	-2.63993	Barrow beside Shotcombe Lane	http://www.wikidata.org/entity/Q17645551
 50.7925	-1.48673	Bowl barrow and length of field boundary on Peaked Hill	http://www.wikidata.org/entity/Q17645555
@@ -3958,7 +3958,7 @@
 51.2623	-2.62409	Bowl barrow	http://www.wikidata.org/entity/Q17646541
 53.8042	-2.1618	Pike Low bowl barrow and site of beacon, Bonfire Hill	http://www.wikidata.org/entity/Q17646545
 51.2625	-2.62458	Bowl barrow	http://www.wikidata.org/entity/Q17646547
-52.0434	-0.04621	Bell barrow:  part of the round barrow cemetery on Therfield Heath	http://www.wikidata.org/entity/Q17646548
+52.0434	-0.04621	Bell barrow: part of the round barrow cemetery on Therfield Heath	http://www.wikidata.org/entity/Q17646548
 53.7898	-2.1663	Bowl barrow on Hameldon Pasture	http://www.wikidata.org/entity/Q17646553
 52.0446	-0.04476	Bowl barrow	http://www.wikidata.org/entity/Q17646555
 51.2586	-2.71355	Bowl barrow	http://www.wikidata.org/entity/Q17646556
@@ -4309,7 +4309,7 @@
 54.0728	-2.14352	Round cairn on Broad Flats	http://www.wikidata.org/entity/Q17647471
 51.1964	-1.70273	Bowl barrow: one of a dipsersed group of barrows on Beacon Hill/Bulford Down	http://www.wikidata.org/entity/Q17647478
 54.0722	-2.14348	Round cairn south east of Broad Flats	http://www.wikidata.org/entity/Q17647479
-50.894	-0.57691	The Mill Ball:  a bowl barrow south of Bury Hill	http://www.wikidata.org/entity/Q17647480
+50.894	-0.57691	The Mill Ball: a bowl barrow south of Bury Hill	http://www.wikidata.org/entity/Q17647480
 51.2548	-2.69008	Bowl barrow	http://www.wikidata.org/entity/Q17647487
 51.1978	-1.70407	Three of a dispersed group of barrows on Beacon Hill/Bulford Down	http://www.wikidata.org/entity/Q17647493
 50.5018	-5.03913	Round barrow cemetery at Park Head	http://www.wikidata.org/entity/Q17647497
@@ -4321,7 +4321,7 @@
 50.9582	-0.66383	Great Bury bowl barrow	http://www.wikidata.org/entity/Q17647514
 50.7283	-1.78479	Bowl barrow	http://www.wikidata.org/entity/Q17647520
 50.7443	0.25445	Three bowl barrows on Heathy Brow	http://www.wikidata.org/entity/Q17647526
-51.8787	-0.53938	Five Knolls round  barrow  cemetery:  three  bell  barrows,  two  bowl barrows and two pond barrows on Dunstable Down	http://www.wikidata.org/entity/Q17647529
+51.8787	-0.53938	Five Knolls round barrow cemetery: three bell barrows, two bowl barrows and two pond barrows on Dunstable Down	http://www.wikidata.org/entity/Q17647529
 50.6463	-2.23744	Bowl barrow	http://www.wikidata.org/entity/Q17647530
 51.1931	-1.82573	Bowl barrow immediately north of Fargo Road	http://www.wikidata.org/entity/Q17647533
 51.6836	-2.19276	Bowl barrow	http://www.wikidata.org/entity/Q17647536
@@ -4690,7 +4690,7 @@
 52.5202	0.81519	Round barrow, Waterhouse Lodge	http://www.wikidata.org/entity/Q17648934
 54.0202	-0.73439	Round barrow	http://www.wikidata.org/entity/Q17648939
 51.8055	0.00706	Bowl barrow in Easneye Wood	http://www.wikidata.org/entity/Q17648949
-51.9384	0.03257	Bummers Hill:  a bowl barrow	http://www.wikidata.org/entity/Q17648956
+51.9384	0.03257	Bummers Hill: a bowl barrow	http://www.wikidata.org/entity/Q17648956
 50.9001	-1.68618	Bowl barrow	http://www.wikidata.org/entity/Q17648958
 51.5768	-1.567	Bronze Age bowl barrow and a pair of Anglo-Saxon burial mounds	http://www.wikidata.org/entity/Q17648961
 50.9225	-1.68153	Bowl barrow on Hiscocks Hill	http://www.wikidata.org/entity/Q17648965
@@ -4777,7 +4777,7 @@
 50.693	-3.93695	Round cairn on the summit of Little Hound Tor	http://www.wikidata.org/entity/Q17649270
 51.4395	-1.87296	Pair of round barrows	http://www.wikidata.org/entity/Q17649272
 53.0646	-1.83998	Bowl barrow on Arbour Hill	http://www.wikidata.org/entity/Q17649275
-51.4389	-1.87594	Bowl  barrow	http://www.wikidata.org/entity/Q17649278
+51.4389	-1.87594	Bowl barrow	http://www.wikidata.org/entity/Q17649278
 50.6923	-3.93759	Round cairn	http://www.wikidata.org/entity/Q17649279
 50.9468	-0.58318	Bowl barrow on Sutton Common	http://www.wikidata.org/entity/Q17649281
 50.9462	-0.58591	Bowl barrow on Sutton Common	http://www.wikidata.org/entity/Q17649289
@@ -5335,7 +5335,7 @@
 55.0294	-2.04901	Round cairn	http://www.wikidata.org/entity/Q17651033
 55.1566	-1.98355	Round cairn	http://www.wikidata.org/entity/Q17651039
 55.1683	-2.06018	Round cairn	http://www.wikidata.org/entity/Q17651043
-55.1574	-2.06922	Round cairn	http://www.wikidata.org/entity/Q17651044
+55.1574	-2.06922	Round cairn, 	http://www.wikidata.org/entity/Q17651044
 53.2711	-2.13069	Bowl barrow in Lavenham Close, Tytherington	http://www.wikidata.org/entity/Q17651055
 53.1349	-2.63708	Robin Hood's Tump bowl barrow	http://www.wikidata.org/entity/Q17651056
 53.2374	-2.64568	Gallowsclough Cob bowl barrow	http://www.wikidata.org/entity/Q17651057
@@ -5528,7 +5528,7 @@
 53.8572	-0.6218	Bowl barrow	http://www.wikidata.org/entity/Q17661861
 50.8504	-2.12198	Bowl barrow	http://www.wikidata.org/entity/Q17661863
 51.1528	-1.65722	Round barrow cemetery	http://www.wikidata.org/entity/Q17661865
-50.6459	-2.22893	The southwestern of two bowl barrows in Burngate Wood	http://www.wikidata.org/entity/Q17661866
+50.6459	-2.22893	The southwestern of two bowl barrows in Burngate Wood;	http://www.wikidata.org/entity/Q17661866
 50.8546	-2.11616	Bowl barrow	http://www.wikidata.org/entity/Q17661868
 50.8152	-1.52377	Bowl barrow	http://www.wikidata.org/entity/Q17661869
 53.8559	-0.62036	Bowl barrow	http://www.wikidata.org/entity/Q17661873
@@ -6736,7 +6736,7 @@
 51.0612	-1.28805	Round barrow cemetery on Magdalen Hill Down	http://www.wikidata.org/entity/Q17672999
 51.0714	-3.81657	Two conjoined bowl barrows	http://www.wikidata.org/entity/Q17673014
 51.4739	-1.36064	Bowl barrow	http://www.wikidata.org/entity/Q17673027
-51.1793	-1.80896	Two bowl barrows and four bell barrows forming the greater part of a round barrow cemetery known  as the New King Barrows	http://www.wikidata.org/entity/Q17673043
+51.1793	-1.80896	Two bowl barrows and four bell barrows forming the greater part of a round barrow cemetery known as the New King Barrows	http://www.wikidata.org/entity/Q17673043
 50.9554	-4.47721	Three bowl barrows and one bell barrow on Bursdon Moor situated	http://www.wikidata.org/entity/Q17673073
 50.9985	-1.13647	Round barrow cemetery and hollow ways on Beacon Hill	http://www.wikidata.org/entity/Q17673079
 50.4946	-3.95187	Round cairn on the summit of Great Gnat's Head	http://www.wikidata.org/entity/Q17673109
@@ -7040,7 +7040,7 @@
 54.2886	-0.56401	Round barrow on Highwood Brow	http://www.wikidata.org/entity/Q17674615
 52.5057	-1.3633	Bowl barrow	http://www.wikidata.org/entity/Q17674627
 54.2743	-0.58267	Round barrow on Troutsdale Brow	http://www.wikidata.org/entity/Q17674629
-54.2743	-0.57683	Round barrow,lime kiln and warrening enclosure in Wykeham Forest	http://www.wikidata.org/entity/Q17674638
+54.2743	-0.57683	Round barrow, lime kiln and warrening enclosure in Wykeham Forest	http://www.wikidata.org/entity/Q17674638
 52.5049	-1.34156	Bowl barrow	http://www.wikidata.org/entity/Q17674641
 50.8001	-1.92271	Bowl barrow	http://www.wikidata.org/entity/Q17674643
 54.2745	-0.57823	Round barrow in Wykeham Forest	http://www.wikidata.org/entity/Q17674645
@@ -7763,7 +7763,7 @@
 51.8165	-1.7763	Bowl barrow	http://www.wikidata.org/entity/Q17677595
 54.4911	-1.01426	Round barrow	http://www.wikidata.org/entity/Q17677596
 50.9058	-0.17271	Cross dyke and bowl barrow	http://www.wikidata.org/entity/Q17677598
-54.1719	-1.00637	Round barrow 250m  west of Calf Close Wood	http://www.wikidata.org/entity/Q17677599
+54.1719	-1.00637	Round barrow 250m west of Calf Close Wood	http://www.wikidata.org/entity/Q17677599
 50.7747	-2.22866	Two bowl barrows	http://www.wikidata.org/entity/Q17677600
 51.6656	-2.3058	Bowl barrow	http://www.wikidata.org/entity/Q17677603
 54.17	-1.01029	Round barrow	http://www.wikidata.org/entity/Q17677605
@@ -8327,7 +8327,7 @@
 51.63607	-3.57207	Round Barrow on the Werfa	http://www.wikidata.org/entity/Q20596831
 52.08653	-4.40015	Gernos Mountain Round Barrow Cemetery	http://www.wikidata.org/entity/Q20596837
 53.20427	-3.24408	Round Barrow	http://www.wikidata.org/entity/Q20596850
-52.43262	-4.02172	Round Barrow & Standing Stone 700m  W of Plas Gogerddan	http://www.wikidata.org/entity/Q20596861
+52.43262	-4.02172	Round Barrow & Standing Stone 700m W of Plas Gogerddan	http://www.wikidata.org/entity/Q20596861
 51.83336	-4.9432	Leachpool Round Barrow	http://www.wikidata.org/entity/Q20596874
 51.88067	-5.04918	Tump Round Barrow	http://www.wikidata.org/entity/Q20596892
 52.03543	-3.53502	Twyn Cerrig-Cadarn Round Cairn	http://www.wikidata.org/entity/Q20596903
@@ -44211,55 +44211,55 @@
 56.55503	-3.46641	Glendelvine House, barrow and standing stone	http://www.wikidata.org/entity/Q56661322
 56.31593	-6.25355	Suidhe, barrow and standing stones, Bunessan	http://www.wikidata.org/entity/Q56661397
 56.32947	-3.65564	Haugh of Aberuthven, standing stone, enclosure and ring-ditch SW of	http://www.wikidata.org/entity/Q56661405
-58.55333	-4.76763	Cape Wrath Hotel,standing stones	http://www.wikidata.org/entity/Q56661434
+58.55333	-4.76763	Cape Wrath Hotel, standing stones	http://www.wikidata.org/entity/Q56661434
 57.45882	-4.07597	Culdoich, chambered cairn and standing stone	http://www.wikidata.org/entity/Q56661437
 56.45954	-3.1731	Castlehill, barrows	http://www.wikidata.org/entity/Q56661797
 56.04054	-4.02639	Dundaff Hill, mound	http://www.wikidata.org/entity/Q56661979
-57.13698	-2.32448	Woods of Cairnie,burial mounds 410m S &	http://www.wikidata.org/entity/Q56661997
+57.13698	-2.32448	Woods of Cairnie, burial mounds 410m S &	http://www.wikidata.org/entity/Q56661997
 56.74651	-3.32982	Doonies, kerb cairn	http://www.wikidata.org/entity/Q56662074
-56.65981	-3.74928	Pitnacree,burial mound	http://www.wikidata.org/entity/Q56662088
+56.65981	-3.74928	Pitnacree, burial mound	http://www.wikidata.org/entity/Q56662088
 56.4322	-3.4391	Lochton House, ring-ditch	http://www.wikidata.org/entity/Q56662165
 56.58009	-3.37527	Leys of Marlee, ring-ditch	http://www.wikidata.org/entity/Q56662192
-56.62682	-3.15173	Milton of Ruthven,ring ditch	http://www.wikidata.org/entity/Q56662205
+56.62682	-3.15173	Milton of Ruthven, ring ditch	http://www.wikidata.org/entity/Q56662205
 56.25409	-3.12358	Kettlebridge, barrows SW of Back Park	http://www.wikidata.org/entity/Q56662211
-56.64688	-3.04693	Kinalty,barrow	http://www.wikidata.org/entity/Q56662244
-56.71808	-2.87235	Law of Baldoukie,barrow	http://www.wikidata.org/entity/Q56662281
-56.70706	-2.85931	East Mains of Whitewell,barrow and pits	http://www.wikidata.org/entity/Q56662285
-56.70175	-2.55086	Powis Farm,barrows	http://www.wikidata.org/entity/Q56662341
-56.79756	-2.65549	Gallows Knap,barrow	http://www.wikidata.org/entity/Q56662349
-56.77589	-2.63767	Ballownie,mound	http://www.wikidata.org/entity/Q56662351
-56.75031	-2.44533	Fisherhills,barrow cemetery	http://www.wikidata.org/entity/Q56662593
-56.56047	-3.1681	Auchtertyre,barrow	http://www.wikidata.org/entity/Q56662627
+56.64688	-3.04693	Kinalty, barrow	http://www.wikidata.org/entity/Q56662244
+56.71808	-2.87235	Law of Baldoukie, barrow	http://www.wikidata.org/entity/Q56662281
+56.70706	-2.85931	East Mains of Whitewell, barrow and pits	http://www.wikidata.org/entity/Q56662285
+56.70175	-2.55086	Powis Farm, barrows	http://www.wikidata.org/entity/Q56662341
+56.79756	-2.65549	Gallows Knap, barrow	http://www.wikidata.org/entity/Q56662349
+56.77589	-2.63767	Ballownie, mound	http://www.wikidata.org/entity/Q56662351
+56.75031	-2.44533	Fisherhills, barrow cemetery	http://www.wikidata.org/entity/Q56662593
+56.56047	-3.1681	Auchtertyre, barrow	http://www.wikidata.org/entity/Q56662627
 57.33142	-4.22243	Brin Nursery, barrow cemetery	http://www.wikidata.org/entity/Q56662787
 55.83984	-2.15426	East Reston, ring ditch	http://www.wikidata.org/entity/Q56662847
-55.71822	-3.31423	Romanno Mains,two barrows	http://www.wikidata.org/entity/Q56662983
-55.71688	-3.30905	Romanno Mains,barrow	http://www.wikidata.org/entity/Q56662985
-55.70688	-3.29791	Romanno Hope,barrow & enclosures S of	http://www.wikidata.org/entity/Q56662986
-55.70382	-3.28741	Green Knowe,two ring enclosures & barrow	http://www.wikidata.org/entity/Q56662987
+55.71822	-3.31423	Romanno Mains, two barrows	http://www.wikidata.org/entity/Q56662983
+55.71688	-3.30905	Romanno Mains, barrow	http://www.wikidata.org/entity/Q56662985
+55.70688	-3.29791	Romanno Hope, barrow & enclosures S of	http://www.wikidata.org/entity/Q56662986
+55.70382	-3.28741	Green Knowe, two ring enclosures & barrow	http://www.wikidata.org/entity/Q56662987
 55.63956	-3.33767	Huskie Rig, mounds	http://www.wikidata.org/entity/Q56663000
-55.63833	-3.43481	Broughtonknowe,three barrows	http://www.wikidata.org/entity/Q56663019
+55.63833	-3.43481	Broughtonknowe, three barrows	http://www.wikidata.org/entity/Q56663019
 56.65712	-3.80406	Balenduin, cairn	http://www.wikidata.org/entity/Q56663096
-56.18037	-3.96101	Kippenross House,burial mound	http://www.wikidata.org/entity/Q56663100
-56.36439	-5.13054	Larach Bhan,cairn	http://www.wikidata.org/entity/Q56663112
-57.22045	-4.49751	Dell Farm,burial mounds	http://www.wikidata.org/entity/Q56663174
-55.27058	-3.78501	Cairnpark,circular enclosure	http://www.wikidata.org/entity/Q56663209
-55.48303	-4.49251	Enterkine,barrow	http://www.wikidata.org/entity/Q56663210
-55.67568	-3.86552	Blackhill,barrow	http://www.wikidata.org/entity/Q56663219
-55.65436	-4.04621	Burnbrae,barrow	http://www.wikidata.org/entity/Q56663359
+56.18037	-3.96101	Kippenross House, burial mound	http://www.wikidata.org/entity/Q56663100
+56.36439	-5.13054	Larach Bhan, cairn	http://www.wikidata.org/entity/Q56663112
+57.22045	-4.49751	Dell Farm, burial mounds	http://www.wikidata.org/entity/Q56663174
+55.27058	-3.78501	Cairnpark, circular enclosure	http://www.wikidata.org/entity/Q56663209
+55.48303	-4.49251	Enterkine, barrow	http://www.wikidata.org/entity/Q56663210
+55.67568	-3.86552	Blackhill, barrow	http://www.wikidata.org/entity/Q56663219
+55.65436	-4.04621	Burnbrae, barrow	http://www.wikidata.org/entity/Q56663359
 55.70559	-2.18422	Ladykirk House, barrow	http://www.wikidata.org/entity/Q56663377
-57.42233	-2.20161	Bellmuir,burial mounds	http://www.wikidata.org/entity/Q56663387
+57.42233	-2.20161	Bellmuir, burial mounds	http://www.wikidata.org/entity/Q56663387
 56.65801	-2.78167	Haresburn Croft, burial mound	http://www.wikidata.org/entity/Q56663402
-56.85178	-2.43121	Erskine's Knap,burial mound	http://www.wikidata.org/entity/Q56663513
-55.00923	-5.03887	Finnarts Bridge,cairn	http://www.wikidata.org/entity/Q56663742
-55.731	-3.39214	South Slipperfield,barrows 1850m SSW and	http://www.wikidata.org/entity/Q56663785
+56.85178	-2.43121	Erskine's Knap, burial mound	http://www.wikidata.org/entity/Q56663513
+55.00923	-5.03887	Finnarts Bridge, cairn	http://www.wikidata.org/entity/Q56663742
+55.731	-3.39214	South Slipperfield, barrows 1850m SSW and	http://www.wikidata.org/entity/Q56663785
 55.76803	-6.21243	barrow	http://www.wikidata.org/entity/Q56663826
-58.22409	-6.74258	Cnoc Leathan,kerb cairn	http://www.wikidata.org/entity/Q56663995
-56.79609	-2.58438	Witch Hillock,burial mound and stone setting	http://www.wikidata.org/entity/Q56664168
-56.86148	-2.57013	Fettercairn House,burial mound	http://www.wikidata.org/entity/Q56664171
-56.64648	-3.72183	Balnaguard,cairn	http://www.wikidata.org/entity/Q56664299
-55.70912	-4.84834	Bushglen Mount,ENE of Bushglen	http://www.wikidata.org/entity/Q56664438
+58.22409	-6.74258	Cnoc Leathan, kerb cairn	http://www.wikidata.org/entity/Q56663995
+56.79609	-2.58438	Witch Hillock, burial mound and stone setting	http://www.wikidata.org/entity/Q56664168
+56.86148	-2.57013	Fettercairn House, burial mound	http://www.wikidata.org/entity/Q56664171
+56.64648	-3.72183	Balnaguard, cairn	http://www.wikidata.org/entity/Q56664299
+55.70912	-4.84834	Bushglen Mount, ENE of Bushglen	http://www.wikidata.org/entity/Q56664438
 55.49882	-3.73143	Craighead, barrow and cairn	http://www.wikidata.org/entity/Q56664604
-56.11136	-5.48532	Ballymeanoch,kerb cairn	http://www.wikidata.org/entity/Q56664656
+56.11136	-5.48532	Ballymeanoch, kerb cairn	http://www.wikidata.org/entity/Q56664656
 56.5359	-3.32493	Hallhole, barrow	http://www.wikidata.org/entity/Q56664757
 56.56038	-3.35115	Burnbank, barrows, enclosures & unenclosed settlement SW of	http://www.wikidata.org/entity/Q56664802
 56.35682	-3.80355	Dornock Lodge, pit-circle	http://www.wikidata.org/entity/Q56664847
@@ -44274,30 +44274,30 @@
 56.37607	-3.31398	Witch Knowe, barrow	http://www.wikidata.org/entity/Q56665347
 54.92625	-5.07129	Creachmore Cottage, barrow	http://www.wikidata.org/entity/Q56665459
 56.16927	-3.3186	Cumbrae House, ring-ditches	http://www.wikidata.org/entity/Q56665492
-56.49547	-3.29841	Macbeth's Law,mound,Lawton House	http://www.wikidata.org/entity/Q56665752
-55.63245	-4.62801	Lawthorn Mount,mound	http://www.wikidata.org/entity/Q56665877
+56.49547	-3.29841	Macbeth's Law, mound, Lawton House	http://www.wikidata.org/entity/Q56665752
+55.63245	-4.62801	Lawthorn Mount, mound	http://www.wikidata.org/entity/Q56665877
 57.34882	-4.33113	Achnabat, cairn	http://www.wikidata.org/entity/Q56665906
 57.42465	-4.10603	Mid Craggie, cairn	http://www.wikidata.org/entity/Q56665930
 57.41724	-4.11358	Craggie Cottage, settlement cairns and field system	http://www.wikidata.org/entity/Q56665943
 57.3563	-4.47682	Garbeg Cottage, burial mounds	http://www.wikidata.org/entity/Q56665944
 55.8214	-3.5705	West Harwood, burial mound	http://www.wikidata.org/entity/Q56666052
 57.44096	-2.56939	Logie Newton, kerb cairns	http://www.wikidata.org/entity/Q56666419
-54.8231	-4.64716	Culshabbin,cairn	http://www.wikidata.org/entity/Q56666516
-58.14611	-3.75441	Torrish,cairn WNW of	http://www.wikidata.org/entity/Q56666703
-59.00713	-3.19466	Quoyer,mound	http://www.wikidata.org/entity/Q56666765
-55.07866	-4.59832	White Cairn,cairn	http://www.wikidata.org/entity/Q56666861
+54.8231	-4.64716	Culshabbin, cairn	http://www.wikidata.org/entity/Q56666516
+58.14611	-3.75441	Torrish, cairn WNW of	http://www.wikidata.org/entity/Q56666703
+59.00713	-3.19466	Quoyer, mound	http://www.wikidata.org/entity/Q56666765
+55.07866	-4.59832	White Cairn, cairn	http://www.wikidata.org/entity/Q56666861
 59.135	-3.2317	Mittens, two mounds	http://www.wikidata.org/entity/Q56666886
-56.48013	-3.4996	Court Hill,cairn,Loak	http://www.wikidata.org/entity/Q56666908
-57.5535	-3.90784	Little Kildrummie,settlements & funerary remains	http://www.wikidata.org/entity/Q56667302
+56.48013	-3.4996	Court Hill, cairn, Loak	http://www.wikidata.org/entity/Q56666908
+57.5535	-3.90784	Little Kildrummie, settlements & funerary remains	http://www.wikidata.org/entity/Q56667302
 57.55882	-3.88932	Fonn, three barrows	http://www.wikidata.org/entity/Q56667559
 60.06688	-1.33784	Skuta Noost, cists 55m W and	http://www.wikidata.org/entity/Q56667807
 56.45797	-5.39492	North Connel, barrow	http://www.wikidata.org/entity/Q56667964
-56.11091	-5.48324	Ballymeanoch,cairn	http://www.wikidata.org/entity/Q56667995
-59.14132	-3.26934	Knowe of Crustan,mound,Crustan	http://www.wikidata.org/entity/Q56668056
-59.07501	-3.2377	Knowe of Smirrus,mound	http://www.wikidata.org/entity/Q56668059
-59.13115	-3.26387	Queena,two mounds SSW of,Abune-the-Hill	http://www.wikidata.org/entity/Q56668084
+56.11091	-5.48324	Ballymeanoch, cairn	http://www.wikidata.org/entity/Q56667995
+59.14132	-3.26934	Knowe of Crustan, mound, Crustan	http://www.wikidata.org/entity/Q56668056
+59.07501	-3.2377	Knowe of Smirrus, mound	http://www.wikidata.org/entity/Q56668059
+59.13115	-3.26387	Queena, two mounds SSW of, Abune-the-Hill	http://www.wikidata.org/entity/Q56668084
 59.06885	-3.20099	Knowe of Yesko, barrows and enclosure	http://www.wikidata.org/entity/Q56668104
-59.08658	-3.26374	Summerfield,three mounds	http://www.wikidata.org/entity/Q56668106
+59.08658	-3.26374	Summerfield, three mounds	http://www.wikidata.org/entity/Q56668106
 59.05923	-3.07173	Knowe of Lyron, mound	http://www.wikidata.org/entity/Q56668179
 59.08708	-3.21899	Knowes of Cuean, mounds	http://www.wikidata.org/entity/Q56668182
 59.06912	-3.06065	Seven Knowes, mounds	http://www.wikidata.org/entity/Q56668188
@@ -44315,10 +44315,10 @@
 58.96152	-3.09773	Groundwater, mound	http://www.wikidata.org/entity/Q56668346
 58.9611	-3.08824	Groundwater, burial mounds	http://www.wikidata.org/entity/Q56668348
 56.63508	-2.62515	Boysack, barrow cemetery and enclosure	http://www.wikidata.org/entity/Q56668392
-57.50011	-4.14905	Allanfearn,barrows	http://www.wikidata.org/entity/Q56668503
-56.62053	-3.91827	Balhomais,stone circle and barrow	http://www.wikidata.org/entity/Q56668723
+57.50011	-4.14905	Allanfearn, barrows	http://www.wikidata.org/entity/Q56668503
+56.62053	-3.91827	Balhomais, stone circle and barrow	http://www.wikidata.org/entity/Q56668723
 55.68622	-3.80917	Barrow	http://www.wikidata.org/entity/Q56668727
-56.7351	-2.54791	Fordhouse,barrow	http://www.wikidata.org/entity/Q56668739
+56.7351	-2.54791	Fordhouse, barrow	http://www.wikidata.org/entity/Q56668739
 54.07728	9.5348	Q56832907	http://www.wikidata.org/entity/Q56832907
 50.21515	6.11692	Hügelgräber "Im Kollerwinkel"	http://www.wikidata.org/entity/Q57316986
 50.22051	6.12411	Hügelgräber "Kleine Hardt"	http://www.wikidata.org/entity/Q57316987

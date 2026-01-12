@@ -11,6 +11,20 @@ const resolveLocation = (fields) => {
 }
 
 describe('ultimate-line-parser', () => {
+ 
+    it ('should handle previously troublesome lines', () => {
+        const line = `51.1002 -3.0201 Somerset Folklore https://www.threeravenspodcast.com/podcast/episode/7a94dff9/series-1-episode-2-somerset  From the Three Ravens podcast`;
+        const [error, data] = parseEntryFields(line);
+        expect(error).toBeNull();
+        expect(data).toEqual(expect.objectContaining({
+            latitude: 51.1002,
+            longitude: -3.0201,
+            title: "Somerset Folklore",
+            link: "https://www.threeravenspodcast.com/podcast/episode/7a94dff9/series-1-episode-2-somerset",
+            details: "From the Three Ravens podcast",
+        }));
+    });
+
 
 
     it('should handle long lines', () => {
