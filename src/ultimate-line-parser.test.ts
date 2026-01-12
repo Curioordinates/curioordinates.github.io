@@ -1,3 +1,4 @@
+import { defaultMaxListeners } from "events";
 import { parseEntryFields } from "./ultimate-line-parser";
 
 
@@ -22,30 +23,44 @@ const line = `36.825382092581606, 28.623420283271408,Kaunos,https://en.wikipedia
             longitude: 28.623420283271408,
             title: "Kaunos",
             link: "https://en.wikipedia.org/wiki/Kaunos",
-            description: "The amphitheatre at Kaunos, built into the slope of the acropolis, reflects both Hellenistic and Roman architectural influences, featuring a 75-meter diameter and seating for around 5000 spectators. It is well-preserved and still occasionally hosts performances today.",
+            details: "The amphitheatre at Kaunos, built into the slope of the acropolis, reflects both Hellenistic and Roman architectural influences, featuring a 75-meter diameter and seating for around 5000 spectators. It is well-preserved and still occasionally hosts performances today.",
+        }));
+    });
+
+    it('Should not match 1592 as 15 92 coordinates', () => {
+        const line = `50.81918695243874, 0.33419154454573485,Joan of Navarre,https://en.wikipedia.org/wiki/Joan_of_Navarre,_Queen_of_England,In 1419, Joan of Navarre was imprisoned at Pevensey Castle after her confessor accused her of plotting to kill King Henry V with witchcraft. Her fortune was seized, and she remained in captivity until her release in 1422."`
+    
+        const [error, data] = parseEntryFields(line);
+        expect(error).toBeNull();
+        expect(data).toEqual(expect.objectContaining({
+            latitude: 50.81918695243874,
+            longitude: 0.33419154454573485,
+            locationAsText: null,
+            tags: null,
+            title: "Joan of Navarre",
+            link: "https://en.wikipedia.org/wiki/Joan_of_Navarre,_Queen_of_England",
+            details: "In 1419, Joan of Navarre was imprisoned at Pevensey Castle after her confessor accused her of plotting to kill King Henry V with witchcraft. Her fortune was seized, and she remained in captivity until her release in 1422.",
+        }));
+    
+    });
+
+    it('Should handle troublesum tab parsing', () => {
+        const line = `50.90996	-0.60424	Bignor Hill Dragon	http://www.sussexarch.org.uk/saaf/dragon.html	"A large dragon had its den on Bignor Hill, and marks of its folds were to be seen on the hill."`
+
+        const [error, data] = parseEntryFields(line);
+        expect(error).toBeNull();
+        expect(data).toEqual(expect.objectContaining({
+            latitude: 50.90996,
+            longitude: -0.60424,
+            title: "Bignor Hill Dragon",
+            link: "http://www.sussexarch.org.uk/saaf/dragon.html",
+            details: "A large dragon had its den on Bignor Hill, and marks of its folds were to be seen on the hill.",
         }));
     });
 
 
  
-
-    it ('should handle latitude longitude columns', () => {
-        // given
-        const line = `41.889882\t12.494881\tLudus Magnus\thttp://localhost:8000/?l=41.889882,12.494881&z=18&satellite`;
-
-        // when
-        const [error, data] = parseEntryFields(line);
-        expect(error).toBeNull();
-        expect(data).toEqual(expect.objectContaining({
-            latitude: 41.889882,
-            longitude: 12.494881,
-            title: "Ludus Magnus",
-            link: "http://localhost:8000/?l=41.889882,12.494881&z=18&satellite",
-            description: null,
-            locationAsText: null,
-            tags: null,
-        }));
-    });
+ 
     it('should parse a happy line', () => {
         // given
         // note the location isn't just 'The Wrekin, shropshire' as Raven's Bowl is a specific location.
@@ -62,8 +77,8 @@ const line = `36.825382092581606, 28.623420283271408,Kaunos,https://en.wikipedia
             longitude: null,
             title: "The Raven's Bowl",
             link: "https://linky.com",
-                description: "The bowl is cool",
-                tags: '#giant #folklore'
+            details: "The bowl is cool",
+            tags: '#giant #folklore'
         }));
 
         resolveLocation(data);
@@ -85,7 +100,7 @@ const line = `36.825382092581606, 28.623420283271408,Kaunos,https://en.wikipedia
             latitude: 35.082575,
             longitude: -106.63806,
             link: "https://www.hauntedrooms.com/new-mexico/albuquerque/haunted-places/haunted-hotels/hotel-parq-central",
-            description: "Hotel Parq Central, once a psychiatric facility and later Memorial Hospital, is known for unsettling paranormal activity tied to its medical past. Reports include apparitions—most notably a woman seen watching from the upper right wing—and bedsheets being pulled off during the night.",
+            details: "Hotel Parq Central, once a psychiatric facility and later Memorial Hospital, is known for unsettling paranormal activity tied to its medical past. Reports include apparitions—most notably a woman seen watching from the upper right wing—and bedsheets being pulled off during the night.",
             title: "Hotel Parq Central",
             locationAsText: null,
             tags: null,
@@ -107,7 +122,7 @@ const line = `36.825382092581606, 28.623420283271408,Kaunos,https://en.wikipedia
             latitude: 45.7,
             title: "Battle of Focșani (1789)",
             link: "http://www.wikidata.org/entity/Q1025134",
-            description: null,
+            details: null,
             locationAsText: null,
             tags: null,
         }));

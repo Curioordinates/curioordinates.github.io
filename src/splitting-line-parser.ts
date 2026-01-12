@@ -30,6 +30,10 @@ const findLocationAsText = (parts: string[], result: ParsedParts): string[] => {
 }
 
 
+const countDoubleQuotes = (text:string): number => {
+    return (text.match(/"/g) || []).length;
+}
+
 const cleanAndAddPart = (part:string, parts: string[]) => {
    // remove any comma separators from start or end
    if (part.startsWith(',') || part.startsWith('\t') || part.startsWith('`') ) {
@@ -38,6 +42,21 @@ const cleanAndAddPart = (part:string, parts: string[]) => {
    if (part.endsWith(',') || part.endsWith('\t') || part.endsWith('`') ) {
     part = part.substring(0, part.length - 1).trim();
    }
+
+   const doubleQuoteCount = countDoubleQuotes(part);
+   if (doubleQuoteCount == 1) {
+      if (part.startsWith('"')) { 
+        part = part.substring(1).trim();
+      }
+      if (part.endsWith('"')) {
+        part = part.substring(0, part.length - 1).trim();
+      }
+   } else if (doubleQuoteCount == 2) {
+       if (part.startsWith('"') && part.endsWith('"')) {
+        part = part.substring(1, part.length - 1).trim();
+       }
+   }
+
    if (part.length === 0) {
     return;
    }
@@ -69,12 +88,19 @@ const findPoints = (parts: string[], result: ParsedParts): string[] => {
 }
 
 
+/// note regex allows optional spaces AND optional commas 
+// but what that means is it can match 1234 as 12 34
+// so we need to check there is a gap and two numbers involved.
+const matchContainsTwoNumbers = (text:string): boolean => {
+    const fullMatch = text.trim();
+    return fullMatch.includes(' ') || fullMatch.includes(',');
+}
 
 const findCoords = (parts: string[], result: ParsedParts): string[] => {
     const newParts: string[] = [];
     for (const part of parts) {
         const coordMatch = part.match(/^-?\d+(\.\d+)? ?,? ?-?\d+(\.\d+)?/);
-        if (coordMatch && (coordMatch.index || coordMatch.index === 0)) {
+        if (coordMatch && (coordMatch.index || coordMatch.index === 0) && matchContainsTwoNumbers(coordMatch[0])) {
             const coordParts = coordMatch[0].split(',').map(part => part.trim());
 
             const left = part.substring(0, coordMatch.index).trim();
@@ -124,7 +150,13 @@ const matchesNumber = (text:string): boolean => {
 }
 
 export const splitLine = (line: string): [Error, null] | [null, ParsedParts] => {
-    let workingLine = line;
+
+    let workingLine = line.replace(/,\_/g, `{wiki-style-comma-in-url}`) // protect wiki style commas
+    .replace(/,/g, `, `) // ensure trailing space on all other commas
+    .replace(/  +/g, ' ') // ensure single spaces (We may have doubled spaces above)
+    // reinstate the wiki commas
+    .replace(/{wiki-style-comma-in-url}/g, ',_');
+
     const result: ParsedParts = {
         textFragments: [],
         links: [],
@@ -138,8 +170,10 @@ export const splitLine = (line: string): [Error, null] | [null, ParsedParts] => 
     } 
 
     // explicit separators can be ` or \t or , (although , is way to ambiguous)
-    let parts = workingLine.split('\t');
-
+    let parts:string[] = [];
+    for (const part of workingLine.split('\t')) {
+        cleanAndAddPart(part, parts);
+    }
 
     if (parts.length > 1) {
         if (matchesNumber(parts[0]) && matchesNumber(parts[1])) {

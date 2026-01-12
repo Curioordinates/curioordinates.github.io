@@ -11,10 +11,10 @@ export interface EntryFields {
     tags: string | null,
 }   
 
-
 // fields could be comma separated - or tab or ` or nothing (whitespace only)
-export const parseEntryFields = (line: string): [Error, null] | [null, EntryFields] => {
-  const [error, parts] = splitLine(line);
+export const parseEntryFields = (rawLine: string): [Error, null] | [null, EntryFields] => {
+
+  const [error, parts] = splitLine(rawLine);
   if (error) {
     return [error, null];
   }

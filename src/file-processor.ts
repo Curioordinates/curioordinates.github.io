@@ -104,6 +104,7 @@ export const processFile = async (
         }
 
         // if (location && title) {
+        console.log('Checking calbackability....... for title: [' + extractedData.title + '] with lat: [' + extractedData.latitude + '] and lon: [' + extractedData.longitude + ']');
         if (
           (extractedData.latitude || extractedData.latitude === 0) &&
           (extractedData.longitude ||
@@ -144,6 +145,8 @@ export const processFile = async (
             details: extractedData.details ?? null,
           };
           callback(item);
+        } else {
+          console.log('NOT CALLING BACK!')
         }
       }
     }
