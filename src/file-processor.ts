@@ -43,14 +43,8 @@ export const processFile = async (
   // next part is the actual
 
   const lines = fs.readFileSync(fileName).toString().split("\n");
-  const columnNameMap = [];
-  let columnNamesRead = false;
 
   const isTsvFile = fileName.endsWith(".tsv");
-
-  if (fileName.endsWith(".hie.txt")) {
-    columnNamesRead = true;
-  }
 
   for (const rawLine of lines) {
     const trimmedLine = rawLine.trim();
@@ -69,15 +63,7 @@ export const processFile = async (
             .replace(/\t_/g, ",_"); // This specifically covers comma+underscore in wikipedia-link-slugs
       }
 
-      if (!columnNamesRead) {
-        // header line
-        columnNamesRead = true;
-
-        const columnNames = line.split("\t");
-        columnNames.forEach((name, index) => {
-          columnNameMap[name] = index;
-        });
-      } else {
+   {
         // This is a data line
 
 

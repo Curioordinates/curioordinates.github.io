@@ -148,7 +148,7 @@
       "count": 23
    },
    "folklore-swine": {
-      "count": 6
+      "count": 7
    },
    "folklore-fox": {
       "count": 5
@@ -322,7 +322,7 @@
       "count": 26
    },
    "named-ghost": {
-      "count": 27
+      "count": 28
    },
    "national-trust": {
       "count": 419
@@ -421,7 +421,7 @@
       ".<>": "(Learn more at ",
       "<>": "sundialsoc.org.uk",
       "<>.": ")",
-      "count": 1630
+      "count": 1631
    },
    "sea-monster": {
       "count": 21
@@ -518,7 +518,7 @@
       "short_description": "Some crosses were erected in medieval times and travellers would pray at them for a safe journey; thus making their location an indicator of ancient routes.",
       "link": "https://en.wikipedia.org/wiki/Wayside_cross",
       "implicit": false,
-      "count": 6228
+      "count": 6229
    },
    "webcam": {
       "count": 2
