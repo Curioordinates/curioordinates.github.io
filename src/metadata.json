@@ -58,9 +58,6 @@
    "cairn": {
       "count": 6
    },
-   "chambered-cairn": {
-      "count": 325
-   },
    "canine": {
       "count": 14
    },
@@ -106,6 +103,9 @@
       "short_description": "Dolmen are single chambered megalithic tomb. Upright stones support a large 'table' stone.",
       "count": 3706
    },
+   "chambered-cairn": {
+      "count": 325
+   },
    "e-book": {
       "short_description": "E-Books covering specific geographic areas. If you buy a linked book, we may earn a commission from Bookshop.org, whose fees support independent bookshops!",
       ".<>": "Find it on ",
@@ -142,46 +142,46 @@
       "count": 5
    },
    "folklore": {
-      "count": 184
+      "count": 185
    },
    "dragon": {
       "count": 23
    },
-   "folklore-swine": {
-      "count": 7
-   },
    "folklore-fox": {
       "count": 5
-   },
-   "fortlet": {
-      "count": 115
    },
    "folklore-giant": {
       "count": 18
    },
-   "fossil": {
-      "count": 3
+   "folklore-swine": {
+      "count": 9
+   },
+   "fortlet": {
+      "count": 115
    },
    "folklore-humanoid": {
       "count": 1
    },
-   "gallows": {
-      "count": 11
-   },
    "folklore-serpent": {
-      "count": 1
-   },
-   "general": {
       "count": 1
    },
    "folklore-vampire": {
       "count": 5
    },
-   "geo-glyph": {
-      "count": 97
-   },
    "troll": {
       "count": 1
+   },
+   "fossil": {
+      "count": 3
+   },
+   "gallows": {
+      "count": 11
+   },
+   "general": {
+      "count": 1
+   },
+   "geo-glyph": {
+      "count": 97
    },
    "geofold": {
       "count": 3
@@ -310,6 +310,9 @@
    "mystery": {
       "count": 5
    },
+   "myth-swine": {
+      "count": 3
+   },
    "myth-touch": {
       "typeLabel": "Myths that touched the Earth",
       "short_description": "Places where myths have effected landscapes or other features still visible today.",
@@ -389,7 +392,7 @@
       "count": 1
    },
    "rock-cut-tomb": {
-      "count": 30
+      "count": 31
    },
    "ruined-castle": {
       "count": 3178
@@ -401,7 +404,7 @@
       "count": 125
    },
    "sacred-stone": {
-      "count": 23
+      "count": 121
    },
    "sacred-tree": {
       "count": 35
