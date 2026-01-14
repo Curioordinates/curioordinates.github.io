@@ -126,7 +126,7 @@
       "count": 291
    },
    "event": {
-      "count": 2
+      "count": 4
    },
    "exhibit": {
       "count": 15
@@ -150,11 +150,11 @@
    "folklore-fox": {
       "count": 5
    },
-   "folklore-giant": {
-      "count": 18
-   },
    "folklore-swine": {
       "count": 9
+   },
+   "folklore-giant": {
+      "count": 18
    },
    "fortlet": {
       "count": 115
@@ -225,7 +225,7 @@
       "count": 396
    },
    "haunting": {
-      "count": 544
+      "count": 552
    },
    "headless-rider": {
       "count": 1
@@ -325,7 +325,7 @@
       "count": 26
    },
    "named-ghost": {
-      "count": 28
+      "count": 33
    },
    "national-trust": {
       "count": 419

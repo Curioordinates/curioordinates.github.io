@@ -155,7 +155,12 @@ export const ttdExpand = async (text: string): Promise<ExpandedData> => {
     stepLog.push("Assuming this is a wikidata.org concept id");
 
     const dataUrl = `https://www.wikidata.org/wiki/Special:EntityData/${text.toUpperCase()}.json`;
+
+
     const data = await httpGetJsonWithCache(dataUrl, stepLog);
+
+    // pause 1 second
+//    await new Promise(resolve => setTimeout(resolve, 1000));
 
     if (data === null) {
       stepLog.push("Null from wiki-get");
@@ -164,6 +169,7 @@ export const ttdExpand = async (text: string): Promise<ExpandedData> => {
         stepLog,
       };
     }
+
 
     const entity = data.entities[text.toUpperCase()];
     const labels = entity?.labels?.en;
@@ -249,11 +255,11 @@ export const ttdExpand = async (text: string): Promise<ExpandedData> => {
 
     //  console.log(textData);
   } else {
-    stepLog.push("Did not recognise the data");
+    stepLog.push("Did not recognize the data");
   }
 
   return {
-    success: false, // will currenly be false - because nothing is implemented right now.
+    success: false, // will currently be false - because nothing is implemented right now.
     stepLog,
   };
 };
