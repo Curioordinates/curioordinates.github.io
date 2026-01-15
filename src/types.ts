@@ -5,6 +5,7 @@ export interface PlottableItem {
   surveyLink: string;
   link: string | null;
   details: string | null;
+  tags: string | null;
 }
 
 export type PlottableItemCallback = (item: PlottableItem) => void;

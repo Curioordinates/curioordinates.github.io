@@ -120,6 +120,8 @@ export const processFile = async (
             }
           }
 
+          const tags = extractedData.tags?.includes("#attrib") ? "#attrib" : null;
+
           const item: PlottableItem = {
             latitude,
             longitude,
@@ -127,6 +129,7 @@ export const processFile = async (
             surveyLink,
             link,
             details: extractedData.details ?? null,
+            tags,
           };
           callback(item);
         } else {
@@ -208,16 +211,24 @@ const processFileSet = async (
         if (item.link) {
           lineParts.push(item.link);
         } else {
-          if (item.details) {
+          if (item.details || item.tags) {
             lineParts.push("-"); // Only need padding if something is coming after.
           }
         }
         if (item.details) {
           lineParts.push(item.details);
+        } else {
+          if (item.tags) {
+            lineParts.push('-'); // spacer for details
+          }
         }
-        if (addSurveyLink) {
-          lineParts.push(item.surveyLink);
+
+        if (item.tags) {
+          lineParts.push(item.tags);
         }
+//        if (addSurveyLink) {
+  //        lineParts.push(item.surveyLink);
+    //    }
         fileLines.push(lineParts.join("\t"));
       });
     }

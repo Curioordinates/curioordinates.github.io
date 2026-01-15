@@ -12,7 +12,8 @@ const loadTsv = async (markerType, addFunction) => {
       markerType,
       fields[2],
       fields[3],
-      fields[4]
+      fields[4], // details
+      fields[5] // tags
     );
   }
 };
@@ -217,7 +218,15 @@ const mapSetup = () => {
         maxClusterRadius: 60, // default 80
     });
 
-    const add = (latlng, typeName, name, link, details) => {
+    const hostNameFromLink = (link) => {
+        if (!link) {
+            return null;
+        }
+        const url = new URL(link);
+        return url.hostname;
+    }
+
+    const add = (latlng, typeName, name, link, details, tags) => {
         const itemMetadata = metadata[typeName];
         const [latitude, longitude] = latlng;
         const typeLabel = itemMetadata.typeLabel || typeName;
@@ -250,9 +259,15 @@ const mapSetup = () => {
         let nameFragment = name;
 
         if (link && link !== "-" && link !== "/") {
-            const linkPrefix = itemMetadata[".<>"] || "(";
-            const linkText = itemMetadata["<>"] || "more&nbsp;info";
-            const linkPostfix = itemMetadata["<>."] || ")";
+            let linkPrefix = itemMetadata[".<>"] || "(";
+            let linkText = itemMetadata["<>"] || "more&nbsp;info";
+            let linkPostfix = itemMetadata["<>."] || ")";
+            if (tags?.includes("#attrib")) {
+                // we can override prefix linkText and Postfix here.
+                linkPrefix ='('
+                linkText = "read more";
+                linkPostfix =` at <strong>${hostNameFromLink(link)}</strong>)`;
+            }
 
             const linkFragment = `${linkPrefix}<a href='${link}' target='_blank'>${linkText}</a>${linkPostfix}`;
             if (secondaryTextDiv) {
