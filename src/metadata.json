@@ -30,7 +30,7 @@
    },
    "barrow": {
       "implicit": false,
-      "count": 53062
+      "count": 53063
    },
    "battle": {
       "implicit": false,
@@ -93,7 +93,7 @@
       "count": 261
    },
    "devil": {
-      "count": 6
+      "count": 7
    },
    "devils-bridge": {
       "count": 1
@@ -129,10 +129,10 @@
       "count": 4
    },
    "exhibit": {
-      "count": 15
+      "count": 16
    },
    "fairy": {
-      "count": 38
+      "count": 39
    },
    "fairy-tree": {
       "count": 3
@@ -142,16 +142,16 @@
       "count": 5
    },
    "folklore": {
-      "count": 185
+      "count": 186
    },
    "dragon": {
-      "count": 23
+      "count": 24
    },
    "folklore-fox": {
       "count": 5
    },
    "folklore-swine": {
-      "count": 9
+      "count": 11
    },
    "folklore-giant": {
       "count": 18
@@ -325,7 +325,7 @@
       "count": 26
    },
    "named-ghost": {
-      "count": 33
+      "count": 34
    },
    "national-trust": {
       "count": 419
@@ -535,7 +535,7 @@
       "count": 24
    },
    "witch": {
-      "count": 20
+      "count": 21
    },
    "witch-hunt-memorial-plaque": {
       "count": 6
