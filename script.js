@@ -263,7 +263,7 @@ const mapSetup = () => {
             let linkText = itemMetadata["<>"] || "more&nbsp;info";
             let linkPostfix = itemMetadata["<>."] || ")";
             if (tags?.includes("#attrib")) {
-                // we can override prefix linkText and Postfix here.
+                // we can override prefix, linkText and Postfix here.
                 linkPrefix ='('
                 linkText = "read more";
                 linkPostfix =` at <strong>${hostNameFromLink(link)}</strong>)`;

@@ -1,6 +1,6 @@
 {
    "accused-practitioner": {
-      "count": 6
+      "count": 7
    },
    "amphitheatre-site": {
       "count": 49
@@ -38,7 +38,7 @@
       "count": 5572
    },
    "big-cat": {
-      "count": 14
+      "count": 15
    },
    "black-eyed": {
       "count": 4
@@ -83,7 +83,7 @@
       "count": 294
    },
    "curse": {
-      "count": 23
+      "count": 25
    },
    "cyclopean": {
       "short_description": "Cyclopean masonry features massive, irregular stone blocks fitted so precisely that ancient Greeks believed only the mythical Cyclopes could have built them.",
@@ -93,7 +93,7 @@
       "count": 261
    },
    "devil": {
-      "count": 7
+      "count": 9
    },
    "devils-bridge": {
       "count": 1
@@ -126,7 +126,7 @@
       "count": 291
    },
    "event": {
-      "count": 4
+      "count": 5
    },
    "exhibit": {
       "count": 17
@@ -137,15 +137,18 @@
    "fairy-tree": {
       "count": 3
    },
+   "folk-song": {
+      "count": 3
+   },
    "changeling": {
       "short_description": "In folklore, a changeling is a fairy child left in place of a human infant, taken out of love or belief that the human child is exceptionally beautiful or destined for a life of wonder. In reality, the changeling myth was often a tragic explanation for infants born with (at the time) unexplained illnesses, such that parents sometimes resorted to cruel superstitions in an attempt to 'drive out' the fairy imposter.",
       "count": 5
    },
    "folklore": {
-      "count": 186
+      "count": 228
    },
    "dragon": {
-      "count": 24
+      "count": 26
    },
    "folklore-fox": {
       "count": 5
@@ -154,7 +157,7 @@
       "count": 11
    },
    "folklore-giant": {
-      "count": 18
+      "count": 20
    },
    "fortlet": {
       "count": 115
@@ -175,10 +178,10 @@
       "count": 3
    },
    "gallows": {
-      "count": 11
+      "count": 12
    },
    "general": {
-      "count": 1
+      "count": 5
    },
    "geo-glyph": {
       "count": 97
@@ -187,7 +190,7 @@
       "count": 3
    },
    "ghost-horse": {
-      "count": 2
+      "count": 4
    },
    "ghost-light": {
       "count": 10
@@ -212,7 +215,7 @@
       "count": 294
    },
    "grave": {
-      "count": 9
+      "count": 10
    },
    "gravity-hill": {
       "count": 6
@@ -225,7 +228,7 @@
       "count": 396
    },
    "haunting": {
-      "count": 552
+      "count": 568
    },
    "headless-rider": {
       "count": 1
@@ -316,16 +319,16 @@
    "myth-touch": {
       "typeLabel": "Myths that touched the Earth",
       "short_description": "Places where myths have effected landscapes or other features still visible today.",
-      "count": 4
+      "count": 6
    },
    "name-dragon": {
       "count": 5
    },
    "name": {
-      "count": 26
+      "count": 28
    },
    "named-ghost": {
-      "count": 34
+      "count": 40
    },
    "national-trust": {
       "count": 419
@@ -413,7 +416,7 @@
       "count": 6
    },
    "saint": {
-      "count": 4
+      "count": 5
    },
    "sanctuary-stone": {
       "count": 11
@@ -505,6 +508,9 @@
    "unmarked-door": {
       "count": 1
    },
+   "urban-legend": {
+      "count": 2
+   },
    "vile-vortex": {
       "count": 12
    },
@@ -535,7 +541,7 @@
       "count": 24
    },
    "witch": {
-      "count": 22
+      "count": 30
    },
    "witch-hunt-memorial-plaque": {
       "count": 6
