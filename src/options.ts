@@ -1,0 +1,1 @@
+export const OPTION_SKIP_WIKIDATA_EXPANSION = false;

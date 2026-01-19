@@ -1,5 +1,5 @@
 {
-   "accused-practitioner": {
+   "accused": {
       "count": 7
    },
    "amphitheatre-site": {
@@ -145,7 +145,7 @@
       "count": 5
    },
    "folklore": {
-      "count": 228
+      "count": 240
    },
    "dragon": {
       "count": 26
@@ -275,7 +275,7 @@
       "count": 23
    },
    "sunken-treasure": {
-      "count": 4
+      "count": 5
    },
    "lost-treasure": {
       "count": 9
@@ -550,7 +550,7 @@
       "count": 19
    },
    "wizard": {
-      "count": 8
+      "count": 9
    },
    "world-heritage": {
       "implicit": true,

@@ -90,7 +90,6 @@ export const processFile = async (
         }
 
         // if (location && title) {
-        console.log('Checking calbackability....... for title: [' + extractedData.title + '] with lat: [' + extractedData.latitude + '] and lon: [' + extractedData.longitude + ']');
         if (
           (extractedData.latitude || extractedData.latitude === 0) &&
           (extractedData.longitude ||
@@ -115,6 +114,9 @@ export const processFile = async (
                     if (expand && expand.about_url_english) {
                         incrementNamedCounter("wikidata-entity-upgrade");
                         link = expand.about_url_english;
+                    }
+                    for (const step of expand.stepLog) {
+                        console.log(' ->' + step);
                     }
                 }
             }

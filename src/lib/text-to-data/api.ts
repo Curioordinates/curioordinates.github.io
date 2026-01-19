@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import { OPTION_SKIP_WIKIDATA_EXPANSION } from "../../options";
 
 const WIKIDATA_CONCEPT_ID_REGEX = /^q\d+$/;
 
@@ -57,16 +58,28 @@ export const httpGetJsonWithCache = async (
     //console.log('loaded:' + JSON.stringify(data));
     return data;
   } else {
+
     if (stepLog) {
       stepLog.push("No cache file exists :" + cleanCacheFilePath);
     }
+    if (OPTION_SKIP_WIKIDATA_EXPANSION) {
+     console.log('OPTION_SKIP_WIKIDATA_EXPANSION is true - skipping fetch');
+      return null;
+    }
+
     const response = await fetch(url);
+    // pause 1 second
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+
     if (response.ok) {
       const json = await response.json();
       const directoryPath = encodedPathParts.slice(0, -1); //  Remove file part
       fs.mkdirSync(directoryPath.join("/"), { recursive: true });
       fs.writeFileSync(cleanCacheFilePath, JSON.stringify(json, null, 3));
       return json;
+    } else {
+      console.log(` ->Failed to fetch ${url} - ${response.statusText} xxxxxxxxxxxxxxxxxxxxxx`);
     }
 
     return null;
@@ -90,6 +103,7 @@ export const httpGetTextWithCache = async (
     if (stepLog) {
       stepLog.push("Cache file exists :" + cleanCacheFilePath);
     }
+    console.log("Cache file exists :" + cleanCacheFilePath);
 
     const textData = fs.readFileSync(cleanCacheFilePath).toString();
     //console.log('loaded:' + JSON.stringify(data));
@@ -98,6 +112,7 @@ export const httpGetTextWithCache = async (
     if (stepLog) {
       stepLog.push("No cache file exists :" + cleanCacheFilePath);
     }
+    console.log("No cache file exists :" + cleanCacheFilePath);
     const response = await fetch(url);
     if (response.ok) {
       const textData = await response.text();
@@ -105,6 +120,8 @@ export const httpGetTextWithCache = async (
       fs.mkdirSync(directoryPath.join("/"), { recursive: true });
       fs.writeFileSync(cleanCacheFilePath, JSON.stringify(textData, null, 3));
       return textData;
+    } else {
+      console.log(` ->Failed to fetch ${url} - ${response.statusText} XXXXXXXXXXXXXXXXXXXXXXX`);
     }
 
     return null;
@@ -158,9 +175,6 @@ export const ttdExpand = async (text: string): Promise<ExpandedData> => {
 
 
     const data = await httpGetJsonWithCache(dataUrl, stepLog);
-
-    // pause 1 second
-//    await new Promise(resolve => setTimeout(resolve, 1000));
 
     if (data === null) {
       stepLog.push("Null from wiki-get");
