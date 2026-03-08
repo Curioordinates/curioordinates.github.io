@@ -34,6 +34,307 @@
    },
    "battle": {
       "implicit": false,
-      "short_description": "If you're looking for ghosts - a battlefield is a good place to start (currently only battles before 1900 are included). Be sure to read the history and tune into what each side was fighting for!"
+      "short_description": "If you're looking for ghosts - a battlefield is a good place to start (currently only battles before 1900 are included). Be sure to read the history and tune into what each side was fighting for!",
+      "count": 5572
+   },
+   "big-cat": {
+      "count": 15
+   },
+   "black-eyed": {
+      "count": 4
+   },
+   "blowhole": {
+      "count": 17
+   },
+   "bullaun": {
+      "count": 32
+   },
+   "burial": {
+      "count": 3
+   },
+   "beehive-tomb": {
+      "count": 51
+   },
+   "cairn": {
+      "count": 6
+   },
+   "canine": {
+      "count": 13
+   },
+   "cartoquirk": {
+      "count": 5
+   },
+   "cave": {
+      "count": 15
+   },
+   "celtic-cross": {
+      "count": 1
+   },
+   "coffin-rest": {
+      "count": 4
+   },
+   "crater": {
+      "count": 24
+   },
+   "crossroads-burial": {
+      "count": 8
+   },
+   "cup-and-ring": {
+      "count": 294
+   },
+   "curse": {
+      "count": 25
+   },
+   "cyclopean": {
+      "short_description": "Cyclopean masonry features massive, irregular stone blocks fitted so precisely that ancient Greeks believed only the mythical Cyclopes could have built them.",
+      "count": 1
+   },
+   "dark-sky": {
+      "count": 261
+   },
+   "devil": {
+      "count": 9
+   },
+   "devils-bridge": {
+      "count": 1
+   },
+   "dolmen": {
+      "implicit": false,
+      "short_description": "Dolmen are single chambered megalithic tomb. Upright stones support a large 'table' stone.",
+      "count": 3706
+   },
+   "chambered-cairn": {
+      "count": 325
+   },
+   "e-book": {
+      "short_description": "E-Books covering specific geographic areas. If you buy a linked book, we may earn a commission from Bookshop.org, whose fees support independent bookshops!",
+      ".<>": "Find it on ",
+      "<>": "uk.bookshop.org",
+      "<>.": ".",
+      "count": 4
+   },
+   "earthworks": {
+      "short_description": "Archaeological earthworks are man-made landscape features created by the deliberate movement or shaping of soil, such as ditches, mounds, or banks. Where the purpose of the structures is not known they are simply titled 'earthworks'",
+      "count": 334
+   },
+   "egyptian-sarcophagus": {
+      "count": 10
+   },
+   "erratic": {
+      "typeLabel": "Glacial Erratic",
+      "short_description": "Stones transported by glaciers over 25000 years ago",
+      "count": 291
+   },
+   "event": {
+      "count": 5
+   },
+   "exhibit": {
+      "count": 17
+   },
+   "fairy": {
+      "count": 39
+   },
+   "fairy-tree": {
+      "count": 3
+   },
+   "folk-song": {
+      "count": 3
+   },
+   "changeling": {
+      "short_description": "In folklore, a changeling is a fairy child left in place of a human infant, taken out of love or belief that the human child is exceptionally beautiful or destined for a life of wonder. In reality, the changeling myth was often a tragic explanation for infants born with (at the time) unexplained illnesses, such that parents sometimes resorted to cruel superstitions in an attempt to 'drive out' the fairy imposter.",
+      "count": 5
+   },
+   "folklore": {
+      "count": 252
+   },
+   "dragon": {
+      "count": 26
+   },
+   "folklore-fox": {
+      "count": 5
+   },
+   "folklore-giant": {
+      "count": 20
+   },
+   "folklore-humanoid": {
+      "count": 1
+   },
+   "folklore-serpent": {
+      "count": 1
+   },
+   "folklore-vampire": {
+      "count": 5
+   },
+   "troll": {
+      "count": 3
+   },
+   "folklore-swine": {
+      "count": 11
+   },
+   "fortlet": {
+      "count": 115
+   },
+   "fossil": {
+      "count": 4
+   },
+   "gallows": {
+      "count": 12
+   },
+   "general": {
+      "count": 5
+   },
+   "geo-glyph": {
+      "count": 97
+   },
+   "geofold": {
+      "count": 3
+   },
+   "ghost-horse": {
+      "count": 4
+   },
+   "ghost-light": {
+      "count": 10
+   },
+   "ghost-photo": {
+      "count": 1
+   },
+   "ghost-ship": {
+      "count": 4
+   },
+   "ghost-sign": {
+      "count": 1
+   },
+   "ghost-train": {
+      "short_description": "'All Aboard...' Or should that be 'None Aboard'? Ghost trains tend to serve as reminders of tragedies long passed.",
+      "count": 6
+   },
+   "ghost-walk": {
+      "count": 158
+   },
+   "giants-grave": {
+      "count": 294
+   },
+   "grave": {
+      "count": 10
+   },
+   "gravity-hill": {
+      "count": 6
+   },
+   "grid": {
+      "implicit": false,
+      "count": 9
+   },
+   "haunted-stay": {
+      "count": 387
+   },
+   "haunting": {
+      "count": 530
+   },
+   "headless-rider": {
+      "count": 1
+   },
+   "henge": {
+      "count": 2
+   },
+   "high-strangeness": {
+      "count": 3
+   },
+   "hill-fort": {
+      "count": 7
+   },
+   "hoard": {
+      "count": 106
+   },
+   "hogback-grave": {
+      "count": 22
+   },
+   "holy-well": {
+      "count": 364
+   },
+   "hominid": {
+      "count": 6
+   },
+   "hum": {
+      "count": 3
+   },
+   "i-spy": {
+      "short_description": "Fun things to look out for.",
+      "count": 59
+   },
+   "lazy-code": {
+      "count": 9
+   },
+   "legend": {
+      "count": 2
+   },
+   "lithiatric-mark": {
+      "short_description": "Usually downward grooves in the stonework - these marks are currently believed to be the result of material (dust) from the building being gathered for use in folk medicine.",
+      "count": 5
+   },
+   "lost-mine": {
+      "count": 23
+   },
+   "sunken-treasure": {
+      "count": 5
+   },
+   "lost-treasure": {
+      "count": 9
+   },
+   "manmade-cave": {
+      "count": 239
+   },
+   "marian-apparition": {
+      "count": 35
+   },
+   "medicine-wheel": {
+      "count": 3
+   },
+   "memento-mori": {
+      "count": 24
+   },
+   "merfolk": {
+      "count": 32
+   },
+   "milestone": {
+      "count": 65
+   },
+   "mortsafe": {
+      "count": 19
+   },
+   "mothman": {
+      "count": 2
+   },
+   "motte-and-bailey": {
+      "count": 14
+   },
+   "mummified-person": {
+      "count": 7
+   },
+   "mystery": {
+      "count": 5
+   },
+   "myth-swine": {
+      "count": 3
+   },
+   "myth-touch": {
+      "typeLabel": "Myths that touched the Earth",
+      "short_description": "Places where myths have effected landscapes or other features still visible today.",
+      "count": 6
+   },
+   "name-dragon": {
+      "count": 5
+   },
+   "name": {
+      "count": 28
+   },
+   "named-ghost": {
+      "count": 13
+   },
+   "national-trust": {
+      "count": 419
+   },
+   "nuraghe": {
+      "implicit": false,
+      "short_description": "The nuraghi are massive, beehive-shaped stone towers built between 1600 and 1200 BCE, unique to Sardinia and numbering more than 7000 across the island. Their exact purpose remains uncertain, but they likely served as fortresses, dwellings, temples, and symbols of power, forming the monumental legacy of the Nuragic civilisation."
    }
 }

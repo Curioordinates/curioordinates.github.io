@@ -76,12 +76,15 @@ export const processFile = async (
           });
           extractedData = {... oldExtractedData, locationAsText: null, tags: null } as EntryFields;
         } else {
+          console.log('parsing entry fields');
           const [error, extractedDataResult] = parseEntryFields(line);
           if (error) {
             console.error(error);
+            console.log('exiting');
             process.exit(0);
           }
           extractedData = {... extractedDataResult };
+          console.log('parsing complete');
         }
 
         if (!extractedData) {
@@ -103,6 +106,7 @@ export const processFile = async (
           let link = extractedData.link ?? null;
 
           if (link && link.includes("wikidata.org/entity/")) {
+            console.log('wikidata-link');
             incrementNamedCounter("wikidata-entity-links");
 
             if (!fileName.includes("barrow")) {
@@ -110,7 +114,9 @@ export const processFile = async (
                 if (lastSlash !== -1) {
                     const q_id = link.substring(lastSlash + 1);
                     // There might be a wikipedia article about the entity - which would be much better than a wikidata page.
+                    console.log('calling tt expand');
                     const expand = await ttdExpand(q_id);
+                    console.log('ttexpand returnef');
                     if (expand && expand.about_url_english) {
                         incrementNamedCounter("wikidata-entity-upgrade");
                         link = expand.about_url_english;
@@ -133,6 +139,7 @@ export const processFile = async (
             details: extractedData.details ?? null,
             tags,
           };
+          console.log('about to call back with line item');
           callback(item);
         } else {
           console.log('NOT CALLING BACK!')
@@ -301,7 +308,7 @@ export const go = async () => {
 
       const itemCount = await processDirectory(
         foundDirectory.directoryPath,
-        keyName,
+        keyName,  
         metadata
       );
 

@@ -14,7 +14,13 @@ export interface ExpandedData {
   stepLog: string[];
 }
 
-const httpCachePath = "/Users/Shared/data/cache";
+const httpCachePath = __dirname.includes('C:') 
+   ? 'c:\Shared\data\cache'
+ :"/Users/Shared/data/cache";
+const PATH_SEP = __dirname.includes('C:') 
+   ? '\\'
+ :"/";
+
 
 export const find_meta_tag_source = (data: string): string[] => {
   // Regular expression to match tag
@@ -42,12 +48,12 @@ export const httpGetJsonWithCache = async (
   url: string,
   stepLog?: string[]
 ): Promise<{ [key: string]: any } | null> => {
-  const cacheFilePath = `${httpCachePath}/${url.replace("://", "/")}`;
+  const cacheFilePath = `${httpCachePath}/${url.replace("://", PATH_SEP)}`;
 
   const encodedPathParts = cacheFilePath
     .split("/")
     .map((part) => encodeURIComponent(part));
-  const cleanCacheFilePath = encodedPathParts.join("/");
+  const cleanCacheFilePath = encodedPathParts.join(PATH_SEP);
 
   if (fs.existsSync(cleanCacheFilePath)) {
     if (stepLog) {
@@ -90,12 +96,12 @@ export const httpGetTextWithCache = async (
   url: string,
   stepLog?: string[]
 ): Promise<string | null> => {
-  const cacheFilePath = `${httpCachePath}/${url.replace("://", "/")}`;
+  const cacheFilePath = `${httpCachePath}/${url.replace("://", PATH_SEP)}`;
 
   const encodedPathParts = cacheFilePath
     .split("/")
     .map((part) => encodeURIComponent(part));
-  const cleanCacheFilePath = encodedPathParts.join("/");
+  const cleanCacheFilePath = encodedPathParts.join(PATH_SEP);
 
   console.log(cleanCacheFilePath);
 
