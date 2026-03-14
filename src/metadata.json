@@ -153,8 +153,14 @@
    "folklore-fox": {
       "count": 5
    },
+   "folklore-swine": {
+      "count": 11
+   },
    "folklore-giant": {
       "count": 20
+   },
+   "fortlet": {
+      "count": 115
    },
    "folklore-humanoid": {
       "count": 1
@@ -166,13 +172,7 @@
       "count": 5
    },
    "troll": {
-      "count": 3
-   },
-   "folklore-swine": {
-      "count": 11
-   },
-   "fortlet": {
-      "count": 115
+      "count": 1
    },
    "fossil": {
       "count": 4
@@ -335,6 +335,222 @@
    },
    "nuraghe": {
       "implicit": false,
-      "short_description": "The nuraghi are massive, beehive-shaped stone towers built between 1600 and 1200 BCE, unique to Sardinia and numbering more than 7000 across the island. Their exact purpose remains uncertain, but they likely served as fortresses, dwellings, temples, and symbols of power, forming the monumental legacy of the Nuragic civilisation."
+      "short_description": "The nuraghi are massive, beehive-shaped stone towers built between 1600 and 1200 BCE, unique to Sardinia and numbering more than 7000 across the island. Their exact purpose remains uncertain, but they likely served as fortresses, dwellings, temples, and symbols of power, forming the monumental legacy of the Nuragic civilisation.",
+      "count": 4262
+   },
+   "occult-market": {
+      "count": 5
+   },
+   "occult-shop": {
+      "count": 89
+   },
+   "ossuary": {
+      "count": 306
+   },
+   "pagan": {
+      "count": 1
+   },
+   "petroglyph": {
+      "count": 2
+   },
+   "petrosomatoglyph": {
+      "count": 1
+   },
+   "plague-pit": {
+      "count": 1
+   },
+   "plague-stone": {
+      "short_description": "Holes in the stone were filled with vinegar in to 'sterilize' coins payed by plague sufferers",
+      "count": 9
+   },
+   "podcast": {
+      "count": 2
+   },
+   "podcast-episode": {
+      "count": 103
+   },
+   "point-zero": {
+      "short_description": "Mile Zero or Kilometer Zero - is a point in a city that distances to that city are measured from. So when a road sign says 'London 100 miles' it means its 100 miles to that spot!",
+      "count": 17
+   },
+   "practitioner": {
+      "count": 21
+   },
+   "prediction": {
+      "count": 1
+   },
+   "public-bookcase": {
+      "implicit": false,
+      "count": 25370
+   },
+   "redwood": {
+      "name_all": "Giant Redwood",
+      "short_description": "Native to California but making special appearances across the globe - it's the worlds largest tree!",
+      "count": 1376
+   },
+   "research-org": {
+      "count": 3
+   },
+   "revenant": {
+      "count": 1
+   },
+   "rock-cut-tomb": {
+      "count": 31
+   },
+   "ruined-castle": {
+      "count": 3178
+   },
+   "ruined-church": {
+      "count": 794
+   },
+   "sacrificial-stone": {
+      "count": 125
+   },
+   "sacred-stone": {
+      "count": 121
+   },
+   "sacred-tree": {
+      "count": 35
+   },
+   "sacrificial-altar": {
+      "count": 6
+   },
+   "saint": {
+      "count": 5
+   },
+   "sanctuary-stone": {
+      "count": 11
+   },
+   "scratch-dial": {
+      "implicit": false,
+      "short_description": "These medieval sundials are most often located on the south side of a church. Some dials are found on other walls too (including inside churches) probably due to rebuilding...",
+      ".<>": "(Learn more at ",
+      "<>": "sundialsoc.org.uk",
+      "<>.": ")",
+      "count": 1631
+   },
+   "sea-monster": {
+      "count": 21
+   },
+   "settlement": {
+      "count": 16
+   },
+   "sheela-na-gig": {
+      "count": 7
+   },
+   "ship-burial": {
+      "count": 12
+   },
+   "simulacrum": {
+      "count": 4
+   },
+   "site": {
+      "count": 2
+   },
+   "spiritborne": {
+      "count": 3
+   },
+   "runestone": {
+      "count": 995
+   },
+   "standing-stone": {
+      "count": 290
+   },
+   "statue": {
+      "count": 1
+   },
+   "stone-circle": {
+      "count": 642
+   },
+   "stopped-clock": {
+      "count": 1
+   },
+   "stronghold": {
+      "count": 12
+   },
+   "sub-street": {
+      "count": 8
+   },
+   "sunken-settlement": {
+      "count": 9
+   },
+   "temple": {
+      "count": 2
+   },
+   "the-drop": {
+      "count": 1
+   },
+   "thin-place": {
+      "count": 10
+   },
+   "timeslip": {
+      "count": 2
+   },
+   "tower": {
+      "count": 7
+   },
+   "tunnel": {
+      "count": 3
+   },
+   "ufo": {
+      "count": 26
+   },
+   "uncontacted": {
+      "short_description": "Uncontacted peoples are indigenous groups living without sustained contact with the world community. There are thought to be between 100 and 200 such tribes.",
+      "count": 19
+   },
+   "unique": {
+      "count": 3
+   },
+   "unmarked-door": {
+      "count": 1
+   },
+   "urban-legend": {
+      "count": 3
+   },
+   "vile-vortex": {
+      "count": 12
+   },
+   "vitrified-fort": {
+      "count": 1
+   },
+   "volcanic-columns": {
+      "count": 7
+   },
+   "vortex": {
+      "count": 1
+   },
+   "wayside-cross": {
+      "short_description": "Some crosses were erected in medieval times and travellers would pray at them for a safe journey; thus making their location an indicator of ancient routes.",
+      "link": "https://en.wikipedia.org/wiki/Wayside_cross",
+      "implicit": false,
+      "count": 6229
+   },
+   "webcam": {
+      "count": 2
+   },
+   "weird": {
+      "count": 2
+   },
+   "wishing": {
+      "typeLabel": "Wishing Trees",
+      "short_description": "Trees where either coins are inserted (not recommended) or ribbons tied to mark wishes",
+      "count": 24
+   },
+   "witch": {
+      "count": 29
+   },
+   "witch-hunt-memorial-plaque": {
+      "count": 6
+   },
+   "witch-hunt-memorial": {
+      "count": 19
+   },
+   "wizard": {
+      "count": 9
+   },
+   "world-heritage": {
+      "implicit": true,
+      "count": 1198
    }
 }

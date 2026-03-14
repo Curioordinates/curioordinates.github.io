@@ -14,13 +14,10 @@ export interface ExpandedData {
   stepLog: string[];
 }
 
-const httpCachePath = __dirname.includes('C:') 
-   ? 'c:\Shared\data\cache'
- :"/Users/Shared/data/cache";
-const PATH_SEP = __dirname.includes('C:') 
-   ? '\\'
- :"/";
-
+const httpCachePath = __dirname.includes("C:")
+  ? "c:Shareddatacache"
+  : "/Users/Shared/data/cache";
+const PATH_SEP = __dirname.includes("C:") ? "\\" : "/";
 
 export const find_meta_tag_source = (data: string): string[] => {
   // Regular expression to match tag
@@ -50,6 +47,8 @@ export const httpGetJsonWithCache = async (
 ): Promise<{ [key: string]: any } | null> => {
   const cacheFilePath = `${httpCachePath}/${url.replace("://", PATH_SEP)}`;
 
+  console.log("checking - " + cacheFilePath);
+
   const encodedPathParts = cacheFilePath
     .split("/")
     .map((part) => encodeURIComponent(part));
@@ -64,19 +63,17 @@ export const httpGetJsonWithCache = async (
     //console.log('loaded:' + JSON.stringify(data));
     return data;
   } else {
-
     if (stepLog) {
       stepLog.push("No cache file exists :" + cleanCacheFilePath);
     }
     if (OPTION_SKIP_WIKIDATA_EXPANSION) {
-     console.log('OPTION_SKIP_WIKIDATA_EXPANSION is true - skipping fetch');
+      console.log("OPTION_SKIP_WIKIDATA_EXPANSION is true - skipping fetch");
       return null;
     }
 
     const response = await fetch(url);
     // pause 1 second
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
     if (response.ok) {
       const json = await response.json();
@@ -85,7 +82,9 @@ export const httpGetJsonWithCache = async (
       fs.writeFileSync(cleanCacheFilePath, JSON.stringify(json, null, 3));
       return json;
     } else {
-      console.log(` ->Failed to fetch ${url} - ${response.statusText} xxxxxxxxxxxxxxxxxxxxxx`);
+      console.log(
+        ` ->Failed to fetch ${url} - ${response.statusText} xxxxxxxxxxxxxxxxxxxxxx`
+      );
     }
 
     return null;
@@ -127,7 +126,9 @@ export const httpGetTextWithCache = async (
       fs.writeFileSync(cleanCacheFilePath, JSON.stringify(textData, null, 3));
       return textData;
     } else {
-      console.log(` ->Failed to fetch ${url} - ${response.statusText} XXXXXXXXXXXXXXXXXXXXXXX`);
+      console.log(
+        ` ->Failed to fetch ${url} - ${response.statusText} XXXXXXXXXXXXXXXXXXXXXXX`
+      );
     }
 
     return null;
@@ -179,7 +180,6 @@ export const ttdExpand = async (text: string): Promise<ExpandedData> => {
 
     const dataUrl = `https://www.wikidata.org/wiki/Special:EntityData/${text.toUpperCase()}.json`;
 
-
     const data = await httpGetJsonWithCache(dataUrl, stepLog);
 
     if (data === null) {
@@ -189,7 +189,6 @@ export const ttdExpand = async (text: string): Promise<ExpandedData> => {
         stepLog,
       };
     }
-
 
     const entity = data.entities[text.toUpperCase()];
     const labels = entity?.labels?.en;

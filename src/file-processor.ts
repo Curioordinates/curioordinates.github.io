@@ -13,7 +13,7 @@ import {
 } from "./lib/namedCounters";
 import { EntryFields, parseEntryFields } from "./ultimate-line-parser";
 
-export const processTsvFile = async (fileName: string): Promise<void> => { };
+export const processTsvFile = async (fileName: string): Promise<void> => {};
 
 /**
  * key is {latitude}:{longitude}
@@ -29,7 +29,6 @@ const getLeafDirName = (path: string): string => {
   }
   return nameParts[0];
 };
-
 
 const USE_NEW_PARSER = true;
 
@@ -58,14 +57,13 @@ export const processFile = async (
         line = isTsvFile
           ? trimmedLine
           : trimmedLine
-            .replace(/,/g, "\t")
-            .replace(/\t /g, ", ")
-            .replace(/\t_/g, ",_"); // This specifically covers comma+underscore in wikipedia-link-slugs
+              .replace(/,/g, "\t")
+              .replace(/\t /g, ", ")
+              .replace(/\t_/g, ",_"); // This specifically covers comma+underscore in wikipedia-link-slugs
       }
 
-   {
+      {
         // This is a data line
-
 
         let extractedData: EntryFields | null = null;
         if (!USE_NEW_PARSER) {
@@ -74,17 +72,21 @@ export const processFile = async (
               ? line.replace(/`/g, "\t")
               : line,
           });
-          extractedData = {... oldExtractedData, locationAsText: null, tags: null } as EntryFields;
+          extractedData = {
+            ...oldExtractedData,
+            locationAsText: null,
+            tags: null,
+          } as EntryFields;
         } else {
-          console.log('parsing entry fields');
+          console.log("parsing entry fields");
           const [error, extractedDataResult] = parseEntryFields(line);
           if (error) {
             console.error(error);
-            console.log('exiting');
+            console.log("exiting");
             process.exit(0);
           }
-          extractedData = {... extractedDataResult };
-          console.log('parsing complete');
+          extractedData = { ...extractedDataResult };
+          console.log("parsing complete");
         }
 
         if (!extractedData) {
@@ -95,8 +97,7 @@ export const processFile = async (
         // if (location && title) {
         if (
           (extractedData.latitude || extractedData.latitude === 0) &&
-          (extractedData.longitude ||
-            extractedData.longitude === 0) &&
+          (extractedData.longitude || extractedData.longitude === 0) &&
           extractedData.title
         ) {
           const title = decodeURIComponent(extractedData.title);
@@ -106,29 +107,31 @@ export const processFile = async (
           let link = extractedData.link ?? null;
 
           if (link && link.includes("wikidata.org/entity/")) {
-            console.log('wikidata-link');
+            console.log("wikidata-link");
             incrementNamedCounter("wikidata-entity-links");
 
-            if (!fileName.includes("barrow")) {
-                const lastSlash = link.lastIndexOf("/");
-                if (lastSlash !== -1) {
-                    const q_id = link.substring(lastSlash + 1);
-                    // There might be a wikipedia article about the entity - which would be much better than a wikidata page.
-                    console.log('calling tt expand');
-                    const expand = await ttdExpand(q_id);
-                    console.log('ttexpand returnef');
-                    if (expand && expand.about_url_english) {
-                        incrementNamedCounter("wikidata-entity-upgrade");
-                        link = expand.about_url_english;
-                    }
-                    for (const step of expand.stepLog) {
-                        console.log(' ->' + step);
-                    }
+            if (!fileName.includes("barrow") && !fileName.includes("nuraghe")) {
+              const lastSlash = link.lastIndexOf("/");
+              if (lastSlash !== -1) {
+                const q_id = link.substring(lastSlash + 1);
+                // There might be a wikipedia article about the entity - which would be much better than a wikidata page.
+                console.log("calling tt expand");
+                const expand = await ttdExpand(q_id);
+                console.log("ttexpand returnef");
+                if (expand && expand.about_url_english) {
+                  incrementNamedCounter("wikidata-entity-upgrade");
+                  link = expand.about_url_english;
                 }
+                for (const step of expand.stepLog) {
+                  console.log(" ->" + step);
+                }
+              }
             }
           }
 
-          const tags = extractedData.tags?.includes("#attrib") ? "#attrib" : null;
+          const tags = extractedData.tags?.includes("#attrib")
+            ? "#attrib"
+            : null;
 
           const item: PlottableItem = {
             latitude,
@@ -139,10 +142,10 @@ export const processFile = async (
             details: extractedData.details ?? null,
             tags,
           };
-          console.log('about to call back with line item');
+          console.log("about to call back with line item");
           callback(item);
         } else {
-          console.log('NOT CALLING BACK!')
+          console.log("NOT CALLING BACK!");
         }
       }
     }
@@ -179,23 +182,17 @@ const processFileSet = async (
         }
 
         // see if its defined lower
-        const hitKey = `${to5DP(item.latitude)}:${to5DP(
-          item.longitude
-        )}`;
+        const hitKey = `${to5DP(item.latitude)}:${to5DP(item.longitude)}`;
         console.log("made hit key :" + hitKey);
         const hitSourceDirectory = hitMap[hitKey];
 
-        console.log(
-          `testing: ${hitSourceDirectory} against ${directoryName}`
-        );
+        console.log(`testing: ${hitSourceDirectory} against ${directoryName}`);
         if (
           hitSourceDirectory &&
           hitSourceDirectory.startsWith(directoryName)
         ) {
           // defined lower so ignore this item
-          console.log(
-            "ignoring item in favour of " + hitSourceDirectory
-          );
+          console.log("ignoring item in favour of " + hitSourceDirectory);
 
           return;
         }
@@ -228,24 +225,21 @@ const processFileSet = async (
           lineParts.push(item.details);
         } else {
           if (item.tags) {
-            lineParts.push('-'); // spacer for details
+            lineParts.push("-"); // spacer for details
           }
         }
 
         if (item.tags) {
           lineParts.push(item.tags);
         }
-//        if (addSurveyLink) {
-  //        lineParts.push(item.surveyLink);
-    //    }
+        //        if (addSurveyLink) {
+        //        lineParts.push(item.surveyLink);
+        //    }
         fileLines.push(lineParts.join("\t"));
       });
     }
 
-    fs.writeFileSync(
-      `./data/cells/${featureType}.tsv`,
-      fileLines.join("\n")
-    );
+    fs.writeFileSync(`./data/cells/${featureType}.tsv`, fileLines.join("\n"));
   }
   return fileLines.length;
 };
@@ -299,7 +293,7 @@ export const go = async () => {
           .toString();
 
         metadata = JSON.parse(fileContent);
-      } catch (_) { } // No metadata file
+      } catch (_) {} // No metadata file
 
       builtMetadata[keyName] = metadata;
 
@@ -308,7 +302,7 @@ export const go = async () => {
 
       const itemCount = await processDirectory(
         foundDirectory.directoryPath,
-        keyName,  
+        keyName,
         metadata
       );
 
