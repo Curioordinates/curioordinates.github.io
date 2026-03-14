@@ -8,23 +8,23 @@
 42.00542	12.10282	Tomb of the Shields and Chairs, Caere	http://www.wikidata.org/entity/Q101529172
 48.5708	11.0584	Burgstall Wagesenberg	http://www.wikidata.org/entity/Q1015950
 58.56516	-3.69847	Cnoc Freiceadain Long Cairns	http://www.wikidata.org/entity/Q1025963
-46.8133	20.44465	Gödény-halom	http://www.wikidata.org/entity/Q1031472
-35.30955	134.86119	Chasuriyama Kofun	http://www.wikidata.org/entity/Q103903111
-35.12083	135.9075	Kasugayama Kofun Group	http://www.wikidata.org/entity/Q103944478
-33.565	130.24611	Imajuku Kofun Group	http://www.wikidata.org/entity/Q103946619
+46.8133	20.44465	Gödény-halom	https://en.wikipedia.org/wiki/G%C3%B6d%C3%A9ny-halom
+35.30955	134.86119	Chasuriyama Kofun	https://en.wikipedia.org/wiki/Chasuriyama_Kofun
+35.12083	135.9075	Kasugayama Kofun Group	https://en.wikipedia.org/wiki/Kasugayama_Kofun_Cluster_(%C5%8Ctsu)
+33.565	130.24611	Imajuku Kofun Group	https://en.wikipedia.org/wiki/Imajuku_Kofun_Cluster
 33.57161	130.28427	Q103946730	http://www.wikidata.org/entity/Q103946730
 34.46847	135.80341	Kanazuka Kofun	http://www.wikidata.org/entity/Q103950200
 34.45641	133.26066	Matsumoto Kofun	http://www.wikidata.org/entity/Q103950403
 34.60308	133.27958	Oichi Kofun	http://www.wikidata.org/entity/Q103950526
 34.56705	133.31233	Osako Kofun	http://www.wikidata.org/entity/Q103951584
-35.74144	135.11194	Ubusunayama Kofun	http://www.wikidata.org/entity/Q103960471
-34.46222	135.80647	Takamatsuzuka Tomb	http://www.wikidata.org/entity/Q1039675
+35.74144	135.11194	Ubusunayama Kofun	https://en.wikipedia.org/wiki/Ubusunayama_Kofun
+34.46222	135.80647	Takamatsuzuka Tomb	https://en.wikipedia.org/wiki/Takamatsuzuka_Tomb
 34.57288	133.31536	Kitazuka Kofun	http://www.wikidata.org/entity/Q103982897
-35.42069	133.21402	Q103982915	http://www.wikidata.org/entity/Q103982915
+35.42069	133.21402	Q103982915	https://en.wikipedia.org/wiki/Ch%C5%ABsenji_Kofun_Cluster
 34.57519	133.36786	Daibo Kofun (Fukuyama)	http://www.wikidata.org/entity/Q104007891
 33.62333	133.6743	Shingai Kofun	http://www.wikidata.org/entity/Q104057153
-34.83825	135.74413	Ōsumi Kurumazuka Kofun	http://www.wikidata.org/entity/Q104093003
-34.44741	132.49486	Nakaoda Kofun Cluster	http://www.wikidata.org/entity/Q104093006
+34.83825	135.74413	Ōsumi Kurumazuka Kofun	https://en.wikipedia.org/wiki/Tsuruki_Kofun_Cluster
+34.44741	132.49486	Nakaoda Kofun Cluster	https://en.wikipedia.org/wiki/Nakaoda_Kofun_Cluster
 33.97802	133.58688	Asahiyama Kofun	http://www.wikidata.org/entity/Q104150547
 60.99447	17.15933	Q10423769	http://www.wikidata.org/entity/Q10423769
 59.3661	17.6283	Q10430679	http://www.wikidata.org/entity/Q10430679
@@ -36,20 +36,20 @@
 34.54011	133.26722	Soneda Shiratsuka Kofun	http://www.wikidata.org/entity/Q104660562
 33.39241	132.51577	Katagidaba Kofun	http://www.wikidata.org/entity/Q104660569
 34.58838	133.53319	Koike Kofun	http://www.wikidata.org/entity/Q104660577
-35.50527	134.17722	Fuse Kofun	http://www.wikidata.org/entity/Q104696645
+35.50527	134.17722	Fuse Kofun	https://en.wikipedia.org/wiki/Fuse_Kofun
 49.50116	9.35652	Q104730089	http://www.wikidata.org/entity/Q104730089
 49.49091	9.3714	Q104730582	http://www.wikidata.org/entity/Q104730582
 32.9027	21.97461	Tumulus burial, Apollonia	http://www.wikidata.org/entity/Q104786864
-35.45083	133.10194	Ishiya Kofun	http://www.wikidata.org/entity/Q104816401
+35.45083	133.10194	Ishiya Kofun	https://en.wikipedia.org/wiki/Ishiya_Kofun
 32.75944	21.6575	Tumulus, Massah	http://www.wikidata.org/entity/Q104817477
 58.58895	12.52154	Q105047803	http://www.wikidata.org/entity/Q105047803
-33.52305	130.43861	Hihaizuka Kofun	http://www.wikidata.org/entity/Q105069738
-33.81444	132.8475	Hasaike Kofun	http://www.wikidata.org/entity/Q105080262
+33.52305	130.43861	Hihaizuka Kofun	https://en.wikipedia.org/wiki/Hihaizuka_Kofun
+33.81444	132.8475	Hasaike Kofun	https://en.wikipedia.org/wiki/Hasaike_Kofun
 58.3475	11.66527	Q10508092	http://www.wikidata.org/entity/Q10508092
 62.85081	12.79622	Storsjö 74:1	http://www.wikidata.org/entity/Q10508474
-33.3275	130.29333	Nishikuma Kofun	http://www.wikidata.org/entity/Q105089829
-34.48694	135.71388	Yashikiyama Kofun	http://www.wikidata.org/entity/Q105092557
-33.76166	130.37611	Ainoshima Stone Tumuli	http://www.wikidata.org/entity/Q105092560
+33.3275	130.29333	Nishikuma Kofun	https://en.wikipedia.org/wiki/Nishikuma_Kofun
+34.48694	135.71388	Yashikiyama Kofun	https://en.wikipedia.org/wiki/Yashikiyama_Kofun
+33.76166	130.37611	Ainoshima Stone Tumuli	https://en.wikipedia.org/wiki/Ainoshima_Stone_Tumuli
 55.43416	13.03416	Hanehög	http://www.wikidata.org/entity/Q10517200
 56.74607	14.90946	Inglinge hög	http://www.wikidata.org/entity/Q10535552
 56.71083	12.89444	Ivars kulle	http://www.wikidata.org/entity/Q10538496
@@ -58,7 +58,7 @@
 58.55813	13.95894	Kung Ranes hög	http://www.wikidata.org/entity/Q10550154
 55.55486	13.08985	Q10550332	http://www.wikidata.org/entity/Q10550332
 58.44055	15.44935	Q10556200	http://www.wikidata.org/entity/Q10556200
-36.44722	136.50944	Nomi Kofun Cluster	http://www.wikidata.org/entity/Q105562368
+36.44722	136.50944	Nomi Kofun Cluster	https://en.wikipedia.org/wiki/Nomi_Kofun_Cluster
 46.77737	15.31071	Q105640214	http://www.wikidata.org/entity/Q105640214
 49.48747	9.39768	Q105665509	http://www.wikidata.org/entity/Q105665509
 46.74155	15.40307	Q105675413	http://www.wikidata.org/entity/Q105675413
@@ -321,13 +321,13 @@
 49.29464	11.97197	Cultural heritage D-3-6737-0017 Wolferlohe	http://www.wikidata.org/entity/Q106416166
 49.293	11.97526	Cultural heritage D-3-6737-0018 Wolferlohe	http://www.wikidata.org/entity/Q106416167
 49.94469	10.9348	Cultural heritage D-4-6031-0110 Zückshuter Forst	http://www.wikidata.org/entity/Q106416168
-33.705	130.91638	Ayazuka Kofun	http://www.wikidata.org/entity/Q106509721
+33.705	130.91638	Ayazuka Kofun	https://en.wikipedia.org/wiki/Ayazuka_Kofun
 61.25183	73.21053	Barsova Gora	http://www.wikidata.org/entity/Q106519144
-34.44277	135.7725	Ichiohakayama Kofun	http://www.wikidata.org/entity/Q106520906
+34.44277	135.7725	Ichiohakayama Kofun	https://en.wikipedia.org/wiki/Ichiohakayama_Kofun
 41.69581	-8.45915	Q106546933	http://www.wikidata.org/entity/Q106546933
 49.53174	9.59772	Hainbach forest tumuli group	http://www.wikidata.org/entity/Q106617876
 49.17987	16.7383	Žuráň tumulus	http://www.wikidata.org/entity/Q106630455
-33.42666	130.59861	Yakenotōge Kofun	http://www.wikidata.org/entity/Q106670665
+33.42666	130.59861	Yakenotōge Kofun	https://en.wikipedia.org/wiki/Yakenot%C5%8Dge_Kofun
 49.49326	9.29156	Q106680940	http://www.wikidata.org/entity/Q106680940
 53.02923	-3.13764	Cefn y Cist Cairn	http://www.wikidata.org/entity/Q106698125
 56.91847	12.48989	Stomma kulle	http://www.wikidata.org/entity/Q10680837
@@ -345,18 +345,18 @@
 34.52112	135.73308	Kitsuizuka Kofun	http://www.wikidata.org/entity/Q107298212
 34.55041	135.73531	Mitsuyoshi Ishizuka Kofun	http://www.wikidata.org/entity/Q107298215
 34.56659	135.78785	Sasahokoyama Kofun	http://www.wikidata.org/entity/Q107326008
-32.14222	131.52972	Mochida Kofun Cluster	http://www.wikidata.org/entity/Q107346207
+32.14222	131.52972	Mochida Kofun Cluster	https://en.wikipedia.org/wiki/Mochida_Kofun_Cluster
 49.28315	7.30517	Hügel Gloria Romanorum	http://www.wikidata.org/entity/Q107490964
 35.05319	138.48055	Miikedaira-kofun	http://www.wikidata.org/entity/Q107504282
 36.11081	140.35592	Taishi Kofun	http://www.wikidata.org/entity/Q107561897
-34.21653	133.79018	Arioka Kofun Cluster	http://www.wikidata.org/entity/Q107605129
+34.21653	133.79018	Arioka Kofun Cluster	https://en.wikipedia.org/wiki/Arioka_Kofun_Cluster
 47.39765	15.95494	roman-era burial mound with gravestone	http://www.wikidata.org/entity/Q107690227
 36.3675	139.32138	Kitayama Kofun	http://www.wikidata.org/entity/Q107882170
-34.30055	134.2375	Tsuda Kofun Cluster	http://www.wikidata.org/entity/Q107999522
+34.30055	134.2375	Tsuda Kofun Cluster	https://en.wikipedia.org/wiki/Tsuda_Kofun_Cluster
 49.65611	6.35367	Tumulus Flaxweiler	http://www.wikidata.org/entity/Q108105172
 36.25936	139.04169	Ōjizuka Kofun	http://www.wikidata.org/entity/Q108127461
 35.52719	139.37058	Q108198158	http://www.wikidata.org/entity/Q108198158
-34.85166	136.49083	Ōzuka Kofun	http://www.wikidata.org/entity/Q108281221
+34.85166	136.49083	Ōzuka Kofun	https://en.wikipedia.org/wiki/%C5%8Czuka_Kofun_(Suzuka)
 35.56086	139.54905	Q108368021	http://www.wikidata.org/entity/Q108368021
 35.49516	58.23247	Tepe Gabrra (Band-e Qara)	http://www.wikidata.org/entity/Q108512807
 35.47672	58.36027	Tepe Gabrra (Qaracheh)	http://www.wikidata.org/entity/Q108514829
@@ -373,36 +373,36 @@
 41.99099	12.12116	Martini-Marescotti Tomb	http://www.wikidata.org/entity/Q108953048
 47.76505	-1.98501	Tumulus de Château Bû	http://www.wikidata.org/entity/Q1090350
 48.71598	9.00744	Q109201130	http://www.wikidata.org/entity/Q109201130
-33.285	130.53583	Urayama Kofun	http://www.wikidata.org/entity/Q109357697
-33.01611	130.45111	Kugurizuka Kofun	http://www.wikidata.org/entity/Q109357768
-35.50444	133.88194	Hashizu Kofun Cluster	http://www.wikidata.org/entity/Q109359259
-33.44083	130.64027	Sendō Kofun	http://www.wikidata.org/entity/Q109360130
+33.285	130.53583	Urayama Kofun	https://en.wikipedia.org/wiki/Urayama_Kofun
+33.01611	130.45111	Kugurizuka Kofun	https://en.wikipedia.org/wiki/Kugurizuka_Kofun
+35.50444	133.88194	Hashizu Kofun Cluster	https://en.wikipedia.org/wiki/Hashizu_Kofun_Cluster
+33.44083	130.64027	Sendō Kofun	https://en.wikipedia.org/wiki/Send%C5%8D_Kofun
 36.5433	139.83169	Q109361208	http://www.wikidata.org/entity/Q109361208
 34.64246	135.77477	Q109363817	http://www.wikidata.org/entity/Q109363817
-34.17258	134.56974	Naruto Itano Kofun Cluster	http://www.wikidata.org/entity/Q109364123
-33.31388	130.62277	Shimobaba Kofun	http://www.wikidata.org/entity/Q109364170
+34.17258	134.56974	Naruto Itano Kofun Cluster	https://en.wikipedia.org/wiki/Naruto_Itano_Kofun_Cluster
+33.31388	130.62277	Shimobaba Kofun	https://en.wikipedia.org/wiki/Shimobaba_Kofun
 34.52352	135.73388	Q109364414	http://www.wikidata.org/entity/Q109364414
-34.56694	135.69472	Hirano Tsukaanayama Kofun	http://www.wikidata.org/entity/Q109364823
-35.43916	133.08916	Yamashiro hōfun	http://www.wikidata.org/entity/Q109366099
+34.56694	135.69472	Hirano Tsukaanayama Kofun	https://en.wikipedia.org/wiki/Hirano_Tsukaanayama_Kofun
+35.43916	133.08916	Yamashiro hōfun	https://en.wikipedia.org/wiki/Yamashiro_h%C5%8Dfun
 35.57113	139.50697	Q109366123	http://www.wikidata.org/entity/Q109366123
-35.42755	132.80079	Kunidominakamura Kofun	http://www.wikidata.org/entity/Q109366133
-34.53673	135.84722	Chihara Ōbaka Kofun	http://www.wikidata.org/entity/Q109369031
+35.42755	132.80079	Kunidominakamura Kofun	https://en.wikipedia.org/wiki/Kunidominakamura_Kofun
+34.53673	135.84722	Chihara Ōbaka Kofun	https://en.wikipedia.org/wiki/Chihara_%C5%8Cbaka_Kofun
 37.13966	140.28383	Yachikubo Kofun	http://www.wikidata.org/entity/Q109419368
 37.12302	140.29083	Shimofusazuka Kofun	http://www.wikidata.org/entity/Q109419375
 35.63472	138.6583	Ubazuka Kofun	http://www.wikidata.org/entity/Q109419769
-50.6996	-2.48805	Clandon Barrow	http://www.wikidata.org/entity/Q1095021
+50.6996	-2.48805	Clandon Barrow	https://en.wikipedia.org/wiki/Clandon_Barrow
 54.39192	13.68139	Hügelgrab Göhren	http://www.wikidata.org/entity/Q109521209
 35.50605	136.88786	Ikejiri-Ōtsuka kofun	http://www.wikidata.org/entity/Q109566754
-33.84138	130.48777	Tsuyazaki Kofun Group	http://www.wikidata.org/entity/Q109595331
-32.64916	130.49361	Odara Kofun	http://www.wikidata.org/entity/Q109597653
+33.84138	130.48777	Tsuyazaki Kofun Group	https://en.wikipedia.org/wiki/Tsuyazaki_Kofun_Cluster
+32.64916	130.49361	Odara Kofun	https://en.wikipedia.org/wiki/Odara_Kofun
 34.54072	133.28466	Q109603841	http://www.wikidata.org/entity/Q109603841
 34.56611	135.49993	Gobyo-Omotezuka kofun	http://www.wikidata.org/entity/Q109703825
 36.51502	138.98041	Kanai Kofun	http://www.wikidata.org/entity/Q109779956
 36.53186	138.99275	Nakanomine Kofun	http://www.wikidata.org/entity/Q109779962
 35.54711	139.67994	Q110222613	http://www.wikidata.org/entity/Q110222613
-50.71472	-2.58361	Winterbourne Poor Lot Barrows	http://www.wikidata.org/entity/Q110408488
+50.71472	-2.58361	Winterbourne Poor Lot Barrows	https://en.wikipedia.org/wiki/Poor_Lot_Barrow_Cemetery
 41.39648	26.27209	Prehistoric tomb, Old Churches of Paliouri	http://www.wikidata.org/entity/Q110499348
-34.55	136.515	Takarazuka Kofun	http://www.wikidata.org/entity/Q1107060
+34.55	136.515	Takarazuka Kofun	https://en.wikipedia.org/wiki/Takarazuka_Kofun_(Mie)
 47.21758	8.21073	Adiswil Beetliacker, early Iron Age tumulus with wagon	http://www.wikidata.org/entity/Q110728850
 47.20888	8.10358	Grossacher, early iron age tumulus	http://www.wikidata.org/entity/Q110730207
 47.21662	8.11179	Gibelgrat, early iron age tumulus	http://www.wikidata.org/entity/Q110730316
@@ -573,7 +573,7 @@
 38.12333	23.94916	Tumulus of the Plataeans	http://www.wikidata.org/entity/Q111512673
 36.39494	139.05298	Oyama Kofun	http://www.wikidata.org/entity/Q111582493
 34.6381	135.84011	Q111585127	http://www.wikidata.org/entity/Q111585127
-33.56411	131.16844	Anagahayama Kofun Group	http://www.wikidata.org/entity/Q111657088
+33.56411	131.16844	Anagahayama Kofun Group	https://en.wikipedia.org/wiki/Anagahayama_Kofun
 35.81545	140.28443	Kamifukuda Iwaya Kofun	http://www.wikidata.org/entity/Q111661314
 35.55147	139.56541	Q111699876	http://www.wikidata.org/entity/Q111699876
 37.9469	23.5511	Salamis sea-battle tumulus	http://www.wikidata.org/entity/Q111709040
@@ -598,10 +598,10 @@
 35.82322	140.27481	Miso Iwaya Kofun	http://www.wikidata.org/entity/Q112163582
 36.24894	138.46338	Mikawada Otsuka Kofun	http://www.wikidata.org/entity/Q112163659
 36.36802	137.82986	Ziigazuka Kofun	http://www.wikidata.org/entity/Q112168775
-32.97128	130.6	Eta Funayama Kofun	http://www.wikidata.org/entity/Q11259227
+32.97128	130.6	Eta Funayama Kofun	https://en.wikipedia.org/wiki/Eta_Funayama_Kofun
 34.55333	135.48555	Itasuke Kofun	http://www.wikidata.org/entity/Q11259430
-34.51224	135.59865	Okameishi Kofun	http://www.wikidata.org/entity/Q11262874
-34.66759	133.7866	Kōmori-zuka Burial Mound	http://www.wikidata.org/entity/Q11266204
+34.51224	135.59865	Okameishi Kofun	https://en.wikipedia.org/wiki/Okameishi_Kofun
+34.66759	133.7866	Kōmori-zuka Burial Mound	https://en.wikipedia.org/wiki/K%C5%8Dmorizuka_Kofun
 36.2068	137.22619	Kōtōgeguchi Kofun	http://www.wikidata.org/entity/Q11266211
 35.78333	140.50916	Q11269068	http://www.wikidata.org/entity/Q11269068
 36.25738	140.19986	Q112736666	http://www.wikidata.org/entity/Q112736666
@@ -613,100 +613,100 @@
 35.74852	139.89833	Q112926517	http://www.wikidata.org/entity/Q112926517
 35.55813	139.64847	Q112943930	http://www.wikidata.org/entity/Q112943930
 48.33601	14.4148	Early medieval barrows in the Ogsteiner Wald	http://www.wikidata.org/entity/Q112951391
-34.4649	135.78	Yoraku Kanjo Kofun	http://www.wikidata.org/entity/Q11295439
-33.31402	130.90536	Garandoya Kofun	http://www.wikidata.org/entity/Q11296246
+34.4649	135.78	Yoraku Kanjo Kofun	https://en.wikipedia.org/wiki/Y%C5%8Draku_Kanjo_Kofun
+33.31402	130.90536	Garandoya Kofun	https://en.wikipedia.org/wiki/Garandoya_Kofun
 35.55419	139.65769	Q113004579	http://www.wikidata.org/entity/Q113004579
 34.69769	135.80471	Konabe Kofun	http://www.wikidata.org/entity/Q11302279
 35.08001	136.03283	Kamezuka Kofun	http://www.wikidata.org/entity/Q113025127
 34.49138	135.64805	Q11307137	http://www.wikidata.org/entity/Q11307137
 33.57322	130.2705	Q113112834	http://www.wikidata.org/entity/Q113112834
-34.70113	131.84839	Sukumozuka Kofun	http://www.wikidata.org/entity/Q11311482
-33.02966	130.66938	Chibusan-Obusan Kofun	http://www.wikidata.org/entity/Q11317998
+34.70113	131.84839	Sukumozuka Kofun	https://en.wikipedia.org/wiki/Sukumozuka_Kofun
+33.02966	130.66938	Chibusan-Obusan Kofun	https://en.wikipedia.org/wiki/Chibusan-Obusan_Kofun
 34.61583	135.85388	Hamizuka Kofun	http://www.wikidata.org/entity/Q11326717
 35.5518	139.6538	Q113285297	http://www.wikidata.org/entity/Q113285297
 34.70131	135.80268	Hishiage Kofun	http://www.wikidata.org/entity/Q11330004
 34.72796	135.27462	Q11336594	http://www.wikidata.org/entity/Q11336594
 35.55027	139.65991	Q113367319	http://www.wikidata.org/entity/Q113367319
-34.53986	135.84488	Hokenoyama Kofun	http://www.wikidata.org/entity/Q11337664
+34.53986	135.84488	Hokenoyama Kofun	https://en.wikipedia.org/wiki/Hokenoyama_Kofun
 34.55643	135.5965	Bokeyama Kofun	http://www.wikidata.org/entity/Q11338602
 34.70125	135.78966	Maezuka Kofun	http://www.wikidata.org/entity/Q11339900
-34.46088	135.79061	Marukoyama Kofun	http://www.wikidata.org/entity/Q11341265
-34.49888	135.84777	Mesuriyama Kofun	http://www.wikidata.org/entity/Q11343632
+34.46088	135.79061	Marukoyama Kofun	https://en.wikipedia.org/wiki/Marukoyama_Kofun
+34.49888	135.84777	Mesuriyama Kofun	https://en.wikipedia.org/wiki/Mesuriyama_Kofun
 34.55702	135.48375	Guwashōbō Kofun	http://www.wikidata.org/entity/Q113455950
 35.36919	139.55719	Q113482167	http://www.wikidata.org/entity/Q113482167
 37.25016	140.40069	Otsuka Kofun (Sukagawa)	http://www.wikidata.org/entity/Q113490541
 51.79257	11.84281	Grabhügel Fuchsberg	http://www.wikidata.org/entity/Q113516612
 38.23033	140.87512	Q11352506	http://www.wikidata.org/entity/Q11352506
 35.15757	136.92611	Ippommatsu Kofun	http://www.wikidata.org/entity/Q11352776
-34.50236	135.64611	Ichisuka Kofun Cluster	http://www.wikidata.org/entity/Q11353283
-32.95188	131.31008	Nanatsumori Kofun Cluster	http://www.wikidata.org/entity/Q11353353
+34.50236	135.64611	Ichisuka Kofun Cluster	https://en.wikipedia.org/wiki/Ichisuka_Kofun_Cluster
+32.95188	131.31008	Nanatsumori Kofun Cluster	https://en.wikipedia.org/wiki/Nanatsumori_Kofun_Cluster
 35.36775	139.54669	Q11353656	http://www.wikidata.org/entity/Q11353656
 34.55694	135.47861	Shichikan'yama Kofun	http://www.wikidata.org/entity/Q11353690
-36.26138	139.03944	Nanakoshiyama Kofun	http://www.wikidata.org/entity/Q11353699
+36.26138	139.03944	Nanakoshiyama Kofun	https://en.wikipedia.org/wiki/Nanakoshiyama_Kofun
 35.27185	136.8414	Mitsui Inariyama kofun	http://www.wikidata.org/entity/Q11353998
 34.95	136.01805	Mitsuzuka Kofun	http://www.wikidata.org/entity/Q11354002
-34.41633	132.73388	Mitsujo Kofun	http://www.wikidata.org/entity/Q11354003
+34.41633	132.73388	Mitsujo Kofun	https://en.wikipedia.org/wiki/Mitsuj%C5%8D_Kofun
 35.87872	140.58172	Sannowakeme Otsukayama Kofun	http://www.wikidata.org/entity/Q11354163
 35.32166	139.86194	Sanjōzuka Kofun	http://www.wikidata.org/entity/Q11355827
 36.54527	140.08527	Q11359424	http://www.wikidata.org/entity/Q11359424
 34.5539	135.4775	Kamiishizu Misanzai Kofun	http://www.wikidata.org/entity/Q11359978
 36.81319	140.12282	Q11360620	http://www.wikidata.org/entity/Q11360620
-33.13266	131.7925	Shimoyama Kofun (Usuki)	http://www.wikidata.org/entity/Q11360813
-33.58425	135.92277	Shimosato Kofun	http://www.wikidata.org/entity/Q11361369
+33.13266	131.7925	Shimoyama Kofun (Usuki)	https://en.wikipedia.org/wiki/Shimoyama_Kofun_(Usuki)
+33.58425	135.92277	Shimosato Kofun	https://en.wikipedia.org/wiki/Shimosato_Kofun
 35.41681	137.07879	Fukoujiduka Kofun	http://www.wikidata.org/entity/Q11361683
-34.46611	135.77972	Yōraku Kansuzuka Kofun	http://www.wikidata.org/entity/Q11361920
+34.46611	135.77972	Yōraku Kansuzuka Kofun	https://en.wikipedia.org/wiki/Y%C5%8Draku_Kansuzuka_Kofun
 36.42341	139.24422	Nakatsuka Kofun (Kiryu)	http://www.wikidata.org/entity/Q113624318
-34.73977	134.0026	Ryoguzan Kofun	http://www.wikidata.org/entity/Q11362631
-36.12219	139.47825	Nakanoyama Kofun	http://www.wikidata.org/entity/Q11362767
+34.73977	134.0026	Ryoguzan Kofun	https://en.wikipedia.org/wiki/Ry%C5%8Dg%C5%ABzan_Kofun
+36.12219	139.47825	Nakanoyama Kofun	https://en.wikipedia.org/wiki/Nakanoyama_Kofun
 34.46425	135.80611	Nakaoyama Kofun	http://www.wikidata.org/entity/Q11363940
 34.56583	135.84805	Nakayama Ōtsuka Kofun	http://www.wikidata.org/entity/Q11364125
 34.6668	133.85468	Nakayama Chausuyama Kofun	http://www.wikidata.org/entity/Q11364273
-34.82	135.36305	Nakayamasoen Kofun	http://www.wikidata.org/entity/Q11364274
+34.82	135.36305	Nakayamasoen Kofun	https://en.wikipedia.org/wiki/Nakayamas%C5%8Den_Kofun
 34.56719	135.4855	Maruhoyama Kofun	http://www.wikidata.org/entity/Q11368031
-36.1293	139.4785	Maruhakayama Kofun	http://www.wikidata.org/entity/Q11368078
+36.1293	139.4785	Maruhakayama Kofun	https://en.wikipedia.org/wiki/Maruhakayama_Kofun
 34.87013	137.14077	Q11368177	http://www.wikidata.org/entity/Q11368177
 33.57369	130.25197	Q11368459	http://www.wikidata.org/entity/Q11368459
-40.48111	141.467	Tangotai Kofun	http://www.wikidata.org/entity/Q11368522
+40.48111	141.467	Tangotai Kofun	https://en.wikipedia.org/wiki/Tangotai_Kofun
 34.61888	135.58611	Q11369275	http://www.wikidata.org/entity/Q11369275
 34.86483	135.77897	Kutsukawa Kurumazuka Kofun	http://www.wikidata.org/entity/Q11369464
 33.39642	129.98611	Q11369711	http://www.wikidata.org/entity/Q11369711
-34.56394	135.73958	Otomeyama Kofun	http://www.wikidata.org/entity/Q11369896
+34.56394	135.73958	Otomeyama Kofun	https://en.wikipedia.org/wiki/Otomeyama_Kofun
 35.31916	139.85833	Kujōzuka-kofun	http://www.wikidata.org/entity/Q11370401
 34.55586	135.46544	Q11370578	http://www.wikidata.org/entity/Q11370578
-37.59302	139.8291	Kamegamori-Chinjumori Kofun	http://www.wikidata.org/entity/Q11370710
-33.23472	131.73958	Kamezuka-kofun	http://www.wikidata.org/entity/Q11370808
-35.58922	139.66708	Kamenokoyama Kofun	http://www.wikidata.org/entity/Q11371013
+37.59302	139.8291	Kamegamori-Chinjumori Kofun	https://en.wikipedia.org/wiki/Kamegamori-Chinjumori_Kofun
+33.23472	131.73958	Kamezuka-kofun	https://en.wikipedia.org/wiki/Kamezuka_Kofun
+35.58922	139.66708	Kamenokoyama Kofun	https://en.wikipedia.org/wiki/Kamenokoyama_Kofun
 35.40521	136.93617	Ninomiya jinjya kohun	http://www.wikidata.org/entity/Q11371248
 38.22988	140.87225	Q11371432	http://www.wikidata.org/entity/Q11371432
-34.51082	135.65156	Futagozuka Kofun	http://www.wikidata.org/entity/Q11371443
-34.55347	133.31233	Futagozuka Kofun (Fukuyama)	http://www.wikidata.org/entity/Q11371445
-36.12626	139.47905	Gyōda Futagoyama Kofun	http://www.wikidata.org/entity/Q11371449
+34.51082	135.65156	Futagozuka Kofun	https://en.wikipedia.org/wiki/Futagozuka_Kofun_(Osaka)
+34.55347	133.31233	Futagozuka Kofun (Fukuyama)	https://en.wikipedia.org/wiki/Futagozuka_Kofun_(Fukuyama)
+36.12626	139.47905	Gyōda Futagoyama Kofun	https://en.wikipedia.org/wiki/Gy%C5%8Dda_Futagoyama_Kofun
 34.8233	135.43605	Satsukigaoka Kofun	http://www.wikidata.org/entity/Q11372452
 34.37655	135.70394	Gojō Nekozuka Kofun	http://www.wikidata.org/entity/Q11372490
 34.21844	135.21601	Inbe Hachiman-yama Kofun	http://www.wikidata.org/entity/Q11373771
-34.85025	135.59415	Imashirozuka Kofun	http://www.wikidata.org/entity/Q11376795
+34.85025	135.59415	Imashirozuka Kofun	https://en.wikipedia.org/wiki/Imashirozuka_Kofun
 37.03297	136.978	Yata Tenmamiya Kofun	http://www.wikidata.org/entity/Q113769542
 36.4295	139.86547	Q113771626	http://www.wikidata.org/entity/Q113771626
 36.40529	139.87691	Q113774370	http://www.wikidata.org/entity/Q113774370
 34.5699	135.6124	Nakatsuyama Kofun	http://www.wikidata.org/entity/Q11378467
 36.26555	139.04005	Isezuka Kofun	http://www.wikidata.org/entity/Q11378976
-37.513	139.94412	Ōtsukayama Kofun	http://www.wikidata.org/entity/Q11381233
+37.513	139.94412	Ōtsukayama Kofun	https://en.wikipedia.org/wiki/%C5%8Ctsukayama_Kofun
 34.7193	135.26244	Q11381818	http://www.wikidata.org/entity/Q11381818
-34.55638	135.72694	Samita Takarazuka Kofun	http://www.wikidata.org/entity/Q11383079
-34.70008	135.79133	Saki Hyōtan-yama Kofun	http://www.wikidata.org/entity/Q11383488
+34.55638	135.72694	Samita Takarazuka Kofun	https://en.wikipedia.org/wiki/Samida_Takarazuka_Kofun
+34.70008	135.79133	Saki Hyōtan-yama Kofun	https://en.wikipedia.org/wiki/Saki_Hy%C5%8Dtanyama_Kofun
 34.69965	135.78906	Saki Misasagiyama Kofun	http://www.wikidata.org/entity/Q11383490
 34.70013	135.7874	Saki Ishizukayama Kofun	http://www.wikidata.org/entity/Q11383491
 43.67141	-0.46734	Q113841386	http://www.wikidata.org/entity/Q113841386
-34.66421	133.76903	Tsukuriyama Kofun	http://www.wikidata.org/entity/Q11385355
-36.37855	138.98358	Hodota Kofun Cluster	http://www.wikidata.org/entity/Q11385853
+34.66421	133.76903	Tsukuriyama Kofun	https://en.wikipedia.org/wiki/Tsukuriyama_Kofun_(S%C5%8Dja)
+36.37855	138.98358	Hodota Kofun Cluster	https://en.wikipedia.org/wiki/Hodota_Kofun_Cluster
 34.70166	133.976	Bizen Kurumazuka Kofun	http://www.wikidata.org/entity/Q11387347
 32.1315	131.43436	Q11388644	http://www.wikidata.org/entity/Q11388644
 38.23866	140.88422	Q11388841	http://www.wikidata.org/entity/Q11388841
 36.14286	139.48646	Hachiman-yama Kofun	http://www.wikidata.org/entity/Q11390962
-35.32594	139.85716	Dairizuka Kofun	http://www.wikidata.org/entity/Q11394583
+35.32594	139.85716	Dairizuka Kofun	https://en.wikipedia.org/wiki/Dairizuka_Kofun
 35.32569	139.85705	Dairizuka Kofun Cluster	http://www.wikidata.org/entity/Q11394584
 35.50447	136.89166	Enku's Burial Mound	http://www.wikidata.org/entity/Q11394839
-34.71136	135.24738	Otomezuka Kofun	http://www.wikidata.org/entity/Q11395455
+34.71136	135.24738	Otomezuka Kofun	https://en.wikipedia.org/wiki/Otomezuka_Kofun
 35.6783	139.53155	Q11395609	http://www.wikidata.org/entity/Q11395609
 34.85241	135.59259	Q11397093	http://www.wikidata.org/entity/Q11397093
 35.68458	138.54361	Kamunazuka Kofun	http://www.wikidata.org/entity/Q11398722
@@ -716,58 +716,58 @@
 35.77194	140.53166	Hōjōzuka Kofun	http://www.wikidata.org/entity/Q11402092
 35.78294	139.48408	Kita-Akitsu Yokoanabogun	http://www.wikidata.org/entity/Q11403899
 34.61136	135.72653	Q114042526	http://www.wikidata.org/entity/Q114042526
-36.37141	140.57015	Jūgorōana	http://www.wikidata.org/entity/Q11404830
+36.37141	140.57015	Jūgorōana	https://en.wikipedia.org/wiki/J%C5%ABgor%C5%8D_Cave_Tombs
 35.9745	139.351	Q11405183	http://www.wikidata.org/entity/Q11405183
-33.22027	131.54322	Chiyomaru Kofun	http://www.wikidata.org/entity/Q11405255
-35.05702	135.57061	Chitose Kurumazuka Kofun	http://www.wikidata.org/entity/Q11405679
-32.14002	131.40205	Chibatake Kofun	http://www.wikidata.org/entity/Q11405752
+33.22027	131.54322	Chiyomaru Kofun	https://en.wikipedia.org/wiki/Chiyomaru_Kofun
+35.05702	135.57061	Chitose Kurumazuka Kofun	https://en.wikipedia.org/wiki/Chitose_Kurumazuka_Kofun
+32.14002	131.40205	Chibatake Kofun	https://en.wikipedia.org/wiki/Chibatake_Kofun
 37.03613	136.9823	Yata Maruyama Kofun	http://www.wikidata.org/entity/Q114058383
 33.59411	130.41502	Q11408919	http://www.wikidata.org/entity/Q11408919
 34.55877	135.48805	Osamezuka Kofun	http://www.wikidata.org/entity/Q11410610
 34.5681	135.6094	Komuroyama Kofun	http://www.wikidata.org/entity/Q11411025
-33.227	131.58766	Furumiya Kofun	http://www.wikidata.org/entity/Q11411029
+33.227	131.58766	Furumiya Kofun	https://en.wikipedia.org/wiki/Furumiya_Kofun
 36.75	140.13402	Yoshida Yuzenjinja Kofun	http://www.wikidata.org/entity/Q11413955
 34.67236	134.97213	Otsuka Kofun	http://www.wikidata.org/entity/Q11413978
-36.0392	139.422	Yoshimi Hundred Caves	http://www.wikidata.org/entity/Q11414302
+36.0392	139.422	Yoshimi Hundred Caves	https://en.wikipedia.org/wiki/Yoshimi_Hundred_Caves
 34.93638	136.01666	Mukōhakayama Kofun	http://www.wikidata.org/entity/Q11415923
-35.45455	133.44052	Mukoyama Kofun Group	http://www.wikidata.org/entity/Q11415934
-35.22611	136.93666	Ajiyoshi Futagoyama Kofun	http://www.wikidata.org/entity/Q11417036
+35.45455	133.44052	Mukoyama Kofun Group	https://en.wikipedia.org/wiki/Mukoeyama_Kofun_Cluster
+35.22611	136.93666	Ajiyoshi Futagoyama Kofun	https://en.wikipedia.org/wiki/Ajiyoshi_Futagoyama_Kofun
 35.22861	136.93202	Q11417038	http://www.wikidata.org/entity/Q11417038
 35.2273	136.93687	Q11417039	http://www.wikidata.org/entity/Q11417039
-34.51416	135.45583	Izumi Koganezuka Kofun	http://www.wikidata.org/entity/Q11417846
-31.36466	130.98677	Tōjin Kofun Cluster	http://www.wikidata.org/entity/Q11418515
+34.51416	135.45583	Izumi Koganezuka Kofun	https://en.wikipedia.org/wiki/Izumi_Koganezuka_Kofun
+31.36466	130.98677	Tōjin Kofun Cluster	https://en.wikipedia.org/wiki/T%C5%8Djin_Kofun_Cluster
 34.50151	135.79139	Shijō Kofun Cluster	http://www.wikidata.org/entity/Q11420005
 34.54691	135.49854	Haze Nisanzai Kofun	http://www.wikidata.org/entity/Q11423449
 36.14769	139.48705	Jizozuka Kofun	http://www.wikidata.org/entity/Q11424667
 35.42802	139.35238	Q11424742	http://www.wikidata.org/entity/Q11424742
 34.60891	135.72122	Q114253535	http://www.wikidata.org/entity/Q114253535
 35.40314	136.92547	Bōnotsuka Kofun	http://www.wikidata.org/entity/Q11425633
-38.0424	139.3727	Jōnoyama Kofun	http://www.wikidata.org/entity/Q11425922
+38.0424	139.3727	Jōnoyama Kofun	https://en.wikipedia.org/wiki/J%C5%8Dnoyama_Kofun
 35.40222	139.28194	Q11426332	http://www.wikidata.org/entity/Q11426332
 34.53894	135.45463	Q11428355	http://www.wikidata.org/entity/Q11428355
 33.96062	131.18092	Q11428395	http://www.wikidata.org/entity/Q11428395
 35.64355	139.43294	Q11428408	http://www.wikidata.org/entity/Q11428408
 36.50616	139.86125	Q11428437	http://www.wikidata.org/entity/Q11428437
-31.34027	130.96833	Tsukazaki Kofun Group	http://www.wikidata.org/entity/Q11428440
+31.34027	130.96833	Tsukazaki Kofun Group	https://en.wikipedia.org/wiki/Tsukazaki_Kofun_Cluster
 34.56277	135.49066	Tsukamawari Kofun	http://www.wikidata.org/entity/Q11428445
 34.55099	135.59181	Tsukaana Kofun	http://www.wikidata.org/entity/Q11428560
-34.70302	135.79283	Shiozuka Kofun	http://www.wikidata.org/entity/Q11428650
+34.70302	135.79283	Shiozuka Kofun	https://en.wikipedia.org/wiki/Shiozuka_Kofun
 36.24533	138.98772	Tago Yakushizuka Kofun	http://www.wikidata.org/entity/Q114289619
 34.55753	135.60404	Hakayama Kofun	http://www.wikidata.org/entity/Q11429120
-35.59225	138.58291	Ōmaruyama Kofun	http://www.wikidata.org/entity/Q11431880
+35.59225	138.58291	Ōmaruyama Kofun	https://en.wikipedia.org/wiki/%C5%8Cmaruyama_Kofun
 35.88494	139.6035	Q11431932	http://www.wikidata.org/entity/Q11431932
 34.56277	133.29555	Osayama Shiratsuka Kofun	http://www.wikidata.org/entity/Q11432371
 34.55722	135.84591	Yamato Tenjin'yama Kofun	http://www.wikidata.org/entity/Q11433432
-32.94861	130.57055	Daibō Kofun	http://www.wikidata.org/entity/Q11433720
+32.94861	130.57055	Daibō Kofun	https://en.wikipedia.org/wiki/Daib%C5%8D_Kofun
 35.63416	140.44888	Q11433867	http://www.wikidata.org/entity/Q11433867
-37.35583	140.40361	Ōyasuba Kofun	http://www.wikidata.org/entity/Q11434323
-36.58972	138.23083	Ōmuro Kofun group	http://www.wikidata.org/entity/Q11434367
+37.35583	140.40361	Ōyasuba Kofun	https://en.wikipedia.org/wiki/%C5%8Cyasuba_Kofun_group
+36.58972	138.23083	Ōmuro Kofun group	https://en.wikipedia.org/wiki/%C5%8Cmuro_Kofun_group
 35.31319	139.54555	Q114347254	http://www.wikidata.org/entity/Q114347254
-34.07244	131.54766	Dainichi Kofun	http://www.wikidata.org/entity/Q11435613
+34.07244	131.54766	Dainichi Kofun	https://en.wikipedia.org/wiki/Dainichi_Kofun
 35.38393	136.90385	Oumakiichigoukohun	http://www.wikidata.org/entity/Q11437789
 35.64397	135.08094	Q11437871	http://www.wikidata.org/entity/Q11437871
 35.2543	137.01664	Q11438032	http://www.wikidata.org/entity/Q11438032
-34.2618	135.17625	Ōtani Kofun	http://www.wikidata.org/entity/Q11439030
+34.2618	135.17625	Ōtani Kofun	https://en.wikipedia.org/wiki/%C5%8Ctani_Kofun
 34.75956	137.36192	Q114392362	http://www.wikidata.org/entity/Q114392362
 35.15771	136.89871	Q11441851	http://www.wikidata.org/entity/Q11441851
 34.5669	135.6089	Ōtorizuka Kofun	http://www.wikidata.org/entity/Q11441985
@@ -775,31 +775,31 @@
 35.67405	139.53891	Tenmondai-Kōnai Kofun	http://www.wikidata.org/entity/Q11442651
 36.03923	139.57482	Tennoyamazuka Kofun	http://www.wikidata.org/entity/Q11443001
 38.00659	140.05118	Q11443260	http://www.wikidata.org/entity/Q11443260
-36.29167	139.39102	Ōta Tenjin-yama Kofun	http://www.wikidata.org/entity/Q11444167
+36.29167	139.39102	Ōta Tenjin-yama Kofun	https://en.wikipedia.org/wiki/%C5%8Cta_Tenjinyama_Kofun
 34.84457	135.57843	Ōda Chausuyama Kofun	http://www.wikidata.org/entity/Q11444409
-36.12288	139.4771	Okunoyama Kofun	http://www.wikidata.org/entity/Q11445573
+36.12288	139.4771	Okunoyama Kofun	https://en.wikipedia.org/wiki/Okunoyama_Kofun
 51.22422	13.50543	Archäologiepark Gävernitz	http://www.wikidata.org/entity/Q114458312
 32.11993	131.38465	Mesahozuka Kofun	http://www.wikidata.org/entity/Q11446520
 35.48055	140.05222	Anesaki Futago-zuka Kofun	http://www.wikidata.org/entity/Q11447258
 35.47472	140.05361	Anesaki Tenjin-yama Kofun	http://www.wikidata.org/entity/Q11447263
 34.62558	133.71947	Q114481278	http://www.wikidata.org/entity/Q114481278
-34.00673	133.58483	Umamukaiyama Kofun	http://www.wikidata.org/entity/Q11449416
+34.00673	133.58483	Umamukaiyama Kofun	https://en.wikipedia.org/wiki/Umamukaiyama_Kofun
 36.44191	139.85488	Q114497967	http://www.wikidata.org/entity/Q114497967
-35.14186	136.14897	Azuchi-Hyōtanyama Kofun	http://www.wikidata.org/entity/Q11450459
+35.14186	136.14897	Azuchi-Hyōtanyama Kofun	https://en.wikipedia.org/wiki/Azuchi-Hy%C5%8Dtanyama_Kofun
 34.866	135.63575	Q11450943	http://www.wikidata.org/entity/Q11450943
 35.43019	136.66708	Q11451942	http://www.wikidata.org/entity/Q11451942
 34.55272	135.5	Q11452156	http://www.wikidata.org/entity/Q11452156
 34.68007	135.78116	Hōraiyama Kofun	http://www.wikidata.org/entity/Q11452574
 35.59315	139.66335	Horaisan Kofun	http://www.wikidata.org/entity/Q11452676
-34.44283	135.73333	Muro Miya-yama Kofun	http://www.wikidata.org/entity/Q11452994
+34.44283	135.73333	Muro Miya-yama Kofun	https://en.wikipedia.org/wiki/Muro_Miyayama_Kofun
 34.62093	133.70788	Q114533778	http://www.wikidata.org/entity/Q114533778
-37.09313	138.35702	Miyaguchi Kofun Group	http://www.wikidata.org/entity/Q11453446
-37.09333	138.3575	Miyaguchi Kofun Group	http://www.wikidata.org/entity/Q11453446
+37.09313	138.35702	Miyaguchi Kofun Group	https://en.wikipedia.org/wiki/Miyaguchi_Kofun_Group
+37.09333	138.3575	Miyaguchi Kofun Group	https://en.wikipedia.org/wiki/Miyaguchi_Kofun_Group
 33.78086	130.48866	Miyajidake Kofun	http://www.wikidata.org/entity/Q11453527
-36.15161	139.34519	Miyazuka Kofun	http://www.wikidata.org/entity/Q11454036
-34.26	134.24416	Tomida Chausuyama Kofun	http://www.wikidata.org/entity/Q11457254
+36.15161	139.34519	Miyazuka Kofun	https://en.wikipedia.org/wiki/Miyazuka_Kofun
+34.26	134.24416	Tomida Chausuyama Kofun	https://en.wikipedia.org/wiki/Tomida_Chausuyama_Kofun
 34.95583	135.68861	Terado Ōtsuka Kofun	http://www.wikidata.org/entity/Q11457885
-34.77972	137.83916	Teradani Chōshizuka Kofun	http://www.wikidata.org/entity/Q11458088
+34.77972	137.83916	Teradani Chōshizuka Kofun	https://en.wikipedia.org/wiki/Teradani_Ch%C5%8Dshizuka_Kofun
 36.12723	139.48178	Shōgun'yama Kofun	http://www.wikidata.org/entity/Q11458633
 34.62961	135.04585	Q11459567	http://www.wikidata.org/entity/Q11459567
 34.83783	135.41422	Q114600870	http://www.wikidata.org/entity/Q114600870
@@ -807,163 +807,163 @@
 35.20886	136.9856	Q11460703	http://www.wikidata.org/entity/Q11460703
 35.20707	136.9833	Q11460707	http://www.wikidata.org/entity/Q11460707
 35.68333	140.41666	Q11462258	http://www.wikidata.org/entity/Q11462258
-36.15941	139.47683	Omishinkanji Kofun	http://www.wikidata.org/entity/Q11463662
-34.44258	135.77216	Ichio Miyazuka Kofun	http://www.wikidata.org/entity/Q114652000
-33.33027	130.73833	Yakata Kofun Cluster	http://www.wikidata.org/entity/Q11465692
+36.15941	139.47683	Omishinkanji Kofun	https://en.wikipedia.org/wiki/Omishinkanji_Kofun
+34.44258	135.77216	Ichio Miyazuka Kofun	https://en.wikipedia.org/wiki/Ichio_Miyazuka_Kofun
+33.33027	130.73833	Yakata Kofun Cluster	https://en.wikipedia.org/wiki/Yakata_Kofun_Cluster
 36.03875	139.44152	Q11465796	http://www.wikidata.org/entity/Q11465796
-35.43911	133.08733	Yamashiro Futagozuka Kofun	http://www.wikidata.org/entity/Q11466267
+35.43911	133.08733	Yamashiro Futagozuka Kofun	https://en.wikipedia.org/wiki/Yamashiro_Futagozuka_Kofun
 35.66805	140.42027	Q11467730	http://www.wikidata.org/entity/Q11467730
 35.70888	140.38277	Q11470125	http://www.wikidata.org/entity/Q11470125
 34.51189	135.64956	Yamada Takatsuka Kofun	http://www.wikidata.org/entity/Q11470748
 37.75444	138.83361	Q11470923	http://www.wikidata.org/entity/Q11470923
 34.5658	135.5942	Oka Misanzai Kofun	http://www.wikidata.org/entity/Q11471921
 34.56611	135.59583	Q11471986	http://www.wikidata.org/entity/Q11471986
-35.42783	133.09111	Okadayama Kofun	http://www.wikidata.org/entity/Q11473525
+35.42783	133.09111	Okadayama Kofun	https://en.wikipedia.org/wiki/Okadayama_Kofun
 35.60133	138.64444	Oka Choshizuka Kofun	http://www.wikidata.org/entity/Q11473955
 35.31317	136.9351	Iwaya kofun	http://www.wikidata.org/entity/Q11474377
 34.46572	135.79763	Iwayayama Kofun	http://www.wikidata.org/entity/Q11474389
 33.22985	130.55271	Iwatoyama Kofun	http://www.wikidata.org/entity/Q11474582
-34.2236	135.2301	Iwase Senzuka Kofun Group	http://www.wikidata.org/entity/Q11475228
+34.2236	135.2301	Iwase Senzuka Kofun Group	https://en.wikipedia.org/wiki/Iwase-Senzuka_Kofun_Cluster
 39.933	140.124	Q11475666	http://www.wikidata.org/entity/Q11475666
 34.5522	135.5972	Minegazuka Kofun	http://www.wikidata.org/entity/Q11476069
 34.57656	135.58491	Shimaizumi Maruyama Kofun	http://www.wikidata.org/entity/Q11476778
 35.99386	139.51288	Q11479045	http://www.wikidata.org/entity/Q11479045
-33.54186	131.3609	Kawabe-Takamori Kofun Cluster	http://www.wikidata.org/entity/Q11479328
-34.55638	135.74083	Suyama Kofun	http://www.wikidata.org/entity/Q11479418
-34.44319	135.7443	Koseyama Kofun Cluster	http://www.wikidata.org/entity/Q11479773
-34.5731	135.6167	Ichinoyama Kofun	http://www.wikidata.org/entity/Q11479972
+33.54186	131.3609	Kawabe-Takamori Kofun Cluster	https://en.wikipedia.org/wiki/Kawabe-Takamori_Kofun_Cluster
+34.55638	135.74083	Suyama Kofun	https://en.wikipedia.org/wiki/Suyama_Kofun
+34.44319	135.7443	Koseyama Kofun Cluster	https://en.wikipedia.org/wiki/Koseyama_Kofun_Cluster
+34.5731	135.6167	Ichinoyama Kofun	https://en.wikipedia.org/wiki/Ichinoyama_Kofun
 35.5574	139.53999	Ichigao Kofun Group	http://www.wikidata.org/entity/Q11479974
 34.69654	135.79718	Ichiniwa Kofun	http://www.wikidata.org/entity/Q11480471
 34.62155	135.49682	Tezukayama Kofun	http://www.wikidata.org/entity/Q11481047
-32.07272	131.32644	Jōshinzuka Kofun	http://www.wikidata.org/entity/Q11481383
-33.5423	130.22841	Hirabaru Site	http://www.wikidata.org/entity/Q11482147
+32.07272	131.32644	Jōshinzuka Kofun	https://en.wikipedia.org/wiki/J%C5%8Dshinzuka_Kofun
+33.5423	130.22841	Hirabaru Site	https://en.wikipedia.org/wiki/Hirabaru_Site
 35.68727	139.76272	Shōmonzuka	http://www.wikidata.org/entity/Q11482436
-33.026	130.68586	Benkei-ga-ana Kofun	http://www.wikidata.org/entity/Q11486937
-36.21302	137.98286	Kōbōyama Kofun	http://www.wikidata.org/entity/Q11487361
+33.026	130.68586	Benkei-ga-ana Kofun	https://en.wikipedia.org/wiki/Benkei-ga-ana_Kofun
+36.21302	137.98286	Kōbōyama Kofun	https://en.wikipedia.org/wiki/K%C5%8Db%C5%8Dyama_Kofun
 36.24936	139.03325	Kizozuka Kofun	http://www.wikidata.org/entity/Q114873697
 35.52805	139.36111	Q11487857	http://www.wikidata.org/entity/Q11487857
 35.76411	140.59555	Q11488824	http://www.wikidata.org/entity/Q11488824
 34.65447	135.53597	Okachiyama Kofun	http://www.wikidata.org/entity/Q11488829
-33.27972	130.4775	Ontsuka - Gongenzuka Kofun	http://www.wikidata.org/entity/Q11488904
+33.27972	130.4775	Ontsuka - Gongenzuka Kofun	https://en.wikipedia.org/wiki/Ontsuka_-_Gongenzuka_Kofun
 34.5547	135.4908	Gobyōyama Kofun	http://www.wikidata.org/entity/Q11489009
-34.99747	135.80699	Gobyōno Kofun	http://www.wikidata.org/entity/Q11489010
+34.99747	135.80699	Gobyōno Kofun	https://en.wikipedia.org/wiki/Mausoleum_of_Emperor_Tenji
 34.53163	135.62341	Q11489115	http://www.wikidata.org/entity/Q11489115
 35.22696	136.93536	Q11489116	http://www.wikidata.org/entity/Q11489116
-34.63913	135.64087	Shionjiyama Kofun	http://www.wikidata.org/entity/Q11490575
+34.63913	135.64087	Shionjiyama Kofun	https://en.wikipedia.org/wiki/Shionjiyama_Kofun
 34.747	135.6415	Shinobugaoka Kofun	http://www.wikidata.org/entity/Q11490749
 47.46827	7.45188	Goben, burial mound of unknown date	http://www.wikidata.org/entity/Q114909995
-35.25477	137.04469	Shidami Kofun group	http://www.wikidata.org/entity/Q11491064
+35.25477	137.04469	Shidami Kofun group	https://en.wikipedia.org/wiki/Shidami_Kofun_group
 35.25287	137.04129	Shidami Otsuka Kofun	http://www.wikidata.org/entity/Q11491065
-34.23888	133.89055	Kaiten-yama Kofun	http://www.wikidata.org/entity/Q11491385
+34.23888	133.89055	Kaiten-yama Kofun	https://en.wikipedia.org/wiki/Kaitenyama_Kofun
 34.91452	135.69758	Igenoyama Kofun	http://www.wikidata.org/entity/Q11492427
 36.24016	139.08141	Suwajinja Kofun	http://www.wikidata.org/entity/Q114937513
 34.80083	134.92597	Q11493841	http://www.wikidata.org/entity/Q11493841
-36.3964	140.45165	Atagoyama Kofun (Mito)	http://www.wikidata.org/entity/Q11493842
+36.3964	140.45165	Atagoyama Kofun (Mito)	https://en.wikipedia.org/wiki/Atagoyama_Kofun_(Mito)
 36.02	140.29638	Q11493843	http://www.wikidata.org/entity/Q11493843
-36.1263	139.47697	Atagoyama Kofun	http://www.wikidata.org/entity/Q11493844
+36.1263	139.47697	Atagoyama Kofun	https://en.wikipedia.org/wiki/Atagoyama_Kofun
 47.36355	7.94431	Hinterer Hardwald, Iron Age burial mounds	http://www.wikidata.org/entity/Q114949561
 36.35305	139.11923	Q114950110	http://www.wikidata.org/entity/Q114950110
 36.12172	139.47902	Tobaguchiyama Kofun	http://www.wikidata.org/entity/Q11496268
 36.59083	139.87388	Q11496591	http://www.wikidata.org/entity/Q11496591
 35.49275	136.03813	Q114968440	http://www.wikidata.org/entity/Q114968440
 34.45094	135.75572	Wakigami Kansuzuka Kofun	http://www.wikidata.org/entity/Q11498187
-34.46241	135.43334	Mayuyama Kofun	http://www.wikidata.org/entity/Q11498618
+34.46241	135.43334	Mayuyama Kofun	https://en.wikipedia.org/wiki/Mayuyama_Kofun
 34.66083	133.95552	Misaoyama Kofun Group	http://www.wikidata.org/entity/Q11498771
 34.54666	135.48172	Q11500049	http://www.wikidata.org/entity/Q11500049
 34.53243	135.7356	Shin-yama Kofun	http://www.wikidata.org/entity/Q11501998
-34.48722	135.70055	Futazuka Kofun	http://www.wikidata.org/entity/Q11502181
-34.47786	135.77394	Niizawa-Senzuka Kofun Cluster	http://www.wikidata.org/entity/Q11502665
-34.77116	137.87311	Shinpōinyama Kofun group	http://www.wikidata.org/entity/Q11504126
+34.48722	135.70055	Futazuka Kofun	https://en.wikipedia.org/wiki/Futazuka_Kofun_(Katsuragi)
+34.47786	135.77394	Niizawa-Senzuka Kofun Cluster	https://en.wikipedia.org/wiki/Niizawa_Senzuka_Kofun_Cluster
+34.77116	137.87311	Shinpōinyama Kofun group	https://en.wikipedia.org/wiki/Shinp%C5%8Dinyama_Kofun_group
 34.77995	134.86218	Q11505277	http://www.wikidata.org/entity/Q11505277
 47.11006	7.40371	Aspihölzli, burial mound of unknown age	http://www.wikidata.org/entity/Q115091460
-34.76743	136.4396	Akeai Kofun	http://www.wikidata.org/entity/Q11512013
+34.76743	136.4396	Akeai Kofun	https://en.wikipedia.org/wiki/Akeai_Kofun
 36.48661	140.08426	Q11512733	http://www.wikidata.org/entity/Q11512733
 34.51678	135.6442	Kasuga Mukaiyama Kofun	http://www.wikidata.org/entity/Q11513590
-35.38751	136.57138	Hiruiōzuka Kofun	http://www.wikidata.org/entity/Q11514249
+35.38751	136.57138	Hiruiōzuka Kofun	https://en.wikipedia.org/wiki/Hirui%C5%8Dzuka_Kofun
 34.94185	134.1089	Tsukinowa Kofun	http://www.wikidata.org/entity/Q11515782
 34.1059	135.12034	Hajikami Kofun	http://www.wikidata.org/entity/Q115204590
 47.20907	7.63569	Pfaffenweiher, burial mound of unknown age	http://www.wikidata.org/entity/Q115218508
 47.32146	7.87764	Born, burial mound of unknown date	http://www.wikidata.org/entity/Q115223562
-34.59275	135.84366	Somanouchi Kofun Cluster	http://www.wikidata.org/entity/Q11523653
-35.39	136.95027	Higashinomiya Kofun	http://www.wikidata.org/entity/Q11523913
+34.59275	135.84366	Somanouchi Kofun Cluster	https://en.wikipedia.org/wiki/Somanouchi_Kofun_cluster
+35.39	136.95027	Higashinomiya Kofun	https://en.wikipedia.org/wiki/Higashinomiya_Kofun
 35.25122	137.03981	Higashi Okute Kofun	http://www.wikidata.org/entity/Q11526448
 34.71292	135.26409	Q11527565	http://www.wikidata.org/entity/Q11527565
 34.54352	135.83338	Higaida Ōtsuka Kofun	http://www.wikidata.org/entity/Q11528075
-34.56991	135.64572	Matsuokayama Kofun	http://www.wikidata.org/entity/Q11530088
+34.56991	135.64572	Matsuokayama Kofun	https://en.wikipedia.org/wiki/Matsuokayama_Kofun
 35.41841	136.82327	Q11533611	http://www.wikidata.org/entity/Q11533611
 35.80955	139.60574	Q11533632	http://www.wikidata.org/entity/Q11533632
-33.96583	132.12888	Yanai Chausuyama Kofun	http://www.wikidata.org/entity/Q11534089
+33.96583	132.12888	Yanai Chausuyama Kofun	https://en.wikipedia.org/wiki/Yanai_Chausuyama_Kofun
 34.55111	135.84194	Yanagimoto Ōtsuka Kofun	http://www.wikidata.org/entity/Q11534333
-36.82333	136.99083	Yanaidanu-no-Oyama Kofun	http://www.wikidata.org/entity/Q11534564
+36.82333	136.99083	Yanaidanu-no-Oyama Kofun	https://en.wikipedia.org/wiki/Yanaida_Nun%C5%8Dyama_Kofun
 35.38505	139.93347	Q115363368	http://www.wikidata.org/entity/Q115363368
-37.64138	140.99138	Sakurai Kofun	http://www.wikidata.org/entity/Q11537784
-34.51166	135.85694	Sakurai Chausuyama Kofun	http://www.wikidata.org/entity/Q11537882
+37.64138	140.99138	Sakurai Kofun	https://en.wikipedia.org/wiki/Sakurai_Kofun
+34.51166	135.85694	Sakurai Chausuyama Kofun	https://en.wikipedia.org/wiki/Sakurai_Chausuyama_Kofun
 35.32369	136.8982	Q11537959	http://www.wikidata.org/entity/Q11537959
 35.99313	139.39066	Q11537979	http://www.wikidata.org/entity/Q11537979
 34.46871	135.80077	Umeyama Kofun	http://www.wikidata.org/entity/Q11538452
-35.45149	134.29472	Kajiyama Kofun	http://www.wikidata.org/entity/Q11538863
-34.47622	135.8035	Ueyama Kofun	http://www.wikidata.org/entity/Q11540500
-34.76213	135.81777	Tsubai Otsukayama Kofun	http://www.wikidata.org/entity/Q11540994
-34.66305	133.82548	Tatetsuki Site	http://www.wikidata.org/entity/Q11541408
+35.45149	134.29472	Kajiyama Kofun	https://en.wikipedia.org/wiki/Kajiyama_Kofun
+34.47622	135.8035	Ueyama Kofun	https://en.wikipedia.org/wiki/Ueyama_Kofun
+34.76213	135.81777	Tsubai Otsukayama Kofun	https://en.wikipedia.org/wiki/Tsubai_%C5%8Ctsukayama_Kofun
+34.66305	133.82548	Tatetsuki Site	https://en.wikipedia.org/wiki/Tatetsuki_Site
 36.16019	139.63355	Q11542198	http://www.wikidata.org/entity/Q11542198
-31.41336	131.01483	Yokose Kofun	http://www.wikidata.org/entity/Q11543317
-34.55694	135.85194	Kushiyama Kofun	http://www.wikidata.org/entity/Q11544664
+31.41336	131.01483	Yokose Kofun	https://en.wikipedia.org/wiki/Yokose_Kofun
+34.55694	135.85194	Kushiyama Kofun	https://en.wikipedia.org/wiki/Kushiyama_Kofun
 35.4415	137.05425	Jirobeeduka1goukofun	http://www.wikidata.org/entity/Q11544906
-35.67513	139.45708	Musashi Fuchū Kumano Jinja Kofun	http://www.wikidata.org/entity/Q11546361
-37.0948	138.3513	Mizushina Kofun Group	http://www.wikidata.org/entity/Q11549051
+35.67513	139.45708	Musashi Fuchū Kumano Jinja Kofun	https://en.wikipedia.org/wiki/Musashi_Fuch%C5%AB_Kumano_Jinja_Kofun
+37.0948	138.3513	Mizushina Kofun Group	https://en.wikipedia.org/wiki/Mizushina_Kofun_Group
 34.568	135.4867	Nagayama Kofun	http://www.wikidata.org/entity/Q11549996
 36.20407	139.58508	Q11550102	http://www.wikidata.org/entity/Q11550102
-43.11708	141.51636	Ebetsu Kofun Cluster	http://www.wikidata.org/entity/Q11550632
+43.11708	141.51636	Ebetsu Kofun Cluster	https://en.wikipedia.org/wiki/Ebetsu_Kofun_Cluster
 34.66916	133.77694	Ezaki Kofun	http://www.wikidata.org/entity/Q11550858
-39.29141	141.08236	Ezuriko Kofun Cluster	http://www.wikidata.org/entity/Q11551374
+39.29141	141.08236	Ezuriko Kofun Cluster	https://en.wikipedia.org/wiki/Ezuriko_Kofun_Cluster
 36.36234	139.31719	Nishiyama Kofun	http://www.wikidata.org/entity/Q115519708
 34.82605	135.43405	Ikeda Chausuyama Kofun	http://www.wikidata.org/entity/Q11552118
 34.57254	135.56785	Kawachi Ōtsukayama Kofun	http://www.wikidata.org/entity/Q11553391
 33.67761	130.85303	Q11553432	http://www.wikidata.org/entity/Q11553432
 35.77635	139.94112	Kawarazuka kofun	http://www.wikidata.org/entity/Q11553575
 34.30361	136.88537	Q11554963	http://www.wikidata.org/entity/Q11554963
-33.31016	130.95022	Hōonjiyama Kofun Cluster	http://www.wikidata.org/entity/Q11555161
+33.31016	130.95022	Hōonjiyama Kofun Cluster	https://en.wikipedia.org/wiki/H%C5%8Donjiyama_Kofun_Cluster
 35.74666	139.90305	Hōōzuka Kofun	http://www.wikidata.org/entity/Q11555280
 34.58201	135.59342	Tsudō-Shiroyama Kofun	http://www.wikidata.org/entity/Q11555978
 35.94638	140.53694	Q11557452	http://www.wikidata.org/entity/Q11557452
 36.12322	139.47961	Sengenzuka Kofun	http://www.wikidata.org/entity/Q11557453
 35.82777	140.26916	Asamayama kofun	http://www.wikidata.org/entity/Q11557461
-36.29894	139.03396	Sengenyama-kofun (Takasaki)	http://www.wikidata.org/entity/Q11557462
-34.71005	134.06702	Urama Chausuyama Kofun	http://www.wikidata.org/entity/Q11558379
+36.29894	139.03396	Sengenyama-kofun (Takasaki)	https://en.wikipedia.org/wiki/Sengenyama_Kofun
+34.71005	134.06702	Urama Chausuyama Kofun	https://en.wikipedia.org/wiki/Urama_Chausuyama_Kofun
 34.84138	135.54961	Kaihōzuka Kofun	http://www.wikidata.org/entity/Q11558763
 42.98863	10.5093	Tomb of the Chariots	http://www.wikidata.org/entity/Q115596015
 34.33046	135.17874	Tannowa Nisanzai Kofun	http://www.wikidata.org/entity/Q11559835
 34.55071	135.84903	Shibutani Mukaiyama Kofun	http://www.wikidata.org/entity/Q11561706
-34.00972	134.52861	Shibuno Maruyama Kofun	http://www.wikidata.org/entity/Q11561790
+34.00972	134.52861	Shibuno Maruyama Kofun	https://en.wikipedia.org/wiki/Shibunomaruyama_Kofun
 55.4387	13.6779	Snåres hög	http://www.wikidata.org/entity/Q115668083
 34.87834	137.43568	Sumiyakibira kofun group	http://www.wikidata.org/entity/Q11567130
 35.42044	137.06777	Kumano Kofun	http://www.wikidata.org/entity/Q11568878
 35.97442	139.53511	Q11568969	http://www.wikidata.org/entity/Q11568969
-34.72522	133.9768	Musa Otsuka Kofun	http://www.wikidata.org/entity/Q11570258
-34.5543	135.72416	Bakuya Kofun	http://www.wikidata.org/entity/Q11570540
-34.83341	135.66891	Makino Kurumazuka Kofun	http://www.wikidata.org/entity/Q11570617
+34.72522	133.9768	Musa Otsuka Kofun	https://en.wikipedia.org/wiki/Musa_%C5%8Ctsuka_Kofun
+34.5543	135.72416	Bakuya Kofun	https://en.wikipedia.org/wiki/Bakuya_Kofun
+34.83341	135.66891	Makino Kurumazuka Kofun	https://en.wikipedia.org/wiki/Makino_Kurumazuka_Kofun
 35.59975	138.45516	Q11570670	http://www.wikidata.org/entity/Q11570670
-34.4663	135.7923	Kengoshizuka Kofun	http://www.wikidata.org/entity/Q11571102
-34.92055	134.84988	Tamaoka Kofun Cluster	http://www.wikidata.org/entity/Q11572357
+34.4663	135.7923	Kengoshizuka Kofun	https://en.wikipedia.org/wiki/Kengoshizuka_Kofun
+34.92055	134.84988	Tamaoka Kofun Cluster	https://en.wikipedia.org/wiki/Tamaoka_Kofun_Cluster
 36.20788	133.31136	Q11572775	http://www.wikidata.org/entity/Q11572775
-33.58876	130.66394	Ōzuka Kofun	http://www.wikidata.org/entity/Q11572952
+33.58876	130.66394	Ōzuka Kofun	https://en.wikipedia.org/wiki/%C5%8Czuka_Kofun
 35.57961	138.55419	Q11572953	http://www.wikidata.org/entity/Q11572953
-35.93972	136.18488	Ōzan Kofun Cluster	http://www.wikidata.org/entity/Q11573042
-35.41805	136.81444	Kotozuka Kofun	http://www.wikidata.org/entity/Q11573757
-35.41818	136.81474	Kotozuka Kofun	http://www.wikidata.org/entity/Q11573757
+35.93972	136.18488	Ōzan Kofun Cluster	https://en.wikipedia.org/wiki/%C5%8Czan_Kofun_Cluster
+35.41805	136.81444	Kotozuka Kofun	https://en.wikipedia.org/wiki/Kotozuka_Kofun
+35.41818	136.81474	Kotozuka Kofun	https://en.wikipedia.org/wiki/Kotozuka_Kofun
 35.1233	136.94011	Q11573931	http://www.wikidata.org/entity/Q11573931
-36.12489	139.47711	Kawarazuka Kofun	http://www.wikidata.org/entity/Q11574186
-31.95027	131.38555	Ikime Kofun Cluster	http://www.wikidata.org/entity/Q11574825
+36.12489	139.47711	Kawarazuka Kofun	https://en.wikipedia.org/wiki/Kawarazuka_Kofun
+31.95027	131.38555	Ikime Kofun Cluster	https://en.wikipedia.org/wiki/Ikime_Kofun_Cluster
 34.5761	135.4883	Tadeiyama Kofun	http://www.wikidata.org/entity/Q11576219
 36.49	136.57861	Q11576443	http://www.wikidata.org/entity/Q11576443
-35.59222	138.57833	Kai Chōshizuka Kofun	http://www.wikidata.org/entity/Q11577925
-34.705	132.75469	Kotachi Kofun	http://www.wikidata.org/entity/Q11577967
+35.59222	138.57833	Kai Chōshizuka Kofun	https://en.wikipedia.org/wiki/Kai_Ch%C5%8Dshizuka_Kofun
+34.705	132.75469	Kotachi Kofun	https://en.wikipedia.org/wiki/K%C5%8Dtachi_Kofun
 32.12187	131.38447	Osahozuka Kofun	http://www.wikidata.org/entity/Q11578168
 35.46422	139.33372	Q11579136	http://www.wikidata.org/entity/Q11579136
 35.55022	139.66055	Q11579561	http://www.wikidata.org/entity/Q11579561
 35.21899	136.9296	Q11579608	http://www.wikidata.org/entity/Q11579608
-37.12583	140.28827	Shirakawa Funada-Motonuma Sites	http://www.wikidata.org/entity/Q11579979
-35.49294	135.1008	Shirageyama Kofun	http://www.wikidata.org/entity/Q11580285
+37.12583	140.28827	Shirakawa Funada-Motonuma Sites	https://en.wikipedia.org/wiki/Shirakawa_Funada-Motonuma_Sites
+35.49294	135.1008	Shirageyama Kofun	https://en.wikipedia.org/wiki/Shirageyama_Kofun
 34.54884	135.60037	Shiragayama Kofun	http://www.wikidata.org/entity/Q11580492
 35.12722	136.90333	Shirotori-kofun (Nagoya, Aichi)	http://www.wikidata.org/entity/Q11580543
 35.25518	137.04434	Shiratorizuka-kofun	http://www.wikidata.org/entity/Q11580550
@@ -972,37 +972,37 @@
 34.55027	135.47416	Q11580843	http://www.wikidata.org/entity/Q11580843
 36.13352	139.52228	Q11582904	http://www.wikidata.org/entity/Q11582904
 35.35872	139.34855	Q11582920	http://www.wikidata.org/entity/Q11582920
-37.69713	140.952	Mano Kofun Cluster	http://www.wikidata.org/entity/Q11583561
-34.72375	135.7785	Ishinokarato Kofun	http://www.wikidata.org/entity/Q11584729
-33.77538	130.98	Ishizukayama Kofun	http://www.wikidata.org/entity/Q11585466
+37.69713	140.952	Mano Kofun Cluster	https://en.wikipedia.org/wiki/Mano_Kofun_Cluster
+34.72375	135.7785	Ishinokarato Kofun	https://en.wikipedia.org/wiki/Ishinokarato_Kofun
+33.77538	130.98	Ishizukayama Kofun	https://en.wikipedia.org/wiki/Ishizukayama_Kofun
 34.70772	136.17294	Q11585523	http://www.wikidata.org/entity/Q11585523
-34.32766	134.02361	Iwaseoyama Kofun Cluster	http://www.wikidata.org/entity/Q11586812
+34.32766	134.02361	Iwaseoyama Kofun Cluster	https://en.wikipedia.org/wiki/Iwaseoyama_Kofun_Cluster
 38.22603	140.86572	Q11587445	http://www.wikidata.org/entity/Q11587445
-35.735	135.11111	Shinmeiyama Kofun	http://www.wikidata.org/entity/Q11590298
+35.735	135.11111	Shinmeiyama Kofun	https://en.wikipedia.org/wiki/Shinmeiyama_Kofun
 35.17598	137.07809	Q11590309	http://www.wikidata.org/entity/Q11590309
-34.81083	135.65722	Kinyakurumazuka Kofun	http://www.wikidata.org/entity/Q11591162
-35.31438	135.19638	Kisaichi-Maruyama Kofun	http://www.wikidata.org/entity/Q11594694
-36.44969	136.51922	Akitsuneyama Kofun Cluster	http://www.wikidata.org/entity/Q11595085
-35.46944	139.40416	Akibayama Kofun Cluster	http://www.wikidata.org/entity/Q11595836
+34.81083	135.65722	Kinyakurumazuka Kofun	https://en.wikipedia.org/wiki/Kinyakurumazuka_Kofun
+35.31438	135.19638	Kisaichi-Maruyama Kofun	https://en.wikipedia.org/wiki/Kisaichi_Maruyama_Kofun
+36.44969	136.51922	Akitsuneyama Kofun Cluster	https://en.wikipedia.org/wiki/Akitsuneyama_Kofun_Cluster
+35.46944	139.40416	Akibayama Kofun Cluster	https://en.wikipedia.org/wiki/Akibayama_Kofun_Cluster
 35.55962	139.53192	Inarimae Kofun Group	http://www.wikidata.org/entity/Q11596844
-35.50333	140.12397	Inaridai No. 1 Kofun	http://www.wikidata.org/entity/Q11596847
-35.50333	140.124	Inaridai Kofun Cluster	http://www.wikidata.org/entity/Q11596849
+35.50333	140.12397	Inaridai No. 1 Kofun	https://en.wikipedia.org/wiki/Inari_Daichi_Kofun
+35.50333	140.124	Inaridai Kofun Cluster	https://en.wikipedia.org/wiki/Inaridai_Kofun_Group
 35.6386	139.43472	Q11596855	http://www.wikidata.org/entity/Q11596855
-38.03963	140.15736	Inari-mori Kofun	http://www.wikidata.org/entity/Q11596873
+38.03963	140.15736	Inari-mori Kofun	https://en.wikipedia.org/wiki/Inarimori_Kofun
 36.05525	139.24936	Q11597201	http://www.wikidata.org/entity/Q11597201
 36.1278	139.72661	Anayakushi Kofun	http://www.wikidata.org/entity/Q11597253
-33.30766	130.90588	Anakannon Kofun	http://www.wikidata.org/entity/Q11597258
+33.30766	130.90588	Anakannon Kofun	https://en.wikipedia.org/wiki/Anakannon_Kofun
 36.56691	139.88395	Mikurayama Kofun	http://www.wikidata.org/entity/Q115978238
 35.60127	138.63752	Q11598301	http://www.wikidata.org/entity/Q11598301
 35.78838	139.90448	Q11598649	http://www.wikidata.org/entity/Q11598649
-33.73325	130.61013	Takehara Kofun	http://www.wikidata.org/entity/Q11599019
+33.73325	130.61013	Takehara Kofun	https://en.wikipedia.org/wiki/Takehara_Kofun
 34.67244	135.70236	Chikurinji Kofun	http://www.wikidata.org/entity/Q11599243
 36.47694	139.90194	Q11602518	http://www.wikidata.org/entity/Q11602518
-35.40027	134.75361	Miidani Kofun Cluster	http://www.wikidata.org/entity/Q11603145
-34.6356	133.68132	Yata Ōtsuka Kofun	http://www.wikidata.org/entity/Q11603302
-34.53926	135.84122	Hashihaka Kofun	http://www.wikidata.org/entity/Q11603420
+35.40027	134.75361	Miidani Kofun Cluster	https://en.wikipedia.org/wiki/Miidani_Kofun_Cluster
+34.6356	133.68132	Yata Ōtsuka Kofun	https://en.wikipedia.org/wiki/Yata_%C5%8Ctsuka_Kofun
+34.53926	135.84122	Hashihaka Kofun	https://en.wikipedia.org/wiki/Hashihaka_Kofun
 35.01716	137.0118	Q11603470	http://www.wikidata.org/entity/Q11603470
-33.23877	131.80172	Tsukiyama Kofun	http://www.wikidata.org/entity/Q11603501
+33.23877	131.80172	Tsukiyama Kofun	https://en.wikipedia.org/wiki/Tsukiyama_Kofun
 34.67958	134.13733	Tsukiyama Kofun	http://www.wikidata.org/entity/Q11603502
 34.52337	135.73164	Tsukiyama Kofun	http://www.wikidata.org/entity/Q11603503
 33.53878	130.24481	Q11603504	http://www.wikidata.org/entity/Q11603504
@@ -1011,21 +1011,21 @@
 34.84422	135.54605	Shikinzan Kofun	http://www.wikidata.org/entity/Q11605767
 35.63894	138.67747	Kyozuka Kofun	http://www.wikidata.org/entity/Q11606412
 35.53922	139.63547	Tsunashima Kofun	http://www.wikidata.org/entity/Q11607131
-35.67805	135.02972	Amino Choshiyama Kofun	http://www.wikidata.org/entity/Q11607242
-36.30722	139.07722	Watanuki Kannon-yama Kofun	http://www.wikidata.org/entity/Q11607450
-34.54669	135.83605	Makimuku Kofun Cluster	http://www.wikidata.org/entity/Q11608501
+35.67805	135.02972	Amino Choshiyama Kofun	https://en.wikipedia.org/wiki/Amino_Ch%C5%8Dshiyama_Kofun
+36.30722	139.07722	Watanuki Kannon-yama Kofun	https://en.wikipedia.org/wiki/Watanuki_Kannonyama_Kofun
+34.54669	135.83605	Makimuku Kofun Cluster	https://en.wikipedia.org/wiki/Makimuku_Kofun_Cluster
 34.54741	135.83477	Makimuku Katsuyama Kofun	http://www.wikidata.org/entity/Q11608502
 34.54888	135.83383	Makimuku Yazuka Kofun	http://www.wikidata.org/entity/Q11608503
-34.54625	135.83608	Makimuku Ishizuka Kofun	http://www.wikidata.org/entity/Q11608505
+34.54625	135.83608	Makimuku Ishizuka Kofun	https://en.wikipedia.org/wiki/Makimuku_Ishizuka_Kofun
 34.63988	135.59347	Q11608894	http://www.wikidata.org/entity/Q11608894
-34.66202	136.13461	Mihata Kofun Cluster	http://www.wikidata.org/entity/Q11609095
+34.66202	136.13461	Mihata Kofun Cluster	https://en.wikipedia.org/wiki/Mihata_Kofun_Cluster
 34.84183	135.56373	Minohara Kofun	http://www.wikidata.org/entity/Q11610725
 35.64	140.39861	Q11611811	http://www.wikidata.org/entity/Q11611811
 34.88454	136.48196	Nobono Ōtsuka Kofun	http://www.wikidata.org/entity/Q11612067
 33.14322	131.78591	Q11613253	http://www.wikidata.org/entity/Q11613253
-36.16784	140.28972	Funatsukayama Kofun	http://www.wikidata.org/entity/Q11613757
+36.16784	140.28972	Funatsukayama Kofun	https://en.wikipedia.org/wiki/Funazukayama_Kofun
 35.65462	139.74807	Shiba Maruyama Kofun	http://www.wikidata.org/entity/Q11614601
-35.68083	140.41972	Shibayama Kofun Cluster	http://www.wikidata.org/entity/Q11614635
+35.68083	140.41972	Shibayama Kofun Cluster	https://en.wikipedia.org/wiki/Shibayama_Kofun_Cluster
 36.02645	139.36919	Wakamiya-Hachiman Kofun	http://www.wikidata.org/entity/Q11616248
 36.14286	139.48683	Q11616287	http://www.wikidata.org/entity/Q11616287
 36.12627	139.49269	Q11616656	http://www.wikidata.org/entity/Q11616656
@@ -1034,16 +1034,16 @@
 34.56925	135.6443	Chausuzuka Kofun	http://www.wikidata.org/entity/Q11618007
 34.65168	135.51233	Chausuyama Kofun	http://www.wikidata.org/entity/Q11618016
 35.57936	139.54425	Q11618317	http://www.wikidata.org/entity/Q11618317
-37.76698	138.86571	Ayamezuka Kofun	http://www.wikidata.org/entity/Q11619951
-33.54061	131.33611	Kuzuhara Kofun	http://www.wikidata.org/entity/Q11620871
+37.76698	138.86571	Ayamezuka Kofun	https://en.wikipedia.org/wiki/Ayamezuka_Kofun
+33.54061	131.33611	Kuzuhara Kofun	https://en.wikipedia.org/wiki/Kuzuhara_Kofun
 36.28876	139.99865	Ashimayama-kofun	http://www.wikidata.org/entity/Q11621143
-31.96958	131.44547	Hasugaike Kofun Cluster	http://www.wikidata.org/entity/Q11621629
+31.96958	131.44547	Hasugaike Kofun Cluster	https://en.wikipedia.org/wiki/Hasugaike_Kofun_Cluster
 34.53583	135.63	Q11621898	http://www.wikidata.org/entity/Q11621898
 35.64166	140.45166	Q11622006	http://www.wikidata.org/entity/Q11622006
 34.56373	135.60457	Q11622625	http://www.wikidata.org/entity/Q11622625
 34.606	135.70416	Q116235081	http://www.wikidata.org/entity/Q116235081
-36.30077	139.43675	Fujimoto Kannonyama Kofun	http://www.wikidata.org/entity/Q11624242
-36.37352	140.56963	Torazuka Kofun	http://www.wikidata.org/entity/Q11625282
+36.30077	139.43675	Fujimoto Kannonyama Kofun	https://en.wikipedia.org/wiki/Fujimoto_Kannonyama_Kofun
+36.37352	140.56963	Torazuka Kofun	https://en.wikipedia.org/wiki/Torazuka_Kofun
 35.01197	135.70016	Hebizuka Kofun	http://www.wikidata.org/entity/Q11625508
 34.55745	135.84909	Andon-yama Kofun	http://www.wikidata.org/entity/Q11626169
 34.78194	134.88847	Gyojazuka Kofun	http://www.wikidata.org/entity/Q11626191
@@ -1053,66 +1053,66 @@
 34.5925	135.84333	Nishiyama Kofun	http://www.wikidata.org/entity/Q11627818
 34.57027	135.84867	Nishiyamazuka Kofun	http://www.wikidata.org/entity/Q11627823
 34.56881	135.85116	Nishitonozuka Kofun	http://www.wikidata.org/entity/Q11628944
-34.7051	135.2265	Nishimotomezuka Kofun	http://www.wikidata.org/entity/Q11628958
-35.35861	132.78	Nishidani Ancient Graves	http://www.wikidata.org/entity/Q11629514
-34.32703	135.16901	Sairyo Kofun	http://www.wikidata.org/entity/Q11629965
-34.76361	131.15944	Mishima Jiikonbo Kofun Cluster	http://www.wikidata.org/entity/Q11630178
-34.47586	135.79832	Maruyama Kofun	http://www.wikidata.org/entity/Q11630214
+34.7051	135.2265	Nishimotomezuka Kofun	https://en.wikipedia.org/wiki/Nishimotomezuka_Kofun
+35.35861	132.78	Nishidani Ancient Graves	https://en.wikipedia.org/wiki/Nishidani_Tumulus_cluster
+34.32703	135.16901	Sairyo Kofun	https://en.wikipedia.org/wiki/Sairy%C5%8D_Kofun
+34.76361	131.15944	Mishima Jiikonbo Kofun Cluster	https://en.wikipedia.org/wiki/Mishima_Jiikonbo_Kofun_Cluster
+34.47586	135.79832	Maruyama Kofun	https://en.wikipedia.org/wiki/Maruyama_Kofun_(Kashihara)
 35.25685	137.02248	Q11630453	http://www.wikidata.org/entity/Q11630453
-34.53744	135.64125	Kannonzuka Kofun	http://www.wikidata.org/entity/Q11630595
+34.53744	135.64125	Kannonzuka Kofun	https://en.wikipedia.org/wiki/Kannonzuka_Kofun
 37.74833	138.835	Kan'non-yama Kofun	http://www.wikidata.org/entity/Q11630638
 34.65916	133.77303	Sumoutoriyama Kofun	http://www.wikidata.org/entity/Q11630681
-39.1415	141.09375	Tsunozuka Kofun	http://www.wikidata.org/entity/Q11630689
+39.1415	141.09375	Tsunozuka Kofun	https://en.wikipedia.org/wiki/Tsunozuka_Kofun
 35.85902	140.58988	Q116309884	http://www.wikidata.org/entity/Q116309884
 34.5626	135.60921	Konda Gobyōyama Kofun	http://www.wikidata.org/entity/Q11631432
 36.16013	139.63319	Q11632067	http://www.wikidata.org/entity/Q11632067
 51.60143	-4.15143	Pen-y-crug Round Barrow	http://www.wikidata.org/entity/Q116321517
 36.59755	139.89286	Q11632696	http://www.wikidata.org/entity/Q11632696
-34.50041	135.87458	Akasaka Tennōzan Kofun	http://www.wikidata.org/entity/Q11635409
+34.50041	135.87458	Akasaka Tennōzan Kofun	https://en.wikipedia.org/wiki/Tenn%C5%8Dzan_Kofun_(Sakurai)
 34.87483	133.04494	Karabitsu Kofun	http://www.wikidata.org/entity/Q116370461
 35.42341	137.07016	Mikakushiyama Kofun Group	http://www.wikidata.org/entity/Q11637246
 34.2625	135.14694	Q11637339	http://www.wikidata.org/entity/Q11637339
 34.5511	135.6044	Karusato Ōtsuka Kofun	http://www.wikidata.org/entity/Q11637613
 35.12298	138.86117	Takaosan Kofun	http://www.wikidata.org/entity/Q11638291
 35.42969	133.19977	Q11639744	http://www.wikidata.org/entity/Q11639744
-34.67378	133.8037	Tsukuriyama Ancient Burial Mound	http://www.wikidata.org/entity/Q11639745
-38.23821	140.91444	Tōmizuka Kofun	http://www.wikidata.org/entity/Q11642380
+34.67378	133.8037	Tsukuriyama Ancient Burial Mound	https://en.wikipedia.org/wiki/Tsukuriyama_Kofun_(Okayama)
+38.23821	140.91444	Tōmizuka Kofun	https://en.wikipedia.org/wiki/T%C5%8Dmizuka_Kofun
 35.15971	136.90106	Nagonoyama Kofun	http://www.wikidata.org/entity/Q11642726
 33.57083	130.43583	Naka Hachiman Kofun	http://www.wikidata.org/entity/Q11642761
 36.18888	139.44916	Q11644323	http://www.wikidata.org/entity/Q11644323
 34.56025	135.60258	Nonaka Kofun	http://www.wikidata.org/entity/Q11645001
 34.46875	135.80782	Noguchi Royal Tomb	http://www.wikidata.org/entity/Q11645194
-35.48	136.62527	No Kofun Cluster	http://www.wikidata.org/entity/Q11645238
+35.48	136.62527	No Kofun Cluster	https://en.wikipedia.org/wiki/No_Kofun_Cluster
 35.605	139.64308	Noge-Otsuka Kofun	http://www.wikidata.org/entity/Q11645747
-34.46939	135.63033	Kanayama Kofun	http://www.wikidata.org/entity/Q11646971
+34.46939	135.63033	Kanayama Kofun	https://en.wikipedia.org/wiki/Kanayama_Kofun
 38.22466	140.86322	Q11647563	http://www.wikidata.org/entity/Q11647563
 35.40146	136.9455	Q11647802	http://www.wikidata.org/entity/Q11647802
 35.38722	139.93277	Kinreizuka Kofun	http://www.wikidata.org/entity/Q11647959
-36.12381	139.47821	Teppōyama Kofun	http://www.wikidata.org/entity/Q11649597
+36.12381	139.47821	Teppōyama Kofun	https://en.wikipedia.org/wiki/Tepp%C5%8Dyama_Kofun
 34.81769	135.43708	Hachizuka Kofun	http://www.wikidata.org/entity/Q11649848
 34.57138	135.61461	Nabezuka Kofun	http://www.wikidata.org/entity/Q11650613
 53.67814	-6.25122	Ninch Barrow	http://www.wikidata.org/entity/Q116510495
 34.60855	135.56544	Q11651554	http://www.wikidata.org/entity/Q11651554
 36.53409	136.65683	Nagasaka Futagozuka Kofun	http://www.wikidata.org/entity/Q11651607
 34.55766	135.4875	Nagatsuka Kofun	http://www.wikidata.org/entity/Q11651650
-35.43111	137.06861	Nagatsuka Kofun	http://www.wikidata.org/entity/Q11651651
+35.43111	137.06861	Nagatsuka Kofun	https://en.wikipedia.org/wiki/Nagatsuka_Kofun
 36.59305	139.88416	Nagaoka Hyakuana	http://www.wikidata.org/entity/Q11652134
-35.28652	139.58183	Nagae-Sakurayama Kofun Cluster	http://www.wikidata.org/entity/Q11653084
-34.85444	135.58472	Tsugeyama Kofun	http://www.wikidata.org/entity/Q11656592
-40.60944	141.37611	Akōbō Kofun Cluster	http://www.wikidata.org/entity/Q11657264
-34.86333	135.56938	Abuyama Kofun	http://www.wikidata.org/entity/Q11657465
-36.9758	136.87153	Amenomiya Kofun Cluster	http://www.wikidata.org/entity/Q11659618
-35.07645	136.14581	Yukinoyama Kofun	http://www.wikidata.org/entity/Q11659952
+35.28652	139.58183	Nagae-Sakurayama Kofun Cluster	https://en.wikipedia.org/wiki/Nagae-Sakurayama_Kofun_Cluster
+34.85444	135.58472	Tsugeyama Kofun	https://en.wikipedia.org/wiki/Tsugeyama_Kofun
+40.60944	141.37611	Akōbō Kofun Cluster	https://en.wikipedia.org/wiki/Ak%C5%8Db%C5%8D_Kofun_Cluster
+34.86333	135.56938	Abuyama Kofun	https://en.wikipedia.org/wiki/Abuyama_Kofun
+36.9758	136.87153	Amenomiya Kofun Cluster	https://en.wikipedia.org/wiki/Amenomiya_Kofun_Cluster
+35.07645	136.14581	Yukinoyama Kofun	https://en.wikipedia.org/wiki/Yukinoyama_Kofun
 35.51261	137.84665	Q11660056	http://www.wikidata.org/entity/Q11660056
-38.15116	140.87966	Raijinyama Kofun	http://www.wikidata.org/entity/Q11660187
+38.15116	140.87966	Raijinyama Kofun	https://en.wikipedia.org/wiki/Raijinyama_Kofun
 34.117	133.70577	Q11661129	http://www.wikidata.org/entity/Q11661129
-35.32639	136.92894	Aotsuka Kofun	http://www.wikidata.org/entity/Q11661131
+35.32639	136.92894	Aotsuka Kofun	https://en.wikipedia.org/wiki/Aotsuka_Kofun
 35.32555	139.85083	Q11661625	http://www.wikidata.org/entity/Q11661625
-37.10766	136.96677	Susoezoana Kofun	http://www.wikidata.org/entity/Q11664581
-38.16222	140.87722	Iinozaka Kofun Cluster	http://www.wikidata.org/entity/Q11666712
+37.10766	136.96677	Susoezoana Kofun	https://en.wikipedia.org/wiki/Susoezoana_Kofun
+38.16222	140.87722	Iinozaka Kofun Cluster	https://en.wikipedia.org/wiki/Iinozaka_Kofun_Cluster
 35.61666	140.38972	Danotsuka Kofun	http://www.wikidata.org/entity/Q11668153
 36.76166	140.12055	Komagata Otsuka Kofun	http://www.wikidata.org/entity/Q11668363
-34.57286	135.63794	Takaida Yokoana Group	http://www.wikidata.org/entity/Q11668714
+34.57286	135.63794	Takaida Yokoana Group	https://en.wikipedia.org/wiki/Takaida_Cave_Tombs
 34.57277	135.63972	Takaidayama Kofun	http://www.wikidata.org/entity/Q11668715
 34.54653	135.61033	Takaya Hachiman-yama Kofun	http://www.wikidata.org/entity/Q11669270
 34.54888	135.60961	Takaya Tsukiyama Kofun	http://www.wikidata.org/entity/Q11669285
@@ -1123,30 +1123,30 @@
 34.64369	135.7575	Q116694195	http://www.wikidata.org/entity/Q116694195
 35.3938	139.95125	Q116694244	http://www.wikidata.org/entity/Q116694244
 47.51842	8.09209	Iron Age tumulus group	http://www.wikidata.org/entity/Q116695755
-33.31566	131.4923	Oni-no-iwa Kofun	http://www.wikidata.org/entity/Q11673383
-33.67777	131.58288	Onizuka Kofun (Kunisaki)	http://www.wikidata.org/entity/Q11673420
+33.31566	131.4923	Oni-no-iwa Kofun	https://en.wikipedia.org/wiki/Oni-no-iwa_Kofun
+33.67777	131.58288	Onizuka Kofun (Kunisaki)	https://en.wikipedia.org/wiki/Onizuka_Kofun_(Kunisaki)
 36.385	137.82277	Gishiki no Iwaya	http://www.wikidata.org/entity/Q11673646
 35.57605	138.54583	Q11674888	http://www.wikidata.org/entity/Q11674888
 34.47825	135.77995	Toriya Misanzai Kofun	http://www.wikidata.org/entity/Q11674961
 36.48266	140.03086	Q11675823	http://www.wikidata.org/entity/Q11675823
-34.69111	135.85444	Uguisuzuka Kofun	http://www.wikidata.org/entity/Q11675843
+34.69111	135.85444	Uguisuzuka Kofun	https://en.wikipedia.org/wiki/Uguisuzuka_Kofun
 35.92463	139.41894	Tsurugaoka Inari-jinja Kofun	http://www.wikidata.org/entity/Q11675868
 34.3248	134.03033	Q11675928	http://www.wikidata.org/entity/Q11675928
 47.30592	7.84908	Eichlibann, Iron Age burial mounds	http://www.wikidata.org/entity/Q116760774
 35.67833	140.02583	Saginuma Kofun Cluster	http://www.wikidata.org/entity/Q11676433
 47.11748	7.45536	Eggholz, burial mound of unknown age	http://www.wikidata.org/entity/Q116765840
-35.42333	133.75361	Amidaji Kofun Cluster	http://www.wikidata.org/entity/Q116776991
-34.54561	135.55764	Kurohimeyama Kofun	http://www.wikidata.org/entity/Q11678079
+35.42333	133.75361	Amidaji Kofun Cluster	https://en.wikipedia.org/wiki/Amidaji_Kofun_Cluster
+34.54561	135.55764	Kurohimeyama Kofun	https://en.wikipedia.org/wiki/Kurohimeyama_Kofun
 36.06166	139.4388	Kuroiwa Burial Caves	http://www.wikidata.org/entity/Q11678129
-35.82472	140.26908	Ryūgakuji Kofun Cluster	http://www.wikidata.org/entity/Q11679371
+35.82472	140.26908	Ryūgakuji Kofun Cluster	https://en.wikipedia.org/wiki/Ry%C5%ABgakuji_Kofun_Cluster
 35.82111	140.27722	Ryūkakuji Iwaya Kofun	http://www.wikidata.org/entity/Q11679372
 41.79288	-8.86702	Q116856259	http://www.wikidata.org/entity/Q116856259
 50.4204	-4.9249	Devil's Quoit	http://www.wikidata.org/entity/Q116872482
-54.7297	-2.6567	Little Meg	http://www.wikidata.org/entity/Q11689326
+54.7297	-2.6567	Little Meg	https://en.wikipedia.org/wiki/Little_Meg
 43.29341	-2.89178	Q116941636	http://www.wikidata.org/entity/Q116941636
 34.49133	135.78877	Q116946761	http://www.wikidata.org/entity/Q116946761
 47.00041	7.22188	Challnechwald and Chroneholz, Iron Age burial mounds	http://www.wikidata.org/entity/Q117038037
-34.72444	134.12027	Tsuruyama Maruyama Kofun	http://www.wikidata.org/entity/Q117038368
+34.72444	134.12027	Tsuruyama Maruyama Kofun	https://en.wikipedia.org/wiki/Tsuruyama_Maruyama_Kofun
 34.80027	134.85952	Q117087380	http://www.wikidata.org/entity/Q117087380
 34.013	132.99733	Ushigami Kofun	http://www.wikidata.org/entity/Q117089977
 36.12266	140.32947	Q117090199	http://www.wikidata.org/entity/Q117090199
@@ -1237,26 +1237,26 @@
 35.53438	139.66186	Q119218468	http://www.wikidata.org/entity/Q119218468
 46.76578	15.33608	Q119231448	http://www.wikidata.org/entity/Q119231448
 59.28538	10.38579	Farmannshaugen	http://www.wikidata.org/entity/Q11968522
-59.14075	10.25312	Gokstad Mound	http://www.wikidata.org/entity/Q11972326
+59.14075	10.25312	Gokstad Mound	https://en.wikipedia.org/wiki/Gokstad_Mound
 59.36496	5.27863	Grønhaug	http://www.wikidata.org/entity/Q11973050
 60.3961	10.512	Halvdanshaugen	http://www.wikidata.org/entity/Q11973782
 60.10469	10.29476	Halvdanshaugen	http://www.wikidata.org/entity/Q11973783
 59.6864	10.7993	Q11997958	http://www.wikidata.org/entity/Q11997958
 59.89141	10.82458	Tallberget	http://www.wikidata.org/entity/Q12005124
 35.42461	139.53813	Q120146532	http://www.wikidata.org/entity/Q120146532
-49.56722	18.43805	Ivančena	http://www.wikidata.org/entity/Q12022070
+49.56722	18.43805	Ivančena	https://en.wikipedia.org/wiki/Ivan%C4%8Dena
 47.19145	8.0601	Hallstatt period tumulus group	http://www.wikidata.org/entity/Q120271492
 50.02857	14.93702	Battle of Lipany memorial	http://www.wikidata.org/entity/Q12033573
 49.4437	17.2704	Battlefield in Tovačov	http://www.wikidata.org/entity/Q12038476
 50.066	14.9625	Q12038477	http://www.wikidata.org/entity/Q12038477
-50.8618	0.051	Mount Caburn	http://www.wikidata.org/entity/Q12062109
+50.8618	0.051	Mount Caburn	https://en.wikipedia.org/wiki/Mount_Caburn
 51.25612	5.50388	Grafheuvels aan de Grote Haart	http://www.wikidata.org/entity/Q120803130
 51.26075	5.51112	Bronstijdgrafheuvels van Haarterheide	http://www.wikidata.org/entity/Q120803131
 33.99125	134.58022	Q121009825	http://www.wikidata.org/entity/Q121009825
 35.43616	139.59683	Q121265407	http://www.wikidata.org/entity/Q121265407
 36.43058	139.83519	Q121463760	http://www.wikidata.org/entity/Q121463760
 40.0447	26.189	Tomb of Protesilaus	http://www.wikidata.org/entity/Q121543499
-34.855	132.01805	Sufu Kofun	http://www.wikidata.org/entity/Q121546613
+34.855	132.01805	Sufu Kofun	https://en.wikipedia.org/wiki/Sufu_Kofun
 35.37244	137.19355	Sumiyaki Kofun	http://www.wikidata.org/entity/Q121643411
 61.76597	17.0435	Kungshögen, Högs socken	http://www.wikidata.org/entity/Q121705904
 45.31045	36.43788	Yuz-Oba	http://www.wikidata.org/entity/Q12172915
@@ -1348,18 +1348,18 @@
 52.40276	-3.2771	Round Barrow to W of Ty'n-y-ddol Hill	http://www.wikidata.org/entity/Q122221642
 51.02484	11.38847	Q122226903	http://www.wikidata.org/entity/Q122226903
 34.77079	135.34604	Kwansei Gakuin Kounai Kofun	http://www.wikidata.org/entity/Q122229507
-35.33916	132.73333	Takarazuka Kofun	http://www.wikidata.org/entity/Q122333002
+35.33916	132.73333	Takarazuka Kofun	https://en.wikipedia.org/wiki/Takarazuka_Kofun_(Izumo)
 34.61019	135.73538	Q122382762	http://www.wikidata.org/entity/Q122382762
 43.33435	11.18763	Mucellena Etruscan tumulus	http://www.wikidata.org/entity/Q122407312
 35.7395	139.90623	Guhōji kofun	http://www.wikidata.org/entity/Q122427541
 35.50219	137.84522	Agemizo Tenjinzuka Kofun	http://www.wikidata.org/entity/Q122552778
-35.42444	133.10972	Abedani Kofun	http://www.wikidata.org/entity/Q122574604
-35.41686	133.01388	Tokurenba Kofun	http://www.wikidata.org/entity/Q122610027
-35.42277	133.00555	Iwayajiato Kofun	http://www.wikidata.org/entity/Q122698572
+35.42444	133.10972	Abedani Kofun	https://en.wikipedia.org/wiki/Abedani_Kofun
+35.41686	133.01388	Tokurenba Kofun	https://en.wikipedia.org/wiki/Tokurenba_Kofun
+35.42277	133.00555	Iwayajiato Kofun	https://en.wikipedia.org/wiki/Iwayajiato_Kofun
 35.7218	140.22508	Q122790301	http://www.wikidata.org/entity/Q122790301
-35.43777	133.08555	Ōbaniwatorizuka Tumulus	http://www.wikidata.org/entity/Q122828022
+35.43777	133.08555	Ōbaniwatorizuka Tumulus	https://en.wikipedia.org/wiki/%C5%8Cbaniwatorizuka_Tumulus
 34.79472	134.85797	Q122833158	http://www.wikidata.org/entity/Q122833158
-35.42972	133.19861	Arashima Kofun Cluster	http://www.wikidata.org/entity/Q122942300
+35.42972	133.19861	Arashima Kofun Cluster	https://en.wikipedia.org/wiki/Arashima_Kofun_Cluster
 56.23376	10.51532	Agri Dyssen	http://www.wikidata.org/entity/Q12300741
 57.0911	10.1517	Q12302325	http://www.wikidata.org/entity/Q12302325
 54.4685	9.50762	Grabhügel Tweebargen	http://www.wikidata.org/entity/Q12307138
@@ -1368,21 +1368,21 @@
 55.6544	12.4162	Q12313886	http://www.wikidata.org/entity/Q12313886
 56.0205	12.1334	Q12315161	http://www.wikidata.org/entity/Q12315161
 56.6446	10.00087	Hohøj	http://www.wikidata.org/entity/Q12316993
-32.17333	131.49666	Kawaminami Kofun Cluster	http://www.wikidata.org/entity/Q123221104
+32.17333	131.49666	Kawaminami Kofun Cluster	https://en.wikipedia.org/wiki/Kawaminami_Kofun_Cluster
 57.0936	10.1538	Q12322250	http://www.wikidata.org/entity/Q12322250
 54.7878	9.35805	Kong Arrilds Høj	http://www.wikidata.org/entity/Q12322572
-32.57277	131.63027	Minamikata Kofun Cluster	http://www.wikidata.org/entity/Q123232046
+32.57277	131.63027	Minamikata Kofun Cluster	https://en.wikipedia.org/wiki/Minamikata_Kofun_Cluster
 56.07729	12.21416	Q12325021	http://www.wikidata.org/entity/Q12325021
 55.96499	12.03777	Maglehøj	http://www.wikidata.org/entity/Q12325712
 55.61628	11.95847	Q12328011	http://www.wikidata.org/entity/Q12328011
 55.6846	12.302	Q12330139	http://www.wikidata.org/entity/Q12330139
-54.51972	13.54722	Dobberworth	http://www.wikidata.org/entity/Q1233136
-56.21851	10.502	Poskær Stenhus	http://www.wikidata.org/entity/Q12332088
-31.98888	131.32472	Honjō Kofun Cluster	http://www.wikidata.org/entity/Q123357641
+54.51972	13.54722	Dobberworth	https://en.wikipedia.org/wiki/Dobberworth
+56.21851	10.502	Poskær Stenhus	https://en.wikipedia.org/wiki/Posk%C3%A6r_Stenhus
+31.98888	131.32472	Honjō Kofun Cluster	https://en.wikipedia.org/wiki/Honj%C5%8D_Kofun_Cluster
 55.67588	12.30084	Q12336224	http://www.wikidata.org/entity/Q12336224
 54.68	8.31881	Q123373960	http://www.wikidata.org/entity/Q123373960
 57.0692	10.1981	Q12344364	http://www.wikidata.org/entity/Q12344364
-32.10241	131.37472	Matsumotozuka Kofun	http://www.wikidata.org/entity/Q123472153
+32.10241	131.37472	Matsumotozuka Kofun	https://en.wikipedia.org/wiki/Matsumotozuka_Kofun
 51.88787	-5.02452	Barnard's Hill	http://www.wikidata.org/entity/Q123519101
 51.56169	-3.51093	Mynwent y Milwyr	http://www.wikidata.org/entity/Q123520218
 56.23389	-2.88359	Flagstaff Hill barrow	http://www.wikidata.org/entity/Q123575064
@@ -1390,11 +1390,11 @@
 47.63455	-2.95705	Kernourz dolmen	http://www.wikidata.org/entity/Q1235878
 59.15178	27.38005	Q12365785	http://www.wikidata.org/entity/Q12365785
 39.84676	18.23395	Salve tumulus	http://www.wikidata.org/entity/Q124290932
-33.00305	130.47083	Haginoo Kofun	http://www.wikidata.org/entity/Q124683795
+33.00305	130.47083	Haginoo Kofun	https://en.wikipedia.org/wiki/Haginoo_Kofun
 48.402	13.478	Q124815055	http://www.wikidata.org/entity/Q124815055
-33.32555	130.71166	Tanushimaru Kofun Cluster	http://www.wikidata.org/entity/Q124818740
-33.32888	130.79861	Tsukahanazuka Kofun	http://www.wikidata.org/entity/Q124854030
-33.3325	130.79444	Kusumyō-Shigesada Kofun	http://www.wikidata.org/entity/Q124854035
+33.32555	130.71166	Tanushimaru Kofun Cluster	https://en.wikipedia.org/wiki/Tanushimaru_Kofun_Cluster
+33.32888	130.79861	Tsukahanazuka Kofun	https://en.wikipedia.org/wiki/Tsukahanazuka_Kofun
+33.3325	130.79444	Kusumyō-Shigesada Kofun	https://en.wikipedia.org/wiki/Kusumy%C5%8D-Shigesada_Kofun
 43.2409	-2.1873	Q124986742	http://www.wikidata.org/entity/Q124986742
 43.2362	-2.18224	Q124986757	http://www.wikidata.org/entity/Q124986757
 43.2343	-2.1853	Q124986763	http://www.wikidata.org/entity/Q124986763
@@ -1409,7 +1409,7 @@
 49.41501	9.22505	Q125122780	http://www.wikidata.org/entity/Q125122780
 35.6341	139.5698	Kabutoduka Kofun	http://www.wikidata.org/entity/Q125145599
 35.6334	139.5746	Kyozuka Kofun	http://www.wikidata.org/entity/Q125145647
-33.49805	130.43111	Antoku Ōtsuka Kofun	http://www.wikidata.org/entity/Q125236214
+33.49805	130.43111	Antoku Ōtsuka Kofun	https://en.wikipedia.org/wiki/Antoku_%C5%8Czuka_Kofun
 49.40685	9.21158	Q125268187	http://www.wikidata.org/entity/Q125268187
 49.40542	9.21415	Q125268216	http://www.wikidata.org/entity/Q125268216
 48.09767	14.84955	Q125358664	http://www.wikidata.org/entity/Q125358664
@@ -2212,8 +2212,8 @@
 46.77951	15.64546	Q126122400	http://www.wikidata.org/entity/Q126122400
 46.92321	7.18064	Neuried, tumulus necropolis of the Iron Age	http://www.wikidata.org/entity/Q126190076
 55.65396	22.75817	Q12647239	http://www.wikidata.org/entity/Q12647239
-33.45277	130.05444	Taniguchi Kofun	http://www.wikidata.org/entity/Q126475056
-33.43444	130.03361	Yokotashimo Kofun	http://www.wikidata.org/entity/Q126475248
+33.45277	130.05444	Taniguchi Kofun	https://en.wikipedia.org/wiki/Taniguchi_Kofun
+33.43444	130.03361	Yokotashimo Kofun	https://en.wikipedia.org/wiki/Yokotashimo_Kofun
 54.77777	24.70555	Q12648006	http://www.wikidata.org/entity/Q12648006
 55.23055	25.24166	Q12650156	http://www.wikidata.org/entity/Q12650156
 55.83274	21.39573	Q12650538	http://www.wikidata.org/entity/Q12650538
@@ -2247,7 +2247,7 @@
 55.86111	21.20891	Q12680070	http://www.wikidata.org/entity/Q12680070
 54.599	22.92777	Šukių piliakalnis	http://www.wikidata.org/entity/Q12680155
 40.67732	22.94191	Lembet tumulus	http://www.wikidata.org/entity/Q126891232
-32.97676	130.60586	Eta Anakannon Kofun	http://www.wikidata.org/entity/Q127163728
+32.97676	130.60586	Eta Anakannon Kofun	https://en.wikipedia.org/wiki/Eta_Anakannon_Kofun
 34.82309	135.37518	Nakasujiyamate-Higashi Kofun Group	http://www.wikidata.org/entity/Q127425168
 55.99006	12.54965	Q127512663	http://www.wikidata.org/entity/Q127512663
 42.19276	13.26121	Corvaro tumulus	http://www.wikidata.org/entity/Q127667481
@@ -2257,9 +2257,9 @@
 41.51818	26.2378	Mikri Doksipara Zoni tomb	http://www.wikidata.org/entity/Q12885570
 56.50004	10.73574	Q1297039	http://www.wikidata.org/entity/Q1297039
 55.65563	12.20541	Q130056885	http://www.wikidata.org/entity/Q130056885
-32.99611	130.66972	Iwabaru Kofun cluster	http://www.wikidata.org/entity/Q130282222
-32.95166	130.57666	Eianji Higashi Kofun - Eianji Nishi Kofun	http://www.wikidata.org/entity/Q130282227
-32.78444	130.63083	Segonkō Kofun	http://www.wikidata.org/entity/Q130300888
+32.99611	130.66972	Iwabaru Kofun cluster	https://en.wikipedia.org/wiki/Iwabaru_Kofun_cluster
+32.95166	130.57666	Eianji Higashi Kofun - Eianji Nishi Kofun	https://en.wikipedia.org/wiki/Eianji_Higashi_Kofun_-_Eianji_Nishi_Kofun
+32.78444	130.63083	Segonkō Kofun	https://en.wikipedia.org/wiki/Segonk%C5%8D_Kofun
 50.864	0.03533	Round-the-Down barrow	http://www.wikidata.org/entity/Q130310063
 42.02439	12.4143	Q130380897	http://www.wikidata.org/entity/Q130380897
 33.34569	130.77361	Tsukandō Kofun	http://www.wikidata.org/entity/Q130406897
@@ -2271,7 +2271,7 @@
 36.24655	139.55506	Q130682548	http://www.wikidata.org/entity/Q130682548
 51.50912	12.94233	Tumulus Kolbitzer Heide	http://www.wikidata.org/entity/Q130684621
 36.28222	139.71277	Q130718864	http://www.wikidata.org/entity/Q130718864
-46.374	-0.0675	Tumulus of Bougon	http://www.wikidata.org/entity/Q1310277
+46.374	-0.0675	Tumulus of Bougon	https://en.wikipedia.org/wiki/Tumulus_of_Bougon
 49.74561	6.32583	Q13105301	http://www.wikidata.org/entity/Q13105301
 52.0693	-3.9044	Banc Maes-yr-Haidd barrows	http://www.wikidata.org/entity/Q13125710
 53.06796	-3.41552	Bedd Emlyn	http://www.wikidata.org/entity/Q13125776
@@ -2392,7 +2392,7 @@
 52.45679	6.84129	Dolmen of Mander	http://www.wikidata.org/entity/Q13729209
 53.7752	9.856	Tumuli in Hemdingen	http://www.wikidata.org/entity/Q1373488
 48.3187	11.9956	Q1411769	http://www.wikidata.org/entity/Q1411769
-47.58805	-3.07361	Saint-Michel tumulus	http://www.wikidata.org/entity/Q1419562
+47.58805	-3.07361	Saint-Michel tumulus	https://en.wikipedia.org/wiki/Saint-Michel_tumulus
 53.9266	10.2434	Q1442726	http://www.wikidata.org/entity/Q1442726
 50.18654	15.04408	Mohyla (Nymburk)	http://www.wikidata.org/entity/Q14435122
 53.1352	11.9747	Königsgrab von Seddin	http://www.wikidata.org/entity/Q1446501
@@ -2403,12 +2403,12 @@
 36.10047	139.31638	Q14592067	http://www.wikidata.org/entity/Q14592067
 48.2386	7.5034	Q14628631	http://www.wikidata.org/entity/Q14628631
 51.13253	6.0014	Q14629989	http://www.wikidata.org/entity/Q14629989
-38.5749	-90.231	Sugarloaf Mound	http://www.wikidata.org/entity/Q14688110
-37.6789	-84.4161	Round Hill	http://www.wikidata.org/entity/Q14691182
+38.5749	-90.231	Sugarloaf Mound	https://en.wikipedia.org/wiki/Sugarloaf_Mound
+37.6789	-84.4161	Round Hill	https://en.wikipedia.org/wiki/Round_Hill,_Kentucky
 48.9741	11.6893	Q1471767	http://www.wikidata.org/entity/Q1471767
-51.1903	11.1697	Leubingen tumulus	http://www.wikidata.org/entity/Q1483247
+51.1903	11.1697	Leubingen tumulus	https://en.wikipedia.org/wiki/Leubingen_tumulus
 47.35416	8.48222	Fürstengrabhügel Sonnenbühl	http://www.wikidata.org/entity/Q1483252
-47.90251	4.54337	Vix grave	http://www.wikidata.org/entity/Q1483632
+47.90251	4.54337	Vix grave	https://en.wikipedia.org/wiki/Vix_Grave
 51.2335	6.07324	tumuli Bosberg Swalmen	http://www.wikidata.org/entity/Q14851275
 51.22924	6.06384	tumuli Kroppestraat Swalmen	http://www.wikidata.org/entity/Q14851276
 53.9287	13.3177	Grabhügel Zarrenthin	http://www.wikidata.org/entity/Q14912246
@@ -2420,13 +2420,13 @@
 53.908	13.433	Gerichtsberg	http://www.wikidata.org/entity/Q1513020
 50.4269	-5.06168	Promontory fort and two bowl barrows at Trevelgue Head	http://www.wikidata.org/entity/Q15132529
 50.42693	-5.06323	Promontory fort and two bowl barrows at Trevelgue Head	http://www.wikidata.org/entity/Q15132529
-53.1124	-1.68869	Minninglow	http://www.wikidata.org/entity/Q1515026
-52.0797	0.31342	Bartlow Hills	http://www.wikidata.org/entity/Q15196890
-52.0796	0.3137	Bartlow Hills	http://www.wikidata.org/entity/Q15196890
+53.1124	-1.68869	Minninglow	https://en.wikipedia.org/wiki/Minninglow
+52.0797	0.31342	Bartlow Hills	https://en.wikipedia.org/wiki/Bartlow_Hills
+52.0796	0.3137	Bartlow Hills	https://en.wikipedia.org/wiki/Bartlow_Hills
 60.14153	17.57548	Ottarshögen	http://www.wikidata.org/entity/Q1536026
 60.14154	17.57549	Ottarshögen	http://www.wikidata.org/entity/Q1536026
-34.62972	135.04583	Goshikizuka kofun	http://www.wikidata.org/entity/Q1538541
-55.6825	14.23388	The King's Grave	http://www.wikidata.org/entity/Q1540741
+34.62972	135.04583	Goshikizuka kofun	https://en.wikipedia.org/wiki/Goshikizuka_(Sentsubo)_Kofun
+55.6825	14.23388	The King's Grave	https://en.wikipedia.org/wiki/The_King%27s_Grave
 48.3143	12.0332	Q1540793	http://www.wikidata.org/entity/Q1540793
 48.302	12.0073	Q1540794	http://www.wikidata.org/entity/Q1540794
 48.3141	12.033	Q1540795	http://www.wikidata.org/entity/Q1540795
@@ -2439,26 +2439,26 @@
 53.9927	10.71	Grabhügel bei Pansdorf	http://www.wikidata.org/entity/Q1540811
 52.6317	7.33475	Q1540817	http://www.wikidata.org/entity/Q1540817
 50.6156	10.5622	Q1540821	http://www.wikidata.org/entity/Q1540821
-59.83722	17.58694	Håga kurgan	http://www.wikidata.org/entity/Q1540834
+59.83722	17.58694	Håga kurgan	https://en.wikipedia.org/wiki/H%C3%A5ga_mound
 56.07407	12.16602	Q1540856	http://www.wikidata.org/entity/Q1540856
 56.2186	15.406	Hjortsberga grave field	http://www.wikidata.org/entity/Q1551286
 56.22437	15.40609	Hjortsberga grave field	http://www.wikidata.org/entity/Q1551286
 56.1685	15.4611	Hjortahammars grave field	http://www.wikidata.org/entity/Q1551334
-57.74638	14.17222	Sagaholm	http://www.wikidata.org/entity/Q1559140
+57.74638	14.17222	Sagaholm	https://en.wikipedia.org/wiki/Sagaholm
 55.18455	10.17382	Q15635762	http://www.wikidata.org/entity/Q15635762
 46.24716	0.06253	Tumulus du Montioux	http://www.wikidata.org/entity/Q15638587
 56.35499	10.57523	Q15842980	http://www.wikidata.org/entity/Q15842980
 49.35798	-1.25017	Vierville tumulus	http://www.wikidata.org/entity/Q15851692
 54.1557	-2.22127	Giants’ Graves	http://www.wikidata.org/entity/Q15857796
-48.00022	-2.26869	Hotié de Viviane	http://www.wikidata.org/entity/Q1590832
+48.00022	-2.26869	Hotié de Viviane	https://en.wikipedia.org/wiki/Hoti%C3%A9_de_Viviane
 47.60388	-3.05638	quadrilatère du Manio	http://www.wikidata.org/entity/Q15930186
 56.08908	12.4793	Q1594193	http://www.wikidata.org/entity/Q1594193
 55.4154	13.12658	Brytestuhög	http://www.wikidata.org/entity/Q15977271
 49.0964	-0.35444	Tumulus de la Hoguette	http://www.wikidata.org/entity/Q16008672
 35.21416	126.84194	Gwangju Wolgye-dong Janggobun	http://www.wikidata.org/entity/Q16094290
-35.83333	129.12	Gyeongju Geumcheok-ri Ancient Tombs	http://www.wikidata.org/entity/Q16095309
+35.83333	129.12	Gyeongju Geumcheok-ri Ancient Tombs	https://en.wikipedia.org/wiki/Ancient_Tombs_in_Geumcheok-ri,_Gyeongju
 54.5326	-2.68689	Skellaw Hill bowl barrow	http://www.wikidata.org/entity/Q1618654
-48.6467	-94.0742	Kay-Nah-Chi-Wah-Nung	http://www.wikidata.org/entity/Q16211975
+48.6467	-94.0742	Kay-Nah-Chi-Wah-Nung	https://en.wikipedia.org/wiki/Kay-Nah-Chi-Wah-Nung
 48.09388	9.38361	Hohmichele	http://www.wikidata.org/entity/Q1624118
 51.80579	11.78842	Pfingstberg	http://www.wikidata.org/entity/Q16320622
 55.7781	12.4932	Q16323354	http://www.wikidata.org/entity/Q16323354
@@ -2490,25 +2490,25 @@
 54.6421	9.76814	Kummerhy tomb	http://www.wikidata.org/entity/Q1652127
 51.62723	13.26882	Hügelgräberfeld Schweinert	http://www.wikidata.org/entity/Q1652137
 55.08803	8.92154	Vongshøj	http://www.wikidata.org/entity/Q1658360
-33.37958	-92.57101	Boone's Mounds	http://www.wikidata.org/entity/Q16844517
+33.37958	-92.57101	Boone's Mounds	https://en.wikipedia.org/wiki/Boone%27s_Mounds
 49.60291	15.73683	Žižkova mohyla	http://www.wikidata.org/entity/Q16963217
 36.20075	139.08463	Q17190898	http://www.wikidata.org/entity/Q17190898
 36.387	139.20752	Akabori Chausuyama Kofun	http://www.wikidata.org/entity/Q17191031
 36.17583	139.14547	Akiyama Kofun Group	http://www.wikidata.org/entity/Q17191085
 36.24944	139.16955	Q17191210	http://www.wikidata.org/entity/Q17191210
-36.40421	139.81142	Azuma Kofun	http://www.wikidata.org/entity/Q17191453
+36.40421	139.81142	Azuma Kofun	https://en.wikipedia.org/wiki/Azuma_Kofun
 35.47094	140.05144	Anesaki Kofun Cluster	http://www.wikidata.org/entity/Q17191614
 35.37444	140.29319	Aburaden Kofun Group	http://www.wikidata.org/entity/Q17191671
 37.51244	139.94605	Q17193286	http://www.wikidata.org/entity/Q17193286
 36.03788	139.32516	Q17193416	http://www.wikidata.org/entity/Q17193416
 35.3171	136.01427	Inariyama Kofun	http://www.wikidata.org/entity/Q17193420
 35.9203	139.444	Q17194115	http://www.wikidata.org/entity/Q17194115
-36.38886	139.19422	Ushirofutago Kofun	http://www.wikidata.org/entity/Q17194124
+36.38886	139.19422	Ushirofutago Kofun	https://en.wikipedia.org/wiki/Ushirofutago_Kofun
 35.40288	139.92913	Q17209455	http://www.wikidata.org/entity/Q17209455
 36.19465	139.37007	Q17209615	http://www.wikidata.org/entity/Q17209615
 35.80033	139.53219	Taki-no-jō Cave Tombs	http://www.wikidata.org/entity/Q17209840
 34.55074	135.73732	Nikiyama Kofun	http://www.wikidata.org/entity/Q17210019
-36.37233	139.80591	Marishitenzuka-kofun	http://www.wikidata.org/entity/Q17210244
+36.37233	139.80591	Marishitenzuka-kofun	https://en.wikipedia.org/wiki/Marishitenzuka_Kofun
 35.95536	139.70508	Q17210329	http://www.wikidata.org/entity/Q17210329
 37.56631	139.80969	Kinegamori-kofun	http://www.wikidata.org/entity/Q17211679
 33.53669	130.24155	Mikumo-Minamishōji Site	http://www.wikidata.org/entity/Q17211693
@@ -2520,28 +2520,28 @@
 35.97222	139.43555	Q17211891	http://www.wikidata.org/entity/Q17211891
 36.08716	139.38827	Q17211898	http://www.wikidata.org/entity/Q17211898
 36.09455	139.46088	Q17211957	http://www.wikidata.org/entity/Q17211957
-34.58388	135.76572	Shimanoyama Kofun	http://www.wikidata.org/entity/Q17213138
+34.58388	135.76572	Shimanoyama Kofun	https://en.wikipedia.org/wiki/Shimanoyama_Kofun
 36.30386	139.07875	Q17213285	http://www.wikidata.org/entity/Q17213285
 33.31347	130.24138	Funazuka-kofun	http://www.wikidata.org/entity/Q17213450
 35.89983	139.4618	Q17213764	http://www.wikidata.org/entity/Q17213764
-36.4068	139.0398	Jaketsuzan Kofun	http://www.wikidata.org/entity/Q17214029
+36.4068	139.0398	Jaketsuzan Kofun	https://en.wikipedia.org/wiki/Jaketsuzan_Kofun
 36.2608	139.36127	Q17214570	http://www.wikidata.org/entity/Q17214570
-33.31786	130.29983	Choshizuka-kofun	http://www.wikidata.org/entity/Q17214579
+33.31786	130.29983	Choshizuka-kofun	https://en.wikipedia.org/wiki/Ch%C5%8Dshizuka_Kofun_(Saga)
 36.105	139.29805	Q17214691	http://www.wikidata.org/entity/Q17214691
 35.36186	140.30447	Q17214992	http://www.wikidata.org/entity/Q17214992
 35.0869	135.30445	Kumobe Kurumazuka Kofun	http://www.wikidata.org/entity/Q17215205
 36.05025	139.34425	Q17215327	http://www.wikidata.org/entity/Q17215327
 36.38958	139.19375	Shofutago Kofun	http://www.wikidata.org/entity/Q17215924
-35.28183	139.8583	Bentenyama Kofun	http://www.wikidata.org/entity/Q17216710
-36.25444	139.04	Shiroishi Inariyama Kofun	http://www.wikidata.org/entity/Q17216721
+35.28183	139.8583	Bentenyama Kofun	https://en.wikipedia.org/wiki/Bentenyama_Kofun
+36.25444	139.04	Shiroishi Inariyama Kofun	https://en.wikipedia.org/wiki/Shiroishi_Inariyama_Kofun
 36.19744	139.09569	Q17216770	http://www.wikidata.org/entity/Q17216770
 36.21275	139.24469	Q17216941	http://www.wikidata.org/entity/Q17216941
-36.4073	139.03863	Hōtōzan Kofun	http://www.wikidata.org/entity/Q17217330
+36.4073	139.03863	Hōtōzan Kofun	https://en.wikipedia.org/wiki/H%C5%8Dt%C5%8Dzan_Kofun
 35.92369	139.58244	Q17217378	http://www.wikidata.org/entity/Q17217378
 35.32433	139.86247	Q17218106	http://www.wikidata.org/entity/Q17218106
 35.86166	140.03477	Q17218339	http://www.wikidata.org/entity/Q17218339
 36.20653	140.07812	Hachimanzuka-kofun	http://www.wikidata.org/entity/Q17218702
-35.15364	136.92399	Hachimanyama Kofun	http://www.wikidata.org/entity/Q17218723
+35.15364	136.92399	Hachimanyama Kofun	https://en.wikipedia.org/wiki/Hachimanyama_Kofun_(Nagoya)
 35.25725	137.025	Q17218737	http://www.wikidata.org/entity/Q17218737
 35.78022	140.29052	Q17218822	http://www.wikidata.org/entity/Q17218822
 35.49152	140.11019	Gōdo Kofun Cluster	http://www.wikidata.org/entity/Q17218920
@@ -2558,18 +2558,18 @@
 36.06038	139.09686	Q17220604	http://www.wikidata.org/entity/Q17220604
 35.98741	140.54905	Ōu-kofungun	http://www.wikidata.org/entity/Q17221219
 36.36491	139.10394	Maebashi-tenjinnyama-kofun	http://www.wikidata.org/entity/Q17221367
-36.3765	139.08863	Maebashi-futagoyama-kofun	http://www.wikidata.org/entity/Q17221378
+36.3765	139.08863	Maebashi-futagoyama-kofun	https://en.wikipedia.org/wiki/Maebashi_Futagoyama_Kofun
 36.20366	139.2443	Q17221403	http://www.wikidata.org/entity/Q17221403
-36.38616	139.19616	Maefutago Kofun	http://www.wikidata.org/entity/Q17221412
+36.38616	139.19616	Maefutago Kofun	https://en.wikipedia.org/wiki/Maefutago_Kofun
 35.58369	139.60097	Q17221656	http://www.wikidata.org/entity/Q17221656
 36.10613	139.38152	Q17221779	http://www.wikidata.org/entity/Q17221779
 36.06572	139.08975	Q17222239	http://www.wikidata.org/entity/Q17222239
-36.34016	138.94008	Hachiman Kannonzuka Kofun	http://www.wikidata.org/entity/Q17222413
+36.34016	138.94008	Hachiman Kannonzuka Kofun	https://en.wikipedia.org/wiki/Hachiman_Kannonzuka_Kofun
 35.9983	139.49255	Q17222628	http://www.wikidata.org/entity/Q17222628
 35.91716	139.48947	Q17222690	http://www.wikidata.org/entity/Q17222690
-36.56972	138.10944	Senryū Shōgunzuka Kofun	http://www.wikidata.org/entity/Q17222794
+36.56972	138.10944	Senryū Shōgunzuka Kofun	https://en.wikipedia.org/wiki/Senry%C5%AB-Sh%C5%8Dgunzuka_Kofun
 36.41019	139.03611	Soja Atagoyama Kofun	http://www.wikidata.org/entity/Q17222958
-36.41138	139.0348	Sōja Futagoyama Kofun	http://www.wikidata.org/entity/Q17222973
+36.41138	139.0348	Sōja Futagoyama Kofun	https://en.wikipedia.org/wiki/S%C5%8Dja_Futagoyama_Kofun
 36.16972	140.33638	Q17223134	http://www.wikidata.org/entity/Q17223134
 36.13369	139.30638	Q17223535	http://www.wikidata.org/entity/Q17223535
 35.89552	139.59988	Q17223600	http://www.wikidata.org/entity/Q17223600
@@ -2583,13 +2583,13 @@
 36.18588	139.19997	Q17225511	http://www.wikidata.org/entity/Q17225511
 36.07863	139.40675	Kabutoyama Kofun	http://www.wikidata.org/entity/Q17225835
 35.70305	140.39527	Q17226251	http://www.wikidata.org/entity/Q17226251
-35.43297	140.24025	Nagara Ruins	http://www.wikidata.org/entity/Q17226522
+35.43297	140.24025	Nagara Ruins	https://en.wikipedia.org/wiki/Nagara_Cave_Tomb_Cluster
 35.64516	139.4278	Q17226537	http://www.wikidata.org/entity/Q17226537
 36.21691	139.18219	Q17227899	http://www.wikidata.org/entity/Q17227899
 34.58594	135.7428	Kawai Otsukayama Kofun	http://www.wikidata.org/entity/Q17227934
-36.29451	139.03872	Otsurumaki-kofun	http://www.wikidata.org/entity/Q17227935
+36.29451	139.03872	Otsurumaki-kofun	https://en.wikipedia.org/wiki/%C5%8Ctsurumaki_Kofun
 36.01888	139.43	Q17227988	http://www.wikidata.org/entity/Q17227988
-33.38834	130.66483	Oda Chausutsuka Kofun	http://www.wikidata.org/entity/Q17228007
+33.38834	130.66483	Oda Chausutsuka Kofun	https://en.wikipedia.org/wiki/Oda_Chausutsuka_Kofun
 36.33803	139.17211	Ofujiyama-kofun	http://www.wikidata.org/entity/Q17228034
 36.20424	139.15504	Q17228145	http://www.wikidata.org/entity/Q17228145
 34.6152	134.14409	Q17228158	http://www.wikidata.org/entity/Q17228158
@@ -2601,12 +2601,12 @@
 33.34488	130.76577	Tsukinooka Kofun	http://www.wikidata.org/entity/Q17229177
 36.21955	139.23094	Q17229373	http://www.wikidata.org/entity/Q17229373
 36.18475	139.13233	Q17229414	http://www.wikidata.org/entity/Q17229414
-36.3873	139.1948	Nakafutago Kofun	http://www.wikidata.org/entity/Q17229473
-36.29186	139.39433	Nyotaisan Kofun	http://www.wikidata.org/entity/Q17229664
+36.3873	139.1948	Nakafutago Kofun	https://en.wikipedia.org/wiki/Nakafutago_Kofun
+36.29186	139.39433	Nyotaisan Kofun	https://en.wikipedia.org/wiki/Nyotaizan_Kofun
 36.10436	139.35244	Q17229712	http://www.wikidata.org/entity/Q17229712
 36.01805	139.41252	Nomoto Shōgunzuka Kofun	http://www.wikidata.org/entity/Q17229719
-36.37524	139.80713	Biwazuka-kofun	http://www.wikidata.org/entity/Q17230002
-36.36711	139.10083	Maebashi-hachimanyama-kofun	http://www.wikidata.org/entity/Q17230312
+36.37524	139.80713	Biwazuka-kofun	https://en.wikipedia.org/wiki/Biwazuka_Kofun
+36.36711	139.10083	Maebashi-hachimanyama-kofun	https://en.wikipedia.org/wiki/Hachimanyama_Kofun_(Maebashi)
 36.0513	139.78555	Q17230523	http://www.wikidata.org/entity/Q17230523
 55.01918	9.88236	Korssten	http://www.wikidata.org/entity/Q17275549
 38.11796	23.97832	Soros	http://www.wikidata.org/entity/Q17276497
@@ -3169,7 +3169,7 @@
 50.1008	-5.2237	Bowl barrow on Boskenwyn Downs	http://www.wikidata.org/entity/Q17642117
 51.1955	-3.59616	Doverhay Down round barrow, Porlock	http://www.wikidata.org/entity/Q17642122
 51.2134	-2.52469	Two round barrows on Beacon Hill	http://www.wikidata.org/entity/Q17642153
-51.1683	-3.66511	Alderman's Barrow at N of Almsworthy Common	http://www.wikidata.org/entity/Q17642164
+51.1683	-3.66511	Alderman's Barrow at N of Almsworthy Common	https://en.wikipedia.org/wiki/Alderman%27s_Barrow
 51.4231	-2.46453	Round barrow	http://www.wikidata.org/entity/Q17642166
 51.1623	-3.81109	Bowl barrow called Chains Barrow	http://www.wikidata.org/entity/Q17642176
 51.2144	-3.68035	Two round barrows on Culbone Hill	http://www.wikidata.org/entity/Q17642180
@@ -5209,7 +5209,7 @@
 51.2056	-1.71679	Bowl barrow: one of a group of round barrows on Milston-Bulford Down	http://www.wikidata.org/entity/Q17650576
 50.665	-1.44947	Round barrow cemetery on Brook Down	http://www.wikidata.org/entity/Q17650584
 54.62	-2.93575	Bowl barrow on Great Mell Fell	http://www.wikidata.org/entity/Q17650585
-50.9542	-1.9752	Group of round barrows on Oakley Down	http://www.wikidata.org/entity/Q17650587
+50.9542	-1.9752	Group of round barrows on Oakley Down	https://en.wikipedia.org/wiki/Oakley_Down_Barrow_Cemetery
 52.4006	-2.57678	Round cairn on Titterstone Clee Hill	http://www.wikidata.org/entity/Q17650592
 51.5306	-0.60263	Bowl barrow in Stoke Park Playing Field	http://www.wikidata.org/entity/Q17650593
 50.6559	-1.4141	Bowl barrow known as 'Black Barrow':	http://www.wikidata.org/entity/Q17650596
@@ -6628,7 +6628,7 @@
 53.0427	-0.87087	Bowl barrow	http://www.wikidata.org/entity/Q17671834
 52.0747	0.00473	Bowl barrow	http://www.wikidata.org/entity/Q17671844
 50.7134	-4.0062	Round cairn on Black Down	http://www.wikidata.org/entity/Q17671852
-50.9552	-1.98385	Wor Barrow and two bowl barrows on Handley Down	http://www.wikidata.org/entity/Q17671858
+50.9552	-1.98385	Wor Barrow and two bowl barrows on Handley Down	https://en.wikipedia.org/wiki/Wor_Barrow
 51.0017	-1.86284	Bowl barrow on Little Toyd Down	http://www.wikidata.org/entity/Q17671860
 51.0266	-1.83809	Bowl barrow on Homington Down	http://www.wikidata.org/entity/Q17671872
 50.5947	-1.29383	Bowl barrow	http://www.wikidata.org/entity/Q17671873
@@ -7125,7 +7125,7 @@
 51.1737	-3.56234	Round cairn cemetery on Dunkery Hill	http://www.wikidata.org/entity/Q17674929
 54.3513	-0.60333	Brecken Howe round barrow	http://www.wikidata.org/entity/Q17674931
 52.2257	0.35935	Bowl barrow	http://www.wikidata.org/entity/Q17674933
-50.6571	-2.29811	The Five Marys round barrow cemetery	http://www.wikidata.org/entity/Q17674934
+50.6571	-2.29811	The Five Marys round barrow cemetery	https://en.wikipedia.org/wiki/Five_Marys
 52.7403	0.74394	Bowl barrow	http://www.wikidata.org/entity/Q17674938
 50.8339	0.10419	Bowl barrow	http://www.wikidata.org/entity/Q17674940
 54.3496	-0.58986	Round barrow on Lun Rigg	http://www.wikidata.org/entity/Q17674944
@@ -7210,7 +7210,7 @@
 51.9729	-1.78104	Two bowl barrows	http://www.wikidata.org/entity/Q17675202
 54.3849	-1.22689	Round barrow	http://www.wikidata.org/entity/Q17675209
 51.2375	-0.8248	Round barrow cemetery at Heath Brow, Ewshot	http://www.wikidata.org/entity/Q17675213
-50.8683	-0.44674	Prehistoric flint mine and part of a round barrow cemetery at Blackpatch	http://www.wikidata.org/entity/Q17675216
+50.8683	-0.44674	Prehistoric flint mine and part of a round barrow cemetery at Blackpatch	https://en.wikipedia.org/wiki/Blackpatch
 50.8069	-2.41725	Bowl barrow on East Hill	http://www.wikidata.org/entity/Q17675217
 51.3841	-1.90418	Bowl barrow on Kitchen Barrow Hill	http://www.wikidata.org/entity/Q17675220
 51.5225	-2.17241	Bowl barrow	http://www.wikidata.org/entity/Q17675221
@@ -7236,7 +7236,7 @@
 50.8373	-2.46958	Bowl barrow on Little Minterne Hill, 1km north east of Minterne Parva Farm	http://www.wikidata.org/entity/Q17675313
 52.7918	0.71752	Bowl barrow north and west of Gravelpit Wood	http://www.wikidata.org/entity/Q17675316
 53.9718	-0.62991	Round barrow	http://www.wikidata.org/entity/Q17675319
-50.9567	-2.06709	South Lodge camp Bronze Age enclosure with associated field system and round barrow cemetery	http://www.wikidata.org/entity/Q17675327
+50.9567	-2.06709	South Lodge camp Bronze Age enclosure with associated field system and round barrow cemetery	https://en.wikipedia.org/wiki/South_Lodge_Camp
 50.8179	-1.66152	Bowl barrow	http://www.wikidata.org/entity/Q17675328
 50.687	-2.40253	Bowl barrow	http://www.wikidata.org/entity/Q17675331
 52.7982	0.71902	Two bowl barrows on West Rudham Common	http://www.wikidata.org/entity/Q17675333
@@ -8155,83 +8155,83 @@
 50.9571	-0.61974	Bowl Barrow South Of Burton Rough	http://www.wikidata.org/entity/Q17905088
 50.7365	-2.59085	Bowl Barrow	http://www.wikidata.org/entity/Q17905104
 50.961	-2.11594	Bowl Barrow On Woodley Down	http://www.wikidata.org/entity/Q17905105
-34.55992	135.84311	Kurozuka Kofun	http://www.wikidata.org/entity/Q1793171
-36.43269	139.80997	Atagozuka Kofun (Mibu)	http://www.wikidata.org/entity/Q17988414
+34.55992	135.84311	Kurozuka Kofun	https://en.wikipedia.org/wiki/Kurozuka_Kofun
+36.43269	139.80997	Atagozuka Kofun (Mibu)	https://en.wikipedia.org/wiki/Atagozuka_Kofun_(Mibu)
 49.09569	-0.36236	Tumulus de la Hogue	http://www.wikidata.org/entity/Q1798858
-35.39991	133.19011	Iwafune Kofun	http://www.wikidata.org/entity/Q17989005
-36.4373	139.80766	Ushizuka Kofun (Mibu)	http://www.wikidata.org/entity/Q17989167
-35.97444	136.18336	Kabutoyama Kofun	http://www.wikidata.org/entity/Q17990172
-37.05319	140.94191	Kabutozuka Kofun	http://www.wikidata.org/entity/Q17990175
+35.39991	133.19011	Iwafune Kofun	https://en.wikipedia.org/wiki/Iwafune_Kofun
+36.4373	139.80766	Ushizuka Kofun (Mibu)	https://en.wikipedia.org/wiki/Ushizuka_Kofun_(Mibu)
+35.97444	136.18336	Kabutoyama Kofun	https://en.wikipedia.org/wiki/Kabutoyama_Kofun
+37.05319	140.94191	Kabutozuka Kofun	https://en.wikipedia.org/wiki/Kabutozuka_Kofun_(Iwaki)
 36.80586	140.12472	Kamisamuraizuka Kofun	http://www.wikidata.org/entity/Q17990203
-35.47019	135.81425	Kamifunazuka Kofun	http://www.wikidata.org/entity/Q17990214
-36.74377	140.15663	Karanogosho Cave Tomb	http://www.wikidata.org/entity/Q17990243
-37.06	138.23194	Kannondaira-Tenjindō Kofun Group	http://www.wikidata.org/entity/Q17990293
-36.30819	136.37966	Kitsuneyama Kofun	http://www.wikidata.org/entity/Q17990344
-34.5032	135.84568	Kusahaka Kofun	http://www.wikidata.org/entity/Q17990549
-36.43719	139.80944	Mibu-Kurumazuka Kofun	http://www.wikidata.org/entity/Q17990657
+35.47019	135.81425	Kamifunazuka Kofun	https://en.wikipedia.org/wiki/Kamifunazuka_Kofun
+36.74377	140.15663	Karanogosho Cave Tomb	https://en.wikipedia.org/wiki/Karanogosho_Cave_Tomb
+37.06	138.23194	Kannondaira-Tenjindō Kofun Group	https://en.wikipedia.org/wiki/Kannondaira-Tenjind%C5%8D_Kofun_Group
+36.30819	136.37966	Kitsuneyama Kofun	https://en.wikipedia.org/wiki/Kitsuneyama_Kofun
+34.5032	135.84568	Kusahaka Kofun	https://en.wikipedia.org/wiki/Kusabaka_Kofun
+36.43719	139.80944	Mibu-Kurumazuka Kofun	https://en.wikipedia.org/wiki/Kurumazuka_Kofun_(Mibu)
 35.1105	135.4463	Kuroda-kofun	http://www.wikidata.org/entity/Q17990695
 33.23663	130.51983	Q17990964	http://www.wikidata.org/entity/Q17990964
-36.81625	137.03194	Sakuradani Kofun	http://www.wikidata.org/entity/Q17991834
-35.0675	133.89805	Sannari Kofun	http://www.wikidata.org/entity/Q17992278
-38.02305	140.03888	Shimokomatsu Kofun Cluster	http://www.wikidata.org/entity/Q17992895
-35.47113	135.81441	Shimofunazuka Kofun	http://www.wikidata.org/entity/Q17992906
-35.46805	135.8745	Jōnozuka Kofun	http://www.wikidata.org/entity/Q17993480
-36.09305	136.31477	Matsuoka Kofun Cluster	http://www.wikidata.org/entity/Q17993485
-34.47275	135.808	Shobuike Kofun	http://www.wikidata.org/entity/Q17993516
-33.09447	130.48016	Sekijinsan Kofun	http://www.wikidata.org/entity/Q17994942
+36.81625	137.03194	Sakuradani Kofun	https://en.wikipedia.org/wiki/Sakuradani_Kofun
+35.0675	133.89805	Sannari Kofun	https://en.wikipedia.org/wiki/Sannari_Kofun
+38.02305	140.03888	Shimokomatsu Kofun Cluster	https://en.wikipedia.org/wiki/Shimokomatsu_Kofun_Cluster
+35.47113	135.81441	Shimofunazuka Kofun	https://en.wikipedia.org/wiki/Shimofunazuka_Kofun
+35.46805	135.8745	Jōnozuka Kofun	https://en.wikipedia.org/wiki/J%C5%8Dnozuka_Kofun
+36.09305	136.31477	Matsuoka Kofun Cluster	https://en.wikipedia.org/wiki/Matsuoka_Kofun_Cluster
+34.47275	135.808	Shobuike Kofun	https://en.wikipedia.org/wiki/Sh%C5%8Dbuike_Kofun
+33.09447	130.48016	Sekijinsan Kofun	https://en.wikipedia.org/wiki/Sekijinsan_Kofun
 33.234	130.56783	Q17995346	http://www.wikidata.org/entity/Q17995346
 34.67013	133.80177	Q17995354	http://www.wikidata.org/entity/Q17995354
-43.759	-79.235	Taber Hill	http://www.wikidata.org/entity/Q180100
-40.83944	23.86277	Kasta tomb	http://www.wikidata.org/entity/Q18010006
-26.2217	-80.0926	Pompano Beach Mound	http://www.wikidata.org/entity/Q18011400
+43.759	-79.235	Taber Hill	https://en.wikipedia.org/wiki/Taber_Hill
+40.83944	23.86277	Kasta tomb	https://en.wikipedia.org/wiki/Kasta_Tomb
+26.2217	-80.0926	Pompano Beach Mound	https://en.wikipedia.org/wiki/Pompano_Beach_Mound
 48.48833	16.22312	Tumulus Großmugl	http://www.wikidata.org/entity/Q18023079
 55.99408	10.24913	Q1805298	http://www.wikidata.org/entity/Q1805298
 50.23163	6.05816	Tumulus of Hochtumsknopf	http://www.wikidata.org/entity/Q1820643
-34.50769	135.87567	Dannozuka Kofun	http://www.wikidata.org/entity/Q18233688
+34.50769	135.87567	Dannozuka Kofun	https://en.wikipedia.org/wiki/Dannozuka_Kofun
 55.43557	13.1276	Q18332810	http://www.wikidata.org/entity/Q18332810
-36.8553	136.81602	Sandenkanaya Kofun	http://www.wikidata.org/entity/Q18336996
+36.8553	136.81602	Sandenkanaya Kofun	https://en.wikipedia.org/wiki/Sandenkanaya_Kofun
 33.23736	130.51761	Sekijinsan Kofun	http://www.wikidata.org/entity/Q18337148
 33.23436	130.57055	Q18337324	http://www.wikidata.org/entity/Q18337324
-32.13867	131.41868	Chausubaru Kofun Cluster	http://www.wikidata.org/entity/Q18337325
-32.13866	131.41869	Chausubaru Kofun Cluster	http://www.wikidata.org/entity/Q18337325
-36.48947	139.77811	Chausuyama Kofun (Mibu)	http://www.wikidata.org/entity/Q18337326
+32.13867	131.41868	Chausubaru Kofun Cluster	https://en.wikipedia.org/wiki/Chausubaru_Kofun_Cluster
+32.13866	131.41869	Chausubaru Kofun Cluster	https://en.wikipedia.org/wiki/Chausubaru_Kofun_Cluster
+36.48947	139.77811	Chausuyama Kofun (Mibu)	https://en.wikipedia.org/wiki/Chausuyama_Kofun_(Mibu)
 32.96888	130.59847	Q18337360	http://www.wikidata.org/entity/Q18337360
 36.28538	139.42386	Q18337361	http://www.wikidata.org/entity/Q18337361
 33.23308	130.57425	Q18337405	http://www.wikidata.org/entity/Q18337405
-35.46727	135.87577	Nakatsuka Kofun	http://www.wikidata.org/entity/Q18337577
+35.46727	135.87577	Nakatsuka Kofun	https://en.wikipedia.org/wiki/Nakatsuka_Kofun
 36.74536	140.13597	Nasu Hachimanzuka Kofun	http://www.wikidata.org/entity/Q18337611
-35.46861	135.87302	Nishizuka Kofun	http://www.wikidata.org/entity/Q18337677
-33.32091	130.49833	Nichirinji Kofun	http://www.wikidata.org/entity/Q18337688
+35.46861	135.87302	Nishizuka Kofun	https://en.wikipedia.org/wiki/Nishizuka_Kofun
+33.32091	130.49833	Nichirinji Kofun	https://en.wikipedia.org/wiki/Nichirinji_Kofun
 33.21605	131.6338	Q18338700	http://www.wikidata.org/entity/Q18338700
 33.23105	130.55741	Q18338784	http://www.wikidata.org/entity/Q18338784
-34.508	135.90673	Hanayamazuka Kofun	http://www.wikidata.org/entity/Q18338862
+34.508	135.90673	Hanayamazuka Kofun	https://en.wikipedia.org/wiki/Hanayamazuka_Kofun
 33.54	130.24411	Q18338882	http://www.wikidata.org/entity/Q18338882
-33.34438	130.76733	Hinooka Kofun	http://www.wikidata.org/entity/Q18338989
-36.29913	136.39222	Hōōzan Cave Tombs	http://www.wikidata.org/entity/Q18339249
+33.34438	130.76733	Hinooka Kofun	https://en.wikipedia.org/wiki/Hinooka_Kofun
+36.29913	136.39222	Hōōzan Cave Tombs	https://en.wikipedia.org/wiki/H%C5%8D%C5%8Dzan_Cave_Tombs
 33.23266	130.56927	Q18339420	http://www.wikidata.org/entity/Q18339420
 34.55058	135.73511	Q18339454	http://www.wikidata.org/entity/Q18339454
 34.46363	135.82769	Q18339499	http://www.wikidata.org/entity/Q18339499
-34.61193	136.46986	Mukaiyama Kofun	http://www.wikidata.org/entity/Q18339530
-36.12886	136.07855	Mendorinagayama Kofun	http://www.wikidata.org/entity/Q18339569
+34.61193	136.46986	Mukaiyama Kofun	https://en.wikipedia.org/wiki/Mukaiyama_Kofun
+36.12886	136.07855	Mendorinagayama Kofun	https://en.wikipedia.org/wiki/Mendorinagayama_Kofun
 46.5636	4.92586	Nécropole des Près-de-l'Eau	http://www.wikidata.org/entity/Q18380087
 48.45624	16.29185	Leeberg Niederhollabrunn	http://www.wikidata.org/entity/Q18410690
-36.11747	136.31522	Rokuroseyama Kofun Cluster	http://www.wikidata.org/entity/Q18457440
-36.35863	140.47516	Yoshida Kofun	http://www.wikidata.org/entity/Q18457622
-33.53044	130.42025	Rōji Kofun	http://www.wikidata.org/entity/Q18459458
+36.11747	136.31522	Rokuroseyama Kofun Cluster	https://en.wikipedia.org/wiki/Rokuroseyama_Kofun_Cluster
+36.35863	140.47516	Yoshida Kofun	https://en.wikipedia.org/wiki/Yoshida_Kofun
+33.53044	130.42025	Rōji Kofun	https://en.wikipedia.org/wiki/R%C5%8Dji_Kofun
 34.98323	138.40191	Yatsuyama-kofun	http://www.wikidata.org/entity/Q18460128
-54.6028	-3.09843	Castlerigg stone circle	http://www.wikidata.org/entity/Q1850757
+54.6028	-3.09843	Castlerigg stone circle	https://en.wikipedia.org/wiki/Castlerigg_stone_circle
 50.78795	4.40577	Deux Tertres - Twee Heuvels	http://www.wikidata.org/entity/Q18515624
 55.03599	9.38355	Kongehøj	http://www.wikidata.org/entity/Q18535185
 56.78521	8.78743	Dalgaards Østerhøj	http://www.wikidata.org/entity/Q18558491
 46.57378	15.93491	Rimsko gomilno grobišče v Brengovi	http://www.wikidata.org/entity/Q18562641
 46.5735	15.90084	Q18562788	http://www.wikidata.org/entity/Q18562788
-51.45131	-3.30712	Tinkinswood	http://www.wikidata.org/entity/Q1859561
+51.45131	-3.30712	Tinkinswood	https://en.wikipedia.org/wiki/Tinkinswood
 55.24245	10.04479	Q18616029	http://www.wikidata.org/entity/Q18616029
 55.24393	10.04403	Lusehøj	http://www.wikidata.org/entity/Q18616031
 55.69808	9.25163	Q18628268	http://www.wikidata.org/entity/Q18628268
 54.77288	9.4037	Friedenshügel	http://www.wikidata.org/entity/Q18697773
 49.03527	4.32444	Tumuli de Bussy-le-Château	http://www.wikidata.org/entity/Q18746221
-41.99251	12.09776	Regolini-Galassi tomb	http://www.wikidata.org/entity/Q1877295
+41.99251	12.09776	Regolini-Galassi tomb	https://en.wikipedia.org/wiki/Regolini-Galassi_tomb
 48.95921	4.62416	Tombeau de Théodoric	http://www.wikidata.org/entity/Q18785803
 50.10888	8.67833	Q1887215	http://www.wikidata.org/entity/Q1887215
 26.98027	84.39675	Marhia burial mounds	http://www.wikidata.org/entity/Q18916180
@@ -8239,7 +8239,7 @@
 47.56283	-2.93875	Mané-er-Hroëk tumulus	http://www.wikidata.org/entity/Q1891971
 54.78511	11.7959	Q18968867	http://www.wikidata.org/entity/Q18968867
 33.55319	133.47779	Asakura Kofun	http://www.wikidata.org/entity/Q18989915
-35.50715	135.10451	Ebisuyama Kofun	http://www.wikidata.org/entity/Q18990929
+35.50715	135.10451	Ebisuyama Kofun	https://en.wikipedia.org/wiki/Ebisuyama_Kofun
 50.63816	5.08519	Tombe de l'Empereur	http://www.wikidata.org/entity/Q1899395
 50.72329	5.45953	Othée Tumulus	http://www.wikidata.org/entity/Q1913292
 52.18858	10.70535	Tumulus von Evessen	http://www.wikidata.org/entity/Q19310243
@@ -8253,7 +8253,7 @@
 47.612	-3.0608	Moustoir tumulus	http://www.wikidata.org/entity/Q19603941
 41.31888	36.32305	Amisos Hill	http://www.wikidata.org/entity/Q19610508
 50.60324	5.18821	Butte Saint-Sauveur	http://www.wikidata.org/entity/Q1981929
-50.06006	19.84724	Piłsudski's Mound	http://www.wikidata.org/entity/Q1985405
+50.06006	19.84724	Piłsudski's Mound	https://en.wikipedia.org/wiki/Pi%C5%82sudski%27s_Mound
 53.43476	10.75475	Hügelgrab Gresse	http://www.wikidata.org/entity/Q19964156
 52.20588	7.78549	Steinhügelgrab Wechte	http://www.wikidata.org/entity/Q19965804
 50.76888	5.44443	Tumulus of Koninksem	http://www.wikidata.org/entity/Q1997166
@@ -8271,7 +8271,7 @@
 51.38181	4.98418	Grafveld Het Heike	http://www.wikidata.org/entity/Q2006085
 56.46414	10.5664	Kejtenhale	http://www.wikidata.org/entity/Q20078545
 50.7926	5.24247	Tumulus of Brustem	http://www.wikidata.org/entity/Q2020031
-51.172	-1.825	Bush Barrow	http://www.wikidata.org/entity/Q202551
+51.172	-1.825	Bush Barrow	https://en.wikipedia.org/wiki/Bush_Barrow
 50.71538	4.92136	Tumulus of Piétrain	http://www.wikidata.org/entity/Q2029782
 35.48216	128.51025	Q20444485	http://www.wikidata.org/entity/Q20444485
 35.54638	128.50333	Changnyeong Gyo-dong and Songhyeon-dong Tumuli	http://www.wikidata.org/entity/Q20445103
@@ -8386,7 +8386,7 @@
 51.58389	-3.67711	Twmpath Diwlith	http://www.wikidata.org/entity/Q20601328
 52.57635	-3.48375	Nant Cwm Gerwyn Cairns	http://www.wikidata.org/entity/Q20601409
 53.09289	-3.24386	Tyn-y-Mynydd Round Barrow	http://www.wikidata.org/entity/Q20601492
-50.9087	-3.0866	Robin Hood's Butts	http://www.wikidata.org/entity/Q20712670
+50.9087	-3.0866	Robin Hood's Butts	https://en.wikipedia.org/wiki/Robin_Hood%27s_Butts
 42.65208	2.17025	Túmul del Roc Marí	http://www.wikidata.org/entity/Q20817435
 42.39975	2.02744	Túmul de la Jaça Gran	http://www.wikidata.org/entity/Q20817666
 42.45355	2.39619	Q20819201	http://www.wikidata.org/entity/Q20819201
@@ -8417,7 +8417,7 @@
 50.78972	5.67556	Tumulus of Émael	http://www.wikidata.org/entity/Q2139595
 47.87796	-2.79436	Kergonfalz dolmen	http://www.wikidata.org/entity/Q21416403
 48.8406	3.7125	Le Reclus dolmen	http://www.wikidata.org/entity/Q21469684
-50.5211	-4.45566	Rillaton Barrow	http://www.wikidata.org/entity/Q2153128
+50.5211	-4.45566	Rillaton Barrow	https://en.wikipedia.org/wiki/Rillaton_Barrow
 50.77012	5.33237	tumulus of Gutschoven	http://www.wikidata.org/entity/Q2156054
 50.60592	5.14188	Tombe of Yve	http://www.wikidata.org/entity/Q2161403
 50.7158	5.28212	Tumulus of Oleye	http://www.wikidata.org/entity/Q2171278
@@ -8427,26 +8427,26 @@
 34.45666	126.68555	Haenam Bangsan-ri Janggobong Kofun	http://www.wikidata.org/entity/Q21825423
 55.31167	11.25756	Q21978050	http://www.wikidata.org/entity/Q21978050
 50.82657	4.67302	Monarkengraf	http://www.wikidata.org/entity/Q21980568
-51.73302	5.56689	Vorstengraf Oss	http://www.wikidata.org/entity/Q2207902
+51.73302	5.56689	Vorstengraf Oss	https://en.wikipedia.org/wiki/Vorstengraf_(Oss)
 53.06129	6.68461	D7	http://www.wikidata.org/entity/Q2209037
 34.94991	135.69521	Itsukahara Kofun	http://www.wikidata.org/entity/Q22117904
 35.11579	135.47478	Q22118244	http://www.wikidata.org/entity/Q22118244
-35.46408	133.88515	Kitayama Kofun	http://www.wikidata.org/entity/Q22118520
+35.46408	133.88515	Kitayama Kofun	https://en.wikipedia.org/wiki/Kitayama_Kofun
 33.89712	132.07995	Shiratori Kofun	http://www.wikidata.org/entity/Q22119041
 33.8175	130.48583	Shinbaru-Nuyama Kofun Group	http://www.wikidata.org/entity/Q22119078
-34.82243	134.73543	Danjyo-zan Kofun	http://www.wikidata.org/entity/Q22119379
-32.10244	131.42758	Nyūtabaru Kofun Cluster	http://www.wikidata.org/entity/Q22119904
-34.26377	129.32408	Neso Kofun Group	http://www.wikidata.org/entity/Q22119911
+34.82243	134.73543	Danjyo-zan Kofun	https://en.wikipedia.org/wiki/Danj%C5%8Dzan_Kofun
+32.10244	131.42758	Nyūtabaru Kofun Cluster	https://en.wikipedia.org/wiki/Ny%C5%ABtabaru_Kofun_Cluster
+34.26377	129.32408	Neso Kofun Group	https://en.wikipedia.org/wiki/Neso_Kofun_Cluster
 34.68346	135.82401	Nenbutsujiyama Kofun	http://www.wikidata.org/entity/Q22119913
 32.95347	132.7954	Q22120134	http://www.wikidata.org/entity/Q22120134
 36.29708	139.33341	Q22120261	http://www.wikidata.org/entity/Q22120261
 38.31113	140.25439	Q22120278	http://www.wikidata.org/entity/Q22120278
 35.68055	138.55233	Q22120416	http://www.wikidata.org/entity/Q22120416
-34.80169	136.17326	Mihakayama Kofun	http://www.wikidata.org/entity/Q22120508
+34.80169	136.17326	Mihakayama Kofun	https://en.wikipedia.org/wiki/Mihakayama_Kofun
 33.57038	133.61602	Myoken Hikoyama Kofun Group	http://www.wikidata.org/entity/Q22120567
 34.5331	126.5907	Haenam Yongduri Gobun	http://www.wikidata.org/entity/Q22125655
 35.11071	126.48207	Q22126169	http://www.wikidata.org/entity/Q22126169
-36.12833	139.47944	Sakitama Kofun Cluster	http://www.wikidata.org/entity/Q2213580
+36.12833	139.47944	Sakitama Kofun Cluster	https://en.wikipedia.org/wiki/Sakitama_Kofun_Cluster
 55.52747	12.01479	Klosterskov rundhøj 95409	http://www.wikidata.org/entity/Q22212020
 50.2556	6.11085	Tumulus of Schinkelsknopf	http://www.wikidata.org/entity/Q2222361
 50.39051	5.28808	Tumulus of Havelange	http://www.wikidata.org/entity/Q2223625
@@ -8545,7 +8545,7 @@
 48.24193	5.74336	Q22997817	http://www.wikidata.org/entity/Q22997817
 50.80559	5.5691	Tumulus of Herderen	http://www.wikidata.org/entity/Q2326311
 52.84759	6.86586	Eppiesbargie	http://www.wikidata.org/entity/Q2329073
-52.862	-0.679	Ponton Heath Barrow Cemetery	http://www.wikidata.org/entity/Q23305614
+52.862	-0.679	Ponton Heath Barrow Cemetery	https://en.wikipedia.org/wiki/Ponton_Heath_Barrow_Cemetery
 51.26124	5.51122	Tumuli of Hamont-Achel	http://www.wikidata.org/entity/Q2345732
 51.96783	5.70351	Q2354800	http://www.wikidata.org/entity/Q2354800
 56.90895	9.38487	Finding place of the Skarpsalling pot	http://www.wikidata.org/entity/Q23646696
@@ -8571,10 +8571,10 @@
 56.76039	8.66803	Kløvenhøj	http://www.wikidata.org/entity/Q23939245
 51.40541	5.26102	Zwarte Berg	http://www.wikidata.org/entity/Q2409112
 50.7013	5.07125	Tumulus of Avernas	http://www.wikidata.org/entity/Q2409909
-53.301	-1.88375	The Bull Ring	http://www.wikidata.org/entity/Q2410079
+53.301	-1.88375	The Bull Ring	https://en.wikipedia.org/wiki/The_Bull_Ring
 50.69722	4.70722	Tumuli of Bonlez	http://www.wikidata.org/entity/Q2418611
-53.6511	-6.62982	Alexander Reid mound	http://www.wikidata.org/entity/Q24196500
-54.209	-1.56315	Thornborough Henges	http://www.wikidata.org/entity/Q2428964
+53.6511	-6.62982	Alexander Reid mound	https://en.wikipedia.org/wiki/Alexander_Reid_mound
+54.209	-1.56315	Thornborough Henges	https://en.wikipedia.org/wiki/Thornborough_Henges
 50.7653	5.98104	Tumuli Vijlenerbos	http://www.wikidata.org/entity/Q2446206
 50.76961	5.43902	Tumulus of Koninksem	http://www.wikidata.org/entity/Q2447307
 50.38826	4.42728	Tumulus of Marcinelle	http://www.wikidata.org/entity/Q2455642
@@ -8605,24 +8605,24 @@
 51.70367	-4.99643	Newton Mount Meadow	http://www.wikidata.org/entity/Q24661762
 51.84809	-2.63435	Elliots Wood	http://www.wikidata.org/entity/Q24662662
 51.41833	5.34056	Tumuli of Toterfout-Halve Mijl	http://www.wikidata.org/entity/Q2470491
-33.3948	130.51516	Tashiroōta Kofun	http://www.wikidata.org/entity/Q24861136
+33.3948	130.51516	Tashiroōta Kofun	https://en.wikipedia.org/wiki/Tashiro%C5%8Dta_Kofun
 31.36388	130.98699	Tojin Otsuka Kofun	http://www.wikidata.org/entity/Q24864461
-33.75851	130.98074	Goshoyama Kofun	http://www.wikidata.org/entity/Q24866206
-35.36312	132.76476	Imaichi Dainenji Kofun	http://www.wikidata.org/entity/Q24866213
-34.01385	130.9422	Jinbayama Kofun	http://www.wikidata.org/entity/Q24866215
-32.7531	130.77788	Idera Kofun	http://www.wikidata.org/entity/Q24866260
-32.83901	130.69663	Kamao Kofun	http://www.wikidata.org/entity/Q24866261
-34.78944	137.08555	Shōbōji Kofun	http://www.wikidata.org/entity/Q24867326
+33.75851	130.98074	Goshoyama Kofun	https://en.wikipedia.org/wiki/Goshoyama_Kofun
+35.36312	132.76476	Imaichi Dainenji Kofun	https://en.wikipedia.org/wiki/Imaichi_Dainenji_Kofun
+34.01385	130.9422	Jinbayama Kofun	https://en.wikipedia.org/wiki/Jinbayama_Kofun
+32.7531	130.77788	Idera Kofun	https://en.wikipedia.org/wiki/Idera_Kofun
+32.83901	130.69663	Kamao Kofun	https://en.wikipedia.org/wiki/Kamao_Kofun
+34.78944	137.08555	Shōbōji Kofun	https://en.wikipedia.org/wiki/Sh%C5%8Db%C5%8Dji_Kofun
 33.79893	130.54065	Q24867823	http://www.wikidata.org/entity/Q24867823
 34.66798	135.81937	Nogami Kofun	http://www.wikidata.org/entity/Q24872950
-34.815	137.44777	Magoshi-Nagahizuka Kofun	http://www.wikidata.org/entity/Q24874799
+34.815	137.44777	Magoshi-Nagahizuka Kofun	https://en.wikipedia.org/wiki/Magoshi-Nagahizuka_Kofun
 34.6473	135.84164	Yashima no Misasagi	http://www.wikidata.org/entity/Q24875285
 33.35588	129.59217	Kasamatsu Tenjinja Kofun	http://www.wikidata.org/entity/Q24875289
 35.38555	136.9475	Myōkanji Kofun	http://www.wikidata.org/entity/Q24875648
 36.21946	133.30323	Hei-jinja Kofun	http://www.wikidata.org/entity/Q24876104
-32.5723	130.70188	Ōno-no-Iwa Kofun	http://www.wikidata.org/entity/Q24876586
+32.5723	130.70188	Ōno-no-Iwa Kofun	https://en.wikipedia.org/wiki/%C5%8Cno-no-Iwa_Kofun
 34.84965	126.61243	Yeongam Taegan-ri Jarabong Gobun	http://www.wikidata.org/entity/Q24891900
-34.50354	135.84214	Monju-in Nishi Kofun	http://www.wikidata.org/entity/Q24894422
+34.50354	135.84214	Monju-in Nishi Kofun	https://en.wikipedia.org/wiki/Monju-in_Nishi_Kofun
 35.98221	140.61186	Meotozuka Kofun	http://www.wikidata.org/entity/Q24903013
 47.602	-3.058	Tumulus, quadrilatère et menhir de Manio	http://www.wikidata.org/entity/Q24931935
 47.71715	-1.86515	Tertres tumulaires de la Gaudinais	http://www.wikidata.org/entity/Q24932630
@@ -8633,7 +8633,7 @@
 51.51537	6.17271	Vorstengraf De Hamert	http://www.wikidata.org/entity/Q2531222
 47.71828	-2.01031	Q25396292	http://www.wikidata.org/entity/Q25396292
 39.65388	31.99805	Tumulus MM	http://www.wikidata.org/entity/Q25511426
-51.56678	-1.59614	Wayland's Smithy	http://www.wikidata.org/entity/Q2553002
+51.56678	-1.59614	Wayland's Smithy	https://en.wikipedia.org/wiki/Wayland%27s_Smithy
 50.70972	5.16104	Drie Tommen	http://www.wikidata.org/entity/Q2562828
 50.67915	5.24109	Tumuli of Bois des Tombes	http://www.wikidata.org/entity/Q2581353
 54.1146	10.5865	Wittwieverbarg	http://www.wikidata.org/entity/Q2586910
@@ -8646,9 +8646,9 @@
 52.75057	-1.14678	Barrow Upon Soar War Memorial	http://www.wikidata.org/entity/Q26671966
 55.74048	12.18536	Q26807787	http://www.wikidata.org/entity/Q26807787
 35.80123	139.79267	Shirahataduka Kofun	http://www.wikidata.org/entity/Q26813170
-42.23227	24.26247	Tell Yunatsite	http://www.wikidata.org/entity/Q26878326
+42.23227	24.26247	Tell Yunatsite	https://en.wikipedia.org/wiki/Tell_Yunatsite
 50.76154	5.04359	Tumulus of Middelwinden	http://www.wikidata.org/entity/Q2689699
-50.65097	5.19878	Les cinq Tombes	http://www.wikidata.org/entity/Q2690150
+50.65097	5.19878	Les cinq Tombes	https://en.wikipedia.org/wiki/Five_tumuli_of_Omal
 50.73161	5.04863	tumulus of Waesmont	http://www.wikidata.org/entity/Q2691955
 56.20087	9.99182	Borum Eshøj	http://www.wikidata.org/entity/Q2695465
 50.0495	11.2144	Q2702272	http://www.wikidata.org/entity/Q2702272
@@ -8657,54 +8657,54 @@
 54.99373	12.32244	Q27057552	http://www.wikidata.org/entity/Q27057552
 55.63185	11.81493	Lejre Sneglehøj	http://www.wikidata.org/entity/Q27057554
 52.1499	9.0489	Grabhügel von Möllenbeck	http://www.wikidata.org/entity/Q27092748
-34.92888	137.09666	Futago Kofun	http://www.wikidata.org/entity/Q27355637
+34.92888	137.09666	Futago Kofun	https://en.wikipedia.org/wiki/Futago_Kofun
 32.76305	21.67166	‘Ayn al Balanj	http://www.wikidata.org/entity/Q27490557
 51.77632	11.49661	Grüner Hügel	http://www.wikidata.org/entity/Q27577004
 52.04332	-3.41508	Bailey Bach	http://www.wikidata.org/entity/Q27698901
 34.69833	135.78751	Saki Takatsuka Kofun	http://www.wikidata.org/entity/Q27898021
-34.98286	138.37497	Shizuhatagayama Kofun	http://www.wikidata.org/entity/Q2791117
-34.99032	135.88401	Chausuyama Kofun	http://www.wikidata.org/entity/Q27926911
+34.98286	138.37497	Shizuhatagayama Kofun	https://en.wikipedia.org/wiki/Shizuhatagayama_Kofun
+34.99032	135.88401	Chausuyama Kofun	https://en.wikipedia.org/wiki/Chausuyama_Kofun_(%C5%8Ctsu)
 51.34537	6.17614	tumuli Jammerdaalse Heide	http://www.wikidata.org/entity/Q2795191
 56.01835	12.5723	Q28000737	http://www.wikidata.org/entity/Q28000737
 55.02173	12.07629	Q28000741	http://www.wikidata.org/entity/Q28000741
 50.61421	5.30651	Tumulus of Verlaine	http://www.wikidata.org/entity/Q2802140
 47.71853	-3.47828	Tuchenn Pol	http://www.wikidata.org/entity/Q28040011
-34.63618	135.64632	Atagozuka Kofun	http://www.wikidata.org/entity/Q28154560
-54.17422	-6.66935	Mullyash Kerbed Cairn	http://www.wikidata.org/entity/Q28232424
+34.63618	135.64632	Atagozuka Kofun	https://en.wikipedia.org/wiki/Atagozuka_Kofun
+54.17422	-6.66935	Mullyash Kerbed Cairn	https://en.wikipedia.org/wiki/Mullyash_Kerbed_Cairn
 34.66763	137.26763	Jōhōji Kofun	http://www.wikidata.org/entity/Q28470040
 36.17016	140.29335	Fuchu Atagoyama Kofun	http://www.wikidata.org/entity/Q28603389
-35.23525	136.19787	Kōjin-yama Kofun	http://www.wikidata.org/entity/Q28608900
+35.23525	136.19787	Kōjin-yama Kofun	https://en.wikipedia.org/wiki/K%C5%8Djinyama_Kofun
 34.86756	135.77795	Basho-zuka Kofun	http://www.wikidata.org/entity/Q28608903
 34.91822	135.79786	Gokasho Futagozuka Kofun	http://www.wikidata.org/entity/Q28608905
 35.68894	135.09949	Kurobe Choshiyama Kofun	http://www.wikidata.org/entity/Q28608907
 34.86518	135.78173	Maruzuka Kofun	http://www.wikidata.org/entity/Q28608911
 34.86274	135.78355	Shibagahara Kofun	http://www.wikidata.org/entity/Q28608915
 34.97751	135.68965	Tenno-no-mori Kofun	http://www.wikidata.org/entity/Q28608917
-34.68373	133.93049	Jingu-ji-yama Kofun	http://www.wikidata.org/entity/Q28657616
+34.68373	133.93049	Jingu-ji-yama Kofun	https://en.wikipedia.org/wiki/Jing%C5%ABjiyama_Kofun
 34.26948	134.07486	Mitani Ishifune Kofun	http://www.wikidata.org/entity/Q28657675
 35.75821	139.87504	Shibamata Hachiman Jinja Kofun	http://www.wikidata.org/entity/Q28683097
-35.63555	136.08583	Nakagō Kofun Cluster	http://www.wikidata.org/entity/Q28683739
+35.63555	136.08583	Nakagō Kofun Cluster	https://en.wikipedia.org/wiki/Nakag%C5%8D_Kofun_Cluster
 35.6575	136.03951	Anajizo Kofun	http://www.wikidata.org/entity/Q28683858
 37.62336	139.82992	Q28683863	http://www.wikidata.org/entity/Q28683863
-32.75138	129.98888	Magarizaki Kofun Cluster	http://www.wikidata.org/entity/Q28684169
+32.75138	129.98888	Magarizaki Kofun Cluster	https://en.wikipedia.org/wiki/Magarizaki_Kofun_Cluster
 35.01661	135.6998	Tarumiyama Kofun	http://www.wikidata.org/entity/Q28684195
 35.45143	134.23358	Q28684547	http://www.wikidata.org/entity/Q28684547
 34.67841	133.79855	Q28685081	http://www.wikidata.org/entity/Q28685081
 34.69473	133.83105	Q28685084	http://www.wikidata.org/entity/Q28685084
-34.65896	133.86514	Onoue Kurumayama Kofun	http://www.wikidata.org/entity/Q28685132
+34.65896	133.86514	Onoue Kurumayama Kofun	https://en.wikipedia.org/wiki/Onoe_Kurumayama_Kofun
 34.6596	133.85996	Yatōjiyama Kofun	http://www.wikidata.org/entity/Q28685136
 34.70069	133.8354	Q28685137	http://www.wikidata.org/entity/Q28685137
-35.06306	133.96647	Miwayama Kofun Group	http://www.wikidata.org/entity/Q28685450
-34.7016	131.86782	Ōmoto Kofun	http://www.wikidata.org/entity/Q28685639
+35.06306	133.96647	Miwayama Kofun Group	https://en.wikipedia.org/wiki/Miwayama_Kofun_Cluster
+34.7016	131.86782	Ōmoto Kofun	https://en.wikipedia.org/wiki/%C5%8Cmoto_Kofun
 34.82544	135.38444	Q28687072	http://www.wikidata.org/entity/Q28687072
-33.41225	131.70019	Kogumayama Kofun	http://www.wikidata.org/entity/Q28687177
+33.41225	131.70019	Kogumayama Kofun	https://en.wikipedia.org/wiki/Kogumayama_Kofun
 33.60252	131.46207	Q28687179	http://www.wikidata.org/entity/Q28687179
-33.4074	131.69803	Otōyama Kofun	http://www.wikidata.org/entity/Q28687181
+33.4074	131.69803	Otōyama Kofun	https://en.wikipedia.org/wiki/Ot%C5%8Dyama_Kofun
 33.57583	130.26027	Q28688324	http://www.wikidata.org/entity/Q28688324
 32.19855	130.82803	Kamezuka Kofun Group	http://www.wikidata.org/entity/Q28688391
 34.66648	135.75213	Tomio-Maruyama Kofun	http://www.wikidata.org/entity/Q28688548
 32.96735	131.1066	Q28688675	http://www.wikidata.org/entity/Q28688675
-34.78628	132.88073	Yadani Kofun	http://www.wikidata.org/entity/Q28688908
+34.78628	132.88073	Yadani Kofun	https://en.wikipedia.org/wiki/Yadani_Kofun
 32.6632	130.67375	Q28688915	http://www.wikidata.org/entity/Q28688915
 36.20905	133.32583	Q28688998	http://www.wikidata.org/entity/Q28688998
 35.26017	134.81257	Funanomiya Kofun	http://www.wikidata.org/entity/Q28689473
@@ -21917,7 +21917,7 @@
 58.54049	15.1967	Q29967384	http://www.wikidata.org/entity/Q29967384
 58.45842	14.99564	Q29967457	http://www.wikidata.org/entity/Q29967457
 58.52965	16.35003	Q29967649	http://www.wikidata.org/entity/Q29967649
-45.85472	20.39234	Kinđa	http://www.wikidata.org/entity/Q29983709
+45.85472	20.39234	Kinđa	https://en.wikipedia.org/wiki/Kin%C4%91a
 58.54842	16.3775	Q30016863	http://www.wikidata.org/entity/Q30016863
 58.56196	16.33414	Q30016900	http://www.wikidata.org/entity/Q30016900
 58.53975	16.33509	Q30016968	http://www.wikidata.org/entity/Q30016968
@@ -43948,7 +43948,7 @@
 51.11455	11.38583	Weitester Hügel	http://www.wikidata.org/entity/Q30512024
 51.13463	11.17442	Galgenhügel	http://www.wikidata.org/entity/Q30712767
 55.76305	12.57944	Q3077713	http://www.wikidata.org/entity/Q3077713
-52.99213	-3.18923	Pillar of Eliseg	http://www.wikidata.org/entity/Q3090852
+52.99213	-3.18923	Pillar of Eliseg	https://en.wikipedia.org/wiki/Pillar_of_Eliseg
 34.85561	135.61867	Hirugami Kurumazuka Kofun	http://www.wikidata.org/entity/Q30922250
 35.48343	136.99605	Q30922526	http://www.wikidata.org/entity/Q30922526
 34.57375	135.84613	Hiezuka Kofun	http://www.wikidata.org/entity/Q30923506
@@ -43962,7 +43962,7 @@
 36.38383	139.80504	Q30925678	http://www.wikidata.org/entity/Q30925678
 34.56	135.485	Magodayūyama Kofun	http://www.wikidata.org/entity/Q30925787
 35.12861	138.85694	Nagatsuka Kofun	http://www.wikidata.org/entity/Q30927928
-35.02855	135.85067	Ōjiyama Kofun	http://www.wikidata.org/entity/Q30928191
+35.02855	135.85067	Ōjiyama Kofun	https://en.wikipedia.org/wiki/%C5%8Cjiyama_Kofun
 34.87644	138.24969	Nyakuōji kofun group	http://www.wikidata.org/entity/Q30930453
 35.39413	139.52827	Q30935000	http://www.wikidata.org/entity/Q30935000
 50.65856	5.23911	Tumulus of Saives	http://www.wikidata.org/entity/Q3098259
@@ -43970,16 +43970,16 @@
 52.11915	10.71561	Meescheberg	http://www.wikidata.org/entity/Q31308516
 51.80222	11.83222	Spitzes Hoch	http://www.wikidata.org/entity/Q31312766
 56.0975	10.18111	Jelshøj	http://www.wikidata.org/entity/Q3176917
-36.12939	139.48101	Inariyama Kofun	http://www.wikidata.org/entity/Q3198272
-34.6118	135.72944	Fujinoki Kofun	http://www.wikidata.org/entity/Q3198273
+36.12939	139.48101	Inariyama Kofun	https://en.wikipedia.org/wiki/Inariyama_Kofun
+34.6118	135.72944	Fujinoki Kofun	https://en.wikipedia.org/wiki/Fujinoki_Tomb
 35.91527	128.64416	Bullodong Tumuli in Daegu	http://www.wikidata.org/entity/Q320551
 43.2812	11.96612	Melone Sodo II	http://www.wikidata.org/entity/Q3305261
 43.28026	11.96881	Melone Sodo I	http://www.wikidata.org/entity/Q3305262
 43.25986	11.97411	Tumulo di Camucia	http://www.wikidata.org/entity/Q3305266
 35.11641	138.82236	Shinmeizuka Kofun	http://www.wikidata.org/entity/Q33505497
 50.68946	5.33611	Tumulus of Lamine	http://www.wikidata.org/entity/Q3370859
-32.11777	131.38944	Saitobaru Kofun Cluster	http://www.wikidata.org/entity/Q3469314
-28.91694	-82.60916	Crystal River Archaeological State Park	http://www.wikidata.org/entity/Q3485388
+32.11777	131.38944	Saitobaru Kofun Cluster	https://en.wikipedia.org/wiki/Saitobaru_Kofun_Cluster
+28.91694	-82.60916	Crystal River Archaeological State Park	https://en.wikipedia.org/wiki/Crystal_River_Archaeological_State_Park
 45.9333	0.08306	Tumuli of Tusson	http://www.wikidata.org/entity/Q3542034
 45.9355	0.0846	Tumuli of Tusson	http://www.wikidata.org/entity/Q3542034
 46.955	-65.83333	Augustine Mound	http://www.wikidata.org/entity/Q3542043
@@ -44030,7 +44030,7 @@
 46.7132	15.66275	barrow cemetery Gametzholz	http://www.wikidata.org/entity/Q38116662
 49.80619	18.52933	Švédský kopec	http://www.wikidata.org/entity/Q38138744
 48.3822	16.16635	Hügelgrab Löwenberg	http://www.wikidata.org/entity/Q38151889
-34.41678	135.82615	Ishibutai Kofun	http://www.wikidata.org/entity/Q3816159
+34.41678	135.82615	Ishibutai Kofun	https://en.wikipedia.org/wiki/Ishibutai_Kofun
 47.27383	16.0415	Q38174538	http://www.wikidata.org/entity/Q38174538
 31.41805	130.27458	Q38276320	http://www.wikidata.org/entity/Q38276320
 31.24677	130.63705	Q38276511	http://www.wikidata.org/entity/Q38276511
@@ -44044,7 +44044,7 @@
 34.94505	135.69736	Motoinari Kofun	http://www.wikidata.org/entity/Q38279257
 32.84521	130.20167	Q38279316	http://www.wikidata.org/entity/Q38279316
 35.49291	137.83543	Q38279342	http://www.wikidata.org/entity/Q38279342
-34.93626	134.5459	Yoshima Kofun	http://www.wikidata.org/entity/Q38279346
+34.93626	134.5459	Yoshima Kofun	https://en.wikipedia.org/wiki/Yoshima_Kofun
 33.60861	133.69767	Q38279354	http://www.wikidata.org/entity/Q38279354
 35.53444	135.91083	Q38279384	http://www.wikidata.org/entity/Q38279384
 35.47061	135.85757	Q38279387	http://www.wikidata.org/entity/Q38279387
@@ -44056,14 +44056,14 @@
 43.73416	10.39111	Tumulo del Principe etrusco	http://www.wikidata.org/entity/Q4000423
 62.905	17.83777	Q41620381	http://www.wikidata.org/entity/Q41620381
 36.20313	136.28477	Kunugi Kofun	http://www.wikidata.org/entity/Q41882169
-50.07027	20.06805	Wanda Mound	http://www.wikidata.org/entity/Q421819
+50.07027	20.06805	Wanda Mound	https://en.wikipedia.org/wiki/Wanda_Mound
 52.80437	7.47987	Grabhügelfeld Mansenberge	http://www.wikidata.org/entity/Q42425582
-34.56277	135.60916	Furuichi Kofun Cluster	http://www.wikidata.org/entity/Q4250076
-34.56388	135.4875	Mozu Tombs	http://www.wikidata.org/entity/Q4250584
+34.56277	135.60916	Furuichi Kofun Cluster	https://en.wikipedia.org/wiki/Furuichi_Kofun_Group
+34.56388	135.4875	Mozu Tombs	https://en.wikipedia.org/wiki/Mozu_Kofun_Group
 44.10343	27.95517	Ancient roman tumulus	http://www.wikidata.org/entity/Q42882048
 54.0698	10.2041	Königsbarg	http://www.wikidata.org/entity/Q43812905
 51.3308	12.02026	Grabhügel von Rössen	http://www.wikidata.org/entity/Q43812916
-53.6592	-2.54927	Round Loaf	http://www.wikidata.org/entity/Q4390932
+53.6592	-2.54927	Round Loaf	https://en.wikipedia.org/wiki/Round_Loaf
 50.49397	91.33113	Ulug-Khorum	http://www.wikidata.org/entity/Q44374915
 50.6382	4.99673	Tumuli of Mirteaux	http://www.wikidata.org/entity/Q4439643
 35.35937	139.26678	Q44705270	http://www.wikidata.org/entity/Q44705270
@@ -44071,14 +44071,14 @@
 50.667	5.38096	Tumulus of Noville	http://www.wikidata.org/entity/Q4520168
 56.4121	13.00915	Lugnarohögen	http://www.wikidata.org/entity/Q4580064
 50.72368	5.4161	Tumulus of Herstappe	http://www.wikidata.org/entity/Q4641804
-51.3079	0.37014	Addington Long Barrow	http://www.wikidata.org/entity/Q4681194
-51.3069	0.37023	Addington Long Barrow	http://www.wikidata.org/entity/Q4681194
-34.78805	137.75277	Akamonue Kofun	http://www.wikidata.org/entity/Q4700239
+51.3079	0.37014	Addington Long Barrow	https://en.wikipedia.org/wiki/Addington_Long_Barrow
+51.3069	0.37023	Addington Long Barrow	https://en.wikipedia.org/wiki/Addington_Long_Barrow
+34.78805	137.75277	Akamonue Kofun	https://en.wikipedia.org/wiki/Akamonue_Kofun
 35.60194	139.65144	Q47633006	http://www.wikidata.org/entity/Q47633006
 50.74128	5.10154	Tumulus of Betz	http://www.wikidata.org/entity/Q4852433
 34.51978	135.63927	Eifukuji Kita Kofun	http://www.wikidata.org/entity/Q48743902
 34.47485	135.7784	Masuyama Kofun	http://www.wikidata.org/entity/Q48744177
-33.71472	130.5025	Fubabaru Kofun	http://www.wikidata.org/entity/Q48745414
+33.71472	130.5025	Fubabaru Kofun	https://en.wikipedia.org/wiki/Funabaru_Kofun
 35.48936	135.82958	Kamo Kofun	http://www.wikidata.org/entity/Q48745817
 35.43635	133.79683	Kokubunji Kofun	http://www.wikidata.org/entity/Q48746190
 35.09049	135.31009	Q48747648	http://www.wikidata.org/entity/Q48747648
@@ -44100,58 +44100,58 @@
 35.12761	138.82877	Yamanokami Kohun	http://www.wikidata.org/entity/Q48752643
 35.14771	138.83338	Q48752648	http://www.wikidata.org/entity/Q48752648
 35.13638	138.84305	Q48752651	http://www.wikidata.org/entity/Q48752651
-33.53641	130.16961	Ikisan Choshizuka Kofun	http://www.wikidata.org/entity/Q48752705
+33.53641	130.16961	Ikisan Choshizuka Kofun	https://en.wikipedia.org/wiki/Ikisan_Ch%C5%8Dshizuka_Kofun
 36.95555	136.85166	Q48752896	http://www.wikidata.org/entity/Q48752896
 34.52691	135.63266	Goryōyama Kofun	http://www.wikidata.org/entity/Q48753099
 36.98543	140.89548	Q48753149	http://www.wikidata.org/entity/Q48753149
 37.11499	140.94382	Q48753501	http://www.wikidata.org/entity/Q48753501
 35.14852	138.79351	IdeMaruyama Kofun	http://www.wikidata.org/entity/Q48754358
 33.59056	130.18313	Q48759551	http://www.wikidata.org/entity/Q48759551
-33.54362	130.1777	Kamatsuka Kofun	http://www.wikidata.org/entity/Q48759963
-33.84379	130.49546	Sakurakyo Kofun	http://www.wikidata.org/entity/Q48760086
+33.54362	130.1777	Kamatsuka Kofun	https://en.wikipedia.org/wiki/Kamatsuka_Kofun
+33.84379	130.49546	Sakurakyo Kofun	https://en.wikipedia.org/wiki/Sakuraky%C5%8D_Kofun
 34.22343	135.23789	Tennozuka Kofun	http://www.wikidata.org/entity/Q48763062
 33.91061	132.05866	Q48763090	http://www.wikidata.org/entity/Q48763090
-34.05871	132.93082	Myōkensan Kofun	http://www.wikidata.org/entity/Q48763217
+34.05871	132.93082	Myōkensan Kofun	https://en.wikipedia.org/wiki/My%C5%8Dkensan_Kofun
 34.38233	134.09374	Q48763306	http://www.wikidata.org/entity/Q48763306
-34.81778	134.59993	Hisagozuka Kofun	http://www.wikidata.org/entity/Q48764117
+34.81778	134.59993	Hisagozuka Kofun	https://en.wikipedia.org/wiki/Hisagozuka_Kofun_(Himeji)
 50.73752	5.36809	Tumulus of Otrange	http://www.wikidata.org/entity/Q4878796
-38.11791	23.97833	Marathon tumuli	http://www.wikidata.org/entity/Q48802540
+38.11791	23.97833	Marathon tumuli	https://en.wikipedia.org/wiki/Marathon_tumuli
 31.23515	35.24245	Q49004132	http://www.wikidata.org/entity/Q49004132
-35.83777	129.2125	Cheonmachong	http://www.wikidata.org/entity/Q491496
-53.4151	-2.01935	Brown Low	http://www.wikidata.org/entity/Q4976201
+35.83777	129.2125	Cheonmachong	https://en.wikipedia.org/wiki/Cheonmachong
+53.4151	-2.01935	Brown Low	https://en.wikipedia.org/wiki/Brown_Low
 52.91012	8.69847	Q50331537	http://www.wikidata.org/entity/Q50331537
 52.92111	8.84027	Q50333441	http://www.wikidata.org/entity/Q50333441
-14.7	-15.95	Cekeen Tumulus	http://www.wikidata.org/entity/Q5057400
+14.7	-15.95	Cekeen Tumulus	https://en.wikipedia.org/wiki/Cekeen_Tumuli
 41.19161	-2.51109	Túmulo de la Sima	http://www.wikidata.org/entity/Q50689450
-53.6385	-2.43015	Cheetham Close	http://www.wikidata.org/entity/Q5089468
+53.6385	-2.43015	Cheetham Close	https://en.wikipedia.org/wiki/Cheetham_Close
 50.59442	5.34083	Tumulus of Yernawe	http://www.wikidata.org/entity/Q5092917
-51.3077	0.36942	Chestnuts long barrow	http://www.wikidata.org/entity/Q5094023
+51.3077	0.36942	Chestnuts long barrow	https://en.wikipedia.org/wiki/Chestnuts_Long_Barrow
 47.93305	-4.3799	Tumulus de Crugon	http://www.wikidata.org/entity/Q51075921
 50.7996	4.95842	Drie Tommen	http://www.wikidata.org/entity/Q517712
-51.31596	0.50138	Countless Stones	http://www.wikidata.org/entity/Q5177165
-38.36861	-81.69666	Criel Mound	http://www.wikidata.org/entity/Q5185117
-56.59733	-4.05263	Càrn na Marbh	http://www.wikidata.org/entity/Q5202307
-35.43034	133.09186	Danbara Kofun	http://www.wikidata.org/entity/Q5214944
-54.0555	-0.4462	Danes Graves	http://www.wikidata.org/entity/Q5215885
+51.31596	0.50138	Countless Stones	https://en.wikipedia.org/wiki/Little_Kit%27s_Coty_House
+38.36861	-81.69666	Criel Mound	https://en.wikipedia.org/wiki/Criel_Mound
+56.59733	-4.05263	Càrn na Marbh	https://en.wikipedia.org/wiki/C%C3%A0rn_na_Marbh
+35.43034	133.09186	Danbara Kofun	https://en.wikipedia.org/wiki/Danbara_Kofun
+54.0555	-0.4462	Danes Graves	https://en.wikipedia.org/wiki/Danes_Graves
 49.21748	15.88279	Žižkova mohyla	http://www.wikidata.org/entity/Q52187120
-35.13083	136.90305	Danpusan Kofun	http://www.wikidata.org/entity/Q5221001
+35.13083	136.90305	Danpusan Kofun	https://en.wikipedia.org/wiki/Danpusan_Kofun
 34.56193	135.63031	Q52404755	http://www.wikidata.org/entity/Q52404755
-50.8931	-0.83638	Devil's Humps, Stoughton	http://www.wikidata.org/entity/Q5267169
-50.9494	-0.82722	Devil's Jumps	http://www.wikidata.org/entity/Q5267175
-51.14516	-3.20194	Dowsborough	http://www.wikidata.org/entity/Q5303655
-51.1451	-3.20206	Dowsborough	http://www.wikidata.org/entity/Q5303655
-54.0904	-0.6555	Duggleby Howe	http://www.wikidata.org/entity/Q5312537
+50.8931	-0.83638	Devil's Humps, Stoughton	https://en.wikipedia.org/wiki/Devil%27s_Humps,_Stoughton
+50.9494	-0.82722	Devil's Jumps	https://en.wikipedia.org/wiki/Devil%27s_Jumps,_Treyford
+51.14516	-3.20194	Dowsborough	https://en.wikipedia.org/wiki/Dowsborough
+51.1451	-3.20206	Dowsborough	https://en.wikipedia.org/wiki/Dowsborough
+54.0904	-0.6555	Duggleby Howe	https://en.wikipedia.org/wiki/Duggleby_Howe
 55.40818	11.70954	Q5392040	http://www.wikidata.org/entity/Q5392040
-51.4086	-1.85104	West Kennet Long Barrow	http://www.wikidata.org/entity/Q541312
+51.4086	-1.85104	West Kennet Long Barrow	https://en.wikipedia.org/wiki/West_Kennet_Long_Barrow
 39.948	20.039	Bajkaj Tumulus	http://www.wikidata.org/entity/Q54161296
 39.8919	20.3222	Vodhinë Tumulus	http://www.wikidata.org/entity/Q54285655
 40.36	19.686	Vajzë Tumuli	http://www.wikidata.org/entity/Q54320533
-51.0913	-1.3454	Flowerdown Barrows	http://www.wikidata.org/entity/Q5462256
+51.0913	-1.3454	Flowerdown Barrows	https://en.wikipedia.org/wiki/Flowerdown_Barrows
 52.01743	5.4468	Q5518228	http://www.wikidata.org/entity/Q5518228
 58.82772	5.55344	Dødssnødjo	http://www.wikidata.org/entity/Q55185511
 51.33666	11.3574	Huthügel	http://www.wikidata.org/entity/Q55189559
 47.68805	4.70861	Q55315785	http://www.wikidata.org/entity/Q55315785
-34.87441	137.8191	Kōmyōsan Kofun	http://www.wikidata.org/entity/Q55438971
+34.87441	137.8191	Kōmyōsan Kofun	https://en.wikipedia.org/wiki/K%C5%8Dmy%C5%8Dsan_Kofun
 34.22732	135.21977	Q55452706	http://www.wikidata.org/entity/Q55452706
 35.06768	135.51513	Boden Kofun Group	http://www.wikidata.org/entity/Q55464290
 32.98417	132.95677	Kotsuka Kofun	http://www.wikidata.org/entity/Q55522042
@@ -44162,20 +44162,20 @@
 35.00805	138.77972	Ita-Sungō Kofun Cluster	http://www.wikidata.org/entity/Q55522855
 35.39472	136.53275	Q55522892	http://www.wikidata.org/entity/Q55522892
 34.22344	135.22759	Shōgunzuka Kofun	http://www.wikidata.org/entity/Q55523132
-35.4893	133.07019	Kinzaki Kofun Cluster	http://www.wikidata.org/entity/Q55523137
+35.4893	133.07019	Kinzaki Kofun Cluster	https://en.wikipedia.org/wiki/Kinzaki_Kofun_Cluster
 34.6169	134.16576	Ushimado Tenjin-yama Kofun	http://www.wikidata.org/entity/Q55523152
 34.61666	134.15388	Q55523153	http://www.wikidata.org/entity/Q55523153
 34.60221	134.13393	Futatsukayama Kofun	http://www.wikidata.org/entity/Q55523155
 36.1548	140.3659	Q55523188	http://www.wikidata.org/entity/Q55523188
-35.35	132.76076	Kamienya Tsukiyama Kofun	http://www.wikidata.org/entity/Q55523209
+35.35	132.76076	Kamienya Tsukiyama Kofun	https://en.wikipedia.org/wiki/Kamienyatsukiyama_Kofun
 34.6638	133.96776	Kanakurayama Kofun	http://www.wikidata.org/entity/Q55523295
 34.5622	135.6094	Mozu-Furuichi Kofun Group: Mounded Tombs of Ancient Japan	http://www.wikidata.org/entity/Q55524104
 34.80768	132.83596	Q55524425	http://www.wikidata.org/entity/Q55524425
 34.79913	132.8573	Q55524431	http://www.wikidata.org/entity/Q55524431
-34.76361	132.89888	Jōrakuji-Nanatsuzuka Kofun Cluster	http://www.wikidata.org/entity/Q55524556
-35.48269	132.99488	Tangean Kofun	http://www.wikidata.org/entity/Q55524706
+34.76361	132.89888	Jōrakuji-Nanatsuzuka Kofun Cluster	https://en.wikipedia.org/wiki/J%C5%8Drakuji-Nanatsuzuka_Kofun_Cluster
+35.48269	132.99488	Tangean Kofun	https://en.wikipedia.org/wiki/Tangean_Kofun
 35.3828	136.90068	Q55525108	http://www.wikidata.org/entity/Q55525108
-32.56049	130.69316	Nozu Kofun Group	http://www.wikidata.org/entity/Q55525131
+32.56049	130.69316	Nozu Kofun Group	https://en.wikipedia.org/wiki/Nozu_Kofun_Cluster
 33.3033	130.55434	Q55527878	http://www.wikidata.org/entity/Q55527878
 34.89958	138.31908	Q55528342	http://www.wikidata.org/entity/Q55528342
 34.9008	138.3375	Q55528396	http://www.wikidata.org/entity/Q55528396
@@ -44184,24 +44184,24 @@
 35.56619	139.63505	Kanigaya Kofun Group	http://www.wikidata.org/entity/Q55528727
 34.22441	135.2208	Q55529436	http://www.wikidata.org/entity/Q55529436
 34.52272	135.44785	Q55530454	http://www.wikidata.org/entity/Q55530454
-32.68972	130.73694	Tsukawara Kofun Cluster	http://www.wikidata.org/entity/Q55532800
+32.68972	130.73694	Tsukawara Kofun Cluster	https://en.wikipedia.org/wiki/Tsukawara_Kofun_Cluster
 38.03728	140.15776	Q55532891	http://www.wikidata.org/entity/Q55532891
 34.48431	135.72681	Kitahanauchi Otsuka Kofun	http://www.wikidata.org/entity/Q55532952
-35.50606	135.10471	Tsukuriyama Kofun (Yosano)	http://www.wikidata.org/entity/Q55533395
-36.31048	138.85893	Yanase Futagozuka Kofun	http://www.wikidata.org/entity/Q55535661
+35.50606	135.10471	Tsukuriyama Kofun (Yosano)	https://en.wikipedia.org/wiki/Tsukuriyama_Kofun_(Yosano)
+36.31048	138.85893	Yanase Futagozuka Kofun	https://en.wikipedia.org/wiki/Yanase_Futagozuka_Kofun
 34.85436	135.59412	Q55535917	http://www.wikidata.org/entity/Q55535917
 34.50844	135.44229	Q55535982	http://www.wikidata.org/entity/Q55535982
 34.51579	135.44051	Q55535989	http://www.wikidata.org/entity/Q55535989
-34.44312	135.74429	Jōurugami Kofun	http://www.wikidata.org/entity/Q55537165
-53.1668	-1.76461	Gib Hill	http://www.wikidata.org/entity/Q5558652
-33.45194	130.54555	Gorōyama kofun	http://www.wikidata.org/entity/Q5587116
-34.70622	135.78533	Gosashi Kofun	http://www.wikidata.org/entity/Q5587136
+34.44312	135.74429	Jōurugami Kofun	https://en.wikipedia.org/wiki/J%C5%8Durugami_Kofun
+53.1668	-1.76461	Gib Hill	https://en.wikipedia.org/wiki/Gib_Hill
+33.45194	130.54555	Gorōyama kofun	https://en.wikipedia.org/wiki/Gor%C5%8Dyama_kofun
+34.70622	135.78533	Gosashi Kofun	https://en.wikipedia.org/wiki/Gosashi_tomb
 55.84204	12.03071	Q55972524	http://www.wikidata.org/entity/Q55972524
 55.76373	12.26144	Q55972524	http://www.wikidata.org/entity/Q55972524
 53.79972	8.66138	Lusbarg	http://www.wikidata.org/entity/Q56010171
 47.9854	-2.26815	Q56051827	http://www.wikidata.org/entity/Q56051827
 51.54443	11.5291	Fahnenhügel	http://www.wikidata.org/entity/Q56103335
-36.91277	34.89444	Gözlükule	http://www.wikidata.org/entity/Q5626760
+36.91277	34.89444	Gözlükule	https://en.wikipedia.org/wiki/G%C3%B6zl%C3%BCkule
 51.66649	-5.05755	Devil's Quoit	http://www.wikidata.org/entity/Q56294556
 48.48559	4.38559	Q56317177	http://www.wikidata.org/entity/Q56317177
 36.68608	137.14942	Q56346645	http://www.wikidata.org/entity/Q56346645
@@ -44436,8 +44436,8 @@
 49.4477	11.15426	Grabhügel in Zerzabelshofer Forst	http://www.wikidata.org/entity/Q58340268
 49.08206	15.1709	Cimrman's memorial cairn Kaproun	http://www.wikidata.org/entity/Q58346015
 47.90572	11.19371	Tumuli am Hirschberg E von Pähl	http://www.wikidata.org/entity/Q58460004
-34.56392	135.48729	Daisen Kofun	http://www.wikidata.org/entity/Q5849431
-52.5929	-2.9993	Hoarstones	http://www.wikidata.org/entity/Q5874573
+34.56392	135.48729	Daisen Kofun	https://en.wikipedia.org/wiki/Daisen_Kofun
+52.5929	-2.9993	Hoarstones	https://en.wikipedia.org/wiki/Hoarstones
 47.52486	11.2869	Tumuli in Wallgau	http://www.wikidata.org/entity/Q59160402
 47.67323	11.56255	Tumulus-Landschaft NW von Untermurbach	http://www.wikidata.org/entity/Q59160644
 47.91135	11.17016	Tumulus Eichberg NW von Pähl	http://www.wikidata.org/entity/Q59160993
@@ -44749,31 +44749,31 @@
 45.83478	13.83367	Q60360970	http://www.wikidata.org/entity/Q60360970
 45.71463	13.82668	Q60361863	http://www.wikidata.org/entity/Q60361863
 36.67909	137.14452	Q60784932	http://www.wikidata.org/entity/Q60784932
-51.17357	1.00178	Shrub's Wood Long Barrow	http://www.wikidata.org/entity/Q60790860
+51.17357	1.00178	Shrub's Wood Long Barrow	https://en.wikipedia.org/wiki/Shrub%27s_Wood_Long_Barrow
 35.3713	139.38755	Ojinzuka Kofun	http://www.wikidata.org/entity/Q60985588
 34.55795	133.32402	Yamanokami Kofun	http://www.wikidata.org/entity/Q60985636
-34.42859	135.35536	Maruyama Kofun (Kaizuka)	http://www.wikidata.org/entity/Q60986037
-34.75247	135.65847	Ishinohōden Kofun	http://www.wikidata.org/entity/Q60986124
+34.42859	135.35536	Maruyama Kofun (Kaizuka)	https://en.wikipedia.org/wiki/Maruyama_Kofun_(Kaizuka)
+34.75247	135.65847	Ishinohōden Kofun	https://en.wikipedia.org/wiki/Ishinoh%C5%8Dden_Kofun
 35.08288	136.14567	Hachimansha Kofun Group	http://www.wikidata.org/entity/Q60986797
-35.34611	132.75944	Kamienya Jizoyama Kofun	http://www.wikidata.org/entity/Q60987962
+35.34611	132.75944	Kamienya Jizoyama Kofun	https://en.wikipedia.org/wiki/Kamienyajiz%C5%8Dyama_Kofun
 35.07238	136.66791	Takatsukayama Kofun	http://www.wikidata.org/entity/Q60987974
 37.25138	140.25333	Ryugazuka Kofun	http://www.wikidata.org/entity/Q60988132
 34.22779	135.19979	Q60988324	http://www.wikidata.org/entity/Q60988324
 34.62342	135.63574	Q60988592	http://www.wikidata.org/entity/Q60988592
 34.62334	135.63375	Q60988593	http://www.wikidata.org/entity/Q60988593
 34.534	135.70833	Kitsui Shiroyama Kofun	http://www.wikidata.org/entity/Q60988838
-34.61779	135.7024	Udozuka Kofun	http://www.wikidata.org/entity/Q60988845
+34.61779	135.7024	Udozuka Kofun	https://en.wikipedia.org/wiki/Udozuka_Kofun
 34.38929	135.8109	Makigamine Kofun	http://www.wikidata.org/entity/Q60989787
 34.37922	135.79538	Okamine Kofun	http://www.wikidata.org/entity/Q60989895
 35.58292	138.58022	Q60989898	http://www.wikidata.org/entity/Q60989898
 35.56886	135.0878	Q60989911	http://www.wikidata.org/entity/Q60989911
 35.08418	135.21134	Q60989975	http://www.wikidata.org/entity/Q60989975
-36.316	140.57036	Isohama Kofun Cluster	http://www.wikidata.org/entity/Q60990014
+36.316	140.57036	Isohama Kofun Cluster	https://en.wikipedia.org/wiki/Isohama_Kofun_Cluster
 35.00891	135.9892	Q60990033	http://www.wikidata.org/entity/Q60990033
 34.63237	135.70795	Misato Kofun	http://www.wikidata.org/entity/Q60990385
 40.76358	22.14244	Q61140271	http://www.wikidata.org/entity/Q61140271
 38.96083	125.44694	Q61176988	http://www.wikidata.org/entity/Q61176988
-59.63055	16.64472	Anundshög	http://www.wikidata.org/entity/Q612476
+59.63055	16.64472	Anundshög	https://en.wikipedia.org/wiki/Anundsh%C3%B6g
 40.68777	-4.55527	Túmulo de Los Tiesos	http://www.wikidata.org/entity/Q6154669
 35.10413	135.3139	Iwaiyama Kofun Group	http://www.wikidata.org/entity/Q61750525
 34.53961	132.89259	Kurotani Kofun	http://www.wikidata.org/entity/Q61750526
@@ -44781,32 +44781,32 @@
 34.88263	132.7862	Kagamigashuku Kofun	http://www.wikidata.org/entity/Q61750528
 34.74861	132.89901	Itoi Otsuka Kofun	http://www.wikidata.org/entity/Q61750529
 34.4024	133.00901	Kabutoyama Kofun	http://www.wikidata.org/entity/Q61750530
-50.8105	0.1422	Long Burgh Long Barrow	http://www.wikidata.org/entity/Q61945469
+50.8105	0.1422	Long Burgh Long Barrow	https://en.wikipedia.org/wiki/Long_Burgh_Long_Barrow
 55.6295	9.28382	Storhøj	http://www.wikidata.org/entity/Q61985537
 35.47912	134.27964	Sagiyama Kofun	http://www.wikidata.org/entity/Q62626239
 34.50068	135.78935	Tsukida-no-Okanoe-no-Misasagi	http://www.wikidata.org/entity/Q62755816
-53.168	-1.76224	Arbor Low	http://www.wikidata.org/entity/Q630312
+53.168	-1.76224	Arbor Low	https://en.wikipedia.org/wiki/Arbor_Low
 51.40183	5.27982	Kaboutersberg	http://www.wikidata.org/entity/Q63198847
 35.46494	133.85473	Fukuba Kofun	http://www.wikidata.org/entity/Q63253438
-35.44091	133.8322	Sanmyōji Kofun	http://www.wikidata.org/entity/Q63253503
+35.44091	133.8322	Sanmyōji Kofun	https://en.wikipedia.org/wiki/Sanmy%C5%8Dji_Kofun
 35.45308	133.44005	Chōjaganaru Kofun	http://www.wikidata.org/entity/Q63253663
 35.4553	133.44191	Iwaya Kofun	http://www.wikidata.org/entity/Q63253688
-34.39785	132.94688	Mitoshiro Kofun	http://www.wikidata.org/entity/Q63386711
+34.39785	132.94688	Mitoshiro Kofun	https://en.wikipedia.org/wiki/Mitoshiro_Kofun
 35.07411	136.0412	Maruyama Kofun	http://www.wikidata.org/entity/Q63386716
 35.07461	136.04025	Kabutoyama Kofun	http://www.wikidata.org/entity/Q63386717
 34.46576	135.97518	Fudozuka Kofun	http://www.wikidata.org/entity/Q63386718
 34.51908	135.64033	Matsuizuka Kofun	http://www.wikidata.org/entity/Q63386720
 34.05993	134.0987	Nomura Hachiman Kofun	http://www.wikidata.org/entity/Q63386722
 34.28025	134.7377	Nishiyama Kita Kofun	http://www.wikidata.org/entity/Q63386723
-39.4515	-82.72	Karshner Mound	http://www.wikidata.org/entity/Q6373412
+39.4515	-82.72	Karshner Mound	https://en.wikipedia.org/wiki/Karshner_Mound
 35.05391	135.28786	Dōnaka Kofun Group	http://www.wikidata.org/entity/Q63981890
 35.0513	135.28935	Dōnaka Kofun Group	http://www.wikidata.org/entity/Q63981890
 35.05275	135.28952	Dōnaka Kofun Group	http://www.wikidata.org/entity/Q63981890
 34.84337	135.5467	Seishōzuka Kofun	http://www.wikidata.org/entity/Q63982726
-52.558	-1.8827	King's Standing Bowl Barrow	http://www.wikidata.org/entity/Q6411111
-52.5582	-1.8827	King's Standing Bowl Barrow	http://www.wikidata.org/entity/Q6411111
-48.88916	9.00333	Hochdorf Chieftain's Grave	http://www.wikidata.org/entity/Q641907
-48.88861	9.00972	Hochdorf Chieftain's Grave	http://www.wikidata.org/entity/Q641907
+52.558	-1.8827	King's Standing Bowl Barrow	https://en.wikipedia.org/wiki/King%27s_Standing_Bowl_Barrow
+52.5582	-1.8827	King's Standing Bowl Barrow	https://en.wikipedia.org/wiki/King%27s_Standing_Bowl_Barrow
+48.88916	9.00333	Hochdorf Chieftain's Grave	https://en.wikipedia.org/wiki/Hochdorf_Chieftain%27s_Grave
+48.88861	9.00972	Hochdorf Chieftain's Grave	https://en.wikipedia.org/wiki/Hochdorf_Chieftain%27s_Grave
 46.7432	15.42838	Q64512571	http://www.wikidata.org/entity/Q64512571
 46.74309	15.43287	Q64512573	http://www.wikidata.org/entity/Q64512573
 46.74588	15.39575	Q64512575	http://www.wikidata.org/entity/Q64512575
@@ -44820,13 +44820,13 @@
 39.11677	27.19285	A Tepe Tumulus	http://www.wikidata.org/entity/Q64705220
 39.10906	27.17264	Maltepe Tumulus	http://www.wikidata.org/entity/Q64705221
 34.70297	135.93184	Mizuki Kofun	http://www.wikidata.org/entity/Q64787993
-53.951	-1.06523	Lamel Hill	http://www.wikidata.org/entity/Q6481692
+53.951	-1.06523	Lamel Hill	https://en.wikipedia.org/wiki/Lamel_Hill
 55.7201	13.1849	Q6517128	http://www.wikidata.org/entity/Q6517128
 34.62998	135.69653	Tsuboriyama Kofun	http://www.wikidata.org/entity/Q65240603
 35.999	138.11605	Fune Kofun	http://www.wikidata.org/entity/Q65242001
-34.55169	135.70936	Kanmaki Kudo Kofun Cluster	http://www.wikidata.org/entity/Q65247993
+34.55169	135.70936	Kanmaki Kudo Kofun Cluster	https://en.wikipedia.org/wiki/Kanmaki_Kudo_Kofun_Cluster
 35.11373	135.46493	Q65248233	http://www.wikidata.org/entity/Q65248233
-34.02395	133.9361	Tanda Kofun	http://www.wikidata.org/entity/Q65248314
+34.02395	133.9361	Tanda Kofun	https://en.wikipedia.org/wiki/Tanda_Kofun
 35.08035	136.03172	Toba Kofun	http://www.wikidata.org/entity/Q65249225
 35.54972	139.66491	Kasedai Kofun Cluster	http://www.wikidata.org/entity/Q65249392
 35.07868	136.03182	Q65250416	http://www.wikidata.org/entity/Q65250416
@@ -44848,7 +44848,7 @@
 33.60308	133.62488	Funaiwa Kofun Group	http://www.wikidata.org/entity/Q65279749
 35.59569	140.1378	Araku Kofun	http://www.wikidata.org/entity/Q65280521
 34.62268	135.70213	Nishinomiya Kofun	http://www.wikidata.org/entity/Q65281822
-34.48097	135.97427	Mita-Osawa Kofun Group	http://www.wikidata.org/entity/Q65282550
+34.48097	135.97427	Mita-Osawa Kofun Group	https://en.wikipedia.org/wiki/Mita-%C5%8Csawa_Kofun_Cluster
 34.47091	135.94951	Taniwaki Kofun	http://www.wikidata.org/entity/Q65283016
 35.06405	136.03216	Q65283424	http://www.wikidata.org/entity/Q65283424
 34.79073	132.84976	Sakaya Takatsuka Kofun	http://www.wikidata.org/entity/Q65286086
@@ -45486,54 +45486,54 @@
 35.15981	137.17368	Ikeda Kofun Group (Toyota)	http://www.wikidata.org/entity/Q66571333
 34.77115	136.42087	Onazuka Kofun	http://www.wikidata.org/entity/Q66819476
 34.68958	136.5054	Ikenotani Kofun	http://www.wikidata.org/entity/Q66819483
-26.94361	94.875	Maidam	http://www.wikidata.org/entity/Q6735332
-54.37836	-1.96727	Maiden Castle	http://www.wikidata.org/entity/Q6735362
-54.3783	-1.96774	Maiden Castle	http://www.wikidata.org/entity/Q6735362
+26.94361	94.875	Maidam	https://en.wikipedia.org/wiki/Moidam
+54.37836	-1.96727	Maiden Castle	https://en.wikipedia.org/wiki/Maiden_Castle,_North_Yorkshire
+54.3783	-1.96774	Maiden Castle	https://en.wikipedia.org/wiki/Maiden_Castle,_North_Yorkshire
 49.71982	15.69936	Skautská mohyla u Horního mlýna	http://www.wikidata.org/entity/Q68419583
-33.0889	118.472	Ming Zuling	http://www.wikidata.org/entity/Q6864623
-36.53138	138.13722	Hanishina Kofun group	http://www.wikidata.org/entity/Q6912108
-32.92138	-88.94861	Nanih Waiya	http://www.wikidata.org/entity/Q6963605
+33.0889	118.472	Ming Zuling	https://en.wikipedia.org/wiki/Ming_Ancestors_Mausoleum
+36.53138	138.13722	Hanishina Kofun group	https://en.wikipedia.org/wiki/Hanishina_Kofun_group
+32.92138	-88.94861	Nanih Waiya	https://en.wikipedia.org/wiki/Nanih_Waiya
 50.97193	11.5267	Vierzehnheiligen tumulus	http://www.wikidata.org/entity/Q70480303
 51.20329	10.65019	Issersheilingen tumulus	http://www.wikidata.org/entity/Q70561537
 34.74025	135.39233	Mizudo Kofun	http://www.wikidata.org/entity/Q70725787
-37.9817	126.473	Tomb of King Kongmin	http://www.wikidata.org/entity/Q709266
-56.529	-2.78947	Panmure Testimonial	http://www.wikidata.org/entity/Q7131352
-56.5288	-2.79004	Panmure Testimonial	http://www.wikidata.org/entity/Q7131352
+37.9817	126.473	Tomb of King Kongmin	https://en.wikipedia.org/wiki/Mausoleum_of_King_Kongmin
+56.529	-2.78947	Panmure Testimonial	https://en.wikipedia.org/wiki/Panmure_Testimonial
+56.5288	-2.79004	Panmure Testimonial	https://en.wikipedia.org/wiki/Panmure_Testimonial
 34.05027	131.5781	Imoji Daishizuka Kofun	http://www.wikidata.org/entity/Q71611949
 34.06114	131.59263	Iwabatake Kofun	http://www.wikidata.org/entity/Q71612032
-60.3675	-0.94122	Pettigarths Field Cairns	http://www.wikidata.org/entity/Q7179336
-50.03805	19.95844	Krakus Mound	http://www.wikidata.org/entity/Q722446
+60.3675	-0.94122	Pettigarths Field Cairns	https://en.wikipedia.org/wiki/Pettigarths_Field_Cairns
+50.03805	19.95844	Krakus Mound	https://en.wikipedia.org/wiki/Krakus_Mound
 34.05216	131.57358	Kurumazuka Kofun (Hofu)	http://www.wikidata.org/entity/Q72342317
 48.67938	17.56373	Mausoleum of Milan Rastislav Štefánik	http://www.wikidata.org/entity/Q7342227
-35.38634	139.18857	Sakuradote Kofun	http://www.wikidata.org/entity/Q7403196
+35.38634	139.18857	Sakuradote Kofun	https://en.wikipedia.org/wiki/Sakuradote_Kofun
 40.93898	-8.48683	Mamoela de Vinhó	http://www.wikidata.org/entity/Q74316997
-51.19732	-2.12617	Scratchbury Camp	http://www.wikidata.org/entity/Q7438847
-51.1975	-2.12756	Scratchbury Camp	http://www.wikidata.org/entity/Q7438847
+51.19732	-2.12617	Scratchbury Camp	https://en.wikipedia.org/wiki/Scratchbury_Camp
+51.1975	-2.12756	Scratchbury Camp	https://en.wikipedia.org/wiki/Scratchbury_Camp
 44.2111	-78.1569	Serpent Mounds	http://www.wikidata.org/entity/Q7455094
 52.41526	6.83945	Vasserheide	http://www.wikidata.org/entity/Q7476251
 52.41552	6.84929	Vasserheide	http://www.wikidata.org/entity/Q7476251
-55.4127	8.87096	Skelhøj	http://www.wikidata.org/entity/Q7534453
-51.44257	-3.29513	St Lythans burial chamber	http://www.wikidata.org/entity/Q7594075
-50.352	-3.7266	Stanborough Camp	http://www.wikidata.org/entity/Q7598003
-55.67399	-4.5126	Cairnduff	http://www.wikidata.org/entity/Q76257640
+55.4127	8.87096	Skelhøj	https://en.wikipedia.org/wiki/Skelh%C3%B8j
+51.44257	-3.29513	St Lythans burial chamber	https://en.wikipedia.org/wiki/St_Lythans_burial_chamber
+50.352	-3.7266	Stanborough Camp	https://en.wikipedia.org/wiki/Stanborough
+55.67399	-4.5126	Cairnduff	https://en.wikipedia.org/wiki/Cairnduff
 34.85427	135.55991	Q76300174	http://www.wikidata.org/entity/Q76300174
 34.67069	135.81423	Sugiyama Kofun	http://www.wikidata.org/entity/Q77700862
 34.05834	132.98269	Kujirayama Kofun	http://www.wikidata.org/entity/Q77700880
 34.8058	134.72347	Mino Kofun Group	http://www.wikidata.org/entity/Q77700881
 55.88874	-2.27721	Howpark	http://www.wikidata.org/entity/Q77776077
-42.6901	25.3512	Thracian tomb Ostrusha	http://www.wikidata.org/entity/Q7797104
-37.9847	126.506	Tomb of King Wanggon	http://www.wikidata.org/entity/Q7818624
-48.8975	9.14305	Kleinaspergle	http://www.wikidata.org/entity/Q784118
+42.6901	25.3512	Thracian tomb Ostrusha	https://en.wikipedia.org/wiki/Ostrusha_mound
+37.9847	126.506	Tomb of King Wanggon	https://en.wikipedia.org/wiki/Mausoleum_of_King_Wang_K%C5%8Fn
+48.8975	9.14305	Kleinaspergle	https://en.wikipedia.org/wiki/Kleinaspergle
 35.10484	135.32036	Inariyama Kofun (Tambasasayama)	http://www.wikidata.org/entity/Q78908788
-54.136	-0.37661	Willy Howe	http://www.wikidata.org/entity/Q8022557
-51.0491	-2.6278	Wimble Toot	http://www.wikidata.org/entity/Q8023512
+54.136	-0.37661	Willy Howe	https://en.wikipedia.org/wiki/Willy_Howe
+51.0491	-2.6278	Wimble Toot	https://en.wikipedia.org/wiki/Wimble_Toot
 34.59395	135.84924	Minezuka Kofun	http://www.wikidata.org/entity/Q80362813
 33.88834	135.17416	Iwauchi Kofun Group	http://www.wikidata.org/entity/Q80362924
 34.61068	135.83845	Bessho Ōtsuka Kofun	http://www.wikidata.org/entity/Q80362948
 34.81316	135.44415	Futagozuka Kofun (Ikeda)	http://www.wikidata.org/entity/Q80363004
 34.61355	135.84695	Isonokami Ōtsuka Kofun	http://www.wikidata.org/entity/Q80363053
 34.61391	135.84847	Uwanarizuka Kofun	http://www.wikidata.org/entity/Q80363077
-53.207	-4.50352	Barclodiad y Gawres	http://www.wikidata.org/entity/Q807965
+53.207	-4.50352	Barclodiad y Gawres	https://en.wikipedia.org/wiki/Barclodiad_y_Gawres
 56.30488	10.55235	Q808283	http://www.wikidata.org/entity/Q808283
 55.02606	9.87794	Baronens Høj	http://www.wikidata.org/entity/Q808696
 34.58519	135.84736	Higashinorikura Kofun	http://www.wikidata.org/entity/Q80951331
@@ -45541,17 +45541,17 @@
 34.58602	135.84573	Nishinorikura Kofun	http://www.wikidata.org/entity/Q81256722
 33.96169	132.02711	Q83048532	http://www.wikidata.org/entity/Q83048532
 34.79658	135.37358	Q83070704	http://www.wikidata.org/entity/Q83070704
-33.57791	130.49986	Kōshōji Kofun	http://www.wikidata.org/entity/Q84128643
+33.57791	130.49986	Kōshōji Kofun	https://en.wikipedia.org/wiki/K%C5%8Dsh%C5%8Dji_Kofun
 34.31516	134.10602	Hisamoto Kofun	http://www.wikidata.org/entity/Q84638275
 34.5003	135.85744	Akidono Minami Kofun	http://www.wikidata.org/entity/Q84638424
-34.4512	135.805	Kitora Tomb	http://www.wikidata.org/entity/Q846393
-34.61947	135.83958	Akatsuchiyama Kofun	http://www.wikidata.org/entity/Q85480062
+34.4512	135.805	Kitora Tomb	https://en.wikipedia.org/wiki/Kitora_Tomb
+34.61947	135.83958	Akatsuchiyama Kofun	https://en.wikipedia.org/wiki/Akatsuchiyama_Kofun
 34.30836	134.1043	Takamatsu Chausuyama Kofun	http://www.wikidata.org/entity/Q85480340
 34.32038	134.10834	Yamashita Kofun	http://www.wikidata.org/entity/Q85603134
-53.06501	-9.52322	Cnoc Raithní	http://www.wikidata.org/entity/Q85753131
-35.16416	138.74666	Sengen Kofun	http://www.wikidata.org/entity/Q85800341
-34.77777	137.95166	Wadaoka Kofun group	http://www.wikidata.org/entity/Q85814111
-33.57963	130.49947	Tanabata-ike Kofun	http://www.wikidata.org/entity/Q85874984
+53.06501	-9.52322	Cnoc Raithní	https://en.wikipedia.org/wiki/Cnoc_Raithn%C3%AD
+35.16416	138.74666	Sengen Kofun	https://en.wikipedia.org/wiki/Sengen_Kofun
+34.77777	137.95166	Wadaoka Kofun group	https://en.wikipedia.org/wiki/Wadaoka_Kofun_group
+33.57963	130.49947	Tanabata-ike Kofun	https://en.wikipedia.org/wiki/Tanabata-ike_Kofun
 36.43505	139.02569	Mitsuya Kofun	http://www.wikidata.org/entity/Q85875125
 35.52775	139.51116	Q85877373	http://www.wikidata.org/entity/Q85877373
 35.06708	134.00113	Q85877405	http://www.wikidata.org/entity/Q85877405
@@ -45573,7 +45573,7 @@
 34.48213	136.69911	Takakurayama Kofun	http://www.wikidata.org/entity/Q85884614
 51.28461	-2.66472	Pool Farm Cist	http://www.wikidata.org/entity/Q86662110
 35.57333	135.10138	Q86744909	http://www.wikidata.org/entity/Q86744909
-34.71958	137.88797	Mikuriya Kofun Group	http://www.wikidata.org/entity/Q87769616
+34.71958	137.88797	Mikuriya Kofun Group	https://en.wikipedia.org/wiki/Mikuriyama_Kofun_group
 34.53488	135.62282	Tsuboi Maruyama Kofun	http://www.wikidata.org/entity/Q87853309
 34.55047	136.61815	Sakamoto Kofun Cluster	http://www.wikidata.org/entity/Q88504810
 47.78	-3.46777	Tumulus de Kerméné	http://www.wikidata.org/entity/Q88786490
@@ -45609,7 +45609,7 @@
 34.7098	134.90029	Q97178357	http://www.wikidata.org/entity/Q97178357
 34.7195	134.88255	Q97178471	http://www.wikidata.org/entity/Q97178471
 35.00208	135.78694	Shōgunzuka	http://www.wikidata.org/entity/Q97180075
-32.21705	130.75419	Ōmura Cave Tombs	http://www.wikidata.org/entity/Q97220287
+32.21705	130.75419	Ōmura Cave Tombs	https://en.wikipedia.org/wiki/%C5%8Cmura_Cave_Tomb_Cluster
 34.5405	135.64261	Q97311060	http://www.wikidata.org/entity/Q97311060
 35.54788	139.54158	Chōkōjibara Tumulus Group	http://www.wikidata.org/entity/Q97342105
 51.44492	-0.29473	King Henry VIII's Mound	http://www.wikidata.org/entity/Q97399728

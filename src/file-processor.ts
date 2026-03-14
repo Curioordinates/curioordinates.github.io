@@ -110,7 +110,7 @@ export const processFile = async (
             console.log("wikidata-link");
             incrementNamedCounter("wikidata-entity-links");
 
-            if (!fileName.includes("barrow")) {
+            if (!fileName.includes("barrowfffff")) {
               const lastSlash = link.lastIndexOf("/");
               if (lastSlash !== -1) {
                 const q_id = link.substring(lastSlash + 1);
