@@ -159,8 +159,9 @@
    "folklore-giant": {
       "count": 20
    },
-   "fortlet": {
-      "count": 115
+   "folly": {
+      "short_description": "A folly is a decorative building constructed mainly for visual effect in a landscape or garden, often designed to look picturesque, exotic, or ruin-like and typically serving little or no practical purpose.",
+      "count": 435
    },
    "folklore-humanoid": {
       "count": 1
@@ -173,6 +174,9 @@
    },
    "troll": {
       "count": 1
+   },
+   "fortlet": {
+      "count": 115
    },
    "fossil": {
       "count": 4
