@@ -1,9 +1,10 @@
 /**
  * Service worker: offline support for the static map site.
- * Precaches shell, CDN deps, and metadata; cell TSVs and markers are cached on first fetch.
+ * Precaches shell, CDN deps, metadata, and PNG markers (per metadata keys + you.png);
+ * cell TSVs are cached on first fetch.
  */
 
-const CACHE_STATIC = "untamed-static-v1";
+const CACHE_STATIC = "untamed-static-v2";
 const CACHE_RUNTIME = "untamed-runtime-v1";
 
 const CDN_ASSETS = [
@@ -50,6 +51,40 @@ async function safePrecacheUrl(cache, url) {
   }
 }
 
+/**
+ * Raster icons used by Leaflet (`./markers/<tag>.png`, plus `you.png` for follow mode).
+ * SVGs in /markers are sources — not loaded by the map.
+ */
+async function precacheMarkerPngs(cache, base) {
+  const metaUrl = new URL("src/metadata.json", base).href;
+  let metaRes = await cache.match(metaUrl);
+  if (!metaRes) {
+    try {
+      metaRes = await fetch(metaUrl, { cache: "reload" });
+    } catch (e) {
+      console.warn("[sw] metadata unavailable for marker precache", e);
+      return;
+    }
+  }
+  if (!metaRes.ok) {
+    return;
+  }
+  let meta;
+  try {
+    meta = await metaRes.json();
+  } catch (e) {
+    console.warn("[sw] metadata parse failed", e);
+    return;
+  }
+  const names = new Set(Object.keys(meta));
+  names.add("you");
+  await Promise.all(
+    [...names].map((key) =>
+      safePrecacheUrl(cache, new URL(`markers/${key}.png`, base).href)
+    )
+  );
+}
+
 async function precacheApp() {
   const base = appBase();
   const cache = await caches.open(CACHE_STATIC);
@@ -74,6 +109,8 @@ async function precacheApp() {
     ...localPaths.map((p) => safePrecacheUrl(cache, new URL(p, base).href)),
     ...CDN_ASSETS.map((u) => safePrecacheUrl(cache, u)),
   ]);
+
+  await precacheMarkerPngs(cache, base);
 }
 
 async function networkFirstWithCache(request, cacheName) {

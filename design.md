@@ -25,10 +25,11 @@ Analytics: GoatCounter is loaded via `count.js`.
 
 A **service worker** (not a Web Worker) registers from `index.html` and `settings.html` as `./sw.js` with scope `./`.
 
-**Install (`install` event)** precaches into `untamed-static-v1`:
+**Install (`install` event)** precaches into `untamed-static-v2` (bump the name in `sw.js` when you need to invalidate cached shell assets):
 
 - Core pages and assets: `index.html`, `settings.html`, `script.js`, `settings.js`, `stylesheet.css`, popup/link images under `images/`, and `src/metadata.json`.
 - Third-party scripts and styles used by the map: Leaflet, Leaflet.VectorGrid, Leaflet.MarkerCluster, and `https://gc.zgo.at/count.js` (GoatCounter).
+- **`markers/<tag>.png`** for every key in `metadata.json`, plus **`markers/you.png`** (used in follow mode). Missing files are skipped without failing install. SVGs under `markers/` are source assets; the running app uses the PNGs, matching `getMarker()` in `script.js`.
 
 **`data/cells/*.tsv`** is **not** bulk-downloaded at install. Each TSV is **cached the first time** the app requests it (same network-first + store pattern as other same-origin assets), so growth in cell files does not slow or bloat install.
 
