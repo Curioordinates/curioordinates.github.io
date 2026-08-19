@@ -83,7 +83,7 @@
       "count": 294
    },
    "curse": {
-      "count": 25
+      "count": 126
    },
    "cyclopean": {
       "short_description": "Cyclopean masonry features massive, irregular stone blocks fitted so precisely that ancient Greeks believed only the mythical Cyclopes could have built them.",
@@ -123,7 +123,7 @@
    "erratic": {
       "typeLabel": "Glacial Erratic",
       "short_description": "Stones transported by glaciers over 25000 years ago",
-      "count": 294
+      "count": 295
    },
    "event": {
       "count": 5
