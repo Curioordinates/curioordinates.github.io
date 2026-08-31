@@ -360,8 +360,9 @@ export const go = async () => {
 
   // Group physical directories by their leaf name first (a cheap,
   // side-effect-free pass) so directories sharing a featureType - eg
-  // data/source/troll and data/source/folklore/troll - get merged into one
-  // combined output below, rather than racing to overwrite each other.
+  // data/source/troll and data/source/folklore/troll - can be merged into
+  // one combined output below, rather than racing to overwrite each other.
+  // Everything else keeps the original traversal order/timing untouched.
   const directoriesByFeatureType: Record<string, string[]> = {};
 
   await recurseDirectories({
@@ -379,52 +380,61 @@ export const go = async () => {
     },
   });
 
-  // Process the most deeply nested feature types first, so a more specific
-  // subdirectory (eg amphitheatre/amphitheatre-site) claims a location in
-  // hitMap before its more generic ancestor (amphitheatre) is processed -
-  // matching the "more specific wins" precedence that the ignore-in-favour-of
-  // check in processFileSet is designed around.
-  const featureTypesByDepth = Object.keys(directoriesByFeatureType).sort(
-    (a, b) => {
-      const depthOf = (featureType: string) =>
-        Math.max(
-          ...directoriesByFeatureType[featureType].map(
-            (directoryName) => directoryName.split(path.sep).length
-          )
-        );
-      return depthOf(b) - depthOf(a) || a.localeCompare(b);
-    }
-  );
+  const processedFeatureTypes = new Set<string>();
 
-  for (const featureType of featureTypesByDepth) {
-    const directoryNames = directoriesByFeatureType[featureType].sort();
+  await recurseDirectories({
+    rootDirectory: "./data/source",
+    callback: async (foundDirectory) => {
+      if (foundDirectory.directoryPath.includes("_stops")) {
+        return; // stops are handled elsewhere.
+      }
 
-    let metadata: Record<string, string | number> = { count: 0 };
-    for (const directoryName of directoryNames) {
-      try {
-        const fileContent = fs
-          .readFileSync(
-            path.join(directoryName, `${featureType}.metadata.json`)
-          )
-          .toString();
-        metadata = JSON.parse(fileContent);
-        break; // first directory (alphabetically) that defines it wins
-      } catch (_) {} // No metadata file
-    }
+      const keyName =
+        foundDirectory.relativeSteps[foundDirectory.relativeSteps.length - 1];
+      const directoryNames = directoriesByFeatureType[keyName].sort();
 
-    builtMetadata[featureType] = metadata;
+      if (directoryNames.length > 1) {
+        // Shared featureType - only process it once, the first time any of
+        // its contributing directories is reached.
+        if (processedFeatureTypes.has(keyName)) {
+          return;
+        }
+        processedFeatureTypes.add(keyName);
+      }
 
-    console.log("FEATURE TYPE: " + featureType + " -> " + directoryNames.join(", "));
-    console.log("META: " + JSON.stringify(metadata));
+      let metadata: Record<string, string | number> = { count: 0 };
+      for (const directoryName of directoryNames) {
+        try {
+          const fileContent = fs
+            .readFileSync(
+              path.join(directoryName, `${keyName}.metadata.json`)
+            )
+            .toString();
+          metadata = JSON.parse(fileContent);
+          break; // first directory (alphabetically) that defines it wins
+        } catch (_) {} // No metadata file
+      }
 
-    const itemCount = await processFeatureType(
-      featureType,
-      directoryNames,
-      metadata
-    );
+      builtMetadata[keyName] = metadata;
 
-    metadata.count = itemCount;
-  }
+      console.log(
+        "DIRECTORY: " +
+          foundDirectory.directoryPath +
+          (directoryNames.length > 1
+            ? ` (merged with ${directoryNames.length - 1} other(s))`
+            : "")
+      );
+      console.log("META: " + JSON.stringify(metadata));
+
+      const itemCount = await processFeatureType(
+        keyName,
+        directoryNames,
+        metadata
+      );
+
+      metadata.count = itemCount;
+    },
+  });
 
   fs.writeFileSync(
     "./src/metadata.json",

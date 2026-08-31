@@ -4,13 +4,15 @@
  * cell TSVs are cached on first fetch.
  */
 
-const CACHE_STATIC = "untamed-static-v2";
+const CACHE_STATIC = "untamed-static-v3";
 const CACHE_RUNTIME = "untamed-runtime-v1";
 
 const CDN_ASSETS = [
   "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
   "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
-  "https://unpkg.com/leaflet.vectorgrid@latest/dist/Leaflet.VectorGrid.bundled.js",
+  "https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css",
+  "https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js",
+  "https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.1.4/leaflet-maplibre-gl.js",
   "https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css",
   "https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css",
   "https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js",

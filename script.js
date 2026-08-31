@@ -137,7 +137,11 @@ const mapSetup = () => {
     }
   }
 
-  var map = L.map("map");
+  // The vector basemap layer (L.maplibreGL) is a plain L.Layer, not a
+  // TileLayer, so it never sets the map's maxZoom itself the way the old
+  // raster layer did. Leaflet.markercluster needs a defined maxZoom to size
+  // its internal grid, so set it explicitly here.
+  var map = L.map("map", { maxZoom: 20 });
 
   map.on("popupopen", () => (mapState.isPopupOpen = true));
   map.on("popupclose", () => (mapState.isPopupOpen = false));
@@ -186,25 +190,26 @@ const mapSetup = () => {
   }
 
   //#region Layer setup
-  const satellite = [
-    "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-    {
-      attribution:
-        "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
-    },
-  ];
+  const satelliteLayer = () =>
+    L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      {
+        attribution:
+          "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
+      },
+    );
 
-  const stadiaSmooth = [
-    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_2o5j_1_eb4f2ec6e1ca499e7a67788a",
-    {
-      maxZoom: 20,
-      subdomains: "abcd",
+  // CARTO's Positron vector basemap (MapLibre GL style), bridged into the
+  // Leaflet map via the maplibre-gl-leaflet plugin.
+  const vectorBasemapLayer = () =>
+    L.maplibreGL({
+      style: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    },
-  ];
+    });
 
-  const tileLayer = qs.satellite || qs.sat ? satellite : stadiaSmooth;
+  const baseLayer =
+    qs.satellite || qs.sat ? satelliteLayer() : vectorBasemapLayer();
   //#endregion
 
   const noGrouping = lowercaseUrl.includes("ungroup");
@@ -297,7 +302,7 @@ const mapSetup = () => {
     groupedMarkerLayer.addLayer(m);
   };
 
-  L.tileLayer(...tileLayer).addTo(map);
+  baseLayer.addTo(map);
 
   for (const tagToLoad of tagsToLoad) {
     const tagMetadata = metadata[tagToLoad];
