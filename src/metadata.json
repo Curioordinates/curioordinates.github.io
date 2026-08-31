@@ -1,9 +1,55 @@
 {
-   "accused": {
-      "count": 8
-   },
    "amphitheatre-site": {
       "count": 49
+   },
+   "beehive-tomb": {
+      "count": 51
+   },
+   "chambered-cairn": {
+      "count": 325
+   },
+   "changeling": {
+      "short_description": "In folklore, a changeling is a fairy child left in place of a human infant, taken out of love or belief that the human child is exceptionally beautiful or destined for a life of wonder. In reality, the changeling myth was often a tragic explanation for infants born with (at the time) unexplained illnesses, such that parents sometimes resorted to cruel superstitions in an attempt to 'drive out' the fairy imposter.",
+      "count": 5
+   },
+   "dragon": {
+      "count": 26
+   },
+   "folklore-fox": {
+      "count": 5
+   },
+   "folklore-giant": {
+      "count": 20
+   },
+   "folklore-humanoid": {
+      "count": 1
+   },
+   "folklore-serpent": {
+      "count": 1
+   },
+   "folklore-vampire": {
+      "count": 5
+   },
+   "name-dragon": {
+      "count": 5
+   },
+   "runestone": {
+      "count": 995
+   },
+   "sacrificial-stone": {
+      "count": 125
+   },
+   "sunken-treasure": {
+      "count": 5
+   },
+   "troll": {
+      "count": 3
+   },
+   "witch-hunt-memorial-plaque": {
+      "count": 6
+   },
+   "accused": {
+      "count": 8
    },
    "amphitheatre": {
       "count": 192
@@ -51,9 +97,6 @@
    },
    "burial": {
       "count": 3
-   },
-   "beehive-tomb": {
-      "count": 51
    },
    "cairn": {
       "count": 6
@@ -103,9 +146,6 @@
       "short_description": "Dolmen are single chambered megalithic tomb. Upright stones support a large 'table' stone.",
       "count": 3706
    },
-   "chambered-cairn": {
-      "count": 325
-   },
    "e-book": {
       "short_description": "E-Books covering specific geographic areas. If you buy a linked book, we may earn a commission from Bookshop.org, whose fees support independent bookshops!",
       ".<>": "Find it on ",
@@ -140,40 +180,15 @@
    "folk-song": {
       "count": 3
    },
-   "changeling": {
-      "short_description": "In folklore, a changeling is a fairy child left in place of a human infant, taken out of love or belief that the human child is exceptionally beautiful or destined for a life of wonder. In reality, the changeling myth was often a tragic explanation for infants born with (at the time) unexplained illnesses, such that parents sometimes resorted to cruel superstitions in an attempt to 'drive out' the fairy imposter.",
-      "count": 5
-   },
    "folklore": {
       "count": 252
-   },
-   "dragon": {
-      "count": 26
-   },
-   "folklore-fox": {
-      "count": 5
    },
    "folklore-swine": {
       "count": 11
    },
-   "folklore-giant": {
-      "count": 20
-   },
    "folly": {
       "short_description": "A folly is a decorative building constructed mainly for visual effect in a landscape or garden, often designed to look picturesque, exotic, or ruin-like and typically serving little or no practical purpose.",
       "count": 437
-   },
-   "folklore-humanoid": {
-      "count": 1
-   },
-   "folklore-serpent": {
-      "count": 1
-   },
-   "folklore-vampire": {
-      "count": 5
-   },
-   "troll": {
-      "count": 1
    },
    "fortlet": {
       "count": 115
@@ -228,6 +243,9 @@
       "implicit": false,
       "count": 9
    },
+   "haunted-road": {
+      "count": 64
+   },
    "haunted-stay": {
       "count": 387
    },
@@ -278,9 +296,6 @@
    "lost-mine": {
       "count": 23
    },
-   "sunken-treasure": {
-      "count": 5
-   },
    "lost-treasure": {
       "count": 9
    },
@@ -324,9 +339,6 @@
       "typeLabel": "Myths that touched the Earth",
       "short_description": "Places where myths have effected landscapes or other features still visible today.",
       "count": 6
-   },
-   "name-dragon": {
-      "count": 5
    },
    "name": {
       "count": 28
@@ -410,11 +422,8 @@
    "sacred-landscape": {
       "count": 1
    },
-   "sacrificial-stone": {
-      "count": 125
-   },
    "sacred-stone": {
-      "count": 121
+      "count": 23
    },
    "sacred-tree": {
       "count": 35
@@ -456,9 +465,6 @@
    },
    "spiritborne": {
       "count": 3
-   },
-   "runestone": {
-      "count": 995
    },
    "standing-stone": {
       "count": 290
@@ -546,9 +552,6 @@
    },
    "witch": {
       "count": 29
-   },
-   "witch-hunt-memorial-plaque": {
-      "count": 6
    },
    "witch-hunt-memorial": {
       "count": 19

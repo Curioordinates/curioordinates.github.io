@@ -155,6 +155,48 @@ export const processFile = async (
 
 let stopHits = 0;
 
+const FORCE_REBUILD = process.argv.includes("--force");
+const STOPS_FILE = "./data/source/_stops/_stops.tsv";
+
+const getNewestMtimeMs = (paths: string[]): number =>
+  paths.reduce((newest, p) => {
+    try {
+      return Math.max(newest, fs.statSync(p).mtimeMs);
+    } catch (_) {
+      return newest; // missing file (eg no metadata.json) doesn't count
+    }
+  }, 0);
+
+/**
+ * Re-uses a previously written cell file instead of re-parsing its sources.
+ * Still seeds hitMap from the surviving points so that dedupe against
+ * parent/child directories (see processFileSet) keeps working correctly
+ * for any sibling directories that do get reprocessed this run.
+ */
+const seedFromExistingCellFile = (
+  cellFilePath: string,
+  directoryName: string
+): number => {
+  const lines = fs
+    .readFileSync(cellFilePath)
+    .toString()
+    .split("\n")
+    .filter((line) => line.trim());
+
+  for (const line of lines) {
+    const [latitude, longitude] = line.split("\t");
+    const hitKey = `${to5DP(parseFloat(latitude))}:${to5DP(
+      parseFloat(longitude)
+    )}`;
+    hitMap[hitKey] = directoryName;
+  }
+
+  console.log(
+    `Skipping ${directoryName} - ${cellFilePath} is up to date (${lines.length} items)`
+  );
+  return lines.length;
+};
+
 const processFileSet = async (
   directoryName: string,
   fileNames: string[],
@@ -244,23 +286,66 @@ const processFileSet = async (
   return fileLines.length;
 };
 
-const processDirectory = async (
-  directoryName: string,
+/**
+ * Multiple physical source directories can share the same leaf name (eg
+ * data/source/troll and data/source/folklore/troll both feed "troll"). All
+ * directories for a given featureType are processed together as one merged
+ * set so their outputs are combined into data/cells/{featureType}.tsv
+ * instead of racing to overwrite each other.
+ */
+const processFeatureType = async (
   featureType: string,
+  directoryNames: string[],
   params: Record<string, string | number>
 ): Promise<number> => {
-  const items = fs.readdirSync(directoryName);
-
-  const targetItems = items
-    .filter(
-      (item) =>
-        item.endsWith(".csv") ||
-        item.endsWith(".tsv") ||
-        item.endsWith(".hie.txt")
-    )
-    .map((item) => path.join(directoryName, item));
+  const targetItems = directoryNames.flatMap((directoryName) =>
+    fs
+      .readdirSync(directoryName)
+      .filter(
+        (item) =>
+          item.endsWith(".csv") ||
+          item.endsWith(".tsv") ||
+          item.endsWith(".hie.txt")
+      )
+      .map((item) => path.join(directoryName, item))
+  );
   console.log(targetItems);
-  return processFileSet(directoryName, targetItems, featureType, params);
+
+  if (!targetItems.length) {
+    return 0;
+  }
+
+  // The most nested directory represents this featureType when checking
+  // dedupe priority (see processFileSet) against other, unrelated feature
+  // types - it matches the existing "more specific wins" convention.
+  const representativeDirectory = directoryNames.reduce((longest, name) =>
+    name.length > longest.length ? name : longest
+  );
+
+  const cellFilePath = `./data/cells/${featureType}.tsv`;
+  const metadataFilePaths = directoryNames.map((directoryName) =>
+    path.join(directoryName, `${featureType}.metadata.json`)
+  );
+
+  if (!FORCE_REBUILD && fs.existsSync(cellFilePath)) {
+    const cellMtimeMs = fs.statSync(cellFilePath).mtimeMs;
+    const newestSourceMtimeMs = getNewestMtimeMs([
+      ...targetItems,
+      ...metadataFilePaths,
+      STOPS_FILE,
+    ]);
+
+    if (cellMtimeMs >= newestSourceMtimeMs) {
+      return seedFromExistingCellFile(cellFilePath, representativeDirectory);
+    }
+  }
+
+  return processFileSet(
+    representativeDirectory,
+    targetItems,
+    featureType,
+    params
+  );
 };
 
 const stops: { latitude: number; longitude: number }[] = [];
@@ -273,6 +358,12 @@ export const go = async () => {
     console.log(`STOP : ` + JSON.stringify(item));
   });
 
+  // Group physical directories by their leaf name first (a cheap,
+  // side-effect-free pass) so directories sharing a featureType - eg
+  // data/source/troll and data/source/folklore/troll - get merged into one
+  // combined output below, rather than racing to overwrite each other.
+  const directoriesByFeatureType: Record<string, string[]> = {};
+
   await recurseDirectories({
     rootDirectory: "./data/source",
     callback: async (foundDirectory) => {
@@ -280,53 +371,65 @@ export const go = async () => {
         return; // stops are handled elsewhere.
       }
 
-      let metadata = {
-        count: 0,
-      };
       const keyName =
         foundDirectory.relativeSteps[foundDirectory.relativeSteps.length - 1];
+      (directoriesByFeatureType[keyName] ??= []).push(
+        foundDirectory.directoryPath
+      );
+    },
+  });
+
+  // Process the most deeply nested feature types first, so a more specific
+  // subdirectory (eg amphitheatre/amphitheatre-site) claims a location in
+  // hitMap before its more generic ancestor (amphitheatre) is processed -
+  // matching the "more specific wins" precedence that the ignore-in-favour-of
+  // check in processFileSet is designed around.
+  const featureTypesByDepth = Object.keys(directoriesByFeatureType).sort(
+    (a, b) => {
+      const depthOf = (featureType: string) =>
+        Math.max(
+          ...directoriesByFeatureType[featureType].map(
+            (directoryName) => directoryName.split(path.sep).length
+          )
+        );
+      return depthOf(b) - depthOf(a) || a.localeCompare(b);
+    }
+  );
+
+  for (const featureType of featureTypesByDepth) {
+    const directoryNames = directoriesByFeatureType[featureType].sort();
+
+    let metadata: Record<string, string | number> = { count: 0 };
+    for (const directoryName of directoryNames) {
       try {
         const fileContent = fs
           .readFileSync(
-            path.join(foundDirectory.directoryPath, `${keyName}.metadata.json`)
+            path.join(directoryName, `${featureType}.metadata.json`)
           )
           .toString();
-
         metadata = JSON.parse(fileContent);
+        break; // first directory (alphabetically) that defines it wins
       } catch (_) {} // No metadata file
+    }
 
-      builtMetadata[keyName] = metadata;
+    builtMetadata[featureType] = metadata;
 
-      console.log("DIRECTORY: " + foundDirectory.directoryPath);
-      console.log("META: " + JSON.stringify(metadata));
+    console.log("FEATURE TYPE: " + featureType + " -> " + directoryNames.join(", "));
+    console.log("META: " + JSON.stringify(metadata));
 
-      const itemCount = await processDirectory(
-        foundDirectory.directoryPath,
-        keyName,
-        metadata
-      );
+    const itemCount = await processFeatureType(
+      featureType,
+      directoryNames,
+      metadata
+    );
 
-      metadata.count = itemCount;
-    },
-  });
+    metadata.count = itemCount;
+  }
 
   fs.writeFileSync(
     "./src/metadata.json",
     JSON.stringify(builtMetadata, null, 3)
   );
-
-  /*
-  const metadata = JSON.parse(
-    fs.readFileSync(path.join(__dirname, "./metadata.json")).toString()
-  );
-
-  for (const [key, untypedData] of Object.entries(metadata)) {
-    const data = untypedData as Record<string, string>;
-    console.log(key);
-    console.log(JSON.stringify(data, null, 3));
-    processDirectory(`./data/source/${key}/`, data);
-  }
-*/
 
   const namedCounterMap = getNamedCountersAsMap();
   console.log(JSON.stringify(namedCounterMap, null, 3));
