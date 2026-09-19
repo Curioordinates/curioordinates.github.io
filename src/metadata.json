@@ -1,6 +1,6 @@
 {
    "accused": {
-      "count": 8
+      "count": 9
    },
    "amphitheatre-site": {
       "count": 49
@@ -23,7 +23,7 @@
       "count": 61
    },
    "arthurian": {
-      "count": 2
+      "count": 3
    },
    "balancing-rock": {
       "count": 14
@@ -80,13 +80,13 @@
       "count": 24
    },
    "crossroads-burial": {
-      "count": 10
+      "count": 12
    },
    "cup-and-ring": {
       "count": 294
    },
    "curse": {
-      "count": 26
+      "count": 31
    },
    "cyclopean": {
       "short_description": "Cyclopean masonry features massive, irregular stone blocks fitted so precisely that ancient Greeks believed only the mythical Cyclopes could have built them.",
@@ -95,8 +95,11 @@
    "dark-sky": {
       "count": 261
    },
+   "demon": {
+      "count": 1
+   },
    "devil": {
-      "count": 34
+      "count": 40
    },
    "devils-bridge": {
       "count": 1
@@ -145,19 +148,22 @@
       "count": 5
    },
    "dragon": {
-      "count": 26
+      "count": 27
+   },
+   "folklore-cat": {
+      "count": 1
    },
    "folklore-fox": {
       "count": 5
    },
    "folklore-giant": {
-      "count": 20
+      "count": 24
    },
    "folklore-humanoid": {
       "count": 1
    },
    "folklore-serpent": {
-      "count": 2
+      "count": 3
    },
    "folklore-vampire": {
       "count": 5
@@ -166,7 +172,7 @@
       "count": 3
    },
    "folklore": {
-      "count": 252
+      "count": 272
    },
    "folklore-swine": {
       "count": 11
@@ -197,7 +203,7 @@
       "count": 4
    },
    "ghost-light": {
-      "count": 15
+      "count": 16
    },
    "ghost-photo": {
       "count": 1
@@ -229,13 +235,13 @@
       "count": 9
    },
    "haunted-road": {
-      "count": 64
+      "count": 65
    },
    "haunted-stay": {
       "count": 387
    },
    "haunting": {
-      "count": 646
+      "count": 686
    },
    "headless-rider": {
       "count": 2
@@ -256,7 +262,7 @@
       "count": 23
    },
    "holy-well": {
-      "count": 364
+      "count": 365
    },
    "hominid": {
       "count": 6
@@ -285,7 +291,7 @@
       "count": 5
    },
    "lost-treasure": {
-      "count": 9
+      "count": 10
    },
    "manmade-cave": {
       "count": 239
@@ -300,7 +306,7 @@
       "count": 24
    },
    "merfolk": {
-      "count": 32
+      "count": 34
    },
    "milestone": {
       "count": 65
@@ -332,10 +338,10 @@
       "count": 5
    },
    "name": {
-      "count": 28
+      "count": 30
    },
    "named-ghost": {
-      "count": 13
+      "count": 18
    },
    "national-trust": {
       "count": 419
@@ -380,11 +386,14 @@
       "short_description": "Mile Zero or Kilometer Zero - is a point in a city that distances to that city are measured from. So when a road sign says 'London 100 miles' it means its 100 miles to that spot!",
       "count": 17
    },
+   "possession": {
+      "count": 19
+   },
    "practitioner": {
-      "count": 21
+      "count": 22
    },
    "prediction": {
-      "count": 1
+      "count": 3
    },
    "public-bookcase": {
       "implicit": false,
@@ -464,7 +473,7 @@
       "count": 995
    },
    "standing-stone": {
-      "count": 290
+      "count": 295
    },
    "statue": {
       "count": 2
@@ -499,11 +508,14 @@
    "tower": {
       "count": 7
    },
+   "tradition": {
+      "count": 2
+   },
    "tunnel": {
-      "count": 3
+      "count": 5
    },
    "ufo": {
-      "count": 26
+      "count": 27
    },
    "uncontacted": {
       "short_description": "Uncontacted peoples are indigenous groups living without sustained contact with the world community. There are thought to be between 100 and 200 such tribes.",
@@ -540,7 +552,7 @@
       "count": 2
    },
    "weird": {
-      "count": 2
+      "count": 3
    },
    "wishing": {
       "typeLabel": "Wishing Trees",
@@ -548,7 +560,7 @@
       "count": 24
    },
    "witch": {
-      "count": 29
+      "count": 32
    },
    "witch-hunt-memorial-plaque": {
       "count": 6
