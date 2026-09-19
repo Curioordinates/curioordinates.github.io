@@ -90,6 +90,10 @@ const setup = async () => {
 
 const mapSetup = () => {
   parseLocation();
+  const settingsLink = document.querySelector("#settingsbutton a");
+  if (settingsLink) {
+    settingsLink.href = `/settings.html${window.location.search}`;
+  }
   const maxMapZoom = 19;
 
   //#region Metadata
@@ -156,6 +160,8 @@ const mapSetup = () => {
     console.log("set zoom to: " + qs.z);
     const parts = [`l=${qs.latitude},${qs.longitude}`, `z=${qs.z}`];
     if (qs.satellite || qs.sat) parts.push("satellite");
+    if (qs.follow) parts.push("follow");
+    if (qs.radar) parts.push("radar");
     for (const tag of tagsPresentInUrl) {
       parts.push(tag);
     }

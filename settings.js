@@ -49,7 +49,7 @@ const handleApply = () => {
 };
 
 const handleCancel = () => {
-  window.location.href = "/";
+  window.location.href = `/${window.location.search}`;
 };
 
 const uiSetup = () => {
