@@ -1,4 +1,7 @@
 {
+   "abduction": {
+      "count": 0
+   },
    "accused": {
       "count": 9
    },
@@ -17,7 +20,7 @@
       "count": 10988
    },
    "apotropaic": {
-      "count": 13
+      "count": 14
    },
    "aqueduct": {
       "count": 61
@@ -99,7 +102,7 @@
       "count": 1
    },
    "devil": {
-      "count": 40
+      "count": 41
    },
    "devils-bridge": {
       "count": 1
@@ -148,7 +151,7 @@
       "count": 5
    },
    "dragon": {
-      "count": 27
+      "count": 28
    },
    "folklore-cat": {
       "count": 1
@@ -244,7 +247,7 @@
       "count": 686
    },
    "headless-rider": {
-      "count": 2
+      "count": 3
    },
    "henge": {
       "count": 2
@@ -387,7 +390,7 @@
       "count": 17
    },
    "possession": {
-      "count": 19
+      "count": 20
    },
    "practitioner": {
       "count": 22
@@ -473,7 +476,7 @@
       "count": 995
    },
    "standing-stone": {
-      "count": 295
+      "count": 296
    },
    "statue": {
       "count": 2
