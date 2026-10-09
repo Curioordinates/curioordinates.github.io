@@ -24,5 +24,10 @@
 <script src="glyphs.js"></script>
 <script src="pins.js"></script>
 <script src="app.js"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./sw.js", { scope: "./" });
+  }
+</script>
 
 </html>

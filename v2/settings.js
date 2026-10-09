@@ -45,6 +45,11 @@ const handleChecked = (e) => {
 
 const handleApply = () => {
   localStorage.setItem("settings", JSON.stringify(settings));
+  if (settings.useV2 === false) {
+    // switched back to the original map: go there rather than back to v2
+    window.location.href = `../${window.location.search}`;
+    return;
+  }
   handleCancel();
 };
 
@@ -86,6 +91,13 @@ const uiSetup = () => {
   }
 
   document.getElementById("tags-div").innerHTML = tags.join("\n");
+
+  // Behaviour: "Use v2 map" sends visits to /index.html on to /v2/index.html (see the redirect in /index.html)
+  const useV2 = document.getElementById("use-v2");
+  useV2.checked = !!settings.useV2;
+  useV2.addEventListener("change", (e) => {
+    settings.useV2 = e.target.checked;
+  });
 
   document.getElementById("cancel").addEventListener("click", handleCancel);
   document.getElementById("apply").addEventListener("click", handleApply);

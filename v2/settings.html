@@ -56,6 +56,15 @@
         object-fit: contain;
         flex-shrink: 0;
       }
+      .behaviour {
+        padding: 0 0.75em 0.5em;
+        border-top: 1px solid #ddd;
+      }
+      .behaviour h2 {
+        font-size: 1.1em;
+        margin: 0;
+        padding: 0.5em 0;
+      }
       .controls {
         display: flex;
         justify-content: space-between;
@@ -83,9 +92,18 @@
   <body onload="setup()">
     <h1>Show on map</h1>
     <div id="tags-div"></div>
+    <section class="behaviour">
+      <h2>Behaviour</h2>
+      <label class="tag"><input class="opt" type="checkbox" id="use-v2" />Use v2 map</label>
+    </section>
     <div class="controls">
       <button id="cancel">Cancel</button>
       <button id="apply" class="default">Apply</button>
     </div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./sw.js", { scope: "./" });
+      }
+    </script>
   </body>
 </html>

@@ -1,5 +1,13 @@
 <html>
   <head>
+    <script>
+      // "Use v2 map" (settings page, Behaviour) sends this page on to the v2 map, keeping the URL parameters
+      try {
+        if (JSON.parse(localStorage.getItem("settings") || "{}").useV2) {
+          window.location.replace(`./v2/index.html${window.location.search}`);
+        }
+      } catch (e) {}
+    </script>
     <script
       data-goatcounter="https://untamed-earth.goatcounter.com/count"
       async
