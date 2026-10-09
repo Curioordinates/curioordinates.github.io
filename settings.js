@@ -78,9 +78,9 @@ const uiSetup = () => {
       settings.hide.push(tag);
     }
 
-    const itemHtml = `<div><input class="opt" type="checkbox" onClick="handleChecked(event)" id="${tag}" ${
+    const itemHtml = `<label class="tag"><input class="opt" type="checkbox" onClick="handleChecked(event)" id="${tag}" ${
       selected ? "checked" : ""
-    }>${key}</div>`;
+    }><img class="icon" src="./markers/${tag}.png" alt="" onerror="this.style.visibility='hidden'">${key}</label>`;
 
     tags.push(itemHtml);
   }

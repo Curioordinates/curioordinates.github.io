@@ -4,7 +4,7 @@
  * cell TSVs are cached on first fetch.
  */
 
-const CACHE_STATIC = "untamed-static-v3";
+const CACHE_STATIC = "untamed-static-v4";
 const CACHE_RUNTIME = "untamed-runtime-v1";
 
 const CDN_ASSETS = [
