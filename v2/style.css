@@ -1,0 +1,25 @@
+/* The map fills the window, like the original /index.html. Deliberately single-theme:
+   the map is a physical object and keeps its own look. */
+:root {
+  --parchment: #ecdcb1;
+  --ink: #3b2a1a;
+  --brass: #c79a55;
+  --display: "IM Fell English", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --body: "Alegreya", "Iowan Old Style", Georgia, serif;
+  color-scheme: light;
+}
+html, body { height: 100%; margin: 0; padding: 0; overflow: hidden; background: var(--parchment); }
+.plate { position: fixed; inset: 0; background: var(--parchment); overflow: hidden; }
+#map { position: absolute; inset: 0; }
+/* Until the generated texture arrives the paper is its average colour (worked out once from the tile, which is
+   the same on every load), so the map already has the right overall tone; the texture then fades in over it. */
+#paper-tex { position: absolute; inset: 0; pointer-events: none; mix-blend-mode: multiply; z-index: 2; background-color: rgb(243,237,229); }
+#paper-tex::after { content: ""; position: absolute; inset: 0; background-image: var(--paper-img, none); background-size: var(--paper-size, auto); background-position: inherit; background-repeat: repeat; opacity: 0; transition: opacity .8s ease; }
+#paper-tex.ready::after { opacity: 1; }
+#paper { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; mix-blend-mode: multiply; z-index: 2; }
+.loading { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--display); font-style: italic; font-size: 20px; color: var(--ink); z-index: 4; background: var(--parchment); }
+.loading[hidden] { display: none; }
+.maplibregl-ctrl-group { background: var(--brass); }
+.maplibregl-ctrl-group button + button { border-top-color: rgba(40,25,10,.3); }
+.maplibregl-ctrl-attrib { background: rgba(242,230,198,.8) !important; font-family: var(--body); }
+.maplibregl-ctrl-attrib a { color: var(--ink); }
