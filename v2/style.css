@@ -3,6 +3,8 @@
 :root {
   --parchment: #ecdcb1;
   --ink: #3b2a1a;
+  --ink-faded: rgba(59,42,26,.72);
+  --red: #9a3a22;
   --brass: #c79a55;
   --display: "IM Fell English", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --body: "Alegreya", "Iowan Old Style", Georgia, serif;
@@ -23,3 +25,24 @@ html, body { height: 100%; margin: 0; padding: 0; overflow: hidden; background: 
 .maplibregl-ctrl-group button + button { border-top-color: rgba(40,25,10,.3); }
 .maplibregl-ctrl-attrib { background: rgba(242,230,198,.8) !important; font-family: var(--body); }
 .maplibregl-ctrl-attrib a { color: var(--ink); }
+
+/* Buttons and info windows sit above the aged-paper overlay (z-index 2) but under the loading cover (z-index 4). */
+#kofibutton { position: absolute; top: 20px; right: 20px; z-index: 3; }
+#settingsbutton { position: absolute; bottom: 20px; left: 20px; z-index: 3; }
+#kofibutton img, #settingsbutton img { display: block; }
+
+/* Info windows are shaped like the original Leaflet ones, in the map's parchment and inks. */
+.maplibregl-popup { z-index: 3; }
+.maplibregl-popup-content { background: var(--parchment); color: var(--ink); padding: 13px 24px 13px 20px; border-radius: 12px; box-shadow: 0 3px 14px rgba(0,0,0,.4);
+  font: 13px/1.4 "Helvetica Neue", Arial, Helvetica, sans-serif; min-width: 50px; }
+.maplibregl-popup-content a { color: var(--red); }
+/* the tip is a CSS border triangle on the side facing the pin, so it takes the parchment too */
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip, .maplibregl-popup-anchor-bottom-left .maplibregl-popup-tip, .maplibregl-popup-anchor-bottom-right .maplibregl-popup-tip { border-top-color: var(--parchment); }
+.maplibregl-popup-anchor-top .maplibregl-popup-tip, .maplibregl-popup-anchor-top-left .maplibregl-popup-tip, .maplibregl-popup-anchor-top-right .maplibregl-popup-tip { border-bottom-color: var(--parchment); }
+.maplibregl-popup-anchor-left .maplibregl-popup-tip { border-right-color: var(--parchment); }
+.maplibregl-popup-anchor-right .maplibregl-popup-tip { border-left-color: var(--parchment); }
+.maplibregl-popup-close-button { font-size: 18px; color: var(--ink-faded); padding: 0 6px; }
+#pop-cat { border: 1px solid var(--ink); border-radius: 0.4em; padding: 5px; }
+#pop-cat img { vertical-align: middle; height: 1em; width: 1em; }
+.pop-details { color: var(--ink-faded); }
+#pop-links { margin-top: 1em; white-space: nowrap; }

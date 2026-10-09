@@ -338,8 +338,8 @@ function paintPaper(){
 // glyph sheets ship as base64 inside the page and are served to MapLibre through a custom protocol
 maplibregl.addProtocol('fell',async params=>{const k=params.url.replace('fell://','').replace(/%20/g,' '),b64=GLYPHS[k];
   if(!b64)return {data:new ArrayBuffer(0)};const bin=atob(b64),u8=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)u8[i]=bin.charCodeAt(i);return {data:u8.buffer};});
-const map=new maplibregl.Map({container:'map',style:style(),bounds:[[-170,-58],[180,78]],minZoom:0,maxZoom:15,
-  fadeDuration:300,attributionControl:{compact:true},pitchWithRotate:false,touchPitch:false,maxPitch:0});
+const map=new maplibregl.Map({container:'map',style:style(),...PINS.initialView(),minZoom:0,maxZoom:15,
+  fadeDuration:300,attributionControl:{compact:true,customAttribution:'<a href="https://maplibre.org" target="_blank">MapLibre</a>'},pitchWithRotate:false,touchPitch:false,maxPitch:0});
 map.addControl(new maplibregl.NavigationControl({showCompass:true,visualizePitch:false}),'bottom-right');
 map.on('style.load',()=>{addGlyphImages(map,true);makeTreeSprites(true);const L=treeLayer();L.map=map;map.addLayer(L,'road5');});
 map.on('load',()=>{$('loading').hidden=true;startWaves(map);});
@@ -348,5 +348,7 @@ loadPaper();
 map.on('sourcedata',e=>{if(e.sourceId==='ofm'&&e.tile){maskDirty=true;map.triggerRepaint();}});
 map.on('error',e=>{if(!map.loaded())$('loading').textContent='The map tiles could not be loaded. Check your connection and reload the page.';console.error(e.error||e);});
 map.on('styleimagemissing',()=>{});
+// places, their icons, grouping and info windows (pins.js)
+PINS.attach(map);
 new ResizeObserver(()=>paintPaper()).observe(document.querySelector('.plate'));
 })();
