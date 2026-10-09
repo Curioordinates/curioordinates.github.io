@@ -4,7 +4,7 @@
  * cell TSVs are cached on first fetch.
  */
 
-const CACHE_STATIC = "untamed-static-v4";
+const CACHE_STATIC = "untamed-static-v5";
 const CACHE_RUNTIME = "untamed-runtime-v1";
 
 const CDN_ASSETS = [
@@ -97,7 +97,7 @@ async function precacheApp() {
     "script.js",
     "settings.js",
     "stylesheet.css",
-    "images/kofi_s_logo_nolabel.png",
+    "images/support.png",
     "images/settings.png",
     "images/folder.svg",
     "images/google-maps.svg",
