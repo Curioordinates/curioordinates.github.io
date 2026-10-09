@@ -1,5 +1,7 @@
 (() => {
 const INK='#3b2a1a',RED='#9a3a22',PAPER='#ecdcb1',PAPER_RGB='236,220,177';
+// a faint charcoal-blue wash for the sea; the paper overlay warms it a little on screen
+const SEA='#c3cbd1';
 const $=id=>document.getElementById(id);
 const dpr=Math.min(window.devicePixelRatio||1,2);
 function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
@@ -43,15 +45,14 @@ function town(c,r,x,y,tint){const f=tint?'rgba(196,110,82,.9)':'#efe2bd';
 
 /* ---------- tiles ---------- */
 const TILES={"type": "vector", "url": "https://tiles.openfreemap.org/planet"};
-const fc=features=>({type:'FeatureCollection',features});
 
 /* ---------- trees: one grid of roots pinned to the screen ----------
    The woods and marsh polygons in view are rasterised into a bit mask in Web Mercator space (see buildMask).
    Every frame, each screen root is mapped to that mask; a root over a wood gets a tree, over marsh a tuft.
    The trees are drawn into a 2D canvas and handed to MapLibre as a custom layer, so roads and labels stay on top. */
 const TILE=512,SP=7.6,ROW=.8;
-// trees and waves are drawn at a fixed screen size, so they only make sense once the view is down to region scale
-const TREE_MIN=6,WAVE_MIN=5;
+// trees are drawn at a fixed screen size, so they only make sense once the view is down to region scale
+const TREE_MIN=6;
 const merc=(lon,lat,z)=>{const s=TILE*Math.pow(2,z),sn=Math.sin(lat*Math.PI/180);return [(lon+180)/360*s,(.5-Math.log((1+sn)/(1-sn))/(4*Math.PI))*s];};
 function h2(i,j,s){let h=Math.imul(i,374761393)^Math.imul(j,668265263)^Math.imul(s+7,2246822519);h=Math.imul(h^(h>>>13),1274126177);h^=h>>>16;return (h>>>0)/4294967296;}
 const conNoise=makeNoise(5);
@@ -99,47 +100,6 @@ function makeTreeSprites(tint){const green=['rgba(150,164,92,1)','rgba(136,154,8
 const treeCanvas=document.createElement('canvas'),treeCtx=treeCanvas.getContext('2d'),patCanvas=document.createElement('canvas'),patCtx=patCanvas.getContext('2d');patCanvas.width=patCanvas.height=1;
 let treeKey='',patKey='',treeCount=0,treesOn=true;
 const G={ox:0,oy:0,ax:0,ay:0,z:null,br:null},TREE_WAIT=1000,TREE_WIPE=700;let lastZR=-1e9;
-/* ---------- waves ----------
-   Each wave takes a stretch of coast around a random visible point, pushes it out to sea as it grows, and fades away. */
-const NW=5;
-// the coast is the outline of the ocean polygons in the loaded tiles; edges along tile borders are straight
-// north-south or east-west lines, so they are dropped and the rings split there into stretches of real shore
-function coastLines(map){const out=[];
-  for(const f of map.querySourceFeatures('ofm',{sourceLayer:'water',filter:['==',['get','class'],'ocean']})){const g=f.geometry,polys=g.type==='Polygon'?[g.coordinates]:g.type==='MultiPolygon'?g.coordinates:[];
-    for(const rings of polys)for(const r of rings){let cur=[r[0]];
-      for(let i=1;i<r.length;i++){const a=r[i-1],b=r[i];if(Math.abs(a[0]-b[0])<1e-9||Math.abs(a[1]-b[1])<1e-9){if(cur.length>2)out.push(cur);cur=[b];}else cur.push(b);}
-      if(cur.length>2)out.push(cur);}}
-  return out;}
-function startWaves(map){
-  const waves=[...Array(NW)].map((_,i)=>({t0:performance.now()+i*1100,life:0,live:false}));
-  let on=true,lines=[],stale=true;map.on('moveend',()=>stale=true);map.on('sourcedata',e=>{if(e.sourceId==='ofm'&&e.tile)stale=true;});
-  function spawn(w,now){
-    if(map.getZoom()<WAVE_MIN){w.t0=now+800;return;}
-    if(stale){lines=coastLines(map);stale=false;}
-    const cv=map.getCanvas(),W=cv.clientWidth,H=cv.clientHeight,b=map.getBounds(),cand=[];
-    lines.forEach((l,li)=>l.forEach((p,pi)=>{if(b.contains(p)){const s=map.project(p);if(s.x>20&&s.y>20&&s.x<W-20&&s.y<H-20)cand.push([li,pi]);}}));
-    if(!cand.length){w.t0=now+800;return;}
-    const [li,pi]=cand[Math.floor(Math.random()*cand.length)],l=lines[li],half=25+Math.random()*30,pts=[l[pi]];
-    let d=0,prev=map.project(l[pi]);for(let k=pi-1;k>=0&&d<half;k--){const s=map.project(l[k]);d+=Math.hypot(s.x-prev.x,s.y-prev.y);prev=s;pts.unshift(l[k]);}
-    d=0;prev=map.project(l[pi]);for(let k=pi+1;k<l.length&&d<half;k++){const s=map.project(l[k]);d+=Math.hypot(s.x-prev.x,s.y-prev.y);prev=s;pts.push(l[k]);}
-    if(pts.length<2){w.t0=now+300;return;}
-    map.getSource(w.id).setData(fc([{type:'Feature',properties:{},geometry:{type:'LineString',coordinates:pts}}]));
-    w.t0=now;w.life=4200+Math.random()*2200;w.live=true;}
-  waves.forEach((w,i)=>w.id='wave'+i);
-  function frame(now){
-    if(on)waves.forEach((w,i)=>{
-      if(!w.live){if(now>=w.t0)spawn(w,now);return;}
-      const p=(now-w.t0)/w.life;
-      if(p>=1){w.live=false;w.t0=now+Math.random()*1500;map.setPaintProperty('wave'+i,'line-opacity',0);map.setPaintProperty('waveS'+i,'line-opacity',0);return;}
-      // rolls in from 36 px out to 3 px off the shore, then slips back a tenth of the way while it fades
-      const IN=.82,FAR=36,NEAR=3,s=p<IN?1-Math.pow(1-p/IN,2):1-.1*Math.sin((p-IN)/(1-IN)*Math.PI/2);
-      const off=FAR-(FAR-NEAR)*s,op=Math.min(1,p/.25)*(p<IN?1:1-(p-IN)/(1-IN));
-      map.setPaintProperty('wave'+i,'line-offset',off);map.setPaintProperty('wave'+i,'line-opacity',op);
-      map.setPaintProperty('waveS'+i,'line-offset',off+1.4);map.setPaintProperty('waveS'+i,'line-opacity',op);});
-    requestAnimationFrame(frame);}
-  requestAnimationFrame(frame);
-  return v=>{on=v;};}
-
 function view(map){const cv=map.getCanvas(),z=map.getZoom(),ctr=map.getCenter(),br=map.getBearing()*Math.PI/180;
   return {W:cv.clientWidth,H:cv.clientHeight,bw:cv.width,bh:cv.height,z,ctr,br,cb:Math.cos(br),sb:Math.sin(br),c:merc(ctr.lng,ctr.lat,z),
     key:`${cv.width}x${cv.height}:${z.toFixed(5)}:${ctr.lng.toFixed(7)}:${ctr.lat.toFixed(7)}:${br.toFixed(5)}:${treesOn}`};}
@@ -221,12 +181,6 @@ function addGlyphImages(map,tint){
    boundary, place and water_name. Road classes fold into the six ranks the Norfolk map used. */
 function style(){
   const ink=a=>`rgba(59,42,26,${a})`,S='ofm';
-  // five waves, each a short stretch of the coast in view (sea on the right) rolled in by an animated offset,
-  // with a faint ink shadow just seaward of each white crest so the white still reads on pale paper
-  const ripple=[...Array(NW).keys()].map(i=>({id:'waveS'+i,type:'line',source:'wave'+i,layout:{'line-join':'round','line-cap':'round'},
-    paint:{'line-width':1,'line-opacity':0,'line-offset':0,'line-blur':.6,'line-gradient':['interpolate',['linear'],['line-progress'],0,ink(0),.3,ink(.55),.7,ink(.55),1,ink(0)]},metadata:{group:'ripple'}}))
-   .concat([...Array(NW).keys()].map(i=>({id:'wave'+i,type:'line',source:'wave'+i,layout:{'line-join':'round','line-cap':'round'},
-    paint:{'line-width':1.6,'line-opacity':0,'line-offset':0,'line-gradient':['interpolate',['linear'],['line-progress'],0,'rgba(255,253,244,0)',.3,'rgba(255,253,244,1)',.7,'rgba(255,253,244,1)',1,'rgba(255,253,244,0)']},metadata:{group:'ripple'}})));
   // details ghost in over half a zoom step after the zoom they appear at (and ghost out the same way)
   const fadeIn=(mz,to=1)=>['interpolate',['linear'],['zoom'],mz,0,mz+.5,to];
   const zw=(a,b)=>['interpolate',['linear'],['zoom'],11,a,14,b];
@@ -254,13 +208,17 @@ function style(){
   const major=['any',['==',['get','capital'],2],['<=',['coalesce',['get','rank'],99],2]];
   const ocean=['==',['get','class'],'ocean'];
   return {version:8,glyphs:'fell://{fontstack}/{range}',
-    sources:{ofm:TILES,...Object.fromEntries([...Array(NW).keys()].map(i=>['wave'+i,{type:'geojson',data:fc([]),lineMetrics:true,buffer:512,tolerance:.2}]))},
+    sources:{ofm:TILES,
+      // OpenFreeMap's zoom 0-1 ocean polygon is cut along the 180th meridian from Fiji down to Antarctica; the cut is
+      // part of its outline, so the coast layers would ink it. This stretch of open sea is painted over it below zoom 2.
+      seam:{type:'geojson',data:{type:'Feature',properties:{},geometry:{type:'LineString',coordinates:[[-180,-16.4],[-180,-85]]}}}},
     layers:[
       {id:'land',type:'background',paint:{'background-color':'#eee0b8'}},
-      {id:'sea',type:'fill',source:S,'source-layer':'water',filter:ocean,paint:{'fill-color':PAPER}},
-      ...ripple,
-      // hand tinting: a soft yellow wash along the shore, and pink along borders
-      {id:'tint-coast',type:'line',source:S,'source-layer':'water',filter:ocean,paint:{'line-color':'rgba(208,168,78,.4)','line-width':['interpolate',['linear'],['zoom'],2,3,7,16],'line-offset':['interpolate',['linear'],['zoom'],2,-1.5,7,-8],'line-blur':['interpolate',['linear'],['zoom'],2,1.5,7,8]},metadata:{group:'tint'}},
+      // hand tinting along the shore: an opaque pale ochre centred on the coastline and drawn under the sea, so the sea
+      // hides its outer half; being opaque and un-offset, tight bends and overlaps cannot build up into dark blotches
+      {id:'tint-coast',type:'line',source:S,'source-layer':'water',filter:ocean,layout:{'line-join':'round'},paint:{'line-color':'rgb(226,202,142)','line-width':['interpolate',['linear'],['zoom'],2,6,7,30],'line-blur':['interpolate',['linear'],['zoom'],2,3,7,16]},metadata:{group:'tint'}},
+      {id:'sea',type:'fill',source:S,'source-layer':'water',filter:ocean,paint:{'fill-color':SEA}},
+      // hand tinting: pink along borders
       {id:'tint-border',type:'line',source:S,'source-layer':'boundary',filter:['all',['<=',['get','admin_level'],6],['!=',['get','maritime'],1]],
         paint:{'line-color':['match',['get','admin_level'],2,'rgba(200,118,92,.34)','rgba(208,168,78,.3)'],'line-width':['match',['get','admin_level'],2,16,10],'line-blur':7,'line-opacity':['interpolate',['linear'],['zoom'],4.5,['match',['get','admin_level'],2,1,0],5,['match',['get','admin_level'],[2,3,4],1,0],7.5,['match',['get','admin_level'],[2,3,4],1,0],8,1]},metadata:{group:'tint'}},
       {id:'woods',type:'fill',source:S,'source-layer':'landcover',filter:['==',['get','class'],'wood'],paint:{'fill-color':'rgba(118,140,64,.16)'},metadata:{group:'tint'}},
@@ -271,6 +229,7 @@ function style(){
       // the shoreline is the ocean's outline, with a softer shadow line just out to sea
       {id:'coast-shadow',type:'line',source:S,'source-layer':'water',filter:ocean,layout:{'line-join':'round'},paint:{'line-color':ink(.75),'line-width':['interpolate',['linear'],['zoom'],6,1,11,2.3],'line-offset':['interpolate',['linear'],['zoom'],6,.8,11,1.6]}},
       {id:'coast',type:'line',source:S,'source-layer':'water',filter:ocean,layout:{'line-join':'round'},paint:{'line-color':INK,'line-width':['interpolate',['linear'],['zoom'],6,.7,11,1.1]}},
+      {id:'seam-mask',type:'line',source:'seam',maxzoom:2,paint:{'line-color':SEA,'line-width':10}},
       {id:'border',type:'line',source:S,'source-layer':'boundary',filter:['all',['<=',['get','admin_level'],6],['!=',['get','maritime'],1]],
         paint:{'line-color':INK,'line-width':['match',['get','admin_level'],2,1.4,1],'line-dasharray':[6,3,1,3],'line-opacity':['interpolate',['linear'],['zoom'],4.5,['match',['get','admin_level'],2,1,0],5,['match',['get','admin_level'],[2,3,4],1,0],7.5,['match',['get','admin_level'],[2,3,4],1,0],8,1]}},
       ...roads,
@@ -338,11 +297,11 @@ function paintPaper(){
 // glyph sheets ship as base64 inside the page and are served to MapLibre through a custom protocol
 maplibregl.addProtocol('fell',async params=>{const k=params.url.replace('fell://','').replace(/%20/g,' '),b64=GLYPHS[k];
   if(!b64)return {data:new ArrayBuffer(0)};const bin=atob(b64),u8=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)u8[i]=bin.charCodeAt(i);return {data:u8.buffer};});
-const map=new maplibregl.Map({container:'map',style:style(),...PINS.initialView(),minZoom:0,maxZoom:15,
+const map=new maplibregl.Map({container:'map',style:style(),...PINS.initialView(),minZoom:0,maxZoom:19,
   fadeDuration:300,attributionControl:{compact:true,customAttribution:'<a href="https://maplibre.org" target="_blank">MapLibre</a>'},pitchWithRotate:false,touchPitch:false,maxPitch:0});
 map.addControl(new maplibregl.NavigationControl({showCompass:true,visualizePitch:false}),'bottom-right');
 map.on('style.load',()=>{addGlyphImages(map,true);makeTreeSprites(true);const L=treeLayer();L.map=map;map.addLayer(L,'road5');});
-map.on('load',()=>{$('loading').hidden=true;startWaves(map);});
+map.on('load',()=>{$('loading').hidden=true;});
 loadPaper();
 // new woods arrive with new tiles: mark the mask stale so the next frame rebuilds it
 map.on('sourcedata',e=>{if(e.sourceId==='ofm'&&e.tile){maskDirty=true;map.triggerRepaint();}});

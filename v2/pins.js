@@ -312,6 +312,14 @@ const PINS = (() => {
       keepInView(map, thisPopup);
     };
 
+    // the settings link carries the current view, so switching maps there returns to the same place
+    const updateSettingsLink = () => {
+      const settingsLink = document.querySelector("#settingsbutton a");
+      if (settingsLink) {
+        settingsLink.href = `settings.html${window.location.search}`;
+      }
+    };
+
     const rewriteUrl = () => {
       const { lat, lng } = map.getCenter();
       qs.latitude = Number(lat).toFixed(5);
@@ -326,6 +334,7 @@ const PINS = (() => {
         parts.push(tag);
       }
       window.history.pushState({}, "", `?${parts.join("&")}`);
+      updateSettingsLink();
     };
 
     map.on("style.load", () => {
@@ -415,10 +424,7 @@ const PINS = (() => {
 
     map.on("moveend", rewriteUrl);
 
-    const settingsLink = document.querySelector("#settingsbutton a");
-    if (settingsLink) {
-      settingsLink.href = `settings.html${window.location.search}`;
-    }
+    updateSettingsLink();
 
     // follow / radar: keep a "you" pin on the user's position and the map centred on it unless an info window is open
     if (followUser && navigator.geolocation) {

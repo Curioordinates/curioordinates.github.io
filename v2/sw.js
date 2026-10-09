@@ -115,10 +115,20 @@ async function precacheApp() {
   await precacheMarkerPngs(cache, root);
 }
 
-async function networkFirstWithCache(request, cacheName) {
+// GitHub Pages lets browsers reuse files for 10 minutes without asking, so a plain fetch here can mix a new page
+// with old scripts after a deploy. The site's own files are therefore always revalidated with the server (cheap:
+// unchanged files come back as 304s). The redirect mode is kept so page navigations still follow redirects safely.
+const fresh = (request) =>
+  new Request(request.url, {
+    cache: "no-cache",
+    redirect: request.redirect,
+    credentials: request.credentials,
+  });
+
+async function networkFirstWithCache(request, cacheName, revalidate = false) {
   const cache = await caches.open(cacheName);
   try {
-    const response = await fetch(request);
+    const response = await fetch(revalidate ? fresh(request) : request);
     await safeCachePut(cache, request.url, response);
     return response;
   } catch (err) {
@@ -181,7 +191,7 @@ self.addEventListener("fetch", (event) => {
 
   // the v2 pages' own files and the shared data, markers and images at the site root
   if (url.origin === self.location.origin) {
-    event.respondWith(networkFirstWithCache(request, CACHE_STATIC));
+    event.respondWith(networkFirstWithCache(request, CACHE_STATIC, true));
     return;
   }
 

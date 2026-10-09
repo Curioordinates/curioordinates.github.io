@@ -166,6 +166,10 @@ const mapSetup = () => {
       parts.push(tag);
     }
     window.history.pushState({}, "", `?${parts.join("&")}`);
+    // keep the settings link on the current view, so switching maps there returns to the same place
+    if (settingsLink) {
+      settingsLink.href = `/settings.html${window.location.search}`;
+    }
   };
 
   map.on("moveend", rewriteUrl);
