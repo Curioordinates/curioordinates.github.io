@@ -1,17 +1,22 @@
 {
    "abduction": {
+      "short_description": "Places linked to reported alien abductions, where people say they were taken aboard a craft or lost hours they cannot account for.",
       "count": 43
    },
    "accused": {
+      "short_description": "People accused of witchcraft, marked where they lived, were tried or met their end.",
       "count": 9
    },
    "amphitheatre-site": {
+      "short_description": "Sites of Roman amphitheatres where little or nothing now stands above ground.",
       "count": 49
    },
    "amphitheatre": {
+      "short_description": "Surviving Roman amphitheatres, the arenas where crowds gathered for gladiator fights and public spectacles.",
       "count": 192
    },
    "ancient-road": {
+      "short_description": "Stretches of ancient road, mostly Roman, where the original surface or line can still be seen.",
       "count": 4
    },
    "ancient-tree": {
@@ -20,19 +25,24 @@
       "count": 10988
    },
    "apotropaic": {
+      "short_description": "Marks and carvings made to ward off evil, such as witch marks, votive crosses and devil's doors, often found in old churches.",
       "count": 14
    },
    "aqueduct": {
+      "short_description": "Ancient aqueducts, mostly Roman, built to carry water across valleys to towns and cities.",
       "count": 61
    },
    "arthurian": {
+      "short_description": "Places tied to the legends of King Arthur, from his court to the caves where he is said to sleep.",
       "count": 3
    },
    "balancing-rock": {
+      "short_description": "Rocks balanced improbably on top of others. Some can be rocked by hand, and many were said to have been placed by giants.",
       "count": 14
    },
    "barrow": {
       "implicit": false,
+      "short_description": "Prehistoric burial mounds of earth or stone raised over the dead.",
       "count": 53063
    },
    "battle": {
@@ -41,57 +51,75 @@
       "count": 5572
    },
    "big-cat": {
+      "short_description": "Sightings of mysterious big cats roaming the countryside, far from anywhere they should live.",
       "count": 15
    },
    "black-eyed": {
+      "short_description": "Encounters with black-eyed children: pale youngsters with completely black eyes who knock and ask to be let in.",
       "count": 4
    },
    "blowhole": {
+      "short_description": "Sea caves with an opening above, where the waves force water and spray up through the rock.",
       "count": 17
    },
    "bullaun": {
+      "short_description": "Bullaun stones: boulders with bowl-shaped hollows, often found at early Irish church sites. The rainwater they collect is said to cure.",
       "count": 32
    },
    "burial": {
+      "short_description": "Ancient cemeteries and burial grounds, such as Saxon cemeteries.",
       "count": 3
    },
    "beehive-tomb": {
+      "short_description": "Beehive (tholos) tombs: circular stone burial chambers roofed with a corbelled dome, best known from Mycenaean Greece.",
       "count": 51
    },
    "chambered-cairn": {
+      "short_description": "Neolithic chambered cairns: stone burial mounds containing passages and chambers for the dead.",
       "count": 325
    },
    "cairn": {
+      "short_description": "Cairns: piles of stones raised as burial monuments or landmarks.",
       "count": 6
    },
    "canine": {
+      "short_description": "Phantom dogs and hounds, from spectral black dogs and hellhounds to faithful spirits.",
       "count": 74
    },
    "cartoquirk": {
+      "short_description": "Quirks of the map itself, such as Null Island at 0°, 0° and the points halfway between the equator and the poles and halfway around the world.",
       "count": 5
    },
    "cave": {
+      "short_description": "Natural caves, many with legends, ghosts or a long history of human use.",
       "count": 15
    },
    "celtic-cross": {
+      "short_description": "Celtic crosses: stone crosses with a ring around the intersection, carved in early medieval Britain and Ireland.",
       "count": 1
    },
    "clootie-tree": {
+      "short_description": "Clootie wells and trees, where strips of cloth are tied to the branches as offerings. As the rag rots away, so the ailment is said to fade.",
       "count": 30
    },
    "coffin-rest": {
+      "short_description": "Coffin rests: stones or ledges on old corpse roads where the bearers set down the coffin on the way to the churchyard.",
       "count": 4
    },
    "crater": {
+      "short_description": "Craters blasted out by meteorite impacts, some now filled by lakes.",
       "count": 24
    },
    "crossroads-burial": {
+      "short_description": "Graves at crossroads, where suicides and suspected witches were once buried away from consecrated ground. Many are said to be haunted.",
       "count": 12
    },
    "cup-and-ring": {
+      "short_description": "Cup-and-ring marks: prehistoric rock carvings of hollows and concentric rings whose meaning is still unknown.",
       "count": 294
    },
    "curse": {
+      "short_description": "Places with a curse attached, from cursed buildings and families to blighted land, and the tales of how they came to be.",
       "count": 160
    },
    "cyclopean": {
@@ -99,15 +127,19 @@
       "count": 1
    },
    "dark-sky": {
+      "short_description": "Dark-sky places: parks, reserves and sanctuaries protected from light pollution, ideal for stargazing.",
       "count": 261
    },
    "demon": {
+      "short_description": "Tales of demons: evil spirits that tempt, torment or strike bargains with mortals.",
       "count": 1
    },
    "devil": {
+      "short_description": "Places where the Devil is said to have walked, struck bargains or left his mark.",
       "count": 41
    },
    "devils-bridge": {
+      "short_description": "Bridges said to have been built by the Devil, usually in exchange for the soul of the first to cross.",
       "count": 1
    },
    "dolmen": {
@@ -127,6 +159,7 @@
       "count": 334
    },
    "egyptian-sarcophagus": {
+      "short_description": "Museums holding ancient Egyptian sarcophagi and mummy cases.",
       "count": 10
    },
    "erratic": {
@@ -135,18 +168,23 @@
       "count": 295
    },
    "event": {
+      "short_description": "Festivals and events with a pagan, folkloric or occult theme.",
       "count": 5
    },
    "exhibit": {
+      "short_description": "Museums and exhibits of the strange, from witchcraft and magic to the paranormal and curious objects.",
       "count": 17
    },
    "fairy": {
+      "short_description": "Fairy folklore: places where the fair folk were seen, stole away mortals or left their mark.",
       "count": 39
    },
    "fairy-tree": {
+      "short_description": "Fairy trees, usually lone hawthorns, which it is bad luck to cut or harm.",
       "count": 3
    },
    "folk-song": {
+      "short_description": "Places that gave their name or story to traditional folk songs.",
       "count": 3
    },
    "changeling": {
@@ -154,33 +192,43 @@
       "count": 5
    },
    "dragon": {
+      "short_description": "Dragon legends: places where dragons and winged serpents were said to live, terrorise the locals and be slain.",
       "count": 28
    },
    "folklore-cat": {
+      "short_description": "Cats of folklore and legend, such as the immortal cat of Chipping Sodbury.",
       "count": 1
    },
    "folklore-fox": {
+      "short_description": "Fox spirits of folklore, such as the Japanese kitsune and the white foxes of Inari shrines.",
       "count": 5
    },
    "folklore-giant": {
+      "short_description": "Giants of folklore, and the places they built, threw, fought over or lie buried beneath.",
       "count": 24
    },
    "folklore-humanoid": {
+      "short_description": "Humanoid creatures of folklore that are neither quite human nor ghost.",
       "count": 1
    },
    "folklore-serpent": {
+      "short_description": "Serpents and great worms of legend.",
       "count": 3
    },
    "folklore-vampire": {
+      "short_description": "Vampires of folklore and the places they are said to haunt.",
       "count": 5
    },
    "troll": {
+      "short_description": "Trolls: large, menacing creatures of Norse and British folklore that lurk in hills and under bridges, and may turn to stone in daylight.",
       "count": 3
    },
    "folklore": {
+      "short_description": "Local folklore and legends of every kind, from phantom beasts to strange customs.",
       "count": 272
    },
    "folklore-swine": {
+      "short_description": "Pig-men and other swine creatures of folklore and modern legend.",
       "count": 11
    },
    "folly": {
@@ -188,36 +236,47 @@
       "count": 437
    },
    "fortlet": {
+      "short_description": "Small Roman forts, including the milecastles and milefortlets of Hadrian's Wall.",
       "count": 115
    },
    "fossil": {
+      "short_description": "Fossil sites, including petrified trees and fossil forests.",
       "count": 4
    },
    "gallows": {
+      "short_description": "Gallows and gibbets: sites of hangings, where the bodies of the executed were often left on display.",
       "count": 12
    },
    "general": {
+      "short_description": "A miscellany of curiosities that don't fit any other category.",
       "count": 5
    },
    "geo-glyph": {
+      "short_description": "Geoglyphs: large figures cut into hillsides or laid out on the ground, like the chalk white horses of England and the Nazca lines.",
       "count": 97
    },
    "geofold": {
+      "short_description": "Spectacular folds in rock, where ancient layers have been buckled and crumpled.",
       "count": 3
    },
    "ghost-horse": {
+      "short_description": "Spectral horses, some of them omens of danger or death.",
       "count": 4
    },
    "ghost-light": {
+      "short_description": "Ghost lights: unexplained glowing lights such as will-o'-the-wisps and corpse candles, said to foretell death or lead travellers astray.",
       "count": 16
    },
    "ghost-photo": {
+      "short_description": "Places where a ghost is said to have been caught on camera.",
       "count": 1
    },
    "ghost-ship": {
+      "short_description": "Phantom ships seen sailing where no ship should be, often as an omen of storms or disaster.",
       "count": 5
    },
    "ghost-sign": {
+      "short_description": "Ghost signs: faded hand-painted adverts and signs surviving on old walls.",
       "count": 1
    },
    "ghost-train": {
@@ -225,55 +284,72 @@
       "count": 6
    },
    "ghost-walk": {
+      "short_description": "Ghost walks and tours, where guides lead you through a place's haunted history.",
       "count": 158
    },
    "giants-grave": {
+      "short_description": "Giants' graves (tombe dei giganti): Bronze Age collective tombs built by the Nuragic people of Sardinia.",
       "count": 294
    },
    "grave": {
+      "short_description": "Individual graves with a story, from the resting places of famous mystics to graves bound up with prophecy and legend.",
       "count": 10
    },
    "gravity-hill": {
+      "short_description": "Gravity hills, where an optical illusion makes cars and water appear to roll uphill.",
       "count": 6
    },
    "grid": {
       "implicit": false,
+      "short_description": "Points where whole-degree lines of latitude and longitude cross.",
       "count": 9
    },
    "haunted-road": {
+      "short_description": "Haunted roads, where drivers report phantom figures, vehicles and animals.",
       "count": 65
    },
    "haunted-stay": {
+      "short_description": "Haunted hotels, inns and guesthouses where you can stay the night.",
       "count": 387
    },
    "haunting": {
+      "short_description": "Haunted places: buildings, roads and landscapes with reported ghosts.",
       "count": 686
    },
    "headless-rider": {
+      "short_description": "Headless horsemen and other headless riders of legend.",
       "count": 3
    },
    "henge": {
+      "short_description": "Henges: prehistoric circular earthworks with a bank and an inner ditch.",
       "count": 2
    },
    "high-strangeness": {
+      "short_description": "Hotspots of 'high strangeness', where many kinds of unexplained phenomena are reported.",
       "count": 3
    },
    "hill-fort": {
+      "short_description": "Hill forts: fortified hilltop enclosures, mostly from the Iron Age.",
       "count": 7
    },
    "hoard": {
+      "short_description": "Places where buried hoards of coins, jewellery and other treasure were found.",
       "count": 106
    },
    "hogback-grave": {
+      "short_description": "Hogback stones: Viking-age grave markers carved like longhouses with curved roofs, often guarded by beasts at each end.",
       "count": 23
    },
    "holy-well": {
+      "short_description": "Holy wells: springs and wells associated with saints, healing and pilgrimage.",
       "count": 365
    },
    "hominid": {
+      "short_description": "Sightings of wild ape-men and hairy hominids, from Bigfoot-like creatures to local beasts.",
       "count": 6
    },
    "hum": {
+      "short_description": "Places plagued by 'the hum', a persistent low drone heard by some residents but never traced to a source.",
       "count": 3
    },
    "i-spy": {
@@ -281,9 +357,11 @@
       "count": 59
    },
    "lazy-code": {
+      "short_description": "Glitches in the simulation: places so strange they suggest reality is running on lazy code, from twisted forests to boulders split perfectly in two.",
       "count": 9
    },
    "legend": {
+      "short_description": "Traditional stories handed down about a place, part history and part embellishment, such as Pope Joan and the walled-up bride of Rozafa Castle.",
       "count": 2
    },
    "lithiatric-mark": {
@@ -291,48 +369,63 @@
       "count": 5
    },
    "lost-mine": {
+      "short_description": "Lost mines, whose rich seams were found once and never located again.",
       "count": 23
    },
    "sunken-treasure": {
+      "short_description": "Treasure said to be lost beneath the water.",
       "count": 5
    },
    "lost-treasure": {
+      "short_description": "Treasures said to lie buried or hidden, still waiting to be found.",
       "count": 10
    },
    "manmade-cave": {
+      "short_description": "Man-made caves and tunnels, from chalk mines to the mysterious erdstall passages of central Europe.",
       "count": 239
    },
    "marian-apparition": {
+      "short_description": "Places where the Virgin Mary is said to have appeared.",
       "count": 35
    },
    "medicine-wheel": {
+      "short_description": "Medicine wheels: circles and lines of stones laid out by Indigenous peoples of the North American plains.",
       "count": 3
    },
    "memento-mori": {
+      "short_description": "Memento mori carvings: skulls, crossbones and hourglasses reminding the living that they too will die.",
       "count": 24
    },
    "merfolk": {
+      "short_description": "Mermaids and mermen: half-human, half-fish beings said to lure sailors to their doom and sometimes marry mortals.",
       "count": 34
    },
    "milestone": {
+      "short_description": "Ancient milestones, mostly Roman, that marked distances along the roads.",
       "count": 65
    },
    "mortsafe": {
+      "short_description": "Mortsafes: iron cages and frames set over graves to keep out body snatchers.",
       "count": 19
    },
    "mothman": {
+      "short_description": "Mothman, the red-eyed winged creature reported around Point Pleasant, West Virginia, in 1966 and 1967.",
       "count": 2
    },
    "motte-and-bailey": {
+      "short_description": "Motte-and-bailey castles: early Norman castles built as an earth mound with an enclosed courtyard beside it.",
       "count": 14
    },
    "mummified-person": {
+      "short_description": "Mummified remains, including bog bodies and naturally preserved mummies.",
       "count": 7
    },
    "mystery": {
+      "short_description": "Unsolved mysteries, such as puzzling inscriptions, cryptograms and messages.",
       "count": 5
    },
    "myth-swine": {
+      "short_description": "Monstrous boars and swine of myth, such as the Erymanthian Boar captured by Heracles.",
       "count": 3
    },
    "myth-touch": {
@@ -341,15 +434,19 @@
       "count": 6
    },
    "name-dragon": {
+      "short_description": "Places whose names come from dragons, such as Dragonby and Dragon Hill.",
       "count": 5
    },
    "name": {
+      "short_description": "Places with strange names, and the stories of how they got them.",
       "count": 30
    },
    "named-ghost": {
+      "short_description": "Ghosts known by name, from grey ladies and green ladies to other famous spirits.",
       "count": 18
    },
    "national-trust": {
+      "short_description": "National Trust properties: historic houses, gardens and landscapes cared for by the Trust.",
       "count": 419
    },
    "nuraghe": {
@@ -358,24 +455,31 @@
       "count": 4262
    },
    "occult-market": {
+      "short_description": "Markets selling witchcraft, magic and fetish goods.",
       "count": 5
    },
    "occult-shop": {
+      "short_description": "Shops selling witchcraft, occult and esoteric supplies.",
       "count": 89
    },
    "ossuary": {
+      "short_description": "Ossuaries and charnel houses, where the bones of the dead are stacked and displayed.",
       "count": 306
    },
    "pagan": {
+      "short_description": "Places used for pre-Christian or modern pagan worship, such as altars and offering sites.",
       "count": 1
    },
    "petroglyph": {
+      "short_description": "Petroglyphs: ancient images carved into rock.",
       "count": 2
    },
    "petrosomatoglyph": {
+      "short_description": "Petrosomatoglyphs: marks in rock said to be the footprints or body prints of gods, saints or heroes.",
       "count": 1
    },
    "plague-pit": {
+      "short_description": "Plague pits: mass graves of plague victims.",
       "count": 1
    },
    "plague-stone": {
@@ -383,9 +487,11 @@
       "count": 9
    },
    "podcast": {
+      "short_description": "Podcasts exploring folklore and the strange.",
       "count": 2
    },
    "podcast-episode": {
+      "short_description": "Podcast episodes about a particular place or tale.",
       "count": 139
    },
    "point-zero": {
@@ -393,16 +499,20 @@
       "count": 17
    },
    "possession": {
+      "short_description": "Cases where people were said to be taken over by a demon or spirit, often ending in exorcism.",
       "count": 20
    },
    "practitioner": {
+      "short_description": "Witches, wizards, cunning folk and occultists: people who practised magic, and where they lived or worked.",
       "count": 22
    },
    "prediction": {
+      "short_description": "Prophecies tied to a place: foretold disasters, omens and predictions waiting to come true.",
       "count": 3
    },
    "public-bookcase": {
       "implicit": false,
+      "short_description": "Public bookcases and little free libraries. Take a book, leave a book.",
       "count": 25370
    },
    "redwood": {
@@ -411,39 +521,51 @@
       "count": 1376
    },
    "research-org": {
+      "short_description": "Organisations that research psychical and paranormal phenomena.",
       "count": 3
    },
    "revenant": {
+      "short_description": "Revenants: the dead who return to the world of the living.",
       "count": 1
    },
    "rock-cut-tomb": {
+      "short_description": "Tombs carved into solid rock, such as the domus de janas ('fairy houses') of Sardinia.",
       "count": 31
    },
    "ruined-castle": {
+      "short_description": "Ruined castles, from crumbling keeps to scattered foundations.",
       "count": 3178
    },
    "ruined-church": {
+      "short_description": "Ruined churches and chapels.",
       "count": 794
    },
    "sacred-landscape": {
+      "short_description": "Natural landmarks, such as mountains and rock formations, held sacred by the people who live around them.",
       "count": 1
    },
    "sacrificial-stone": {
+      "short_description": "Sacrificial stones: boulders with hollows where offerings were left, common in the Baltic and Nordic countries.",
       "count": 125
    },
    "sacred-stone": {
+      "short_description": "Sacred stones: boulders venerated as places of offering, healing or worship.",
       "count": 23
    },
    "sacred-tree": {
+      "short_description": "Sacred trees, venerated for their age, their spirit or their holy associations.",
       "count": 35
    },
    "sacrificial-altar": {
+      "short_description": "Ancient altars and high places where sacrifices were made.",
       "count": 6
    },
    "saint": {
+      "short_description": "Places tied to the lives and legends of saints.",
       "count": 5
    },
    "sanctuary-stone": {
+      "short_description": "Sanctuary stones that marked the bounds of a church's right of sanctuary, within which a fugitive could claim protection.",
       "count": 11
    },
    "scratch-dial": {
@@ -455,72 +577,95 @@
       "count": 1631
    },
    "sea-monster": {
+      "short_description": "Large unknown creatures reported in seas and lakes, from Nessie in Loch Ness to the Turtle Lake Monster.",
       "count": 21
    },
    "settlement": {
+      "short_description": "The remains of ancient towns and settlements, from Roman towns to the island city of Nan Madol.",
       "count": 16
    },
    "sheela-na-gig": {
+      "short_description": "Sheela na gigs: medieval carvings of naked women displaying an exaggerated vulva, often found on churches.",
       "count": 7
    },
    "ship-burial": {
+      "short_description": "Ship burials, where the dead were laid in a ship or boat beneath a mound.",
       "count": 12
    },
    "simulacrum": {
+      "short_description": "Simulacra: rocks and landscapes that look like faces, figures or creatures.",
       "count": 4
    },
    "site": {
+      "short_description": "Haunted places with a story attached.",
       "count": 7
    },
    "spiritborne": {
+      "short_description": "People said to have been carried off by spirits, often to a churchyard.",
       "count": 3
    },
    "runestone": {
+      "short_description": "Runestones: standing stones carved with runic inscriptions, mostly from the Viking age.",
       "count": 995
    },
    "standing-stone": {
+      "short_description": "Standing stones: single upright stones, mostly raised in prehistory.",
       "count": 296
    },
    "statue": {
+      "short_description": "Statues said to move, walk or bring misfortune to those who disturb them.",
       "count": 2
    },
    "stone-circle": {
+      "short_description": "Stone circles: rings of standing stones raised in prehistory.",
       "count": 642
    },
    "stopped-clock": {
+      "short_description": "Clocks stopped at the moment of a tragedy.",
       "count": 1
    },
    "stronghold": {
+      "short_description": "Forts and strongholds, mostly Roman.",
       "count": 12
    },
    "sub-street": {
+      "short_description": "Hidden streets and underground passages you can visit.",
       "count": 8
    },
    "sunken-settlement": {
+      "short_description": "Villages drowned by reservoirs and lakes, whose remains sometimes reappear in dry summers.",
       "count": 9
    },
    "temple": {
+      "short_description": "Ancient temples: buildings dedicated to gods, such as Roman temples to Mithras and Heracles.",
       "count": 2
    },
    "the-drop": {
+      "short_description": "A notorious local spot of ill repute. You have been warned.",
       "count": 1
    },
    "thin-place": {
+      "short_description": "Thin places, where the boundary between this world and the next is said to be thin.",
       "count": 10
    },
    "timeslip": {
+      "short_description": "Places where people report briefly stepping into the past.",
       "count": 2
    },
    "tower": {
+      "short_description": "Towers of the Knights Templar, and round churches modelled on the Holy Sepulchre in Jerusalem.",
       "count": 7
    },
    "tradition": {
+      "short_description": "Old local customs still kept alive, such as cheese rolling down a hillside or handing out bread and cheese to the parish.",
       "count": 2
    },
    "tunnel": {
+      "short_description": "Secret tunnels and passages of legend.",
       "count": 5
    },
    "ufo": {
+      "short_description": "Places where unidentified flying objects were reported, from single sightings to famous incidents with many witnesses.",
       "count": 27
    },
    "uncontacted": {
@@ -528,24 +673,31 @@
       "count": 19
    },
    "unique": {
+      "short_description": "Places that are one of a kind, such as a church tower built askew or the smallest church in England.",
       "count": 3
    },
    "unmarked-door": {
+      "short_description": "Hidden venues behind unmarked doors. Look for the sign that they're open.",
       "count": 1
    },
    "urban-legend": {
+      "short_description": "Modern folk tales told as true, usually by someone who heard it from a friend of a friend, and pinned to a real place.",
       "count": 3
    },
    "vile-vortex": {
+      "short_description": "Vile vortices: twelve points around the globe that Ivan Sanderson proposed as zones of disappearances and anomalies, like the Bermuda Triangle.",
       "count": 12
    },
    "vitrified-fort": {
+      "short_description": "Vitrified forts: stone forts whose walls have been fused into glass by intense heat, by means still debated.",
       "count": 1
    },
    "volcanic-columns": {
+      "short_description": "Columnar basalt: lava that cooled into giant hexagonal columns, like the Giant's Causeway.",
       "count": 7
    },
    "vortex": {
+      "short_description": "Energy vortices, where some visitors feel spiritual or healing energy.",
       "count": 1
    },
    "wayside-cross": {
@@ -555,9 +707,11 @@
       "count": 6229
    },
    "webcam": {
+      "short_description": "Live webcams of wild and remote places.",
       "count": 2
    },
    "weird": {
+      "short_description": "Places that are simply strange and fit no other category, such as churches that seem to vanish from view.",
       "count": 3
    },
    "wishing": {
@@ -566,19 +720,24 @@
       "count": 24
    },
    "witch": {
+      "short_description": "Witches of folklore: women and men said to cast spells, curse livestock and neighbours, or consort with the Devil.",
       "count": 32
    },
    "witch-hunt-memorial-plaque": {
+      "short_description": "Memorial plaques to the people accused and executed in the witch hunts.",
       "count": 6
    },
    "witch-hunt-memorial": {
+      "short_description": "Memorials to the people accused and executed in the witch hunts.",
       "count": 19
    },
    "wizard": {
+      "short_description": "Wizards and sorcerers of legend: men said to command spirits, cast spells or outwit the Devil.",
       "count": 9
    },
    "world-heritage": {
       "implicit": true,
+      "short_description": "UNESCO World Heritage Sites.",
       "count": 1198
    }
 }

@@ -49,8 +49,12 @@ const TILES={"type": "vector", "url": "https://tiles.openfreemap.org/planet"};
 /* ---------- trees: one grid of roots pinned to the screen ----------
    The woods and marsh polygons in view are rasterised into a bit mask in Web Mercator space (see buildMask).
    Every frame, each screen root is mapped to that mask; a root over a wood gets a tree, over marsh a tuft.
-   The trees are drawn into a 2D canvas and handed to MapLibre as a custom layer, so roads and labels stay on top. */
-const TILE=512,SP=7.6,ROW=.8;
+   The trees are drawn into a 2D canvas and handed to MapLibre as a custom layer, above the roads and beneath the labels. */
+const TILE=512,ROW=.8;
+// trees grow with the screen (K: 1 up to about a 1280 x 800 window, up to 2 on big monitors) and are spaced out to match,
+// so large screens draw far fewer of them; SP is the grid spacing in CSS px
+let K=1,SP=7.6;
+const treeScale=()=>Math.round(Math.max(1,Math.min(2,Math.hypot(innerWidth,innerHeight)/1500))*20)/20;
 // trees are drawn at a fixed screen size, so they only make sense once the view is down to region scale
 const TREE_MIN=6;
 const merc=(lon,lat,z)=>{const s=TILE*Math.pow(2,z),sn=Math.sin(lat*Math.PI/180);return [(lon+180)/360*s,(.5-Math.log((1+sn)/(1-sn))/(4*Math.PI))*s];};
@@ -83,19 +87,19 @@ function scheduleMask(map,delay=120){if(maskBusy)return;maskBusy=true;setTimeout
 
 /* The root grid repeats every PI columns and PJ rows (304 px square), so the very same trees can also be
    pre-drawn as a repeating tile: while zooming or rotating the woods are simply filled with that tile. */
-const PI=40,PJ=50,PT_CSS=SP*PI;
+const PI=40,PJ=50;let PT_CSS=SP*PI;
 const md=(v,n)=>((v%n)+n)%n;
 const root=(i,j)=>{const hi=md(i,PI),hj=md(j,PJ),a=h2(hi,hj,7);return {a,x:(i+(j&1)*.5+(a-.5)*.6)*SP,y:(j+(h2(hj,hi,8)-.5)*.5)*SP*ROW};};
 let treeSpr=null;
-function makeTreeSprites(tint){const green=['rgba(150,164,92,1)','rgba(136,154,84,1)','rgba(166,172,100,1)'],out=[[],[]];
-  for(const con of [0,1])for(let i=0;i<6;i++){const rv=(i+.5)/6,s=3.9*(.9+rv*.3),cv=document.createElement('canvas');cv.width=Math.ceil(12*dpr);cv.height=Math.ceil(15*dpr);
-    const x=cv.getContext('2d');x.scale(dpr,dpr);x.lineJoin='round';x.lineCap='round';tree(x,5,13,s,!!con,tint?green[i%3]:'#eee0b8',rv);out[con].push(cv);}
-  const tf=document.createElement('canvas');tf.width=Math.ceil(10*dpr);tf.height=Math.ceil(6*dpr);{const x=tf.getContext('2d');x.scale(dpr,dpr);x.strokeStyle='rgba(59,42,26,.75)';x.lineWidth=.55;x.beginPath();tuft(x,5,5);x.stroke();}
+function makeTreeSprites(tint){K=treeScale();SP=7.6*K;PT_CSS=SP*PI;const green=['rgba(150,164,92,1)','rgba(136,154,84,1)','rgba(166,172,100,1)'],out=[[],[]];
+  for(const con of [0,1])for(let i=0;i<6;i++){const rv=(i+.5)/6,s=3.9*(.9+rv*.3),cv=document.createElement('canvas');cv.width=Math.ceil(12*dpr*K);cv.height=Math.ceil(15*dpr*K);
+    const x=cv.getContext('2d');x.scale(dpr*K,dpr*K);x.lineJoin='round';x.lineCap='round';tree(x,5,13,s,!!con,tint?green[i%3]:'#eee0b8',rv);out[con].push(cv);}
+  const tf=document.createElement('canvas');tf.width=Math.ceil(10*dpr*K);tf.height=Math.ceil(6*dpr*K);{const x=tf.getContext('2d');x.scale(dpr*K,dpr*K);x.strokeStyle='rgba(59,42,26,.75)';x.lineWidth=.55;x.beginPath();tuft(x,5,5);x.stroke();}
   treeSpr={trees:out,tuft:tf};
   const n=Math.round(PT_CSS*dpr),tile=draw=>{const cv=document.createElement('canvas');cv.width=cv.height=n;const x=cv.getContext('2d');x.scale(n/PT_CSS,n/PT_CSS);
     for(let j=-2;j<PJ+2;j++)for(let i=-2;i<PI+2;i++)draw(x,i,j,root(i,j));return cv;};
-  treeSpr.tiles={n,broad:tile((x,i,j,r)=>x.drawImage(out[0][Math.floor(r.a*6)],r.x-5,r.y-13,12,15)),con:tile((x,i,j,r)=>x.drawImage(out[1][Math.floor(r.a*6)],r.x-5,r.y-13,12,15)),
-    tuft:tile((x,i,j,r)=>{if(md(i+j,2)===0)x.drawImage(tf,r.x-5,r.y-5,10,6);})};}
+  treeSpr.tiles={n,broad:tile((x,i,j,r)=>x.drawImage(out[0][Math.floor(r.a*6)],r.x-5*K,r.y-13*K,12*K,15*K)),con:tile((x,i,j,r)=>x.drawImage(out[1][Math.floor(r.a*6)],r.x-5*K,r.y-13*K,12*K,15*K)),
+    tuft:tile((x,i,j,r)=>{if(md(i+j,2)===0)x.drawImage(tf,r.x-5*K,r.y-5*K,10*K,6*K);})};}
 
 const treeCanvas=document.createElement('canvas'),treeCtx=treeCanvas.getContext('2d'),patCanvas=document.createElement('canvas'),patCtx=patCanvas.getContext('2d');patCanvas.width=patCanvas.height=1;
 let treeKey='',patKey='',treeCount=0,treesOn=true;
@@ -118,14 +122,14 @@ function drawRoots(v){const {W,H,bw,bh,cb,sb}=v,[cx,cy]=v.c;
   c.setTransform(bw/W,0,0,bh/H,0,0);
   const f=Math.pow(2,mask.zm-v.z),{bits,w,h,X0,Y0}=mask,sy=SP*ROW;
   const tufts=[],trees=[],i0=Math.floor(-G.ox/SP)-1,j0=Math.floor(-G.oy/sy)-1;
-  for(let j=j0;(j-j0-1)*sy<H+16;j++)for(let i=i0;(i-i0-1)*SP<W+8;i++){
+  for(let j=j0;(j-j0-1)*sy<H+16*K;j++)for(let i=i0;(i-i0-1)*SP<W+8*K;i++){
     const r=root(i,j),x=G.ox+r.x,y=G.oy+r.y;
     // screen offset from centre, turned by the map's bearing, gives the offset on the ground
     const dx=x-W/2,dy=y-H/2,gx=cx+dx*cb-dy*sb,gy=cy+dx*sb+dy*cb;
     const mx=Math.floor(gx*f-X0),my=Math.floor(gy*f-Y0);if(mx<0||my<0||mx>=w||my>=h)continue;const b=bits[my*w+mx];if(!b)continue;
     if(b&1)trees.push([x,y,r.a,b&4]);else if(md(i+j,2)===0)tufts.push([x,y]);}
-  for(const [x,y] of tufts)c.drawImage(treeSpr.tuft,x-5,y-5,10,6);
-  for(const [x,y,a,con] of trees)c.drawImage(treeSpr.trees[con?1:0][Math.floor(a*6)],x-5,y-13,12,15);
+  for(const [x,y] of tufts)c.drawImage(treeSpr.tuft,x-5*K,y-5*K,10*K,6*K);
+  for(const [x,y,a,con] of trees)c.drawImage(treeSpr.trees[con?1:0][Math.floor(a*6)],x-5*K,y-13*K,12*K,15*K);
   treeCount=trees.length;return true;}
 
 // the same trees as a repeating tile, clipped to the wood and marsh outlines: cheap enough for every frame of a zoom or turn
@@ -305,7 +309,8 @@ maplibregl.addProtocol('fell',async params=>{const k=params.url.replace('fell://
 const map=new maplibregl.Map({container:'map',style:style(),...PINS.initialView(),minZoom:0,maxZoom:19,
   fadeDuration:300,attributionControl:{compact:true,customAttribution:'<a href="https://maplibre.org" target="_blank">MapLibre</a>'},pitchWithRotate:false,touchPitch:false,maxPitch:0});
 map.addControl(new maplibregl.NavigationControl({showCompass:true,visualizePitch:false}),'bottom-right');
-map.on('style.load',()=>{addGlyphImages(map,true);makeTreeSprites(true);const L=treeLayer();L.map=map;map.addLayer(L,'road5');});
+// the trees go above the roads but beneath all lettering and pins
+map.on('style.load',()=>{addGlyphImages(map,true);makeTreeSprites(true);const L=treeLayer();L.map=map;map.addLayer(L,'bay-names');});
 map.on('load',()=>{$('loading').hidden=true;});
 loadPaper();
 // new woods arrive with new tiles: mark the mask stale so the next frame rebuilds it
@@ -314,5 +319,6 @@ map.on('error',e=>{if(!map.loaded())$('loading').textContent='The map tiles coul
 map.on('styleimagemissing',()=>{});
 // places, their icons, grouping and info windows (pins.js)
 PINS.attach(map);
-new ResizeObserver(()=>paintPaper()).observe(document.querySelector('.plate'));
+// a resize that changes the tree scale redraws the tree sprites and grid at the new size
+new ResizeObserver(()=>{paintPaper();if(treeSpr&&treeScale()!==K){makeTreeSprites(true);treeKey=patKey='';map.triggerRepaint();}}).observe(document.querySelector('.plate'));
 })();
