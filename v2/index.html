@@ -1,5 +1,15 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en"><head><meta charset="utf-8">
+<script>
+  // useVersion (settings page, Behaviour: "Use v2 map") picks the map; it defaults to v2, so only visitors who chose v1
+  // are sent back to the original map, keeping the URL parameters. The older useV2 flag means v1 only if false.
+  try {
+    const s = JSON.parse(localStorage.getItem("settings") || "{}");
+    if ((s.useVersion ?? (s.useV2 === false ? "v1" : "v2")) === "v1") {
+      window.location.replace(`../${window.location.search}`);
+    }
+  } catch (e) {}
+</script><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Antique World Map</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

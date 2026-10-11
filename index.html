@@ -1,9 +1,11 @@
 <html>
   <head>
     <script>
-      // "Use v2 map" (settings page, Behaviour) sends this page on to the v2 map, keeping the URL parameters
+      // useVersion (settings page, Behaviour: "Use v2 map") picks the map; it defaults to v2, so this page sends visitors
+      // on to the v2 map, keeping the URL parameters, unless they chose v1. The older useV2 flag means v1 only if false.
       try {
-        if (JSON.parse(localStorage.getItem("settings") || "{}").useV2) {
+        const s = JSON.parse(localStorage.getItem("settings") || "{}");
+        if ((s.useVersion ?? (s.useV2 === false ? "v1" : "v2")) === "v2") {
           window.location.replace(`./v2/index.html${window.location.search}`);
         }
       } catch (e) {}

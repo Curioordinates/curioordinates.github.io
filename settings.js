@@ -87,11 +87,13 @@ const uiSetup = () => {
 
   document.getElementById("tags-div").innerHTML = tags.join("\n");
 
-  // Behaviour: "Use v2 map" sends visits to /index.html on to /v2/index.html (see the redirect in index.html)
+  // Behaviour: "Use v2 map" sets useVersion, which each map checks on load to redirect to the other (see the top of
+  // /index.html and /v2/index.html). It defaults to v2; the older useV2 flag is read as v1 only when explicitly false.
   const useV2 = document.getElementById("use-v2");
-  useV2.checked = !!settings.useV2;
+  useV2.checked = (settings.useVersion ?? (settings.useV2 === false ? "v1" : "v2")) !== "v1";
   useV2.addEventListener("change", (e) => {
-    settings.useV2 = e.target.checked;
+    settings.useVersion = e.target.checked ? "v2" : "v1";
+    delete settings.useV2;
   });
 
   document.getElementById("cancel").addEventListener("click", handleCancel);
