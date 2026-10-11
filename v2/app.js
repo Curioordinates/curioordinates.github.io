@@ -99,7 +99,7 @@ function makeTreeSprites(tint){const green=['rgba(150,164,92,1)','rgba(136,154,8
 
 const treeCanvas=document.createElement('canvas'),treeCtx=treeCanvas.getContext('2d'),patCanvas=document.createElement('canvas'),patCtx=patCanvas.getContext('2d');patCanvas.width=patCanvas.height=1;
 let treeKey='',patKey='',treeCount=0,treesOn=true;
-const G={ox:0,oy:0,ax:0,ay:0,z:null,br:null},TREE_WAIT=1000,TREE_WIPE=700;let lastZR=-1e9;
+const G={ox:0,oy:0,ax:0,ay:0,z:null,br:null},TREE_WAIT=3000,TREE_WIPE=30000;let lastZR=-1e9;
 function view(map){const cv=map.getCanvas(),z=map.getZoom(),ctr=map.getCenter(),br=map.getBearing()*Math.PI/180;
   return {W:cv.clientWidth,H:cv.clientHeight,bw:cv.width,bh:cv.height,z,ctr,br,cb:Math.cos(br),sb:Math.sin(br),c:merc(ctr.lng,ctr.lat,z),
     key:`${cv.width}x${cv.height}:${z.toFixed(5)}:${ctr.lng.toFixed(7)}:${ctr.lat.toFixed(7)}:${br.toFixed(5)}:${treesOn}`};}
