@@ -218,6 +218,10 @@ function style(){
       // hides its outer half; being opaque and un-offset, tight bends and overlaps cannot build up into dark blotches
       {id:'tint-coast',type:'line',source:S,'source-layer':'water',filter:ocean,layout:{'line-join':'round'},paint:{'line-color':'rgb(226,202,142)','line-width':['interpolate',['linear'],['zoom'],2,6,7,30],'line-blur':['interpolate',['linear'],['zoom'],2,3,7,16]},metadata:{group:'tint'}},
       {id:'sea',type:'fill',source:S,'source-layer':'water',filter:ocean,paint:{'fill-color':SEA}},
+      // the town wash: built-up land use (housing from zoom 6, shops and industry from 10) in ink blended into the land
+      // colour, opaque so overlapping areas cannot stack darker; it gives way to individual buildings from 14 to 15
+      {id:'town-wash',type:'fill',source:S,'source-layer':'landuse',filter:['in',['get','class'],['literal',['residential','commercial','retail','industrial']]],
+        minzoom:8.5,maxzoom:15,paint:{'fill-color':'rgb(209,195,159)','fill-opacity':['interpolate',['linear'],['zoom'],8.5,0,9,1,14,1,15,0]}},
       // hand tinting: pink along borders
       {id:'tint-border',type:'line',source:S,'source-layer':'boundary',filter:['all',['<=',['get','admin_level'],6],['!=',['get','maritime'],1]],
         paint:{'line-color':['match',['get','admin_level'],2,'rgba(200,118,92,.34)','rgba(208,168,78,.3)'],'line-width':['match',['get','admin_level'],2,16,10],'line-blur':7,'line-opacity':['interpolate',['linear'],['zoom'],4.5,['match',['get','admin_level'],2,1,0],5,['match',['get','admin_level'],[2,3,4],1,0],7.5,['match',['get','admin_level'],[2,3,4],1,0],8,1]},metadata:{group:'tint'}},
@@ -230,6 +234,11 @@ function style(){
       {id:'coast-shadow',type:'line',source:S,'source-layer':'water',filter:ocean,layout:{'line-join':'round'},paint:{'line-color':ink(.75),'line-width':['interpolate',['linear'],['zoom'],6,1,11,2.3],'line-offset':['interpolate',['linear'],['zoom'],6,.8,11,1.6]}},
       {id:'coast',type:'line',source:S,'source-layer':'water',filter:ocean,layout:{'line-join':'round'},paint:{'line-color':INK,'line-width':['interpolate',['linear'],['zoom'],6,.7,11,1.1]}},
       {id:'seam-mask',type:'line',source:'seam',maxzoom:2,paint:{'line-color':SEA,'line-width':10}},
+      // buildings: real footprints arrive with the zoom 14 tiles (below that they are merged or absent), and outlines
+      // join once houses are ~6 px; the town wash above has faded out by then
+      {id:'buildings',type:'fill',source:S,'source-layer':'building',minzoom:14,paint:{'fill-color':ink(.24),'fill-antialias':false,'fill-opacity':fadeIn(14)}},
+      {id:'building-outlines',type:'line',source:S,'source-layer':'building',minzoom:15,layout:{'line-join':'round'},
+        paint:{'line-color':ink(.6),'line-width':['interpolate',['linear'],['zoom'],15,.5,18,.9],'line-opacity':fadeIn(15)}},
       {id:'border',type:'line',source:S,'source-layer':'boundary',filter:['all',['<=',['get','admin_level'],6],['!=',['get','maritime'],1]],
         paint:{'line-color':INK,'line-width':['match',['get','admin_level'],2,1.4,1],'line-dasharray':[6,3,1,3],'line-opacity':['interpolate',['linear'],['zoom'],4.5,['match',['get','admin_level'],2,1,0],5,['match',['get','admin_level'],[2,3,4],1,0],7.5,['match',['get','admin_level'],[2,3,4],1,0],8,1]}},
       ...roads,
