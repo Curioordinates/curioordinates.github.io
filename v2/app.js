@@ -103,7 +103,7 @@ function makeTreeSprites(tint){K=treeScale();SP=7.6*K;PT_CSS=SP*PI;const green=[
 
 const treeCanvas=document.createElement('canvas'),treeCtx=treeCanvas.getContext('2d'),patCanvas=document.createElement('canvas'),patCtx=patCanvas.getContext('2d');patCanvas.width=patCanvas.height=1;
 let treeKey='',patKey='',treeCount=0,treesOn=true;
-const G={ox:0,oy:0,ax:0,ay:0,z:null,br:null},TREE_WAIT=3000,TREE_WIPE=30000;let lastZR=-1e9;
+const G={ox:0,oy:0,ax:0,ay:0,z:null,br:null},TREE_WAIT=3000,TREE_FADE=4000;let lastZR=-1e9;
 function view(map){const cv=map.getCanvas(),z=map.getZoom(),ctr=map.getCenter(),br=map.getBearing()*Math.PI/180;
   return {W:cv.clientWidth,H:cv.clientHeight,bw:cv.width,bh:cv.height,z,ctr,br,cb:Math.cos(br),sb:Math.sin(br),c:merc(ctr.lng,ctr.lat,z),
     key:`${cv.width}x${cv.height}:${z.toFixed(5)}:${ctr.lng.toFixed(7)}:${ctr.lat.toFixed(7)}:${br.toFixed(5)}:${treesOn}`};}
@@ -146,26 +146,30 @@ function drawPattern(v){const {W,H,bw,bh,z,br}=v,[cx,cy]=v.c;
   c.save();c.setTransform(P);c.globalCompositeOperation='destination-out';c.fillStyle=c.strokeStyle='#000';c.lineWidth=1.2/k;c.fill(paths.woods,'nonzero');c.stroke(paths.woods);c.restore();
   fillWith(paths.broad,T.broad);fillWith(paths.con,T.con);return true;}
 
-/* While zooming or rotating the tile pattern is shown; a moment after it stops, the root trees wipe in over it as a growing circle. */
+/* While zooming or rotating the tile pattern is shown; a moment after it stops, the root trees fade in over it across the whole screen. */
 function treeLayer(){let prog,buf,texR,texP,aPos,loc;return {id:'trees',type:'custom',renderingMode:'2d',
   onAdd(map,gl){const sh=(type,src)=>{const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);return s;};
     prog=gl.createProgram();gl.attachShader(prog,sh(gl.VERTEX_SHADER,'attribute vec2 p;varying vec2 uv;void main(){uv=vec2(p.x*.5+.5,.5-p.y*.5);gl_Position=vec4(p,0.,1.);}'));
-    gl.attachShader(prog,sh(gl.FRAGMENT_SHADER,'precision mediump float;varying vec2 uv;uniform sampler2D tr,tp;uniform vec2 c;uniform float r,e,o;void main(){float k=1.-smoothstep(r-e,r,distance(gl_FragCoord.xy,c));gl_FragColor=mix(texture2D(tp,uv),texture2D(tr,uv),k)*o;}'));gl.linkProgram(prog);
+    gl.attachShader(prog,sh(gl.FRAGMENT_SHADER,'precision mediump float;varying vec2 uv;uniform sampler2D tr,tp;uniform float f,o;void main(){gl_FragColor=mix(texture2D(tp,uv),texture2D(tr,uv),f)*o;}'));gl.linkProgram(prog);
     loc=n=>gl.getUniformLocation(prog,n);
     aPos=gl.getAttribLocation(prog,'p');buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
     const mk=()=>{const t=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,t);[gl.TEXTURE_MIN_FILTER,gl.TEXTURE_MAG_FILTER].forEach(p=>gl.texParameteri(gl.TEXTURE_2D,p,gl.NEAREST));
       [gl.TEXTURE_WRAP_S,gl.TEXTURE_WRAP_T].forEach(p=>gl.texParameteri(gl.TEXTURE_2D,p,gl.CLAMP_TO_EDGE));return t;};texR=mk();texP=mk();},
   render(gl){const map=this.map,v=view(map);updateGrid(v);const op=Math.max(0,Math.min(1,(v.z-TREE_MIN)*2));if(!op){treeCount=0;return;}
     if(!maskCovers(v)||maskDirty)scheduleMask(map,maskCovers(v)?150:0);
-    const since=performance.now()-lastZR-TREE_WAIT,q=Math.max(0,Math.min(1,since/TREE_WIPE)),full=Math.hypot(v.bw,v.bh)/2,e=40*dpr;
+    const since=performance.now()-lastZR-TREE_WAIT,q=Math.max(0,Math.min(1,since/TREE_FADE));
     const up=(tex,cv)=>{gl.bindTexture(gl.TEXTURE_2D,tex);gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,true);gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,false);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,cv);gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,false);};
     gl.useProgram(prog);gl.activeTexture(gl.TEXTURE1);
-    if(since<0||q<1){if(drawPattern(v)||!this.upP){up(texP,patCanvas);this.upP=true;}map.triggerRepaint();}
+    // during the wait nothing on screen changes, so rather than repainting every frame to watch the clock, one timer
+    // asks for a frame when the wait ends; only the fade itself repaints every frame
+    if(since<0||q<1){if(drawPattern(v)||!this.upP){up(texP,patCanvas);this.upP=true;}
+      if(since<0){clearTimeout(this.wake);this.wake=setTimeout(()=>map.triggerRepaint(),-since+20);}else map.triggerRepaint();}
     gl.activeTexture(gl.TEXTURE0);
-    let rad;if(since<0){rad=-e;if(!this.upR){up(texR,treeCanvas);this.upR=true;}}
-    else{if(drawRoots(v)||!this.upR){up(texR,treeCanvas);this.upR=true;}rad=q>=1?full*4:(1-(1-q)**3)*(full+e);}
+    // f: how far the individual trees have faded in over the pattern, eased in and out
+    let f;if(since<0){f=0;if(!this.upR){up(texR,treeCanvas);this.upR=true;}}
+    else{if(drawRoots(v)||!this.upR){up(texR,treeCanvas);this.upR=true;}f=q*q*(3-2*q);}
     gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,texR);gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,texP);
-    gl.uniform1i(loc('tr'),0);gl.uniform1i(loc('tp'),1);gl.uniform2f(loc('c'),v.bw/2,v.bh/2);gl.uniform1f(loc('r'),rad);gl.uniform1f(loc('e'),e);gl.uniform1f(loc('o'),op);
+    gl.uniform1i(loc('tr'),0);gl.uniform1i(loc('tp'),1);gl.uniform1f(loc('f'),f);gl.uniform1f(loc('o'),op);
     gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.enableVertexAttribArray(aPos);gl.vertexAttribPointer(aPos,2,gl.FLOAT,false,0,0);
     gl.disable(gl.DEPTH_TEST);gl.disable(gl.STENCIL_TEST);gl.enable(gl.BLEND);gl.blendFunc(gl.ONE,gl.ONE_MINUS_SRC_ALPHA);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);gl.activeTexture(gl.TEXTURE0);}};}
 

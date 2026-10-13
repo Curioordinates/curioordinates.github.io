@@ -47,12 +47,19 @@ const PINS = (() => {
   };
   parseLocation();
 
-  // The view to open on, as the original: the URL's place and zoom, or the whole world at zoom 2.
+  // The view to open on, as the original: the URL's place and zoom; with no place, the visitor's timezone
+  // (../timezone-location.js), or else the whole world at zoom 2.
   // When following the user (or l=me) with no place given, the world is shown until their position arrives.
   const initialView = () => {
     const located = followUser || qs.l === "me";
     if (!located && !qs.latitude && !qs.longitude) {
-      qs.z = 2;
+      const home = typeof timezoneLocation === "function" ? timezoneLocation() : null;
+      if (home) {
+        [qs.latitude, qs.longitude] = home;
+        qs.z = TIMEZONE_ZOOM;
+      } else {
+        qs.z = 2;
+      }
     }
     const waiting = located && !qs.latitude && !qs.longitude;
     return {

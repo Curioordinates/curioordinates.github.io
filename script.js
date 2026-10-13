@@ -194,7 +194,14 @@ const mapSetup = () => {
     });
   } else {
     if (!qs.latitude && !qs.longitude) {
-      qs.z = 2;
+      // no place in the URL: start on the visitor's timezone (timezone-location.js), else the whole world
+      const home = typeof timezoneLocation === "function" ? timezoneLocation() : null;
+      if (home) {
+        [qs.latitude, qs.longitude] = home;
+        qs.z = TIMEZONE_ZOOM;
+      } else {
+        qs.z = 2;
+      }
     }
     map.setView([qs.latitude || 0, qs.longitude || 0], qs.z);
   }

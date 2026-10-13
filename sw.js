@@ -105,6 +105,7 @@ async function precacheApp() {
     "images/osm.svg",
     "images/wikimap.svg",
     "src/metadata.json",
+    "timezone-location.js",
   ];
 
   await Promise.all([
