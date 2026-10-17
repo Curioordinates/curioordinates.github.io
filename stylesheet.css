@@ -1,5 +1,13 @@
-#map {
+html,
+body {
   height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#map {
+  position: absolute;
+  inset: 0;
 }
 
 #kofibutton {
@@ -41,4 +49,19 @@
   vertical-align: middle;
   height: 1em;
   width: 1em;
+}
+
+/* Info windows keep the look of the old Leaflet ones. */
+.maplibregl-popup-content {
+  padding: 13px 24px 13px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+  font: 13px/1.4 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  min-width: 50px;
+}
+
+.maplibregl-popup-close-button {
+  font-size: 18px;
+  color: #757575;
+  padding: 0 6px;
 }

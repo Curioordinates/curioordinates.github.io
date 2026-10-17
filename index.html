@@ -34,44 +34,14 @@
       name="description"
       content="The Untamed Earth map is a point-of-reference for all things weird, spooky and outlandish - regardless of where you are on earth."
     />
+    <!-- the same MapLibre GL JS build as /v2/ -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
+      href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
     />
     <link rel="stylesheet" href="stylesheet.css" />
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
-    <!-- + Vector basemap (CARTO GL styles via MapLibre GL JS) -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css"
-    />
-    <script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
-    <script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.1.4/leaflet-maplibre-gl.js"></script>
-    <!-- - Vector basemap -->
-    <script src="timezone-location.js"></script>
-    <script src="script.js"></script>
-    <!-- + Marker Grouping -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"
-    />
-    <script
-      src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"
-      crossorigin=""
-    ></script>
-    <!-- - Marker Grouping -->
   </head>
-  <body onload="setup()">
+  <body>
     <div id="map"></div>
     <div id="kofibutton">
       <a href="https://buymeacoffee.com/untamed.earth" target="_blank">
@@ -83,7 +53,7 @@
       /></a>
     </div>
     <div id="settingsbutton">
-      <a href="/settings.html">
+      <a href="settings.html">
         <img
           src="images/settings.png"
           width="40px"
@@ -91,6 +61,10 @@
           title="Settings"
       /></a>
     </div>
+    <script src="v2/maplibre-gl.js"></script>
+    <script src="timezone-location.js"></script>
+    <script src="v2/pins.js"></script>
+    <script src="script.js"></script>
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("./sw.js", { scope: "./" });

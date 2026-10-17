@@ -4,18 +4,11 @@
  * cell TSVs are cached on first fetch.
  */
 
-const CACHE_STATIC = "untamed-static-v5";
+const CACHE_STATIC = "untamed-static-v6";
 const CACHE_RUNTIME = "untamed-runtime-v1";
 
 const CDN_ASSETS = [
-  "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
-  "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
-  "https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css",
-  "https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js",
-  "https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.1.4/leaflet-maplibre-gl.js",
-  "https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css",
-  "https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css",
-  "https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js",
+  "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css",
   "https://gc.zgo.at/count.js",
 ];
 
@@ -54,7 +47,7 @@ async function safePrecacheUrl(cache, url) {
 }
 
 /**
- * Raster icons used by Leaflet (`./markers/<tag>.png`, plus `you.png` for follow mode).
+ * Raster icons used by the map (`./markers/<tag>.png`, plus `you.png` for follow mode).
  * SVGs in /markers are sources — not loaded by the map.
  */
 async function precacheMarkerPngs(cache, base) {
@@ -106,6 +99,8 @@ async function precacheApp() {
     "images/wikimap.svg",
     "src/metadata.json",
     "timezone-location.js",
+    "v2/maplibre-gl.js",
+    "v2/pins.js",
   ];
 
   await Promise.all([

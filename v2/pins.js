@@ -1,9 +1,10 @@
-/* Pins: the same places, icons, grouping and info windows as the original Leaflet map (/index.html, /script.js),
-   drawn natively by MapLibre. The data is read exactly as the original reads it: ../src/metadata.json lists the tags,
-   ../data/cells/<tag>.tsv holds each tag's places, ../markers/<tag>.png is its icon, and the tags shown come from the
+/* Pins: the places, icons, grouping and info windows shared by both maps (/index.html with /script.js, and /v2/),
+   drawn natively by MapLibre. The data is read as the original Leaflet map read it: src/metadata.json lists the tags,
+   data/cells/<tag>.tsv holds each tag's places, markers/<tag>.png is its icon, and the tags shown come from the
    URL or from the settings page (localStorage "settings"). */
 const PINS = (() => {
-  const ROOT = "../";
+  // the site root, worked out from where this file lives (/v2/pins.js), so either map's page can load it
+  const ROOT = new URL("..", document.currentScript.src).href;
 
   // Leaflet counts zoom in 256 px tiles and MapLibre in 512 px ones, so the same view is one zoom level less here.
   // URLs keep Leaflet's numbers so links work in both maps.
@@ -261,7 +262,8 @@ const PINS = (() => {
   };
   //#endregion
 
-  const attach = (map, metadataPromise) => {
+  // countFont: the font stack for the numbers on group bubbles, which must be one the map's style can serve
+  const attach = (map, metadataPromise, { countFont = ["FellRoman"], countSize = 15 } = {}) => {
     const noGrouping = window.location.href.toLowerCase().includes("ungroup");
     const features = [];
     let metadata = {};
@@ -384,8 +386,8 @@ const PINS = (() => {
         filter: ["has", "point_count"],
         layout: {
           "text-field": ["to-string", ["get", "point_count"]],
-          "text-font": ["literal", ["FellRoman"]],
-          "text-size": 15,
+          "text-font": ["literal", countFont],
+          "text-size": countSize,
           "text-allow-overlap": true,
           "text-ignore-placement": true,
         },
@@ -464,5 +466,5 @@ const PINS = (() => {
 
   const metadataPromise = fetch(`${ROOT}src/metadata.json`).then((r) => (r.status === 200 ? r.json() : {}));
 
-  return { initialView, attach: (map) => attach(map, metadataPromise) };
+  return { initialView, attach: (map, options) => attach(map, metadataPromise, options) };
 })();
