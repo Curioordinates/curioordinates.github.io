@@ -1,7 +1,8 @@
 {
   "scripts": {
     "server": "python -m http.server --directory .",
-    "generate": "npx tsx ./src/file-processor.ts"
+    "generate": "npx tsx ./src/file-processor.ts",
+    "lint": "npx tsx ./src/lint.ts"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.24.7",
