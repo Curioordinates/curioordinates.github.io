@@ -381,7 +381,7 @@
    "haunted-road": {
       "id": 75,
       "short_description": "Haunted roads, where drivers report phantom figures, vehicles and animals.",
-      "count": 66
+      "count": 67
    },
    "haunted-stay": {
       "id": 76,
@@ -391,7 +391,7 @@
    "haunting": {
       "id": 77,
       "short_description": "Haunted places: buildings, roads and landscapes with reported ghosts.",
-      "count": 764
+      "count": 795
    },
    "headless-rider": {
       "id": 78,
