@@ -391,7 +391,7 @@
    "haunting": {
       "id": 77,
       "short_description": "Haunted places: buildings, roads and landscapes with reported ghosts.",
-      "count": 795
+      "count": 803
    },
    "headless-rider": {
       "id": 78,
@@ -552,7 +552,7 @@
    "named-ghost": {
       "id": 109,
       "short_description": "Ghosts known by name, from grey ladies and green ladies to other famous spirits.",
-      "count": 18
+      "count": 22
    },
    "national-trust": {
       "id": 110,
