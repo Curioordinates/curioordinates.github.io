@@ -105,7 +105,7 @@
    "canine": {
       "id": 21,
       "short_description": "Phantom dogs and hounds, from spectral black dogs and hellhounds to faithful spirits.",
-      "count": 74
+      "count": 75
    },
    "cartoquirk": {
       "id": 22,
@@ -150,7 +150,7 @@
    "curse": {
       "id": 30,
       "short_description": "Places with a curse attached, from cursed buildings and families to blighted land, and the tales of how they came to be.",
-      "count": 160
+      "count": 161
    },
    "cyclopean": {
       "id": 31,
@@ -330,7 +330,7 @@
    "ghost-light": {
       "id": 65,
       "short_description": "Ghost lights: unexplained glowing lights such as will-o'-the-wisps and corpse candles, said to foretell death or lead travellers astray.",
-      "count": 16
+      "count": 19
    },
    "ghost-photo": {
       "id": 66,
@@ -340,7 +340,7 @@
    "ghost-ship": {
       "id": 67,
       "short_description": "Phantom ships seen sailing where no ship should be, often as an omen of storms or disaster.",
-      "count": 5
+      "count": 7
    },
    "ghost-sign": {
       "id": 68,
@@ -396,7 +396,7 @@
    "headless-rider": {
       "id": 78,
       "short_description": "Headless horsemen and other headless riders of legend.",
-      "count": 3
+      "count": 4
    },
    "henge": {
       "id": 79,
@@ -552,7 +552,7 @@
    "named-ghost": {
       "id": 109,
       "short_description": "Ghosts known by name, from grey ladies and green ladies to other famous spirits.",
-      "count": 22
+      "count": 46
    },
    "national-trust": {
       "id": 110,
@@ -613,7 +613,7 @@
    "podcast-episode": {
       "id": 120,
       "short_description": "Podcast episodes about a particular place or tale.",
-      "count": 140
+      "count": 141
    },
    "point-zero": {
       "id": 122,
