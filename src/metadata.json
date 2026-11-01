@@ -2,12 +2,12 @@
    "abduction": {
       "id": 1,
       "short_description": "Places linked to reported alien abductions, where people say they were taken aboard a craft or lost hours they cannot account for.",
-      "count": 43
+      "count": 44
    },
    "accused": {
       "id": 2,
       "short_description": "People accused of witchcraft, marked where they lived, were tried or met their end.",
-      "count": 9
+      "count": 12
    },
    "amphitheatre-site": {
       "id": 3,
@@ -105,7 +105,7 @@
    "canine": {
       "id": 21,
       "short_description": "Phantom dogs and hounds, from spectral black dogs and hellhounds to faithful spirits.",
-      "count": 75
+      "count": 76
    },
    "cartoquirk": {
       "id": 22,
@@ -150,7 +150,7 @@
    "curse": {
       "id": 30,
       "short_description": "Places with a curse attached, from cursed buildings and families to blighted land, and the tales of how they came to be.",
-      "count": 161
+      "count": 162
    },
    "cyclopean": {
       "id": 31,
@@ -170,7 +170,7 @@
    "devil": {
       "id": 34,
       "short_description": "Places where the Devil is said to have walked, struck bargains or left his mark.",
-      "count": 41
+      "count": 42
    },
    "devils-bridge": {
       "id": 35,
@@ -340,7 +340,7 @@
    "ghost-ship": {
       "id": 67,
       "short_description": "Phantom ships seen sailing where no ship should be, often as an omen of storms or disaster.",
-      "count": 7
+      "count": 8
    },
    "ghost-sign": {
       "id": 68,
@@ -381,7 +381,7 @@
    "haunted-road": {
       "id": 75,
       "short_description": "Haunted roads, where drivers report phantom figures, vehicles and animals.",
-      "count": 67
+      "count": 68
    },
    "haunted-stay": {
       "id": 76,
@@ -391,7 +391,7 @@
    "haunting": {
       "id": 77,
       "short_description": "Haunted places: buildings, roads and landscapes with reported ghosts.",
-      "count": 803
+      "count": 868
    },
    "headless-rider": {
       "id": 78,
@@ -547,12 +547,12 @@
    "name": {
       "id": 108,
       "short_description": "Places with strange names, and the stories of how they got them.",
-      "count": 30
+      "count": 31
    },
    "named-ghost": {
       "id": 109,
       "short_description": "Ghosts known by name, from grey ladies and green ladies to other famous spirits.",
-      "count": 46
+      "count": 65
    },
    "national-trust": {
       "id": 110,
@@ -623,12 +623,12 @@
    "possession": {
       "id": 123,
       "short_description": "Cases where people were said to be taken over by a demon or spirit, often ending in exorcism.",
-      "count": 20
+      "count": 34
    },
    "practitioner": {
       "id": 124,
       "short_description": "Witches, wizards, cunning folk and occultists: people who practised magic, and where they lived or worked.",
-      "count": 22
+      "count": 23
    },
    "prediction": {
       "id": 125,
@@ -824,12 +824,12 @@
    "tunnel": {
       "id": 163,
       "short_description": "Secret tunnels and passages of legend.",
-      "count": 5
+      "count": 6
    },
    "ufo": {
       "id": 164,
       "short_description": "Places where unidentified flying objects were reported, from single sightings to famous incidents with many witnesses.",
-      "count": 27
+      "count": 28
    },
    "uncontacted": {
       "id": 165,
@@ -883,6 +883,9 @@
       "short_description": "Live webcams of wild and remote places.",
       "count": 2
    },
+   "weeping-statue": {
+      "count": 18
+   },
    "weird": {
       "id": 175,
       "short_description": "Places that are simply strange and fit no other category, such as churches that seem to vanish from view.",
@@ -897,7 +900,7 @@
    "witch": {
       "id": 179,
       "short_description": "Witches of folklore: women and men said to cast spells, curse livestock and neighbours, or consort with the Devil.",
-      "count": 32
+      "count": 37
    },
    "witch-hunt-memorial-plaque": {
       "id": 177,
