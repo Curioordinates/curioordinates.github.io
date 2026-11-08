@@ -150,7 +150,7 @@
    "curse": {
       "id": 30,
       "short_description": "Places with a curse attached, from cursed buildings and families to blighted land, and the tales of how they came to be.",
-      "count": 162
+      "count": 166
    },
    "cyclopean": {
       "id": 31,
@@ -255,7 +255,7 @@
    "folklore-giant": {
       "id": 51,
       "short_description": "Giants of folklore, and the places they built, threw, fought over or lie buried beneath.",
-      "count": 24
+      "count": 26
    },
    "folklore-humanoid": {
       "id": 52,
@@ -340,7 +340,7 @@
    "ghost-ship": {
       "id": 67,
       "short_description": "Phantom ships seen sailing where no ship should be, often as an omen of storms or disaster.",
-      "count": 8
+      "count": 9
    },
    "ghost-sign": {
       "id": 68,
@@ -391,7 +391,7 @@
    "haunting": {
       "id": 77,
       "short_description": "Haunted places: buildings, roads and landscapes with reported ghosts.",
-      "count": 868
+      "count": 915
    },
    "headless-rider": {
       "id": 78,
@@ -552,7 +552,7 @@
    "named-ghost": {
       "id": 109,
       "short_description": "Ghosts known by name, from grey ladies and green ladies to other famous spirits.",
-      "count": 65
+      "count": 81
    },
    "national-trust": {
       "id": 110,
@@ -717,7 +717,7 @@
       "count": 1631
    },
    "screaming-skull": {
-      "count": 30
+      "count": 31
    },
    "sea-monster": {
       "id": 142,
