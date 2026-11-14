@@ -2,6 +2,8 @@
 const INK='#3b2a1a',RED='#9a3a22',PAPER='#ecdcb1',PAPER_RGB='236,220,177';
 // a faint charcoal-blue wash for the sea; the paper overlay warms it a little on screen
 const SEA='#c3cbd1';
+// tree and town fills are washed about halfway toward the land colour so the pins stand out against them
+const TREE_GREEN=['rgb(194,194,138)','rgb(187,189,134)','rgb(202,198,142)'],TOWN_FILL='rgb(217,167,133)';
 const $=id=>document.getElementById(id);
 const dpr=Math.min(window.devicePixelRatio||1,2);
 function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
@@ -34,7 +36,7 @@ function building(c,x,y,w,h,fill,spire){
   if(spire){const t=y-h-w*2.2;c.beginPath();c.moveTo(x,t);c.lineTo(x,t-3);c.moveTo(x-1.3,t-2);c.lineTo(x+1.3,t-2);c.stroke();}
   c.beginPath();c.moveTo(x,y);c.lineTo(x,y-h*.45);c.stroke();}
 const GLYPH=[{w:30,h:30},{w:20,h:24},{w:10,h:20},{w:6,h:6}];
-function town(c,r,x,y,tint){const f=tint?'rgba(196,110,82,.9)':'#efe2bd';
+function town(c,r,x,y,tint){const f=tint?TOWN_FILL:'#efe2bd';
   if(r===0){[[-10,5,8],[-5,4,11],[0,5,13,1],[5.2,4,10],[10.4,5,7]].forEach(([dx,w,h,sp])=>building(c,x+dx,y,w,h,f,sp));c.lineWidth=1;c.beginPath();c.moveTo(x-14,y);c.lineTo(x+14,y);c.stroke();}
   else if(r===1){[[-4.5,5,6],[0,4,9,1],[4.5,5,5]].forEach(([dx,w,h,sp])=>building(c,x+dx,y,w,h,f,sp));c.lineWidth=.9;c.beginPath();c.moveTo(x-8,y);c.lineTo(x+8,y);c.stroke();}
   else if(r===2){building(c,x,y,3.4,5.5,f,1);}
@@ -91,7 +93,7 @@ const PI=40,PJ=50;let PT_CSS=SP*PI;
 const md=(v,n)=>((v%n)+n)%n;
 const root=(i,j)=>{const hi=md(i,PI),hj=md(j,PJ),a=h2(hi,hj,7);return {a,x:(i+(j&1)*.5+(a-.5)*.6)*SP,y:(j+(h2(hj,hi,8)-.5)*.5)*SP*ROW};};
 let treeSpr=null;
-function makeTreeSprites(tint){K=treeScale();SP=7.6*K;PT_CSS=SP*PI;const green=['rgba(150,164,92,1)','rgba(136,154,84,1)','rgba(166,172,100,1)'],out=[[],[]];
+function makeTreeSprites(tint){K=treeScale();SP=7.6*K;PT_CSS=SP*PI;const green=TREE_GREEN,out=[[],[]];
   for(const con of [0,1])for(let i=0;i<6;i++){const rv=(i+.5)/6,s=3.9*(.9+rv*.3),cv=document.createElement('canvas');cv.width=Math.ceil(12*dpr*K);cv.height=Math.ceil(15*dpr*K);
     const x=cv.getContext('2d');x.scale(dpr*K,dpr*K);x.lineJoin='round';x.lineCap='round';tree(x,5,13,s,!!con,tint?green[i%3]:'#eee0b8',rv);out[con].push(cv);}
   const tf=document.createElement('canvas');tf.width=Math.ceil(10*dpr*K);tf.height=Math.ceil(6*dpr*K);{const x=tf.getContext('2d');x.scale(dpr*K,dpr*K);x.strokeStyle='rgba(59,42,26,.75)';x.lineWidth=.55;x.beginPath();tuft(x,5,5);x.stroke();}
@@ -175,7 +177,7 @@ function treeLayer(){let prog,buf,texR,texP,aPos,loc;return {id:'trees',type:'cu
 
 /* ---------- glyph images ---------- */
 function addGlyphImages(map,tint){
-  const green=['rgba(150,164,92,1)','rgba(136,154,84,1)','rgba(166,172,100,1)'];
+  const green=TREE_GREEN;
   const put=(id,w,h,draw)=>{const c=document.createElement('canvas');c.width=Math.ceil(w*dpr);c.height=Math.ceil(h*dpr);const x=c.getContext('2d');x.scale(dpr,dpr);x.lineJoin='round';x.lineCap='round';draw(x);
     const im=x.getImageData(0,0,c.width,c.height);if(map.hasImage(id))map.updateImage(id,im);else map.addImage(id,im,{pixelRatio:dpr});};
   for(let i=0;i<6;i++){const rv=(i+.5)/6,s=3.9*(.9+rv*.3);

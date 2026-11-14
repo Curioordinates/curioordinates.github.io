@@ -105,7 +105,7 @@
    "canine": {
       "id": 21,
       "short_description": "Phantom dogs and hounds, from spectral black dogs and hellhounds to faithful spirits.",
-      "count": 76
+      "count": 80
    },
    "cartoquirk": {
       "id": 22,
@@ -150,7 +150,7 @@
    "curse": {
       "id": 30,
       "short_description": "Places with a curse attached, from cursed buildings and families to blighted land, and the tales of how they came to be.",
-      "count": 166
+      "count": 167
    },
    "cyclopean": {
       "id": 31,
@@ -170,7 +170,7 @@
    "devil": {
       "id": 34,
       "short_description": "Places where the Devil is said to have walked, struck bargains or left his mark.",
-      "count": 42
+      "count": 44
    },
    "devils-bridge": {
       "id": 35,
@@ -226,6 +226,9 @@
       "id": 43,
       "short_description": "Fairy trees, usually lone hawthorns, which it is bad luck to cut or harm.",
       "count": 3
+   },
+   "fluke": {
+      "count": 1
    },
    "folk-song": {
       "id": 45,
@@ -330,7 +333,7 @@
    "ghost-light": {
       "id": 65,
       "short_description": "Ghost lights: unexplained glowing lights such as will-o'-the-wisps and corpse candles, said to foretell death or lead travellers astray.",
-      "count": 19
+      "count": 20
    },
    "ghost-photo": {
       "id": 66,
@@ -391,7 +394,7 @@
    "haunting": {
       "id": 77,
       "short_description": "Haunted places: buildings, roads and landscapes with reported ghosts.",
-      "count": 915
+      "count": 971
    },
    "headless-rider": {
       "id": 78,
@@ -552,7 +555,7 @@
    "named-ghost": {
       "id": 109,
       "short_description": "Ghosts known by name, from grey ladies and green ladies to other famous spirits.",
-      "count": 81
+      "count": 90
    },
    "national-trust": {
       "id": 110,
