@@ -8,6 +8,8 @@
     if ((s.useVersion ?? (s.useV2 === false ? "v1" : "v2")) === "v1") {
       window.location.replace(`../${window.location.search}`);
     }
+    // a chosen theme is marked on the page for style.css; with none, the stylesheet follows the browser / OS setting
+    if (s.theme === "light" || s.theme === "dark") document.documentElement.dataset.theme = s.theme;
   } catch (e) {}
   // a page brought back by Back/Forward is a frozen copy with the settings it had then; if they have changed since
   // (on the settings page), load it afresh so it picks them up

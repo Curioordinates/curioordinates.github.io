@@ -10,14 +10,21 @@
   --body: "Alegreya", "Iowan Old Style", Georgia, serif;
   color-scheme: light;
 }
-html, body { height: 100%; margin: 0; padding: 0; overflow: hidden; background: var(--parchment); }
-.plate { position: fixed; inset: 0; background: var(--parchment); overflow: hidden; }
+html, body { height: 100%; margin: 0; padding: 0; overflow: hidden; background: var(--plate-bg, var(--parchment)); }
+.plate { position: fixed; inset: 0; background: var(--plate-bg, var(--parchment)); overflow: hidden; }
 #map { position: absolute; inset: 0; }
 /* The darkened edges: plain alpha blending (close to the old multiply on this paper) so the browser does no blend
    pass over the moving map. The paper grain itself is drawn inside the map (paperLayer in app.js). */
 #paper { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; }
-.loading { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--display); font-style: italic; font-size: 20px; color: var(--ink); z-index: 4; background: var(--parchment); }
+.loading { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--display); font-style: italic; font-size: 20px; color: var(--ink); z-index: 4; background: var(--plate-bg, var(--parchment)); }
 .loading[hidden] { display: none; }
+/* Dark theme (see app.js): the page behind the map and the loading cover (--plate-bg) go dark; popups keep their parchment, with paper-coloured lettering. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --plate-bg: #24324f; }
+  :root:not([data-theme="light"]) .loading { color: #ecdcb1; }
+}
+:root[data-theme="dark"] { --plate-bg: #24324f; }
+:root[data-theme="dark"] .loading { color: #ecdcb1; }
 .maplibregl-ctrl-group { background: var(--brass); }
 .maplibregl-ctrl-group button + button { border-top-color: rgba(40,25,10,.3); }
 .maplibregl-ctrl-attrib { background: rgba(242,230,198,.8) !important; font-family: var(--body); }
