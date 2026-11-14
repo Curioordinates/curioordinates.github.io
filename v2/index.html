@@ -17,7 +17,13 @@
   addEventListener("pageshow", (e) => {
     if (e.persisted && localStorage.getItem("settings") !== settingsAtLoad) location.reload();
   });
-</script><meta name="viewport" content="width=device-width, initial-scale=1">
+</script>
+<script>
+  // count each page once, whatever URL parameters it was opened with
+  window.goatcounter = { path: (p) => p.split("?")[0] };
+</script>
+<script data-goatcounter="https://untamed-earth.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Antique World Map</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
