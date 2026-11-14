@@ -9,6 +9,12 @@
       window.location.replace(`../${window.location.search}`);
     }
   } catch (e) {}
+  // a page brought back by Back/Forward is a frozen copy with the settings it had then; if they have changed since
+  // (on the settings page), load it afresh so it picks them up
+  const settingsAtLoad = localStorage.getItem("settings");
+  addEventListener("pageshow", (e) => {
+    if (e.persisted && localStorage.getItem("settings") !== settingsAtLoad) location.reload();
+  });
 </script><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Antique World Map</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +25,6 @@
 
 <div class="plate">
   <div id="map" aria-label="Zoomable antique-style world map"></div>
-  <div id="paper-tex" aria-hidden="true"></div>
   <canvas id="paper" aria-hidden="true"></canvas>
   <div id="kofibutton">
     <a href="https://buymeacoffee.com/untamed.earth" target="_blank"><img src="../images/support.png" width="30" height="30" title="Support the map" alt="Support the map"></a>

@@ -1,7 +1,27 @@
 (() => {
 const INK='#3b2a1a',RED='#9a3a22',PAPER='#ecdcb1',PAPER_RGB='236,220,177';
-// a faint charcoal-blue wash for the sea; the paper overlay warms it a little on screen
-const SEA='#c3cbd1';
+// a faint charcoal-blue wash for the sea; the paper layer warms it a little on screen
+const SEA='#c3cbd1',LAND='#eee0b8';
+/* Theme: the settings page saves "light", "dark" or nothing (inherit the browser / OS setting, followed live).
+   Dark so far only changes the land and sea; everything else, pins included, keeps its light colours. */
+const DARK={land:'#24324f',sea:'#070b14',trees:['rgb(52,70,107)','rgb(47,64,99)','rgb(58,76,114)'],treeInk:'rgb(88,106,145)',placeText:`rgb(${PAPER_RGB})`,placeHalo:'rgba(16,23,40,.92)',riverText:'rgba(200,216,224,.95)',borderTint:['rgba(112,142,204,.34)','rgba(98,124,176,.28)']};
+const PLACE_LAYERS=['places-hamlet','places-village','places-town','places-city','places'];
+// place names: ink on a paper halo, or in dark mode the flip of that, paper-coloured on a dark halo
+// the soft wash along borders: pink for countries and ochre for regions, or two lighter blues in dark mode
+const borderTint=()=>{const [c,r]=isDark()?DARK.borderTint:['rgba(200,118,92,.34)','rgba(208,168,78,.3)'];return ['match',['get','admin_level'],2,c,r];};
+const riverText=()=>isDark()?DARK.riverText:'rgba(40,60,70,.95)';
+const placeText=()=>isDark()?DARK.placeText:INK,placeHalo=()=>isDark()?DARK.placeHalo:`rgba(${PAPER_RGB},.92)`;
+const darkMQ=matchMedia('(prefers-color-scheme: dark)');
+const savedSettings=(()=>{try{return JSON.parse(localStorage.getItem('settings')||'{}');}catch(e){return {};}})(),savedTheme=savedSettings.theme;
+// Behaviour: the darkened edges can be turned off (settings.vignette false); they are on by default
+const vignetteOn=savedSettings.vignette!==false;
+const isDark=()=>savedTheme==='dark'||(savedTheme!=='light'&&darkMQ.matches);
+const landColour=()=>isDark()?DARK.land:LAND,seaColour=()=>isDark()?DARK.sea:SEA;
+// a colour as 0-1 rgb, and that colour on the paper's average tone (what the land and sea look like before the texture arrives)
+const PAPER_AVG=[243,237,229];
+const rgb01=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)/255);
+// (alpha .999: MapLibre draws fully opaque fills in an earlier pass, under the land layer, so the sea must not be quite opaque)
+const seaFlat=()=>`rgba(${rgb01(seaColour()).map((v,i)=>Math.round(v*PAPER_AVG[i])).join(',')},.999)`;
 // tree and town fills are washed about halfway toward the land colour so the pins stand out against them
 const TREE_GREEN=['rgb(194,194,138)','rgb(187,189,134)','rgb(202,198,142)'],TOWN_FILL='rgb(217,167,133)';
 const $=id=>document.getElementById(id);
@@ -16,8 +36,8 @@ function makeNoise(seed){const r=mulberry32(seed),p=[...Array(256).keys()];
     const u=fade(xf),v=fade(yf);return a+(b-a)*u+(c-a)*v+(a-b-c+d)*u*v;}
   function fbm(x,y,o=5){let s=0,a=.5,f=1;for(let i=0;i<o;i++){s+=a*n2(x*f,y*f);f*=2.02;a*=.5;}return s;}
   return {n2,fbm};}
-function tree(c,x,y,s,conifer,fill,rv){
-  c.lineWidth=.7;c.strokeStyle=INK;c.fillStyle=fill;
+function tree(c,x,y,s,conifer,fill,rv,ink=INK){
+  c.lineWidth=.7;c.strokeStyle=ink;c.fillStyle=fill;
   c.beginPath();c.moveTo(x+1,y+.4);c.lineTo(x+s*1.1,y+.4);c.stroke();
   if(conifer){c.beginPath();c.moveTo(x,y);c.lineTo(x,y-s*.5);c.stroke();
     c.beginPath();c.moveTo(x,y-s*2.4);c.lineTo(x-s*.42,y-s*1.4);c.lineTo(x-s*.18,y-s*1.45);c.lineTo(x-s*.62,y-s*.5);
@@ -93,9 +113,9 @@ const PI=40,PJ=50;let PT_CSS=SP*PI;
 const md=(v,n)=>((v%n)+n)%n;
 const root=(i,j)=>{const hi=md(i,PI),hj=md(j,PJ),a=h2(hi,hj,7);return {a,x:(i+(j&1)*.5+(a-.5)*.6)*SP,y:(j+(h2(hj,hi,8)-.5)*.5)*SP*ROW};};
 let treeSpr=null;
-function makeTreeSprites(tint){K=treeScale();SP=7.6*K;PT_CSS=SP*PI;const green=TREE_GREEN,out=[[],[]];
+function makeTreeSprites(tint){K=treeScale();SP=7.6*K;PT_CSS=SP*PI;const green=isDark()?DARK.trees:TREE_GREEN,out=[[],[]];
   for(const con of [0,1])for(let i=0;i<6;i++){const rv=(i+.5)/6,s=3.9*(.9+rv*.3),cv=document.createElement('canvas');cv.width=Math.ceil(12*dpr*K);cv.height=Math.ceil(15*dpr*K);
-    const x=cv.getContext('2d');x.scale(dpr*K,dpr*K);x.lineJoin='round';x.lineCap='round';tree(x,5,13,s,!!con,tint?green[i%3]:'#eee0b8',rv);out[con].push(cv);}
+    const x=cv.getContext('2d');x.scale(dpr*K,dpr*K);x.lineJoin='round';x.lineCap='round';tree(x,5,13,s,!!con,tint?green[i%3]:'#eee0b8',rv,isDark()?DARK.treeInk:INK);out[con].push(cv);}
   const tf=document.createElement('canvas');tf.width=Math.ceil(10*dpr*K);tf.height=Math.ceil(6*dpr*K);{const x=tf.getContext('2d');x.scale(dpr*K,dpr*K);x.strokeStyle='rgba(59,42,26,.75)';x.lineWidth=.55;x.beginPath();tuft(x,5,5);x.stroke();}
   treeSpr={trees:out,tuft:tf};
   const n=Math.round(PT_CSS*dpr),tile=draw=>{const cv=document.createElement('canvas');cv.width=cv.height=n;const x=cv.getContext('2d');x.scale(n/PT_CSS,n/PT_CSS);
@@ -113,8 +133,7 @@ function view(map){const cv=map.getCanvas(),z=map.getZoom(),ctr=map.getCenter(),
 // the grid (and paper) ride with the map while panning; when zoom or bearing change they stay put on screen and re-anchor to the ground beneath
 function updateGrid(v){const {W,H,z,br,cb,sb}=v,[cx,cy]=v.c;
   if(G.z===z&&G.br===br){const ex=G.ax-cx,ey=G.ay-cy;G.ox=W/2+ex*cb+ey*sb;G.oy=H/2-ex*sb+ey*cb;}
-  else{if(G.z!==null)lastZR=performance.now();const dx=G.ox-W/2,dy=G.oy-H/2;G.ax=cx+dx*cb-dy*sb;G.ay=cy+dx*sb+dy*cb;G.z=z;G.br=br;}
-  const pt=$('paper-tex');if(pt)pt.style.backgroundPosition=`${G.ox.toFixed(2)}px ${G.oy.toFixed(2)}px`;}
+  else{if(G.z!==null)lastZR=performance.now();const dx=G.ox-W/2,dy=G.oy-H/2;G.ax=cx+dx*cb-dy*sb;G.ay=cy+dx*sb+dy*cb;G.z=z;G.br=br;}}
 
 // one tree (or tuft) per root that lands in a wood (or marsh)
 function drawRoots(v){const {W,H,bw,bh,cb,sb}=v,[cx,cy]=v.c;
@@ -177,11 +196,11 @@ function treeLayer(){let prog,buf,texR,texP,aPos,loc;return {id:'trees',type:'cu
 
 /* ---------- glyph images ---------- */
 function addGlyphImages(map,tint){
-  const green=TREE_GREEN;
+  const green=isDark()?DARK.trees:TREE_GREEN;
   const put=(id,w,h,draw)=>{const c=document.createElement('canvas');c.width=Math.ceil(w*dpr);c.height=Math.ceil(h*dpr);const x=c.getContext('2d');x.scale(dpr,dpr);x.lineJoin='round';x.lineCap='round';draw(x);
     const im=x.getImageData(0,0,c.width,c.height);if(map.hasImage(id))map.updateImage(id,im);else map.addImage(id,im,{pixelRatio:dpr});};
   for(let i=0;i<6;i++){const rv=(i+.5)/6,s=3.9*(.9+rv*.3);
-    put('dec'+i,12,15,x=>tree(x,5,13,s,false,tint?green[i%3]:'#eee0b8',rv));put('con'+i,12,15,x=>tree(x,5,13,s,true,tint?green[i%3]:'#eee0b8',rv));}
+    put('dec'+i,12,15,x=>tree(x,5,13,s,false,tint?green[i%3]:'#eee0b8',rv,isDark()?DARK.treeInk:INK));put('con'+i,12,15,x=>tree(x,5,13,s,true,tint?green[i%3]:'#eee0b8',rv,isDark()?DARK.treeInk:INK));}
   put('tuft',10,6,x=>{x.strokeStyle='rgba(59,42,26,.75)';x.lineWidth=.55;x.beginPath();tuft(x,5,5);x.stroke();});
   for(let r=0;r<4;r++)put('town'+r,32,34,x=>town(x,r,16,26,tint));
 }
@@ -214,7 +233,7 @@ function style(){
       'text-field':name,'text-font':['match',pr,0,['literal',['FellSC']],1,['literal',['FellRoman']],['literal',['FellItalic']]],'text-size':['match',pr,0,18,1,15,2,12.5,11],
       'text-transform':['match',pr,0,'uppercase','none'],'text-letter-spacing':['match',pr,0,.1,0],
       'text-variable-anchor':['left','right','top','bottom'],'text-radial-offset':['match',pr,0,1.1,1,1,.9],'text-justify':'auto','symbol-sort-key':['coalesce',['get','rank'],99],'text-padding':3,'icon-padding':1,...extra},
-    paint:{...halo,'text-opacity':fadeIn(mz),'icon-opacity':fadeIn(mz)}});
+    paint:{...halo,'text-color':placeText(),'text-halo-color':placeHalo(),'text-opacity':fadeIn(mz),'icon-opacity':fadeIn(mz)}});
   const major=['any',['==',['get','capital'],2],['<=',['coalesce',['get','rank'],99],2]];
   const ocean=['==',['get','class'],'ocean'];
   return {version:8,glyphs:'fell://{fontstack}/{range}',
@@ -223,14 +242,13 @@ function style(){
       // part of its outline, so the coast layers would ink it. This stretch of open sea is painted over it below zoom 2.
       seam:{type:'geojson',data:{type:'Feature',properties:{},geometry:{type:'LineString',coordinates:[[-180,-16.4],[-180,-85]]}}}},
     layers:[
-      {id:'land',type:'background',paint:{'background-color':'#eee0b8'}},
       // hand tinting along the shore: an opaque pale ochre centred on the coastline and drawn under the sea, so the sea
       // hides its outer half; being opaque and un-offset, tight bends and overlaps cannot build up into dark blotches
       {id:'tint-coast',type:'line',source:S,'source-layer':'water',filter:ocean,layout:{'line-join':'round'},paint:{'line-color':'rgb(226,202,142)','line-width':['interpolate',['linear'],['zoom'],2,6,7,30],'line-blur':['interpolate',['linear'],['zoom'],2,3,7,16]},metadata:{group:'tint'}},
-      {id:'sea',type:'fill',source:S,'source-layer':'water',filter:ocean,paint:{'fill-color':SEA}},
+      {id:'sea',type:'fill',source:S,'source-layer':'water',filter:ocean,paint:{'fill-color':seaFlat()}},
       // hand tinting: pink along borders
       {id:'tint-border',type:'line',source:S,'source-layer':'boundary',filter:['all',['<=',['get','admin_level'],6],['!=',['get','maritime'],1]],
-        paint:{'line-color':['match',['get','admin_level'],2,'rgba(200,118,92,.34)','rgba(208,168,78,.3)'],'line-width':['match',['get','admin_level'],2,16,10],'line-blur':7,'line-opacity':['interpolate',['linear'],['zoom'],4.5,['match',['get','admin_level'],2,1,0],5,['match',['get','admin_level'],[2,3,4],1,0],7.5,['match',['get','admin_level'],[2,3,4],1,0],8,1]},metadata:{group:'tint'}},
+        paint:{'line-color':borderTint(),'line-width':['match',['get','admin_level'],2,16,10],'line-blur':7,'line-opacity':['interpolate',['linear'],['zoom'],4.5,['match',['get','admin_level'],2,1,0],5,['match',['get','admin_level'],[2,3,4],1,0],7.5,['match',['get','admin_level'],[2,3,4],1,0],8,1]},metadata:{group:'tint'}},
       {id:'woods',type:'fill',source:S,'source-layer':'landcover',filter:['==',['get','class'],'wood'],paint:{'fill-color':'rgba(118,140,64,.16)'},metadata:{group:'tint'}},
       {id:'marsh',type:'fill',source:S,'source-layer':'landcover',filter:['==',['get','class'],'wetland'],paint:{'fill-color':'rgba(150,160,110,.14)'},metadata:{group:'tint'}},
       {id:'water',type:'fill',source:S,'source-layer':'water',filter:['!',ocean],paint:{'fill-color':'rgba(146,168,160,.55)','fill-outline-color':INK}},
@@ -239,7 +257,7 @@ function style(){
       // the shoreline is the ocean's outline, with a softer shadow line just out to sea
       {id:'coast-shadow',type:'line',source:S,'source-layer':'water',filter:ocean,layout:{'line-join':'round'},paint:{'line-color':ink(.75),'line-width':['interpolate',['linear'],['zoom'],6,1,11,2.3],'line-offset':['interpolate',['linear'],['zoom'],6,.8,11,1.6]}},
       {id:'coast',type:'line',source:S,'source-layer':'water',filter:ocean,layout:{'line-join':'round'},paint:{'line-color':INK,'line-width':['interpolate',['linear'],['zoom'],6,.7,11,1.1]}},
-      {id:'seam-mask',type:'line',source:'seam',maxzoom:2,paint:{'line-color':SEA,'line-width':10}},
+      {id:'seam-mask',type:'line',source:'seam',maxzoom:2,paint:{'line-color':seaFlat(),'line-width':10}},
       // buildings: real footprints arrive with the zoom 14 tiles (below that they are merged or absent), and outlines
       // join once houses are ~6 px
       {id:'buildings',type:'fill',source:S,'source-layer':'building',minzoom:14,paint:{'fill-color':ink(.24),'fill-antialias':false,'fill-opacity':fadeIn(14)}},
@@ -267,12 +285,12 @@ function style(){
       place('places',['city'],2.5,{},major),
       {id:'river-labels',type:'symbol',source:S,'source-layer':'waterway',minzoom:8,filter:['==',['get','class'],'river'],
         layout:{'symbol-placement':'line','text-field':name,'text-font':['literal',['FellItalic']],'text-size':12,'text-letter-spacing':.12,'symbol-spacing':400,'text-max-angle':30},
-        paint:{...halo,'text-color':'rgba(40,60,70,.95)','text-opacity':fadeIn(8)}}
+        paint:{...halo,'text-color':riverText(),'text-halo-color':placeHalo(),'text-opacity':fadeIn(8)}}
     ]};
 }
 
-/* ---------- paper overlay ---------- */
-// the mottling is one seamless tile that pans with the map; only the darkened edges stay fixed to the frame
+/* ---------- paper ---------- */
+// the mottling is one seamless tile drawn in the map (paperLayer); only the darkened edges are a separate canvas, fixed to the frame
 const PT=2048;
 /* The tile takes a moment to compute, so it is built off the main thread in a worker (OffscreenCanvas) while the map
    loads, and faded in when ready. makePaperTile only uses its own helpers so its source can be shipped to the worker. */
@@ -290,20 +308,62 @@ async function makePaperTile(PT){const N=makeNoise(911),r=mulberry32(77);
   x.drawImage(blot(256,24,.55,[176,132,74]),0,0,PT,PT);x.globalAlpha=.8;x.drawImage(blot(512,17,.28,[160,120,70]),0,0,PT,PT);x.globalAlpha=1;
   x.globalAlpha=.5;x.fillStyle=x.createPattern(grain,'repeat');x.fillRect(0,0,PT,PT);x.globalAlpha=1;
   return c.convertToBlob?c.convertToBlob({type:'image/jpeg',quality:.9}):new Promise(res=>c.toBlob(res,'image/jpeg',.9));}
-function paperInWorker(){
+function paperInWorker(n){
   const src=`${mulberry32}\n${makeNoise}\n${makePaperTile}\nonmessage=async e=>postMessage(await makePaperTile(e.data));`;
   return new Promise((res,rej)=>{const url=URL.createObjectURL(new Blob([src],{type:'text/javascript'})),w=new Worker(url);
     const done=()=>{w.terminate();URL.revokeObjectURL(url);};
-    w.onmessage=e=>{done();res(e.data);};w.onerror=e=>{done();rej(e);};w.postMessage(PT);});}
+    w.onmessage=e=>{done();res(e.data);};w.onerror=e=>{done();rej(e);};w.postMessage(n);});}
 // without worker canvases, build it on the main thread once the map is up, so it never holds up the first view
-const paperOnMain=()=>new Promise(res=>map.loaded()?res():map.once('load',res)).then(()=>new Promise(res=>setTimeout(res,50))).then(()=>makePaperTile(PT));
-function loadPaper(){const pt=$('paper-tex');
-  (typeof OffscreenCanvas!=='undefined'?paperInWorker().catch(paperOnMain):paperOnMain())
-    .then(blob=>{const url=URL.createObjectURL(blob),img=new Image();img.src=url;return img.decode().then(()=>url);})
-    .then(url=>{pt.style.setProperty('--paper-img',`url(${url})`);pt.style.setProperty('--paper-size',`${PT}px ${PT}px`);pt.classList.add('ready');})
-    .catch(e=>console.error('paper texture',e));}
+const paperOnMain=n=>new Promise(res=>map.loaded()?res():map.once('load',res)).then(()=>new Promise(res=>setTimeout(res,50))).then(()=>makePaperTile(n));
+let paperImg=null;
+const SEA_PT=512;
+const paperTile=n=>typeof OffscreenCanvas!=='undefined'?paperInWorker(n).catch(()=>paperOnMain(n)):paperOnMain(n);
+/* Land and sea are both opaque, already-grained pixels; nothing is blended over them.
+   Land: the paper layer below paints the whole screen as land colour x the 2048 px paper tile.
+   Sea: a smaller 512 px paper tile is baked on the CPU into one sea-coloured pattern per theme, and the sea fill
+   switches from its flat colour to that pattern once it is ready. */
+let seaReady=false;
+const seaPattern=()=>isDark()?'sea-paper-dark':'sea-paper-light';
+function setSea(){
+  if(seaReady)map.setPaintProperty('sea','fill-pattern',seaPattern());else map.setPaintProperty('sea','fill-color',seaFlat());
+  map.setPaintProperty('seam-mask','line-color',seaFlat());}
+function bakeSea(bmp){
+  const c=document.createElement('canvas');c.width=c.height=SEA_PT;const x=c.getContext('2d');x.drawImage(bmp,0,0);bmp.close&&bmp.close();
+  const src=x.getImageData(0,0,SEA_PT,SEA_PT);
+  for(const [name,hex] of [['sea-paper-light',SEA],['sea-paper-dark',DARK.sea]]){const col=rgb01(hex),im=new ImageData(SEA_PT,SEA_PT);
+    for(let i=0;i<src.data.length;i+=4){im.data[i]=src.data[i]*col[0];im.data[i+1]=src.data[i+1]*col[1];im.data[i+2]=src.data[i+2]*col[2];im.data[i+3]=255;}
+    if(map.hasImage(name))map.updateImage(name,im);else map.addImage(name,im);}
+  seaReady=true;setSea();}
+function loadPaper(){
+  paperTile(PT).then(blob=>createImageBitmap(blob)).then(img=>{paperImg=img;map.triggerRepaint();}).catch(e=>console.error('paper texture',e));
+  const styled=new Promise(res=>map.isStyleLoaded()?res():map.once('style.load',res));
+  Promise.all([paperTile(SEA_PT).then(blob=>createImageBitmap(blob)),styled]).then(([bmp])=>bakeSea(bmp)).catch(e=>console.error('sea texture',e));}
+/* The land: the bottom layer of the map, one screen-sized opaque quad of land colour x paper tile (no blending).
+   Like the trees it pans with the map and stays put on screen while zooming or turning.
+   Until the tile is ready it is the land colour on the tile's average tone. */
+function paperLayer(){let prog,buf,tex,aPos,loc,shown=0,readyAt=0;return {id:'paper',type:'custom',renderingMode:'2d',
+  onAdd(map,gl){const sh=(type,src)=>{const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);return s;};
+    prog=gl.createProgram();
+    gl.attachShader(prog,sh(gl.VERTEX_SHADER,'attribute vec2 p;uniform vec2 sz,off;uniform float pt;varying vec2 uv;void main(){uv=(vec2(p.x*.5+.5,.5-p.y*.5)*sz-off)/pt;gl_Position=vec4(p,0.,1.);}'));
+    gl.attachShader(prog,sh(gl.FRAGMENT_SHADER,'precision mediump float;varying vec2 uv;uniform sampler2D t;uniform float f;uniform vec3 land;void main(){gl_FragColor=vec4(land*mix(vec3(243.,237.,229.)/255.,texture2D(t,uv).rgb,f),1.);}'));
+    gl.linkProgram(prog);loc=n=>gl.getUniformLocation(prog,n);
+    aPos=gl.getAttribLocation(prog,'p');buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
+    tex=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,tex);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,1,1,0,gl.RGBA,gl.UNSIGNED_BYTE,new Uint8Array([243,237,229,255]));
+    [gl.TEXTURE_MIN_FILTER,gl.TEXTURE_MAG_FILTER].forEach(p=>gl.texParameteri(gl.TEXTURE_2D,p,gl.LINEAR));
+    [gl.TEXTURE_WRAP_S,gl.TEXTURE_WRAP_T].forEach(p=>gl.texParameteri(gl.TEXTURE_2D,p,gl.REPEAT));},
+  render(gl){const map=this.map,v=view(map);updateGrid(v);
+    gl.useProgram(prog);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,tex);
+    if(paperImg&&!readyAt){gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,false);gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,false);
+      gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,paperImg);paperImg.close&&paperImg.close();paperImg=true;readyAt=performance.now();}
+    // the texture fades in over .8 s once it arrives
+    if(readyAt&&shown<1){shown=Math.min(1,(performance.now()-readyAt)/800);map.triggerRepaint();}
+    gl.uniform2f(loc('sz'),v.W,v.H);gl.uniform2f(loc('off'),G.ox,G.oy);gl.uniform1f(loc('pt'),PT);gl.uniform1i(loc('t'),0);gl.uniform1f(loc('f'),shown);
+    gl.uniform3fv(loc('land'),rgb01(landColour()));
+    gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.enableVertexAttribArray(aPos);gl.vertexAttribPointer(aPos,2,gl.FLOAT,false,0,0);
+    gl.disable(gl.DEPTH_TEST);gl.disable(gl.STENCIL_TEST);gl.disable(gl.BLEND);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);}};}
 // the darkened edges are cheap, so they are drawn straight away and on every resize
 function paintPaper(){
+  if(!vignetteOn){$('paper').hidden=true;return;}
   const cv=$('paper'),r=cv.getBoundingClientRect(),W=r.width,H=r.height;cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);
   const c=cv.getContext('2d');c.setTransform(dpr,0,0,dpr,0,0);c.clearRect(0,0,W,H);
   const v=c.createRadialGradient(W/2,H/2,Math.min(W,H)*.3,W/2,H/2,Math.hypot(W,H)*.55);v.addColorStop(0,'rgba(140,90,30,0)');v.addColorStop(1,'rgba(110,62,18,.5)');c.fillStyle=v;c.fillRect(0,0,W,H);}
@@ -316,8 +376,13 @@ const map=new maplibregl.Map({container:'map',style:style(),...PINS.initialView(
   fadeDuration:300,attributionControl:{compact:true,customAttribution:'<a href="https://maplibre.org" target="_blank">MapLibre</a>'},pitchWithRotate:false,touchPitch:false,maxPitch:0});
 map.addControl(new maplibregl.NavigationControl({showCompass:true,visualizePitch:false}),'bottom-right');
 // the trees go above the roads but beneath all lettering and pins
-map.on('style.load',()=>{addGlyphImages(map,true);makeTreeSprites(true);const L=treeLayer();L.map=map;map.addLayer(L,'bay-names');});
+map.on('style.load',()=>{addGlyphImages(map,true);makeTreeSprites(true);const P=paperLayer();P.map=map;map.addLayer(P,'tint-coast');const L=treeLayer();L.map=map;map.addLayer(L,'bay-names');});
 map.on('load',()=>{$('loading').hidden=true;});
+// with the theme on inherit, follow the OS switching between light and dark while the page is open
+darkMQ.addEventListener('change',()=>{if(savedTheme==='light'||savedTheme==='dark')return;
+  setSea();for(const id of PLACE_LAYERS){map.setPaintProperty(id,'text-color',placeText());map.setPaintProperty(id,'text-halo-color',placeHalo());}
+  map.setPaintProperty('river-labels','text-color',riverText());map.setPaintProperty('tint-border','line-color',borderTint());map.setPaintProperty('river-labels','text-halo-color',placeHalo());
+  addGlyphImages(map,true);makeTreeSprites(true);treeKey=patKey='';map.triggerRepaint();});
 loadPaper();
 // new woods arrive with new tiles: mark the mask stale so the next frame rebuilds it
 map.on('sourcedata',e=>{if(e.sourceId==='ofm'&&e.tile){maskDirty=true;map.triggerRepaint();}});

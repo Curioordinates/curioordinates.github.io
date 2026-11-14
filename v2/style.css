@@ -13,12 +13,9 @@
 html, body { height: 100%; margin: 0; padding: 0; overflow: hidden; background: var(--parchment); }
 .plate { position: fixed; inset: 0; background: var(--parchment); overflow: hidden; }
 #map { position: absolute; inset: 0; }
-/* Until the generated texture arrives the paper is its average colour (worked out once from the tile, which is
-   the same on every load), so the map already has the right overall tone; the texture then fades in over it. */
-#paper-tex { position: absolute; inset: 0; pointer-events: none; mix-blend-mode: multiply; z-index: 2; background-color: rgb(243,237,229); }
-#paper-tex::after { content: ""; position: absolute; inset: 0; background-image: var(--paper-img, none); background-size: var(--paper-size, auto); background-position: inherit; background-repeat: repeat; opacity: 0; transition: opacity .8s ease; }
-#paper-tex.ready::after { opacity: 1; }
-#paper { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; mix-blend-mode: multiply; z-index: 2; }
+/* The darkened edges: plain alpha blending (close to the old multiply on this paper) so the browser does no blend
+   pass over the moving map. The paper grain itself is drawn inside the map (paperLayer in app.js). */
+#paper { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; }
 .loading { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--display); font-style: italic; font-size: 20px; color: var(--ink); z-index: 4; background: var(--parchment); }
 .loading[hidden] { display: none; }
 .maplibregl-ctrl-group { background: var(--brass); }

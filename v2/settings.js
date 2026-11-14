@@ -1,5 +1,10 @@
 const settingsString = localStorage.getItem("settings");
 
+// a settings page brought back by Back/Forward is a frozen copy; if the settings changed since, load it afresh
+window.addEventListener("pageshow", (e) => {
+  if (e.persisted && localStorage.getItem("settings") !== settingsString) location.reload();
+});
+
 const settings = settingsString
   ? JSON.parse(settingsString)
   : { show: [], hide: [] };
@@ -91,9 +96,28 @@ const uiSetup = () => {
   // /index.html and /v2/index.html). It defaults to v2; the older useV2 flag is read as v1 only when explicitly false.
   const useV2 = document.getElementById("use-v2");
   useV2.checked = (settings.useVersion ?? (settings.useV2 === false ? "v1" : "v2")) !== "v1";
+
+  // Behaviour: theme is "light", "dark" or unset (inherit, the default)
+  const theme = document.getElementById("theme");
+  theme.value = settings.theme === "light" || settings.theme === "dark" ? settings.theme : "";
+  theme.addEventListener("change", (e) => {
+    if (e.target.value) settings.theme = e.target.value;
+    else delete settings.theme;
+  });
+  // the v1 map is never themed, so the theme choice is greyed out while v1 is selected (its value is kept)
+  theme.disabled = !useV2.checked;
   useV2.addEventListener("change", (e) => {
     settings.useVersion = e.target.checked ? "v2" : "v1";
     delete settings.useV2;
+    theme.disabled = !e.target.checked;
+  });
+
+  // Behaviour: the darkened map edges (v2 only) are on unless vignette is false
+  const vignette = document.getElementById("vignette");
+  vignette.checked = settings.vignette !== false;
+  vignette.addEventListener("change", (e) => {
+    if (e.target.checked) delete settings.vignette;
+    else settings.vignette = false;
   });
 
   document.getElementById("cancel").addEventListener("click", handleCancel);

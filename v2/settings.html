@@ -81,6 +81,16 @@
         background: #f8f8f8;
         cursor: pointer;
       }
+      .tag select {
+        font: inherit;
+      }
+      .tag:has(select:disabled) {
+        color: #999;
+        cursor: default;
+      }
+      .tag:has(select:disabled):hover {
+        background: white;
+      }
       .default {
         background: #2e8b57;
         border-color: #2e8b57;
@@ -94,7 +104,16 @@
     <div id="tags-div"></div>
     <section class="behaviour">
       <h2>Behaviour</h2>
-      <label class="tag"><input class="opt" type="checkbox" id="use-v2" />Use v2 map</label>
+      <label class="tag"><input class="opt" type="checkbox" id="use-v2" autocomplete="off" />Use v2 map</label>
+      <label class="tag"><input class="opt" type="checkbox" id="vignette" autocomplete="off" />Darken the map edges</label>
+      <label class="tag"
+        >Theme
+        <select id="theme" autocomplete="off">
+          <option value="">Inherit</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select></label
+      >
     </section>
     <div class="controls">
       <button id="cancel">Cancel</button>
