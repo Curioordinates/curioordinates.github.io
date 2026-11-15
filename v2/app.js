@@ -82,6 +82,8 @@ const TREE_MIN=6;
 const merc=(lon,lat,z)=>{const s=TILE*Math.pow(2,z),sn=Math.sin(lat*Math.PI/180);return [(lon+180)/360*s,(.5-Math.log((1+sn)/(1-sn))/(4*Math.PI))*s];};
 function h2(i,j,s){let h=Math.imul(i,374761393)^Math.imul(j,668265263)^Math.imul(s+7,2246822519);h=Math.imul(h^(h>>>13),1274126177);h^=h>>>16;return (h>>>0)/4294967296;}
 const conNoise=makeNoise(5);
+// ?debug=woods logs every mask rebuild to the console
+const WOODS_DEBUG=/[?&]debug=woods\b/.test(location.search);
 let mask=null,maskGen=0,maskBusy=false,maskDirty=true;
 // a wood is conifer or broadleaf as a whole, judged by a slow noise field at its middle
 function isConifer(rings){let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;for(const [lo,la] of rings[0]){const [x,y]=merc(lo,la,14);x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y);}
@@ -104,7 +106,8 @@ function buildMask(map){
   const c=document.createElement('canvas');c.width=w;c.height=h;const x=c.getContext('2d',{willReadFrequently:true}),bits=new Uint8Array(w*h);
   for(const [p,bit] of [[P.marsh,2],[P.broad,1],[P.con,5]]){x.clearRect(0,0,w,h);x.fillStyle='#000';x.fill(p,'nonzero');
     const d=x.getImageData(0,0,w,h).data;for(let i=0;i<w*h;i++)if(d[i*4+3]>127)bits[i]|=bit;}
-  mask={bits,w,h,X0,Y0,zm:mz,ctr:[cx,cy],side,gen:++maskGen,tris:{marsh:new Float32Array(T.marsh),broad:new Float32Array(T.broad),con:new Float32Array(T.con)}};maskDirty=false;treeKey='';}
+  mask={bits,w,h,X0,Y0,zm:mz,ctr:[cx,cy],side,gen:++maskGen,tris:{marsh:new Float32Array(T.marsh),broad:new Float32Array(T.broad),con:new Float32Array(T.con)}};maskDirty=false;treeKey='';
+  if(WOODS_DEBUG)console.log('woods mask',{z:+z.toFixed(3),mz,feats:feats.length,tris:{marsh:T.marsh.length/6,broad:T.broad.length/6,con:T.con.length/6},X0,Y0});}
 // is the current view still inside the mask, at a zoom it was built for?
 function maskCovers(v){if(!mask)return false;const mz=Math.max(0,Math.floor(v.z)-1);if(Math.abs(mz-mask.zm)>1)return false;
   const s=Math.pow(2,mask.zm-v.z),[cx,cy]=merc(v.ctr.lng,v.ctr.lat,mask.zm),r=Math.hypot(v.W,v.H)/2*s;
@@ -200,8 +203,10 @@ function treeLayer(){let qp,fp,qbuf,texR,mkTex,tiles={},tileSrc=null,gen=-1;cons
       gl.uniform2f(qp.u('sz'),v.W,v.H);gl.uniform2f(qp.u('off'),G.ox,G.oy);gl.uniform1f(qp.u('pt'),PT_CSS);
       gl.bindBuffer(gl.ARRAY_BUFFER,qbuf);gl.enableVertexAttribArray(0);gl.vertexAttribPointer(0,2,gl.FLOAT,false,0,0);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);};
     if(f<1&&treesOn&&mask&&gen===mask.gen){
-      // mask pixels -> screen (as the mask is laid out in buildMask) -> clip space, worked out in doubles so it stays exact when zoomed right in
-      const M=new DOMMatrix([2/v.W,0,0,-2/v.H,-1,1]).translate(v.W/2,v.H/2).rotate(-v.br*180/Math.PI).translate(-v.c[0],-v.c[1]).scale(Math.pow(2,v.z-mask.zm)).translate(mask.X0,mask.Y0);
+      // mask pixels -> screen (as the mask is laid out in buildMask) -> clip space. Worked out by hand in doubles: DOMMatrix
+      // (like canvas transforms) is float32 in Chrome, which at zoom 18+ (world coordinates ~1e8 px) misplaces the outlines by pixels
+      const k=Math.pow(2,v.z-mask.zm),{cb,sb,W,H}=v,u=k*mask.X0-v.c[0],w=k*mask.Y0-v.c[1];
+      const M={a:2/W*cb*k,c:2/W*sb*k,e:2/W*(W/2+cb*u+sb*w)-1,b:2/H*sb*k,d:-2/H*cb*k,f:1-2/H*(H/2-sb*u+cb*w)};
       gl.enable(gl.STENCIL_TEST);gl.stencilMask(0xFF);gl.clearStencil(0x80);gl.clear(gl.STENCIL_BUFFER_BIT);
       for(const k of ['broad','con','marsh']){if(!cnt[k])continue;
         gl.useProgram(fp);gl.uniform3f(fp.u('mx'),M.a,M.c,M.e);gl.uniform3f(fp.u('my'),M.b,M.d,M.f);
