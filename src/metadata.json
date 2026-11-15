@@ -105,7 +105,7 @@
    "canine": {
       "id": 21,
       "short_description": "Phantom dogs and hounds, from spectral black dogs and hellhounds to faithful spirits.",
-      "count": 80
+      "count": 81
    },
    "cartoquirk": {
       "id": 22,
@@ -283,7 +283,7 @@
    "folklore": {
       "id": 55,
       "short_description": "Local folklore and legends of every kind, from phantom beasts to strange customs.",
-      "count": 272
+      "count": 273
    },
    "folklore-swine": {
       "id": 46,
@@ -394,7 +394,7 @@
    "haunting": {
       "id": 77,
       "short_description": "Haunted places: buildings, roads and landscapes with reported ghosts.",
-      "count": 971
+      "count": 1012
    },
    "headless-rider": {
       "id": 78,
@@ -555,7 +555,7 @@
    "named-ghost": {
       "id": 109,
       "short_description": "Ghosts known by name, from grey ladies and green ladies to other famous spirits.",
-      "count": 90
+      "count": 96
    },
    "national-trust": {
       "id": 110,

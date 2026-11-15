@@ -82,7 +82,7 @@ const TREE_MIN=6;
 const merc=(lon,lat,z)=>{const s=TILE*Math.pow(2,z),sn=Math.sin(lat*Math.PI/180);return [(lon+180)/360*s,(.5-Math.log((1+sn)/(1-sn))/(4*Math.PI))*s];};
 function h2(i,j,s){let h=Math.imul(i,374761393)^Math.imul(j,668265263)^Math.imul(s+7,2246822519);h=Math.imul(h^(h>>>13),1274126177);h^=h>>>16;return (h>>>0)/4294967296;}
 const conNoise=makeNoise(5);
-let mask=null,paths=null,maskBusy=false,maskDirty=true;
+let mask=null,maskGen=0,maskBusy=false,maskDirty=true;
 // a wood is conifer or broadleaf as a whole, judged by a slow noise field at its middle
 function isConifer(rings){let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;for(const [lo,la] of rings[0]){const [x,y]=merc(lo,la,14);x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y);}
   return conNoise.fbm((x0+x1)/2/900+40,(y0+y1)/2/900,3)>.12;}
@@ -93,14 +93,18 @@ function buildMask(map){
   const z=map.getZoom(),mz=Math.max(0,Math.floor(z)-1),ctr=map.getCenter(),[cx,cy]=merc(ctr.lng,ctr.lat,mz),cv=map.getCanvas();
   const side=Math.ceil(Math.hypot(cv.clientWidth,cv.clientHeight)*2*Math.pow(2,mz-z))+4,X0=Math.floor(cx-side/2),Y0=Math.floor(cy-side/2),w=side,h=side;
   const feats=map.querySourceFeatures('ofm',{sourceLayer:'landcover',filter:['in',['get','class'],['literal',['wood','wetland']]]});
-  const P={marsh:new Path2D(),broad:new Path2D(),con:new Path2D(),woods:new Path2D()};
-  const add=(p,rings)=>{for(const r of rings){r.forEach(([lo,la],i)=>{const [x,y]=merc(lo,la,mz);i?p.lineTo(x-X0,y-Y0):p.moveTo(x-X0,y-Y0);});p.closePath();}};
+  // each outline goes into a Path2D (for the mask) and, as a fan of triangles from its first point, into a list for the GPU
+  // (the tree layer fills them through the stencil buffer, where the fans' overlaps cancel out, nonzero as in the Path2D)
+  const P={marsh:new Path2D(),broad:new Path2D(),con:new Path2D()},T={marsh:[],broad:[],con:[]};
+  const add=(k,rings)=>{const p=P[k],t=T[k];for(const r of rings){const q=r.map(([lo,la])=>{const [x,y]=merc(lo,la,mz);return [x-X0,y-Y0];});
+    q.forEach(([x,y],i)=>i?p.lineTo(x,y):p.moveTo(x,y));p.closePath();
+    for(let i=1;i+1<q.length;i++)t.push(q[0][0],q[0][1],q[i][0],q[i][1],q[i+1][0],q[i+1][1]);}};
   for(const f of feats){const g=f.geometry,polys=g.type==='Polygon'?[g.coordinates]:g.type==='MultiPolygon'?g.coordinates:[];
-    for(const rings of polys){if(f.properties.class==='wetland'){add(P.marsh,rings);continue;}add(P.woods,rings);add(isConifer(rings)?P.con:P.broad,rings);}}
+    for(const rings of polys)add(f.properties.class==='wetland'?'marsh':isConifer(rings)?'con':'broad',rings);}
   const c=document.createElement('canvas');c.width=w;c.height=h;const x=c.getContext('2d',{willReadFrequently:true}),bits=new Uint8Array(w*h);
   for(const [p,bit] of [[P.marsh,2],[P.broad,1],[P.con,5]]){x.clearRect(0,0,w,h);x.fillStyle='#000';x.fill(p,'nonzero');
     const d=x.getImageData(0,0,w,h).data;for(let i=0;i<w*h;i++)if(d[i*4+3]>127)bits[i]|=bit;}
-  mask={bits,w,h,X0,Y0,zm:mz,ctr:[cx,cy],side};paths=P;maskDirty=false;treeKey=patKey='';}
+  mask={bits,w,h,X0,Y0,zm:mz,ctr:[cx,cy],side,gen:++maskGen,tris:{marsh:new Float32Array(T.marsh),broad:new Float32Array(T.broad),con:new Float32Array(T.con)}};maskDirty=false;treeKey='';}
 // is the current view still inside the mask, at a zoom it was built for?
 function maskCovers(v){if(!mask)return false;const mz=Math.max(0,Math.floor(v.z)-1);if(Math.abs(mz-mask.zm)>1)return false;
   const s=Math.pow(2,mask.zm-v.z),[cx,cy]=merc(v.ctr.lng,v.ctr.lat,mask.zm),r=Math.hypot(v.W,v.H)/2*s;
@@ -123,8 +127,8 @@ function makeTreeSprites(tint){K=treeScale();SP=7.6*K;PT_CSS=SP*PI;const green=i
   treeSpr.tiles={n,broad:tile((x,i,j,r)=>x.drawImage(out[0][Math.floor(r.a*6)],r.x-5*K,r.y-13*K,12*K,15*K)),con:tile((x,i,j,r)=>x.drawImage(out[1][Math.floor(r.a*6)],r.x-5*K,r.y-13*K,12*K,15*K)),
     tuft:tile((x,i,j,r)=>{if(md(i+j,2)===0)x.drawImage(tf,r.x-5*K,r.y-5*K,10*K,6*K);})};}
 
-const treeCanvas=document.createElement('canvas'),treeCtx=treeCanvas.getContext('2d'),patCanvas=document.createElement('canvas'),patCtx=patCanvas.getContext('2d');patCanvas.width=patCanvas.height=1;
-let treeKey='',patKey='',treeCount=0,treesOn=true;
+const treeCanvas=document.createElement('canvas'),treeCtx=treeCanvas.getContext('2d');
+let treeKey='',treeCount=0,treesOn=true;
 const G={ox:0,oy:0,ax:0,ay:0,z:null,br:null},TREE_WAIT=3000,TREE_FADE=4000;let lastZR=-1e9;
 function view(map){const cv=map.getCanvas(),z=map.getZoom(),ctr=map.getCenter(),br=map.getBearing()*Math.PI/180;
   return {W:cv.clientWidth,H:cv.clientHeight,bw:cv.width,bh:cv.height,z,ctr,br,cb:Math.cos(br),sb:Math.sin(br),c:merc(ctr.lng,ctr.lat,z),
@@ -153,46 +157,68 @@ function drawRoots(v){const {W,H,bw,bh,cb,sb}=v,[cx,cy]=v.c;
   for(const [x,y,a,con] of trees)c.drawImage(treeSpr.trees[con?1:0][Math.floor(a*6)],x-5*K,y-13*K,12*K,15*K);
   treeCount=trees.length;return true;}
 
-// the same trees as a repeating tile, clipped to the wood and marsh outlines: cheap enough for every frame of a zoom or turn
-function drawPattern(v){const {W,H,bw,bh,z,br}=v,[cx,cy]=v.c;
-  if(v.key===patKey)return false;patKey=v.key;
-  if(patCanvas.width!==bw||patCanvas.height!==bh){patCanvas.width=bw;patCanvas.height=bh;}
-  const c=patCtx;c.setTransform(1,0,0,1,0,0);c.clearRect(0,0,bw,bh);if(!treesOn||!paths)return true;
-  const S=new DOMMatrix([bw/W,0,0,bh/H,0,0]),P=S.translate(W/2,H/2).rotate(-br*180/Math.PI).translate(-cx,-cy).scale(Math.pow(2,z-mask.zm)).translate(mask.X0,mask.Y0);
-  const T=treeSpr.tiles,pm=new DOMMatrix().translate(G.ox,G.oy).scale(PT_CSS/T.n);
-  // filled (and thinly stroked, so neighbouring woods leave no hairline gap) with the tile, whose transform undoes the map transform
-  const k=Math.pow(2,z-mask.zm),pmU=P.inverse().multiply(S).multiply(pm);
-  const fillWith=(path,tile)=>{c.save();c.setTransform(P);const p=c.createPattern(tile,'repeat');p.setTransform(pmU);c.fillStyle=c.strokeStyle=p;c.lineWidth=1.2/k;c.lineJoin='round';c.fill(path,'nonzero');c.stroke(path);c.restore();};
-  fillWith(paths.marsh,T.tuft);
-  c.save();c.setTransform(P);c.globalCompositeOperation='destination-out';c.fillStyle=c.strokeStyle='#000';c.lineWidth=1.2/k;c.fill(paths.woods,'nonzero');c.stroke(paths.woods);c.restore();
-  fillWith(paths.broad,T.broad);fillWith(paths.con,T.con);return true;}
-
-/* While zooming or rotating the tile pattern is shown; a moment after it stops, the root trees fade in over it across the whole screen. */
-function treeLayer(){let prog,buf,texR,texP,aPos,loc;return {id:'trees',type:'custom',renderingMode:'2d',
+/* While zooming or rotating the tile is shown; a moment after it stops, the root trees fade in over it across the whole screen. */
+/* The woods are filled the way the paper is drawn: a full-screen quad of the tree tile, pinned to the root grid, so it
+   pans with the map and stays put on screen while zooming or turning. The quad only shows inside the outlines: the
+   outlines' triangles are counted into the stencil buffer (nonzero: front faces up, back faces down, low 7 bits) and the
+   quad is drawn where the count is not zero. Bit 7 starts set everywhere and is cleared wherever a wood is drawn,
+   so marsh is left out beneath the woods, and the individual trees can be added outside every outline afterwards.
+   The outlines are moved on screen by one matrix per frame, so their edges follow the map exactly. */
+function treeLayer(){let qp,fp,qbuf,texR,mkTex,tiles={},tileSrc=null,gen=-1;const fbuf={},cnt={};
+  return {id:'trees',type:'custom',renderingMode:'2d',
   onAdd(map,gl){const sh=(type,src)=>{const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);return s;};
-    prog=gl.createProgram();gl.attachShader(prog,sh(gl.VERTEX_SHADER,'attribute vec2 p;varying vec2 uv;void main(){uv=vec2(p.x*.5+.5,.5-p.y*.5);gl_Position=vec4(p,0.,1.);}'));
-    gl.attachShader(prog,sh(gl.FRAGMENT_SHADER,'precision mediump float;varying vec2 uv;uniform sampler2D tr,tp;uniform float f,o;void main(){gl_FragColor=mix(texture2D(tp,uv),texture2D(tr,uv),f)*o;}'));gl.linkProgram(prog);
-    loc=n=>gl.getUniformLocation(prog,n);
-    aPos=gl.getAttribLocation(prog,'p');buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
-    const mk=()=>{const t=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,t);[gl.TEXTURE_MIN_FILTER,gl.TEXTURE_MAG_FILTER].forEach(p=>gl.texParameteri(gl.TEXTURE_2D,p,gl.NEAREST));
-      [gl.TEXTURE_WRAP_S,gl.TEXTURE_WRAP_T].forEach(p=>gl.texParameteri(gl.TEXTURE_2D,p,gl.CLAMP_TO_EDGE));return t;};texR=mk();texP=mk();},
+    const link=(vs,fs)=>{const p=gl.createProgram();gl.attachShader(p,sh(gl.VERTEX_SHADER,vs));gl.attachShader(p,sh(gl.FRAGMENT_SHADER,fs));gl.bindAttribLocation(p,0,'p');gl.linkProgram(p);
+      const u={};p.u=n=>u[n]||(u[n]=gl.getUniformLocation(p,n));return p;};
+    const HP='#ifdef GL_FRAGMENT_PRECISION_HIGH\nprecision highp float;\n#else\nprecision mediump float;\n#endif\n';
+    // outlines, in mask pixels, to clip space by a 2 x 3 matrix
+    fp=link('attribute vec2 p;uniform vec3 mx,my;void main(){vec3 q=vec3(p,1.);gl_Position=vec4(dot(mx,q),dot(my,q),0.,1.);}','precision mediump float;void main(){gl_FragColor=vec4(0.);}');
+    // the screen quad: the tile (w 1) or nothing (w 0), mixed toward the individual trees by f, at opacity o
+    qp=link('attribute vec2 p;uniform vec2 sz,off;uniform float pt;varying vec2 uv,su;void main(){su=vec2(p.x*.5+.5,.5-p.y*.5);uv=(su*sz-off)/pt;gl_Position=vec4(p,0.,1.);}',
+      HP+'varying vec2 uv,su;uniform sampler2D tr,tp;uniform float f,o,w;void main(){gl_FragColor=mix(texture2D(tp,fract(uv))*w,texture2D(tr,su),f)*o;}');
+    qbuf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,qbuf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
+    // the tiles repeat by fract() in the shader, so they need not be a power of two in size
+    mkTex=()=>{const t=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,t);[gl.TEXTURE_MIN_FILTER,gl.TEXTURE_MAG_FILTER].forEach(p=>gl.texParameteri(gl.TEXTURE_2D,p,gl.NEAREST));
+      [gl.TEXTURE_WRAP_S,gl.TEXTURE_WRAP_T].forEach(p=>gl.texParameteri(gl.TEXTURE_2D,p,gl.CLAMP_TO_EDGE));return t;};texR=mkTex();},
   render(gl){const map=this.map,v=view(map);updateGrid(v);const op=Math.max(0,Math.min(1,(v.z-TREE_MIN)*2));if(!op){treeCount=0;return;}
     if(!maskCovers(v)||maskDirty)scheduleMask(map,maskCovers(v)?150:0);
     const since=performance.now()-lastZR-TREE_WAIT,q=Math.max(0,Math.min(1,since/TREE_FADE));
     const up=(tex,cv)=>{gl.bindTexture(gl.TEXTURE_2D,tex);gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,true);gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,false);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,cv);gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,false);};
-    gl.useProgram(prog);gl.activeTexture(gl.TEXTURE1);
+    gl.activeTexture(gl.TEXTURE0);
+    // the tiles are sent again whenever the sprites are redrawn (theme or tree size), the outlines whenever the mask is rebuilt
+    if(tileSrc!==treeSpr){tileSrc=treeSpr;for(const k of ['broad','con','tuft']){tiles[k]=tiles[k]||mkTex();up(tiles[k],treeSpr.tiles[k]);}}
+    if(mask&&gen!==mask.gen){gen=mask.gen;for(const k of ['marsh','broad','con']){fbuf[k]=fbuf[k]||gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,fbuf[k]);gl.bufferData(gl.ARRAY_BUFFER,mask.tris[k],gl.STATIC_DRAW);cnt[k]=mask.tris[k].length/2;}}
     // during the wait nothing on screen changes, so rather than repainting every frame to watch the clock, one timer
     // asks for a frame when the wait ends; only the fade itself repaints every frame
-    if(since<0||q<1){if(drawPattern(v)||!this.upP){up(texP,patCanvas);this.upP=true;}
-      if(since<0){clearTimeout(this.wake);this.wake=setTimeout(()=>map.triggerRepaint(),-since+20);}else map.triggerRepaint();}
-    gl.activeTexture(gl.TEXTURE0);
-    // f: how far the individual trees have faded in over the pattern, eased in and out
+    if(since<0){clearTimeout(this.wake);this.wake=setTimeout(()=>map.triggerRepaint(),-since+20);}else if(q<1)map.triggerRepaint();
+    // f: how far the individual trees have faded in over the tile, eased in and out
     let f;if(since<0){f=0;if(!this.upR){up(texR,treeCanvas);this.upR=true;}}
     else{if(drawRoots(v)||!this.upR){up(texR,treeCanvas);this.upR=true;}f=q*q*(3-2*q);}
-    gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,texR);gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,texP);
-    gl.uniform1i(loc('tr'),0);gl.uniform1i(loc('tp'),1);gl.uniform1f(loc('f'),f);gl.uniform1f(loc('o'),op);
-    gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.enableVertexAttribArray(aPos);gl.vertexAttribPointer(aPos,2,gl.FLOAT,false,0,0);
-    gl.disable(gl.DEPTH_TEST);gl.disable(gl.STENCIL_TEST);gl.enable(gl.BLEND);gl.blendFunc(gl.ONE,gl.ONE_MINUS_SRC_ALPHA);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);gl.activeTexture(gl.TEXTURE0);}};}
+    gl.disable(gl.DEPTH_TEST);gl.disable(gl.CULL_FACE);gl.enable(gl.BLEND);gl.blendFunc(gl.ONE,gl.ONE_MINUS_SRC_ALPHA);
+    gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,texR);
+    const quad=(tile,w)=>{gl.useProgram(qp);gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,tile||texR);
+      gl.uniform1i(qp.u('tr'),0);gl.uniform1i(qp.u('tp'),1);gl.uniform1f(qp.u('f'),f);gl.uniform1f(qp.u('o'),op);gl.uniform1f(qp.u('w'),w);
+      gl.uniform2f(qp.u('sz'),v.W,v.H);gl.uniform2f(qp.u('off'),G.ox,G.oy);gl.uniform1f(qp.u('pt'),PT_CSS);
+      gl.bindBuffer(gl.ARRAY_BUFFER,qbuf);gl.enableVertexAttribArray(0);gl.vertexAttribPointer(0,2,gl.FLOAT,false,0,0);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);};
+    if(f<1&&treesOn&&mask&&gen===mask.gen){
+      // mask pixels -> screen (as the mask is laid out in buildMask) -> clip space, worked out in doubles so it stays exact when zoomed right in
+      const M=new DOMMatrix([2/v.W,0,0,-2/v.H,-1,1]).translate(v.W/2,v.H/2).rotate(-v.br*180/Math.PI).translate(-v.c[0],-v.c[1]).scale(Math.pow(2,v.z-mask.zm)).translate(mask.X0,mask.Y0);
+      gl.enable(gl.STENCIL_TEST);gl.stencilMask(0xFF);gl.clearStencil(0x80);gl.clear(gl.STENCIL_BUFFER_BIT);
+      for(const k of ['broad','con','marsh']){if(!cnt[k])continue;
+        gl.useProgram(fp);gl.uniform3f(fp.u('mx'),M.a,M.c,M.e);gl.uniform3f(fp.u('my'),M.b,M.d,M.f);
+        gl.colorMask(false,false,false,false);gl.stencilMask(0x7F);gl.stencilFunc(gl.ALWAYS,0,0xFF);
+        gl.stencilOpSeparate(gl.FRONT,gl.KEEP,gl.KEEP,gl.INCR_WRAP);gl.stencilOpSeparate(gl.BACK,gl.KEEP,gl.KEEP,gl.DECR_WRAP);
+        gl.bindBuffer(gl.ARRAY_BUFFER,fbuf[k]);gl.enableVertexAttribArray(0);gl.vertexAttribPointer(0,2,gl.FLOAT,false,0,0);gl.drawArrays(gl.TRIANGLES,0,cnt[k]);
+        // woods: any count; marsh: a count and bit 7 still set (not under a wood). Drawn pixels are zeroed for the next pass
+        gl.colorMask(true,true,true,true);gl.stencilMask(0xFF);
+        if(k==='marsh')gl.stencilFunc(gl.LESS,0x80,0xFF);else gl.stencilFunc(gl.NOTEQUAL,0,0x7F);
+        gl.stencilOp(gl.KEEP,gl.KEEP,gl.ZERO);quad(tiles[k==='marsh'?'tuft':k],1);}
+      // the individual trees reach a little past the outlines: those parts are drawn wherever nothing was drawn yet
+      if(f>0){gl.stencilFunc(gl.EQUAL,0x80,0x80);gl.stencilOp(gl.KEEP,gl.KEEP,gl.KEEP);quad(null,0);}
+      // leave the stencil clear and have MapLibre redraw its tile clipping masks for the layers after this one
+      gl.stencilMask(0xFF);gl.clearStencil(0);gl.clear(gl.STENCIL_BUFFER_BIT);gl.disable(gl.STENCIL_TEST);
+      const pa=map.painter;if(pa){pa.currentStencilSource=undefined;pa.nextStencilID=1;}}
+    else if(f>0)quad(null,0);
+    gl.activeTexture(gl.TEXTURE0);}};}
 
 /* ---------- glyph images ---------- */
 function addGlyphImages(map,tint){
@@ -382,7 +408,7 @@ map.on('load',()=>{$('loading').hidden=true;});
 darkMQ.addEventListener('change',()=>{if(savedTheme==='light'||savedTheme==='dark')return;
   setSea();for(const id of PLACE_LAYERS){map.setPaintProperty(id,'text-color',placeText());map.setPaintProperty(id,'text-halo-color',placeHalo());}
   map.setPaintProperty('river-labels','text-color',riverText());map.setPaintProperty('tint-border','line-color',borderTint());map.setPaintProperty('river-labels','text-halo-color',placeHalo());
-  addGlyphImages(map,true);makeTreeSprites(true);treeKey=patKey='';map.triggerRepaint();});
+  addGlyphImages(map,true);makeTreeSprites(true);treeKey='';map.triggerRepaint();});
 loadPaper();
 // new woods arrive with new tiles: mark the mask stale so the next frame rebuilds it
 map.on('sourcedata',e=>{if(e.sourceId==='ofm'&&e.tile){maskDirty=true;map.triggerRepaint();}});
@@ -391,5 +417,5 @@ map.on('styleimagemissing',()=>{});
 // places, their icons, grouping and info windows (pins.js)
 PINS.attach(map);
 // a resize that changes the tree scale redraws the tree sprites and grid at the new size
-new ResizeObserver(()=>{paintPaper();if(treeSpr&&treeScale()!==K){makeTreeSprites(true);treeKey=patKey='';map.triggerRepaint();}}).observe(document.querySelector('.plate'));
+new ResizeObserver(()=>{paintPaper();if(treeSpr&&treeScale()!==K){makeTreeSprites(true);treeKey='';map.triggerRepaint();}}).observe(document.querySelector('.plate'));
 })();
