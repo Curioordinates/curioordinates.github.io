@@ -33,7 +33,14 @@ html, body { height: 100%; margin: 0; padding: 0; overflow: hidden; background: 
 /* Buttons and info windows sit above the aged-paper overlay (z-index 2) but under the loading cover (z-index 4). */
 #kofibutton { position: absolute; top: 20px; right: 20px; z-index: 3; }
 #settingsbutton { position: absolute; bottom: 20px; left: 20px; z-index: 3; }
-#kofibutton img, #settingsbutton img { display: block; }
+/* The box comes from maplibregl-ctrl-group (brass, like the zoom buttons); this sizes the link like a control
+   button and colours the inline icons (knobs filled brass so the slider lines don't show through). */
+.map-btn { display: flex; align-items: center; justify-content: center; width: 29px; height: 29px; border-radius: inherit; color: #333; }
+.map-btn:hover { background-color: rgb(0 0 0 / 5%); }
+.map-btn svg { display: block; width: 20px; height: 20px; }
+.map-btn .heart { fill: var(--red); }
+.map-btn .slider { fill: none; stroke: currentColor; stroke-width: 26; stroke-linecap: round; }
+.map-btn .knob { fill: var(--brass); stroke: currentColor; stroke-width: 20; }
 
 /* Info windows are shaped like the original Leaflet ones, in the map's parchment and inks. */
 .maplibregl-popup { z-index: 3; }

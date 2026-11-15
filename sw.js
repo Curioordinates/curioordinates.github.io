@@ -90,8 +90,6 @@ async function precacheApp() {
     "script.js",
     "settings.js",
     "stylesheet.css",
-    "images/support.png",
-    "images/settings.png",
     "images/folder.svg",
     "images/google-maps.svg",
     "images/komoot.svg",

@@ -99,8 +99,6 @@ async function precacheApp() {
   const sharedPaths = [
     "src/metadata.json",
     "timezone-location.js",
-    "images/support.png",
-    "images/settings.png",
     "images/folder.svg",
     "images/google-maps.svg",
     "images/komoot.svg",

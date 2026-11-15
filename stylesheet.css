@@ -26,6 +26,45 @@ body {
   z-index: 400;
 }
 
+/* Kofi and settings buttons: the box comes from maplibregl-ctrl-group (same as the zoom
+   buttons); this sizes the link like a control button and colours the inline icons. */
+.map-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
+  border-radius: inherit;
+  color: #333;
+}
+
+.map-btn:hover {
+  background-color: rgb(0 0 0 / 5%);
+}
+
+.map-btn svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.map-btn .heart {
+  fill: #e0201b;
+}
+
+.map-btn .slider {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 26;
+  stroke-linecap: round;
+}
+
+.map-btn .knob {
+  fill: #fff;
+  stroke: currentColor;
+  stroke-width: 20;
+}
+
 #info-icon {
   cursor: pointer;
 }

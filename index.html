@@ -48,23 +48,29 @@
   </head>
   <body>
     <div id="map"></div>
-    <div id="kofibutton">
-      <a href="https://buymeacoffee.com/untamed.earth" target="_blank">
-        <img
-          src="images/support.png"
-          width="30px"
-          height="30px"
-          title="Support the map"
-      /></a>
+    <!-- styled as MapLibre controls (maplibregl-ctrl-group) so they match the zoom buttons -->
+    <div id="kofibutton" class="maplibregl-ctrl maplibregl-ctrl-group">
+      <a
+        class="map-btn"
+        href="https://buymeacoffee.com/untamed.earth"
+        target="_blank"
+        title="Support the map"
+        aria-label="Support the map"
+        ><svg viewBox="65 60 230 230" aria-hidden="true">
+          <path
+            class="heart"
+            d="M174.9 258.7C209.4 194 341.9 160.2 265.9 100.2 218 88.7 197.2 109.6 175.9 129.9 152.9 112.6 149.3 75.6 89 98.2 24 167.5 137.2 198.3 174.9 258.7Z"
+          /></svg
+      ></a>
     </div>
-    <div id="settingsbutton">
-      <a href="settings.html">
-        <img
-          src="images/settings.png"
-          width="40px"
-          height="40px"
-          title="Settings"
-      /></a>
+    <div id="settingsbutton" class="maplibregl-ctrl maplibregl-ctrl-group">
+      <a class="map-btn" href="settings.html" title="Settings" aria-label="Settings"
+        ><svg viewBox="39 34 280 280" aria-hidden="true">
+          <path class="slider" d="M62 92H295M62 172H295M62 258H295" />
+          <circle class="knob" cx="116" cy="92.5" r="35" />
+          <circle class="knob" cx="234" cy="171" r="35" />
+          <circle class="knob" cx="165" cy="257.5" r="35" /></svg
+      ></a>
     </div>
     <script src="v2/maplibre-gl.js"></script>
     <script src="timezone-location.js"></script>
