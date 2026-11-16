@@ -343,7 +343,7 @@
    "ghost-ship": {
       "id": 67,
       "short_description": "Phantom ships seen sailing where no ship should be, often as an omen of storms or disaster.",
-      "count": 9
+      "count": 10
    },
    "ghost-sign": {
       "id": 68,
@@ -394,7 +394,7 @@
    "haunting": {
       "id": 77,
       "short_description": "Haunted places: buildings, roads and landscapes with reported ghosts.",
-      "count": 1012
+      "count": 1056
    },
    "headless-rider": {
       "id": 78,
@@ -555,7 +555,7 @@
    "named-ghost": {
       "id": 109,
       "short_description": "Ghosts known by name, from grey ladies and green ladies to other famous spirits.",
-      "count": 96
+      "count": 110
    },
    "national-trust": {
       "id": 110,
@@ -906,7 +906,7 @@
    "witch": {
       "id": 179,
       "short_description": "Witches of folklore: women and men said to cast spells, curse livestock and neighbours, or consort with the Devil.",
-      "count": 37
+      "count": 38
    },
    "witch-hunt-memorial-plaque": {
       "id": 177,
