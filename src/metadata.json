@@ -150,7 +150,7 @@
    "curse": {
       "id": 30,
       "short_description": "Places with a curse attached, from cursed buildings and families to blighted land, and the tales of how they came to be.",
-      "count": 167
+      "count": 304
    },
    "cyclopean": {
       "id": 31,
@@ -165,12 +165,12 @@
    "demon": {
       "id": 33,
       "short_description": "Tales of demons: evil spirits that tempt, torment or strike bargains with mortals.",
-      "count": 1
+      "count": 13
    },
    "devil": {
       "id": 34,
       "short_description": "Places where the Devil is said to have walked, struck bargains or left his mark.",
-      "count": 44
+      "count": 85
    },
    "devils-bridge": {
       "id": 35,
@@ -243,7 +243,7 @@
    "dragon": {
       "id": 48,
       "short_description": "Dragon legends: places where dragons and winged serpents were said to live, terrorise the locals and be slain.",
-      "count": 28
+      "count": 29
    },
    "folklore-cat": {
       "id": 49,
@@ -283,7 +283,7 @@
    "folklore": {
       "id": 55,
       "short_description": "Local folklore and legends of every kind, from phantom beasts to strange customs.",
-      "count": 273
+      "count": 543
    },
    "folklore-swine": {
       "id": 46,
@@ -333,7 +333,7 @@
    "ghost-light": {
       "id": 65,
       "short_description": "Ghost lights: unexplained glowing lights such as will-o'-the-wisps and corpse candles, said to foretell death or lead travellers astray.",
-      "count": 20
+      "count": 23
    },
    "ghost-photo": {
       "id": 66,
@@ -384,7 +384,7 @@
    "haunted-road": {
       "id": 75,
       "short_description": "Haunted roads, where drivers report phantom figures, vehicles and animals.",
-      "count": 68
+      "count": 99
    },
    "haunted-stay": {
       "id": 76,
@@ -394,7 +394,7 @@
    "haunting": {
       "id": 77,
       "short_description": "Haunted places: buildings, roads and landscapes with reported ghosts.",
-      "count": 1056
+      "count": 2449
    },
    "headless-rider": {
       "id": 78,
@@ -626,7 +626,7 @@
    "possession": {
       "id": 123,
       "short_description": "Cases where people were said to be taken over by a demon or spirit, often ending in exorcism.",
-      "count": 34
+      "count": 57
    },
    "practitioner": {
       "id": 124,
@@ -830,12 +830,12 @@
    "tunnel": {
       "id": 163,
       "short_description": "Secret tunnels and passages of legend.",
-      "count": 6
+      "count": 29
    },
    "ufo": {
       "id": 164,
       "short_description": "Places where unidentified flying objects were reported, from single sightings to famous incidents with many witnesses.",
-      "count": 28
+      "count": 185
    },
    "uncontacted": {
       "id": 165,
@@ -906,7 +906,7 @@
    "witch": {
       "id": 179,
       "short_description": "Witches of folklore: women and men said to cast spells, curse livestock and neighbours, or consort with the Devil.",
-      "count": 38
+      "count": 58
    },
    "witch-hunt-memorial-plaque": {
       "id": 177,
