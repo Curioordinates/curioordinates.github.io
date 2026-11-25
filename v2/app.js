@@ -17,7 +17,7 @@ const savedSettings=(()=>{try{return JSON.parse(localStorage.getItem('settings')
 const vignetteOn=savedSettings.vignette!==false;
 const isDark=()=>savedTheme==='dark'||(savedTheme!=='light'&&darkMQ.matches);
 const landColour=()=>isDark()?DARK.land:LAND,seaColour=()=>isDark()?DARK.sea:SEA;
-// a colour as 0-1 rgb, and that colour on the paper's average tone (what the land and sea look like before the texture arrives)
+// a colour as 0-1 rgb, and that colour on the paper's average tone (the sea's flat colour, and the land's before its texture arrives)
 const PAPER_AVG=[243,237,229];
 const rgb01=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)/255);
 // (alpha .999: MapLibre draws fully opaque fills in an earlier pass, under the land layer, so the sea must not be quite opaque)
@@ -347,28 +347,10 @@ function paperInWorker(n){
 // without worker canvases, build it on the main thread once the map is up, so it never holds up the first view
 const paperOnMain=n=>new Promise(res=>map.loaded()?res():map.once('load',res)).then(()=>new Promise(res=>setTimeout(res,50))).then(()=>makePaperTile(n));
 let paperImg=null;
-const SEA_PT=512;
 const paperTile=n=>typeof OffscreenCanvas!=='undefined'?paperInWorker(n).catch(()=>paperOnMain(n)):paperOnMain(n);
-/* Land and sea are both opaque, already-grained pixels; nothing is blended over them.
-   Land: the paper layer below paints the whole screen as land colour x the 2048 px paper tile.
-   Sea: a smaller 512 px paper tile is baked on the CPU into one sea-coloured pattern per theme, and the sea fill
-   switches from its flat colour to that pattern once it is ready. */
-let seaReady=false;
-const seaPattern=()=>isDark()?'sea-paper-dark':'sea-paper-light';
-function setSea(){
-  if(seaReady)map.setPaintProperty('sea','fill-pattern',seaPattern());else map.setPaintProperty('sea','fill-color',seaFlat());
-  map.setPaintProperty('seam-mask','line-color',seaFlat());}
-function bakeSea(bmp){
-  const c=document.createElement('canvas');c.width=c.height=SEA_PT;const x=c.getContext('2d');x.drawImage(bmp,0,0);bmp.close&&bmp.close();
-  const src=x.getImageData(0,0,SEA_PT,SEA_PT);
-  for(const [name,hex] of [['sea-paper-light',SEA],['sea-paper-dark',DARK.sea]]){const col=rgb01(hex),im=new ImageData(SEA_PT,SEA_PT);
-    for(let i=0;i<src.data.length;i+=4){im.data[i]=src.data[i]*col[0];im.data[i+1]=src.data[i+1]*col[1];im.data[i+2]=src.data[i+2]*col[2];im.data[i+3]=255;}
-    if(map.hasImage(name))map.updateImage(name,im);else map.addImage(name,im);}
-  seaReady=true;setSea();}
-function loadPaper(){
-  paperTile(PT).then(blob=>createImageBitmap(blob)).then(img=>{paperImg=img;map.triggerRepaint();}).catch(e=>console.error('paper texture',e));
-  const styled=new Promise(res=>map.isStyleLoaded()?res():map.once('style.load',res));
-  Promise.all([paperTile(SEA_PT).then(blob=>createImageBitmap(blob)),styled]).then(([bmp])=>bakeSea(bmp)).catch(e=>console.error('sea texture',e));}
+// the land is land colour x paper tile (paperLayer below); the sea is a flat colour, the sea colour on the paper's average tone
+function setSea(){map.setPaintProperty('sea','fill-color',seaFlat());map.setPaintProperty('seam-mask','line-color',seaFlat());}
+function loadPaper(){paperTile(PT).then(blob=>createImageBitmap(blob)).then(img=>{paperImg=img;map.triggerRepaint();}).catch(e=>console.error('paper texture',e));}
 /* The land: the bottom layer of the map, one screen-sized opaque quad of land colour x paper tile (no blending).
    Like the trees it pans with the map and stays put on screen while zooming or turning.
    Until the tile is ready it is the land colour on the tile's average tone. */
