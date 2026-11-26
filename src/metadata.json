@@ -283,7 +283,7 @@
    "folklore": {
       "id": 55,
       "short_description": "Local folklore and legends of every kind, from phantom beasts to strange customs.",
-      "count": 543
+      "count": 542
    },
    "folklore-swine": {
       "id": 46,
@@ -668,7 +668,7 @@
    "ruined-castle": {
       "id": 132,
       "short_description": "Ruined castles, from crumbling keeps to scattered foundations.",
-      "count": 3178
+      "count": 3179
    },
    "ruined-church": {
       "id": 133,
